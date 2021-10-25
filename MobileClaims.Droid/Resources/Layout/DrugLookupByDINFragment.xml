@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <gsc.HeaderTextView
+                android:id="@+id/drugstitleLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/DINTitle"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAllCaps="true" />
+            <gsc.SubtitleTextView
+                android:id="@+id/lookupProviderByNameLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/drugDINFieldText"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:layout_marginLeft="30dp"
+                android:textAllCaps="true" />
+            <gsc.SmallEditText
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+                local:MvxBind="Text DIN"
+                android:textSize="13sp"
+                android:singleLine="true"
+                android:id="@+id/edit_text_drug_din"
+                android:hint="@string/drugDINLabel"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/RoundEditTextNone"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:includeFontPadding="true"
+                android:imeOptions="actionDone|flagNoFullscreen" />
+            <gsc.SubtitleTextView
+                android:id="@+id/participant_select_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/choosePlanParticipant"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:layout_marginLeft="30dp"
+                android:textAllCaps="true" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/transparent">
+                <gsc.SingleSelectMvxListView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/participant_list"
+                    android:background="@android:color/transparent"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:divider="@android:color/transparent"
+					android:listSelector="@android:color/transparent"
+                    android:dividerHeight="5dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:scrollbarStyle="outsideOverlay"
+                    android:choiceMode="singleChoice"
+                    local:MvxBind="ItemsSource Participants; ItemClick SetSelectedParticipantCommand;"
+                    local:MvxItemTemplate="@layout/item_participant_name"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+            <gsc.GSCButton
+                android:text="@string/search"
+                android:background="@drawable/ButtonBackground"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                local:MvxBind="Click SearchAndNavigateCommand;"
+                android:id="@+id/button_search_din"
+                android:layout_gravity="center"
+                android:textColor="@drawable/ButtonTextColor"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:imeOptions="actionDone" />
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scrollbars="none"
+                android:isScrollContainer="true">
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="300dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

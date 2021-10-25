@@ -1,0 +1,1917 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9C2CA0FC-0E00-488F-86D4-A0ADC0713422}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MobileClaims.Droid</RootNamespace>
+    <AssemblyName>MobileClaims.Droid</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>true</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <TargetFrameworkVersion>v10.0</TargetFrameworkVersion>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>debug.keystore</AssemblyOriginatorKeyFile>
+    <MandroidI18n />
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <DevInstrumentationEnabled>False</DevInstrumentationEnabled>
+    <AndroidKeyStore>true</AndroidKeyStore>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <AndroidSupportedAbis>armeabi-v7a;x86;x86_64;arm64-v8a</AndroidSupportedAbis>
+    <EnableProguard>true</EnableProguard>
+    <AndroidEnableMultiDex>true</AndroidEnableMultiDex>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidKeyStore>True</AndroidKeyStore>
+    <AndroidSigningKeyStore>debug.keystore</AndroidSigningKeyStore>
+    <AndroidSigningStorePass>android</AndroidSigningStorePass>
+    <AndroidSigningKeyAlias>androiddebugkey</AndroidSigningKeyAlias>
+    <AndroidSigningKeyPass>android</AndroidSigningKeyPass>
+    <AndroidLinkSkip>system%3bmscorlib</AndroidLinkSkip>
+    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Debugger>Xamarin</Debugger>
+    <AndroidDexTool>d8</AndroidDexTool>
+    <AndroidUseSharedRuntime>true</AndroidUseSharedRuntime>
+    <AndroidTlsProvider>btls</AndroidTlsProvider>
+    <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
+    <AndroidEnableMultiDex>false</AndroidEnableMultiDex>
+<EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
+<AndroidLinkTool>r8</AndroidLinkTool>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
+    <DebugType></DebugType>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Debugger>Xamarin</Debugger>
+    <AndroidDexTool>d8</AndroidDexTool>
+    <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
+    <AndroidTlsProvider>btls</AndroidTlsProvider>
+    <AndroidSupportedAbis>armeabi-v7a;arm64-v8a;x86;x86_64</AndroidSupportedAbis>
+    <AndroidLinkTool>r8</AndroidLinkTool>
+    <AndroidEnableMultiDex>false</AndroidEnableMultiDex>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Java.Interop" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Mono.Android.Export" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Application.cs" />
+    <Compile Include="BackdoorHacks.cs" />
+    <Compile Include="BackdoorHelpers.cs" />
+    <Compile Include="Backdoors.cs" />
+    <Compile Include="Controls\NunitoTextViewBold.cs" />
+    <Compile Include="Controls\NunitoTextViewHeavy.cs" />
+    <Compile Include="Controls\BindableViewPager.cs" />
+    <Compile Include="Controls\GSCCheckBox.cs" />
+    <Compile Include="Controls\MvxBindablePagerAdapter.cs" />
+    <Compile Include="Converters\ValidationBooleanToBackgroundConverter.cs" />
+    <Compile Include="Converters\IsOpeningHoursExpandedToArrowDrawableImageConverter.cs" />
+    <Compile Include="Converters\LocationStringToDrawableImageConverter.cs" />
+    <Compile Include="Converters\BooleanToTextValueConverter.cs" />
+    <Compile Include="Converters\ClaimAwaitingMsgValueConverter.cs" />
+    <Compile Include="Converters\ClaimsDetailsCountToVisibleValueConverter.cs" />
+    <Compile Include="Converters\DollarSignDoublePrefixValueConverter.cs" />
+    <Compile Include="Converters\MenuItemNameToDrawableConverter.cs" />
+    <Compile Include="Converters\RequiresActionToTextColorConverter.cs" />
+    <Compile Include="Converters\StringToVisibilityConverter.cs" />
+    <Compile Include="Converters\TextColorEnableDisableValueConverter.cs" />
+    <Compile Include="Helpers\ActivityRequestCodes.cs" />
+    <Compile Include="Helpers\DetailsListViewAdapter.cs" />
+    <Compile Include="Helpers\DetailsListViewHolder.cs" />
+    <Compile Include="Helpers\MarkerIconHelper.cs" />
+    <Compile Include="Helpers\ResourceExtensions.cs" />
+    <Compile Include="Presenter\IMultiRegionHost.cs" />
+    <Compile Include="Presenter\IMultiRegionPresenter.cs" />
+    <Compile Include="Services\HttpClientAndroidService.cs" />
+    <Compile Include="Services\ContactUsService.cs" />
+    <Compile Include="Views\ActiveClaimDetailViewFragment.cs" />
+    <Compile Include="Views\ClaimSubmissionCompletedView.cs" />
+    <Compile Include="Views\ClaimSummaryView.cs" />
+    <Compile Include="Views\ClaimTreatmentDetailsEntryDentalView.cs" />
+    <Compile Include="Views\ConfirmationOfPaymentUploadView.cs" />
+    <Compile Include="Helpers\DashboardRecentClaimsActionRequiredViewHolder.cs" />
+    <Compile Include="Helpers\DashboardRecentClaimsAdapter.cs" />
+    <Compile Include="Helpers\DashboardRecentClaimsViewHolder.cs" />
+    <Compile Include="Views\DashboardView.cs" />
+    <Compile Include="Views\DashboardViewFragment.cs" />
+    <Compile Include="Views\DisclaimerView.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\AddToContactsService.cs" />
+    <Compile Include="Services\DirectionsService.cs" />
+    <Compile Include="Services\GpsAvailableService.cs" />
+    <Compile Include="Services\ConfigurationService.cs" />
+    <Compile Include="Services\LoadFileService.cs" />
+    <Compile Include="Setup.cs" />
+    <Compile Include="Binding\StrikedTextViewBinding.cs" />
+    <Compile Include="Views\ActiveClaimDetailView.cs" />
+    <Compile Include="Views\ActivityForCallbackService.cs" />
+    <Compile Include="Helpers\AttachedFilesAdapter.cs" />
+    <Compile Include="Helpers\AttachedFilesHolder.cs" />
+    <Compile Include="Helpers\AttachedFilesSubmitAdapter.cs" />
+    <Compile Include="Helpers\AttachedFilesSubmitHolder.cs" />
+    <Compile Include="Views\BindableWebView.cs" />
+    <Compile Include="Views\ChangeForLifeNoAccessView.cs" />
+    <Compile Include="Views\ChangeForLifeView.cs" />
+    <Compile Include="Views\ClaimConfirmationHCSAView.cs" />
+    <Compile Include="Views\ClaimParticipantView.cs" />
+    <Compile Include="Views\ClaimResultsView.cs" />
+    <Compile Include="Views\ClaimsHistoryDisplayByView.cs" />
+    <Compile Include="Views\ClaimsHistoryParticipantsView.cs" />
+    <Compile Include="Views\ClaimsHistoryPaymentInfoView.cs" />
+    <Compile Include="Views\ClaimsHistoryResultDetailView.cs" />
+    <Compile Include="Views\ClaimsHistoryResultsCountView.cs" />
+    <Compile Include="Views\ClaimsHistoryResultsListView.cs" />
+    <Compile Include="Views\ClaimsHistorySearchView.cs" />
+    <Compile Include="Views\ClaimTermsAndConditionsView.cs" />
+    <Compile Include="Views\ChooseClaimOrHistoryView.cs" />
+    <Compile Include="Views\ClaimTypeView.cs" />
+    <Compile Include="Views\ConfirmationOfPaymentCompletedView.cs" />
+    <Compile Include="Views\ConfirmationOfPaymentSubmitView.cs" />
+    <Compile Include="Views\ConfirmationOfPaymentUploadViewFragment.cs" />
+    <Compile Include="Views\ClaimDocumentsUploadView.cs" />
+    <Compile Include="Views\ExtendedWebView.cs" />
+    <Compile Include="Views\ActivityBase.cs" />
+    <Compile Include="Helpers\ActiveClaimsAdapter.cs" />
+    <Compile Include="Helpers\ActiveClaimsViewHolder.cs" />
+    <Compile Include="Helpers\AuditClaimSummaryAdapter.cs" />
+    <Compile Include="Views\Fragments\AuditClaimSummaryView.cs" />
+    <Compile Include="Helpers\AuditClaimSummaryViewHolder.cs" />
+    <Compile Include="Helpers\AuditListAdapter.cs" />
+    <Compile Include="Helpers\AuditListViewHolder.cs" />
+    <Compile Include="Views\Fragments\ClaimDocumentsUploadFragment.cs" />
+    <Compile Include="Views\Fragments\ClaimSubmissionCompletedFragment.cs" />
+    <Compile Include="Views\Fragments\SupportCenterFragment.cs" />
+    <Compile Include="Views\Fragments\SureHealthFragment.cs" />
+    <Compile Include="Views\Fragments\ChangeForLifeFragment.cs" />
+    <Compile Include="Views\Fragments\ChangeForLifeNoAccessFragment.cs" />
+    <Compile Include="Views\Fragments\ChooseClaimOrHistoryFragment.cs" />
+    <Compile Include="Views\Fragments\ClaimsHistoryResultsCountFragment.cs" />
+    <Compile Include="Helpers\HealthProviderTypeListAdapter.cs" />
+    <Compile Include="Views\HealthProviderTypeListView.cs" />
+    <Compile Include="Helpers\MenuItemsAdapter.cs" />
+    <Compile Include="Helpers\MenuItemsViewHolder.cs" />
+    <Compile Include="Views\ProviderDetailsInformationView.cs" />
+    <Compile Include="Views\SearchHealthProviderView.cs" />
+    <Compile Include="Views\LoginView.cs" />
+    <Compile Include="Views\RefineSearchView.cs" />
+    <Compile Include="Views\ServiceDetailsListView.cs" />
+    <Compile Include="Views\SpendingAccountDetailView.cs" />
+    <Compile Include="Views\SupportCenterView.cs" />
+    <Compile Include="Views\SureHealthView.cs" />
+    <Compile Include="Views\TermsAndConditionsView.cs" />
+    <Compile Include="Views\FirstView.cs" />
+    <Compile Include="SplashScreen.cs" />
+    <Compile Include="LinkerPleaseInclude.cs" />
+    <Compile Include="Views\DrugView.cs" />
+    <Compile Include="Views\ChooseSpendingAccountTypeView.cs" />
+    <Compile Include="Views\Fragments\SpendingAccountDetailFragment.cs" />
+    <Compile Include="Views\DrugLookupModelSelectionView.cs" />
+    <Compile Include="Views\Fragments\DrugLookupModelSelectionFragment.cs" />
+    <Compile Include="Views\Fragments\DrugLookupByNameFragment.cs" />
+    <Compile Include="Views\Fragments\DrugLookupByDINFragment.cs" />
+    <Compile Include="Views\DrugLookupByNameView.cs" />
+    <Compile Include="Views\DrugLookupByDINView.cs" />
+    <Compile Include="Views\Fragments\DrugLookupByNameSearchResultsFragment.cs" />
+    <Compile Include="Views\DrugLookupByNameSearchResultsView.cs" />
+    <Compile Include="Views\DrugLookupResultsView.cs" />
+    <Compile Include="Views\Fragments\DrugLookupResultsFragment.cs" />
+    <Compile Include="Controls\DrugResultsDrugInfoView.cs" />
+    <Compile Include="Controls\ContributionYearTextView.cs" />
+    <Compile Include="Controls\DollarSignTextView.cs" />
+    <Compile Include="Controls\ForfeitByTextView.cs" />
+    <Compile Include="Controls\NonSelectableList.cs" />
+    <Compile Include="Controls\VisibilityCheckButton.cs" />
+    <Compile Include="Controls\ParticipantInfoView.cs" />
+    <Compile Include="Controls\DrugNotesView.cs" />
+    <Compile Include="Controls\SingleSelectMvxListView.cs" />
+    <Compile Include="Controls\CheckableLinearLayout.cs" />
+    <Compile Include="Controls\SingleSelectionListItemView.cs" />
+    <Compile Include="Controls\SingleSelectionMvxAdapter.cs" />
+    <Compile Include="Controls\AccountListInvisibleLayout.cs" />
+    <Compile Include="Controls\AccountListVisibleLayout.cs" />
+    <Compile Include="Views\CardView.cs" />
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Presenter\MultiRegionPresenter.cs" />
+    <Compile Include="RegionAttribute.cs" />
+    <Compile Include="RegionAttributeExtensionMethods.cs" />
+    <Compile Include="Views\MainNavigationView.cs" />
+    <Compile Include="Views\LandingPageView.cs" />
+    <Compile Include="Views\MapView.cs" />
+    <Compile Include="Views\FindHealthProviderView.cs" />
+    <Compile Include="Controls\visibility_check_layout.cs" />
+    <Compile Include="Controls\LandingPageButton.cs" />
+    <Compile Include="Utility.cs" />
+    <Compile Include="Views\ClaimSubmissionTypeView.cs" />
+    <Compile Include="Views\SimpleMessageView.cs" />
+    <Compile Include="Views\ClaimServiceProvidersView.cs" />
+    <Compile Include="Views\ClaimDetailsView.cs" />
+    <Compile Include="Views\ClaimParticipantsView.cs" />
+    <Compile Include="Views\ClaimServiceProviderEntryView.cs" />
+    <Compile Include="Views\ClaimServiceProviderSearchResultsView.cs" />
+    <Compile Include="Views\ClaimTreatmentDetailsListView.cs" />
+    <Compile Include="Views\ClaimTreatmentDetailsEntry1View.cs" />
+    <Compile Include="Views\ClaimTreatmentDetailsEntry2View.cs" />
+    <Compile Include="Views\ClaimTreatmentDetailsEntryMIView.cs" />
+    <Compile Include="Views\ClaimTreatmentDetailsEntryOMFView.cs" />
+    <Compile Include="Views\ClaimSubmitTermsAndConditionsView.cs" />
+    <Compile Include="Views\ClaimSubmissionConfirmationView.cs" />
+    <Compile Include="Views\ClaimSubmissionResultView.cs" />
+    <Compile Include="Converters\TypeNameToStringValueConverter.cs" />
+    <Compile Include="Views\CustomCardLayout.cs" />
+    <Compile Include="Converters\IdCardPolicyNumberValueConverter.cs" />
+    <Compile Include="Converters\DrugSearchModeValueConverter.cs" />
+    <Compile Include="Controls\LeagueTextView.cs" />
+    <Compile Include="Controls\NunitoTextView.cs" />
+    <Compile Include="Controls\HeaderTextView.cs" />
+    <Compile Include="Controls\TitleTextView.cs" />
+    <Compile Include="Controls\SubtitleTextView.cs" />
+    <Compile Include="Controls\CustomEditText.cs" />
+    <Compile Include="Views\Fragments\CardViewFragment.cs" />
+    <Compile Include="Views\Fragments\ClaimSubmissionTypeFragment.cs" />
+    <Compile Include="Views\Fragments\ChooseSpendingAccountTypeFragment.cs" />
+    <Compile Include="Controls\GSCButton.cs" />
+    <Compile Include="Views\EligibilityCheckTypesView.cs" />
+    <Compile Include="Views\Fragments\EligibilityCheckTypesFragment.cs" />
+    <Compile Include="Views\EligibilityParticipantsView.cs" />
+    <Compile Include="Views\EligibilityCheckCPView.cs" />
+    <Compile Include="Views\EligibilityCheckMassageView.cs" />
+    <Compile Include="Views\EligibilityCheckEyeView.cs" />
+    <Compile Include="Views\EligibilityCheckDREView.cs" />
+    <Compile Include="Views\EligibilityCheckCFOView.cs" />
+    <Compile Include="Controls\GSCSmallButton.cs" />
+    <Compile Include="Views\EligibilityResultsView.cs" />
+    <Compile Include="Converters\TextColorErrorValueConverter.cs" />
+    <Compile Include="Converters\InvertTextColorEnableDisableValueConverter.cs" />
+    <Compile Include="Converters\InvertBooleanValueConverter.cs" />
+    <Compile Include="Views\ClaimTreatmentDetailsEntryREEView.cs" />
+    <Compile Include="Views\ClaimTreatmentDetailsEntryPGView.cs" />
+    <Compile Include="Views\ClaimTreatmentDetailsEntryPCView.cs" />
+    <Compile Include="Views\ClaimServiceProviderProvideInformationView.cs" />
+    <Compile Include="Views\Fragments\ClaimSubmissionConfirmationFragment.cs" />
+    <Compile Include="Views\AuditInformationView.cs" />
+    <Compile Include="Views\AuditListView.cs" />
+    <Compile Include="Views\DatePickerDialogFragment.cs" />
+    <Compile Include="Views\Fragments\AuditListViewFragment.cs" />
+    <Compile Include="Views\Fragments\TermsAndConditionsFragment.cs" />
+    <Compile Include="Converters\TreatmentDateDurationValueConverter.cs" />
+    <Compile Include="Converters\ObjectCountToVisibleValueConverter.cs" />
+    <Compile Include="Converters\EligibilityNullToMsgValueConverter.cs" />
+    <Compile Include="Controls\SmallEditText.cs" />
+    <Compile Include="Converters\StringToBoolValueConverter.cs" />
+    <Compile Include="Controls\LandingPageButtonDisabled.cs" />
+    <Compile Include="Converters\NullToVisibleValueConverter.cs" />
+    <Compile Include="Converters\ClaimResultHeaderValueConverter.cs" />
+    <Compile Include="Converters\VisibleCollapseValueConverter.cs" />
+    <Compile Include="Views\Fragments\ChangeForLifeTermsAndConditionsFragment.cs" />
+    <Compile Include="Views\ChangeForLifeTermsAndConditionsView.cs" />
+    <Compile Include="Views\ClaimDetailsHCSAView.cs" />
+    <Compile Include="Views\ClaimReviewAndEditView.cs" />
+    <Compile Include="Services\BiometricsService.cs" />
+    <Compile Include="Views\SettingsView.cs" />
+    <Compile Include="Views\Fragments\SettingsFragment.cs" />
+    <Compile Include="Views\Fragments\CustomFingerprintDialogFragment.cs" />
+    <Compile Include="Views\WebAgreementView.cs" />
+    <Compile Include="Views\Fragments\WebAgreementFragment.cs" />
+    <Compile Include="Helpers\ProviderMarker.cs" />
+    <Compile Include="Services\DroidNativeUrlService.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Interfaces\IBackPressedListener.cs" />
+    <Compile Include="Views\Fragments\BaseFragment.cs" />
+    <Compile Include="Views\Fragments\DirectDepositViewFragment.cs" />
+    <Compile Include="Views\DirectDepositView.cs" />
+    <Compile Include="Views\DirectDeposit\IDirectDepositCommand.cs" />
+    <Compile Include="Views\DirectDeposit\Step1Command.cs" />
+    <Compile Include="Views\DirectDeposit\Step2Command.cs" />
+    <Compile Include="Views\DirectDeposit\Step3Command.cs" />
+    <Compile Include="Views\DirectDeposit\DirectDepositInvoker.cs" />
+    <Compile Include="Views\DirectDeposit\BaseDirectDepositCommand.cs" />
+    <Compile Include="Views\DirectDeposit\DirectDepositError\DDValidationErrorFragment.cs" />
+    <Compile Include="Views\DirectDeposit\DirectDepositConfirmation\DDConfirmationFragment.cs" />
+    <Compile Include="Views\DirectDeposit\DirectDepositResult\DDResultsFragment.cs" />
+    <Compile Include="Services\PlayCoreService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <AndroidResource Include="Resources\Layout-large\ClaimConfirmationHCSAView.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\LoginView.xml" />
+    <AndroidResource Include="Resources\Values-fr\Strings.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Values\colors.xml" />
+    <AndroidResource Include="Resources\Drawable\ButtonBackground.xml" />
+    <AndroidResource Include="Resources\Drawable\ButtonBackgroundNormal.xml" />
+    <AndroidResource Include="Resources\Drawable\ButtonBackgroundPressed.xml" />
+    <AndroidResource Include="Resources\Drawable\ButtonTextColor.xml" />
+    <AndroidResource Include="Resources\Drawable\circle_warning_icon.xml" />
+    <AndroidResource Include="Resources\Drawable\RoundEditTextNone.xml" />
+    <AndroidResource Include="Resources\Drawable\RoundEditTextTop.xml" />
+    <AndroidResource Include="Resources\Layout\ClaimTermsAndConditionsView.xml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\FirstView.xml">
+      <DependentUpon>ChooseSpendingAccountTypeView.axml</DependentUpon>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Values\LinksResource.xml" />
+    <AndroidResource Include="Resources\Layout\ChooseSpendingAccountTypeView.xml" />
+    <AndroidResource Include="Resources\Drawable\ListItemBackground.xml" />
+    <AndroidResource Include="Resources\Drawable\ListItemBackgroundNormal.xml" />
+    <AndroidResource Include="Resources\Drawable\ListItemBackgroundPressed.xml" />
+    <AndroidResource Include="Resources\Drawable\ListItemTextColor.xml" />
+    <AndroidResource Include="Resources\Layout\SpendingAccountDetailView.xml" />
+    <AndroidResource Include="Resources\Layout\ChooseSpendingAccountTypeFragment.xml" />
+    <AndroidResource Include="Resources\Layout\SpendingAccountDetailFragment.xml" />
+    <AndroidResource Include="Resources\Layout\SplitContainerLayout.xml" />
+    <AndroidResource Include="Resources\Drawable\table_cell_borderless.xml" />
+    <AndroidResource Include="Resources\Drawable\accounts_table_background.xml" />
+    <AndroidResource Include="Resources\Layout\DrugLookupModelSelectionFragment.xml" />
+    <AndroidResource Include="Resources\Layout\DrugLookupByDINFragment.xml" />
+    <AndroidResource Include="Resources\Layout\DrugLookupByNameFragment.xml" />
+    <AndroidResource Include="Resources\Layout\DrugLookupByNameSearchResultsFragment.xml" />
+    <AndroidResource Include="Resources\Layout\item_drug_name_result.xml" />
+    <AndroidResource Include="Resources\Layout\DrugLookupResultsFragment.xml" />
+    <AndroidResource Include="Resources\Layout\item_participant_name.xml" />
+    <AndroidResource Include="Resources\Layout\item_period_rollup.xml" />
+    <AndroidResource Include="Resources\Layout\item_account_detail.xml" />
+    <AndroidResource Include="Resources\Layout\item_account_type.xml" />
+    <AndroidResource Include="Resources\Drawable\list_button_text_color.xml" />
+    <AndroidResource Include="Resources\Drawable\list_button_background.xml" />
+    <AndroidResource Include="Resources\Drawable\list_button_normal.xml" />
+    <AndroidResource Include="Resources\Drawable\list_button_pressed.xml" />
+    <AndroidResource Include="Resources\Values-sw600dp\size_check.xml" />
+    <AndroidResource Include="Resources\Values\size_check.xml" />
+    <AndroidResource Include="Resources\Drawable\rounded_edit_text.xml" />
+    <AndroidResource Include="Resources\Drawable\rounded_button_background.xml" />
+    <AndroidResource Include="Resources\Drawable\rounded_button_pressed.xml" />
+    <AndroidResource Include="Resources\Drawable\rounded_button_normal.xml" />
+    <AndroidResource Include="Resources\Layout\item_participant_single.xml" />
+    <AndroidResource Include="Resources\Drawable\single_select_item_background_normal.xml" />
+    <AndroidResource Include="Resources\Drawable\single_select_item_background.xml" />
+    <AndroidResource Include="Resources\Drawable\single_select_item_background_pressed.xml" />
+    <AndroidResource Include="Resources\Drawable\single_select_item_background_checked.xml" />
+    <AndroidResource Include="Resources\Drawable\single_select_item_text_color.xml" />
+    <AndroidResource Include="Resources\Values\font_constants.xml" />
+    <AndroidResource Include="Resources\Values-sw600dp\font_constants.xml" />
+    <AndroidResource Include="Resources\Drawable\transparent_list_background.xml" />
+    <AndroidResource Include="Resources\Drawable\transparent_list_background_color.xml" />
+    <AndroidResource Include="Resources\Layout\item_dependents_row.xml" />
+    <AndroidResource Include="Resources\Values-xlarge\font_constants.xml" />
+    <AndroidResource Include="Resources\Layout\MainLayout.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\anim\SlideInLeft.xml" />
+    <AndroidResource Include="Resources\anim\enter.xml" />
+    <AndroidResource Include="Resources\anim\exit.xml" />
+    <AndroidResource Include="Resources\anim\popenter.xml" />
+    <AndroidResource Include="Resources\anim\popexit.xml" />
+    <AndroidResource Include="Resources\Layout\TermsAndConditionsView.xml" />
+    <AndroidResource Include="Resources\Layout\MainNavigationFragment.xml" />
+    <AndroidResource Include="Resources\Layout\LandingPageFragment.xml" />
+    <AndroidResource Include="Resources\Layout\item_service_provider_results.xml" />
+    <AndroidResource Include="Resources\Layout\item_service_provider_search_type.xml" />
+    <AndroidResource Include="Resources\Layout\item_service_provider_type.xml" />
+    <AndroidResource Include="Resources\Layout\custom_infowindow.xml" />
+    <AndroidResource Include="Resources\Drawable\borderless_cell.xml" />
+    <AndroidResource Include="Resources\Drawable\nav_button_background.xml" />
+    <AndroidResource Include="Resources\Drawable\nav_button_background_normal.xml" />
+    <AndroidResource Include="Resources\Drawable\nav_button_background_pressed.xml" />
+    <AndroidResource Include="Resources\Drawable\nav_button_text_color.xml" />
+    <AndroidResource Include="Resources\Drawable\gsc_button_background_normal.xml" />
+    <AndroidResource Include="Resources\Drawable\gsc_button_background_pressed.xml" />
+    <AndroidResource Include="Resources\Drawable\gsc_button_background.xml" />
+    <AndroidResource Include="Resources\Drawable\gsc_button_text_color.xml" />
+    <AndroidResource Include="Resources\Values\Attrs.xml" />
+    <AndroidResource Include="Resources\Drawable\checkbox_background.xml" />
+    <AndroidResource Include="Resources\Drawable\dotted_line.xml" />
+    <AndroidResource Include="Resources\Drawable\participant_item_background.xml" />
+    <AndroidResource Include="Resources\Drawable\participant_item_background_checked.xml" />
+    <AndroidResource Include="Resources\Drawable\participant_item_background_normal.xml" />
+    <AndroidResource Include="Resources\Drawable\participant_item_background_pressed.xml" />
+    <AndroidResource Include="Resources\Drawable\participant_item_text_color.xml" />
+    <AndroidResource Include="Resources\Values\Strings.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\ClaimSubmissionTypeView.xml" />
+    <AndroidResource Include="Resources\Layout\SimpleMessageView.xml" />
+    <AndroidResource Include="Resources\Layout\item_claim_type.xml" />
+    <AndroidResource Include="Resources\Layout\ClaimServiceProvidersView.xml" />
+    <AndroidResource Include="Resources\Layout\item_claim_provider_type.xml" />
+    <AndroidResource Include="Resources\Values-xlarge\Dimensions.xml" />
+    <AndroidResource Include="Resources\Values\Dimensions.xml" />
+    <AndroidResource Include="Resources\Layout\item_service_provider_search_type_location.xml" />
+    <AndroidResource Include="Resources\Drawable\apptheme_activated_background_holo_light.xml" />
+    <AndroidResource Include="Resources\Drawable\apptheme_btn_check_holo_light.xml" />
+    <AndroidResource Include="Resources\Drawable\apptheme_btn_default_holo_light.xml" />
+    <AndroidResource Include="Resources\Drawable\apptheme_btn_radio_holo_light.xml" />
+    <AndroidResource Include="Resources\Drawable\apptheme_btn_toggle_holo_light.xml" />
+    <AndroidResource Include="Resources\Drawable\apptheme_fastscroll_thumb_holo.xml" />
+    <AndroidResource Include="Resources\Drawable\apptheme_item_background_holo_light.xml" />
+    <AndroidResource Include="Resources\Drawable\apptheme_list_selector_background_transition_holo_light.xml" />
+    <AndroidResource Include="Resources\Drawable\apptheme_list_selector_holo_light.xml" />
+    <AndroidResource Include="Resources\Drawable\apptheme_scrubber_control_selector_holo_light.xml" />
+    <AndroidResource Include="Resources\Drawable\apptheme_scrubber_progress_horizontal_holo_light.xml" />
+    <AndroidResource Include="Resources\Drawable\apptheme_switch_inner_holo_light.xml" />
+    <AndroidResource Include="Resources\Drawable\apptheme_switch_track_holo_light.xml" />
+    <AndroidResource Include="Resources\Drawable\apptheme_tab_indicator_holo.xml" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_btn_check_off_disabled_focused_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_btn_check_off_disabled_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_btn_check_off_focused_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_btn_check_off_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_btn_check_off_pressed_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_btn_check_on_disabled_focused_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_btn_check_on_disabled_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_btn_check_on_focused_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_btn_check_on_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_btn_check_on_pressed_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_btn_default_disabled_focused_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_btn_default_disabled_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_btn_default_focused_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_btn_default_normal_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_btn_default_pressed_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_btn_radio_off_disabled_focused_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_btn_radio_off_disabled_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_btn_radio_off_focused_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_btn_radio_off_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_btn_radio_off_pressed_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_btn_radio_on_disabled_focused_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_btn_radio_on_disabled_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_btn_radio_on_focused_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_btn_radio_on_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_btn_radio_on_pressed_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_btn_toggle_off_disabled_focused_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_btn_toggle_off_disabled_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_btn_toggle_off_focused_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_btn_toggle_off_normal_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_btn_toggle_off_pressed_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_btn_toggle_on_disabled_focused_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_btn_toggle_on_disabled_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_btn_toggle_on_focused_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_btn_toggle_on_normal_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_btn_toggle_on_pressed_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_fastscroll_thumb_default_holo.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_fastscroll_thumb_pressed_holo.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_ic_navigation_drawer.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_list_activated_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_list_focused_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_list_longpressed_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_list_pressed_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_list_selector_disabled_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_scrubber_control_disabled_holo.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_scrubber_control_focused_holo.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_scrubber_control_normal_holo.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_scrubber_control_pressed_holo.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_scrubber_primary_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_scrubber_secondary_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_scrubber_track_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_switch_bg_disabled_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_switch_bg_focused_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_switch_bg_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_switch_thumb_activated_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_switch_thumb_disabled_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_switch_thumb_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_switch_thumb_pressed_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_tab_selected_focused_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_tab_selected_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_tab_selected_pressed_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_tab_unselected_focused_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_tab_unselected_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\apptheme_tab_unselected_pressed_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_btn_check_off_disabled_focused_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_btn_check_off_disabled_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_btn_check_off_focused_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_btn_check_off_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_btn_check_off_pressed_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_btn_check_on_disabled_focused_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_btn_check_on_disabled_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_btn_check_on_focused_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_btn_check_on_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_btn_check_on_pressed_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_btn_default_disabled_focused_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_btn_default_disabled_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_btn_default_focused_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_btn_default_normal_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_btn_default_pressed_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_btn_radio_off_disabled_focused_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_btn_radio_off_disabled_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_btn_radio_off_focused_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_btn_radio_off_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_btn_radio_off_pressed_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_btn_radio_on_disabled_focused_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_btn_radio_on_disabled_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_btn_radio_on_focused_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_btn_radio_on_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_btn_radio_on_pressed_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_btn_toggle_off_disabled_focused_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_btn_toggle_off_disabled_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_btn_toggle_off_focused_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_btn_toggle_off_normal_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_btn_toggle_off_pressed_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_btn_toggle_on_disabled_focused_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_btn_toggle_on_disabled_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_btn_toggle_on_focused_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_btn_toggle_on_normal_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_btn_toggle_on_pressed_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_fastscroll_thumb_default_holo.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_fastscroll_thumb_pressed_holo.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_ic_navigation_drawer.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_list_activated_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_list_focused_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_list_longpressed_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_list_pressed_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_list_selector_disabled_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_scrubber_control_disabled_holo.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_scrubber_control_focused_holo.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_scrubber_control_normal_holo.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_scrubber_control_pressed_holo.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_scrubber_primary_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_scrubber_secondary_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_scrubber_track_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_switch_bg_disabled_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_switch_bg_focused_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_switch_bg_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_switch_thumb_activated_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_switch_thumb_disabled_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_switch_thumb_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_switch_thumb_pressed_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_tab_selected_focused_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_tab_selected_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_tab_selected_pressed_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_tab_unselected_focused_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_tab_unselected_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\apptheme_tab_unselected_pressed_holo.9.png" />
+    <AndroidResource Include="Resources\Layout\apptheme_tab_indicator_holo.xml" />
+    <AndroidResource Include="Resources\Values\dimens_apptheme.xml" />
+    <AndroidResource Include="Resources\Values\styles_apptheme.xml" />
+    <AndroidResource Include="Resources\Values\themes_apptheme.xml" />
+    <AndroidResource Include="Resources\Layout\item_medical_professional_spinnerDD.xml" />
+    <AndroidResource Include="Resources\Layout\item_claim_service_provider.xml" />
+    <AndroidResource Include="Resources\Layout\item_medical_professional_spinner.xml" />
+    <AndroidResource Include="Resources\Layout\item_medical_professional.xml" />
+    <AndroidResource Include="Resources\Layout\ClaimParticipantsView.xml" />
+    <AndroidResource Include="Resources\Layout\ClaimServiceProviderEntryView.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\ClaimServiceProviderSearchResultsView.xml" />
+    <AndroidResource Include="Resources\Layout\ClaimTreatmentDetailsEntryDentalView.xml">
+      <SubType>
+      </SubType>
+      <Generator>
+      </Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\ClaimDetailsView.xml" />
+    <AndroidResource Include="Resources\Layout\ClaimSubmissionConfirmationView.xml" />
+    <AndroidResource Include="Resources\Layout\ClaimSubmitTermsAndConditionsView.xml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\ClaimTreatmentDetailsEntry1View.xml" />
+    <AndroidResource Include="Resources\Layout\ClaimTreatmentDetailsEntry2View.xml" />
+    <AndroidResource Include="Resources\Layout\ClaimTreatmentDetailsEntryMIView.xml" />
+    <AndroidResource Include="Resources\Layout\ClaimTreatmentDetailsEntryOMFView.xml" />
+    <AndroidResource Include="Resources\Layout\ClaimTreatmentDetailsListView.xml" />
+    <AndroidResource Include="Resources\Layout\item_claim_treatment.xml" />
+    <AndroidResource Include="Resources\Layout\item_medical_professional_spinner_dropdown.xml" />
+    <AndroidResource Include="Resources\Layout\ClaimSubmissionResultView.xml" />
+    <AndroidResource Include="Resources\Layout\item_claim_result_view.xml">
+      <DependentUpon>item_claim_result_total.axml</DependentUpon>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\item_claim_status_message.xml" />
+    <AndroidResource Include="Resources\Layout\item_plan_limit_view.xml" />
+    <AndroidResource Include="Resources\Layout\CardViewFragment.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\item_claim_result_total.xml" />
+    <AndroidResource Include="Resources\Layout\ClaimTreatmentDetailsEntryPGView.xml" />
+    <AndroidResource Include="Resources\Layout\ClaimTreatmentDetailsEntryREEView.xml" />
+    <AndroidResource Include="Resources\Layout\ClaimTreatmentDetailsEntryPCView.xml" />
+    <AndroidResource Include="Resources\Layout\item_drug_lookup_type.xml" />
+    <AndroidResource Include="Resources\Layout\item_treatment_view.xml" />
+    <AndroidResource Include="Resources\Layout\EligibilityCheckTypesFragment.xml" />
+    <AndroidResource Include="Resources\Layout\item_eligibilitycheck_type.xml" />
+    <AndroidResource Include="Resources\Layout\EligibilityParticipantsView.xml" />
+    <AndroidResource Include="Resources\Layout\EligibilityCheckCPView.xml" />
+    <AndroidResource Include="Resources\Layout\item_eligibility_treatmenttype_spinner.xml" />
+    <AndroidResource Include="Resources\Layout\item_eligibility_treatmenttype_spinner_dropdown.xml" />
+    <AndroidResource Include="Resources\Layout\item_eligibility_serviceprovince_spinner.xml" />
+    <AndroidResource Include="Resources\Layout\item_eligibility_serviceprovince_spinner_dropdown.xml" />
+    <AndroidResource Include="Resources\Layout\EligibilityCheckMassageView.xml" />
+    <AndroidResource Include="Resources\Layout\EligibilityCheckEyeView.xml" />
+    <AndroidResource Include="Resources\Layout\EligibilityCheckDREView.xml" />
+    <AndroidResource Include="Resources\Layout\EligibilityCheckCFOView.xml" />
+    <AndroidResource Include="Resources\Drawable\plus_select_item_background.xml" />
+    <AndroidResource Include="Resources\Drawable\plus_gsc_list_text_color.xml" />
+    <AndroidResource Include="Resources\Layout\EligibilityResultsView.xml" />
+    <AndroidResource Include="Resources\Layout\AuditInformationView.xml" />
+    <AndroidResource Include="Resources\Layout\AuditListView.xml" />
+    <AndroidResource Include="Resources\Layout\item_myAlert_type.xml" />
+    <AndroidResource Include="Resources\Layout\item_eligibility_participant.xml" />
+    <AndroidResource Include="Resources\Layout\item_eligibility_participant_list.xml" />
+    <AndroidResource Include="Resources\Layout\EligibilityBenefitInquiryView.xml" />
+    <AndroidResource Include="Resources\Drawable\claims.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\Icon.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\Drawable\button_highlight.xml" />
+    <AndroidResource Include="Resources\Drawable\gsc_auditlist_left_color.xml" />
+    <AndroidResource Include="Resources\Drawable\single_audit_select_item_background.xml" />
+    <AndroidResource Include="Resources\Layout\item_plan_limit_cpm_view.xml" />
+    <AndroidResource Include="Resources\Layout\item_plan_limit_egc_view.xml" />
+    <AndroidResource Include="Resources\Layout\item_eligibility_participant_selector_dre.xml" />
+    <AndroidResource Include="Resources\Layout\item_eligibility_participant_selector_cfo.xml" />
+    <AndroidResource Include="Resources\Layout\item_eligibility_other_msgs.xml" />
+    <AndroidResource Include="Resources\Layout\item_othergsc_participants_spinner.xml" />
+    <AndroidResource Include="Resources\Layout\item_othergsc_participants_spinner_dropdown.xml" />
+    <AndroidResource Include="Resources\Drawable\gsc_spinner_text_color.xml" />
+    <AndroidResource Include="Resources\Layout\item_prescription_spinner.xml" />
+    <AndroidResource Include="Resources\Layout\item_prescription_spinner_dropdown.xml" />
+    <AndroidResource Include="Resources\Drawable\gsc_switch_text_color.xml" />
+    <AndroidResource Include="Resources\layout-sw600dp\AuditInformationView.xml" />
+    <AndroidResource Include="Resources\layout-sw600dp\CardViewFragment.xml" />
+    <AndroidResource Include="Resources\layout-sw600dp\ChooseSpendingAccountTypeFragment.xml" />
+    <AndroidResource Include="Resources\layout-sw600dp\ChooseSpendingAccountTypeView.xml" />
+    <AndroidResource Include="Resources\layout-sw600dp\ClaimServiceProviderEntryView.xml" />
+    <AndroidResource Include="Resources\layout-sw600dp\ClaimServiceProviderProvideInformationView.xml" />
+    <AndroidResource Include="Resources\layout-sw600dp\ClaimServiceProviderSearchView.xml" />
+    <AndroidResource Include="Resources\layout-sw600dp\ClaimSubmissionConfirmationView.xml" />
+    <AndroidResource Include="Resources\layout-sw600dp\ClaimSubmissionResultView.xml" />
+    <AndroidResource Include="Resources\layout-sw600dp\ClaimSubmitTermsAndConditionsView.xml" />
+    <AndroidResource Include="Resources\layout-sw600dp\DrugLookupByDINFragment.xml" />
+    <AndroidResource Include="Resources\layout-sw600dp\DrugLookupByNameFragment.xml" />
+    <AndroidResource Include="Resources\layout-sw600dp\DrugLookupModelSelectionFragment.xml" />
+    <AndroidResource Include="Resources\layout-sw600dp\DrugLookupResultsFragment.xml" />
+    <AndroidResource Include="Resources\layout-sw600dp\EligibilityCheckCFOView.xml" />
+    <AndroidResource Include="Resources\layout-sw600dp\EligibilityCheckDREView.xml" />
+    <AndroidResource Include="Resources\layout-sw600dp\EligibilityParticipantsView.xml" />
+    <AndroidResource Include="Resources\layout-sw600dp\item_account_detail.xml" />
+    <AndroidResource Include="Resources\layout-sw600dp\item_claim_result_total.xml" />
+    <AndroidResource Include="Resources\layout-sw600dp\item_claim_result_view.xml">
+      <DependentUpon>item_claim_result_total.xml</DependentUpon>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout-sw600dp\item_dependents_row.xml" />
+    <AndroidResource Include="Resources\layout-sw600dp\item_eligibility_participant_selector.xml" />
+    <AndroidResource Include="Resources\layout-sw600dp\item_eligibility_participant_selector_cfo.xml" />
+    <AndroidResource Include="Resources\layout-sw600dp\item_eligibility_participant_selector_dre.xml" />
+    <AndroidResource Include="Resources\layout-sw600dp\item_myAlert_type.xml" />
+    <AndroidResource Include="Resources\layout-sw600dp\item_period_rollup.xml" />
+    <AndroidResource Include="Resources\layout-sw600dp\item_plan_limit_view.xml" />
+    <AndroidResource Include="Resources\layout-sw600dp\item_service_provider_search_type_location.xml" />
+    <AndroidResource Include="Resources\layout-sw600dp\item_treatment_view.xml" />
+    <AndroidResource Include="Resources\layout-sw600dp\LandingPageFragment.xml" />
+    <AndroidResource Include="Resources\layout-sw600dp\LocateServiceProviderChooseSearchTypeFragment.xml" />
+    <AndroidResource Include="Resources\layout-sw600dp\LocateServiceProviderLocatedProvidersView.xml" />
+    <AndroidResource Include="Resources\layout-sw600dp\LoginView.xml" />
+    <AndroidResource Include="Resources\layout-sw600dp\SpendingAccountDetailFragment.xml" />
+    <AndroidResource Include="Resources\layout-sw600dp\SplitContainerLayout.xml" />
+    <AndroidResource Include="Resources\layout-sw600dp\TermsAndConditionsView.xml" />
+    <AndroidResource Include="Resources\Layout\item_audit_claim_result_view.xml" />
+    <AndroidResource Include="Resources\layout-sw600dp\item_audit_claim_result_view.xml" />
+    <AndroidResource Include="Resources\Layout\ChangeForLifeView.xml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout-large\AuditInformationView.xml" />
+    <AndroidResource Include="Resources\Layout-large\CardViewFragment.xml" />
+    <AndroidResource Include="Resources\Layout-large\ChooseSpendingAccountTypeFragment.xml" />
+    <AndroidResource Include="Resources\Layout-large\ChooseSpendingAccountTypeView.xml" />
+    <AndroidResource Include="Resources\Layout-large\ClaimServiceProviderEntryView.xml" />
+    <AndroidResource Include="Resources\Layout-large\ClaimServiceProviderProvideInformationView.xml" />
+    <AndroidResource Include="Resources\Layout-large\ClaimServiceProviderSearchView.xml" />
+    <AndroidResource Include="Resources\Layout-large\ClaimSubmissionConfirmationView.xml" />
+    <AndroidResource Include="Resources\Layout-large\ClaimSubmissionResultView.xml" />
+    <AndroidResource Include="Resources\Layout-large\ClaimSubmitTermsAndConditionsView.xml" />
+    <AndroidResource Include="Resources\Layout-large\DrugLookupByDINFragment.xml" />
+    <AndroidResource Include="Resources\Layout-large\DrugLookupByNameFragment.xml" />
+    <AndroidResource Include="Resources\Layout-large\DrugLookupModelSelectionFragment.xml" />
+    <AndroidResource Include="Resources\Layout-large\DrugLookupResultsFragment.xml" />
+    <AndroidResource Include="Resources\Layout-large\EligibilityCheckCFOView.xml" />
+    <AndroidResource Include="Resources\Layout-large\EligibilityCheckDREView.xml" />
+    <AndroidResource Include="Resources\Layout-large\EligibilityParticipantsView.xml" />
+    <AndroidResource Include="Resources\Layout-large\item_account_detail.xml" />
+    <AndroidResource Include="Resources\Layout-large\item_claim_result_total.xml" />
+    <AndroidResource Include="Resources\layout-large\item_claim_result_view.xml">
+      <DependentUpon>item_claim_result_total.xml</DependentUpon>
+    </AndroidResource>    
+    <AndroidResource Include="Resources\Layout-large\item_dependents_row.xml" />
+    <AndroidResource Include="Resources\Layout-large\item_eligibility_participant_selector.xml" />
+    <AndroidResource Include="Resources\Layout-large\item_eligibility_participant_selector_cfo.xml" />
+    <AndroidResource Include="Resources\Layout-large\item_eligibility_participant_selector_dre.xml" />
+    <AndroidResource Include="Resources\Layout-large\item_myAlert_type.xml" />
+    <AndroidResource Include="Resources\Layout-large\item_period_rollup.xml" />
+    <AndroidResource Include="Resources\Layout-large\item_plan_limit_view.xml" />
+    <AndroidResource Include="Resources\Layout-large\item_service_provider_search_type_location.xml" />
+    <AndroidResource Include="Resources\Layout-large\item_treatment_view.xml" />
+    <AndroidResource Include="Resources\Layout-large\LandingPageFragment.xml" />
+    <AndroidResource Include="Resources\Layout-large\LocateServiceProviderChooseSearchTypeFragment.xml" />
+    <AndroidResource Include="Resources\Layout-large\LocateServiceProviderLocatedProvidersView.xml" />
+    <AndroidResource Include="Resources\Layout-large\LoginView.xml" />
+    <AndroidResource Include="Resources\Layout-large\SpendingAccountDetailFragment.xml" />
+    <AndroidResource Include="Resources\Layout-large\SplitContainerLayout.xml" />
+    <AndroidResource Include="Resources\Layout-large\TermsAndConditionsView.xml" />
+    <AndroidResource Include="Resources\Layout\ChangeForLifeTermsAndConditionsView.xml" />
+    <AndroidResource Include="Resources\Layout\ChangeForLifeNoAccessView.xml" />
+    <AndroidResource Include="Resources\Layout\ChooseClaimOrHistoryFragment.xml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout-large\ChooseClaimOrHistoryFragment.xml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout-sw600dp\ChooseClaimOrHistoryFragment.xml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\ClaimTypeView.xml" />
+    <AndroidResource Include="Resources\Layout\ClaimParticipantView.xml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\ClaimDetailsHCSAView.xml" />
+    <AndroidResource Include="Resources\Layout\ClaimReviewAndEditView.xml" />
+    <AndroidResource Include="Resources\Layout\item_claim_review.xml" />
+    <AndroidResource Include="Resources\Layout-large\ClaimReviewAndEditView.xml" />
+    <AndroidResource Include="Resources\Layout-large\item_claim_review.xml" />
+    <AndroidResource Include="Resources\Layout\item_claim_result.xml" />
+    <AndroidResource Include="Resources\Layout\ClaimResultsView.xml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout-large\ClaimTypeView.xml" />
+    <AndroidResource Include="Resources\layout-sw600dp\ClaimTypeView.xml" />
+    <AndroidResource Include="Resources\Layout\item_claim_confirmation.xml" />
+    <AndroidResource Include="Resources\Layout\item_claim_confirmation_phone.xml" />
+    <AndroidResource Include="Resources\Layout\ClaimConfirmationHCSAView.xml" />
+    <AndroidResource Include="Resources\layout-sw600dp\ClaimConfirmationHCSAView.xml" />
+    <AndroidResource Include="Resources\Layout\item_hcsareferraltype_spinner_dropdown.xml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\item_hcsareferraltype_spinner.xml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\item_results_list.xml" />
+    <AndroidResource Include="Resources\Layout\item_hcsaclaim_results_first.xml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\ClaimsHistoryResultsCountView.xml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\item_results_count.xml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\RoundedCornersBorder.xml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\item_result_count_disabled.xml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\RoundedCornersBorderGreen.xml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\ClaimsHistoryResultsListView.xml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout-sw600dp\ClaimsHistoryResultsListView.xml" />
+    <AndroidResource Include="Resources\Layout\item_search_result.xml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout-large\ClaimsHistoryResultsListView.xml" />
+    <AndroidResource Include="Resources\Layout-large\ClaimDetailsHCSAView.xml" />
+    <AndroidResource Include="Resources\Layout-large\ClaimResultsView.xml" />
+    <AndroidResource Include="Resources\Layout\item_medical_professional_spinner_dropdown_txtcentre.xml" />
+    <AndroidResource Include="Resources\Layout\item_medical_professional_spinner_txtcentre.xml" />
+    <AndroidResource Include="Resources\Layout\ClaimHistoryDetailsViewPager.xml" />
+    <AndroidResource Include="Resources\Layout\ClaimHistoryDisplayByYear.xml" />
+    <AndroidResource Include="Resources\Layout\ClaimsHistoryPaymentInfo.xml" />
+    <AndroidResource Include="Resources\Layout\ClaimsHistorySearchCriteria.xml" />
+    <AndroidResource Include="Resources\Layout\item_claimhistory_claimtype.xml" />
+    <AndroidResource Include="Resources\Layout\item_claimhistorydetailsviewpager_view.xml" />
+    <AndroidResource Include="Resources\Layout\item_displayby_year_dropdown.xml" />
+    <AndroidResource Include="Resources\Layout\ClaimsHistoryParticipants.xml" />
+    <AndroidResource Include="Resources\Drawable\gsc_list_rounded_textview_item_color.xml" />
+    <AndroidResource Include="Resources\Drawable\RoundedCornersBorderWhite.xml" />
+    <AndroidResource Include="Resources\Drawable\RoundedCornerTextView.xml" />
+    <AndroidResource Include="Resources\Layout\eobmessages.xml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\item_displayby_year_spinner.xml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\item_benefit.xml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout-large\ClaimsHistoryPaymentInfo.xml" />
+    <AndroidResource Include="Resources\layout-sw600dp\ClaimsHistoryPaymentInfo.xml" />
+    <AndroidResource Include="Resources\Layout-large\item_claimhistorydetailsviewpager_view.xml" />
+    <AndroidResource Include="Resources\layout-sw600dp\item_claimhistorydetailsviewpager_view.xml" />
+    <AndroidResource Include="Resources\layout-sw600dp\eobmessages.xml" />
+    <AndroidResource Include="Resources\Drawable\claimshistory_benifit_list_textcolor.xml" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_btn_check_off_disabled_focused_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_btn_check_off_disabled_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_btn_check_off_focused_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_btn_check_off_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_btn_check_off_pressed_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_btn_check_on_disabled_focused_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_btn_check_on_disabled_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_btn_check_on_focused_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_btn_check_on_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_btn_check_on_pressed_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_btn_default_disabled_focused_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_btn_default_disabled_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_btn_default_focused_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_btn_default_normal_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_btn_default_pressed_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_btn_radio_off_disabled_focused_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_btn_radio_off_disabled_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_btn_radio_off_focused_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_btn_radio_off_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_btn_radio_off_pressed_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_btn_radio_on_disabled_focused_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_btn_radio_on_disabled_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_btn_radio_on_focused_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_btn_radio_on_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_btn_radio_on_pressed_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_btn_toggle_off_disabled_focused_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_btn_toggle_off_disabled_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_btn_toggle_off_focused_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_btn_toggle_off_normal_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_btn_toggle_off_pressed_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_btn_toggle_on_disabled_focused_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_btn_toggle_on_disabled_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_btn_toggle_on_focused_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_btn_toggle_on_normal_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_btn_toggle_on_pressed_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_fastscroll_thumb_default_holo.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_fastscroll_thumb_pressed_holo.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_ic_navigation_drawer.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_list_activated_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_list_focused_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_list_longpressed_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_list_pressed_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_list_selector_disabled_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_scrubber_control_disabled_holo.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_scrubber_control_focused_holo.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_scrubber_control_normal_holo.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_scrubber_control_pressed_holo.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_scrubber_primary_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_scrubber_secondary_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_scrubber_track_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_switch_bg_disabled_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_switch_bg_focused_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_switch_bg_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_switch_thumb_activated_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_switch_thumb_disabled_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_switch_thumb_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_switch_thumb_pressed_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_tab_selected_focused_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_tab_selected_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_tab_selected_pressed_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_tab_unselected_focused_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_tab_unselected_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\apptheme_tab_unselected_pressed_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\Calendar_icon.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\Collapse_down_arrow_icon.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\Expand_down_arrow_icon.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\Icon.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_btn_check_off_disabled_focused_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_btn_check_off_disabled_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_btn_check_off_focused_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_btn_check_off_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_btn_check_off_pressed_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_btn_check_on_disabled_focused_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_btn_check_on_disabled_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_btn_check_on_focused_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_btn_check_on_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_btn_check_on_pressed_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_btn_default_disabled_focused_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_btn_default_disabled_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_btn_default_focused_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_btn_default_normal_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_btn_default_pressed_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_btn_radio_off_disabled_focused_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_btn_radio_off_disabled_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_btn_radio_off_focused_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_btn_radio_off_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_btn_radio_off_pressed_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_btn_radio_on_disabled_focused_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_btn_radio_on_disabled_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_btn_radio_on_focused_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_btn_radio_on_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_btn_radio_on_pressed_holo_light.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_btn_toggle_off_disabled_focused_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_btn_toggle_off_disabled_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_btn_toggle_off_focused_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_btn_toggle_off_normal_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_btn_toggle_off_pressed_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_btn_toggle_on_disabled_focused_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_btn_toggle_on_disabled_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_btn_toggle_on_focused_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_btn_toggle_on_normal_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_btn_toggle_on_pressed_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_fastscroll_thumb_default_holo.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_fastscroll_thumb_pressed_holo.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_ic_navigation_drawer.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_list_activated_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_list_focused_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_list_longpressed_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_list_pressed_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_list_selector_disabled_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_scrubber_control_disabled_holo.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_scrubber_control_focused_holo.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_scrubber_control_normal_holo.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_scrubber_control_pressed_holo.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_scrubber_primary_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_scrubber_secondary_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_scrubber_track_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_switch_bg_disabled_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_switch_bg_focused_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_switch_bg_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_switch_thumb_activated_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_switch_thumb_disabled_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_switch_thumb_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_switch_thumb_pressed_holo_light.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_tab_selected_focused_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_tab_selected_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_tab_selected_pressed_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_tab_unselected_focused_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_tab_unselected_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\apptheme_tab_unselected_pressed_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\Calendar_icon.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\Collapse_down_arrow_icon.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\Expand_down_arrow_icon.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\Icon.png" />
+    <AndroidResource Include="Resources\Layout\eobmessages_claim.xml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\SettingsView.xml" />
+    <AndroidResource Include="Resources\Layout\WebAgreementView.xml" />
+    <AndroidResource Include="Resources\Layout\autocomplete_list_item.xml" />
+    <AndroidResource Include="Resources\Values\BrandStrings.xml" />
+    <AndroidResource Include="Resources\Values-fr\BrandStrings.xml" />
+    <None Include="app.config" />
+    <AndroidResource Include="Resources\Layout\ClaimSubmissionCompletedLayout.xml">
+      <SubType>
+      </SubType>
+      <Generator>
+      </Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\menu_active_directDeposit.xml">
+      <SubType>
+      </SubType>
+      <Generator>
+      </Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\DirectDeposit.xml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\customborder.xml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\attention.xml">
+      <SubType>
+      </SubType>
+      <Generator>
+      </Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\arrow_down_gray.xml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\arrow_up_gray.xml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\large_round_checkbox_selected.xml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\large_round_checkbox_unselected.xml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\round_checkbox_selected.xml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\round_checkbox_unselected.xml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\DirectDepositHeaderLayout.xml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\DirectDepositStep1Layout.xml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\directdepositstep2layout.xml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\directdepositstep3layout.xml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\DirectDepositDisclaimerlayout.xml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\directdeposit_disclaimber_bulletpoint.xml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\sample_cheque.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\asr_back_en.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\asr_back_travel_en.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\asr_back_travel_fr.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\asr_front_en.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\back_inactive.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\checkmark_active.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\checkmark_touch.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\claims_error_icon.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\claims.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\closeActive.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\color_logo_phone.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\color_logo.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\drug.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\drugs_bottom_active.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\dugsdontwork.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\FGL_back_en.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\FGL_back_travel_en.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\FGL_back_travel_fr.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\FGL_front_en.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\forward_inactive.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\GSC_back_en.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\GSC_back_fr.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\GSC_back_travel_en.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\GSC_back_travel_fr.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\GSC_back_travel.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\GSC_front_en.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\GSC_front_fr.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\gsc_front.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\gscLogo.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\hamburger_icon.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\home_bottom_active.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\home.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\ic_launcher.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\Icon.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\id_card_login_phone.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\id_card_login_white.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\id_card_login.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\id_card_touch_phone.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\id_card_touch.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\IDCard.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\idCardLogin.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\LandingPageImage.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\plus_sign.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\splash.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\wes_back_en.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\wes_back_travel_en.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\wes_back_travel_fr.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\wes_front_en.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\white.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable-fr\color_logo_phone.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable-fr\color_logo.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable-fr\dugsdontwork.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable-fr\FGL_back_travel.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable-fr\GSC_back_travel.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable-fr\GSC_front.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable-fr\gscLogo.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable-fr\Icon.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable-fr\id_card_login_phone.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable-fr\id_card_login_white.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable-fr\id_card_login.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable-fr\LandingPageImage.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable-fr\splash.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable-fr-large\gscLogo.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable-fr-xxxhdpi\def_pin_1_5.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable-fr-xxxhdpi\def_pin_2_5.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable-fr-xxxhdpi\def_pin_3_5.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable-fr-xxxhdpi\def_pin_4_5.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable-fr-xxxhdpi\pin_fav_1_5.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable-fr-xxxhdpi\pin_fav_2_5.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable-fr-xxxhdpi\pin_fav_3_5.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable-fr-xxxhdpi\pin_fav_4_5.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable-large\GSC_back_travel.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable-large\gsc_front.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable-large\gscLogo.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable-large\LandingPageImage.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\DDValidationErrorFragment.xml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\DDConfirmationFragment.xml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\secondary_button.xml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\font\LeagueGothic.ttf">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\font\NunitoSansBlack.ttf">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\font\NunitoSansRegular.ttf">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\font\NunitoSansBold.ttf">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\DDResultsFragment.xml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable-fr\sample_cheque.webp">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\Main.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\webagreement_en.html" />
+    <AndroidAsset Include="Assets\webagreement_fr.html" />
+    <Content Include="libs\Acr.MvvmCross.Plugins.UserDialogs.Droid.pdb" />
+    <Content Include="libs\Acr.MvvmCross.Plugins.UserDialogs.pdb" />
+    <Content Include="libs\AndHUD.dll" />
+    <Content Include="Properties\AndroidManifest.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <AndroidResource Include="Resources\Drawable\gsc_list_text_color.xml" />
+    <AndroidResource Include="Resources\Values-fr\LinksResource.xml" />
+    <AndroidResource Include="Resources\Drawable\HCSATextViewBorder.xml" />
+    <AndroidResource Include="Resources\Drawable\HCSABorderTextViewNormal.xml" />
+    <AndroidResource Include="Resources\Drawable-hdpi\Calendar_icon.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\Collapse_down_arrow_icon.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\Expand_down_arrow_icon.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\Calendar_icon.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\Collapse_down_arrow_icon.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\Expand_down_arrow_icon.png" />
+    <AndroidResource Include="Resources\Drawable\GSC_checkbox.xml" />
+    <AndroidResource Include="Resources\Drawable-hdpi\search_criteria_icon.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\search_criteria_icon.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\search_criteria_icon.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\search_criteria_icon.png" />
+    <AndroidResource Include="Resources\Drawable-xxxhdpi\search_criteria_icon.png" />
+    <AndroidResource Include="Resources\Xml\provider_paths.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Values-large\size_check.xml" />
+    <AndroidResource Include="Resources\Layout\MapViewLayout.xml" />
+    <AndroidResource Include="Resources\Layout\FindHealthProviderLayout.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable-xxxhdpi\icon_filter.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\icon_filter.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\icon_filter.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\icon_filter.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\icon_filter.png" />
+    <AndroidResource Include="Resources\Layout\ServiceDetailsListLayout.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\details_list_item.xml" />
+    <AndroidResource Include="Resources\Drawable\ratingbar_custom.xml" />
+    <AndroidResource Include="Resources\Drawable\click_effect_background.xml" />
+    <AndroidResource Include="Resources\anim\slide_in_up.xml" />
+    <AndroidResource Include="Resources\anim\slide_out_down.xml" />
+    <AndroidResource Include="Resources\Drawable\rounded_corner.xml" />
+    <AndroidResource Include="Resources\Layout\SearchViewLayout.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\RefineSearchLayout.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\toggle_button.xml" />
+    <AndroidResource Include="Resources\Drawable-xxxhdpi\switch_off.png" />
+    <AndroidResource Include="Resources\anim\slide_in_right.xml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\anim\slide_out_left.xml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\anim\disappear.xml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Values\integer.xml" />
+    <AndroidResource Include="Resources\Layout\HealthProviderTypeListLayout.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\health_provider_type_group_layout.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\health_provider_type_item_layout.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\health_provider_type_header_layout.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\anim\slide_in_left.xml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\ProviderDetailsInformationLayout.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable-xxxhdpi\pin_default.png" />
+    <AndroidResource Include="Resources\layout-sw600dp\MapViewLayout.xml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout-large\MapViewLayout.xml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable-xxxhdpi\clear.png" />
+    <AndroidResource Include="Resources\Layout\ConfirmationOfPaymentUploadFragmentLayout.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\attachment_item_layout.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\ConfirmationOfPaymentSubmitLayout.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\border.xml" />
+    <AndroidResource Include="Resources\Layout\attachment_submit_item_layout.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\DisclaimerLayout.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\ConfirmationOfPaymentCompletedLayout.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\ActiveClaimDetailLayout.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\active_claim_item_layout.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\border_red.xml" />
+    <AndroidResource Include="Resources\Drawable-xxxhdpi\file_thumbnail.png" />
+    <AndroidResource Include="Resources\Drawable-xxxhdpi\delete_icon.png" />
+    <AndroidResource Include="Resources\Drawable-xxxhdpi\image_thumbnail.png" />
+    <AndroidResource Include="Resources\Layout\item_menu.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Values-sw600dp\Dimensions.xml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\hamburger_icon.png" />
+    <AndroidResource Include="Resources\Layout\DashboardLayout.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout-large\DashboardLayout.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout-sw600dp\DashboardLayout.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable-hdpi\bnb_findprovider.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\bnb_claims.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\bnb_dashboard.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\bnb_findprovider.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\bnb_claims.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\bnb_dashboard.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\bnb_findprovider.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\bnb_claims.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\bnb_dashboard.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\bnb_findprovider.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\bnb_claims.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\bnb_dashboard.png" />
+    <AndroidResource Include="Resources\Drawable-xxxhdpi\bnb_findprovider.png" />
+    <AndroidResource Include="Resources\Drawable-xxxhdpi\bnb_claims.png" />
+    <AndroidResource Include="Resources\Drawable-xxxhdpi\bnb_dashboard.png" />
+    <AndroidResource Include="Resources\Drawable-xxxhdpi\bnb_hamburger.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\bnb_hamburger.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\bnb_hamburger.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\bnb_hamburger.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\bnb_hamburger.png" />
+    <AndroidResource Include="Resources\Layout\item_dashboard_recent_claim.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\item_dashboard_recent_claim_action_required.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\border_green.xml" />
+    <AndroidResource Include="Resources\Layout\ClaimSummaryLayout.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\dashboard_recent_claim_include.xml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\combined_size_of_files_text_layout.xml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Values\BrandColors.xml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\menu_active_alerts.xml" />
+    <AndroidResource Include="Resources\Drawable\menu_active_balances.xml" />
+    <AndroidResource Include="Resources\Drawable\menu_active_benefits.xml" />
+    <AndroidResource Include="Resources\Drawable\menu_active_change4life.xml" />
+    <AndroidResource Include="Resources\Drawable\menu_active_claims.xml" />
+    <AndroidResource Include="Resources\Drawable\menu_active_drugs.xml" />
+    <AndroidResource Include="Resources\Drawable\menu_active_find_pharmacy.xml" />
+    <AndroidResource Include="Resources\Drawable\menu_active_find_provider.xml" />
+    <AndroidResource Include="Resources\Drawable\menu_active_idcard.xml" />
+    <AndroidResource Include="Resources\Drawable\menu_active_settings.xml" />
+    <AndroidResource Include="Resources\Drawable\menu_active_terms_and_conditions.xml" />
+    <AndroidResource Include="Resources\Values\terms_dimens.xml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Values-sw600dp\terms_dimens.xml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Values-xlarge\terms_dimens.xml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\border_light_grey.xml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\back_active.xml" />
+    <AndroidResource Include="Resources\Drawable\call.xml" />
+    <AndroidResource Include="Resources\Drawable\checkmark.xml" />
+    <AndroidResource Include="Resources\Drawable\details_address.xml" />
+    <AndroidResource Include="Resources\Drawable\direct_billing.xml" />
+    <AndroidResource Include="Resources\Drawable\directions.xml" />
+    <AndroidResource Include="Resources\Drawable\forward_active.xml" />
+    <AndroidResource Include="Resources\Drawable\greenDiagonal.xml" />
+    <AndroidResource Include="Resources\Drawable\heart_off.xml" />
+    <AndroidResource Include="Resources\Drawable\heart_on.xml" />
+    <AndroidResource Include="Resources\Drawable\icon_arrowdown.xml" />
+    <AndroidResource Include="Resources\Drawable\icon_arrowup.xml" />
+    <AndroidResource Include="Resources\Drawable\icon_list.xml" />
+    <AndroidResource Include="Resources\Drawable\icon_loupe.xml" />
+    <AndroidResource Include="Resources\Drawable\learn_more_info.xml" />
+    <AndroidResource Include="Resources\Drawable\learn_more_provider_search.xml" />
+    <AndroidResource Include="Resources\Drawable\learn_more_understanding_ratings.xml" />
+    <AndroidResource Include="Resources\Drawable\link.xml" />
+    <AndroidResource Include="Resources\Drawable\location_highlight_icon.xml" />
+    <AndroidResource Include="Resources\Drawable\phone.xml" />
+    <AndroidResource Include="Resources\Drawable\time.xml" />
+    <AndroidResource Include="Resources\Drawable\checkbox_empty.xml" />
+    <AndroidResource Include="Resources\Drawable\checkbox_selected.xml" />
+    <AndroidResource Include="Resources\Drawable\switch_on.xml" />
+    <AndroidResource Include="Resources\Drawable\add_icon.xml" />
+    <AndroidResource Include="Resources\Drawable\menu_active_contact.xml" />
+    <AndroidResource Include="Resources\Drawable-xxxhdpi\star_on.png" />
+    <AndroidResource Include="Resources\Drawable-xxxhdpi\star_off.png" />
+    <AndroidResource Include="Resources\Drawable\dashboard_chiropractor.xml" />
+    <AndroidResource Include="Resources\Drawable\dashboard_dental.xml" />
+    <AndroidResource Include="Resources\Drawable\dashboard_drugs.xml" />
+    <AndroidResource Include="Resources\Drawable\dashboard_hcsa.xml" />
+    <AndroidResource Include="Resources\Drawable\dashboard_massage.xml" />
+    <AndroidResource Include="Resources\Drawable\dashboard_psa.xml" />
+    <AndroidResource Include="Resources\Drawable\checkbox_empty_disabled.xml" />
+    <AndroidResource Include="Resources\Drawable\checkbox_selected_disabled.xml" />
+    <AndroidResource Include="Resources\Drawable-xxxhdpi\pin_def_1_5.png" />
+    <AndroidResource Include="Resources\Drawable-xxxhdpi\pin_def_2_5.png" />
+    <AndroidResource Include="Resources\Drawable-xxxhdpi\pin_def_3_5.png" />
+    <AndroidResource Include="Resources\Drawable-xxxhdpi\pin_def_4_5.png" />
+    <AndroidResource Include="Resources\Drawable-xxxhdpi\pin_fav_1_5.png" />
+    <AndroidResource Include="Resources\Drawable-xxxhdpi\pin_fav_2_5.png" />
+    <AndroidResource Include="Resources\Drawable-xxxhdpi\pin_fav_3_5.png" />
+    <AndroidResource Include="Resources\Drawable-xxxhdpi\pin_fav_4_5.png" />
+    <AndroidResource Include="Resources\Drawable-xxxhdpi\pin_def_1_0.png" />
+    <AndroidResource Include="Resources\Drawable-xxxhdpi\pin_def_2_0.png" />
+    <AndroidResource Include="Resources\Drawable-xxxhdpi\pin_def_3_0.png" />
+    <AndroidResource Include="Resources\Drawable-xxxhdpi\pin_def_4_0.png" />
+    <AndroidResource Include="Resources\Drawable-xxxhdpi\pin_def_5_0.png" />
+    <AndroidResource Include="Resources\Drawable-xxxhdpi\pin_fav_1_0.png" />
+    <AndroidResource Include="Resources\Drawable-xxxhdpi\pin_fav_2_0.png" />
+    <AndroidResource Include="Resources\Drawable-xxxhdpi\pin_fav_3_0.png" />
+    <AndroidResource Include="Resources\Drawable-xxxhdpi\pin_fav_4_0.png" />
+    <AndroidResource Include="Resources\Drawable-xxxhdpi\pin_fav_5_0.png" />
+    <AndroidResource Include="Resources\Drawable-xxxhdpi\pin_fav_default.png" />
+    <AndroidResource Include="Resources\Drawable-xxxhdpi\pin_counselling.png" />
+    <AndroidResource Include="Resources\Drawable-xxxhdpi\pin_dental.png" />
+    <AndroidResource Include="Resources\Drawable-xxxhdpi\pin_foot_care.png" />
+    <AndroidResource Include="Resources\Drawable-xxxhdpi\pin_medical_items.png" />
+    <AndroidResource Include="Resources\Drawable-xxxhdpi\pin_pharmacy.png" />
+    <AndroidResource Include="Resources\Drawable-xxxhdpi\pin_professional_services.png" />
+    <AndroidResource Include="Resources\Drawable-xxxhdpi\pin_vision.png" />
+    <AndroidResource Include="Resources\Drawable\pin_mylocation.xml" />
+    <AndroidResource Include="Resources\Drawable\arrow.xml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\AuditClaimSummaryLayout.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\item_audit_claim_summary.xml" />
+    <AndroidResource Include="Resources\Layout\item_audit_claim.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\bg_rounded_darkred.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\SureHealthView.xml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\menu_active_surehealth.xml" />
+    <AndroidResource Include="Resources\Layout\ClaimDocumentsUploadView.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\menu_active_support_centre.xml" />
+    <AndroidResource Include="Resources\Layout\SupportCenterFragment.xml" />
+    <AndroidResource Include="Resources\Values\MvxBindingAttributes.xml" />
+    <AndroidResource Include="Resources\Layout\SplashScreen.xml" />
+    <AndroidResource Include="Resources\Values\SplashStyle.xml" />
+    <AndroidResource Include="Resources\Layout\CardLayout.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\branded_logo.xml" />
+    <AndroidResource Include="Resources\Drawable-fr\branded_logo.xml" />
+    <AndroidResource Include="Resources\Drawable\ccq_background.xml" />
+    <AndroidResource Include="Resources\Drawable-xxxhdpi\ccq_logo.png" />
+    <AndroidResource Include="Resources\Drawable\menu_active_logout.xml" />
+    <AndroidResource Include="Resources\Drawable\round_edit_text_error.xml" />
+    <AndroidResource Include="Resources\Drawable\location_icon.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\ListItemBackgroundFocused.xml" />
+    <AndroidResource Include="Resources\Drawable\ListItemBackgroundPressedActive.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+     Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Folder Include="obj\Debug\81\" />
+    <Folder Include="Resources\Layout-land\" />
+    <Folder Include="Views\DirectDeposit\" />
+    <Folder Include="Views\DirectDeposit\DirectDepositError\" />
+    <Folder Include="Views\DirectDeposit\DirectDepositConfirmation\" />
+    <Folder Include="Resources\font\" />
+    <Folder Include="Views\DirectDeposit\DirectDepositResult\" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\fonts\oneway.ttf" />
+    <AndroidAsset Include="Assets\fonts\LeagueGothic.ttf" />
+    <AndroidAsset Include="Assets\fonts\NunitoSansBlack.ttf" />
+    <AndroidAsset Include="Assets\fonts\NunitoSansRegular.ttf" />
+    <AndroidAsset Include="Assets\fonts\NunitoSansBold.ttf" />
+    <AndroidAsset Include="Assets\EmptyHtmlFile.html" />
+    <AndroidAsset Include="Assets\Security_en.html" />
+    <AndroidAsset Include="Assets\Security_fr.html" />
+    <AndroidAsset Include="Assets\terms.html" />
+    <AndroidAsset Include="Assets\TermsAndConditions_en.html" />
+    <AndroidAsset Include="Assets\TermsAndConditions_fr.html" />
+    <AndroidAsset Include="Assets\Legal_en.html" />
+    <AndroidAsset Include="Assets\Legal_fr.html" />
+    <AndroidAsset Include="Assets\Privacy_en.html" />
+    <AndroidAsset Include="Assets\Privacy_fr.html" />
+    <AndroidAsset Include="Assets\C4LTermsAndConditions_en.html" />
+    <AndroidAsset Include="Assets\C4LTermsAndConditions_fr.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Acr.UserDialogs">
+      <Version>7.0.35</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Lifecycle.LiveData" Version="2.3.1" />
+    <PackageReference Include="Xamarin.AndroidX.ConstraintLayout" Version="2.0.4.2" />
+    <PackageReference Include="Xamarin.Google.Android.Material" Version="1.3.0.1" />
+    <PackageReference Include="Xamarin.AndroidX.Legacy.Support.V4" Version="1.0.0.7" /> 
+    <PackageReference Include="Microsoft.AppCenter.Analytics">
+      <Version>2.6.4</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AppCenter.Crashes">
+      <Version>2.6.4</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Bcl.Build">
+      <Version>1.0.21</Version>
+    </PackageReference>
+    <PackageReference Include="MvvmCross">
+      <Version>6.4.2</Version>
+    </PackageReference>
+    <PackageReference Include="MvvmCross.Droid.Support.V7.AppCompat">
+      <Version>6.4.2</Version>
+    </PackageReference>
+    <PackageReference Include="MvvmCross.Plugin.Color">
+      <Version>6.4.2</Version>
+    </PackageReference>
+    <PackageReference Include="MvvmCross.Plugin.File">
+      <Version>6.4.2</Version>
+    </PackageReference>
+    <PackageReference Include="MvvmCross.Plugin.Json">
+      <Version>6.4.2</Version>
+    </PackageReference>
+    <PackageReference Include="MvvmCross.Plugin.Location">
+      <Version>6.4.2</Version>
+    </PackageReference>
+    <PackageReference Include="MvvmCross.Plugin.Messenger">
+      <Version>6.4.2</Version>
+    </PackageReference>
+    <PackageReference Include="MvvmCross.Plugin.Visibility">
+      <Version>6.4.2</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>12.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Plugin.CurrentActivity">
+      <Version>2.1.0.4</Version>
+    </PackageReference>
+    <PackageReference Include="Plugin.Fingerprint">
+      <Version>1.4.9</Version>
+    </PackageReference>
+    <PackageReference Include="Xam.Plugin.Connectivity">
+      <Version>3.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xam.Plugin.Geolocator">
+      <Version>4.5.0.6</Version>
+    </PackageReference>
+    <PackageReference Include="Xam.Plugin.Media">
+      <Version>4.0.1.5</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Arch.Core.Common">
+      <Version>1.1.1.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Arch.Lifecycle.Common">
+      <Version>1.1.1.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Arch.Lifecycle.Runtime">
+      <Version>1.1.1.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.Animated.Vector.Drawable">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.Annotations">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.Compat">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.Constraint.Layout">
+      <Version>1.1.2</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.Core.UI">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.Core.Utils">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.Design">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.Fragment">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.Media.Compat">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.Transition">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.v4">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.v7.CardView">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.v7.RecyclerView">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.Vector.Drawable">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Build.Download">
+      <Version>0.4.11</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.FFImageLoading">
+      <Version>2.4.11.982</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.GooglePlayServices.Base">
+      <Version>71.1610.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.GooglePlayServices.Basement">
+      <Version>71.1620.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.GooglePlayServices.Maps">
+      <Version>71.1610.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.GooglePlayServices.Tasks">
+      <Version>71.1601.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Insights">
+      <Version>1.12.3</Version>
+    </PackageReference>
+    <PackageReference Include="Plugin.StoreReview">
+      <Version>3.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="PlayCore">
+      <Version>1.10.0-beta</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Essentials">
+      <Version>1.6.1</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Library\CustomViewPagerDroid.csproj">
+      <Project>{FA322A14-2B8E-4496-B950-4D8263CA0A2D}</Project>
+      <Name>CustomViewPagerDroid</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MobileClaims.Core\MobileClaims.Core.csproj">
+      <Project>{AF036FB2-CE49-46EC-BF48-A827A85EC013}</Project>
+      <Name>MobileClaims.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <!--<Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Xamarin.Insights.1.12.3\build\MonoAndroid10\Xamarin.Insights.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Insights.1.12.3\build\MonoAndroid10\Xamarin.Insights.targets'))" />
+  </Target>-->
+  <ItemGroup>
+    <ProguardConfiguration Include="proguard.cfg" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ClaimDetailsView">
+            <connections>
+                <outlet property="AccidentDatePicker" destination="96Z-vF-XSz" id="8eo-f4-Ie4"/>
+                <outlet property="CaseNumberTextField" destination="nd2-Nr-iNN" id="c0Y-tl-UI2"/>
+                <outlet property="ClaimDetailsHeaderLabel" destination="aDN-g8-RvO" id="zIj-FW-fSn"/>
+                <outlet property="ContentOverlayView" destination="H7z-sK-B1p" id="wC2-p8-lj0"/>
+                <outlet property="ContentView" destination="XPo-i0-em1" id="D7K-lu-aOa"/>
+                <outlet property="GSCCoverageToggle" destination="VLM-1q-9Lk" id="7lD-1N-5OV"/>
+                <outlet property="GstHstToggle" destination="fhu-KN-7fx" id="JUH-n2-EP3"/>
+                <outlet property="GstHstToggleHeightConstraint" destination="tXg-px-lZc" id="cU1-M5-Wsi"/>
+                <outlet property="HealthProviderAddressLabel" destination="fuZ-ar-PTE" id="i8U-ed-HzF"/>
+                <outlet property="HealthProviderCityLabel" destination="4h3-6G-U70" id="1fR-Pc-tZT"/>
+                <outlet property="HealthProviderInfoStackView" destination="6ed-S6-7RG" id="5kf-Q1-pXD"/>
+                <outlet property="HealthProviderNameLabel" destination="SHe-BU-esf" id="4d8-oc-uiS"/>
+                <outlet property="HealthProviderPhoneNumberLabel" destination="Hmi-RM-EoT" id="ncV-az-GhR"/>
+                <outlet property="HealthProviderRegNumberLabel" destination="myu-pL-Lv0" id="HeQ-as-jKG"/>
+                <outlet property="HealthProviderTitleLabel" destination="eQu-x4-f6d" id="Pic-Zh-jgw"/>
+                <outlet property="IsMedicalPrescriptionAvailableStackView" destination="KgR-Db-g29" id="1kw-wX-aLb"/>
+                <outlet property="IsMedicalPrescriptionAvailableToggle" destination="kus-OB-tAK" id="qza-sC-h6u"/>
+                <outlet property="IsMedicalPrescriptionAvailableToggleHeightConstraint" destination="IK1-fx-GJn" id="2zz-S8-EWD"/>
+                <outlet property="MedPrescriptionReferralDatePicker" destination="cx3-tA-xIl" id="yp6-AO-v87"/>
+                <outlet property="MedProfessionTypeTableViewHeightConstraint" destination="R5R-4p-ReS" id="9Ea-Fs-vSI"/>
+                <outlet property="MedicalProfessionTypeTableView" destination="gum-e1-mch" id="3v4-2q-6wj"/>
+                <outlet property="MotorVehicleAccidentStackView" destination="4jk-8M-lF7" id="k31-Jy-iJz"/>
+                <outlet property="MotorVehicleAccidentToggle" destination="v6E-GV-01f" id="hS8-2Q-wc4"/>
+                <outlet property="MotorVehicleAccidentToggleHeightConstraint" destination="MN9-jG-pSW" id="FKN-xJ-0H4"/>
+                <outlet property="NoticeLabel" destination="XRN-Zv-sva" id="eGr-xH-pbg"/>
+                <outlet property="OtherBenefitsHCSALabel" destination="3Rd-28-Tx7" id="w7t-Ur-I24"/>
+                <outlet property="OtherBenefitsHCSAToggle" destination="629-Dp-kgB" id="56I-I9-t3R"/>
+                <outlet property="OtherBenefitsHCSAToggleHeightConstraint" destination="2KY-Uj-zyZ" id="TTt-Nd-wiJ"/>
+                <outlet property="OtherBenefitsStackView" destination="4SY-40-oWr" id="Jk4-wF-PsD"/>
+                <outlet property="OtherBenefitsToggle" destination="FcB-xO-eWg" id="RY3-e0-w5y"/>
+                <outlet property="OtherBenefitsToggleHeightConstraint" destination="WNM-Kq-7eC" id="gb6-pc-FMB"/>
+                <outlet property="OtherGSCNumberTextField" destination="bHp-VO-wII" id="K6K-j8-Htl"/>
+                <outlet property="OtherTypeOfAccidentToggle" destination="atX-u5-x0W" id="kd0-ZI-tS7"/>
+                <outlet property="OtherTypeOfAccidentToggleHightConstraint" destination="Xrq-Xd-qQZ" id="sWQ-3u-SMS"/>
+                <outlet property="PayUnpaidAmountToggle" destination="k7A-8m-PtS" id="RUs-cv-daq"/>
+                <outlet property="ReasonOfAccidentStackView" destination="lbv-Zq-a34" id="RSe-zL-udC"/>
+                <outlet property="ReasonOfAccidentToggle" destination="g06-4o-bro" id="xCo-CF-mQb"/>
+                <outlet property="ReasonOfAccidentToggleHeightConstraint" destination="fg4-Um-USA" id="wQf-BS-aOL"/>
+                <outlet property="ScrollView" destination="Eoi-cK-xkr" id="0bW-TV-1Tl"/>
+                <outlet property="ScrollViewBottomConstraint" destination="AD1-RC-Gcp" id="eKo-Za-i9B"/>
+                <outlet property="SubmitButton" destination="uEV-qS-dRj" id="tpC-lo-Fpx"/>
+                <outlet property="SubmittedWithOtherBenefitsToggle" destination="sSK-oF-Lnm" id="UYi-VI-yZT"/>
+                <outlet property="WorkInjuryDatePicker" destination="WE9-Bc-Qqa" id="DgW-T7-N2r"/>
+                <outlet property="WorkRelatedInjuryStackView" destination="BBx-km-nJS" id="5tt-Kl-xMo"/>
+                <outlet property="WorkRelatedInjuryToggle" destination="3Jr-K9-xlU" id="Iz7-n6-qPx"/>
+                <outlet property="WorkRelatedInjuryToggleHeightConstraint" destination="QZ8-So-7d9" id="6ne-ee-0Bp"/>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2" userLabel="ClaimDetails">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eoi-cK-xkr">
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XPo-i0-em1" userLabel="ContentView">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="710.33333333333337"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="QWi-cN-KxJ">
+                                    <rect key="frame" x="10" y="10" width="394" height="559.33333333333337"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HEALTH PROVIDER - ACUPUNCTURE TREATMENT" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQu-x4-f6d">
+                                            <rect key="frame" x="0.0" y="0.0" width="394" height="43"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="6ed-S6-7RG">
+                                            <rect key="frame" x="0.0" y="63.000000000000007" width="394" height="91.666666666666686"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="W ZEDO" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHe-BU-esf">
+                                                    <rect key="frame" x="0.0" y="0.0" width="394" height="14.333333333333334"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MASSAGE ADDICT WEST BRANT" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fuZ-ar-PTE">
+                                                    <rect key="frame" x="0.0" y="19.333333333333343" width="394" height="14.333333333333336"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BRANTFORD, ON, N3T1M2" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4h3-6G-U70">
+                                                    <rect key="frame" x="0.0" y="38.666666666666657" width="394" height="14.333333333333336"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone: 519-304-7522" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hmi-RM-EoT">
+                                                    <rect key="frame" x="0.0" y="58.000000000000007" width="394" height="14.333333333333336"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registration Number: 3309" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="myu-pL-Lv0">
+                                                    <rect key="frame" x="0.0" y="77.333333333333343" width="394" height="14.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="100" id="185-44-7eg"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="185-44-7eg"/>
+                                                </mask>
+                                            </variation>
+                                        </stackView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLEASE PROVIDE THE CLAIM DETAILS FOR LEO HAMMOND" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDN-g8-RvO" userLabel="ClaimDetailsHeader">
+                                            <rect key="frame" x="0.0" y="174.66666666666666" width="394" height="43"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VVD-5e-uw8">
+                                            <rect key="frame" x="0.0" y="237.66666666666666" width="394" height="321.66666666666674"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FcB-xO-eWg" customClass="LabeledToggle">
+                                                    <rect key="frame" x="0.0" y="0.0" width="394" height="50"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="WNM-Kq-7eC"/>
+                                                    </constraints>
+                                                </view>
+                                                <stackView hidden="YES" opaque="NO" alpha="0.0" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="4SY-40-oWr">
+                                                    <rect key="frame" x="0.0" y="55" width="394" height="215"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VLM-1q-9Lk" customClass="LabeledToggle">
+                                                            <rect key="frame" x="0.0" y="0.0" width="394" height="50"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="YFQ-3d-1B3"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sSK-oF-Lnm" customClass="LabeledToggle">
+                                                            <rect key="frame" x="0.0" y="55" width="394" height="50"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="6zP-wN-2w4"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k7A-8m-PtS" customClass="LabeledToggle">
+                                                            <rect key="frame" x="0.0" y="110" width="394" height="50"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="45q-y0-2rZ"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bHp-VO-wII" customClass="LabeledTextField">
+                                                            <rect key="frame" x="0.0" y="165" width="394" height="50"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="NbS-DW-e2g"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HEALTH CARE SPENDING ACCOUNT" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Rd-28-Tx7" userLabel="ClaimDetailsHeader">
+                                                    <rect key="frame" x="0.0" y="59.999999999999993" width="394" height="21.666666666666664"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="629-Dp-kgB" customClass="LabeledToggle">
+                                                    <rect key="frame" x="0.0" y="91.666666666666629" width="394" height="50"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="2KY-Uj-zyZ"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g06-4o-bro" customClass="LabeledToggle">
+                                                    <rect key="frame" x="0.0" y="151.66666666666663" width="394" height="50"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="fg4-Um-USA"/>
+                                                    </constraints>
+                                                </view>
+                                                <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lbv-Zq-a34">
+                                                    <rect key="frame" x="0.0" y="206.66666666666663" width="394" height="150"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v6E-GV-01f" customClass="LabeledToggle">
+                                                            <rect key="frame" x="0.0" y="0.0" width="394" height="50"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="MN9-jG-pSW"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <stackView hidden="YES" opaque="NO" alpha="0.0" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="4jk-8M-lF7">
+                                                            <rect key="frame" x="0.0" y="50.000000000000057" width="394" height="50"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="96Z-vF-XSz" customClass="LabeledDatePicker">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="394" height="50"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="50" id="WTH-83-duK"/>
+                                                                    </constraints>
+                                                                </view>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Jr-K9-xlU" customClass="LabeledToggle">
+                                                            <rect key="frame" x="0.0" y="50.000000000000057" width="394" height="50"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="QZ8-So-7d9"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <stackView hidden="YES" opaque="NO" alpha="0.0" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="BBx-km-nJS">
+                                                            <rect key="frame" x="0.0" y="100.00000000000006" width="394" height="105"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WE9-Bc-Qqa" customClass="LabeledDatePicker">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="394" height="50"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="50" id="3wE-N7-I2N"/>
+                                                                    </constraints>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nd2-Nr-iNN" customClass="LabeledTextField">
+                                                                    <rect key="frame" x="0.0" y="55" width="394" height="50"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="50" id="uWq-aN-ugq"/>
+                                                                    </constraints>
+                                                                </view>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="atX-u5-x0W" customClass="LabeledToggle">
+                                                            <rect key="frame" x="0.0" y="100.00000000000006" width="394" height="50"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="Xrq-Xd-qQZ"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                </stackView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kus-OB-tAK" customClass="LabeledToggle">
+                                                    <rect key="frame" x="0.0" y="211.66666666666663" width="394" height="50"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="IK1-fx-GJn"/>
+                                                    </constraints>
+                                                </view>
+                                                <stackView hidden="YES" opaque="NO" alpha="0.0" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="KgR-Db-g29">
+                                                    <rect key="frame" x="0.0" y="266.66666666666669" width="394" height="105"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cx3-tA-xIl" customClass="LabeledDatePicker">
+                                                            <rect key="frame" x="0.0" y="0.0" width="394" height="50"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="3gk-q1-bfe"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gum-e1-mch" customClass="LabeledTableView">
+                                                            <rect key="frame" x="0.0" y="55" width="394" height="50"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="R5R-4p-ReS"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                </stackView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fhu-KN-7fx" customClass="LabeledToggle">
+                                                    <rect key="frame" x="0.0" y="271.66666666666669" width="394" height="50"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="tXg-px-lZc"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zty-fJ-DB6" userLabel="SubmitButtonStackView">
+                                    <rect key="frame" x="10" y="589.33333333333337" width="394" height="111"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRN-Zv-sva">
+                                            <rect key="frame" x="4" y="0.0" width="386.33333333333331" height="61"/>
+                                            <string key="text">For services rendered in Ontario, please ensure all receipts are signed by the Registered Massage Therapist who rendered the treatment.</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEV-qS-dRj" customClass="GSButton">
+                                            <rect key="frame" x="62" y="71" width="270" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="WiN-Fo-vxS">
+                                                    <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                                </constraint>
+                                                <constraint firstAttribute="width" constant="270" id="kH5-Ck-rSU">
+                                                    <variation key="heightClass=regular-widthClass=regular" constant="500"/>
+                                                </constraint>
+                                            </constraints>
+                                            <state key="normal" title="Button"/>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="QWi-cN-KxJ" secondAttribute="trailing" constant="10" id="3qX-GC-XEZ"/>
+                                <constraint firstAttribute="trailing" secondItem="zty-fJ-DB6" secondAttribute="trailing" constant="10" id="7am-MM-XFG"/>
+                                <constraint firstItem="zty-fJ-DB6" firstAttribute="leading" secondItem="XPo-i0-em1" secondAttribute="leading" constant="10" id="KrZ-BS-Yfy"/>
+                                <constraint firstItem="QWi-cN-KxJ" firstAttribute="top" secondItem="XPo-i0-em1" secondAttribute="top" constant="10" id="QBW-9c-4DP"/>
+                                <constraint firstItem="QWi-cN-KxJ" firstAttribute="leading" secondItem="XPo-i0-em1" secondAttribute="leading" constant="10" id="adw-1W-cZQ"/>
+                                <constraint firstAttribute="bottom" secondItem="zty-fJ-DB6" secondAttribute="bottom" constant="10" id="d8J-vn-92v"/>
+                                <constraint firstItem="zty-fJ-DB6" firstAttribute="top" secondItem="QWi-cN-KxJ" secondAttribute="bottom" constant="20" id="q02-An-CPy"/>
+                            </constraints>
+                        </view>
+                        <view hidden="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H7z-sK-B1p">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="710.33333333333337"/>
+                            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="H7z-sK-B1p" firstAttribute="leading" secondItem="XPo-i0-em1" secondAttribute="leading" id="B4W-QK-IU2"/>
+                        <constraint firstItem="XPo-i0-em1" firstAttribute="top" secondItem="Eoi-cK-xkr" secondAttribute="top" id="Dq8-pK-2o4"/>
+                        <constraint firstAttribute="bottom" secondItem="XPo-i0-em1" secondAttribute="bottom" id="TiS-5D-Xac"/>
+                        <constraint firstAttribute="bottom" secondItem="XPo-i0-em1" secondAttribute="bottom" id="Utk-RB-Nwb"/>
+                        <constraint firstItem="H7z-sK-B1p" firstAttribute="top" secondItem="XPo-i0-em1" secondAttribute="top" id="VfZ-5H-JO4"/>
+                        <constraint firstAttribute="trailing" secondItem="XPo-i0-em1" secondAttribute="trailing" id="VjH-RF-ZCO"/>
+                        <constraint firstItem="XPo-i0-em1" firstAttribute="leading" secondItem="Eoi-cK-xkr" secondAttribute="leading" id="Vzt-tb-8lj"/>
+                        <constraint firstItem="XPo-i0-em1" firstAttribute="top" secondItem="Eoi-cK-xkr" secondAttribute="top" id="XL7-X7-fFw"/>
+                        <constraint firstItem="XPo-i0-em1" firstAttribute="leading" secondItem="Eoi-cK-xkr" secondAttribute="leading" id="XVY-oL-XeU"/>
+                        <constraint firstItem="H7z-sK-B1p" firstAttribute="bottom" secondItem="XPo-i0-em1" secondAttribute="bottom" id="b17-Gr-R2Q"/>
+                        <constraint firstItem="H7z-sK-B1p" firstAttribute="trailing" secondItem="XPo-i0-em1" secondAttribute="trailing" id="dUe-mm-yUZ"/>
+                        <constraint firstAttribute="trailing" secondItem="XPo-i0-em1" secondAttribute="trailing" id="z2H-k4-o3k"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="Eoi-cK-xkr" firstAttribute="top" secondItem="QbK-v8-urp" secondAttribute="top" id="2N3-6d-sfk"/>
+                <constraint firstItem="XPo-i0-em1" firstAttribute="height" secondItem="2" secondAttribute="height" priority="250" id="7DY-JP-sdL"/>
+                <constraint firstItem="Eoi-cK-xkr" firstAttribute="bottom" secondItem="2" secondAttribute="bottom" id="AD1-RC-Gcp"/>
+                <constraint firstItem="XPo-i0-em1" firstAttribute="width" secondItem="QbK-v8-urp" secondAttribute="width" id="JBD-Dj-sgj"/>
+                <constraint firstItem="Eoi-cK-xkr" firstAttribute="trailing" secondItem="QbK-v8-urp" secondAttribute="trailing" id="Qii-4I-YCj"/>
+                <constraint firstItem="Eoi-cK-xkr" firstAttribute="leading" secondItem="QbK-v8-urp" secondAttribute="leading" id="sqP-hh-1rq"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="QbK-v8-urp"/>
+            <point key="canvasLocation" x="24.637681159420293" y="51.5625"/>
+        </view>
+    </objects>
+</document>

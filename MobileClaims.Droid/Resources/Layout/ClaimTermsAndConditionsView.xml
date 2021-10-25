@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none"
+            android:isScrollContainer="true">
+            <gsc.HeaderTextView
+                android:id="@+id/claim_type_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/claimTermsandConditionsTitle"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAllCaps="true" />
+            <gsc.TitleTextView
+                android:id="@+id/claimTermsTabletTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/claimTOSTitle"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp"
+                android:textAllCaps="true" />
+            <gsc.NunitoTextView
+                android:id="@+id/claim_term_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="left"
+                android:textSize="13sp"
+                android:background="@drawable/HCSABorderTextViewNormal"
+                android:padding="10dp"
+                android:gravity="left"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textAllCaps="false" />
+            <gsc.GSCButton
+                android:text="@string/claimAgreeAndContinueTitle"
+                android:background="@drawable/ButtonBackground"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                local:MvxBind="Click AcceptTermsAndConditionsCommand;"
+                android:id="@+id/claimAgreeBtn"
+                android:layout_gravity="center"
+                android:textColor="@drawable/ButtonTextColor"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textColorHighlight="@color/list_text_color"
+                android:layout_marginTop="15dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/light_grey"
+    android:padding="10dp">
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:weightSum="1"
+            android:layout_marginBottom="5dp">
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                local:MvxBind="Text BenefitDescription;"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_weight="0.55"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="0dp"
+                android:layout_centerVertical="true" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_weight="0.45"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                local:MvxBind="Text LimitationDescription;" />
+        </TableRow>
+        <TableRow
+            android:weightSum="1"
+            android:layout_marginBottom="5dp" >            
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/eligibilityParticipant"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_weight="0.55"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="0dp"
+                android:layout_centerVertical="true" 
+                local:MvxBind="Visibility Visibility(IsParticipantFamilyLabelVisibleForEligibility);" />                
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_weight="0.45"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                local:MvxBind="Text AppliesTo;Visible (IsParticipantFamilyLabelVisibleForEligibility);" />
+        </TableRow>
+        <TableRow
+            android:weightSum="1"
+            android:layout_marginBottom="5dp">
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/eligibilityStartDate"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_weight="0.55"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="0dp"
+                android:layout_centerVertical="true" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_weight="0.45"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                local:MvxBind="Text Format('{0:MMMM dd, yyy}',AccumStartDate);" />
+        </TableRow>
+        <TableRow
+            android:weightSum="1"
+            android:layout_marginBottom="5dp">
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/eligibilityAmountUsed"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_weight="0.55"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="0dp"
+                android:layout_centerVertical="true"
+                local:MvxBind="Visible (IsAccumAmountUsedVisibleForEligibility);"/>
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_weight="0.45"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                local:MvxBind="Text Format('${0}',AccumAmountUsed);Visible (IsAccumAmountUsedVisibleForEligibility);" />
+        </TableRow>
+        <TableRow
+            android:weightSum="1"
+            android:layout_marginBottom="5dp">
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/eligibilityOccurrence"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_weight="0.55"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="0dp"
+                android:layout_centerVertical="true"
+                local:MvxBind="Visible (IsAccumUnitsUsedVisibleForEligibility);" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_weight="0.45"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                local:MvxBind="Text Format('{0}',AccumUnitsUsed);Visible (IsAccumUnitsUsedVisibleForEligibility);" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

@@ -1,0 +1,1076 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/light_grey"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="5dp"
+    android:layout_marginBottom="5dp">
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TableRow
+            android:layout_marginTop="5dp">
+            <gsc.NunitoTextView
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textStyle="bold"
+                />
+        </TableRow>
+
+        
+
+        <TableRow
+            android:layout_marginTop="5dp"
+            local:MvxBind="Visibility Visibility(IsItemDescriptionVisible);">
+            <gsc.NunitoTextView
+                android:text="@string/claimTreatmentItemDescLabelPhone"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                local:MvxBind="Text ItemDescription.Name" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp"
+            local:MvxBind="Visibility Visibility(IsTreatmentDurationVisible);">
+            <gsc.NunitoTextView
+                android:text="@string/checkeligibilityLengthoftreatmentPhone"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                local:MvxBind="Text TreatmentDuration.Name" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp"
+            local:MvxBind="Visibility Visibility(IsTreatementDateVisible);">
+            <gsc.NunitoTextView
+                android:text="@string/claimTreatmentDateLabelPhone"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:maxLines="1"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMaxTextSize="13sp"                
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                local:MvxBind="Text Format('{0:MMMM dd, yyy}',TreatmentDate);" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="5dp"
+            local:MvxBind="Visibility Visibility(IsTypeOfTreatmentVisible);">
+            <gsc.NunitoTextView
+                android:text="@string/claimTreatmentTypeLabelPhone"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                local:MvxBind="Text TypeOfTreatmentListViewItem.Name" />
+        </TableRow>
+		////
+		<!-- dental procedure code -->
+		<!--<TableRow
+            android:layout_marginTop="5dp"
+            local:MvxBind="Visibility Visibility(ClaimSubmissionType.ID=='DENTAL');">
+            <gsc.NunitoTextView
+			    android:text="@string/TreatmentDetailsProcedureCode"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                local:MvxBind="Text ProcedureCode;" />
+        </TableRow>-->
+		<!-- dental tooth code -->
+		<TableRow
+            android:layout_marginTop="5dp"
+            local:MvxBind="Visibility Visibility(IsToothCodeRequired);">
+            <gsc.NunitoTextView
+			    android:text="@string/TreatmentDetailsToothCode"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                local:MvxBind="Text ToothCode;" />
+        </TableRow>
+		<!-- dental tooth surfaces -->
+		<TableRow
+            android:layout_marginTop="5dp"
+            local:MvxBind="Visibility Visibility(IsToothSurfaceRequired);">
+            <gsc.NunitoTextView
+			    android:text="@string/TreatmentDetailsToothSurface"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                local:MvxBind="Text ToothSurface;" />
+        </TableRow>
+		<!-- dentists fee -->
+		<TableRow
+            android:layout_marginTop="5dp"
+            local:MvxBind="Visibility Visibility(ClaimSubmissionType.ID=='DENTAL');">
+            <gsc.NunitoTextView
+			    android:text="@string/TreatmentDetailsDentistFee"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                local:MvxBind="Text '$'+ DentistFees;" />
+        </TableRow>
+        <!-- laboratory charge -->
+		<TableRow
+            android:layout_marginTop="5dp"
+            local:MvxBind="Visibility Visibility(IsLaboratoryChargesRequired);">
+            <gsc.NunitoTextView
+			    android:text="@string/TreatmentDetailsLabCharge"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:lines="1"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMaxTextSize="13sp"                                    
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMaxTextSize="13sp"                                    
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                local:MvxBind="Text '$'+ LaboratoryCharges;" />
+        </TableRow>
+		////
+        <TableRow
+            android:layout_marginTop="5dp"
+            local:MvxBind="Visibility Visibility(IsPickupDateVisible);">
+            <gsc.NunitoTextView
+                android:text="@string/claimTreatmentPickupDateLabelPhone"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                local:MvxBind="Text Format('{0:MMMM dd, yyy}',PickupDate);" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp"
+            local:MvxBind="Visibility Visibility(IsTreatmentAmountVisible);">
+            <gsc.NunitoTextView
+                android:text="@string/claimTreatmentTotalLabelPhone"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                local:MvxBind="Visible And(ClaimSubmissionType.ID!='MI',ClaimSubmissionType.ID!='EYEEXAM',ClaimSubmissionType.ID!='CONTACTS',ClaimSubmissionType.ID!='GLASSES');" />
+        <!--            <gsc.NunitoTextView
+                android:text="@string/claimTreatmentTotalChargedMILabelPhone"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                local:MvxBind="Visible (ClaimSubmissionType.ID=='MI');" />-->
+            <gsc.NunitoTextView
+                android:text="@string/claimTreatmentTotalAmountExaminationLabelPhone"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:lines="1"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMaxTextSize="13sp"                                                            
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                local:MvxBind="Visible (ClaimSubmissionType.ID=='EYEEXAM');" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                local:MvxBind="Text '$'+ TreatmentAmountListViewItem;Visible And(ClaimSubmissionType.ID!='CONTACTS',ClaimSubmissionType.ID!='GLASSES');" />
+        </TableRow>
+        <!-- amount paid by alternate carrier -->
+		<TableRow
+            android:layout_marginTop="5dp"
+            local:MvxBind="Visibility Visibility(IsAlternateCarrierPaymentVisible);">
+            <gsc.NunitoTextView
+				android:text="@string/TreatmentDetailsAmountPaidAlt"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                local:MvxBind="Text '$'+ AlternateCarrierPayment;" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp"
+            local:MvxBind="Visibility Visibility(IsAmountPaidByPPorGPVisible);">
+            <gsc.NunitoTextView
+				android:text="@string/TreatmentDetailsAmountPaidGP"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                local:MvxBind="Text '$'+ AmountPaidByPPorGP;" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp"
+            local:MvxBind="Visibility Visibility(IsTotalAmountChargedForMIVisible);">
+            <gsc.NunitoTextView
+                android:text="@string/claimTreatmentTotalChargedMILabelPhone"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                local:MvxBind="Text '$'+ TreatmentAmount;" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp"
+            local:MvxBind="Visibility Visibility(IsQuantityVisible);">
+            <gsc.NunitoTextView
+                android:text="@string/claimTreatmentQtyLabelPhone"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                local:MvxBind="Text Quantity" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp"
+            local:MvxBind="Visibility Visibility(IsGSTHSTIncludedInTotalVisible);">
+            <gsc.NunitoTextView
+                android:text="@string/claimTreatmentGSTLabelPhone"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                local:MvxBind="Text GSTHSTIncludedInTotal,Converter=BooleanToText" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp"
+            local:MvxBind="Visibility Visibility(IsPSTIncludedInTotalVisible);">
+            <gsc.NunitoTextView
+                android:text="@string/claimTreatmentPSTLabelPhone"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                local:MvxBind="Text PSTIncludedInTotal,Converter=BooleanToText" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp"
+            local:MvxBind="Visibility Visibility(IsHasReferralBeenPreviouslySubmittedVisible);">
+            <gsc.NunitoTextView
+                android:text="@string/claimMedicalReferralView_MedicalReferralSubmitted"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                local:MvxBind="Text HasReferralBeenPreviouslySubmitted,Converter=BooleanToText" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp"
+            local:MvxBind="Visibility Visibility(IsDateOfReferralVisible);">
+            <gsc.NunitoTextView
+                android:text="@string/claimMedicalReferralView_ReferralDate"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                local:MvxBind="Text Format('{0:MMMM dd, yyy}',DateOfReferral);" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp"
+            local:MvxBind="Visibility Visibility(IsTypeOfMedicalProfessionalVisible);">
+            <gsc.NunitoTextView
+                android:text="@string/claimMedicalReferralView_MedicalProfessional"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                local:MvxBind="Text TypeOfMedicalProfessional.Name" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp"
+            local:MvxBind="Visibility Visibility(IsDateOfMonthlyTreatmentVisible);">
+            <gsc.NunitoTextView
+                android:text="@string/claimTreatmentMonthlyDateLabelPhone"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                local:MvxBind="Text Format('{0:MMMM dd, yyy}',DateOfMonthlyTreatment);" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp"
+            local:MvxBind="Visibility Visibility(IsOrthodonticMonthlyFeeVisible);">
+            <gsc.NunitoTextView
+                android:text="@string/claimTreatmentOrthodonticFeeLabelPhone"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                local:MvxBind="Text  '$'+ OrthodonticMonthlyFee" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp"
+            local:MvxBind="Visibility Visibility(IsDateOfPurchaseVisible);">
+            <gsc.NunitoTextView
+                android:text="@string/claimTreatmentDateOfPurchaseLabelPhone"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                local:MvxBind="Text Format('{0:MMMM dd, yyy}',DateOfPurchase);" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp"
+            local:MvxBind="Visibility Visibility(IsTypeOfEyewearVisible);">
+            <gsc.NunitoTextView
+                android:text="@string/claimTreatmentTypeEyewearLabelPhone"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                local:MvxBind="Text TypeOfEyewear.Name" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp"
+            local:MvxBind="Visibility Visibility(IsAcknowledgeEyewearIsCorrectiveVisible);">
+            <gsc.NunitoTextView
+                android:text="@string/claimTreatmentAckLabelPhone"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                local:MvxBind="Text AcknowledgeEyewearIsCorrective, Converter=BooleanToText;" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp"
+            local:MvxBind="Visibility Visibility(IsTypeOfLensVisible);">
+            <gsc.NunitoTextView
+                android:text="@string/claimTreatmentLenstypeLabel"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                local:MvxBind="Text TypeOfLens.Name" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp"
+            local:MvxBind="Visible Or(ClaimSubmissionType.ID=='CONTACTS',And(ClaimSubmissionType.ID=='GLASSES',IsTotalAmountChargedVisible));">
+            <gsc.NunitoTextView
+                android:text="@string/claimTreatmentTotalChargedLabelPhone"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                local:MvxBind="Text '$'+ TreatmentAmount" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp"
+            local:MvxBind="Visibility Visibility(IsFrameAmountVisible);">
+            <gsc.NunitoTextView
+                android:text="@string/claimTreatmentFrameAmountLabelPhone"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                local:MvxBind="Text  '$'+ FrameAmount" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp"
+            local:MvxBind="Visibility Visibility(IsEyeglassLensesAmountVisible);">
+            <gsc.NunitoTextView
+                android:text="@string/claimTreatmentEyeglassAmountLabelPhone"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                local:MvxBind="Text  '$'+ EyeglassLensesAmount" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp"
+            local:MvxBind="Visibility Visibility(IsFeeAmountVisible);">
+            <gsc.NunitoTextView
+                android:text="@string/claimTreatmentFeeAmountLabelPhone"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                local:MvxBind="Text  '$'+ FeeAmount" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp"
+            local:MvxBind="Visibility Visibility(IsDateOfExaminationVisible);">
+            <gsc.NunitoTextView
+                android:text="@string/claimTreatmentDateOfExaminationLabelPhone"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:lines="1"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMaxTextSize="13sp"                                                                                            
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                local:MvxBind="Text Format('{0:MMMM dd, yyy}',DateOfExamination);" />
+        </TableRow>
+    <!--Prescription details-->
+        <TableRow
+            android:layout_marginTop="5dp"
+            local:MvxBind="Visibility Visibility(IsPrescriptionDetailsVisible);">
+            <gsc.NunitoTextView
+                android:text="@string/leftSphereLabel"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:maxLines="2"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                local:MvxBind="Visible LeftSphere,Converter=NullToVisible;" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                local:MvxBind="Text LeftSphere.Name;Visible LeftSphere,Converter=NullToVisible;" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp"
+            local:MvxBind="Visibility Visibility(IsPrescriptionDetailsVisible);">
+            <gsc.NunitoTextView
+                android:text="@string/rightSphereLabel"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:maxLines="2"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                local:MvxBind="Visible RightSphere,Converter=NullToVisible;" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                local:MvxBind="Text RightSphere.Name;Visible RightSphere,Converter=NullToVisible;" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp"
+            local:MvxBind="Visibility Visibility(IsPrescriptionDetailsVisible);">
+            <gsc.NunitoTextView
+                android:text="@string/leftCylinderLabel"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:maxLines="2"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                local:MvxBind="Visible LeftCylinder,Converter=NullToVisible;" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                local:MvxBind="Text LeftCylinder.Name;Visible LeftCylinder,Converter=NullToVisible;" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp"
+            local:MvxBind="Visibility Visibility(IsPrescriptionDetailsVisible);">
+            <gsc.NunitoTextView
+                android:text="@string/rightCylinderLabel"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:maxLines="2"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                local:MvxBind="Visible RightCylinder,Converter=NullToVisible;" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                local:MvxBind="Text RightCylinder.Name;Visible RightCylinder,Converter=NullToVisible;" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp"
+            local:MvxBind="Visibility Visibility(IsPrescriptionDetailsVisible);">
+            <gsc.NunitoTextView
+                android:text="@string/leftAxisLabel"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:maxLines="2"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                local:MvxBind="Visible LeftAxis,Converter=NullToVisible;" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                local:MvxBind="Text LeftAxis.Name;Visible LeftAxis,Converter=NullToVisible;" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp"
+            local:MvxBind="Visibility Visibility(IsPrescriptionDetailsVisible);">
+            <gsc.NunitoTextView
+                android:text="@string/rightAxisLabel"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:maxLines="2"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                local:MvxBind="Visible RightAxis,Converter=NullToVisible;" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                local:MvxBind="Text RightAxis.Name;Visible RightAxis,Converter=NullToVisible;" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp"
+            local:MvxBind="Visibility Visibility(IsPrescriptionDetailsVisible);">
+            <gsc.NunitoTextView
+                android:text="@string/leftPrismLabel"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:maxLines="2"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                local:MvxBind="Visible LeftPrism,Converter=NullToVisible;" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                local:MvxBind="Text LeftPrism.Name;Visible LeftPrism,Converter=NullToVisible;" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp"
+            local:MvxBind="Visibility Visibility(IsPrescriptionDetailsVisible);">
+            <gsc.NunitoTextView
+                android:text="@string/rightPrismLabel"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:maxLines="2"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                local:MvxBind="Visible RightPrism,Converter=NullToVisible;" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                local:MvxBind="Text RightPrism.Name;Visible RightPrism,Converter=NullToVisible;" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp"
+            local:MvxBind="Visibility Visibility(IsPrescriptionDetailsVisible);">
+            <gsc.NunitoTextView
+                android:text="@string/leftBifocalLabel"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:maxLines="2"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                local:MvxBind="Visible LeftBifocal,Converter=NullToVisible;" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                local:MvxBind="Text LeftBifocal.Name;Visible LeftBifocal,Converter=NullToVisible;" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp"
+            local:MvxBind="Visibility Visibility(IsPrescriptionDetailsVisible);">
+            <gsc.NunitoTextView
+                android:text="@string/rightBifocalLabel"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:maxLines="2"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                local:MvxBind="Visible RightBifocal,Converter=NullToVisible;" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                local:MvxBind="Text RightBifocal.Name;Visible RightBifocal,Converter=NullToVisible;" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

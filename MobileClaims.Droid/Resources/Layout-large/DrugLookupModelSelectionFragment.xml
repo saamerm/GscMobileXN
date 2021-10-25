@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:id="@+id/frameLayout1">
+            <gsc.HeaderTextView
+                android:id="@+id/drugsOnTheGoLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/drugsOnTheGo"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAllCaps="true" />
+            <gsc.TitleTextView
+                android:id="@+id/mode_lookup_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/drugLookupModelSelectionLabel"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp"
+                android:textAllCaps="true" />
+            <gsc.SubtitleTextView
+                android:id="@+id/mode_lookup_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/chooseDrugSubHeading"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp"
+                android:textAllCaps="true" />
+            <MvvmCross.Platforms.Android.Binding.Views.MvxListView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="false"
+                android:id="@+id/drug_lookup_type"
+                android:scrollbarStyle="outsideOverlay"
+                android:choiceMode="singleChoice"
+                android:background="@android:color/transparent"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="15dp"
+                android:textColor="@drawable/gsc_button_text_color"
+                local:MvxBind="ItemsSource Modes; ItemClick NavigateBySelectedModeCommand"
+                local:MvxItemTemplate="@layout/item_drug_lookup_type"
+                android:paddingTop="20dp" />
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/dugsdontwork" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

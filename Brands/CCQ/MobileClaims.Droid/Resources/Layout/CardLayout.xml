@@ -1,0 +1,180 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1250:762"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:context=".MainActivity">
+
+            <ffimageloading.cross.MvxCachedImageView
+                android:id="@+id/cardImageFront"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                local:MvxBind="ImagePath Card.FrontImageFilePath;" />
+
+            <!--Card details guidelines start-->
+            <android.support.constraint.Guideline
+                android:id="@+id/cardDetailsStartGuideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.086" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/insuredTopGuideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.524" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/insuredBottomGuideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.594" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/spouseTopGuideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.662" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/spouseBottomGuideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.732" />
+            <!--Card details guidelines end-->
+
+            <!--Certificate no. guidelines start-->
+            <android.support.constraint.Guideline
+                android:id="@+id/certificateStartGuideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.056" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/certificateEndGuideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.86" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/certificateTopGuideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.866" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/certificateBottomGuideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.94" />
+            <!--Certificate no. guidelines end-->
+
+            <!--Client no. guidelines start-->
+            <android.support.constraint.Guideline
+                android:id="@+id/clientStartGuideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.79" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/clientEndGuideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.95" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/clientTopGuideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.12" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/clientBottomGuideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.19" />
+            <!--Client no. guidelines end-->
+
+            <TextView
+                android:id="@+id/cardMemberNameText"
+                android:layout_width="300dp"
+                android:layout_height="0dp"
+                android:textColor="#00577E"
+                android:gravity="center_vertical"
+				android:textSize="13dp"
+                app:layout_constraintBottom_toTopOf="@id/insuredBottomGuideline"
+                app:layout_constraintStart_toEndOf="@id/cardDetailsStartGuideline"
+                app:layout_constraintTop_toTopOf="@id/insuredTopGuideline"
+                local:MvxBind="Text PlanMemberName"
+                tools:text="LEO HAMMOND" />
+
+            <TextView
+                android:id="@+id/spouseNameText"
+                android:layout_width="300dp"
+                android:layout_height="0dp"
+                android:textColor="#00577E"
+                android:gravity="center_vertical"
+				android:textSize="13dp"
+                app:layout_constraintBottom_toTopOf="@id/spouseBottomGuideline"
+                app:layout_constraintStart_toEndOf="@id/cardDetailsStartGuideline"
+                app:layout_constraintTop_toTopOf="@id/spouseTopGuideline"
+                local:MvxBind="Text PlanMemberSpouseName"
+                tools:text="ALISA HAMMOND" />
+
+            <TextView
+                android:id="@+id/policyNoCertificateNoText"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+				android:gravity="center_vertical"
+                android:textColor="#00577E"
+				android:textSize="12dp"
+                app:layout_constraintBottom_toTopOf="@id/certificateBottomGuideline"
+                app:layout_constraintEnd_toStartOf="@id/certificateEndGuideline"
+                app:layout_constraintStart_toEndOf="@id/certificateStartGuideline"
+                app:layout_constraintTop_toTopOf="@id/certificateTopGuideline"
+                local:MvxBind="Text BottomCardText"
+                tools:text="POLICY NO: CCQ CERTIFICATE NO: 1230004" />
+
+            <TextView
+                android:id="@+id/clientNoText"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_vertical|end"
+                android:textColor="#00577E"
+				android:textSize="12dp"
+                app:layout_constraintBottom_toTopOf="@id/clientBottomGuideline"
+                app:layout_constraintEnd_toStartOf="@id/clientEndGuideline"
+                app:layout_constraintStart_toEndOf="@id/clientStartGuideline"
+                app:layout_constraintTop_toTopOf="@id/clientTopGuideline"
+                local:MvxBind="Text CertificateNo"
+                tools:text="1230004" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+
+</merge>

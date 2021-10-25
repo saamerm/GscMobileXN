@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:local="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:background="@color/white"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:scrollbars="none">
+		<include
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			layout="@layout/directdepositheaderlayout"
+			android:id="@+id/include1" />
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_marginTop="10dp"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:background="#F2F2F2">
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:contentDescription="Warning symbol"
+				android:gravity="center_vertical"
+				android:tint="@color/dark_red"
+				android:src="@android:drawable/stat_sys_warning"
+				android:padding="10dp"/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:gravity="center_vertical"
+				android:fontFamily="@font/nunitosansbold"
+				android:textColor="#555555"
+				android:textSize="14sp"
+				local:MvxBind="Text ErrorTitle"
+				android:text="Our records indicate that the Transit Number and/or Bank Number may not be valid."
+				android:ellipsize="end"
+				android:lines="3"
+				android:maxLines="3"
+				android:breakStrategy="simple"
+				android:padding="10dp"/>
+		</LinearLayout>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="22dp"
+			android:textSize="14sp"
+			android:fontFamily="@font/nunitosansregular"			
+			android:text="Please make sure your bank account information is correct. 
+
+If you're uncertain, we suggest that you contact your financial institution to confirm before proceeding. 
+
+Click CONTINUE if the information you submitted is correct. If you would like to make changes, please click CHANGE INFORMATION."
+			android:id="@+id/textView1"
+			local:MvxBind="Text ErrorParagraph"		
+			android:textColor="#6B6B6B"
+			/>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingLeft="22dp"
+			android:paddingBottom="22dp"
+			android:paddingRight="22dp"
+			android:textSize="14sp"
+			android:fontFamily="@font/nunitosansregular"			
+			android:text="If you decide to save the bank account information you have entered, your direct deposit payment may be rejected by your financial institution. If so, we will issue a cheque in its place."
+			android:id="@+id/textView1"
+			local:MvxBind="Text ErrExplaination"		
+			android:textColor="#FF0000"
+			/>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingLeft="22dp"
+			android:fontFamily="@font/nunitosansblack"
+			android:textColor="@color/brand_color"
+			android:textSize="14sp"
+			local:MvxBind="Text ErrBankInfo"
+			android:text="Bank Account Information"/>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingTop="22dp"
+			android:paddingLeft="22dp"
+			android:textSize="14sp"
+			android:textColor="#555555"
+			local:MvxBind="Text TransitNumberTitle"
+			android:fontFamily="@font/nunitosansregular"
+			android:text="Transit Number"/>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingLeft="22dp"
+			android:textSize="14sp"
+			android:textColor="@color/black"
+			local:MvxBind="Text TransitNumber"	
+			android:fontFamily="@font/nunitosansblack"
+			android:text="12345"/>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingTop="22dp"
+			android:textSize="14sp"
+			android:textColor="#555555"
+			local:MvxBind="Text BankNumberTitle"				
+			android:fontFamily="@font/nunitosansregular"			
+			android:paddingLeft="22dp"
+			android:text="Bank Number"/>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingLeft="22dp"
+			android:paddingRight="22dp"
+			local:MvxBind="Text BankNumber"				
+			android:textSize="14sp"
+			android:textColor="@color/black"
+			android:fontFamily="@font/nunitosansblack"
+			android:text="12345 - asf asf asf as as fs af a sf as fasfadsg sdg sdg sdgsdgsd gsdfsdfsd
+sfasf"/>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingTop="22dp"
+			android:paddingLeft="22dp"
+			android:textSize="14sp"
+			local:MvxBind="Text AccountNumberTitle"				
+			android:textColor="#555555"
+			android:fontFamily="@font/nunitosansregular"			
+			android:text="Account Number"/>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingLeft="22dp"
+			local:MvxBind="Text AccountNumber"			
+			android:textSize="14sp"
+			android:textColor="@color/black"
+			android:fontFamily="@font/nunitosansblack"
+			android:text="12345"/>
+		<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+			android:paddingTop="75dp"
+			android:paddingLeft="14dp"
+			android:paddingRight="14dp"
+			android:paddingBottom="50dp"
+			android:orientation="horizontal">
+			<Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:fontFamily="@font/leaguegothic"		
+				android:layout_marginRight="3.5dp"
+				android:textColor="@color/white"
+				android:textSize="20sp"
+				android:lines="1"
+                android:autoSizeMaxTextSize="20sp"                
+                android:layout_gravity="center_vertical"
+                android:autoSizeTextType="uniform"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+				android:background="@color/brand_color"
+				local:MvxBind="Text ChangeInformationTitle; Click ChangeInformationCommand"
+				android:text="CHANGE INFORMATION"/>
+			<Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:textSize="20sp"
+				android:lines="1"
+                android:autoSizeMaxTextSize="20sp"                
+                android:layout_gravity="center_vertical"
+                android:autoSizeTextType="uniform"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+				android:fontFamily="@font/leaguegothic"
+				android:textColor="@color/white"
+				android:background="@color/brand_color"
+				android:layout_marginLeft="3.5dp"
+				local:MvxBind="Text ContinueTitle; Click ContinueCommand"		
+				android:text="CONTINUE"/>
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>

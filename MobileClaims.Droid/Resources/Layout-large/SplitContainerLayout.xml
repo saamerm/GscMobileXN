@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res/MobileClaims.Droid"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <FrameLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="60.0"
+        android:background="@color/background_color"
+        android:id="@+id/left_view_container" />
+    <FrameLayout
+        android:orientation="horizontal"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:id="@+id/split_divider" />
+    <FrameLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="40.0"
+        android:background="@color/background_color"
+        android:id="@+id/right_view_container" />
+</LinearLayout>

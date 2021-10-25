@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gsc.CheckableLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="115dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/single_select_item_background"
+    android:gravity="center_vertical">
+    <gsc.NunitoTextView
+        local:MvxBind="Text DoctorName"
+        android:gravity="left"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@drawable/gsc_list_text_color"
+        android:textSize="18sp"
+        android:paddingLeft="20dp" />
+    <gsc.NunitoTextView
+        local:MvxBind="Text Address"
+        android:gravity="left"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@drawable/gsc_list_text_color"
+        android:textSize="13sp"
+        android:paddingLeft="30dp" />
+    <gsc.NunitoTextView
+        local:MvxBind="Text FormattedAddress"
+        android:gravity="left"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@drawable/gsc_list_text_color"
+        android:textSize="13sp"
+        android:paddingLeft="30dp" />
+    <gsc.NunitoTextView
+        local:MvxBind="Text Phone"
+        android:gravity="left"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@drawable/gsc_list_text_color"
+        android:textSize="13sp"
+        android:paddingLeft="30dp" />
+</gsc.CheckableLinearLayout>

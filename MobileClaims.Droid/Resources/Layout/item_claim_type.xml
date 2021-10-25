@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/ListItemBackground">
+    <gsc.LeagueTextView
+        android:id="@+id/text1"
+        android:textColor="@drawable/gsc_list_text_color"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:height="50dp"
+        android:textSize="29sp"
+        android:textColorHighlight="@color/white"
+        local:MvxBind="Text Name"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textAllCaps="true" />
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_weight="1.0"
+            android:layout_height="match_parent">
+            <BindableWebView
+                android:id="@+id/webViewAgreement"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:textSize="12.0dp"
+                android:textColor="@color/dark_grey"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                local:MvxBind="TextAlteration TextAlteration" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/chk_container"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <gsc.GSCButton
+                android:text="@string/accept"
+                android:background="@drawable/ButtonBackground"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:layout_centerHorizontal="true"
+                local:MvxBind="Click AcceptTermsAndConditionsCommand"
+                android:id="@+id/accept_button"
+                android:layout_gravity="center"
+                android:textColor="@drawable/ButtonTextColor"
+                android:gravity="center"
+                android:layout_margin="10dp" />
+            <gsc.GSCButton
+                android:text="@string/reject"
+                android:background="@drawable/ButtonBackground"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:layout_margin="10dp"
+                android:layout_centerHorizontal="true"
+                local:MvxBind="Click CancelTermsAndConditionsCommand"
+                android:id="@+id/reject_button"
+                android:layout_gravity="center"
+                android:textColor="@drawable/ButtonTextColor"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <gsc.HeaderTextView
+            android:id="@+id/locateProviderFindProviderText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/locateProviders"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAllCaps="true" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:layout_weight="0.6">
+            <gsc.TitleTextView
+                android:id="@+id/searchProviderSearchedLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/searchProviderSearchedLabel"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp"
+                android:textAllCaps="true" />
+            <gsc.SubtitleTextView
+                android:id="@+id/searchProviderSearchedFirstLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp"
+                android:textAllCaps="true" />
+            <gsc.SubtitleTextView
+                android:id="@+id/searchProviderSearchedSecondLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp"
+                android:textAllCaps="true" />
+            <gsc.SubtitleTextView
+                android:id="@+id/searchProviderSearchedThirdLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp"
+                android:textAllCaps="true" />
+            <gsc.SubtitleTextView
+                android:id="@+id/searchProviderSearchedFourthLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp"
+                android:textAllCaps="true" />
+            <gsc.SingleSelectMvxListView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/locateProviderSearchByText"
+                android:id="@+id/serviceProviderLocatedListView"
+                android:choiceMode="singleChoice"
+                android:cacheColorHint="@android:color/transparent"
+                android:background="@android:color/transparent"
+                android:divider="@android:color/transparent"
+                android:drawSelectorOnTop="false"
+                android:scrollbarStyle="outsideOverlay"
+                android:dividerHeight="10dp"
+                android:layout_gravity="center"
+                android:listSelector="@android:color/transparent"
+                local:MvxBind="ItemsSource ServiceProviders; ItemClick ShowMapViewCommand"
+                local:MvxItemTemplate="@layout/item_service_provider_results"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HealthProviderTypeParentViewCell" rowHeight="65" id="cxk-wN-pdQ" customClass="HealthProviderTypeParentViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cxk-wN-pdQ" id="YTl-1W-gDM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="64.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6qg-Pw-fdd" customClass="MvxCachedImageView">
+                        <rect key="frame" x="8" y="15.5" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="kya-iW-fya"/>
+                            <constraint firstAttribute="height" constant="35" id="pbC-Ei-Ls1"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDt-fY-xbY">
+                        <rect key="frame" x="47" y="23.5" width="42" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="3UW-gf-Nd5">
+                        <rect key="frame" x="99" y="12.5" width="15" height="42"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="rnj-ps-wzK"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TD6-Vn-IMe">
+                        <rect key="frame" x="0.0" y="11.5" width="254" height="55"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gyj-ZV-Wla" customClass="ExpandButton">
+                        <rect key="frame" x="254" y="11.5" width="50" height="44.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="7ts-P0-dla"/>
+                        </constraints>
+                        <state key="normal" image="ArrowDown"/>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jRN-wp-MNj">
+                        <rect key="frame" x="0.0" y="65.5" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.59215686274509804" green="0.59215686274509804" blue="0.59215686274509804" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="177-7a-yZT"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="gDt-fY-xbY" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="topMargin" constant="12" id="0Oq-1W-hcj"/>
+                    <constraint firstAttribute="bottom" secondItem="TD6-Vn-IMe" secondAttribute="bottom" id="2KJ-L1-u0O"/>
+                    <constraint firstItem="gDt-fY-xbY" firstAttribute="leading" secondItem="6qg-Pw-fdd" secondAttribute="trailingMargin" constant="12" id="6xT-AT-4cd"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="gDt-fY-xbY" secondAttribute="bottom" constant="12" id="Ae6-cS-MLP"/>
+                    <constraint firstItem="TD6-Vn-IMe" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="topMargin" id="Gf1-Dv-axi"/>
+                    <constraint firstItem="6qg-Pw-fdd" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" constant="15" id="Gnf-lF-tL7"/>
+                    <constraint firstAttribute="bottom" secondItem="jRN-wp-MNj" secondAttribute="bottom" id="KKZ-0K-73T"/>
+                    <constraint firstItem="3UW-gf-Nd5" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" constant="12" id="LWd-Lb-aV4"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Gyj-ZV-Wla" secondAttribute="trailing" id="MMj-pg-OjL"/>
+                    <constraint firstItem="6qg-Pw-fdd" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="8" id="TDs-gH-Rm9"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Gyj-ZV-Wla" secondAttribute="bottom" id="Woy-1I-ffq"/>
+                    <constraint firstAttribute="bottom" secondItem="6qg-Pw-fdd" secondAttribute="bottom" constant="15" id="XRl-5c-7QG"/>
+                    <constraint firstItem="Gyj-ZV-Wla" firstAttribute="leading" secondItem="TD6-Vn-IMe" secondAttribute="trailing" id="Yjv-fK-EbM"/>
+                    <constraint firstAttribute="bottom" secondItem="3UW-gf-Nd5" secondAttribute="bottom" constant="12" id="a9w-y3-Lg8"/>
+                    <constraint firstItem="Gyj-ZV-Wla" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="topMargin" id="cgB-XT-V7k"/>
+                    <constraint firstItem="jRN-wp-MNj" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" id="pXb-RE-D7B"/>
+                    <constraint firstAttribute="trailing" secondItem="jRN-wp-MNj" secondAttribute="trailing" id="trD-oh-0TZ"/>
+                    <constraint firstItem="3UW-gf-Nd5" firstAttribute="leading" secondItem="gDt-fY-xbY" secondAttribute="trailing" constant="10" id="wQG-0H-u9l"/>
+                    <constraint firstItem="TD6-Vn-IMe" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" id="yho-FM-iQi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="checkedImage" destination="3UW-gf-Nd5" id="sK4-wL-OnJ"/>
+                <outlet property="expandButton" destination="Gyj-ZV-Wla" id="Q8Q-Pe-kLI"/>
+                <outlet property="providerTypeImage" destination="6qg-Pw-fdd" id="Eoa-p8-Y3M"/>
+                <outlet property="selectButton" destination="TD6-Vn-IMe" id="8J8-Ck-flV"/>
+                <outlet property="titleLabel" destination="gDt-fY-xbY" id="VAU-0r-LM0"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="53.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ArrowDown" width="17" height="10"/>
+        <image name="Checkmark" width="33" height="25"/>
+    </resources>
+</document>

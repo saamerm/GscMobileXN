@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none"
+            android:isScrollContainer="true">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_color">
+                <gsc.HeaderTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/claim_margin"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    local:MvxBind="Text TitleLabel"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:textAllCaps="true" />
+            <!-- <gsc.GSCSmallButton
+                    android:text="@string/claimTreatmentAddLabel"
+                    android:background="@drawable/ButtonBackground"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dp"
+                    android:layout_centerHorizontal="true"
+                    local:MvxBind="Click AddCommand;"
+                    android:id="@+id/addClaimBtn"
+                    android:layout_gravity="right"
+                    android:textColor="@drawable/ButtonTextColor"
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:padding="3dp"
+                    android:textColorHighlight="@color/list_text_color"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true" />-->
+                <gsc.GSCSmallButton
+                    android:text="@string/claimTreatmentAddLabel"
+                    android:background="@drawable/ButtonBackground"
+                    android:layout_width="@dimen/provider_list_item_height"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/claim_minheight"
+                    android:layout_centerHorizontal="true"
+                    local:MvxBind="Visible IsAddButtonVisible; "
+                    android:id="@+id/addClaimBtn"
+                    android:layout_gravity="right"
+                    android:textColor="@drawable/ButtonTextColor"
+                    android:textSize="13sp"
+                    android:padding="@dimen/claim_rev_h"
+                    android:textColorHighlight="@color/list_text_color"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="@dimen/claim_marg_top"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <gsc.NunitoTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_gravity="center"
+                local:MvxBind="Visibility InvertedVisibility(IsAddButtonVisible);Click AddCommand; Text MoreThanFiveClaimsLabel" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_color"
+                android:layout_marginBottom="@dimen/claim_text_desc_marg"
+                android:orientation="vertical">
+                <gsc.TitleTextView
+                    android:id="@+id/claim_treatment_details_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/claim_text_desc_marg"
+                    android:text="@string/claimDetailsNameTitle"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:layout_marginLeft="@dimen/claim_margin"
+                    android:layout_marginRight="@dimen/claim_margin"
+                    android:textAllCaps="true" />
+                <gsc.NunitoTextView
+                    android:id="@+id/longPressDeleteLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/claimTreatmentLongpressDelete"
+                    android:textColor="@color/med_grey"
+                    android:textSize="13sp"
+                    android:gravity="left"
+                    android:layout_marginLeft="@dimen/claim_margin"
+                    android:layout_marginRight="@dimen/claim_margin"
+                    android:layout_marginTop="@dimen/claim_text_desc_marg" />
+                <gsc.SingleSelectMvxListView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/claim_review_hcsa"
+                    android:scrollbarStyle="outsideOverlay"
+                    android:choiceMode="singleChoice"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="@dimen/claim_text_desc_marg"
+                    local:MvxBind="ItemsSource Claim.Details; ItemLongClick RemoveCommand; ItemClick EditCommand"
+                    local:MvxItemTemplate="@layout/item_claim_review"
+                    android:paddingTop="@dimen/claim_text_desc_marg" />
+                <gsc.GSCButton
+                    android:text="@string/claimSubmitClaimContinueLabel"
+                    android:background="@drawable/ButtonBackground"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="@dimen/claim_width_review"
+                    android:layout_height="@dimen/list_item_height_drugConfirm"
+                    android:paddingLeft="@dimen/claim_review_padding"
+                    android:paddingRight="@dimen/claim_review_padding"
+                    android:layout_centerHorizontal="true"
+                    local:MvxBind="Click ConfirmClaimSummaryCommand;"
+                    android:id="@+id/claimSubmitClaim"
+                    android:layout_gravity="center"
+                    android:textColor="@drawable/ButtonTextColor"
+                    android:gravity="center"
+                    android:textSize="24sp"
+                    android:textColorHighlight="@color/list_text_color"
+                    android:layout_marginTop="@dimen/claim_margin"
+                    android:imeOptions="actionDone"
+                    android:textAllCaps="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

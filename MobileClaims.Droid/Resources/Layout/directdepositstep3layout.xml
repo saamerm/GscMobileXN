@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    
+    android:orientation="vertical"
+    android:paddingStart="20dp"
+    android:paddingBottom="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/step3ParentRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13.5dp">
+
+        <ImageView
+            android:id="@+id/stepThreeIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16.5dp"
+            android:layout_marginRight="11.5dp"
+            android:src="@drawable/round_checkbox_unselected" />
+
+        <gsc.NunitoTextViewHeavy
+            android:id="@+id/stepThreeNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/claim_review_zero"
+            android:layout_toRightOf="@id/stepThreeIcon"
+            android:gravity="center_vertical"
+            android:paddingRight="4dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            local:MvxBind="Text Step3" />
+
+        <gsc.NunitoTextViewHeavy
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/claim_review_zero"
+            android:layout_toLeftOf="@id/step3ImageView"
+            android:layout_toRightOf="@id/stepThreeNumber"
+            android:gravity="left"
+            android:textColor="@color/brand_color"
+            android:paddingRight="4dp"
+            android:textSize="14sp"
+            local:MvxBind="Text Step3Title" />
+
+        <ImageView
+            android:id="@+id/step3ImageView"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="24dp"
+            android:src="@drawable/arrow_down_gray" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/StepThreeLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15.5dp"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/StepThreeConsentLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="133dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/customborder"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/StepThreeConsentIndictor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20.5dp"
+                android:src="@drawable/large_round_checkbox_unselected"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/claim_review_zero"
+                android:gravity="left"
+                android:text="asfa asfasf"
+                android:fontFamily="@font/nunitosansregular"
+                android:paddingRight="4dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                local:MvxBind="Text OptInForEmailNotification" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/StepThreeConsentLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="133dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/customborder"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/StepThreeConsentIndictor2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20.5dp"
+                android:src="@drawable/large_round_checkbox_unselected" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/claim_review_zero"
+                android:gravity="left"
+                android:text="tex as t"
+                android:fontFamily="@font/nunitosansregular"
+                android:paddingRight="4dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                local:MvxBind="Text OptOutOfEmailNotification" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

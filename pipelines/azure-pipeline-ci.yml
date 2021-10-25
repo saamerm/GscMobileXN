@@ -1,0 +1,16 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger: none
+
+pool:
+  vmImage: 'windows-latest'
+
+steps:
+- script: 'curl -LJO https://github.com/whitesource/unified-agent-distribution/releases/latest/download/wss-unified-agent.jar' 
+  displayName: 'Download the latest Unified Agent'
+
+- script: 'java -jar wss-unified-agent.jar -c wss-unified-agent.config'
+  displayName: 'Run Unified Agent Scan'

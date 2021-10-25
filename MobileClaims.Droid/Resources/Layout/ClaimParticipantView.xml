@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <mvvmcross.platforms.android.binding.views.MvxListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/claim_participant"
+        android:scrollbarStyle="outsideOverlay"
+        android:choiceMode="singleChoice"
+        android:background="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:listSelector="@android:color/transparent"
+        local:MvxBind="ItemsSource Participants; ItemClick SelectParticipantAndNavigateCommand;"
+        local:MvxItemTemplate="@layout/item_participant_name"
+        android:paddingTop="20dp" />
+</LinearLayout>

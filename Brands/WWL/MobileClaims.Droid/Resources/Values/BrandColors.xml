@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+  <color name="highlight_color">#0280C8</color>
+  <color name="highlight_color_bottom_menu">#003D60</color>
+  <color name="apptheme_color">#0280C8</color>
+  <color name="button_font_color">#FFFFFF</color>
+  <color name="brand_color">#0280C8</color>
+
+</resources>

@@ -1,0 +1,77 @@
+<android.support.v4.widget.NestedScrollView  
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">	
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			local:MvxBind="Visibility Visibility(HasAnyClaims)">
+			<gsc.LeagueTextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp"	
+				android:textColor="@color/highlight_color"
+				android:layout_gravity="center"
+				android:textSize="@dimen/auditclaim_title_font_size"
+				local:MvxBind="Text Title"/>
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:background="@color/grey_background_hcsa"/>
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp"
+				android:orientation="vertical">
+				<gsc.NunitoTextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:textSize="@dimen/auditclaim_font_size"
+					android:layout_marginLeft="@dimen/auditclaim_item_margin"
+					android:layout_marginRight="@dimen/auditclaim_item_margin"
+					local:MvxBind="Text PromptTextTop"/>
+				<gsc.LeagueTextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:textSize="@dimen/auditclaim_auditlist_section_font_size"
+					android:paddingTop="10dp"
+					android:text="AUDIT LIST"
+					android:layout_marginLeft="@dimen/auditclaim_item_margin"
+					android:layout_marginRight="@dimen/auditclaim_item_margin"
+					android:textColor="@color/dark_red"
+					local:MvxBind="Text Title"/>
+				<android.support.v7.widget.RecyclerView
+					android:id="@+id/auditListRecyclerView"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:nestedScrollingEnabled="false" 
+					android:paddingTop="5dp"
+					android:overScrollMode="never"/>
+				<gsc.NunitoTextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:textSize="@dimen/auditclaim_font_size"
+					android:paddingTop="10dp"
+					android:layout_marginLeft="@dimen/auditclaim_item_margin"
+					android:layout_marginRight="@dimen/auditclaim_item_margin"
+					android:text="@string/auditListNotes"/>
+			</LinearLayout>
+		</LinearLayout>	
+		<TextView
+			android:id="@+id/noAuditMessage"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="center"
+			android:padding="10dp"
+			android:textAlignment="center"
+			android:textSize="24dp"
+			android:layout_marginTop="140dp"
+			local:MvxBind="Text NoAuditMessage; Visibility InvertedVisibility(HasAnyClaims)"/>
+	</LinearLayout>
+</android.support.v4.widget.NestedScrollView>

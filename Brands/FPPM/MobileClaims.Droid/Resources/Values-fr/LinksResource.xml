@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <string name="webInstructionsLink">https://assurances.fppm.qc.ca/Account/Login?ReturnUrl=%2F</string>
+  <string name="username">NOM D\'UTILISATEUR</string>
+  <string name="webInstructions">VOUS AVEZ OUBLIÉ VOTRE NOM D\'UTILISATEUR OU VOTRE MOT DE PASSE? VOUS DEVEZ VOUS INSCRIRE?</string>
+</resources>

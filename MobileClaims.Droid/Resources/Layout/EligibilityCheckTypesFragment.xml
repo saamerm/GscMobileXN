@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+    <gsc.HeaderTextView
+        android:id="@+id/myBenefitsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+		local:MvxBind="Text MyBenefitsTitle"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textAllCaps="true" />
+    <gsc.TitleTextView
+        android:id="@+id/myBenefitsSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/locateProvidersSearchByDrugLabel"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="20dp"
+        android:textAllCaps="true"
+        android:visibility="visible" />
+    <gsc.NunitoTextView
+        android:id="@+id/noBenefits"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:layout_centerInParent="true"
+        android:text="@string/MyEligibilityNoResult"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+    <gsc.SingleSelectMvxListView
+        android:drawSelectorOnTop="false"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:choiceMode="singleChoice"
+        android:scrollbarStyle="outsideOverlay"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:layout_gravity="center"
+        local:MvxBind="ItemsSource EligibilityCheckTypes; ItemClick EligibilityCheckTypeSelectedCommand;"
+        local:MvxItemTemplate="@layout/item_eligibilitycheck_type"
+        android:paddingTop="20dp" />
+</LinearLayout>

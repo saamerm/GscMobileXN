@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/refineSearchTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/refineYourSearch"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/refineDone"
+                android:layout_alignParentRight="true"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/highlight_color"
+                android:background="@color/white"
+                local:MvxBind="Click CloseCommand" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BBBBBB" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/locationTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location"
+                android:textColor="@color/branded_text_color"
+                android:textSize="20sp"
+                android:layout_marginBottom="20dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/currentLocationButton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/location_icon"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    local:MvxBind="Click SetLocationAsCurrentLocationCommand; Background LocationAdress, Converter=LocationStringToDrawableImage" />
+                <MvxAutoCompleteTextView
+                    android:id="@+id/searchLocationEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:paddingRight="35dp"
+                    android:paddingLeft="10dp"
+                    android:background="@color/grey_background_hcsa"
+                    android:cursorVisible="false"
+                    android:imeOptions="actionDone"
+                    android:completionThreshold="1"
+                    local:MvxItemTemplate="@layout/autocomplete_list_item"
+                    local:MvxBind="ItemsSource LocationSugestions; Text LocationAdress; SelectedObject SelectedLocation;Hint LocationAutocompleteHint"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:textSize="18sp" />
+                <Button
+                    android:id="@+id/searchLocationButton"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="44dp"
+                    android:padding="6dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/clear"
+                    local:MvxBind="Click SetLocationAsCurrentLocationCommand" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BBBBBB" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/providerTypeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/providerType"
+                android:textColor="@color/branded_text_color"
+                android:textSize="20sp"
+                android:layout_marginBottom="10dp" />
+            <RelativeLayout
+                android:id="@+id/selectedProviderTypeContainer"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                local:MvxBind="Click ShowHealthProviderTypeListCommand"
+                android:paddingLeft="10dp">
+                <TextView
+                    android:id="@+id/selectedProviderTypeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="Pharmacy"
+                    android:textColor="#000000"
+                    local:MvxBind="Text ViewModelParameter.SelectedProviderType.Title"
+                    android:textSize="16sp" />
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/forward_active"
+                    local:MvxBind="Click ShowHealthProviderTypeListCommand" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BBBBBB" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp">
+            <TextView
+                android:id="@+id/filterTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/filter"
+                android:textColor="@color/branded_text_color"
+                android:textSize="20sp"
+                android:layout_marginBottom="10dp" />
+            <LinearLayout
+                android:id="@+id/starRatingLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp">
+                <ToggleButton
+                    android:id="@+id/starRatingToggleButton"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/toggle_button"
+                    android:textOff=""
+                    android:textOn=""
+                    android:layout_marginRight="10dp" />
+                <TextView
+                    android:id="@+id/qualityRatingTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qualityRating"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/branded_text_color"
+                    android:textSize="16sp" />
+                <RatingBar
+                    android:id="@+id/starRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:numStars="5"
+                    android:stepSize="1"
+                    android:layout_gravity="center_vertical"
+                    android:isIndicator="false"
+                    android:progressDrawable="@drawable/ratingbar_custom"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/recentlyVisitedToggleButtonLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+				local:MvxBind="Visibility Visibility(IsProviderNotMyFavorites)">>
+                <ToggleButton
+                    android:id="@+id/recentlyVisitedToggleButton"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/toggle_button"
+                    android:textOff=""
+                    android:textOn="" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/recentlyVisited"
+                    android:textColor="@color/branded_text_color"
+                    android:textSize="16sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp">
+                <ToggleButton
+                    android:id="@+id/directBillToggleButton"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/toggle_button"
+                    android:textOff=""
+                    android:textOn="" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/directBill"
+                    android:textColor="@color/branded_text_color"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BBBBBB" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp">
+            <TextView
+                android:id="@+id/sortTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sort"
+                android:textColor="@color/branded_text_color"
+                android:textSize="20sp"
+                android:layout_marginBottom="10dp" />
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sortNonPharmacyRadioGroup">
+                <RadioButton
+                    android:id="@+id/distanceNonPharmacyRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:buttonTint="@color/highlight_color"
+                    android:text="@string/distance"
+                    android:textSize="18sp" />
+                <RadioButton
+                    android:id="@+id/nameNonPharmacyRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:buttonTint="@color/highlight_color"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/nameRefine"
+                    android:textSize="18sp" />
+            </RadioGroup>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sortRadioGroup">
+                <RadioButton
+                    android:id="@+id/distanceRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:buttonTint="@color/highlight_color"
+                    android:text="@string/distance"
+                    android:textSize="18sp" />
+                <RadioButton
+                    android:id="@+id/ratingAndDistanceRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:buttonTint="@color/highlight_color"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/ratingAndDistance"
+                    android:textSize="18sp" />
+                <RadioButton
+                    android:id="@+id/nameRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:buttonTint="@color/highlight_color"
+                    android:text="@string/nameRefine"
+                    android:textSize="18sp" />
+                <RadioButton
+                    android:id="@+id/ratingAndNameRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:buttonTint="@color/highlight_color"
+                    android:text="@string/ratingAndName"
+                    android:textSize="18sp" />
+            </RadioGroup>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BBBBBB" />
+    </LinearLayout>
+</ScrollView>

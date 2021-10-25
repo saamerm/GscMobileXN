@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none"
+            android:isScrollContainer="true">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_color">
+                <gsc.HeaderTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/claimTreatmentLabel"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:weightSum="1">
+                <gsc.NunitoTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/claimTreatmentMonthlyDateLabel"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    local:MvxBind="TextColor Or(InvalidDateOfMonthlyTreatment,MissingDateOfMonthlyTreatment,DateTooOld), Converter=TextColorError;" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.1">
+                    <ImageButton
+                        android:id="@+id/errorButtonClick1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@null"
+                        local:MvxBind="Visibility Visibility(InvalidDateOfMonthlyTreatment);"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:src="@drawable/claims_error_icon"
+                        android:scaleType="centerInside"
+                        android:tag="@string/claimTreatmentInvalidDateOfMonthlyTreatment"
+                        android:onClick="errorClickHandler" />
+                    <ImageButton
+                        android:id="@+id/errorButtonClick2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@null"
+                        local:MvxBind="Visibility Visibility(MissingDateOfMonthlyTreatment);"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:src="@drawable/claims_error_icon"
+                        android:scaleType="centerInside"
+                        android:tag="@string/claimTreatmentMissingDateOfMonthlyTreatment"
+                        android:onClick="errorClickHandler" />
+                    <ImageButton
+                        android:id="@+id/errorButtonClick9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:background="@null"
+                        local:MvxBind="Visibility Visibility(DateTooOld);"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:src="@drawable/claims_error_icon"
+                        android:scaleType="centerInside"
+                        android:onClick="errorClickHandler"
+                        android:tag="@string/claimMonthlyPaymentDateTooOld" />
+                </LinearLayout>
+                <gsc.NunitoTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:layout_centerHorizontal="true"
+                    local:MvxBind="Text Format('{0:MMMM dd, yyy}',DateOfMonthlyTreatment);"
+                    android:id="@+id/DateOfMonthlyTreatment"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:background="@android:color/transparent"
+                    android:gravity="right"
+                    android:paddingTop="15dp"
+                    android:textSize="18sp"
+                    android:layout_marginRight="20dp" />
+            </LinearLayout>
+        <!--<LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp"
+                android:gravity="right">
+                <MvxDatePicker
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="40dp"
+                    android:calendarViewShown="false"
+                    local:MvxBind="Value DateOfMonthlyTreatment;"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true" />
+            </LinearLayout>
+-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp"
+                android:weightSum="1">
+                <gsc.NunitoTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/claimTreatmentOrthodonticFeeLabel"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    local:MvxBind="TextColor Or(InvalidOrthodonticMonthlyFee,MissingOrthodonticMonthlyFee), Converter=TextColorError;" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_weight="0.1"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp">
+                    <ImageButton
+                        android:id="@+id/errorButtonClick3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:background="@null"
+                        local:MvxBind="Visibility Visibility(InvalidOrthodonticMonthlyFee);"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:src="@drawable/claims_error_icon"
+                        android:scaleType="centerInside"
+                        android:tag="@string/claimTreatmentInvalidOrthodonticMonthlyFee"
+                        android:onClick="errorClickHandler" />
+                    <ImageButton
+                        android:id="@+id/errorButtonClick4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:background="@null"
+                        local:MvxBind="Visibility Visibility(MissingOrthodonticMonthlyFee);"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:src="@drawable/claims_error_icon"
+                        android:scaleType="centerInside"
+                        android:tag="@string/claimTreatmentMissingOrthodonticMonthlyFee"
+                        android:onClick="errorClickHandler" />
+                </LinearLayout>
+                <gsc.SmallEditText
+                    android:id="@+id/orthodonticFee"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="0.4"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/dark_grey"
+                    android:singleLine="true"
+                    android:background="@drawable/RoundEditTextNone"
+                    local:MvxBind="Text OrthodonticMonthlyFee;"
+                    android:layout_alignParentLeft="true"
+                    android:numeric="integer|decimal"
+                    android:imeOptions="actionDone" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp"
+                android:weightSum="1"
+                local:MvxBind="Visibility Visibility(AmountPaidByAlternateCarrierVisible);">
+                <gsc.NunitoTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/claimTreatmentAlternateCarrierLabel"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    local:MvxBind="TextColor TextColorError(Or(InvalidAC,MissingAC,BadValueAC))" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_weight="0.1"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp">
+                    <ImageButton
+                        android:id="@+id/errorButtonClick6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:background="@null"
+                        local:MvxBind="Visibility Visibility(InvalidAC);"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:src="@drawable/claims_error_icon"
+                        android:scaleType="centerInside"
+                        android:tag="@string/claimTreatmentInvalidTotalAC"
+                        android:onClick="errorClickHandler" />
+                    <ImageButton
+                        android:id="@+id/errorButtonClick7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:background="@null"
+                        local:MvxBind="Visibility Visibility(MissingAC);"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:src="@drawable/claims_error_icon"
+                        android:scaleType="centerInside"
+                        android:tag="@string/claimTreatmentMissingTotalAC"
+                        android:onClick="errorClickHandler" />
+                    <ImageButton
+                        android:id="@+id/errorButtonClick8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:background="@null"
+                        local:MvxBind="Visibility Visibility(BadValueAC);"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:src="@drawable/claims_error_icon"
+                        android:scaleType="centerInside"
+                        android:tag="@string/claimTreatmentBadValueAC"
+                        android:onClick="errorClickHandler" />
+                </LinearLayout>
+                <gsc.SmallEditText
+                    android:id="@+id/alternateCarrier"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="0.4"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/dark_grey"
+                    android:singleLine="true"
+                    android:background="@drawable/RoundEditTextNone"
+                    local:MvxBind="Text AmountPaidByAlternateCarrier;Enabled AmountPaidByAlternateCarrierVisible;"
+                    android:layout_alignParentLeft="true"
+                    android:numeric="integer|decimal"
+                    android:imeOptions="actionDone" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp">
+                <gsc.GSCButton
+                    android:text="@string/claimTreatmentDeleteLabel"
+                    android:background="@drawable/ButtonBackground"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    local:MvxBind="Click DeleteEntryCommand;Visibility Visibility(EditMode);"
+                    android:id="@+id/claimDeleteTreatment"
+                    android:layout_gravity="center"
+                    android:textColor="@drawable/ButtonTextColor"
+                    android:gravity="center"
+                    android:textSize="24sp"
+                    android:textColorHighlight="@color/list_text_color"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp" />
+                <gsc.GSCButton
+                    android:text="@string/claimTreatmentSaveLabel"
+                    android:background="@drawable/ButtonBackground"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    local:MvxBind="Visibility Visibility(EditMode);"
+                    android:id="@+id/claimSaveClaimBtn"
+                    android:layout_gravity="center"
+                    android:textColor="@drawable/ButtonTextColor"
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:textColorHighlight="@color/list_text_color"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_alignParentRight="true" />
+                <gsc.GSCButton
+                    android:text="@string/claimTreatmentSaveLabel"
+                    android:background="@drawable/ButtonBackground"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    local:MvxBind="Visibility InvertedVisibility(EditMode);"
+                    android:id="@+id/claimSubmitClaimBtn"
+                    android:layout_gravity="center"
+                    android:textColor="@drawable/ButtonTextColor"
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:textColorHighlight="@color/list_text_color"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_alignParentRight="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

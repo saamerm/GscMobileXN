@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+	android:gravity="center_vertical"
+    android:layout_height="@dimen/dashboard_recent_claim_item_height"
+    android:padding="@dimen/dashboard_recent_claim_action_required_item_padding"
+    android:layout_margin="@dimen/dashboard_recent_claim_action_required_item_margin"
+    android:background="@drawable/border_red">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dark_red"
+        android:text="@string/actionRequired"
+        android:textSize="12sp"/>
+    <include layout="@layout/dashboard_recent_claim_include"/>
+</LinearLayout>

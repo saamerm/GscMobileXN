@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!---<item android:drawable="@color/button_highlight"
+      android:state_pressed="true" />
+    <item android:drawable="@color/button_highlight"
+      android:state_focused="true" />
+    <item android:state_enabled="false" 
+      android:drawable="@color/button_background" /> 
+   	<item android:drawable="@color/dark_gray" />-->
+	<item android:state_pressed="true" >
+	<shape android:shape="rectangle"  >
+	<corners android:bottomRightRadius="0dp"
+             android:bottomLeftRadius="0dp" 
+             android:topLeftRadius="0dp"
+             android:topRightRadius="0dp"/> 
+	  <corners android:radius="3dip" />
+	  <solid android:color="@color/list_background_color"/>
+	</shape>
+	</item>
+	<item android:state_focused="true">
+	<shape android:shape="rectangle"  >
+	  <corners android:bottomRightRadius="0dp"
+             android:bottomLeftRadius="0dp" 
+             android:topLeftRadius="0dp"
+             android:topRightRadius="0dp"/> 
+	  
+	  <solid android:color="@color/highlight_color"/>
+	</shape>
+	</item>
+	<item android:state_enabled="false">
+	<shape android:shape="rectangle"  >
+	  <corners android:bottomRightRadius="0dp"
+             android:bottomLeftRadius="0dp" 
+             android:topLeftRadius="0dp"
+             android:topRightRadius="0dp"/> 
+	  
+	  <solid android:color="@color/list_background_color"/>
+	</shape>
+	</item>
+	<item android:state_enabled="true">
+	<shape android:shape="rectangle"  >
+	  <corners android:bottomRightRadius="0dp"
+             android:bottomLeftRadius="0dp" 
+             android:topLeftRadius="0dp"
+             android:topRightRadius="0dp"/>
+      <solid android:color="@color/highlight_color"/> 
+	</shape>
+	</item>
+</selector>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gsc.CheckableLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:duplicateParentState="true"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/single_select_item_background"
+    android:gravity="center_vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingBottom="10dp">
+    <gsc.NunitoTextView
+        android:id="@+id/providerResultsText1"
+        android:gravity="left"
+        local:MvxBind="Text DoctorName"
+        android:textColor="@drawable/gsc_list_text_color"
+        android:duplicateParentState="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:text="Test"
+        android:textSize="13sp"
+        android:textColorHighlight="@color/white" />
+    <gsc.NunitoTextView
+        android:id="@+id/providerResultsText2"
+        android:gravity="left"
+        local:MvxBind="Text Address"
+        android:textColor="@drawable/gsc_list_text_color"
+        android:duplicateParentState="true"
+        android:layout_below="@id/providerResultsText1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:text="Test"
+        android:textSize="13sp"
+        android:textColorHighlight="@color/white" />
+    <gsc.NunitoTextView
+        android:gravity="left"
+        local:MvxBind="Text FormattedAddress"
+        android:textColor="@drawable/gsc_list_text_color"
+        android:duplicateParentState="true"
+        android:layout_below="@id/providerResultsText2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:text="Test"
+        android:textSize="13sp"
+        android:textColorHighlight="@color/white" />
+<!--</LinearLayout> -->
+</gsc.CheckableLinearLayout>

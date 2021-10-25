@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AuditListView">
+            <connections>
+                <outlet property="AuditClaimsCollection" destination="ssf-Do-nFZ" id="ei2-6z-K2D"/>
+                <outlet property="AuditClaimsCollectionHeightConstraint" destination="ZPQ-8L-Api" id="YKU-gh-QHC"/>
+                <outlet property="AuditListInstructionLabel" destination="cSK-xo-Ksa" id="Yao-yz-hcb"/>
+                <outlet property="AuditListLabel" destination="o1e-kC-FzY" id="a4Q-HB-tfJ"/>
+                <outlet property="AuditListNotes" destination="ZJu-id-l2p" id="Pov-DC-Hcm"/>
+                <outlet property="ContentView" destination="OJd-7B-tlD" id="24J-Ms-ys0"/>
+                <outlet property="NoAuditLabel" destination="5P4-jS-CD8" id="wuB-B7-LNX"/>
+                <outlet property="ScrollViewBottomConstraint" destination="SNX-GI-sOa" id="Pju-jb-ru6"/>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2" userLabel="AuditListView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g8D-ae-gdB">
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OJd-7B-tlD" userLabel="ContentView">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="446"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSK-xo-Ksa" userLabel="Audit Info Label">
+                                    <rect key="frame" x="16" y="15" width="382" height="183"/>
+                                    <string key="text">The list below displays all claims that have been audited. You have 30 days from the audit notification date to provide all required documentation to satisfy the audit – simply click on the claim below to upload your documents. Once you upload the additional information, we’ll take it from there. No need to resubmit the same documents if the claim still appears in the list below.</string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AUDIT LIST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1e-kC-FzY">
+                                    <rect key="frame" x="16" y="213" width="382" height="24"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ssf-Do-nFZ">
+                                    <rect key="frame" x="16" y="247" width="382" height="128"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="128" id="ZPQ-8L-Api"/>
+                                    </constraints>
+                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kAE-uu-beR">
+                                        <size key="itemSize" width="50" height="50"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                </collectionView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If an audit isn’t satisfied in time, you will no longer be permitted to submit online claims." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJu-id-l2p" userLabel="Notes">
+                                    <rect key="frame" x="16" y="390" width="382" height="41"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="ZJu-id-l2p" firstAttribute="top" secondItem="ssf-Do-nFZ" secondAttribute="bottom" constant="15" id="6vw-qo-bip">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="55"/>
+                                </constraint>
+                                <constraint firstItem="cSK-xo-Ksa" firstAttribute="top" secondItem="OJd-7B-tlD" secondAttribute="top" constant="15" id="8jS-JC-ZmF">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                                </constraint>
+                                <constraint firstItem="ssf-Do-nFZ" firstAttribute="top" secondItem="o1e-kC-FzY" secondAttribute="bottom" constant="10" id="EFn-U0-MF1">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="25"/>
+                                </constraint>
+                                <constraint firstAttribute="trailing" secondItem="ssf-Do-nFZ" secondAttribute="trailing" constant="16" id="ENV-AH-bvW">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="32"/>
+                                </constraint>
+                                <constraint firstAttribute="bottom" secondItem="ZJu-id-l2p" secondAttribute="bottom" constant="15" id="EbW-ay-urH"/>
+                                <constraint firstItem="o1e-kC-FzY" firstAttribute="top" secondItem="cSK-xo-Ksa" secondAttribute="bottom" constant="15" id="Hgc-dX-Lx2">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                                </constraint>
+                                <constraint firstItem="cSK-xo-Ksa" firstAttribute="leading" secondItem="OJd-7B-tlD" secondAttribute="leading" constant="16" id="IxR-2u-AIs">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="32"/>
+                                </constraint>
+                                <constraint firstAttribute="trailing" secondItem="o1e-kC-FzY" secondAttribute="trailing" constant="16" id="Kds-sY-avX">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="32"/>
+                                </constraint>
+                                <constraint firstAttribute="trailing" secondItem="cSK-xo-Ksa" secondAttribute="trailing" constant="16" id="ZGd-kx-naz">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="32"/>
+                                </constraint>
+                                <constraint firstItem="o1e-kC-FzY" firstAttribute="leading" secondItem="OJd-7B-tlD" secondAttribute="leading" constant="16" id="cZ3-DQ-5Wk">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="32"/>
+                                </constraint>
+                                <constraint firstItem="ZJu-id-l2p" firstAttribute="leading" secondItem="OJd-7B-tlD" secondAttribute="leading" constant="16" id="dfN-WH-JCn">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="32"/>
+                                </constraint>
+                                <constraint firstItem="ssf-Do-nFZ" firstAttribute="leading" secondItem="OJd-7B-tlD" secondAttribute="leading" constant="16" id="wGn-uZ-FPQ">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="32"/>
+                                </constraint>
+                                <constraint firstAttribute="trailing" secondItem="ZJu-id-l2p" secondAttribute="trailing" constant="16" id="wZQ-KG-de3">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="32"/>
+                                </constraint>
+                            </constraints>
+                        </view>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good news. You have no pending audits." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5P4-jS-CD8">
+                            <rect key="frame" x="16" y="416" width="382" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="OJd-7B-tlD" firstAttribute="leading" secondItem="g8D-ae-gdB" secondAttribute="leading" id="4sP-EF-zMw"/>
+                        <constraint firstItem="5P4-jS-CD8" firstAttribute="centerY" secondItem="g8D-ae-gdB" secondAttribute="centerY" id="6cP-Ik-nO9"/>
+                        <constraint firstAttribute="trailing" secondItem="5P4-jS-CD8" secondAttribute="trailing" constant="16" id="8Fo-xp-vo9">
+                            <variation key="heightClass=regular-widthClass=regular" constant="32"/>
+                        </constraint>
+                        <constraint firstItem="5P4-jS-CD8" firstAttribute="centerX" secondItem="g8D-ae-gdB" secondAttribute="centerX" id="F1B-O7-fuY"/>
+                        <constraint firstItem="OJd-7B-tlD" firstAttribute="top" secondItem="g8D-ae-gdB" secondAttribute="top" id="F5W-ib-WPc"/>
+                        <constraint firstAttribute="trailing" secondItem="OJd-7B-tlD" secondAttribute="trailing" id="Xgo-rj-aHt"/>
+                        <constraint firstItem="5P4-jS-CD8" firstAttribute="leading" secondItem="g8D-ae-gdB" secondAttribute="leading" constant="16" id="myd-sl-2jC">
+                            <variation key="heightClass=regular-widthClass=regular" constant="32"/>
+                        </constraint>
+                        <constraint firstAttribute="bottom" secondItem="OJd-7B-tlD" secondAttribute="bottom" id="nSD-te-ptO"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="g8D-ae-gdB" firstAttribute="leading" secondItem="d9n-ap-XsH" secondAttribute="leading" id="9vl-DR-uee"/>
+                <constraint firstItem="OJd-7B-tlD" firstAttribute="width" secondItem="d9n-ap-XsH" secondAttribute="width" id="CPQ-3l-gJD"/>
+                <constraint firstItem="g8D-ae-gdB" firstAttribute="bottom" secondItem="2" secondAttribute="bottom" id="SNX-GI-sOa"/>
+                <constraint firstItem="OJd-7B-tlD" firstAttribute="height" secondItem="2" secondAttribute="height" priority="250" id="U2O-7f-K2d"/>
+                <constraint firstItem="g8D-ae-gdB" firstAttribute="top" secondItem="d9n-ap-XsH" secondAttribute="top" id="dvd-XD-oxI"/>
+                <constraint firstItem="g8D-ae-gdB" firstAttribute="trailing" secondItem="d9n-ap-XsH" secondAttribute="trailing" id="k41-PS-3PY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="d9n-ap-XsH"/>
+            <point key="canvasLocation" x="33.333333333333336" y="53.571428571428569"/>
+        </view>
+    </objects>
+</document>

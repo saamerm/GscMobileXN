@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDisplayName</key>
+	<string>GSC à votre portée</string>
+	<key>NSContactsUsageDescription</key>
+	<string>L'Application a besoin d'une autorisation pour enregistrer les données dans les Contacts</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>Il nous faut votre permission pour utiliser Face ID aux fins d'authentification.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Votre adresse sera utilisée pour la fonction « Trouver un fournisseur » et pour les résultats de recherche dans votre secteur, le trajet et la durée estimée du parcours. </string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>Votre adresse sera utilisée pour la fonction « Trouver un fournisseur » et pour les résultats de recherche dans votre secteur, le trajet et la durée estimée du parcours. </string>
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>Votre adresse sera utilisée pour la fonction « Trouver un fournisseur » et pour les résultats de recherche dans votre secteur, le trajet et la durée estimée du parcours. </string>
+    <key>NSCalendarsUsageDescription</key>
+    <string>L'application nécessite votre permission pour accéder à votre calendrier pour créer de nouveaux événements.</string>
+    <key>NSBluetoothPeripheralUsageDescription</key>
+    <string>L'application nécessite votre permission pour utiliser votre téléphone.</string>
+     <key>NSCameraUsageDescription</key>
+    <string>Nous avons besoin d'un accès à votre appareil photo pour prendre des photos de vos documents afin d’accélérer le traitement des demandes.</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>Nous avons besoin d'un accès à votre bibliothèque pour télécharger vos documents afin d’accélérer le traitement des demandes et la sauvegarde des photos.</string>
+	<key>locale</key>
+	<string>frr</string>
+</dict>
+</plist>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:duplicateParentState="true"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+        <gsc.NunitoTextView
+            android:id="@+id/qn1"
+            android:textColor="@color/claim_text"
+            android:textSize="13sp"
+            android:layout_weight="1.0"
+            android:layout_width="@dimen/claim_review_zero"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="@dimen/claim_confirm"
+            android:layout_marginTop="@dimen/claim_review_zero"
+            local:MvxBind="Text ClaimedAmountLabel"
+            android:layout_gravity="left" />
+        <gsc.NunitoTextViewBold
+            android:id="@+id/qn1"
+            android:textColor="@color/claim_text_grey"
+            android:textSize="13sp"
+            android:layout_weight="1.0"
+            android:layout_width="@dimen/claim_review_zero"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="left"
+            android:layout_marginTop="@dimen/claim_review_zero"
+            local:MvxBind="Text DollarSignDoublePrefix(ClaimedAmountTotal)"
+            android:layout_gravity="left" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+        <gsc.NunitoTextView
+            android:id="@+id/qn1"
+            android:textColor="@color/claim_text"
+            android:textSize="13sp"
+            android:layout_weight="1.0"
+            android:layout_width="@dimen/claim_review_zero"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="@dimen/claim_confirm"
+            android:layout_marginTop="@dimen/claim_review_zero"
+            local:MvxBind="Text OtherPaidLabel"
+            android:layout_gravity="left" />
+        <gsc.NunitoTextViewBold
+            android:id="@+id/qn1"
+            android:textColor="@color/claim_text_grey"
+            android:textSize="13sp"
+            android:layout_weight="1.0"
+            android:layout_width="@dimen/claim_review_zero"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="left"
+            android:layout_marginTop="@dimen/claim_review_zero"
+            local:MvxBind="Text DollarSignDoublePrefix(OtherPaidAmountTotal)"
+            android:layout_gravity="left" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+        <gsc.NunitoTextView
+            android:id="@+id/qn1"
+            android:textColor="@color/claim_text"
+            android:textSize="13sp"
+            android:layout_weight="1.0"
+            android:layout_width="@dimen/claim_review_zero"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="@dimen/claim_confirm"
+            android:layout_marginTop="@dimen/claim_review_zero"
+            local:MvxBind="Text PaidAmountLabel"
+            android:layout_gravity="left" />
+        <gsc.NunitoTextViewBold
+            android:id="@+id/qn1"
+            android:textColor="@color/claim_text_grey"
+            android:textSize="13sp"
+            android:layout_weight="1.0"
+            android:layout_width="@dimen/claim_review_zero"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="left"
+            android:layout_marginTop="@dimen/claim_review_zero"
+            local:MvxBind="Text DollarSignDoublePrefix(PaidAmountTotal)"
+            android:layout_gravity="left" />
+    </LinearLayout>
+</LinearLayout>

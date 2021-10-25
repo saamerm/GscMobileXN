@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_color">
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_color"
+                android:weightSum="1"
+                android:layout_marginTop="15dp">
+                <gsc.HeaderTextView
+                    android:id="@+id/myDrugResults"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/myDrugResults"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:textAllCaps="true"
+                    android:layout_weight="0.6" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.4"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:layout_alignParentRight="true">
+                    <gsc.GSCSmallButton
+                        android:text="@string/newSearchBtnText"
+                        android:background="@drawable/ButtonBackground"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        local:MvxBind="Click NewSearchCommand;"
+                        android:id="@+id/claimSaveClaimBtn"
+                        android:layout_gravity="right"
+                        android:textColor="@drawable/ButtonTextColor"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:textColorHighlight="@color/list_text_color"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="0dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <gsc.ParticipantInfoView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                local:MvxBind="participant Participant" />
+            <gsc.DrugResultsDrugInfoView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                local:MvxBind="dInfo Drug" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="2"
+                android:padding="5dp">
+                <gsc.VisibilityCheckButton
+                    android:text="@string/downloadAndView"
+                    android:background="@drawable/ButtonBackground"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    local:MvxBind="Visible (Drug.SpecialAuthFormName !=''); Click DownloadSpecialAuthorizationCommand; Enabled Drug.SpecialAuthRequired"
+                    android:id="@+id/download_and_view_button"
+                    android:layout_gravity="center"
+                    android:textColor="@drawable/ButtonTextColor"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:textSize="13sp" />
+                <gsc.VisibilityCheckButton
+                    android:text="@string/sendByEmail"
+                    android:background="@drawable/ButtonBackground"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_centerHorizontal="true"
+                    local:MvxBind="Visible (Drug.SpecialAuthFormName !=''); Click SendSpecialAuthorizationCommand; Enabled Drug.SpecialAuthRequired"
+                    android:id="@+id/send_by_email_button"
+                    android:layout_gravity="center"
+                    android:textColor="@drawable/ButtonTextColor"
+                    android:gravity="center"
+                    android:textSize="13sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center">
+                <gsc.GSCButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:text="@string/findPharmacy"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ButtonBackground"
+                    android:textColor="@drawable/ButtonTextColor"
+                    android:textAllCaps="true"
+                    local:MvxBind="Click ShowFindPharmaciesProviderCommand" />
+            </LinearLayout>
+            <gsc.DrugNotesView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                local:MvxBind="dInfo Drug" />
+            <gsc.SubtitleTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/DrugsNotesDescButton1" />
+            <gsc.SubtitleTextView
+				android:id="@+id/drugsNotesDescButton2Id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+            <gsc.SubtitleTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/DrugsNotesDescButton3" />
+            <gsc.SubtitleTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/DrugsNotesDescButton4" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

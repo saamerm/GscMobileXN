@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    
+    android:orientation="vertical"
+    android:paddingStart="20dp"
+    android:paddingBottom="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13.5dp">
+
+        <ImageView
+            android:id="@+id/stepOneIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16.5dp"
+            android:layout_marginRight="11.5dp"
+            android:src="@drawable/round_checkbox_unselected" />
+
+        <gsc.NunitoTextViewHeavy
+            android:id="@+id/stepOneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/claim_review_zero"
+            android:layout_toRightOf="@id/stepOneIcon"
+            android:gravity="center_vertical"
+            android:paddingRight="4dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            local:MvxBind="Text Step1" />
+
+        <gsc.NunitoTextViewHeavy
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/claim_review_zero"
+            android:layout_toRightOf="@id/stepOneNumber"
+            android:gravity="left"
+            android:paddingRight="4dp"
+            android:textColor="@color/brand_color"
+            android:textSize="14sp"
+            local:MvxBind="Text Step1Title" />
+
+        <ImageView
+            android:id="@+id/step1ImageView"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="24dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/arrow_up_gray" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/StepOneLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15.5dp"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/StepOneConsentLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/customborder"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/StepOneConsentIndictor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20.5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="I authorize Wawanesa Life to deposit funds directly into the bank account noted below. I understand that I will no longer receive statements from Wawanesa Life in the mail as my statements will only be available online."
+                android:layout_marginTop="@dimen/claim_review_zero"
+                android:gravity="left"
+                android:paddingRight="4dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:fontFamily="@font/nunitosansregular"
+                local:MvxBind="Text OptInForDirectDeposit" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

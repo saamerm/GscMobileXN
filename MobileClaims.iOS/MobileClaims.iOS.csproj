@@ -1,0 +1,1943 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>MobileClaims.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>MobileClaimsiOS</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>x86_64</MtouchArch>
+    <DebugSymbols>true</DebugSymbols>
+    <MtouchDebug>true</MtouchDebug>
+    <DefineConstants>TRACE;DEBUG;FakingIt;SQLiteSADZ</DefineConstants>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignProvision>
+    </CodesignProvision>
+    <CodesignExtraArgs />
+    <CodesignResourceRules />
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <DefineConstants>__IOS__;__MOBILE__;__UNIFIED__</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>i386, x86_64</MtouchArch>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>TRACE;DEBUG;FakingIt;SQLiteSADZ</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <DefineConstants>__IOS__;__MOBILE__;__UNIFIED__</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <BuildIpa>true</BuildIpa>
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchDebug>False</MtouchDebug>
+    <MtouchProfiling>False</MtouchProfiling>
+    <MtouchFastDev>False</MtouchFastDev>
+    <MtouchUseLlvm>False</MtouchUseLlvm>
+    <MtouchUseThumb>False</MtouchUseThumb>
+    <MtouchEnableBitcode>False</MtouchEnableBitcode>
+    <OptimizePNGs>True</OptimizePNGs>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchFloat32>False</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
+    <AppExtensionDebugBundleId />
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Bootstrap\FilePluginBootstrap.cs" />
+    <Compile Include="Bootstrap\FingerprintPluginBootstrap.cs" />
+    <Compile Include="Bootstrap\JsonPluginBootstrap.cs" />
+    <Compile Include="Bootstrap\LocationPluginBootstrap.cs" />
+    <Compile Include="Bootstrap\MessengerPluginBootstrap.cs" />
+    <Compile Include="Bootstrap\UserDialogsPluginBootstrap.cs" />
+    <Compile Include="Bootstrap\VisibilityPluginBootstrap.cs" />
+    <Compile Include="Converters\DoubleScoreToStarImageUrlConverter.cs" />
+    <Compile Include="Converters\ImageUrlToUIImageConverter.cs" />
+    <Compile Include="Converters\RequiresActionToTextColorConverter.cs" />
+    <Compile Include="Converters\ScoreToUIImageConverter.cs" />
+    <Compile Include="Custom\CalloutAnnotation.cs" />
+    <Compile Include="Custom\CustomAnnotation.cs" />
+    <Compile Include="DebugTrace.cs" />
+    <Compile Include="Extensions\UILabelExtensions.cs" />
+    <Compile Include="Helper\AttributeHelper.cs" />
+    <Compile Include="Helper\MarkerIconHelper.cs" />
+    <Compile Include="Services\HttpClientiOSService.cs" />
+    <Compile Include="Services\ContactUsService.cs" />
+    <Compile Include="Services\LoadFileService.cs" />
+    <Compile Include="Services\AddToContactsService.cs" />
+    <Compile Include="Services\DirectionsService.cs" />
+    <Compile Include="Services\INavViewHeightProvider.cs" />
+    <Compile Include="UI\GSCPageSubHeader.cs" />
+    <Compile Include="UI\GSCUINavigationBar.cs" />
+    <Compile Include="LinkerPleaseInclude.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Presenters\PhonePresenter.cs" />
+    <Compile Include="Services\GpsAvailableService.cs" />
+    <Compile Include="Services\ConfigurationService.cs" />
+    <Compile Include="Setup.cs" />
+    <Compile Include="Custom\BasicMapAnnotation.cs" />
+    <Compile Include="UI\GSCPageHeader.cs" />
+    <Compile Include="Views\ChangeForLifeView.cs" />
+    <Compile Include="Views\Claims\MvxBindableCollectionReusableView.cs" />
+    <Compile Include="Views\ContentViewDelegate.cs" />
+    <Compile Include="Views\DrugLookupByNameView.cs" />
+    <Compile Include="Views\FromBottomTransitionAttribute.cs" />
+    <Compile Include="Views\GSCBaseAutoLayoutView.cs" />
+    <Compile Include="Views\HCSA\ClaimTypeView.cs" />
+    <Compile Include="Views\IRehydrating.cs" />
+    <Compile Include="Views\RemoveAfterViewDidDisappearAttribute.cs" />
+    <Compile Include="Views\SettingsView.cs" />
+    <None Include="Info.plist">
+      <SubType>Designer</SubType>
+    </None>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\FirstView.cs" />
+    <BundleResource Include="Resources\en.lproj\InfoPlist.strings" />
+    <BundleResource Include="Resources\fr.lproj\InfoPlist.strings" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <Compile Include="Constants.cs" />
+    <Compile Include="Views\DrugLookupByDINView.cs" />
+    <Compile Include="UI\WhiteListButton.cs" />
+    <Compile Include="UI\TextFieldWithLabel.cs" />
+    <Compile Include="UI\InformationHeadingAndDetailsComponent.cs" />
+    <Compile Include="UI\SelectionMenuItem.cs" />
+    <Compile Include="Views\DrugLookupResultsView.cs" />
+    <Compile Include="Views\SpendingAccountDetailView.cs" />
+    <Compile Include="Views\DrugLookupByNameSearchResultsView.cs" />
+    <Compile Include="UI\SelectionMenuItemStackedLabels.cs" />
+    <Compile Include="UI\TabBar.cs" />
+    <Compile Include="Views\ChooseSpendingAccountTypeView.cs" />
+    <Compile Include="UI\SpendingAccountDetailSection.cs" />
+    <Compile Include="UI\SpendingAccountDetailSubSection.cs" />
+    <Compile Include="UI\SliderWithIndicators.cs" />
+    <Compile Include="Helpers.cs" />
+    <Compile Include="Views\ContentNavViewController.cs" />
+    <Compile Include="UI\RoundedTextField.cs" />
+    <Compile Include="Views\SimpleMessageView.cs" />
+    <Compile Include="UI\TextFieldWithoutLabel.cs" />
+    <Compile Include="UI\IconButton.cs" />
+    <Compile Include="UI\GSButton.cs" />
+    <Compile Include="UI\DefaultTextField.cs" />
+    <Compile Include="UI\GreyNavButton.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="UI\LandingPageButton.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="UI\DottedLine.cs" />
+    <Compile Include="UI\GSSelectionButton.cs" />
+    <Compile Include="UI\SpendingAccountDetailSectionIPad.cs" />
+    <Compile Include="UI\SpendingAccountDetailSubSectionIPad.cs" />
+    <Compile Include="UI\GSSelectionButtonSmall.cs" />
+    <Compile Include="Views\ClaimDetailsView1.cs" />
+    <Compile Include="UI\ClaimDetailsComponents\CollapseableClaimComponent.cs" />
+    <Compile Include="UI\ClaimDetailsComponents\ClaimDetailsSubComponent.cs" />
+    <Compile Include="UI\ClaimDetailsComponents\ClaimOtherBenefitsView.cs" />
+    <Compile Include="UI\ClaimDetailsComponents\ClaimMotorVehicleView.cs" />
+    <Compile Include="UI\ClaimDetailsComponents\ClaimWorkInjuryView.cs" />
+    <Compile Include="UI\ClaimDetailsComponents\ClaimMedicalItemView.cs" />
+    <Compile Include="UI\TableView\MvxDeleteTableViewSource.cs" />
+    <Compile Include="UI\TableView\MvxDeleteTableViewCell.cs" />
+    <Compile Include="UI\TableView\Cells\SingleSelectionTableViewCell.cs" />
+    <Compile Include="Views\ClaimServiceProvidersView.cs" />
+    <Compile Include="UI\TableView\Cells\SingleSelectionAccentedTitleThreeSubtitlesViewCell.cs" />
+    <Compile Include="Converters\PhonePrefixValueConverter.cs" />
+    <Compile Include="Views\ClaimSubmissionTypeView.cs" />
+    <Compile Include="Views\ClaimServiceProviderSearchResultsView.cs" />
+    <Compile Include="Views\ClaimTermsAndConditionsView.cs" />
+    <Compile Include="CellTemplates\DetailedProviderCellTemplate.cs" />
+    <Compile Include="CellTemplates\DetailedProviderCellTemplate.designer.cs" />
+    <Compile Include="CellTemplates\DetailedProviderCellTemplatePhone.cs" />
+    <Compile Include="CellTemplates\DetailedProviderCellTemplatePhone.designer.cs" />
+    <Compile Include="CellTemplates\LocationTypeCellTemplate.cs" />
+    <Compile Include="CellTemplates\LocationTypeCellTemplate.designer.cs" />
+    <Compile Include="CellTemplates\LocationTypeCellTemplatePhone.cs" />
+    <Compile Include="CellTemplates\LocationTypeCellTemplatePhone.designer.cs" />
+    <Compile Include="CellTemplates\ParticipantCellTemplate.cs" />
+    <Compile Include="CellTemplates\ProviderCellTemplate.cs" />
+    <Compile Include="CellTemplates\ProviderCellTemplate.designer.cs" />
+    <Compile Include="CellTemplates\ProviderCellTemplatePhone.cs" />
+    <Compile Include="CellTemplates\ProviderCellTemplatePhone.designer.cs" />
+    <Compile Include="CellTemplates\ProviderSearchTypeCellTemplate.cs" />
+    <Compile Include="CellTemplates\ProviderSearchTypeCellTemplate.designer.cs" />
+    <Compile Include="CellTemplates\ProviderSearchTypeCellTemplatePhone.cs" />
+    <Compile Include="CellTemplates\ProviderSearchTypeCellTemplatePhone.designer.cs" />
+    <Compile Include="UI\ClaimDetailsComponents\ClaimDetailsDatePickerSubComponent.cs" />
+    <Compile Include="UI\ClaimDetailsComponents\ClaimDetailsToggleSubComponent.cs" />
+    <Compile Include="UI\ClaimDetailsComponents\ClaimDetailsTextFieldSubComponent.cs" />
+    <Compile Include="UI\ClaimDetailsComponents\ClaimOtherBenefitsHCSAView.cs" />
+    <Compile Include="Views\ClaimTreatmentDetailsListView.cs" />
+    <Compile Include="UI\ClaimDetailsComponents\ClaimDetailsListSubComponent.cs" />
+    <Compile Include="Views\ClaimParticipantsView1.cs" />
+    <Compile Include="UI\TableView\Cells\ClaimTreatmentDetailListTableViewCell.cs" />
+    <Compile Include="UI\TableView\Cells\ClaimParticipantTableCell.cs" />
+    <Compile Include="Views\ClaimTreatmentDetailsEntry1View.cs" />
+    <Compile Include="Views\ClaimTreatmentDetailsEntry2View.cs" />
+    <Compile Include="Views\ClaimTreatmentDetailsEntryMIView.cs" />
+    <Compile Include="Views\ClaimTreatmentDetailsEntryPCView.cs" />
+    <Compile Include="Views\ClaimTreatmentDetailsEntryPGView.cs" />
+    <Compile Include="Views\ClaimTreatmentDetailsEntryREEView.cs" />
+    <Compile Include="Converters\RegistrationNumPrefixValueConverter.cs" />
+    <Compile Include="UI\ClaimDetailsComponents\ClaimTreatmentDetailsTitleAndList.cs" />
+    <Compile Include="Views\ClaimServiceProviderEntryView.cs" />
+    <Compile Include="Views\ClaimServiceProviderProvideInformationView.cs" />
+    <Compile Include="UI\TableView\Cells\SingleStringTableCell.cs" />
+    <Compile Include="UI\TableView\Cells\ClaimSubmissionBenefitCell.cs" />
+    <Compile Include="UI\TableView\Cells\SingleSelectionThreeTitlesTableViewCell.cs" />
+    <Compile Include="UI\ClaimDetailsComponents\ClaimTreatmentDetailsTitleAndDatePicker.cs" />
+    <Compile Include="UI\ClaimDetailsComponents\ClaimTreatmentDetailsTitleAndTextField.cs" />
+    <Compile Include="UI\ClaimDetailsComponents\ClaimTreatmentDetailsTitleAndToggle.cs" />
+    <Compile Include="Views\ClaimSubmissionConfirmationView.cs" />
+    <Compile Include="Views\ClaimSubmissionResultView.cs" />
+    <Compile Include="UI\ClaimResultsComponents\ClaimBoolResultDisplay.cs" />
+    <Compile Include="UI\ClaimResultsComponents\ClaimFieldResultDisplay.cs" />
+    <Compile Include="Converters\ClaimServiceProviderConverter.cs" />
+    <Compile Include="Converters\DateToStringValueConverter.cs" />
+    <Compile Include="Converters\DollarSignPrefixValueConverter.cs" />
+    <Compile Include="UI\TableView\Cells\ClaimOptionTableCell.cs" />
+    <Compile Include="Views\ClaimTreatmentDetailsEntryOMFView.cs" />
+    <Compile Include="Converters\AltCarrierPrefixValueConverter.cs" />
+    <Compile Include="UI\TableView\Cells\ClaimResultsTableCell.cs" />
+    <Compile Include="UI\TableView\Cells\ClaimResultDetailTableCell.cs" />
+    <Compile Include="UI\TableView\Cells\ClaimEOBMessageTableCell.cs" />
+    <Compile Include="Converters\DollarSignDoublePrefixValueConverter.cs" />
+    <Compile Include="Converters\ClaimDetailsForPrefixValueConverter.cs" />
+    <Compile Include="Converters\FormNumberPrefixValueConverter.cs" />
+    <Compile Include="Views\EligibilityCheckCFOView.cs" />
+    <Compile Include="Views\EligibilityBenefitInquiryView.cs" />
+    <Compile Include="Views\EligibilityCheckCPView.cs" />
+    <Compile Include="Views\EligibilityCheckDREView.cs" />
+    <Compile Include="Views\EligibilityCheckEyeView.cs" />
+    <Compile Include="Views\EligibilityCheckMassageView.cs" />
+    <Compile Include="Views\EligibilityCheckTypesView.cs" />
+    <Compile Include="Views\EligibilityParticipantsView.cs" />
+    <Compile Include="Views\EligibilityResultsView.cs" />
+    <Compile Include="Converters\ChoosePlanParticipantConverter.cs" />
+    <Compile Include="Converters\ClaimDetailsForButtonValueConverter.cs" />
+    <Compile Include="UI\TableView\Cells\LongToStringValueConverter.cs" />
+    <Compile Include="UI\ClaimDetailsComponents\ClaimDateModal.cs" />
+    <Compile Include="UI\ClaimDetailsComponents\ClaimListModal.cs" />
+    <Compile Include="UI\ClaimResultsComponents\ClaimAuditModal.cs" />
+    <Compile Include="UI\TableView\Cells\ClaimSubmissionLensCell.cs" />
+    <Compile Include="Converters\CustomUIDatePickerDateTargetBinding.cs" />
+    <Compile Include="UI\TableView\Cells\EligibilityCheckTypesTableCell.cs" />
+    <Compile Include="UI\TableView\Cells\EligibilityProvinceTableCell.cs" />
+    <Compile Include="UI\TableView\Cells\EligibilityOptionTableCell.cs" />
+    <Compile Include="UI\TableView\Cells\EligibilityBenefitTableCell.cs" />
+    <Compile Include="Converters\ClaimsForPrefixValueConverter.cs" />
+    <Compile Include="UI\TableView\DismmssVCTableViewCell.cs" />
+    <Compile Include="UI\TableView\Cells\ClaimLimitationsTableCell.cs" />
+    <Compile Include="UI\BlankViewController.cs" />
+    <Compile Include="UI\TableView\Cells\AuditListTableViewCell.cs" />
+    <Compile Include="Views\AuditInformationView.cs" />
+    <Compile Include="Converters\FormNumberLongPrefixValueConverter.cs" />
+    <Compile Include="UI\TableView\MvxResultsTableViewSource.cs" />
+    <Compile Include="UI\ClaimResultsComponents\ClaimFieldResultRightDisplay.cs" />
+    <Compile Include="UI\TableView\Cells\EligibilityCheckParticipantTableCell.cs" />
+    <Compile Include="Converters\EligibilityStatusValueConverter.cs" />
+    <Compile Include="UI\TableView\AssetEventArgs.cs" />
+    <Compile Include="UI\TableView\EligibilityCheckMultipleSelectionSource.cs" />
+    <Compile Include="UI\LimitTextView.cs" />
+    <Compile Include="UI\TableView\Cells\EligibilityCheckParticipantCFOTableCell.cs" />
+    <Compile Include="Converters\NumberSignValueConverter.cs" />
+    <Compile Include="Views\GSCBaseView.cs" />
+    <Compile Include="Converters\ProviderSearchTypeValueConverter.cs" />
+    <Compile Include="UI\TableView\MvxConfirmationTableViewSource.cs" />
+    <Compile Include="Converters\BoolOppositeValueConverter.cs" />
+    <Compile Include="Converters\TreatmentTypeValueConverter.cs" />
+    <Compile Include="UI\ClaimDetailsComponents\ClaimOtherBenefitsGSTView.cs" />
+    <Compile Include="UI\CorrectedTextField.cs" />
+    <Compile Include="UI\TableView\MvxLimitationsTableViewSource.cs" />
+    <Compile Include="UI\TableView\MvxResultsDetailsTableViewSource.cs" />
+    <Compile Include="UI\TableView\Cells\ClaimConfirmationIPadTableViewCell.cs" />
+    <Compile Include="UI\TableView\Cells\ClaimConfirmationTableViewCell.cs" />
+    <Compile Include="UI\TableView\Cells\AuditListIPadTableViewCell.cs" />
+    <Compile Include="Converters\BoolToStringValueConverter.cs" />
+    <Compile Include="UI\ClaimDetailsComponents\ClaimTreatmentDetailsTitleAndLabel.cs" />
+    <Compile Include="UI\TableView\Cells\EligibilityLimitationsTableCell.cs" />
+    <Compile Include="UI\TableView\Cells\ClaimParticipantGSCTableCell.cs" />
+    <Compile Include="Converters\LongDateToStringValueConverter.cs" />
+    <Compile Include="Converters\DateOfInquiryPrefixValueConverter.cs" />
+    <Compile Include="Views\ChangeForLifeTermsAndConditionsView.cs" />
+    <Compile Include="Views\ChangeForLifeNoAccessView.cs" />
+    <Compile Include="Views\ChangeForLifeNoAccessView.designer.cs">
+      <DependentUpon>ChangeForLifeNoAccessView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\GSCMessageLabel.cs" />
+    <Compile Include="Views\HCSA\ClaimDetailsHCSAView.cs" />
+    <Compile Include="UI\HCSAComponents\HCSADropdownView.cs" />
+    <Compile Include="UI\TableView\Cells\TypeOfClaimTableViewCell.cs" />
+    <Compile Include="UI\TableView\Cells\TypeOfExpenseTableViewCell.cs" />
+    <Compile Include="Views\ClaimsHistory\ClaimsHistoryResultsCountView.cs" />
+    <Compile Include="Views\ClaimsHistory\ClaimsHistorySearchView.cs" />
+    <Compile Include="UI\ClaimHistoryComponents\ClaimForLabel.cs" />
+    <Compile Include="UI\ClaimHistoryComponents\ClaimHistoryTypeTabLabel.cs" />
+    <Compile Include="UI\ClaimHistoryComponents\ClaimSearchLabel.cs" />
+    <Compile Include="UI\ClaimHistoryComponents\CountTableViewCellGreenLabel.cs" />
+    <Compile Include="UI\ClaimHistoryComponents\CountTableViewCellLabel.cs" />
+    <Compile Include="UI\ClaimHistoryComponents\GSButtonGray.cs" />
+    <Compile Include="UI\ClaimHistoryComponents\GSButtonGrayTextUpdate.cs" />
+    <Compile Include="UI\ClaimHistoryComponents\GreenNavButton.cs" />
+    <Compile Include="Views\GSCFluentLayoutBaseView.cs" />
+    <Compile Include="Converters\ClaimHistoryTypeHighlightValueConverter.cs" />
+    <Compile Include="Converters\ClaimsHistoryCountToBoolValueConverter.cs" />
+    <Compile Include="Converters\ClaimsHistoryCountToColorValueConverter.cs" />
+    <Compile Include="Converters\ClaimsHistoryCountToTitleValueConverter.cs" />
+    <Compile Include="Views\ClaimsHistory\ClaimsHistoryResultsListView.cs" />
+    <Compile Include="Converters\ClaimHistorySearchResultsToCountValueConverter.cs" />
+    <Compile Include="Converters\ClaimHistorySearchResultsToTotalValueConverter.cs" />
+    <Compile Include="Converters\ClaimHistorySearchResultsToTableHightValueConverter.cs" />
+    <Compile Include="UI\TableView\ClaimHistoryCountTableViewSource.cs" />
+    <Compile Include="UI\TableView\ClaimHistoryResultListTableViewSource.cs" />
+    <Compile Include="UI\TableView\Cells\ClaimHistoryResultListTableViewCell.cs" />
+    <Compile Include="UI\TableView\Cells\ClaimHistoryCountTableViewCell.cs" />
+    <Compile Include="UI\TableView\Cells\ClaimHistoryParticipantCell.cs" />
+    <Compile Include="Views\ClaimsHistory\ClaimsHistoryParticipantsView.cs" />
+    <Compile Include="Views\ClaimsHistory\ClaimsHistoryDisplayByView.cs" />
+    <Compile Include="Converters\ClaimHistoryDisplayByHighlightValueConverter.cs" />
+    <Compile Include="UI\ClaimHistoryComponents\ClaimHistoryDateModal.cs" />
+    <Compile Include="UI\ClaimHistoryComponents\ClaimHistoryTitleAndDatePicker.cs" />
+    <Compile Include="Views\ClaimsHistory\ClaimsHistoryPaymentInfoView.cs" />
+    <Compile Include="UI\ClaimHistoryComponents\DatePickerLabel.cs" />
+    <Compile Include="UI\ClaimHistoryComponents\ErrorButton.cs" />
+    <Compile Include="Converters\ErrorMessageToHideShowValueConverter.cs" />
+    <Compile Include="UI\ClaimHistoryComponents\YearPickerView.cs" />
+    <Compile Include="UI\TableView\Cells\ClaimListResultsTableViewCell.cs" />
+    <Compile Include="UI\TableView\Cells\ClaimListTableViewCell.cs" />
+    <Compile Include="Views\HCSA\ClaimResultsView.cs" />
+    <Compile Include="Views\HCSA\ClaimReviewAndEditView.cs" />
+    <Compile Include="Views\HCSA\ClaimConfirmationHCSAView.cs" />
+    <Compile Include="UI\ClaimHistoryComponents\ClaimHistoryDetailComponent.cs" />
+    <Compile Include="UI\TableView\Cells\MedicalProfessionalTableCell.cs" />
+    <Compile Include="UI\ClaimHistoryComponents\ClaimForTxtLabel.cs" />
+    <Compile Include="Converters\ClaimsHistoryCountToTextColorValueConverter.cs" />
+    <Compile Include="UI\ClaimHistoryComponents\GCButtonFixedFontSize.cs" />
+    <Compile Include="UI\TableView\Cells\SingleSelectionTableViewCellNoFont.cs" />
+    <Compile Include="Converters\TextColorErrorValueConverter.cs" />
+    <Compile Include="UI\TableView\Cells\ClaimConfirmationHCSATableViewCell.cs" />
+    <Compile Include="UI\TableView\Cells\ResultsDetailsTableviewCell.cs" />
+    <Compile Include="UI\TableView\Cells\ResultsTotalTableviewCell.cs" />
+    <Compile Include="UI\ClaimHistoryComponents\ClaimHistoryBenefitTypeComponent.cs" />
+    <Compile Include="Converters\FormattedStringFromDateValueConverter.cs" />
+    <Compile Include="UI\ClaimHistoryComponents\LeagueGothic24Label.cs" />
+    <Compile Include="UI\TableView\Cells\ServiceProviderProvinceTableCell.cs" />
+    <Compile Include="UI\ClaimDetailsComponents\ProvinceListSubComponent.cs" />
+    <Compile Include="Converters\PlaceHolderTextColorValueConverter.cs" />
+    <Compile Include="UI\ClaimHistoryComponents\ClaimResultCountTxt.cs" />
+    <Compile Include="Converters\ClaimHistorySearchResultSummaryTableHeightValueConverter.cs" />
+    <Compile Include="UI\ClaimHistoryComponents\GSButton24.cs" />
+    <Compile Include="Views\IContentPresenter.cs" />
+    <Compile Include="UI\ClaimHistoryComponents\NunitoSemiBold1315Label.cs" />
+    <Compile Include="UI\ClaimHistoryComponents\NunitoBold1414Label.cs" />
+    <Compile Include="UI\IPadNumericKeyBoardComponent.cs" />
+    <Compile Include="UI\IPadNumericKeyBoardDomal.cs" />
+    <Compile Include="UI\KeyBoardButtonGrey.cs" />
+    <Compile Include="UI\KeyBoardNoButton.cs" />
+    <Compile Include="UI\ClaimHistoryComponents\LabelNunitoSemiBold13_NunitoBold12.cs" />
+    <Compile Include="PresenterNavigator.cs" />
+    <Compile Include="Views\ClaimsHistory\ClaimsHistoryResultDetailView.cs" />
+    <Compile Include="Views\ClaimsHistory\ClaimsHistoryCarouselDatasource.cs" />
+    <Compile Include="UI\ClaimHistoryComponents\NUNITOBOLD12.cs" />
+    <Compile Include="UI\SFWebcomponents\SFViewController.cs" />
+    <Compile Include="Services\BiometricsService.cs" />
+    <None Include="Entitlements.plist">
+      <SubType>Designer</SubType>
+    </None>
+    <Compile Include="UI\GSCBaseViewController.cs" />
+    <Compile Include="Converters\IntToBoolConverter.cs" />
+    <Compile Include="Views\HealthProvider\HealthProviderCellView.cs" />
+    <Compile Include="Views\HealthProvider\HealthProviderCellView.designer.cs">
+      <DependentUpon>HealthProviderCellView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FindHealthProviderViewController.cs" />
+    <Compile Include="Views\FindHealthProviderViewController.designer.cs">
+      <DependentUpon>FindHealthProviderViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ServiceDetailsListViewController.cs" />
+    <Compile Include="Views\ServiceDetailsListViewController.designer.cs">
+      <DependentUpon>ServiceDetailsListViewController.cs</DependentUpon>
+    </Compile>
+    <BundleResource Include="Resources\Fonts\Roboto-Bold.otf" />
+    <BundleResource Include="Resources\Fonts\Roboto-Regular.otf" />
+    <Compile Include="Views\RefineSearchViewController.cs" />
+    <Compile Include="Views\RefineSearchViewController.designer.cs">
+      <DependentUpon>RefineSearchViewController.cs</DependentUpon>
+    </Compile>
+    <ImageAsset Include="Resources\Images.xcassets\filter.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\filter.imageset\filter.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <Compile Include="Views\FromLeftToRightTransition.cs" />
+    <Compile Include="UI\RadioButton.cs" />
+    <Compile Include="Converters\SortByChoiceToBoolValueConverter.cs" />
+    <Compile Include="Views\HealthProviderTypeListView.cs" />
+    <Compile Include="Views\HealthProviderTypeListView.designer.cs">
+      <DependentUpon>HealthProviderTypeListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ExpandButton.cs" />
+    <Compile Include="CellTemplates\HealthProviderTypeChildViewCell.cs" />
+    <Compile Include="CellTemplates\HealthProviderTypeChildViewCell.designer.cs">
+      <DependentUpon>HealthProviderTypeChildViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CellTemplates\HealthProviderTypeParentViewCell.cs" />
+    <Compile Include="Views\ProviderDetailsInformationViewController.cs" />
+    <Compile Include="Views\ProviderDetailsInformationViewController.designer.cs">
+      <DependentUpon>ProviderDetailsInformationViewController.cs</DependentUpon>
+    </Compile>
+    <ImageAsset Include="Resources\Images.xcassets\nearby.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\nearby.imageset\nearby.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <Compile Include="Helper\ProviderMarker.cs" />
+    <Compile Include="CellTemplates\HealthProviderTypeParentViewCell.designer.cs">
+      <DependentUpon>HealthProviderTypeParentViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AutocompleteTextField.cs" />
+    <Compile Include="UI\TableView\Cells\LocationAutocompleteTableViewCell.cs" />
+    <Compile Include="UI\TableView\Cells\LocationAutocompleteTableViewCell.designer.cs">
+      <DependentUpon>LocationAutocompleteTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Services\IosNativeUrlService.cs" />
+    <ImageAsset Include="Resources\Images.xcassets\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <InterfaceDefinition Include="Views\LaunchScreenView.xib" />
+    <Compile Include="Views\LaunchScreenView.cs" />
+    <Compile Include="Views\LaunchScreenView.designer.cs">
+      <DependentUpon>LaunchScreenView.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Views\EligibilityCheckCPView.xib" />
+    <Compile Include="Views\EligibilityCheckCPView.designer.cs">
+      <DependentUpon>EligibilityCheckCPView.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Views\EligibilityCheckEyeView.xib" />
+    <Compile Include="Views\EligibilityCheckEyeView.designer.cs">
+      <DependentUpon>EligibilityCheckEyeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\GSCSmallFontSizeLabel.cs" />
+    <InterfaceDefinition Include="Views\EligibilityCheckMassageView.xib" />
+    <Compile Include="Views\EligibilityCheckMassageView.designer.cs">
+      <DependentUpon>EligibilityCheckMassageView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DrugLookupModelSelectionView.cs" />
+    <Compile Include="UI\IGSCBaseViewImplementor.cs" />
+    <Compile Include="Converters\IsOpeningHoursExpandedToArrowDrawableImageConverter.cs" />
+    <Compile Include="Converters\GooglePlacesStringDataToHiddenBoolConverter.cs" />
+    <InterfaceDefinition Include="Views\COP\ConfirmationOfPaymentCellView.xib" />
+    <Compile Include="Views\COP\ConfirmationOfPaymentCellView.cs" />
+    <Compile Include="Views\COP\ConfirmationOfPaymentCellView.designer.cs">
+      <DependentUpon>ConfirmationOfPaymentCellView.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Views\ChooseClaimOrHistoryView.xib" />
+    <Compile Include="Views\ChooseClaimOrHistoryView.cs" />
+    <Compile Include="Views\ChooseClaimOrHistoryView.designer.cs">
+      <DependentUpon>ChooseClaimOrHistoryView.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Views\COP\ActiveClaimDetailView.xib" />
+    <Compile Include="Views\COP\ActiveClaimDetailView.cs" />
+    <Compile Include="Views\COP\ActiveClaimDetailView.designer.cs">
+      <DependentUpon>ActiveClaimDetailView.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Views\COP\DocumentListCellView.xib" />
+    <Compile Include="Views\COP\DocumentListCellView.cs" />
+    <Compile Include="Views\COP\DocumentListCellView.designer.cs">
+      <DependentUpon>DocumentListCellView.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Views\COP\UploadDocumentsView.xib" />
+    <Compile Include="Views\COP\UploadDocumentsView.cs" />
+    <Compile Include="Views\COP\UploadDocumentsView.designer.cs">
+      <DependentUpon>UploadDocumentsView.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Views\COP\ConfirmationOfPaymentUploadView.xib" />
+    <Compile Include="Views\COP\ConfirmationOfPaymentUploadView.cs" />
+    <Compile Include="Views\COP\ConfirmationOfPaymentView.designer.cs">
+      <DependentUpon>ConfirmationOfPaymentUploadView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\COP\DocumentListSource.cs" />
+    <Compile Include="UI\RightAlignIconButton.cs" />
+    <InterfaceDefinition Include="Views\COP\ConfirmationOfPaymentSubmitView.xib" />
+    <Compile Include="Views\COP\ConfirmationOfPaymentSubmitView.cs" />
+    <Compile Include="Views\COP\ConfirmationOfPaymentSubmitView.designer.cs">
+      <DependentUpon>ConfirmationOfPaymentSubmitView.cs</DependentUpon>
+    </Compile>
+    <ImageAsset Include="Resources\Images.xcassets\Delete.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Add.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\ImageThumbnail.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\DocumentThumbnail.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <Compile Include="Converters\DocumentTypeToImageConverter.cs" />
+    <ImageAsset Include="Resources\Images.xcassets\Add.imageset\Add.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\DocumentThumbnail.imageset\DocumentThumbnail.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\ImageThumbnail.imageset\ImageThumbnail.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <Compile Include="Views\COP\RemoveDocumentEventArgs.cs" />
+    <InterfaceDefinition Include="Views\COP\DisclaimerView.xib" />
+    <Compile Include="Views\COP\DisclaimerView.cs" />
+    <Compile Include="Views\COP\DisclaimerView.designer.cs">
+      <DependentUpon>DisclaimerView.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Views\COP\ConfirmationOfPaymentCompletedView.xib" />
+    <Compile Include="Views\COP\ConfirmationOfPaymentCompletedView.cs" />
+    <Compile Include="Views\COP\ConfirmationOfPaymentCompletedView.designer.cs">
+      <DependentUpon>ConfirmationOfPaymentCompletedView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\COP\DocumentListReadOnlySource.cs" />
+    <Compile Include="Constants.brand.cs" />
+    <None Include="app.config" />
+    <InterfaceDefinition Include="Views\Menu\LandingPageView.xib" />
+    <Compile Include="Views\Menu\LandingPageView.cs" />
+    <Compile Include="Views\Menu\LandingPageView.designer.cs">
+      <DependentUpon>LandingPageView.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Views\Menu\MenuItemCellView.xib" />
+    <Compile Include="Views\Menu\MenuItemCellView.cs" />
+    <Compile Include="Views\Menu\MenuItemCellView.designer.cs">
+      <DependentUpon>MenuItemCellView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Converters\MenuItemRelToNormalStateMenuItemIconConverter.cs" />
+    <Compile Include="Converters\MenuItemRelToHighlightedStateMenuItemIconConverter.cs" />
+    <Compile Include="Views\Menu\MenuItemReadOnlySource.cs" />
+    <ImageAsset Include="Resources\Images.xcassets\HamburgerMenuIcon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\TermsAndConditionsActive.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\TermsAndConditionsActive.imageset\TermsAndConditionsActive.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\TermsAndConditionsTouch.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\TermsAndConditionsTouch.imageset\TermsAndConditionsTouch.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\MyClaimsActive.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\MyClaimsTouch.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\MyClaimsActive.imageset\MyClaimsActive.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\MyClaimsTouch.imageset\MyClaimsTouch.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\MyIdCardActive.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\MyIdCardTouch.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\MyIdCardActive.imageset\MyIdCardActive.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\MyIdCardTouch.imageset\MyIdCardTouch.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\DrugsOnTheGoActive.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\DrugsOnTheGoTouch.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\DrugsOnTheGoActive.imageset\DrugsOnTheGoActive.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\DrugsOnTheGoTouch.imageset\DrugsOnTheGoTouch.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\MyBenefitsActive.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\MyBenefitsTouch.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\MyBenefitsTouch.imageset\MyBenefitsTouch.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\FindAPharmacyActive.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\FindAPharmacyTouch.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\FindAProviderActive.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\FindAProviderTouch.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\FindAPharmacyTouch.imageset\FindAPharmacyTouch.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\FindAProviderActive.imageset\FindAProviderActive.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\FindAProviderTouch.imageset\FindAProviderTouch.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\MySettingsActive.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\MySettingsActive.imageset\MySettingsActive.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\MySettingsTouch.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\MySettingsTouch.imageset\MySettingsTouch.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Change4LifeActive.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Change4LifeTouch.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\MyAlertsActive.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\MyAlertsTouch.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Change4LifeActive.imageset\Change4LifeActive.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Change4LifeTouch.imageset\Change4LifeTouch.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\MyBalancesActive.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\MyBalancesTouch.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\MyBalancesActive.imageset\MyBalancesActive.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\MyBalancesTouch.imageset\MyBalancesTouch.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\MyAlertsActive.imageset\MyAlertsActive.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\MyAlertsTouch.imageset\MyAlertsTouch.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <InterfaceDefinition Include="Views\Dashboard\Dashboard.xib" />
+    <Compile Include="Views\Dashboard\Dashboard.cs" />
+    <Compile Include="Views\Dashboard\Dashboard.designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Views\Dashboard\RecentClaimCellView.xib" />
+    <Compile Include="Views\Dashboard\RecentClaimCellView.cs" />
+    <Compile Include="Views\Dashboard\RecentClaimCellView.designer.cs">
+      <DependentUpon>RecentClaimCellView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dashboard\RecentClaimsCollectionViewSource.cs" />
+    <Compile Include="Converters\BoolToDefaultStringValueConverter.cs" />
+    <Compile Include="Converters\BoolToDefaultFloatValueConverter.cs" />
+    <ImageAsset Include="Resources\Images.xcassets\PSA.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\HCSA.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\DrugsOnTheGo.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Dental.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <InterfaceDefinition Include="Views\MainNavigationView.xib" />
+    <Compile Include="Views\MainNavigationView.cs" />
+    <Compile Include="Views\MainNavigationView.designer.cs">
+      <DependentUpon>MainNavigationView.cs</DependentUpon>
+    </Compile>
+    <ImageAsset Include="Resources\Images.xcassets\HamburgerMenuIcon.imageset\menu.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\DashboardIcon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\DashboardIcon.imageset\dashboard standby.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Chiropractor.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Massage.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\DrugsOnTheGo.imageset\Drugs.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\HCSA.imageset\HCSA.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PSA.imageset\PSA.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Dental.imageset\dental.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Chiropractor.imageset\Chiropractor.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Massage.imageset\Massage.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <InterfaceDefinition Include="Views\Claims\ClaimSummaryView.xib" />
+    <Compile Include="Views\Claims\ClaimSummaryView.cs" />
+    <Compile Include="Views\Claims\ClaimSummaryView.designer.cs">
+      <DependentUpon>ClaimSummaryView.cs</DependentUpon>
+    </Compile>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchScreenImage.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchScreenImage.imageset\LaunchScreenImage.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <InterfaceDefinition Include="Views\TermsAndConditions\TermsAndConditionsView.xib" />
+    <Compile Include="Views\TermsAndConditions\TermsAndConditionsView.cs" />
+    <Compile Include="Views\TermsAndConditions\TermsAndConditionsView.designer.cs">
+      <DependentUpon>TermsAndConditionsView.cs</DependentUpon>
+    </Compile>
+    <BundleResource Include="Resources\TermsAndConditionsResources\Legal_en.html" />
+    <BundleResource Include="Resources\TermsAndConditionsResources\Legal_fr.html" />
+    <BundleResource Include="Resources\TermsAndConditionsResources\Privacy_en.html" />
+    <BundleResource Include="Resources\TermsAndConditionsResources\Privacy_fr.html" />
+    <BundleResource Include="Resources\TermsAndConditionsResources\Security_en.html" />
+    <BundleResource Include="Resources\TermsAndConditionsResources\Security_fr.html" />
+    <BundleResource Include="Resources\TermsAndConditionsResources\TermsAndConditions_en.html" />
+    <BundleResource Include="Resources\TermsAndConditionsResources\TermsAndConditions_fr.html" />
+    <ImageAsset Include="Resources\Images.xcassets\CheckboxNormal.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\CheckboxSelected.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <BundleResource Include="Resources\TermsAndConditionsResources\Empty.html" />
+    <BundleResource Include="Resources\Misc\Logo-fr.png" />
+    <Compile Include="Colors.cs" />
+    <Compile Include="Colors.brand.cs" />
+    <ImageAsset Include="Resources\Images.xcassets\DrugsDontWork-En.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\DrugsDontWork-Fr.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\DrugsDontWork-En.imageset\drugsDontWork-en.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\DrugsDontWork-Fr.imageset\drugsDontWork-fr.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <InterfaceDefinition Include="Views\Login\LoginView.xib" />
+    <Compile Include="Views\Login\LoginView.cs" />
+    <Compile Include="Views\Login\LoginView.designer.cs">
+      <DependentUpon>LoginView.cs</DependentUpon>
+    </Compile>
+    <ImageAsset Include="Resources\Images.xcassets\GreenDiagonal.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppLogo-En.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppLogo-Fr.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppLogo-En.imageset\AppLogo-En.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppLogo-Fr.imageset\AppLogo-Fr.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\DirectBilling.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\DirectBilling.imageset\DirectBilling.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Telephone.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Directions.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\HeartOn.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\HeartOff.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\List.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\List.imageset\List.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LearnMoreInfo.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LearnMoreInfo.imageset\LearnMoreInfo.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LocationDisabled.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LocationDisabled.imageset\LocationDisabled.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LocationEnabled.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LocationEnabled.imageset\LocationEnabled.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Search.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Search.imageset\Search.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\ClaimHistorySearchCriteriaFilter.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\ClaimHistorySearchCriteriaFilterTouch.imageset\ClaimHistorySearchCriteriaFilterTouch.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\ClaimHistorySearchCriteriaFilterTouch.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Phone.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Phone.imageset\Phone.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinLocation.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\HeartOn.imageset\HeartOn.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\HeartOff.imageset\HeartOff.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinLocation.imageset\MyLocation.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Telephone.imageset\Telephone.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Directions.imageset\Direction.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinMyLocation.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinMyLocation.imageset\PinMyLocation.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LearnMoreProviderSearch.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LearnMoreProviderSearch.imageset\LearnMoreProviderSearch.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LearnMoreUnderstandRating.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LearnMoreUnderstandRating.imageset\LearnMoreUnderstandRating.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Plus.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Plus.imageset\Plus.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\RadioButtonUnselected.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\RadioButtonUnselected.imageset\RadioButtonUnselected.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\RadioButtonSelected.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\RadioButtonSelected.imageset\RadioButtonSelected.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\StarRatingHalf.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\StarRatingNone.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\StarRatingFull.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\StarRatingHalf.imageset\StarRatingHalf.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\StarRatingNone.imageset\StarRatingNone.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\StarRatingFull.imageset\StarRatingFull.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\HoursOfOperation.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\HoursOfOperation.imageset\HoursOfOperation.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Compass.imageset\Compass.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Compass.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\ClaimHistorySearchCriteriaFilter.imageset\ClaimHistorySearchCriteriaFilter.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinCounselling.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinCounselling.imageset\PinCounselling.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinDental.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinDental.imageset\PinDental.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinFootCare.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinMedicalItem.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinMedicalItem.imageset\PinMedicalItem.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinPharmacy.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinPharmacy.imageset\PinPharmacy.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinProfessionalServices.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinProfessionalServices.imageset\PinProfessionalService.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinVision.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinVision.imageset\PinVision.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinFootCare.imageset\PinFootcare.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\CheckboxNormal.imageset\CheckboxNormal.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\CheckboxSelected.imageset\CheckboxSelected.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\FindAPharmacyActive.imageset\FindAPharmacyActive.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\GreenDiagonal.imageset\GreenDiagonal.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\MyBenefitsActive.imageset\MyBenefitsActive.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\ArrowUp.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\ArrowDown.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\ArrowForward.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\ArrowBack.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\ArrowUp.imageset\ArrowUp.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\ArrowDown.imageset\ArrowDown.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\ArrowForward.imageset\ArrowForward.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\ArrowBack.imageset\ArrowBack.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Checkmark.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Checkmark.imageset\Checkmark.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Pin1.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Pin2.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Pin3.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Pin4.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Pin5.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinDefault.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinFavourite1.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinFavourite2.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinFavourite3.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinFavourite4.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinFavourite5.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinFavourite1.imageset\PinFavourite1.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinFavourite2.imageset\PinFavourite2.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinFavourite3.imageset\PinFavourite3.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinFavourite4.imageset\PinFavourite4.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinFavourite5.imageset\PinFavourite5.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Pin1.imageset\Pin1.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Pin2.imageset\Pin2.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Pin3.imageset\Pin3.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Pin4.imageset\Pin4.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Pin5.imageset\Pin5.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinDefault.imageset\PinDefault.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinFavourite.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinFavourite.imageset\PinFavourite.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\ContactUsActive.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\ContactUsTouch.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\ContactUsTouch.imageset\ContactUsTouch.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\ContactUsActive.imageset\ContactUsActive.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinFavourite1_5.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinFavourite1_5.imageset\PinFavourite1.5.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinFavourite2_5.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinFavourite2_5.imageset\PinFavourite2.5.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinFavourite3_5.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinFavourite3_5.imageset\PinFavourite3.5.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinFavourite4_5.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinFavourite4_5.imageset\PinFavourite4.5.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinFavouriteFr1_5.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinFavouriteFr1_5.imageset\PinFavouriteFr1.5.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinFavouriteFr2_5.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinFavouriteFr2_5.imageset\PinFavouriteFr2.5.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinFavouriteFr3_5.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinFavouriteFr3_5.imageset\PinFavouriteFr3.5.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinFavouriteFr4_5.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinFavouriteFr4_5.imageset\PinFavouriteFr4.5.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinFr1_5.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinFr1_5.imageset\PinFr1.5.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinFr2_5.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinFr2_5.imageset\PinFr2.5.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinFr3_5.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinFr3_5.imageset\PinFr3.5.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinFr4_5.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\PinFr4_5.imageset\PinFr4.5.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Pin1_5.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Pin1_5.imageset\Pin1.5.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Pin2_5.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Pin2_5.imageset\Pin2.5.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Pin3_5.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Pin3_5.imageset\Pin3.5.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Pin4_5.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Pin4_5.imageset\Pin4.5.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Delete.imageset\Delete.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\ErrorFlag.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\ErrorFlag.imageset\ErrorFlag.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\ArrowUpGray.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\ArrowDownGray.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\ArrowUpGray.imageset\ArrowUpGray.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\ArrowDownGray.imageset\ArrowDownGray.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Close.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Close.imageset\CloseActive.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\ArrowBackGray.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\ArrowBackGray.imageset\ArrowBackGray.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\ArrowForwardGray.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\ArrowForwardGray.imageset\ArrowForwardGray.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <InterfaceDefinition Include="Views\Claims\AuditClaimSummaryView.xib" />
+    <Compile Include="Views\Claims\AuditClaimSummaryView.cs" />
+    <Compile Include="Views\Claims\AuditClaimSummaryView.designer.cs">
+      <DependentUpon>AuditClaimSummaryView.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Views\Claims\ClaimSummaryCellView.xib" />
+    <Compile Include="Views\Claims\ClaimSummaryCellView.cs" />
+    <Compile Include="Views\Claims\ClaimSummaryCellView.designer.cs">
+      <DependentUpon>ClaimSummaryCellView.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Views\Claims\ClaimSummaryHeader.xib" />
+    <Compile Include="Views\Claims\ClaimSummaryHeader.cs" />
+    <Compile Include="Views\Claims\ClaimSummaryHeader.designer.cs">
+      <DependentUpon>ClaimSummaryHeader.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Views\Claims\ClaimSummaryFooter.xib" />
+    <Compile Include="Views\Claims\ClaimSummaryFooter.cs" />
+    <Compile Include="Views\Claims\ClaimSummaryFooter.designer.cs">
+      <DependentUpon>ClaimSummaryFooter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Claims\ClaimsCollectionViewSource.cs" />
+    <Compile Include="Converters\ClaimStateToDefaultFloatValueConverter.cs" />
+    <Compile Include="Views\Claims\ClaimCollectionFlowLayout.cs" />
+    <Compile Include="UI\AlignableLabel.cs" />
+    <Compile Include="Converters\StringToAttributedStringConverter.cs" />
+    <Compile Include="Views\WebClaimSubmissionAgreement\WebAgreementView.cs" />
+    <Compile Include="Views\WebClaimSubmissionAgreement\WebAgreementView.designer.cs" />
+    <InterfaceDefinition Include="Views\WebClaimSubmissionAgreement\WebAgreementView.xib" />
+    <BundleResource Include="Resources\WebClaimSubmissionAgreementResources\webagreement_en.html" />
+    <BundleResource Include="Resources\WebClaimSubmissionAgreementResources\webagreement_fr.html" />
+    <InterfaceDefinition Include="Views\AuditClaims\AuditListView.xib" />
+    <Compile Include="Views\AuditClaims\AuditListView.cs" />
+    <Compile Include="Views\AuditClaims\AuditListView.designer.cs">
+      <DependentUpon>AuditListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AuditClaims\AuditClaimsCollectionViewSource.cs" />
+    <InterfaceDefinition Include="Views\AuditClaims\AuditClaimCellView.xib" />
+    <Compile Include="Views\AuditClaims\AuditClaimCellView.cs" />
+    <Compile Include="Views\AuditClaims\AuditClaimCellView.designer.cs">
+      <DependentUpon>AuditClaimCellView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocalizableBrand.Designer.cs">
+      <DependentUpon>LocalizableBrand.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <ImageAsset Include="Resources\Images.xcassets\ArrowForwardWhite.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\ArrowForwardWhite.imageset\ArrowForwardWhite.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <InterfaceDefinition Include="Views\Claims\ClaimSubmitTermsAndConditionsView.xib" />
+    <Compile Include="Views\Claims\ClaimSubmitTermsAndConditionsView.cs" />
+    <Compile Include="Views\Claims\ClaimSubmitTermsAndConditionsView.designer.cs">
+      <DependentUpon>ClaimSubmitTermsAndConditionsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Converters\StringToBoolValueConverter.cs" />
+    <ImageAsset Include="Resources\Images.xcassets\SureHealthActive.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\SureHealthTouch.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\SureHealthActive.imageset\SureHealthActive.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\SureHealthTouch.imageset\SureHealthTouch.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <InterfaceDefinition Include="Views\SureHealth\SureHealthView.xib" />
+    <Compile Include="Views\SureHealth\SureHealthView.cs" />
+    <Compile Include="Views\SureHealth\SureHealthView.designer.cs">
+      <DependentUpon>SureHealthView.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Views\ClaimDetails\ClaimDetailsView.xib" />
+    <Compile Include="Views\ClaimDetails\ClaimDetailsView.cs" />
+    <Compile Include="Views\ClaimDetails\ClaimDetailsView.designer.cs">
+      <DependentUpon>ClaimDetailsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\LabeledToggle.cs" />
+    <Compile Include="UI\LabeledTextField.cs" />
+    <Compile Include="UI\LabeledDatePicker.cs" />
+    <Compile Include="UI\LabeledTableView.cs" />
+    <Compile Include="Converters\NullObjectToBoolValueConverter.cs" />
+    <InterfaceDefinition Include="Views\SupportCenter\SupportCenterView.xib" />
+    <Compile Include="Views\SupportCenter\SupportCenterView.cs" />
+    <Compile Include="Views\SupportCenter\SupportCenterView.designer.cs">
+      <DependentUpon>SupportCenterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CustomWebViewDelegate.cs" />
+    <ImageAsset Include="Resources\Images.xcassets\SupportCenterActive.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\SupportCenterTouch.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\SupportCenterActive.imageset\SupportCenterActive.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\SupportCenterTouch.imageset\SupportCenterTouch.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <Compile Include="Converters\ImageFilePathToUIImageViewConverter.cs" />
+    <ImageAsset Include="Resources\Images.xcassets\IdCardImage.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\IdCardImage.imageset\MEDIC_ID_CARD_FRONT_EN.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\IdCardFrontImageRotated.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\IdCardFrontImageRotated.imageset\MEDIC_ID_CARD_FRONT_EN copy.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\IdCardImage.imageset\MEDIC_ID_CARD_FRONT_EN-1.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\IdCardFrontImageRotated.imageset\MEDIC_ID_CARD_FRONT_EN copy-1.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <Compile Include="UI\VerticalLabel.cs" />
+    <ImageAsset Include="Resources\Images.xcassets\AddToWallet.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AddToWallet.imageset\AddToAppleWallet.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AddToWalletFr.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AddToWalletFr.imageset\AddToAppleWalletFr.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <Compile Include="Views\IdCard\CardView.cs" />
+    <Compile Include="Helper\StringExtensions.cs" />
+    <InterfaceDefinition Include="Views\Upload\ClaimDocumentsUploadView.xib" />
+    <Compile Include="Views\Upload\ClaimDocumentsUploadView.cs" />
+    <Compile Include="Views\Upload\ClaimDocumentsUploadView.designer.cs">
+      <DependentUpon>ClaimDocumentsUploadView.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Views\ClaimConfirmation\ClaimSubmissionConfirmationView.xib" />
+    <Compile Include="Views\ClaimConfirmation\ClaimSubmissionConfirmationView.cs" />
+    <Compile Include="Views\ClaimConfirmation\ClaimSubmissionConfirmationView.designer.cs">
+      <DependentUpon>ClaimSubmissionConfirmationView.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Views\ClaimConfirmation\ClaimDetailConfirmationCellView.xib" />
+    <Compile Include="Views\ClaimConfirmation\ClaimDetailConfirmationCellView.cs" />
+    <Compile Include="Views\ClaimConfirmation\ClaimDetailConfirmationCellView.designer.cs">
+      <DependentUpon>ClaimDetailConfirmationCellView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ClaimConfirmation\ClaimDetailsConfirmationCollectionViewSource.cs" />
+    <Compile Include="Views\ClaimConfirmation\ClaimDetailsConfirmationCollectionFlowLayout.cs" />
+    <Compile Include="Views\ClaimConfirmation\TreatmentDetailsConfirmationCollectionFlowLayout.cs" />
+    <Compile Include="Views\ClaimConfirmation\TreatmentDetailsConfirmationCollectionViewSource.cs" />
+    <Compile Include="Views\ClaimConfirmation\CliamSubmissionConfirmationHeaderCellView.cs" />
+    <Compile Include="Converters\BoolToCGColorValueConverter.cs" />
+    <ImageAsset Include="Resources\Images.xcassets\LogoutActive.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LogoutTouch.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LogoutActive.imageset\LogoutActive.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LogoutTouch.imageset\LogoutTouch.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <InterfaceDefinition Include="Views\TrreatmentDetails\ClaimTreatmentDetailsEntryDentalView.xib" />
+    <Compile Include="Views\TrreatmentDetails\ClaimTreatmentDetailsEntryDentalView.cs" />
+    <Compile Include="Views\TrreatmentDetails\ClaimTreatmentDetailsEntryDentalView.designer.cs">
+      <DependentUpon>ClaimTreatmentDetailsEntryDentalView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\EnhancedLabeledTextField.cs" />
+    <Compile Include="UI\EnhancedLabeledDatePicker.cs" />
+    <Compile Include="Converters\NullableValueConverter.cs" />
+    <InterfaceDefinition Include="Views\ClaimSubmissionResult\ClaimSubmissionResultView.xib" />
+    <Compile Include="Views\ClaimSubmissionResult\ClaimSubmissionResultView.cs" />
+    <Compile Include="Views\ClaimSubmissionResult\ClaimSubmissionResultView.designer.cs">
+      <DependentUpon>ClaimSubmissionResultView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ClaimSubmissionResult\ClaimResultDetailsCollectionViewSource.cs" />
+    <Compile Include="Views\ClaimSubmissionResult\ClaimResultDetailsCollectionFlowLayout.cs" />
+    <Compile Include="Views\ClaimSubmissionResult\ClaimDetailsFooterCellView.cs" />
+    <Compile Include="Views\ClaimSubmissionResult\ClaimResultTotalsCollectionViewSource.cs" />
+    <Compile Include="Views\ClaimSubmissionResult\ClaimResultTotalsCollectionFlowLayout.cs" />
+    <InterfaceDefinition Include="Views\ClaimParticipants\ClaimParticipantsView.xib" />
+    <Compile Include="Views\ClaimParticipants\ClaimParticipantsView.cs" />
+    <Compile Include="Views\ClaimParticipants\ClaimParticipantsView.designer.cs">
+      <DependentUpon>ClaimParticipantsView.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Views\ClaimParticipants\ClaimParticipantsCollectionViewCell.xib" />
+    <Compile Include="Views\ClaimParticipants\ClaimParticipantsCollectionViewCell.cs" />
+    <Compile Include="Views\ClaimParticipants\ClaimParticipantsCollectionViewCell.designer.cs">
+      <DependentUpon>ClaimParticipantsCollectionViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ClaimParticipants\ClaimParticipantsHeaderCellView.cs" />
+    <Compile Include="Views\ClaimParticipants\ClaimParticipantCollectionViewSource.cs" />
+    <Compile Include="Views\ClaimParticipants\ClaimParticipantCollectionFlowLayout.cs" />
+    <InterfaceDefinition Include="Views\DirectDeposit\DirectDepositView.xib" />
+    <Compile Include="Views\DirectDeposit\DirectDepositView.cs" />
+    <Compile Include="Views\DirectDeposit\DirectDepositView.designer.cs">
+      <DependentUpon>DirectDepositView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ExpandableView.cs" />
+    <ImageAsset Include="Resources\Images.xcassets\LargeRoundCheckboxSelected.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\RoundCheckboxSelected.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\RoundCheckBoxUnselected.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\LargeRoundCheckboxUnselected.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\LargeRoundCheckboxSelected.imageset\LargeRoundCheckboxSelected.pdf" />
+    <ImageAsset Include="Resources\Images.xcassets\LargeRoundCheckboxUnselected.imageset\LargeRoundCheckboxUnselected.pdf" />
+    <ImageAsset Include="Resources\Images.xcassets\RoundCheckBoxUnselected.imageset\RoundCheckboxUnselected.pdf" />
+    <ImageAsset Include="Resources\Images.xcassets\ArrowUpGrayMedium.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\ArrowUpGrayMedium.imageset\ArrowUpGrayMedium.pdf" />
+    <ImageAsset Include="Resources\Images.xcassets\ArrowDownGrayMedium.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\ArrowDownGrayMedium.imageset\ArrowDownGrayMedium.pdf" />
+    <Compile Include="UI\VerticalLabeledTextField.cs" />
+    <Compile Include="UI\RadioButtonWithBorder.cs" />
+    <ImageAsset Include="Resources\Images.xcassets\RoundCheckboxSelected.imageset\RoundCheckboxSelected.pdf" />
+    <ImageAsset Include="Resources\Images.xcassets\Warning.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\Warning.imageset\Warning.pdf" />
+    <Compile Include="Views\DirectDeposit\ExpandableTableSource.cs" />
+    <InterfaceDefinition Include="Views\DirectDeposit\DirectDepositParentCellView.xib" />
+    <Compile Include="Views\DirectDeposit\DirectDepositParentCellView.cs" />
+    <Compile Include="Views\DirectDeposit\DirectDepositParentCellView.designer.cs">
+      <DependentUpon>DirectDepositParentCellView.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Views\DirectDeposit\Step1TableViewCell.xib" />
+    <Compile Include="Views\DirectDeposit\Step1TableViewCell.cs" />
+    <Compile Include="Views\DirectDeposit\Step1TableViewCell.designer.cs">
+      <DependentUpon>Step1TableViewCell.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Views\DirectDeposit\Step3TableViewCell.xib" />
+    <Compile Include="Views\DirectDeposit\Step3TableViewCell.cs" />
+    <Compile Include="Views\DirectDeposit\Step3TableViewCell.designer.cs">
+      <DependentUpon>Step3TableViewCell.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Views\DirectDeposit\Step2TableViewCell.xib" />
+    <Compile Include="Views\DirectDeposit\Step2TableViewCell.cs" />
+    <Compile Include="Views\DirectDeposit\Step2TableViewCell.designer.cs">
+      <DependentUpon>Step2TableViewCell.cs</DependentUpon>
+    </Compile>
+    <ImageAsset Include="Resources\Images.xcassets\SampleCheque.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\SampleCheque.imageset\SampleCheque.png" />
+    <ImageAsset Include="Resources\Images.xcassets\DirectDepositActive.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\DirectDepositTouch.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\DirectDepositActive.imageset\DirectDepositActive.pdf" />
+    <ImageAsset Include="Resources\Images.xcassets\DirectDepositTouch.imageset\DirectDepositTouch.pdf" />
+    <InterfaceDefinition Include="CellTemplates\TextFieldValidationCellView.xib" />
+    <Compile Include="CellTemplates\TextFieldValidationCellView.cs" />
+    <Compile Include="CellTemplates\TextFieldValidationCellView.designer.cs">
+      <DependentUpon>TextFieldValidationCellView.cs</DependentUpon>
+    </Compile>
+    <BundleResource Include="Resources\WebClaimSubmissionAgreementResources\webagreement_en.html" />
+    <BundleResource Include="Resources\WebClaimSubmissionAgreementResources\webagreement_fr.html" />
+    <InterfaceDefinition Include="Views\DirectDeposit\DirectDepositError\DDValidationErrorViewController.xib" />
+    <Compile Include="Views\DirectDeposit\DirectDepositError\DDValidationErrorViewController.cs" />
+    <Compile Include="Views\DirectDeposit\DirectDepositError\DDValidationErrorViewController.designer.cs">
+      <DependentUpon>DDValidationErrorViewController.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Views\DirectDeposit\DirectDepositConfirmation\DDConfirmationViewController.xib" />
+    <Compile Include="Views\DirectDeposit\DirectDepositConfirmation\DDConfirmationViewController.cs" />
+    <Compile Include="Views\DirectDeposit\DirectDepositConfirmation\DDConfirmationViewController.designer.cs">
+      <DependentUpon>DDConfirmationViewController.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Views\DirectDeposit\DirectDepositResult\DDResultsViewController.xib" />
+    <Compile Include="Views\DirectDeposit\DirectDepositResult\DDResultsViewController.cs" />
+    <Compile Include="Views\DirectDeposit\DirectDepositResult\DDResultsViewController.designer.cs">
+      <DependentUpon>DDResultsViewController.cs</DependentUpon>
+    </Compile>
+    <ImageAsset Include="Resources\Images.xcassets\SampleChequeFr.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\SampleChequeFr.imageset\SampleChequeFr.png" />
+    <BundleResource Include="Resources\Fonts\NunitoSans-BoldItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\Fonts\NunitoSans-BlackItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\Fonts\NunitoSans-Regular.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\Fonts\NunitoSans-Italic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\Fonts\NunitoSans-Bold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\Fonts\NunitoSans-Black.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\Fonts\NunitoSans-SemiBoldItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\Fonts\NunitoSans-SemiBold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <Compile Include="Services\PlayCoreService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="iCarousel">
+      <HintPath>..\Components\icarousel-1.8.2.0\lib\ios-unified\iCarousel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="MupApps.MvvmCross.Plugins.ControlsNavigation.Touch">
+      <HintPath>libs\MupApps.MvvmCross.Plugins.ControlsNavigation.Touch.dll</HintPath>
+    </Reference>
+    <Reference Include="MupApps.MvvmCross.Plugins.ControlsNavigation">
+      <HintPath>libs\MupApps.MvvmCross.Plugins.ControlsNavigation.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="Acr.MvvmCross.Plugins.UserDialogs">
+      <HintPath>libs\Acr.MvvmCross.Plugins.UserDialogs.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.MvvmCross.Plugins.UserDialogs.Touch">
+      <HintPath>libs\Acr.MvvmCross.Plugins.UserDialogs.Touch.dll</HintPath>
+    </Reference>
+    <Reference Include="ToastIOS">
+      <HintPath>..\Components\ToastIOS-1.5\lib\ios-unified\ToastIOS.dll</HintPath>
+    </Reference>
+    <Reference Include="CrossUI.Touch">
+      <HintPath>..\packages\MvvmCross.HotTuna.Touch.Dialog.3.5.0\lib\Xamarin.iOS10\CrossUI.Touch.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <Content Include="libs\Acr.MvvmCross.Plugins.UserDialogs.dll" />
+    <Content Include="libs\Acr.MvvmCross.Plugins.UserDialogs.pdb" />
+    <Content Include="libs\Acr.MvvmCross.Plugins.UserDialogs.Touch.dll" />
+    <Content Include="libs\Acr.Support.iOS.dll" />
+    <Content Include="libs\Acr.UserDialogs.dll" />
+    <Content Include="libs\Acr.UserDialogs.Interface.dll" />
+    <Content Include="libs\Acr.UserDialogs.Interface.pdb" />
+    <Content Include="libs\Acr.UserDialogs.pdb" />
+    <Content Include="libs\MupApps.MvvmCross.Plugins.ControlsNavigation.dll" />
+    <Content Include="libs\MupApps.MvvmCross.Plugins.ControlsNavigation.Touch.dll" />
+    <BundleResource Include="Views\bokeh.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\1024-x-1024.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\87-x-87.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\180-x-180.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\167-x-167.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\40-x-40.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\120-x-120.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\152-x-152.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\29-x-29.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\58-x-58.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\76-x-76.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\80-x-80.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <BundleResource Include="Resources\Card\applewallet_en.png" />
+    <BundleResource Include="Resources\Card\applewallet_fr.png" />
+  </ItemGroup>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <ItemGroup>
+    <Folder Include="Resources\Images.xcassets\Add.imageset\" />
+    <Folder Include="Resources\Images.xcassets\AppLogo-En.imageset\" />
+    <Folder Include="Resources\Images.xcassets\AppLogo-fr.imageset\" />
+    <Folder Include="Resources\Images.xcassets\ArrowBack.imageset\" />
+    <Folder Include="Resources\Images.xcassets\ArrowBackGray.imageset\" />
+    <Folder Include="Resources\Images.xcassets\ArrowDown.imageset\" />
+    <Folder Include="Resources\Images.xcassets\ArrowDownGray.imageset\" />
+    <Folder Include="Resources\Images.xcassets\ArrowForward.imageset\" />
+    <Folder Include="Resources\Images.xcassets\ArrowForwardGray.imageset\" />
+    <Folder Include="Resources\Images.xcassets\ArrowForwardWhite.imageset\" />
+    <Folder Include="Resources\Images.xcassets\ArrowUp.imageset\" />
+    <Folder Include="Resources\Images.xcassets\ArrowUpGray.imageset\" />
+    <Folder Include="Resources\Images.xcassets\Change4LifeActive.imageset\" />
+    <Folder Include="Resources\Images.xcassets\Change4LifeTouch.imageset\" />
+    <Folder Include="Resources\Images.xcassets\CheckboxNormal.imageset\" />
+    <Folder Include="Resources\Images.xcassets\CheckboxSelected.imageset\" />
+    <Folder Include="Resources\Images.xcassets\Checkmark.imageset\" />
+    <Folder Include="Resources\Images.xcassets\Chiropractor.imageset\" />
+    <Folder Include="Resources\Images.xcassets\ClaimHistorySearchCriteriaFilter.imageset\" />
+    <Folder Include="Resources\Images.xcassets\ClaimHistorySearchCriteriaFilterTouch.imageset\" />
+    <Folder Include="Resources\Images.xcassets\Close.imageset\" />
+    <Folder Include="Resources\Images.xcassets\Compass.imageset\" />
+    <Folder Include="Resources\Images.xcassets\ContactUsActive.imageset\" />
+    <Folder Include="Resources\Images.xcassets\ContactUsTouch.imageset\" />
+    <Folder Include="Resources\Images.xcassets\current_location.imageset\" />
+    <Folder Include="Resources\Images.xcassets\DashboardIcon.imageset\" />
+    <Folder Include="Resources\Images.xcassets\def_pin_1_0.imageset\" />
+    <Folder Include="Resources\Images.xcassets\def_pin_1_5.imageset\" />
+    <Folder Include="Resources\Images.xcassets\def_pin_2_0.imageset\" />
+    <Folder Include="Resources\Images.xcassets\def_pin_2_5.imageset\" />
+    <Folder Include="Resources\Images.xcassets\def_pin_3_0.imageset\" />
+    <Folder Include="Resources\Images.xcassets\def_pin_3_5.imageset\" />
+    <Folder Include="Resources\Images.xcassets\def_pin_4_0.imageset\" />
+    <Folder Include="Resources\Images.xcassets\def_pin_4_5.imageset\" />
+    <Folder Include="Resources\Images.xcassets\def_pin_5_0.imageset\" />
+    <Folder Include="Resources\Images.xcassets\Delete.imageset\" />
+    <Folder Include="Resources\Images.xcassets\Dental.imageset\" />
+    <Folder Include="Resources\Images.xcassets\DirectBilling.imageset\" />
+    <Folder Include="Resources\Images.xcassets\Directions.imageset\" />
+    <Folder Include="Resources\Images.xcassets\DocumentThumbnail.imageset\" />
+    <Folder Include="Resources\Images.xcassets\DrugsDontWork-En.imageset\" />
+    <Folder Include="Resources\Images.xcassets\DrugsDontWork-Fr.imageset\" />
+    <Folder Include="Resources\Images.xcassets\DrugsOnTheGo.imageset\" />
+    <Folder Include="Resources\Images.xcassets\DrugsOnTheGoActive.imageset\" />
+    <Folder Include="Resources\Images.xcassets\DrugsOnTheGoTouch.imageset\" />
+    <Folder Include="Resources\Images.xcassets\ErrorFlag.imageset\" />
+    <Folder Include="Resources\Images.xcassets\filter.imageset\" />
+    <Folder Include="Resources\Images.xcassets\FindAPharmacyActive.imageset\" />
+    <Folder Include="Resources\Images.xcassets\FindAPharmacyTouch.imageset\" />
+    <Folder Include="Resources\Images.xcassets\FindAProviderActive.imageset\" />
+    <Folder Include="Resources\Images.xcassets\FindAProviderTouch.imageset\" />
+    <Folder Include="Resources\Images.xcassets\GreenDiagonal.imageset\" />
+    <Folder Include="Resources\Images.xcassets\HamburgerMenuIcon.imageset\" />
+    <Folder Include="Resources\Images.xcassets\HCSA.imageset\" />
+    <Folder Include="Resources\Images.xcassets\HeartOff.imageset\" />
+    <Folder Include="Resources\Images.xcassets\HeartOn.imageset\" />
+    <Folder Include="Resources\Images.xcassets\HoursOfOperation.imageset\" />
+    <Folder Include="Resources\Images.xcassets\ImageThumbnail.imageset\" />
+    <Folder Include="Resources\Images.xcassets\LaunchImage.launchimage\" />
+    <Folder Include="Resources\Images.xcassets\LaunchScreenImage.imageset\" />
+    <Folder Include="Resources\Images.xcassets\LearnMoreInfo.imageset\" />
+    <Folder Include="Resources\Images.xcassets\LearnMoreProviderSearch.imageset\" />
+    <Folder Include="Resources\Images.xcassets\LearnMoreUnderstandRating.imageset\" />
+    <Folder Include="Resources\Images.xcassets\list.imageset\" />
+    <Folder Include="Resources\Images.xcassets\LocationDisabled.imageset\" />
+    <Folder Include="Resources\Images.xcassets\LocationEnabled.imageset\" />
+    <Folder Include="Resources\Images.xcassets\LogoutActive.imageset\" />
+    <Folder Include="Resources\Images.xcassets\LogoutTouch.imageset\" />
+    <Folder Include="Resources\Images.xcassets\Massage.imageset\" />
+    <Folder Include="Resources\Images.xcassets\MyAlertsActive.imageset\" />
+    <Folder Include="Resources\Images.xcassets\MyAlertsTouch.imageset\" />
+    <Folder Include="Resources\Images.xcassets\MyBalancesActive.imageset\" />
+    <Folder Include="Resources\Images.xcassets\MyBalancesTouch.imageset\" />
+    <Folder Include="Resources\Images.xcassets\MyBenefitsActive.imageset\" />
+    <Folder Include="Resources\Images.xcassets\MyBenefitsTouch.imageset\" />
+    <Folder Include="Resources\Images.xcassets\MyClaimsActive.imageset\" />
+    <Folder Include="Resources\Images.xcassets\MyClaimsTouch.imageset\" />
+    <Folder Include="Resources\Images.xcassets\MyIdCardActive.imageset\" />
+    <Folder Include="Resources\Images.xcassets\MyIdCardTouch.imageset\" />
+    <Folder Include="Resources\Images.xcassets\MySettingsActive.imageset\" />
+    <Folder Include="Resources\Images.xcassets\MySettingsTouch.imageset\" />
+    <Folder Include="Resources\Images.xcassets\Phone.imageset\" />
+    <Folder Include="Resources\Images.xcassets\Pin1.imageset\" />
+    <Folder Include="Resources\Images.xcassets\Pin1_5.imageset\" />
+    <Folder Include="Resources\Images.xcassets\Pin2.imageset\" />
+    <Folder Include="Resources\Images.xcassets\Pin2_5.imageset\" />
+    <Folder Include="Resources\Images.xcassets\Pin3.imageset\" />
+    <Folder Include="Resources\Images.xcassets\Pin3_5.imageset\" />
+    <Folder Include="Resources\Images.xcassets\Pin4.imageset\" />
+    <Folder Include="Resources\Images.xcassets\Pin4_5.imageset\" />
+    <Folder Include="Resources\Images.xcassets\Pin5.imageset\" />
+    <Folder Include="Resources\Images.xcassets\PinCounselling.imageset\" />
+    <Folder Include="Resources\Images.xcassets\PinDefault.imageset\" />
+    <Folder Include="Resources\Images.xcassets\PinDental.imageset\" />
+    <Folder Include="Resources\Images.xcassets\PinFavourite.imageset\" />
+    <Folder Include="Resources\Images.xcassets\PinFavourite1.imageset\" />
+    <Folder Include="Resources\Images.xcassets\PinFavourite1_5.imageset\" />
+    <Folder Include="Resources\Images.xcassets\PinFavourite2.imageset\" />
+    <Folder Include="Resources\Images.xcassets\PinFavourite2_5.imageset\" />
+    <Folder Include="Resources\Images.xcassets\PinFavourite3.imageset\" />
+    <Folder Include="Resources\Images.xcassets\PinFavourite3_5.imageset\" />
+    <Folder Include="Resources\Images.xcassets\PinFavourite4.imageset\" />
+    <Folder Include="Resources\Images.xcassets\PinFavourite4_5.imageset\" />
+    <Folder Include="Resources\Images.xcassets\PinFavourite5.imageset\" />
+    <Folder Include="Resources\Images.xcassets\PinFavouriteFr1.5.imageset\" />
+    <Folder Include="Resources\Images.xcassets\PinFavouriteFr1_5.imageset\" />
+    <Folder Include="Resources\Images.xcassets\PinFavouriteFr2.5.imageset\" />
+    <Folder Include="Resources\Images.xcassets\PinFavouriteFr2_5.imageset\" />
+    <Folder Include="Resources\Images.xcassets\PinFavouriteFr3.5.imageset\" />
+    <Folder Include="Resources\Images.xcassets\PinFavouriteFr3_5.imageset\" />
+    <Folder Include="Resources\Images.xcassets\PinFavouriteFr4.5.imageset\" />
+    <Folder Include="Resources\Images.xcassets\PinFavouriteFr4_5.imageset\" />
+    <Folder Include="Resources\Images.xcassets\PinFootCare.imageset\" />
+    <Folder Include="Resources\Images.xcassets\PinFr1.5.imageset\" />
+    <Folder Include="Resources\Images.xcassets\PinFr1_5.imageset\" />
+    <Folder Include="Resources\Images.xcassets\PinFr2.5.imageset\" />
+    <Folder Include="Resources\Images.xcassets\PinFr2_5.imageset\" />
+    <Folder Include="Resources\Images.xcassets\PinFr3.5.imageset\" />
+    <Folder Include="Resources\Images.xcassets\PinFr3_5.imageset\" />
+    <Folder Include="Resources\Images.xcassets\PinFr4.5.imageset\" />
+    <Folder Include="Resources\Images.xcassets\PinFr4_5.imageset\" />
+    <Folder Include="Resources\Images.xcassets\PinLocation.imageset\" />
+    <Folder Include="Resources\Images.xcassets\PinMedicalItem.imageset\" />
+    <Folder Include="Resources\Images.xcassets\PinMyLocation.imageset\" />
+    <Folder Include="Resources\Images.xcassets\PinPharmacy.imageset\" />
+    <Folder Include="Resources\Images.xcassets\PinProfessionalServices.imageset\" />
+    <Folder Include="Resources\Images.xcassets\PinVision.imageset\" />
+    <Folder Include="Resources\Images.xcassets\SureHealthActive.imageset\" />
+    <Folder Include="Resources\Images.xcassets\SureHealthTouch.imageset\" />
+    <Folder Include="Views\DirectDeposit\" />
+    <Folder Include="Resources\Images.xcassets\LargeRoundCheckboxSelected.imageset\" />
+    <Folder Include="Resources\Images.xcassets\RoundCheckboxSelected.imageset\" />
+    <Folder Include="Resources\Images.xcassets\RoundCheckBoxUnselected.imageset\" />
+    <Folder Include="Resources\Images.xcassets\LargeRoundCheckboxUnselected.imageset\" />
+    <Folder Include="Resources\Images.xcassets\ArrowUpGrayMedium.imageset\" />
+    <Folder Include="Resources\Images.xcassets\ArrowDownGrayMedium.imageset\" />
+    <Folder Include="Resources\Images.xcassets\Warning.imageset\" />
+    <Folder Include="Resources\Images.xcassets\SampleCheque.imageset\" />
+    <Folder Include="Resources\Images.xcassets\DirectDepositActive.imageset\" />
+    <Folder Include="Resources\Images.xcassets\DirectDepositTouch.imageset\" />
+    <Folder Include="Views\DirectDeposit\DirectDepositError\" />
+    <Folder Include="Views\DirectDeposit\DirectDepositConfirmation\" />
+    <Folder Include="Views\DirectDeposit\DirectDepositResult\" />
+    <Folder Include="Resources\Images.xcassets\SampleChequeFr.imageset\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Card\asr_back_en.png" />
+    <BundleResource Include="Resources\Card\asr_back_travel_en.png" />
+    <BundleResource Include="Resources\Card\asr_back_travel_fr.png" />
+    <BundleResource Include="Resources\Card\asr_front_en.png" />
+    <BundleResource Include="Resources\Card\gsc_back_ travel_en.png" />
+    <BundleResource Include="Resources\Card\gsc_back_en.png" />
+    <BundleResource Include="Resources\Card\gsc_back_fr.png" />
+    <BundleResource Include="Resources\Card\gsc_back_travel_fr.png" />
+    <BundleResource Include="Resources\Card\gsc_front_en.png" />
+    <BundleResource Include="Resources\Card\gsc_front_fr.png" />
+    <BundleResource Include="Resources\Card\wes_back_en.png" />
+    <BundleResource Include="Resources\Card\wes_back_travel_en.png" />
+    <BundleResource Include="Resources\Card\wes_back_travel_fr.png" />
+    <BundleResource Include="Resources\Card\wes_front_en.png" />
+    <BundleResource Include="en.lproj\Localizable.strings" />
+    <BundleResource Include="fr.lproj\Localizable.strings" />
+    <BundleResource Include="Resources\Fonts\LeagueGothic.otf" />
+    <BundleResource Include="Resources\Icons\closeGrey.png" />
+    <BundleResource Include="Resources\Icons\Phone\closeGrey.png" />
+    <BundleResource Include="Resources\Misc\Logo.png" />
+    <BundleResource Include="Resources\Misc\Phone\gscLogo_fr.png" />
+    <BundleResource Include="Resources\Misc\Phone\gscLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="CellTemplates\DetailedProviderCellTemplate.xib" />
+    <InterfaceDefinition Include="CellTemplates\DetailedProviderCellTemplatePhone.xib" />
+    <InterfaceDefinition Include="CellTemplates\LocationTypeCellTemplate.xib" />
+    <InterfaceDefinition Include="CellTemplates\LocationTypeCellTemplatePhone.xib" />
+    <InterfaceDefinition Include="CellTemplates\ProviderCellTemplate.xib" />
+    <InterfaceDefinition Include="CellTemplates\ProviderCellTemplatePhone.xib" />
+    <InterfaceDefinition Include="CellTemplates\ProviderSearchTypeCellTemplate.xib" />
+    <InterfaceDefinition Include="CellTemplates\ProviderSearchTypeCellTemplatePhone.xib" />
+    <InterfaceDefinition Include="Views\ChangeForLifeNoAccessView~iphone.xib" />
+    <InterfaceDefinition Include="Views\ChangeForLifeNoAccessView~ipad.xib" />
+    <InterfaceDefinition Include="Views\FindHealthProviderViewController~iphone.xib" />
+    <InterfaceDefinition Include="Views\ServiceDetailsListViewController.xib" />
+    <InterfaceDefinition Include="Views\HealthProvider\HealthProviderCellView.xib" />
+    <InterfaceDefinition Include="Views\RefineSearchViewController.xib" />
+    <InterfaceDefinition Include="Views\FindHealthProviderViewController~ipad.xib" />
+    <InterfaceDefinition Include="CellTemplates\HealthProviderTypeChildViewCell.xib" />
+    <InterfaceDefinition Include="CellTemplates\HealthProviderTypeParentViewCell.xib" />
+    <InterfaceDefinition Include="UI\TableView\Cells\LocationAutocompleteTableViewCell.xib" />
+    <InterfaceDefinition Include="Views\HealthProviderTypeListView.xib" />
+    <InterfaceDefinition Include="Views\ProviderDetailsInformationViewController.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ITunesArtwork Include="iTunesArtwork%402x" />
+    <ITunesArtwork Include="iTunesArtwork" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LocalizableBrand.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LocalizableBrand.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizableBrand.fr-CA.resx">
+      <LastGenOutput>LocalizableBrand.fr-CA.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Acr.UserDialogs">
+      <Version>7.0.35</Version>
+    </PackageReference>
+    <PackageReference Include="Cirrious.FluentLayout">
+      <Version>2.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="GMImagePicker.Xamarin">
+      <Version>2.3.2</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AppCenter.Analytics">
+      <Version>4.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AppCenter.Crashes">
+      <Version>4.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Bcl.Build">
+      <Version>1.0.21</Version>
+    </PackageReference>
+    <PackageReference Include="MvvmCross">
+      <Version>6.4.2</Version>
+    </PackageReference>
+    <PackageReference Include="MvvmCross.Plugin.File">
+      <Version>6.4.2</Version>
+    </PackageReference>
+    <PackageReference Include="MvvmCross.Plugin.Location">
+      <Version>6.4.2</Version>
+    </PackageReference>
+    <PackageReference Include="MvvmCross.Plugin.Messenger">
+      <Version>6.4.2</Version>
+    </PackageReference>
+    <PackageReference Include="MvvmCross.Plugins.Fingerprint">
+      <Version>1.4.9</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>12.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xam.Plugin.Connectivity">
+      <Version>3.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xam.Plugin.Geolocator">
+      <Version>4.5.0.6</Version>
+    </PackageReference>
+    <PackageReference Include="Xam.Plugin.Media">
+      <Version>4.0.1.5</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Build.Download">
+      <Version>0.4.11</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.FFImageLoading">
+      <Version>2.4.11.982</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Google.iOS.Maps">
+      <Version>2.5.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.TestCloud.Agent">
+      <Version>0.21.5</Version>
+    </PackageReference>
+    <PackageReference Include="Plugin.StoreReview">
+      <Version>3.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Essentials">
+      <Version>1.6.1</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MobileClaims.Core\MobileClaims.Core.csproj">
+      <Project>{af036fb2-ce49-46ec-bf48-a827a85ec013}</Project>
+      <Name>MobileClaims.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

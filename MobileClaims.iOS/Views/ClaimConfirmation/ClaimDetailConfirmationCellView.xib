@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="cZE-iV-UFb" customClass="ClaimDetailConfirmationCellView">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RRX-ay-WsE" userLabel="ClaimDetailView">
+                        <rect key="frame" x="0.0" y="0.0" width="165" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="172-Vi-mtM" customClass="AlignableLabel">
+                                <rect key="frame" x="0.0" y="0.0" width="155" height="50"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                <userDefinedRuntimeAttributes>                                     <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NunitoSans-Regular"/>                                 </userDefinedRuntimeAttributes>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="172-Vi-mtM" firstAttribute="top" secondItem="RRX-ay-WsE" secondAttribute="top" id="2Jr-8U-WQ0"/>
+                            <constraint firstItem="172-Vi-mtM" firstAttribute="leading" secondItem="RRX-ay-WsE" secondAttribute="leading" id="LxX-Nk-Zoj"/>
+                            <constraint firstAttribute="trailing" secondItem="172-Vi-mtM" secondAttribute="trailing" constant="10" id="U60-KS-UR6"/>
+                            <constraint firstAttribute="bottom" secondItem="172-Vi-mtM" secondAttribute="bottom" id="wFc-wQ-JKK"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lh9-Ld-CYL" userLabel="ClaimDetailValueView">
+                        <rect key="frame" x="165" y="0.0" width="135" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xux-zk-lVf" customClass="AlignableLabel">
+                                <rect key="frame" x="0.0" y="0.0" width="135" height="50"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                <userDefinedRuntimeAttributes>                                     <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NunitoSans-Regular"/>                                 </userDefinedRuntimeAttributes>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="xux-zk-lVf" secondAttribute="bottom" id="3TB-wv-cwm"/>
+                            <constraint firstAttribute="trailing" secondItem="xux-zk-lVf" secondAttribute="trailing" id="AZq-Uz-pDm"/>
+                            <constraint firstItem="xux-zk-lVf" firstAttribute="top" secondItem="lh9-Ld-CYL" secondAttribute="top" id="gBA-Cf-IPh"/>
+                            <constraint firstItem="xux-zk-lVf" firstAttribute="leading" secondItem="lh9-Ld-CYL" secondAttribute="leading" id="nlp-7J-FwG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="lh9-Ld-CYL" firstAttribute="width" secondItem="cZE-iV-UFb" secondAttribute="width" multiplier="0.45" id="9Hn-vz-xrt"/>
+                <constraint firstItem="lh9-Ld-CYL" firstAttribute="width" secondItem="cZE-iV-UFb" secondAttribute="width" multiplier="0.55" id="Fcf-O7-A8I"/>
+                <constraint firstAttribute="bottom" secondItem="RRX-ay-WsE" secondAttribute="bottom" id="Jy4-8u-SkJ"/>
+                <constraint firstItem="RRX-ay-WsE" firstAttribute="leading" secondItem="cZE-iV-UFb" secondAttribute="leading" id="KJp-is-NGk"/>
+                <constraint firstItem="RRX-ay-WsE" firstAttribute="width" secondItem="cZE-iV-UFb" secondAttribute="width" multiplier="0.45" id="KZM-j3-xyE"/>
+                <constraint firstAttribute="trailing" secondItem="lh9-Ld-CYL" secondAttribute="trailing" id="cZK-K4-AiN"/>
+                <constraint firstItem="RRX-ay-WsE" firstAttribute="width" secondItem="cZE-iV-UFb" secondAttribute="width" multiplier="0.55" id="jmo-ZH-Hyo"/>
+                <constraint firstItem="lh9-Ld-CYL" firstAttribute="top" secondItem="cZE-iV-UFb" secondAttribute="top" id="kxj-cM-M2c"/>
+                <constraint firstItem="RRX-ay-WsE" firstAttribute="top" secondItem="cZE-iV-UFb" secondAttribute="top" id="o5e-XV-EEV"/>
+                <constraint firstAttribute="bottom" secondItem="lh9-Ld-CYL" secondAttribute="bottom" id="uAE-Vl-O3o"/>
+            </constraints>
+            <size key="customSize" width="300" height="50"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="KZM-j3-xyE"/>
+                    <exclude reference="Fcf-O7-A8I"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=regular">
+                <mask key="constraints">
+                    <include reference="KZM-j3-xyE"/>
+                    <exclude reference="jmo-ZH-Hyo"/>
+                    <exclude reference="9Hn-vz-xrt"/>
+                    <include reference="Fcf-O7-A8I"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="ClaimDetailLabel" destination="172-Vi-mtM" id="c9L-Kh-Jez"/>
+                <outlet property="ClaimDetailValueLabel" destination="xux-zk-lVf" id="Llk-wu-jFB"/>
+            </connections>
+            <point key="canvasLocation" x="96" y="54"/>
+        </collectionViewCell>
+    </objects>
+</document>

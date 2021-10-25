@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+  <!-- main menu -->
+  <dimen name="menu_item_text_size">40sp</dimen>
+  <dimen name="menu_item_count_text_size">20sp</dimen>
+  <dimen name="menu_item_height">90dp</dimen>
+  <dimen name="menu_item_width">90dp</dimen>
+  <dimen name="menu_item_icon_padding">24dp</dimen>
+
+  <!-- bottom nav bar -->
+  <dimen name="bnb_textsize">18sp</dimen>
+  <dimen name="tabbar_height">75dp</dimen>
+  <!-- dashboard -->
+  <dimen name="dashboard_main_margin">20dp</dimen>
+  <dimen name="dashboard_welcome_label">48dp</dimen>
+  <dimen name="dashboard_name_label">40dp</dimen>
+  <dimen name="dashboard_section_title_font_size">28dp</dimen>
+  <dimen name="dashboard_balanaces_item_height">80dp</dimen>
+  <dimen name="dashboard_balanaces_item_margin">10dp</dimen>
+  <dimen name="dashboard_balanaces_font_size">18sp</dimen>
+  <dimen name="dashboard_recent_claim_item_height">90dp</dimen>
+  <dimen name="dashboard_recent_claim_action_required_item_padding">10dp</dimen>
+  <dimen name="dashboard_recent_claim_action_required_item_margin">5dp</dimen>
+  <dimen name="dashboard_recent_claim_item_padding">11dp</dimen>
+  <dimen name="dashboard_recent_claim_item_margin">6dp</dimen>
+  <!-- claim submission -->
+  <dimen name="claim_submission_benefit_text_size">15sp</dimen>
+  <!-- audit -->
+  <dimen name="auditclaim_title_font_size">40sp</dimen>
+  <dimen name="auditclaim_font_size">18sp</dimen>
+  <dimen name="auditclaim_auditlist_section_font_size">30sp</dimen>
+  <dimen name="auditclaim_item_padding">10dp</dimen>
+  <dimen name="auditclaim_item_margin">10dp</dimen>
+  <!-- upload completed -->
+  <dimen name="uploadcompleted_font_size">18sp</dimen>
+  <dimen name="uploadcompleted_item_padding">10dp</dimen>
+  <dimen name="uploadcompleted_item_margin">10dp</dimen>
+</resources>

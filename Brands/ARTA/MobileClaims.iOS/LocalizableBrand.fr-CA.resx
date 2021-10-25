@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>2.0</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="GSC" xml:space="preserve">
+        <value>ARTA</value>
+    </data>
+    <data name="GreenShield" xml:space="preserve">
+        <value>ARTA</value>
+    </data>
+    <data name="GreenShieldCanada" xml:space="preserve">
+        <value>Alberta Retired Teachers' Association</value>
+    </data>
+    <data name="WalletPKPassDescription" xml:space="preserve">
+        <value>Carte Prestations ARTA</value>
+    </data>
+    <data name="PhoneNumber" xml:space="preserve">
+        <value>1-855-444-ARTA (2782)</value>
+    </data>
+    <data name="PhoneNumberFPPM" xml:space="preserve">
+        <value>1-855-444-ARTA (2782)</value>
+    </data>
+    <data name="EligibilityResultsNote" xml:space="preserve">
+        <value>Note : L’information sur l’admissibilité est présentée sous réserve du statut de votre couverture actuelle et peut ne refléter aucune demande de règlement récemment soumise (mais non traitée). Tout changement au niveau de la protection (incluant les changements rétroactifs) modifiera la responsabilité de {0}.
+        
+Le traitement doit être administré par un fournisseur de soins de santé agréé dans la province où vous recevez le traitement.
+
+Le praticien qui administre le service doit être agréé par l’agence ou l’association régulatrice de sa province, laquelle doit être reconnue par {0}.
+
+Si vous détenez une protection pour des garanties en vertu de ce régime ou tout autre régime, les garanties seront coordonnées en conformité avec les lignes directrices normales de l’industrie, élaborées par l’Association canadienne des compagnies d’assurances de personnes. Si la protection de {0} est votre régime secondaire, les résultats de la soumission au régime principal modifieront la responsabilité de {0}.
+
+Certains régimes exigent une recommandation médicale pour ce type de service. Si votre régime exige une recommandation médicale et qu’une recommandation médicale précédente valide n’est pas au dossier de {0}, la recommandation doit être soumise avec cette demande de règlement.
+
+Si les services sont requis à la suite d’un accident automobile ou d’une blessure reliée au travail, vous pourriez ne pas être admissible à un remboursement par {0}.
+
+Vous avez encore des questions concernant votre admissibilité? Communiquez avec notre Centre de service à la clientèle au {1}.</value>
+    </data>
+    <data name="EligibilityInquiryNote" xml:space="preserve">
+        <value>L’information sur l’admissibilité est présentée sous réserve du statut de votre couverture actuelle et peut ne refléter aucune demande de règlement récemment soumise (mais non traitée). Tout changement au niveau de la protection (incluant les changements rétroactifs) modifiera la responsabilité de {0}.</value>
+    </data>
+    <data name="UnableToDetermineEligibility" xml:space="preserve">
+        <value>Il est impossible de déterminer l'admissibilité de cette prestation. Veuillez communiquer avec notre Centre de services aux membres au {0}</value>
+    </data>     
+</root>

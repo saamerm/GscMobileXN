@@ -1,0 +1,697 @@
+﻿
+"locale"="en";
+"colon"=":";
+"delete"="Delete";
+"ok"="OK";
+"contextColon"="";
+
+"webInstructions2"="(HINT: IT'S THE SAME USER ID AND PASSWORD YOU USE FOR PLAN MEMBER ONLINE SERVICES)";
+"termsAndConditionsInstructions"="Your use of this app indicates that you accept the ";
+"termsAndConditions"="Terms and Conditions";
+
+"connectionError"="Oops, we're sorry. It's our fault that you're having trouble connecting. Please try again later.";
+
+//TERMS AND CONDITIONS
+"privacy"="PRIVACY";
+"legal"="LEGAL";
+"security"="SECURITY";
+"general"="GENERAL";
+"agreeToTerms"="I AGREE TO THE TERMS AND CONDITIONS";
+"privacyContent1"="Protecting your privacy and the confidentiality of your personal information has always been fundamental to the way we do business and is the responsibility of every employee of {0}. As Canada's premier group and individual benefits specialist, we strive to provide you with the best customer service. The range of products and services we offer our groups and benefit plan participants continues to expand and the technology we use continues to change. But, no matter how our business changes, we are committed to protecting and respecting your right to privacy and confidentiality. <h3>OUR COMMITMENT TO PRIVACY</h3> {0} is committed to the protection of any personal information collected by it or in its custody, including any information transferred to a third party to fulfill the purposes for which the information was collected. <br/> <br/> Personal information includes any information, recorded or not, about an identifiable individual. Examples of personal information that are identifiable include names, age, sex, social insurance numbers, health status, health history, financial information, benefit claims data, etc. It also includes information which can be matched with other information in order to establish an individual’s identity.";
+"privacyContent2"="<h3>{0}'S PRIVACY CODE </h3> The {0} privacy code outlines our policies and procedures on privacy and describes the ways we ensure that your privacy and the confidentiality of your personal information is protected. It is based on the ten privacy principles outlined in Canada’s Personal Information Protection and Electronic Documents Act also known as PIPEDA. Our adoption of these principles sends a powerful message to the general public that we have policies and procedures in place that control the collection, use and disclosure of personal information; it also reinforces our existing commitment to customer service. <br/> <br/> Our privacy code balances the privacy rights of our groups and benefit plan participants, and our employees with the legitimate information requirements to provide customer service and to meet our human resource requirements. It consists of the following key principles: <br/> <br/>";
+"privacyContent3"="<b>We ask for your personal information for the following purposes:</b> <ul><li>To establish your identification.</li><li>To provide you and/or your dependants with the applicable benefit coverage.</li><li>To protect you and us from error and fraud.</li><li>To provide ongoing access to other services of {0} </li></ul><br/><b>Consent</b><br/><br/>When you first become a group and benefit plan participant of {0}, your personal information is obtained and used only with your consent. We obtain your consent before we:";
+"privacyContent4"="<ul><li>provide benefit coverage.</li><li>offer you other {0} services.</li><li>obtain, use or disclose to other persons, information about you </li><li>use your personal information in any way we did not inform you about previously.</li></ul><br/><br/> Your consent can be either express or implied. Express consent can be verbal or written. For example, when you sign an enrollment form you are giving us written consent to use your personal information to provide you and/or your dependents with benefits; when you submit a claims form, you are giving us written consent to use your personal information to reimburse you for benefit costs that you incur. <br/><br/> Consent can be implied or inferred from certain actions. For example, if you present your benefit identification card to a pharmacist/dentist in lieu of paying for a prescription/dental procedure, it can be implied as consent for the pharmacist/dentist to provide your personal information to {0} to obtain payment for the service rendered, and for {0} to process the related claim for payment and provide other services. <br/> <br/>For our existing groups and benefit plan participants, we will continue to use and disclose your personal information previously collected in accordance with our current privacy code, unless you inform us otherwise. We will infer that consent has been obtained for the continued use or disclosure of your personal information by the processing of any existing or future benefit claims that you submit for reimbursement or access to other services. <br/><br/>";
+"privacyContent5"="<b>Withdrawal of consent</b><br/><br/>You can withdraw your consent any time after you've given it to us, provided there are no legal or regulatory requirements to prevent this.<br/><br/>If you don't consent to certain uses of personal information, or if you withdraw your consent, we will not be able to administer your benefit coverage. If so, we will explain the situation to you to help you with your decision.<br/><br/> <b>Exceptions to consent</b> <br/><br/>         <p>
+            We may collect, use or disclose your personal information without your consent in the following situations:<br />
+            <ul>
+                <li>For an emergency that threatens your life, health or security. We will subsequently inform you of this disclosure. <br /></li>
+
+                <li>For legal reasons. We may be compelled to release this information by a court of law or other legal or regulatory authority.  If so, our policy is to disclose the information only to the extent required. </li>
+
+                <li>To another organization for the purposes of investigating a breach of an agreement or a contravention of the laws of Canada or a province that has been, is being, or is about to be committed and it is reasonable to expect that disclosure with your knowledge or consent would compromise the investigation. </li>
+
+                <li>To another organization for the purposes of detecting or suppressing fraud or of preventing fraud that is likely to be committed and it is reasonable to expect that the disclosure with your knowledge or consent would compromise the ability to prevent, detect or suppress the fraud. </li>
+
+                <li>Made to a government institution, a part of a government institution or your next of kin or authorized representative and </li>
+                <ul>
+                    <li>There are reasonable grounds to believe that you have been, are, or may be the victim of financial abuse, </li>
+
+                    <li>The disclosure is made solely for the purposes related to preventing or investigating the above, and </li>
+
+                    <li>It is reasonable to expect that disclosure with your knowledge or consent would compromise the ability to prevent or investigate the abuse. </li>
+                </ul>
+
+                <li>In accordance with other provisions as provided for in the Personal Information Protection and Electronic Documents Act. </li>
+            </ul>
+
+
+
+
+            <b>We protect your personal information from error, loss and unauthorized access </b>
+
+        <p>Our employees who have access to your personal information are made aware of how to keep it confidential. As a condition of employment with {0}, each employee signs an Agreement requiring all information that they have access to be treated confidentially. They are also required to participate in annual security and privacy awareness training programs. We have security standards to protect our systems and your personal information against unauthorized access and use. This protects your personal information at all times when it is stored in data files or handled by our employees.</p>
+<br/><br/>";
+"privacyContent6"="<b>Your personal information is destroyed when it is no longer needed<br/><br/></b>We keep your personal information only so long as we need it for the products and services you are using, to provide ongoing access to other services of {0}, when you are a group and benefit plan participant and for a reasonable time thereafter, or to meet any legal, regulatory, or tax requirements. We have retention standards, which meet these requirements. We destroy your personal information when it is no longer needed, or we remove your name from the information.<br/><br/><b>You can obtain and verify the accuracy of your personal information</b><br/><br/>You can check your personal information to verify its accuracy. You can ask our Customer Service Representatives by phone at ";
+"privacyContent6Cont"=" to obtain the personal information we hold about you, or if you have signed up for on-line access, you may visit our website at www.greenshield.ca and log on to the Plan Member section.  There is no charge for verifying your personal information, however depending on the circumstances, there may be a minimal charge for the retrieval of personal information that you request.  We will inform you if there is a charge.  If you identify information that requires correction, we will assist you in identifying the appropriate means to have the correction(s) made.<br/><br/> Please note that we may not be able to provide information about you from our records if it contains references to other persons, is subject to legal privilege, contains information proprietary to {0}, is unreasonable or impractical to reasonably retrieve, or cannot be disclosed for other legal reasons. <br/><br/> <b>We correct your personal information</b><br/><br/>Whenever possible, we will correct any personal information which we may have given to an outside organization.  If a third party has given us personal information which you tell us is wrong, we will give you the name and address of that party so that you can correct the information.<br/><br/><b>You can find out to whom we have given information about you</b><br/><br/>If you ask, we will let you know the names of outside companies or organizations we've given personal information to, or direct you to the appropriate individual to ask for such information.<br/><br/>";
+"privacyContent7"="<b>We respond to your request promptly</b><br/><br/>We will deal quickly with your request to see your personal information and always respond to you promptly.<br/><br/><b>We protect other people's privacy when we make personal information available to you</b><br/><br/>There may be files that include information about you and other benefit plan participants, or that have information confidential to {0} or are the property of {0}. Because we must protect everyone's confidentiality and legal rights, we cannot make these files available to persons outside of {0}. However, we will make available to you any factual information about you contained in such files.<br/><br/><b>We monitor our compliance with the {0} Privacy Code and are committed to upholding this Code</b><br/><br/>We have policies and procedures in place to assist our employees in adhering to the {0} Privacy Code. Our internal audit department monitors the adherence to this Code on a regular basis, and reports its findings to a Committee of the Board of Directors of {0}.<br/><br/>If you have any questions or complaints about our Privacy Code, or about how we are living up to it, let us know right away.<br/><br/><b>Resolving your concerns are important to us</b><br/><br/>{0} is committed to treating you with the greatest respect and consideration, and providing the highest level of service. If you have any concerns or questions about privacy and confidentiality – or any other concerns about the way a request for personal information was handled, you can take the following actions:<br/><br/><b>Contact the {0} Privacy Officer</b><br/><br/>Write to: Privacy Officer<br/>{0}<br/>P.O. Box 1606<br/>Windsor, Ontario<br/>N9A 6W1<br/><br/>";
+"privacyContent8"="<b>FAX the Office of the {0} Privacy Officer at 1-519-739-2253</b><br/><br/>The {0} Privacy Officer’s office will acknowledge your complaint. Within two weeks of receiving your enquiry, the {0} Privacy Officer will write or call to tell you the problem has been resolved, or, in more complex cases, advise you what further steps are being taken and when you may expect a resolution.<br/><br/><b>If your concern remains unresolved</b><br/><br/>If your concern remains unresolved, please contact:<br/><br/>Office of the Privacy Commissioner of Canada<br/>30 Victoria Street<br/>Gatineau, Quebec<br/>K1A 1H3<br/><br/>Telephone:	 1-819-994-5444<br/>Toll Free: 	 1-800-282-1376<br/>TTY:		 1-819-994-6591<br/>WEB SITE: <a href=\"http://www.priv.gc.ca\">www.priv.gc.ca</a><br/>";
+"legalContent1"="<h2>LEGAL NOTICES AND DISCLAIMERS OF LIABILITY </h2><h3>Ownership and Copyrights</h3>This web site (\"Website\") and mobile application (\“Mobile App\”) are operated by or on behalf of {0}. All content on this Website and Mobile App are the copyrighted property of {0} and/or its various third party providers and distributors.<br/><br/> Except to the extent that you have been granted express prior permission from {0}, none of the content or data found on the Website or Mobile App may be reproduced, republished, distributed, sold, transferred, modified, posted, transmitted or distributed. You may download, display and print the materials presented on the Website or Mobile App for your personal use. <h3>Trade-marks</h3>Certain names, words, titles, phrases, logos, icons, graphics or designs in the pages of the Website or Mobile App may constitute trade names, registered or unregistered trade-marks or service marks (\"Trade-marks\") of {0} and used under license by {0}. However, the display of Trade-marks on pages at the Website or Mobile App does not imply that any license has been granted to any third party. <br/><br/> Any unauthorized downloading, re-transmission, or other copying or modification of Trade-marks or other contents of the Website or Mobile App may be a violation of statutory or common law rights which could subject the violator to legal action. <h3>Use of the Website or Mobile App</h3>You represent, warrant and covenant that your use of the Website or Mobile App shall not:<ol><li>Violate any applicable local, provincial, state, national or international law, statute, ordinance, rule or regulation;</li><li>Interfere with or disrupt computer networks connected to the Website;</li><li>Impersonate any other person or entity, or make any misrepresentation as to your employment by or affiliation with any other person or entity;</li><li>Forge headers or in any manner manipulate identifiers in order to disguise the origin of any user information;</li><li>Upload, post, transmit, publish, or distribute any material or information for which you do not have all necessary rights and licenses;</li><li>Upload, post, transmit, publish or distribute any material which infringes, violates, breaches or otherwise contravenes the rights of any third party, including any copyright, trademark, patent, rights of privacy or publicity or any other proprietary right;</li><li>Interfere with or disrupt the use of the Website or Mobile App by any other user, nor \"stalk\", threaten, or in any manner harass another user;</li><li>Upload, post, transmit, publish, or distribute any material or information which contains a computer virus, or other code, files or programs intending in any manner to disrupt or interfere with the functioning of the Website, or that of other computer systems;</li><li>Use the Website or Mobile App in such a manner as to gain unauthorized entry or access to the computer systems of others;</li><li>Upload, post, transmit, publish or distribute any material or information which constitutes or encourages conduct that would constitute a criminal offence, give rise to other liability, or otherwise violate applicable law;</li><li>Upload, post, transmit, publish, or distribute any material or information that is unlawful, or which may potentially be perceived as being harmful, threatening, abusive, harassing, defamatory, libellous, vulgar, obscene, or racially, ethnically, or otherwise objectionable;</li><li>Reproduce, copy, modify, sell, store, distribute or otherwise exploit for any commercial purposes the Website, or any component thereof (including, but not limited to any materials or information accessible through the Website);</li><li>Use any device, software or routine to interfere or attempt to interfere with the proper working of the Website; or</li><li>Take any action that imposes an unreasonable or disproportionately large load on the Website infrastructure.</li></ol>";
+"legalContent2"="<h3>Secure Areas</h3>Some of the areas of the Website or Mobile App (\"Secure Areas\") require passwords or other forms of access control in order for a user to gain access and use the Website's functionality. If you are permitted to access and use one of the Secure Areas of the Website, it is your responsibility to keep your password or other access control methodology private so that it cannot be used by others. {0} will not be liable for any damages, losses or expenses suffered by you or any third party as a result of any unauthorized person gaining access to any of the Secure Areas through use of your password or other access methodology, and you agree that you will indemnify {0} for any damages, losses or expenses that it may suffer, including any claims made against {0} by third parties, as a result of such access or use by an unauthorized person.<h3>Limitation of Liability</h3>In no event will {0} be liable for any damages, including without limitation direct or indirect, special, incidental, or consequential or punitive damages, losses or expenses, whether or not {0}, or representatives thereof, are advised of the possibility of such damages, losses or expenses, arising in connection with:<br/><ol><li>Your use of, or inability to use, this Website. </li><li>Use of this Website, or inability to use, by any other party. </li><li>Any failure of performance, error, omission, interruption, defect, delay in operation or transmission, computer virus or line or system failure, loss of data or otherwise.</li><li>The communication by you of any confidential or sensitive information, or our communication to you of such information, over the Internet.</li></ol><h3>Information and Availability </h3>Information on the public areas of this Website and Mobile App are for informational purposes only and is not intended to provide financial, legal, accounting or tax advice and should not be relied upon in that regard. <br/><br/> Information provided by {0} on its Website and Mobile App are believed to be accurate and reliable, but we cannot guarantee that such information is accurate or complete or current at all times. While we endeavour to keep the information current, such information is subject to change at any time without notice. {0} makes reasonable commercial efforts to make the Website and Mobile App available, however, it is not responsible for any service interruptions. {0} will not be liable for any loss resulting from a cause over which it does not have direct control, including, but not limited to, failure of electronic or mechanical equipment or communication lines, telephone or other interconnect problems, computer viruses, unauthorized access, theft, operator errors, severe weather, earthquakes, or natural disasters, strikes or other labour problems, wars, or governmental restrictions.";
+"legalContent3"="<h3>Links to other websites</h3>{0} makes no representations whatsoever about any other web site which you may access through this Website. When you access a non-{0} web site, it is independent from {0}, and {0} has no control over the content on that web site. In addition, a link to a non-{0} web site does not mean that {0} endorses or accepts any responsibility for the content, or use, of such web site. It is your responsibility to take precautions to ensure that whatever you select for your use is free of such items as viruses, worms, trojan horses and other items of a destructive nature.<br/><br/>Links from or to web sites outside this Website or Mobile App are meant for convenience only. {0} does not review, endorse, approve or control, and is not responsible for any web sites linked from or to this Website, the content of those web sites, the third parties named therein, or their products and services. Linking to any other web site is at your sole risk and {0} will not be responsible or liable for any damages in connection with such linking. Links to web sites offering downloadable software are for convenience only and {0} does not endorse any such software and is not responsible or liable for any difficulties or consequences associated with downloading the software. Use of any such downloaded software is governed by the terms of the license agreement, if any, which accompanies or is provided with such software.<h3>Governing Jurisdiction</h3>This Website and your use of it will be governed by and construed in accordance with the laws of the Province of Ontario and the federal laws of Canada applicable therein, without regard to the principles of conflicts of law.";
+"securityContent1"="The rapid expansion of electronic communication has revolutionized the way we work and provide services to you. At {0}, information security is fundamental to the way we do business and is the responsibility of every employee. It is specified in our employment agreements and regularly confirmed in writing.<br/><br/>Whether you choose to access our services online, over the telephone, via our Mobile Application (App), or in person, we follow rigorous security procedures and use state of the art technologies to protect your information and transactions against unauthorized access, disclosure, alteration and misuse.<br/><br/>We design Information Security at {0} to protect the information, the information systems and communications that deliver the information from harm resulting from failures of confidentiality, integrity, and availability. The following are key principles considered in our security processes:<br/><ol><li>Accountability: Everyone who accesses {0} information systems is responsible for protecting them, and will be held accountable for the use of these systems. </li><li>Awareness: Everyone who accesses {0} information system must be aware of the risks and security initiatives.</li><li>Multidisciplinary: Security must be addressed taking into consideration both technological and non-technological issues.</li><li>Integration: Security must be co-ordinated and integrated.</li><li>Reassessment: Security must be reassessed periodically</li><li>Timeliness: Security procedures must provide for monitoring and timely response.</li><li>Societal Factors: Ethics must be promoted by respecting the rights and interests of others.</li></ol><br/>While we do our utmost to ensure security and confidentiality, there are steps you can take as well to enhance your security when using the Internet and when conducting business online.";
+"securityContent2"="<h2>SECURITY IN THE {0} NETWORK</h2><h3>Encryption</h3>Many Internet sites are secured through encryption. Encryption encodes the information that flows between your computer or mobile phone and our computer systems protecting it from unauthorized interception, viewing and alteration. You can recognize when you are using a secure website using Internet Explorer as a picture of a lock will appear at the bottom of the browser page.<br/><br/>The transmission of your personal information on {0} web pages and Mobile App is secured through encryption. In addition, personal information forwarded to us through the web pages and Mobile App is also secure.<h3>Log-on IDs and Passwords</h3>Log-on IDs and passwords are used by computer systems and websites to verify your identity. A log-on ID and password allow you to access services and information specific for your private use. Anyone who can access your log-on ID and password can also access your information. <br/><br/>Your password will not be saved and must be re-entered each time you log-on to a secured online service page or the Mobile App. <h3>Tips for Creating Unique Passwords</h3><ol><li>Do not share your passwords with others, including family members.</li><li>Use passwords that are difficult for others to guess. For example, don't use passwords like your name, the names of family members, your address, or any other information that might be found in your purse or wallet if lost or stolen.</li><li>Do not use short passwords as these are easier for others to guess. The longer the password, the more difficult you make it for others. Many providers of Internet based services establish standards that define and enforce a minimum length for passwords. {0} has standards for minimum length of passwords. Our ID and password standards are available through our online help functions on our website.</li><li>Avoid using the same password for multiple applications or Internet services wherever possible. This is particularly important for any Internet application where access to your private or financial information is enabled.</li><li>Change your passwords frequently.</li></ol>";
+"securityContent3"="<h3>Cookies</h3>Cookies are used by {0} to maintain security during a session on our Website, ensuring that each session is unique and authorized between you and {0}'s web based systems. <br/><br/>{0} does NOT use cookies for the following purposes: <ol><li>To follow the surfing behaviour of visitors once they leave {0} websites. Additionally, tracking information that may be gathered during a visit to a {0} website will not be used for promotional purposes.</li><li>For added security, cookies are not used to remember usernames and passwords. You will be required to provide this information each time you log-on to a secured online service page.</li><li>{0} does not associate any of the information collected via cookies with your personal or financial information.</li></ol> <h3>Email comments, questions or responses </h3>When you send us an email or ask us to respond to you by email, we learn your exact email address and any information you have included in the email. We use your email address to acknowledge your comments and / or reply to your questions, and we will retain your communication and our reply as required under appropriate legal, regulatory and {0} business practices. We will never send you an email asking for passwords and we will not make your email address available to anyone else.<br/><br/>Email sent or received over the Internet may not be secure and we recommend that you use caution when forwarding email messages to us.<br/>If you have any questions regarding the authenticity or security of email you have received from {0}, please do not hesitate to contact us at 1-800-265-5615.";
+"submitClaimTC"="I agree that all information provided using this {0} online claim submission application will be complete and accurate.    I understand that the information, including my personal information that I provided to {1} about myself and my dependents will be used by {1} for claims adjudication and any other services necessary in the administration of my benefits. This may include the exchange of information with other parties to administer this benefit plan. <br /> <br /> I am authorized by my spouse and/or dependents to disclose and receive information about them that is used for these purposes.  My spouse and/or dependents understand that this information may be seen by me, the cardholder.";
+
+//HCSA
+"HCSA" = "HCSA";
+"Delete" = "Delete";
+
+"CLAIM_DETAILS" = "CLAIM DETAILS";
+"Confitm_Claim" = "CONFIRM YOUR CLAIM";
+"submit_Claim" = "CLAIM SUBMITTED";
+
+
+
+//DRUG LOOKUP
+"benefits"="BENEFITS";
+"byDrugName"="BY DRUG NAME";
+"byDIN"="BY DRUG IDENTIFICATION NUMBER (DIN)";
+"drugLookupModelSelectionLabel"="SEARCH MY DRUG COVERAGE";
+"chooseDrug"="CHOOSE ONE OF THE FOLLOWING:";
+"drugNameFieldText"="DRUG NAME";
+"drugNamePlaceholder"="Drug name";
+"confirm"="CONFIRM";
+"drugDINFieldText"="DIN";
+"drugDINPlaceholder"="DIN";
+"confirmDrug"="CONFIRM YOUR DRUG";
+"myDrugSelection"="MY DRUG SELECTION";
+"search"="SEARCH";
+"drugInformation"="DRUG INFORMATION";
+"myDrugResults"="MY DRUG SEARCH RESULTS";
+"notes"="NOTES";
+"planParticipant"="PLAN PARTICIPANT";
+"choosePlanParticipant"="CHOOSE THE PLAN PARTICIPANT";
+"choosePlanParticipantLower"="Choose the plan participant";
+"drugNameAndStrength"="DRUG NAME AND STRENGTH";
+"drugCovered"="IS THIS DRUG COVERED UNDER YOUR {0} BENEFITS PLAN?";
+"reimbursement"="REIMBURSEMENT";
+"specialAuthRequired"="SPECIAL AUTHORIZATION REQUIRED?";
+"downloadAndView"="DOWNLOAD AND VIEW";
+"sendByEmail"="SEND BY EMAIL";
+"noresults"="No Results Found";
+"noresultsdetails"="No drugs were found that match the name or DIN provided.";
+"cancel"="Cancel";
+"cancelCaps"="CANCEL";
+"send"="SEND";
+"sendAuthForm"="Send Special Authorization Form to (enter email address):";
+"travelNumber"="Group #";
+"enterName"="ENTER DRUG NAME";
+"enterDIN"="ENTER DIN";
+"nameError"="Drug: Please enter a drug name";
+"drugLengthError"="Drug name is too short. Enter at least three characters of the drug name";
+"dinError"="DIN: Please enter a DIN.";
+"dinFormatError"="DIN is not in the correct format. A DIN always consists of eight numbers. It can be found on your pharmacy receipt or the drug's container/packaging. Please try again.";
+"nameLengthError"="Drug name is too short. Enter at least three characters of the drug name.";
+"planMemberSelectedError"="A plan member was not selected. Select the applicable plan member from the list.";
+"newSearch"="NEW SEARCH";
+"download1"="YES. PLEASE DOWNLOAD THE SPECIAL AUTHORIZATION FORM OR SEND IT BY EMAIL TO YOURSELF OR DIRECTLY TO YOUR PHYSICIAN.";
+"download2"="THIS DRUG IS A NON-APPROVED DRUG ON YOUR PLAN. PLEASE DOWNLOAD THE SPECIAL AUTHORIZATION FORM OR SEND IT BY EMAIL TO YOURSELF OR DIRECTLY TO YOUR PHYSICIAN.";
+"specialMessages"="SPECIAL MESSAGES";
+"reimbursementMessage"="Your plan reimburses drugs based on the lowest- cost drug in its therapeutic category; usually this is the generic equivalent drug. The drug name and DIN shown is the lowest-cost alternative for your search.";	
+
+"downloadErrorMessage"="Sorry, your download was unsuccessful. Please try again or email the form.";
+"emailSentMessage"="Your email was sent successfully.";
+"emailFailMessage"="Sorry, your email was not sent. Please try again later or download the form to your device.";
+
+"notesFieldText"="- This search is valid as of the search date shown above.\r\n\r\n- If this drug is covered by your provincial drug plan, it may not be eligible under your {0} benefits plan.\r\n\r\n- While this drug search may indicate that the drug is covered (e.g., eligible for reimbursement), it does not guarantee that the drug will be reimbursed. Reimbursement is subject to the provisions of your benefits plan. For example, if your plan has an annual drug maximum (or cap), an eligible drug will not be reimbursed if you have already reached the plan maximum. Or, if the eligible drug requires an authorization form, it may only be reimbursed if you meet specific medical criteria.\r\n\r\n- Every attempt has been made to ensure the accuracy of this search; however, if there is a discrepancy between the search results and a claim submission, the claim submission will be considered valid.";
+
+//LOCATE PROVIDERS
+"locateProviders"="FIND A HEALTH PROVIDER";
+"makeYourSelection"="MAKE YOUR SELECTION";
+"serviceProviderTypeLabel"="HEALTH PROVIDER TYPE";
+"locateProvidersDone"="Done";
+"service"="Service";
+"narrowYourSearch"="NARROW YOUR SEARCH";
+"searchBy"="SEARCH BY";
+"optional"="OPTIONAL";
+"locateProviderSearchTypeLabel"="Type of Search";
+"locateProviderSearchTitleLabel"="Find Counselling Services";
+"locateProviderLocationTitle"="Location to Search";
+"locateProviderFindTitle"="Find";
+"locateProviderAddressLabel"="ADDRESS";
+"locateProviderAddressLabelLower"="Address";
+"locateProviderPostalCodeLabel"="POSTAL CODE ";
+"locateProviderPostalCodeLabelLower"="Postal code ";
+"locateProiverNoFilter"="NO FILTER";
+"locateProviderMyCurrentLocationLabel"="MY CURRENT LOCATION";
+"locateProviderAllProvidersLabel"="All Providers";
+"locateProviderPhoneNumberLabel"="PHONE NUMBER";
+"locateProviderPhoneNumberLabelLower"="Phone number";
+"locateProviderLastNameLabel"="LAST NAME";
+"locateProviderLastNameLabelLower"="Last name";
+"locateProviderBusinessNameLabel"="BUSINESS NAME";
+"locateProviderBusinessNameLabelLower"="Business name";
+"locateProviderRangeLabel"="WITHIN A DISTANCE OF";
+"locateProviderCityLabel"="CITY";
+"locateProviderCityLabelLower"="City";
+"locateProviderNameLabel"="Name";
+
+"detailsProviderTitle"="SEARCH";
+"detailsProviderRadiusInfoLabel"="FIND ";
+"detailsProviderRadiusInfoLabelMiddle"=" WITHIN ";
+"detailsProviderRadiusInfoLabelEnd1"=" OF ";
+"detailsProviderRadiusInfoLabelEnd2"=" OF THE ";
+"detailsProviderRadiusInfoLabelEnd3"=" OF THE ";
+"distanceHealthProviderLabel"="FIND A HEALTH PROVIDER WITHIN ";
+"myLocation"="MY LOCATION:";
+"detailsProviderSearchLabel"="FIND PROVIDERS WITH THE FOLLOWING ";
+"detailsShowProviderSearchLabelCity"="SHOW A HEALTH PROVIDER WITH THE FOLLOWING ";
+"detailsShowProviderSearchLabelName"="SHOW A HEALTH PROVIDER WITH THE FOLLOWING ";
+"detailsProviderSearchLabelEnd"="";
+"detailsProviderSearchLabelEnd2"="";
+"detailsProviderInfoLabel"="UP TO 50 HEALTH PROVIDERS WILL BE SHOWN";
+"detailsProviderExampleAddressLabel"="EXAMPLE 123 MAIN ST., CITY, PROV";
+"detailsProviderExamplePostalCodeLabel"="Example: A1A 1A1";
+"detailsProviderErrorTitle"="No health providers found";
+"detailsProviderErrorDesc"="There are no matching health providers. Try to expand your search criteria";
+"detailsProviderErrorDesc2"="Sorry, we cannot find the address or postal code you entered. Please try again.";
+"detailsNoMatchingProviders"="";
+"detailsProviderErrorFieldTitle"="Missing fields";
+"detailsProviderErrorFieldDesc"="Please fill in the required fields.";
+"detailsProviderErrorAddress"="Address or Postal code: You must enter either an address or postal code";
+"detailsProviderErrorPostal"="Invalid Postal code: You must enter a valid postal code";
+"detailsProviderErrorPhone"="Invalid Phone Number: You must enter a valid phone number";
+"detailsProviderErrorAdPostNotFound"="Sorry, we cannot find the address or postal code you entered. Please try again.";
+"detailsProviderErrorAdPostNotFound"="Sorry, we cannot find the address or postal code you entered. Please try again.";
+
+"searchProviderServiceType"="Service Type: ";
+"searchProviderTitle"="Providers";
+"searchProviderSearchedLabel"="YOU SEARCHED:";
+
+"mapProviderTitle"="Locations";
+
+"mapProviderDetailsTitle"="Provider";
+"mapProviderDetailsSubmit"=" Health provider submits claims directly online";
+"mapProviderDetailsNotSubmit"="Health provider does not submit claims directly online";
+"mapProviderDetailsAccept"="Health provider accepts payment directly";
+"mapProviderDetailsNotAccept"="Health provider does not accept payments directly";
+
+"selectServiceProvider"="Select the type of health provider you are looking for.";
+
+"getDirections"="GET DIRECTIONS";
+
+"ifCurrentLocationServicesNotWorking"="If location services are not working, please search by address or postal code.";
+
+//SPENDING ACCOUNTS
+"balances"="MY BALANCES";
+"accountDetails"="ACCOUNT DETAILS";
+"accountNoC"="ACCOUNT";
+"totalRemaining"="TOTAL REMAINING:";
+"deposited"="DEPOSITED:";
+"depositedNoC"="DEPOSITED";
+"usedToDate"="USED TO DATE:";
+"usedToDateNoC"="USED TO DATE";
+"remaining"="REMAINING:";
+"remainingNoC"="REMAINING";
+"forfeited"="Amount Remaining forfeited if not used by:";
+"contributionYear"="CONTRIBUTION YEAR: ";
+"to"="TO";
+"noAccounts"="Oops. We’re sorry, you don’t have a spending account.";
+"noAccessSpendingAccounts"="Oops. We're sorry, you don't have a spending account.";
+"noDataForSpendingAccount"="No contribution information found.";
+
+//LANDING PAGE
+"welcome"="WELCOME";
+"myclaims"="MY CLAIMS";
+"myIDCard"="MY ID CARD";
+"drugsOnTheGo"="DRUGS ON THE GO";
+"myBenefits"="MY BENEFITS";
+"findProvider"="FIND A HEALTH PROVIDER";
+"findPharmacy"="FIND A PHARMACY";
+"myAlerts"="MY ALERTS";
+"myBalances"="MY BALANCES";
+"termsAndConditions"="TERMS AND CONDITIONS";
+"mysettings"="MY SETTINGS";
+"home"="HOME";
+
+"travelNumber"="Group #";
+
+"back"="Back";
+
+//CLAIM SUBMISSION
+"close"="Close";
+"claimSubmission"="Claim Submission";
+"typeOfTreatment"="TYPE OF TREATMENT/SERVICE";
+"selectTypeOfTreatmentMessageTitle"="SELECT CLAIM/SERVICE TYPE:";
+"selectTypeOfTreamentBody"="By submitting an electronic claim through your Plan Member Online Services account, you are agreeing to the terms and conditions in the Web Claim Submission Agreement.\r\n\r\nAll claims must be submitted to {0} within 12 months of the date of service. The deadline to submit claims may be different depending on your benefit plan. Please check your benefit booklet.\r\n\r\nRemember to keep your claim receipts for 13 months in case we need to verify information about your claim.";
+"serviceProviders"="Service Providers";
+"healthProviders"="HEALTH PROVIDERS";
+"healthProvider"="Health Provider";
+"phone"="Phone";
+"phoneNumber"="Phone Number";
+"lookUpA"="Look up a ";
+"byName"=" By Name";
+"byPhone"=" By Phone Number";
+"lastName"="Last Name";
+"initial"="Initial";
+"selectYour"="Select your ";
+"fromTheListOrLookUp"=" FROM THE LIST, OR LOOK UP YOUR PROVIDER BY NAME OR PHONE NUMBER.";
+"selectFromTheListOrLookup"="SELECT A HEALTH PROVIDER FROM THE LIST, OR LOOK UP YOUR HEALTH PROVIDER BY NAME OR PHONE NUMBER";
+"searchByName"="LOOK UP A HEALTH PROVIDER BY NAME";
+"searchByPhone"="LOOK UP A HEALTH PROVIDER BY PHONE NUMBER";
+"searchByNameButton"="SEARCH BY NAME";
+"searchByPhoneButton"="SEARCH BY PHONE NUMBER";
+"searchResults"="Search Results";
+"selectAProviderFromTheList"="SELECT A HEALTH PROVIDER FROM THE LIST";
+"selectA"="SELECT A ";
+"fromTheList"=" FROM THE LIST.";
+"stillCantFindYourProvider"="Still can't find your health provider?";
+"stillCantFindYour"="Still can't find your ";
+"ifYouCannotFindYourProvider"="If you cannot find your health provider, they may not have registered with {0}. Please complete the information below and click \"Use this health provider\".\r\nProcessing of your claim will be delayed while we confirm the health provider's credentials. Once verified, your claim will be processed accordingly.\r\n\r\nPlease note: For professional services, where you have received treatment from a medical professional, please enter the information for the medical professional and not for the clinic where he or she practices.";
+"ifYouCannotFindYour"="If you cannot find your ";
+"provideInformationAboutMyProvider"="PROVIDE INFORMATION ABOUT MY HEALTH PROVIDER";
+"providInformationAboutMy"="Provide Information About My ";
+"serviceProvider"="Service Provider";
+"pleaseEnterDetails"="PLEASE ENTER THE DETAILS ABOUT YOUR HEALTH PROVIDER";
+"indicatesAMantatoryField"="*Indicates a mandatory field";
+"province"="Province";
+"provinceColon"="Province";
+"useThisProvider"="USE THIS HEALTH PROVIDER";
+"useThis"="Use this ";
+"youMustSpecifyAValidPostalCode"="You must specify a valid Postal Code.";
+"youMustSpecifyAValidPhoneNumber"="You must specify a valid Phone Number.";
+"enterMandatoryData"="Please enter all mandatory information.";
+"pleaseSelectPlanParticipant"="Please select the Plan Participant for whom you are filing the ";
+"pleaseSelectPlanParticipant2"=" claim.";
+"noMatchingProviders"="No matching health providers were found";
+"noClaimAccess"="Oops. We're sorry, you don't have access to online claim submission.";
+
+"claimParticipantTitle"="PLAN PARTICIPANT";
+"claimDetailsTitle"="CLAIM DETAILS";
+"planInformationTitle"="PLAN INFORMATION";
+"claimServiceProviderTitle"="HEALTH PROVIDER - ";
+
+"participantChangedTitle"="Plan participant changed";
+"participantChangedDetail"="You have changed the plan participant for the claim. Please ensure that all the information in this claim pertains to";
+"participantChangedDetail2"="If you are claiming treatments for multiple plan participants, you must submit separate claims for each plan participant.";
+
+"claimDetailsForParticipant"="PLEASE PROVIDE THE CLAIM DETAILS FOR";
+
+"swipeNotification"="SWIPE LEFT TO DELETE ITEMS IN THE TREATMENT LIST";
+
+"otherBenefitsTitle"="Do you have benefits under another benefits plan?";
+"otherBenefitsWithGSC"="Is the coverage with {0}?";
+"otherBenefitsSubmitted"="Has this claim been submitted to the other benefit plan";
+"otherBenefitsPayBalanceThroughOtherGSC"="Pay any unpaid balance through my other {0} plan";
+"otherBenefitsEnterGSC"="Enter the other {0} number";
+"otherBenefitsGSCNum"="Other {0} number";
+"otherBenefitsHSCA"="Would you like any unpaid amount of your eligible expenses to be paid under your HCSA";
+"otherBenefitsGSCNumberError"="You must specify the other {0} number.";
+"invalidGSCNumber"="Your other {0} number is invalid";
+"errorNoMatchedDependant"="The other {0} number does not have a matched dependent";
+"errorSecondaryClaim"="The secondary plan number entered cannot be used for processing your secondary claim";
+"errorMultipleMatch"="We're sorry. This claim cannot be processed through the mobile app. Please submit it through Plan Member Online Services.";
+"errorMultipleMatch"="We're sorry. This claim cannot be processed through the mobile app. Please submit it through Plan Member Online Services.";
+"errorMultipleMatchDropDown"="More than one dependent covered by the secondary {0} plan was found. Please select the correct one from the drop down list.";
+"errorOnlineSubmision"="Your secondary coverage plan does not allow for online claim submission. For coverage under your secondary plan, please submit the claim manually.";
+
+"motorVehicleTitle"="Is treatment required due to a motor vehicle accident?";
+"motorVehicleDate"="Please provide the date of accident";
+
+"workInjuryTitle"="Is the treatment required due to a work related injury?";
+"workInjuryDate"="Please provide the date of injury";
+"workInjuryCaseNumber"="Please provide the case number";
+"workInjuryCaseNumberError"="Case # must be entered.";
+
+"medicalItemTitle"="Do you have a medical prescription to submit with this claim?";
+"medicalItemReferralDate"="Please provide the date of the referral";
+"referralDate"="Date of the referral";
+"medicalItemProfessional"="Indicate which type of medical professional referred the service";
+"typeOfProfessional"="Type of medical professional";
+"medicalItemSport"="Is the medical item required for sport purposes only?";
+
+"claimDetailsFor"="CLAIM DETAILS FOR  ";
+"submitClaim"="SUBMIT CLAIM";
+
+"noClaimInfoError"="No claim detail information entered.";
+
+"treatmentDetailsTitle"="TREATMENT DETAILS";
+"addEntry"="ADD CLAIM"; 
+"treatmentDetailsFor"="TREATMENT DETAILS FOR ";
+"continueButton"="CONTINUE";
+"claimsFor"="CLAIM(S) FOR";
+
+"treatmentTitle"="TREATMENT";
+"save"="SAVE";
+"typeOfTreatmentTitle"="Type of Treatment";
+"lengthOfTreatmentTitle"="Length of treatment";
+"dateOfTreatmentTitle"="Date of treatment";
+"dateOfTreatmentTitleColon"="Date of treatment";
+"dateOfMonthlyTreatmentTitle"="Date of Monthly Treatment";
+"dateOfMonthlyPaymentTitle"="Date of Monthly Payment";
+"totalAmountOfVisit"="Total amount of visit";
+"totalAmountOfVisitColon"="Total amount of visit";
+"amountPaidAlt"="Amount paid by alternate carrier";
+"deleteEntry"="Delete entry";
+"enterAllTreatmentDetailsError"="Please enter in all of the treatment details";
+"invalidTotalAmountError"="Invalid Total Amount of Visit";
+"invalidAmountPaidError"="Invalid Amount Paid by Alternate Carrier";
+"invalidQuantity"="Invalid Quantity";
+"pickupDate"="Pick up Date";
+"dateOfPurchase"="Date of Purchase";
+"dateOfPurchaseService"="Date of purchase / service";
+"omf"="Orthodontic Monthly Fee";
+"medicalProfessionalError"="Medical Professional Type must be selected.";
+
+"specifyDateOfTreatment"="You must specify a Date of Treatment.";
+"dateofTreatment24Months"="Date of Treatment must be within the last 24 months.";
+"dateofTreatment12Months"="Date Of Treatment: must not be more than 12 months ago";
+"dateofPayment24Months"="Date of Payment must be within the last 24 months.";
+"dateofExamination24Months"="Date of Examination must be within the last 24 months.";
+"dateofPurchase24Months"="Date of purchase / service must be within the last 24 months.";
+"dateofPurchase12Months"="Date of purchase/service: must not be more than 12 months ago";
+"dateofPrescription12Months"="Date of the prescription must be within the last 12 months.";
+"specifyDateOfInjury"="The date of injury must be entered.";
+"specifyDateOfAccident"="String not provided";
+"errorMessage"="error message";
+
+"enterAllTreatmentDetails"="SVP entrer tous les dÃ©tails du traitement.";
+
+"specifyTypeOfTreatment"="You must specify Type of Treatment.";
+"invalidAlternateCarrier"="Invalid Amount Paid by Alternate Carrier";
+"specifyAlternateCarrier"="You must specify the Amount Paid by the Alternate Carrier.";
+"altCarrierTooHigh"="Total Amount of Visit must be greater or equal to the amount paid by the alternate carrier.";
+"invalidTotalAmount"="Invalid Total Amount of Visit";
+"specifyTotalAmount"="You must specify the Total Amount of Visit.";
+"sepcifyTotalAmountCharged"="You must specify the Total Amount Charged.";
+"invalidTotalAmountCharged"="Invalid total amount charged";
+"missingQuantity"="You must specify a Quantity.";
+"specifyDateOfPickup"="You must specify the Date Of Pickup.";
+"missingItemDescription"="You must specify the Type of Medical Item";
+"invalidFrameAmount"="Invalid frame amount";
+"invalidEyeglassLensAmount"="Invalid eyeglass lens amount";
+"specifyFrameAmount"="You must specify a Frame amount.";
+"specifyEyeglassLensAmount"="You must specify an eyeglass lens amount.";
+"invalidDateOfPurchase"="TEXT CONSTANT MISSING";
+"missingTypeOfEyewear"="You must specify the type of eyewear.";
+"missingTypeOfLens"="TEXT CONSTANT MISSING";
+"invalidDateOfMonthlyTreatment"="TEXT CONSTANT MISSING";
+"invalidOrthodonticMonthlyFee"="Invalid Orthodontic Monthly Fee";
+"missingOrthodonticMonthlyFee"="You must specify the Orthodontic Monthly Fee.";
+"invalidDateOfExamination"="Date of Eye Examination cannot be future dated";
+"invalidTotalAmountOfExamination"="Invalid Total Amount of Eye Examination";
+"missingTotalAmountOfExamination"="You must specify Total Amount of Eye Examination";
+
+"itemDescription"="Item Description";
+"quantity"="Quantity";
+"totalAmountCharged"="Total Amount Charged";
+"gstIncluded"="GST/HST Included in Total";
+"gstIncludedQ"="GST/HST Included in Total?";
+"pstIncluded"="PST Included in Total";
+"typeOfEyewear"="Select the type of eyewear";
+"typeOfEyewearConf"="Type of eyewear";
+"typeOfLens"="Select the lens type";
+"typeOfLensConf"="Lens type";
+"totalForLenses"="Total For All Contact Lenses Dispensed";
+"totalChargeForGlasses"="Total Charge for Glasses";
+"eyewearCorrective"="I acknowledge the eyewear is for corrective purposes";
+"mustSpecifyCorrective"="You must specify if the eyewear is for corrective purposes. Claims for non corrective purposes are not eligible";
+"frameAmount"="Frame Amount";
+"lensAmount"="Eyeglass lenses Amount";
+"feeAmount"="Fee Amount";
+"dateOfExamination"="Date of Examination";
+"dateOfExaminationColon"="Date of Examination";
+"totalAmountOfExamination"="Total amount of Examination";
+"totalChargeOfExamination"="Total Charge for Examination";
+"totalChargeOfExaminationColon"="Total Charge for Examination";
+"totalAmountMedicalItems"="Total amount charged for medical items";
+"lensTypeResult"="Lens Type";
+"totalChargeForContacts"="Total Charge for Contacts";
+
+"massageNoticeText"="For services rendered in Ontario, please ensure all receipts are signed by the Registered Massage Therapist who rendered the treatment.";
+
+"noClaimDetailEntered"="No claim detail information entered";
+"maximumFiveClaims"="A maximum of five claims can be added";
+
+"claimSubmissionConfirmation"="CONFIRM YOUR CLAIM";
+"planInformation"="PLAN INFORMATION";
+"greenShieldId"="{0} ID Number";
+"participantName"="Participant Name";
+
+"claimSubmissionResult"="CLAIM SUBMISSION RESULT";
+"totals"="TOTALS";
+"claimedAmount"="Claimed amount ($CDN)";
+"otherPaidAmount"="Other paid amount ($CDN)";
+"deductible"="Deductible";
+"copay"="Copay";
+"deductibleAmount"="Deductible amount";
+"copayAmount"="Co-payment amount";
+"paidAmount"="Paid amount ($CDN)";
+"formNumber"="Form Number";
+"formNumberNoColon"="Form Number";
+"serviceDate"="Service Date";
+"serviceDescription"="Service Description";
+"claimStatus"="Claim Status";
+"submissionDate"="Submission Date";
+"submittedDate"="Submitted Date";
+"dueDate"="Due Date";
+
+"auditNotificationTitle"="AUDIT NOTIFICATION";
+"auditNotificationInstruction"="AUDIT NOTIFICATION INSTRUCTIONS";
+"auditNotificationFormReference"="FORM REFERENCE NUMBER: ";
+"auditNotification"="YOUR CLAIM HAS BEEN SELECTED FOR AUDIT REVIEW. PLEASE NOTE THAT YOUR IMMEDIATE ACTION IS REQUIRED. PLEASE LOGON TO PLAN MEMBER ONLINE SERVICES TO RESPOND TO THE AUDIT REQUEST.";
+"auditNotificationMenu"="YOUR CLAIM HAS BEEN RANDOMLY SELECTED FOR AUDIT REVIEW. IMMEDIATE ACTION IS REQUIRED. THIS REPORT CAN BE FOUND UNDER MY ALERTS IN THE HOME TAB.";
+"auditInstructionsButton"="AUDIT NOTIFICATION INSTRUCTIONS";
+"auditInstructions"="Your claim has been randomly selected for audit review. Immediate action is required. You must respond to {0} in the next 30 days. Please follow these steps: \r\n\r\n• Login to {0}'s Plan Member Online Services via greenshield.ca. \r\n\r\n• Once you have logged in, you will immediately see an Audit Reminder Notification message. \r\n\r\n• Click on 'View Audit List' to see your outstanding claims audit(s). \r\n\r\n• Click on the applicable 'Form Number' to view specific audit details. \r\n\r\n• Conveniently upload your invoice and other supporting documentation (such as a prescription if required) online. \r\n\r\nOr, you can print the Audit Notification Form and mail it along with the requested documentation to the address noted on the bottom of the notification page.";
+"submittedToGSC"="The above information will be submitted to {0}. Please ensure the information is correct before proceeding. If you need to change the information, please click the back button to return to the claim submission form. Otherwise click the Submit button to submit the claim to {0}.";
+"submitAnotherClaim"="SUBMIT ANOTHER CLAIM";
+"awaitingPaymentNote"="Payments for claims with a status of \"Awaiting Payment\" will be processed on the next business day.";
+"awaitingPaymentNote2"="Payments for claims with a status of \"Awaiting Payment\" will be processed on the next business day, based on your ";
+"awaitingPaymentNote3"=" balance";
+
+"planLimitations"="PLAN LIMITATIONS";
+"planLimitation"="PLAN LIMITATION";
+"particpantFamily"="Participant / Family";
+"startDate"="Start Date";
+"amountToDate"="Amount Used to Date";
+"occurencesToDate"="Occurrences/Units to Date";
+
+"auditListInstructions"="You currently have one or more outstanding audited claims (please see list below). You will have 30 days from the audit notification date to provide the claim documents to support your submission. Please click a form number below to complete the audit process.\r\n\r\nWhen the documents are processed, the audit notification will no longer appear in the list below.\r\n\r\nIMPORTANT NOTE - If you do not send the requested documentation, your future ability to submit claims through Plan Member Online Services will be disabled.\r\n\r\nIf you have recently submitted your documentation by mail or electronically, please disregard this message. We thank you for responding to the audit. \r\n\r\nShould you have any questions, please call our Customer Service Centre at ";
+"auditListPhone"="{0}";
+
+"auditsTitle"="AUDITS";
+
+//ELIGIBILITY
+
+"checkEligibilityTypeMessage"="Check eligibility for one of the following benefits";
+"eligibilityPlanParticipantMessage"="SELECT THE PLAN PARTICIPANT ";
+
+"eligibilityParticipantChanged"="All information on this eligibility check will now be associated with the new participant. Do you wish to continue?";
+
+"checkEligibilityTitle"="CHECK ELIGIBILITY";
+"dateOfEligiblity"="DATE OF ELIGIBILITY";
+
+"checkEligibilityFor"="CHECK ELIGIBILITY FOR";
+"for"="FOR";
+
+"inWhatProvince"="In what province will the service be provided";
+
+"eligibilityNote1"="Eligibility is based on all claims submitted and processed as of today's date. Recent claims that have been received by {0} may not be reflected in the results. Treatment must be performed by a health provider who is licensed in the province in which you are receiving treatment.\r\n\r\nI agree that the information provided is complete and accurate to the best of my knowledge.";
+"eligibilityNote2"="Please note: This is just an eligibility check. You are not actually submitting a claim.";
+
+"dateOfInquiry"="Date of Inquiry";
+
+"eligibilityDRENote"="Note: The Date of Eligibility represents the next eligible date for typical benefits incurred at your check up. If {0} is not your primary carrier, your claim must be submitted to your primary carrier first. This may affect your benefit eligibility.\r\nNote: Eligibility for scaling, as noted above, applies only to the one unit of preventive scaling included with a recall.";
+"eligibilityOMFNote"="Note: The Date of Eligibility represents the next eligible date to receive your maximum dollar amount for orthotics. If {0} is not your primary carrier, your claim must be submitted to your primary carrier first. This may affect your benefit eligibility.";
+
+"eligibilityInquiryNote2"="Please note: This is just an eligibility check. You are not actually submitting a claim.";
+
+"eligibilityResults"="ELIGIBILITY RESULTS";
+"submissionResultsFor"="SUBMISSION RESULTS FOR";
+"reasonsReduced"="REASONS YOUR PLAN MAY HAVE REDUCED THE PAID AMOUNT";
+
+"yourPlanWouldPay"="Your plan would pay";
+"other"="Other";
+"dateOfEligibilityMaximum"="Date of Eligibility for Maximum Dollar Amount";
+"planWouldPayChanged1"="If your glasses prescription has not changed, your plan would pay: ";
+"or"="Or";
+"planWouldPayChanged2"="If your glasses prescription has changed, your plan would pay: ";
+
+"eligibilityTotalAmountError"="Total Amount of Visit: must be a valid dollar amount";
+"eligibilityTotalAmountMissing"="Total Amount of Visit: must be entered";
+
+"depNumParticipant"="Dependent number: Participant";
+"treatment1"="Recall Exam";
+"treatment2"="Scaling";
+"treatment3"="Polishing";
+
+"elegibilityInquiryTitle"=" INQUIRY";
+"eligibilityInquiryInfo1"="Questions? Send us a secure email. Simply fill in all information below, type your question and click Submit Inquiry and we'll respond to you within two business days.";
+"toGSCRepresentative"="To: {0} Representative";
+"from"="From:";
+"yourEmailAddress"="Your Email Address:";
+"eligibilityInquiryInfo2"="If we don't receive your email correctly, we will call you at the phone number(s) you have provided. To update your current email address, click My Profile in the left menu, and enter your new email address.";
+"legalPracticionerNote"="Services must be provided by a Health Practitioner legally qualified or deemed to be qualified by {0}";
+"enterInquiry"="Enter Your Inquiry Here (limit 1000 characters) *";
+"counter"="Counter:";
+"exceededCharactersError"="You have exceeded the number of characters that can be entered in the inquiry field.";
+"expectReplyNote"="You can expect a response to your inquiry within 2 business days.";
+"expectReplyNote2"="Inquiry messages sent to {0} through this \"Submit Inquiry\" capability uses technology which provides a secure and confidential communication.";
+"submitAnotherEligibilityCheck"="SUBMIT ANOTHER ELIGIBILITY CHECK";
+"submitInquiry"="SUBMIT INQUIRY";
+
+"inquiryRecieved"="INQUIRY RECEIVED, THANK YOU \r\n\r\n Your inquiry message has been successfully received by {0}. You can expect a response to the email address supplied within 2 business days. ";
+
+"noEligibilityAccess"="Oops. We're sorry, but you don't have access to Benefit Eligibility";
+
+"done"="DONE";
+
+"yes"="Yes";
+"no"="No";
+"yesContinue"="Yes, Continue";
+"noCancel"="No, Cancel";
+
+"claimRehydrationMessage"="Unsaved Data: You have previously entered data in a claim that has not been submitted. Would you like to start where you left off? Click no to start a new claim.";
+
+//VISION CHANGES
+"prescriptionDetails"="Prescription Details";
+
+"rightSphere"="Right Sphere";
+"leftSphere"="Left Sphere";
+"rightCylinder"="Right Cylinder";
+"leftCylinder"="Left Cylinder";
+"rightAxis"="Right Axis";
+"leftAxis"="Left Axis";
+"rightPrism"="Right Prism";
+"leftPrism"="Left Prism";
+"rightBifocal"="Right Bifocal";
+"leftBifocal"="Left Bifocal";
+
+"prescriptionDetailsIncomplete"="Prescription details are incomplete";
+"missingRightSphere"="";
+"missingLeftSphere"="";
+"missingRightCylinder"="";
+"missingLeftCylinder"="";
+"missingRightAxis"="";
+"missingLeftAxis"="";
+"missingRightPrism"="";
+"missingLeftPrism"="";
+
+//SUBMISSION RESULT CHANGES
+"spouseResults"="CLAIM SUBMISSION RESULTS - YOUR SPOUSE'S ACCOUNT";
+"spendingAccountResults"="CLAIM SUBMISSION RESULTS ";
+"secondaryAccountDisabled"="We are unable to process the second part of this claim under your spouse's account as their Plan Member Online Services account is disabled.  Please submit the claim under your spouse's account to {0} using a paper claim form.";
+"secondaryAccountHasntAcceptedAgreement"="We are unable to process the second part of this claim under your spouse's account as they have not accepted the online Claim Submission Agreement. This Agreement is presented when you first submit a claim in Plan Member Online Services.";
+"secondaryAccountNotRegistered"="Your spouse has not registered for Plan Member Online Services and/or has not accepted the online Claim Submission Agreement, so we cannot process the second portion of this claim online.  To coordinate your claims with your spouse's {0} benefits plan online, have them register for Plan Member Online Services and accept the Claim Submission Agreement today.";
+
+"dateOfExpense"="Date of Expense";
+"typeOfExpense"="Type of Expense";
+
+//Change For Life Term and Condition
+"acceptToTerms"="Accept";
+"cancelToTerms"="Cancel";
+"C4LAgreement"="<h2>Change4Life Agreement<h2>";
+"C4LTCContent1"="<h3>We need your consent (read and click “Accept” below)</h3> In order to fully operate the Change4Life health rewards portal and to provide the best possible experience, certain information about you will need to be transferred from {0} to the Change4Life portal (offered by {0} through Cookson James Loyalty, Inc.) and we need you to consent to that transfer and the uses of your information set out below. Such information includes personal identifiable, confidential information like your email address and date of birth. <br/> <br/> In addition, the Change4Life Web portal will collect information that you enter into it – as much or as little as you are willing to share – and may use it for the following purposes:<br/>";
+"C4L"="CHANGE4LIFE";
+"C4LTCContent2"="<ul><li>to offer you targeted education, tools and communications related to your health (only if you consent to receiving such information) </li><li>to provide you with more effective customer service (eliminating the need for you to repeatedly enter the same information)</li><li>to perform research and analysis aimed at improving our ability to provide high quality health management products, services and technologies to our plan members</li><li>to provide anonymous data to plan sponsors regarding the overall health status of their collective plan members </li><li>clinical research, market research, education and other related research projects, on an anonymous basis only </li><li>Change4Life health reward redemption (shipping information may be shared with fulfillment providers where necessary)</li></ul><br/>";
+"C4LTCContent3"="Your privacy and confidentiality are protected. Personal information will be collected, used and disclosed in compliance with applicable Federal and Provincial privacy legislation including but not limited to the Personal Information Protection and Electronic Documents Act (PIPEDA). This means that {0} will limit the transfer, collection and use of personal information to only the relevant and necessary information required to provide the identified service. In the event that your plan is no longer administered by {0}, your personal information will automatically be rendered anonymous. Read more about {0}’s privacy, legal and security information. <br/> <br/>";
+//Warning : DO not change the privacy legal and  security urls above as the re-direction has been harcoded in the code.
+"C4LTCContent4"="<h3>Withdrawing your consent</h3>Your consent to these conditions can be withdrawn by you at any time (but you will no longer have access to the Change4Life portal, to collect points for doing healthy things and redeeming those points for cool rewards). Should you wish to withdraw your consent in the future (which we hope you don’t), please click on the “Contact Us” link on the Online Services menu and send us a secure e-mail with your request. No further information will be collected and all of your information stored in the Change4Life portal will be rendered anonymous. <br/><br/>The good news is you can rejoin the site at any time in future. (You’ll just have to review this page and click “Accept” again!) Plus, withdrawing your consent for your personal information to be used by the Change4Life portal will not affect the ability for {0} to process your benefit claims.<br/><br/>"; 
+"C4LTCContent5"="<h3>Change4Life Member Acknowledgement and Consent (this is it…you are almost done)</h3>By clicking the “Accept” link below, I consent to the collection, use and disclosure of my personal information as described, and in accordance with the {0}’s Privacy Policy (which I have had an opportunity to review), and acknowledge and agree with all of the above information. ";
+// Balance Check
+"BalanceCheckSelectAccount"="SELECT ACCOUNT";
+
+
+//HCSA
+
+"ClaimDetails"="Claim Details";
+"ClaimAmount"="Claim Amount";
+"GreenSheildIDNumber"="Green Sheild ID Number";
+"ProfessionalWhoReferred"="Professional who referred the item/service";
+"PaidByInsurerGovt"="Paid By Insurer/Government Plan(s)";
+"TOTAL" = "TOTAL";
+"ClaimMedicalProfessionalLabel"="Medical Professional";
+
+
+"FingerprintLoginPrompt"="Log in using Touch ID";
+"FingerprintConfirmPrompt"="Confirm with your fingerprint";
+"loginWithTouch"="LOG IN USING TOUCH ID";
+"loginWithFace"="LOG IN USING FACE ID";
+
+"useTouchIdMessage"="We can use Touch ID to securely store your password for login in the future. Would you like to use this feature?";
+"useFaceIdMessage"="We can use Face ID to securely store your password for login in the future. Would you like to use this feature?";
+"loginInstruction"="can log in next time using your fingerprint. Scan your fingerprint to enable.";
+
+//Settings view
+"dontAskTouch"="Touch ID/Face ID";
+"dontAskFace"="Face ID";
+"notEnabled"="Touch ID and Face ID are not available or not activated";
+"biometricsPara1"="When Touch ID / Face ID is turned on, you can sign on using your device's biometric security features, or continue to use your existing password.";
+"biometricsPara2"="Any Touch ID or Face ID profiles enrolled on this device will have access to this application.";
+"biometricsPara3"="To help protect your personal information, do not store Touch ID or Face ID data other than your own on this device.";
+"biometricsDialog"="If your device supports Touch ID or Face ID, please setup a passcode, register your biometric data, and enable the feature in your iOS device settings. You must also select the \"Remember my User ID on this device\" checkbox on the login screen.";
+
+
+
+//Apple Wallet Request Body
+"cardLogoText"="GSC on the Go";
+"cardImage"="Card/applewallet_en.png";
+
+//App Names
+"app_name"="GSC on the Go";
+
+// Web Claim Agreement
+"webAgreementTitle"="<h2>REGISTRATION FOR WEB CLAIM SUBMISSION</h2>";
+"webContent1"="To register for electronic claim submission, please read the following agreement, and then select the Accept button. This will authorize you to submit electronic claims to {0} through our website and mobile app. If you do not wish to register at this time, select the Cancel button to return to the home page.<br/><br/>";
+"newTermsDate"="<b><center><font color=red>New Terms and Conditions as of May 1, 2018</font></center></b>";
+"newTermsDateDynamic"="<b><center><font color=red>{0}</font></center></b>";
+"pmosHeading"="<b><center><font color={HIGHLIGHT_COLOR_HEX}>{0}<br/>Plan Member Online Services<br/>Web Claim Submission Agreement<br/><br/></font></center></b>";
+"webContent2"="<b>Terms and Conditions</b><br/>";
+"webContent3"="If you accept and agree to the following Terms and Conditions, then click the “Accept” button to continue.<br/><br/>";
+"webContent4"="As the plan member, I agree that all information provided using the Plan Member Online Services or mobile app web claim submission will be complete and accurate.<br/><br/>";
+"webContent5"="In the event that my information is found to be incomplete or inaccurate, I understand that {0} reserves the right to remove my online claiming privileges. I understand that the information, including the personal information, that I provide to {0} about myself and my dependents, will be used by {0} for claims adjudication and any other services necessary in the administration of my benefits which may include the exchange of information with other parties to administer my benefit plan.<br/><br/>";
+"webContent6"="I am authorized by my spouse and/or dependents to disclose and receive information about them that is used for these purposes. My spouse and/or dependents understand that this information may be seen by me, the cardholder and used by {0} and the other parties referenced in this agreement for the purposes set out in this agreement.<br/><br/>";
+"webContent7"="I understand and agree that I am responsible for retaining original receipt(s) for 13 months following the date of my claim submission(s). When submitting claims online, {0} may select my claim for audit. If so requested, I am responsible for producing the original receipt(s) within 30 days.<br/><br/>";
+"webContent8"="I understand that when my claim is selected for an audit, this may result in some or all previous claims submitted on my behalf being selected for a full audit review. When selected for a full audit review, my ability to submit claims through Plan Member Online Services and the app will be temporarily disabled.<br/><br/>";
+"webContent9"="If I fail to provide the receipt(s) to {0}, or provide false, incomplete, or misleading information, {0} reserves the right to classify any payment made by {0} related to my claim as an overpayment and {0} will be entitled to demand remittance of payment and/or the deduction of such overpayment from any future claim payments. Furthermore, access to Plan Member Online Services and mobile app claims submission will be revoked and coverage to benefits may be suspended and/or terminated.<br/><br/>";
+"webContent10"="If selected for audit, I authorize the exchange of information between {0} and other parties, including but not limited to health practitioners, medical device providers and insurers, as required, and only when the information is needed to administer benefit claims and/or confirm the accuracy of the claim(s) information submitted on behalf of myself, my spouse and/or my dependents.<br/><br/>";
+"webContent11"="In the event of suspected fraudulent activity pertaining to a Plan Member Online Services or mobile app web claim submission on behalf of myself, my spouse, and/or my dependents, I acknowledge and agree to the disclosure of this information to relevant parties, including but not limited to the Plan Sponsor, and regulatory and law enforcement agencies.<br/><br/>";
+"webContent12"="{0} maintains a national database of providers and their association with any regulatory agency, professional association or educational program. {0} reviews each provider to determine which benefits/services are eligible for reimbursement in conjunction with the plan member's health benefits plan. When submitting a claim online with a provider that has not registered with {0}, the provider's credentials will be verified and my claim will be processed accordingly.<br/><br/>";
+"webContent13"="Acceptance of the Web Claim Submission Agreement Terms and Conditions applies to all claims submitted within an online session.<br/><br/>";
+"webContent14"="If I submit multiple claims (for a different dependent and/or provider) within the online session, my acceptance of the Web Claim Submission Agreement Terms and Conditions applies to all those claims submitted.<br/><br/>";
+"webContent15"="By clicking the \"Accept\" button, this constitutes my digital signature (which is equivalent to a written signature) and I acknowledge that I am deemed to have read, understood, accepted and agreed to be bound by these Terms and Conditions.<br/><br/>";
+"webContentDynamic1"="{0}<br/><br/>";
+"webContent16"="For further information on our privacy policies and procedures, please visit our Terms and Conditions - Privacy page.<br/><br/>";
+"REFINE YOUR SEARCH"="REFINE YOUR SEARCH";
+"LOCATION"="LOCATION";
+"PROVIDER TYPE"="PROVIDER TYPE";
+"My Favourites"="My Favourites";
+"Pharmacy"="Pharmacy";
+"FILTER"="FILTER";
+"QUALITY RATING"="QUALITY RATING";
+"DIRECT BILL"="DIRECT BILL";
+"RECENTLY VISITED"="RECENTLY VISITED";
+"SORT"="SORT";
+"Distance"="Distance";
+"Name"="Name";
+"Rating Distance"="Rating & Distance";
+"Rating Name"="Rating & Name";
+"DONE"="DONE";
+"NotAvailable"="NOT AVAILABLE";
+
+"cop"="COP";
+"COP_UploadDocuments"="Upload Documents";
+"COP_ServiceDate"="Service Date";
+"COP_ClaimFormNumber"="Claim Form Number";
+"COP_ServiceDescription"="Service Description";
+"COP_ClaimedAmount"="Claimed Amount ($Cdn)";
+"COP_DocumentsToUpload"="Documents to upload";
+"COP_Disclaimer"="Disclaimer.";
+"COP_UploadSuccessfulMessage"="You have successfully uploaded your documents.";
+"COP_BackToMyClaims"="Back to my claims";
+"ActiveClaim_ActionRequired"="Action required";
+"COP_UploadDocumentMessageLabel"="Please upload documents for this claim.";
+
+//DirectDeposit
+"directDeposit"="Direct Deposit";

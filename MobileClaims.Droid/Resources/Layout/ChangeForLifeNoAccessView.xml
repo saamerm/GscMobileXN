@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <gsc.HeaderTextView
+        android:id="@+id/claim_type_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/changeforlife"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textAllCaps="true" />
+    <gsc.NunitoTextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:padding="20dp"
+        local:MvxBind="Text NoAccessMessage" />
+</LinearLayout>

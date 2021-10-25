@@ -1,0 +1,51 @@
+﻿using System;
+using FluentValidation;
+using MobileClaims.Core.ViewModels;
+
+namespace MobileClaims.Core.Validators
+{
+    public class TreatmentDetailEntryOMFValidator : AbstractValidator<ClaimTreatmentDetailsEntryOMFViewModel>
+    {
+        public TreatmentDetailEntryOMFValidator()
+        {
+            //RuleFor(vm => vm.DateOfMonthlyTreatment).NotEmpty().Must(VerifyValidDate).WithMessage("Empty Date");
+            RuleFor(vm => vm.DateOfMonthlyTreatment).NotEmpty().Must(IsNotFutureDate).WithMessage("Future Date");
+            RuleFor(vm => vm.DateOfMonthlyTreatment).Must(IsWithin24Months).WithMessage("Date TooOld");
+            RuleFor(vm => vm.OrthodonticMonthlyFee).NotEmpty().WithMessage("Empty Amount");
+            RuleFor(vm => vm.OrthodonticMonthlyFee).Matches(GSCHelper.MONEY_REGEX).WithMessage("Invalid Amount").When(vm => !string.IsNullOrEmpty(vm.OrthodonticMonthlyFee));
+            RuleSet("AlternateCarrier", () =>
+            {
+                RuleFor(vm => vm.AmountPaidByAlternateCarrier).NotEmpty().WithMessage("Empty AC");
+                RuleFor(vm => vm.AmountPaidByAlternateCarrier).Matches(GSCHelper.MONEY_REGEX).WithMessage("Invalid AC").When(vm => !string.IsNullOrEmpty(vm.AmountPaidByAlternateCarrier));
+                RuleFor(vm => vm.ACDollarValue).LessThanOrEqualTo(vm => vm.TotalDollarValue).WithMessage("BadValue AC").When(vm => !string.IsNullOrEmpty(vm.AmountPaidByAlternateCarrier));
+            });
+        }
+        private bool VerifyValidDate(DateTime date)
+        {
+            int dc = DateTime.Compare(date.Date, DateTime.Now.Date);
+            if (dc != 0)
+            {
+                return true;
+            }
+            return false;
+        }
+        private bool IsNotFutureDate(DateTime date)
+        {
+            int dc = DateTime.Compare(date.Date, DateTime.Now.Date);
+            if (dc <= 0)
+            {
+                return true;
+            }
+            return false;
+        }
+        private bool IsWithin24Months(DateTime date)
+        {
+            DateTime twoYearsAgo = DateTime.Today.AddMonths(-24);
+            if (date >= twoYearsAgo)
+            {
+                return true;
+            }
+            return false;
+        }
+    }
+}

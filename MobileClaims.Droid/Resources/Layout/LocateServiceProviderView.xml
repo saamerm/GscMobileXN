@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:background="@color/background_color">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none"
+            android:isScrollContainer="true">
+            <gsc.HeaderTextView
+                android:id="@+id/locateProviderFindProviderText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/searchTitle"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAllCaps="true" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:id="@+id/ProviderSeekBar"
+                    android:layout_weight="0.9">
+                    <gsc.SubtitleTextView
+                        android:text="@string/lspProviderRadiusInfoLabelMylocation"
+                        android:textSize="18sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lspProviderRadiusInfoLabelMylocationLabel"
+                        android:textColor="@color/dark_grey"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="left"
+                        android:layout_marginBottom="10dp"
+                        local:MvxBind="Visible (ShowLocationTypeGps == false);"
+                        android:textAllCaps="true" />
+                    <gsc.SubtitleTextView
+                        android:text="@string/lspProviderRadiusInfoLabelAddress"
+                        android:textSize="18sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lspProviderRadiusInfoLabelAddressLabel"
+                        android:textColor="@color/dark_grey"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="left"
+                        android:layout_marginBottom="10dp"
+                        local:MvxBind="Visible (ShowLocationTypeAddress == false);"
+                        android:visibility="gone"
+                        android:textAllCaps="true" />
+                    <gsc.SubtitleTextView
+                        android:text="@string/lspProviderRadiusInfoLabelPostalcode"
+                        android:textSize="18sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lspProviderRadiusInfoLabelPostalcodeLabel"
+                        android:textColor="@color/dark_grey"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="left"
+                        android:layout_marginBottom="10dp"
+                        local:MvxBind="Visible (ShowLocationTypePostalCode == false);"
+                        android:visibility="gone"
+                        android:textAllCaps="true" />
+                    <gsc.SmallEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="0"
+                        android:layout_centerInParent="true"
+                        android:textSize="13sp"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/dark_grey"
+                        android:singleLine="true"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/RoundEditTextNone"
+                        android:layout_marginBottom="10dp"
+                        android:includeFontPadding="true"
+                        android:text="Text"
+                        android:hint="@string/locateProviderAddressLabel"
+                        android:visibility="gone"
+                        android:gravity="left|center"
+                        android:paddingLeft="10dp"
+                        local:MvxBind="Visible (ShowLocationTypeAddress == false); Text Address;"
+                        android:id="@+id/locateServiceAddressField" />
+                    <gsc.SmallEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="0"
+                        android:layout_centerInParent="true"
+                        android:textSize="13sp"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/dark_grey"
+                        android:singleLine="true"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/RoundEditTextNone"
+                        android:layout_marginBottom="10dp"
+                        android:includeFontPadding="true"
+                        android:text="Text"
+                        android:hint="@string/locateProviderPostalCodeLabel"
+                        android:visibility="gone"
+                        android:gravity="left|center"
+                        android:paddingLeft="10dp"
+                        local:MvxBind="Visible (ShowLocationTypePostalCode == false); Text PostalCode;"
+                        android:id="@+id/locateServicePostalCodeField" />
+                    <gsc.SubtitleTextView
+                        android:text="@string/detailsProviderExampleAddressLabel"
+                        android:textSize="13sp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/detailsProviderExampleAddressLabel"
+                        android:textColor="@color/dark_grey"
+                        android:layout_gravity="center_horizontal"
+                        local:MvxBind="Visibility ShowSearchTypeAddressExample, Converter=Visibility"
+                        android:layout_marginBottom="10dp"
+                        android:layout_below="@id/locateServiceAddressField"
+                        android:layout_marginLeft="8dp" />
+                    <gsc.SubtitleTextView
+                        android:text="@string/detailsProviderExamplePostalCodeLabel"
+                        android:textSize="13sp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/detailsProviderExamplePostalCodeLabel"
+                        android:textColor="@color/dark_grey"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_below="@id/locateServicePostalCodeField"
+                        local:MvxBind="Visibility ShowSearchTypePostalCodeExample, Converter=Visibility"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="8dp" />
+                </LinearLayout>
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:id="@+id/ProviderSeekBarLine"
+                    android:layout_below="@id/ProviderSeekBar"
+                    android:layout_alignParentTop="true"
+                    android:paddingRight="20dp">
+                    <SeekBar
+                        android:id="@+id/locateProviderSeekBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:max="45"
+                        android:progress="0" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="45"
+                        android:id="@+id/ProviderSekBarText"
+                        android:layout_marginTop="-25dp"
+                        android:layout_below="@id/locateProviderSeekBar"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="|"
+                            android:gravity="left"
+                            android:layout_weight="15"
+                            android:textColor="@color/dark_grey"
+                            android:textStyle="bold"
+                            android:paddingLeft="-1dp" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="|"
+                            android:gravity="left"
+                            android:layout_weight="15"
+                            android:paddingLeft="-1dp"
+                            android:textColor="@color/dark_grey"
+                            android:textStyle="bold" />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1"
+                            android:layout_weight="15">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="|"
+                                android:gravity="left"
+                                android:layout_weight="0.5"
+                                android:textColor="@color/dark_grey"
+                                android:paddingLeft="-1dp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="|"
+                                android:gravity="right"
+                                android:layout_weight="0.5"
+                                android:textColor="@color/dark_grey"
+                                android:paddingRight="-1dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:layout_below="@id/ProviderSekBarText"
+                        android:weightSum="45"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp">
+                        <gsc.SubtitleTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="5"
+                            android:gravity="left"
+                            android:textSize="13sp"
+                            android:layout_weight="15"
+                            android:textColor="@color/dark_grey"
+                            android:textStyle="bold" />
+                        <gsc.SubtitleTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="20"
+                            android:gravity="left"
+                            android:textSize="13sp"
+                            android:layout_weight="15"
+                            android:textColor="@color/dark_grey"
+                            android:textStyle="bold" />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1"
+                            android:layout_weight="15">
+                            <gsc.SubtitleTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="35"
+                                android:gravity="left"
+                                android:layout_weight="0.5"
+                                android:textSize="13sp"
+                                android:textColor="@color/dark_grey"
+                                android:textStyle="bold" />
+                            <gsc.SubtitleTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="50"
+                                android:gravity="right"
+                                android:layout_weight="0.5"
+                                android:textSize="13sp"
+                                android:textColor="@color/dark_grey"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="0dp"
+                        local:MvxBind="Visible (ShowSearchTypeBusinessName == false)">
+                        <gsc.SubtitleTextView
+                            android:text="@string/detailsProviderSearchLabelBusinessName"
+                            android:id="@+id/locateProviderBusinessNameLabel"
+                            android:textSize="18sp"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_weight="0.7"
+                            android:textColor="@color/dark_grey"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="left"
+                            android:layout_marginTop="40dp" />
+                        <gsc.SmallEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_weight="0"
+                            android:layout_centerInParent="true"
+                            android:textSize="13sp"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/dark_grey"
+                            local:MvxBind="Text BusinessName"
+                            android:singleLine="true"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/RoundEditTextNone"
+                            android:layout_marginBottom="10dp"
+                            android:includeFontPadding="true"
+                            android:layout_marginTop="10dp"
+                            android:text="Text"
+                            android:hint="@string/locateProviderBusinessNameLabel"
+                            android:gravity="left|center"
+                            android:paddingLeft="10dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="0dp"
+                        local:MvxBind="Visible (ShowSearchTypeLastName == false)">
+                        <gsc.SubtitleTextView
+                            android:text="@string/detailsProviderSearchLabelLastName"
+                            android:id="@+id/locateProviderLastNameLabel"
+                            android:textSize="18sp"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_weight="0.7"
+                            android:textColor="@color/dark_grey"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="left"
+                            android:layout_marginTop="40dp" />
+                        <gsc.SmallEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_weight="0"
+                            android:layout_centerInParent="true"
+                            android:textSize="13sp"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/dark_grey"
+                            local:MvxBind="Text LastName"
+                            android:singleLine="true"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/RoundEditTextNone"
+                            android:layout_marginBottom="10dp"
+                            android:includeFontPadding="true"
+                            android:layout_marginTop="10dp"
+                            android:hint="@string/locateProviderLastNameLabel"
+                            android:text="Text"
+                            android:gravity="left|center"
+                            android:paddingLeft="10dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="0dp"
+                        local:MvxBind="Visible (ShowSearchtypeCity == false)">
+                        <gsc.SubtitleTextView
+                            android:text="@string/detailsProviderSearchLabelCity"
+                            android:id="@+id/locateProviderCityLabel"
+                            android:textSize="18sp"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_weight="0.7"
+                            android:textColor="@color/dark_grey"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="left"
+                            android:layout_marginTop="40dp" />
+                        <gsc.SmallEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_weight="0"
+                            android:layout_centerInParent="true"
+                            android:textSize="13sp"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/dark_grey"
+                            local:MvxBind="Text City"
+                            android:singleLine="true"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/RoundEditTextNone"
+                            android:layout_marginBottom="10dp"
+                            android:includeFontPadding="true"
+                            android:layout_marginTop="10dp"
+                            android:text="Text"
+                            android:hint="@string/locateProviderCityLabel"
+                            android:gravity="left|center"
+                            android:paddingLeft="10dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="0dp"
+                        local:MvxBind="Visible (ShowSearchTypePhoneNumber == false)">
+                        <gsc.SubtitleTextView
+                            android:text="@string/detailsProviderSearchLabelPhoneNumber"
+                            android:id="@+id/locateProviderPhoneNumberLabel"
+                            android:textSize="18sp"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_weight="0.7"
+                            android:textColor="@color/dark_grey"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="left"
+                            android:layout_marginTop="40dp" />
+                        <gsc.SmallEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_weight="0"
+                            android:layout_centerInParent="true"
+                            android:textSize="13sp"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/dark_grey"
+                            local:MvxBind="Text PhoneNumber"
+                            android:singleLine="true"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/RoundEditTextNone"
+                            android:layout_marginBottom="10dp"
+                            android:includeFontPadding="true"
+                            android:layout_marginTop="10dp"
+                            android:text="Text"
+                            android:hint="@string/locateProviderPhoneNumberLabel"
+                            android:gravity="left|center"
+                            android:paddingLeft="10dp" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white"
+                    android:layout_weight="1.0"
+                    android:layout_marginTop="25dp">
+                    <gsc.SubtitleTextView
+                        android:text="@string/detailsProviderInfoLabel"
+                        android:textSize="13sp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        android:id="@+id/locateProviderDynamicProviderText"
+                        android:textColor="@color/dark_grey"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="left" />
+                    <gsc.GSCButton
+                        android:text="@string/detailsProviderTitle"
+                        android:background="@drawable/button_highlight"
+                        android:layout_width="240dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/locateProviderSearch1"
+                        android:textSize="24sp"
+                        android:layout_gravity="center"
+                        android:textColor="@drawable/ButtonTextColor"
+                        android:gravity="center"
+                        local:MvxBind="Click FindProviderCommand; Enabled LocationAvailable;Visible (ShowLocationTypeGps == false);"
+                        android:layout_marginBottom="20dp"
+                        android:textColorHighlight="@color/list_text_color"
+                        android:imeOptions="actionDone" />
+                    <gsc.GSCButton
+                        android:text="@string/detailsProviderTitle"
+                        android:background="@drawable/button_highlight"
+                        android:layout_width="240dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/locateProviderSearch"
+                        android:textSize="24sp"
+                        android:layout_gravity="center"
+                        android:textColor="@drawable/ButtonTextColor"
+                        android:gravity="center"
+                        local:MvxBind="Click FindProviderCommand;Visible (ShowLocationTypeGps == true);"
+                        android:layout_marginBottom="20dp"
+                        android:textColorHighlight="@color/list_text_color"
+                        android:imeOptions="actionDone" />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="0dp"
+                        local:MvxBind="Visible And(LocationAvailable == false,ShowLocationTypeGps == false)">
+                        <gsc.SubtitleTextView
+                            android:text="@string/noLocationFound"
+                            android:textSize="13sp"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="0.7"
+                            android:textColor="@color/dark_grey"
+                            android:layout_gravity="left"
+                            android:gravity="center_horizontal"
+                            android:layout_marginBottom="20dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

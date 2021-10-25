@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad12_9rounded" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EligibilityCheckCPView">
+            <connections>
+                <outlet property="dateOfTreatmentComponent" destination="3288" id="name-outlet-3288"/>
+                <outlet property="eligibilityNote1" destination="3845" id="name-outlet-3845"/>
+                <outlet property="eligibilityNote2" destination="3850" id="name-outlet-3850"/>
+                <outlet property="planParticipantLabel" destination="215" id="name-outlet-215"/>
+                <outlet property="scrollableContainer" destination="906" id="name-outlet-906"/>
+                <outlet property="serviceProvinceList" destination="3840" id="name-outlet-3840"/>
+                <outlet property="submitButton" destination="3855" id="name-outlet-3855"/>
+                <outlet property="totalAmountOfVisit" destination="3559" id="name-outlet-3559"/>
+                <outlet property="typeOfTreatmentList" destination="1382" id="name-outlet-1382"/>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+                <outlet property="viewContainer" destination="912" id="name-outlet-912"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="906">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="912">
+                            <rect key="frame" x="0.0" y="0.0" width="1024" height="667"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="215">
+                                    <rect key="frame" x="8" y="0.0" width="1008" height="55"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="55" id="349"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1382" customClass="ClaimTreatmentDetailsTitleAndList">
+                                    <rect key="frame" x="8" y="70" width="1008" height="52"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="52" id="2929"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="TitleTextLabel" value="typeOfTreatmentTitle"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3288" customClass="ClaimTreatmentDetailsTitleAndDatePicker">
+                                    <rect key="frame" x="8" y="130" width="1008" height="52"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="52" id="3292"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="TitleTextLabelDatePicker" value="dateOfTreatmentTitle"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3559" customClass="ClaimTreatmentDetailsTitleAndTextField">
+                                    <rect key="frame" x="8" y="190" width="1008" height="52"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="52" id="3563"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="TitleTextLabelTextField" value="totalAmountOfVisit"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3840" customClass="ClaimTreatmentDetailsTitleAndList">
+                                    <rect key="frame" x="8" y="250" width="1008" height="52"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="52" id="3841"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="TitleTextLabel" value="inWhatProvince"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3845">
+                                    <rect key="frame" x="8" y="317" width="1008" height="135"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="135" id="3846"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3850">
+                                    <rect key="frame" x="8" y="460" width="1008" height="70"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="70" id="3854"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3855" customClass="GSButton">
+                                    <rect key="frame" x="52" y="552" width="919" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="3865"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="215" firstAttribute="top" secondItem="912" secondAttribute="top" id="922"/>
+                                <constraint firstItem="215" firstAttribute="leading" secondItem="912" secondAttribute="leadingMargin" id="923"/>
+                                <constraint firstItem="215" firstAttribute="trailing" secondItem="912" secondAttribute="trailingMargin" id="924"/>
+                                <constraint firstItem="1382" firstAttribute="top" secondItem="215" secondAttribute="bottom" constant="15" id="1808"/>
+                                <constraint firstItem="1382" firstAttribute="leading" secondItem="912" secondAttribute="leadingMargin" id="1809"/>
+                                <constraint firstItem="1382" firstAttribute="trailing" secondItem="912" secondAttribute="trailingMargin" id="1810"/>
+                                <constraint firstItem="3288" firstAttribute="top" secondItem="1382" secondAttribute="bottom" constant="8" id="3289"/>
+                                <constraint firstItem="3288" firstAttribute="leading" secondItem="912" secondAttribute="leadingMargin" id="3290"/>
+                                <constraint firstItem="3288" firstAttribute="trailing" secondItem="912" secondAttribute="trailingMargin" id="3291"/>
+                                <constraint firstItem="3559" firstAttribute="top" secondItem="3288" secondAttribute="bottom" constant="8" id="3560"/>
+                                <constraint firstItem="3559" firstAttribute="leading" secondItem="912" secondAttribute="leadingMargin" id="3561"/>
+                                <constraint firstItem="3559" firstAttribute="trailing" secondItem="912" secondAttribute="trailingMargin" id="3562"/>
+                                <constraint firstItem="3840" firstAttribute="top" secondItem="3559" secondAttribute="bottom" constant="8" id="3842"/>
+                                <constraint firstItem="3840" firstAttribute="leading" secondItem="912" secondAttribute="leadingMargin" id="3843"/>
+                                <constraint firstItem="3840" firstAttribute="trailing" secondItem="912" secondAttribute="trailingMargin" id="3844"/>
+                                <constraint firstItem="3845" firstAttribute="top" secondItem="3840" secondAttribute="bottom" constant="15" id="3847"/>
+                                <constraint firstItem="3845" firstAttribute="leading" secondItem="912" secondAttribute="leadingMargin" id="3848"/>
+                                <constraint firstItem="3845" firstAttribute="trailing" secondItem="912" secondAttribute="trailingMargin" id="3849"/>
+                                <constraint firstItem="3850" firstAttribute="top" secondItem="3845" secondAttribute="bottom" constant="8" id="3851"/>
+                                <constraint firstItem="3850" firstAttribute="leading" secondItem="912" secondAttribute="leadingMargin" id="3852"/>
+                                <constraint firstItem="3850" firstAttribute="trailing" secondItem="912" secondAttribute="trailingMargin" id="3853"/>
+                                <constraint firstItem="3855" firstAttribute="top" secondItem="3850" secondAttribute="bottom" constant="22" id="3862"/>
+                                <constraint firstItem="3855" firstAttribute="leading" secondItem="912" secondAttribute="leading" constant="52" id="3863"/>
+                                <constraint firstAttribute="trailing" secondItem="3855" secondAttribute="trailing" constant="53" id="3864"/>
+                                <constraint firstAttribute="bottom" secondItem="3855" secondAttribute="bottom" constant="75" id="3866"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="912" firstAttribute="top" secondItem="906" secondAttribute="top" id="913"/>
+                        <constraint firstItem="912" firstAttribute="leading" secondItem="906" secondAttribute="leading" id="914"/>
+                        <constraint firstItem="912" firstAttribute="bottom" secondItem="906" secondAttribute="bottom" id="915"/>
+                        <constraint firstItem="912" firstAttribute="trailing" secondItem="906" secondAttribute="trailing" id="916"/>
+                        <constraint firstItem="912" firstAttribute="height" secondItem="906" secondAttribute="height" priority="999" id="917"/>
+                        <constraint firstItem="912" firstAttribute="width" secondItem="906" secondAttribute="width" id="918"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="906" firstAttribute="top" secondItem="2" secondAttribute="top" id="907"/>
+                <constraint firstItem="906" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="909"/>
+                <constraint firstItem="906" firstAttribute="trailing" secondItem="2" secondAttribute="trailing" id="910"/>
+                <constraint firstItem="906" firstAttribute="bottom" secondItem="2" secondAttribute="bottom" id="911"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ClaimSubmissionResultView">
+            <connections>
+                <outlet property="AuditUploadButton" destination="TbZ-d6-25p" id="Iv1-Zn-REk"/>
+                <outlet property="AuditUploadStackView" destination="BlE-QD-v53" id="UP1-7y-C5c"/>
+                <outlet property="AuditUploadStackViewHeightConstraint" destination="VrW-38-GPr" id="mUY-99-jbz"/>
+                <outlet property="ClaimDetailsCollectionView" destination="kOK-NF-qZu" id="s2R-Sa-SyH"/>
+                <outlet property="ClaimDetailsCollectionViewHeightConstraint" destination="8Z1-mF-38O" id="Pki-HQ-4b0"/>
+                <outlet property="ClaimDetailsTitleLabel" destination="mdY-hv-ezo" id="Eql-Zm-6wr"/>
+                <outlet property="CopButton" destination="xwk-T6-C8U" id="50D-Sp-QFu"/>
+                <outlet property="CopUploadStackView" destination="E26-eT-hGY" id="BRd-Xd-pIe"/>
+                <outlet property="CopUploadStackViewHeightConstraint" destination="p8q-ww-CGM" id="CNX-d5-1we"/>
+                <outlet property="CopUploadStackViewTopConstraint" destination="ohz-Cj-Vu0" id="0B9-aT-U6S"/>
+                <outlet property="GscIdLabel" destination="eTZ-KP-fc8" id="S5G-nk-bk4"/>
+                <outlet property="GscIdValue" destination="8NC-4G-5C4" id="Pbs-Cm-NcX"/>
+                <outlet property="ParticipantNameLabel" destination="NP9-LT-Qvi" id="xaH-h3-EsE"/>
+                <outlet property="ParticipantNameValueLabel" destination="t68-7U-a58" id="M7j-il-1uK"/>
+                <outlet property="PlanInformationLabel" destination="f56-KA-v3f" id="reW-vJ-T47"/>
+                <outlet property="PlanLimitationCollectionView" destination="iLm-4W-Cj7" id="x4l-Jq-tGm"/>
+                <outlet property="PlanLimitationCollectionViewHeightConstraint" destination="D9H-MW-5rX" id="JR4-FW-kD3"/>
+                <outlet property="PlanLimitationCollectionViewTopConstraint" destination="cKY-Sw-LZ3" id="hxe-Vb-Wm8"/>
+                <outlet property="PlanLimitationLabelTopConstraint" destination="aCQ-tA-byY" id="7K6-Na-sBu"/>
+                <outlet property="PlanLimitationTitleLabel" destination="CPg-MP-32t" id="H6q-zM-Xzp"/>
+                <outlet property="RequiresAuditLabel" destination="E7J-d4-d7f" id="FHH-ai-hNc"/>
+                <outlet property="RequiresCOPLabel" destination="Pvd-Im-Z4f" id="4Pq-zB-Rry"/>
+                <outlet property="ScrollViewBottomConstraint" destination="0uR-yH-Iv5" id="1O6-ir-T1k"/>
+                <outlet property="SubmissionDateLabel" destination="gH5-Vt-rCw" id="U9P-ep-kVD"/>
+                <outlet property="SubmissionDateValueLabel" destination="mxl-vE-OMk" id="dFR-ef-UDh"/>
+                <outlet property="SubmitAnotherClaimButton" destination="1Oq-zn-kef" id="sHq-ju-Jdl"/>
+                <outlet property="SubmitAnotherClaimButtonTopConstraint" destination="0CW-Rt-46W" id="CSr-Ad-5gz"/>
+                <outlet property="TotalTitleLabel" destination="vrg-xV-kQX" id="1s0-Pg-1ZY"/>
+                <outlet property="TotalsCollectionView" destination="URe-AT-TDb" id="HAF-xh-QC5"/>
+                <outlet property="TotalsCollectionViewHeightConstraint" destination="9dB-F0-xoa" id="RHY-62-QJ3"/>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2" userLabel="ClaimSubmissionResultView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="um4-X7-Bw9">
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xm6-h5-nj1" userLabel="ContentView">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="682"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="E26-eT-hGY" userLabel="COP Upload Stack View">
+                                    <rect key="frame" x="20" y="10" width="374" height="121"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pvd-Im-Z4f">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="61"/>
+                                            <string key="text">Submit additional information for this claim Submit additional information for this claim Submit additional information for this claim</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xwk-T6-C8U" userLabel="COP" customClass="GSButton">
+                                            <rect key="frame" x="52" y="81" width="270" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="9vb-Lw-F0Z">
+                                                    <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                                </constraint>
+                                                <constraint firstAttribute="width" constant="270" id="xGX-Yv-Gdp">
+                                                    <variation key="heightClass=regular-widthClass=regular" constant="400"/>
+                                                </constraint>
+                                            </constraints>
+                                            <state key="normal" title="UPLOAD DOCUMENTS"/>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="xwk-T6-C8U" firstAttribute="top" secondItem="Pvd-Im-Z4f" secondAttribute="bottom" constant="20" id="FWX-ck-8Zg"/>
+                                        <constraint firstAttribute="trailing" secondItem="Pvd-Im-Z4f" secondAttribute="trailing" id="Mq6-bP-9AQ"/>
+                                        <constraint firstItem="Pvd-Im-Z4f" firstAttribute="top" secondItem="E26-eT-hGY" secondAttribute="top" id="ael-Ie-A9n"/>
+                                        <constraint firstItem="Pvd-Im-Z4f" firstAttribute="leading" secondItem="E26-eT-hGY" secondAttribute="leading" id="cFK-Os-OS6"/>
+                                        <constraint firstAttribute="height" priority="999" constant="100.67" id="p8q-ww-CGM"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="p8q-ww-CGM"/>
+                                        </mask>
+                                    </variation>
+                                </stackView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLAN INFORMATION" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f56-KA-v3f">
+                                    <rect key="frame" x="20" y="161" width="374" height="21.666666666666657"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JXI-HU-Z0D">
+                                    <rect key="frame" x="20" y="192.66666666666666" width="374" height="69.999999999999972"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ttq-Aq-KmF">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="16.666666666666668"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Green Shield ID Number" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTZ-KP-fc8" customClass="AlignableLabel">
+                                                    <rect key="frame" x="0.0" y="0.0" width="195.66666666666666" height="16.666666666666668"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>                                         <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NunitoSans-Bold"/>                                     </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9901808" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8NC-4G-5C4" customClass="AlignableLabel">
+                                                    <rect key="frame" x="205.66666666666663" y="0.0" width="168.33333333333337" height="16.666666666666668"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>                                         <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NunitoSans-Bold"/>                                     </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="8NC-4G-5C4" firstAttribute="width" secondItem="Ttq-Aq-KmF" secondAttribute="width" multiplier="0.55" id="Kag-LK-cK1"/>
+                                                <constraint firstItem="eTZ-KP-fc8" firstAttribute="width" secondItem="Ttq-Aq-KmF" secondAttribute="width" multiplier="0.55" constant="-10" id="PSN-eR-1gj"/>
+                                                <constraint firstItem="eTZ-KP-fc8" firstAttribute="width" secondItem="Ttq-Aq-KmF" secondAttribute="width" multiplier="0.45" constant="-10" id="d5C-lp-osp"/>
+                                                <constraint firstItem="8NC-4G-5C4" firstAttribute="width" secondItem="Ttq-Aq-KmF" secondAttribute="width" multiplier="0.45" id="f6s-Un-eeU"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="d5C-lp-osp"/>
+                                                    <exclude reference="Kag-LK-cK1"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular-widthClass=regular">
+                                                <mask key="constraints">
+                                                    <exclude reference="PSN-eR-1gj"/>
+                                                    <include reference="d5C-lp-osp"/>
+                                                    <include reference="Kag-LK-cK1"/>
+                                                    <exclude reference="f6s-Un-eeU"/>
+                                                </mask>
+                                            </variation>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XJm-Rx-6uV">
+                                            <rect key="frame" x="0.0" y="26.666666666666657" width="374" height="16.666666666666671"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Participant Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NP9-LT-Qvi" customClass="AlignableLabel">
+                                                    <rect key="frame" x="0.0" y="0.0" width="195.66666666666666" height="16.666666666666668"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>                                         <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NunitoSans-Bold"/>                                     </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leo Hammond" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t68-7U-a58" customClass="AlignableLabel">
+                                                    <rect key="frame" x="205.66666666666663" y="0.0" width="168.33333333333337" height="16.666666666666668"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>                                         <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NunitoSans-Bold"/>                                     </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="t68-7U-a58" firstAttribute="width" secondItem="XJm-Rx-6uV" secondAttribute="width" multiplier="0.55" id="4tS-6e-xtI"/>
+                                                <constraint firstItem="NP9-LT-Qvi" firstAttribute="width" secondItem="XJm-Rx-6uV" secondAttribute="width" multiplier="0.55" constant="-10" id="Mz5-av-jL6"/>
+                                                <constraint firstItem="NP9-LT-Qvi" firstAttribute="width" secondItem="XJm-Rx-6uV" secondAttribute="width" multiplier="0.45" constant="-10" id="Yh5-pI-KAE"/>
+                                                <constraint firstItem="t68-7U-a58" firstAttribute="width" secondItem="XJm-Rx-6uV" secondAttribute="width" multiplier="0.45" id="nUc-jg-YSF"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="Yh5-pI-KAE"/>
+                                                    <exclude reference="4tS-6e-xtI"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular-widthClass=regular">
+                                                <mask key="constraints">
+                                                    <exclude reference="Mz5-av-jL6"/>
+                                                    <include reference="Yh5-pI-KAE"/>
+                                                    <include reference="4tS-6e-xtI"/>
+                                                    <exclude reference="nUc-jg-YSF"/>
+                                                </mask>
+                                            </variation>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Zkc-55-ZKZ">
+                                            <rect key="frame" x="0.0" y="53.333333333333343" width="374" height="16.666666666666671"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Submission Date" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gH5-Vt-rCw" customClass="AlignableLabel">
+                                                    <rect key="frame" x="0.0" y="0.0" width="195.66666666666666" height="16.666666666666668"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>                                         <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NunitoSans-Bold"/>                                     </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2019-08-02 4:14:30 PM" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxl-vE-OMk" customClass="AlignableLabel">
+                                                    <rect key="frame" x="205.66666666666663" y="0.0" width="168.33333333333337" height="16.666666666666668"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>                                         <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NunitoSans-Bold"/>                                     </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="mxl-vE-OMk" firstAttribute="width" secondItem="Zkc-55-ZKZ" secondAttribute="width" multiplier="0.45" id="2ac-K2-H3T"/>
+                                                <constraint firstItem="gH5-Vt-rCw" firstAttribute="width" secondItem="Zkc-55-ZKZ" secondAttribute="width" multiplier="0.45" constant="-10" id="Wp6-wo-AWz"/>
+                                                <constraint firstItem="gH5-Vt-rCw" firstAttribute="width" secondItem="Zkc-55-ZKZ" secondAttribute="width" multiplier="0.55" constant="-10" id="jIy-vO-PbF"/>
+                                                <constraint firstItem="mxl-vE-OMk" firstAttribute="width" secondItem="Zkc-55-ZKZ" secondAttribute="width" multiplier="0.55" id="w1J-9n-PEb"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="Wp6-wo-AWz"/>
+                                                    <exclude reference="w1J-9n-PEb"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular-widthClass=regular">
+                                                <mask key="constraints">
+                                                    <include reference="Wp6-wo-AWz"/>
+                                                    <exclude reference="jIy-vO-PbF"/>
+                                                    <exclude reference="2ac-K2-H3T"/>
+                                                    <include reference="w1J-9n-PEb"/>
+                                                </mask>
+                                            </variation>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Ttq-Aq-KmF" firstAttribute="width" secondItem="JXI-HU-Z0D" secondAttribute="width" id="Svn-rG-TGC"/>
+                                    </constraints>
+                                </stackView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Claim Details" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdY-hv-ezo">
+                                    <rect key="frame" x="20" y="292.66666666666669" width="374" height="21.666666666666686"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="kOK-NF-qZu" userLabel="Claim Details Collection View">
+                                    <rect key="frame" x="20" y="326.33333333333331" width="374" height="0.0"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" id="8Z1-mF-38O"/>
+                                    </constraints>
+                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="N10-Si-ArP">
+                                        <size key="itemSize" width="128" height="128"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                </collectionView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOTALS" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrg-xV-kQX">
+                                    <rect key="frame" x="20" y="356.33333333333331" width="374" height="21.666666666666686"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="URe-AT-TDb" userLabel="Totals Collection View">
+                                    <rect key="frame" x="20" y="390" width="374" height="0.0"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" id="9dB-F0-xoa"/>
+                                    </constraints>
+                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="n5q-CI-Cvc">
+                                        <size key="itemSize" width="128" height="128"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                </collectionView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLAN LIMINATIONS" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPg-MP-32t">
+                                    <rect key="frame" x="20" y="420" width="374" height="21.666666666666686"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="iLm-4W-Cj7" userLabel="Plan Limitations Collection View">
+                                    <rect key="frame" x="20" y="453.66666666666669" width="374" height="0.0"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" id="D9H-MW-5rX"/>
+                                    </constraints>
+                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4OA-Mi-43q">
+                                        <size key="itemSize" width="128" height="128"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                </collectionView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="BlE-QD-v53" userLabel="Audit Upload Stack View">
+                                    <rect key="frame" x="20" y="473.66666666666657" width="374" height="98.333333333333314"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Submit additional information for this claimSubmit additional information for this claim" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E7J-d4-d7f">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="38.333333333333336"/>
+                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>                                         <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NunitoSans-Bold"/>                                     </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TbZ-d6-25p" userLabel="COP" customClass="GSButton">
+                                            <rect key="frame" x="52" y="58.333333333333371" width="270" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="HKb-h3-3Li">
+                                                    <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                                </constraint>
+                                                <constraint firstAttribute="width" constant="270" id="OEO-BA-h0G">
+                                                    <variation key="heightClass=regular-widthClass=regular" constant="400"/>
+                                                </constraint>
+                                            </constraints>
+                                            <state key="normal" title="Button"/>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="E7J-d4-d7f" firstAttribute="top" secondItem="BlE-QD-v53" secondAttribute="top" id="0pY-RQ-Uo9"/>
+                                        <constraint firstAttribute="height" id="VrW-38-GPr"/>
+                                        <constraint firstItem="TbZ-d6-25p" firstAttribute="top" secondItem="E7J-d4-d7f" secondAttribute="bottom" constant="20" id="ZJf-B2-k0a"/>
+                                        <constraint firstItem="E7J-d4-d7f" firstAttribute="leading" secondItem="BlE-QD-v53" secondAttribute="leading" id="hJt-2O-oFc"/>
+                                        <constraint firstAttribute="trailing" secondItem="E7J-d4-d7f" secondAttribute="trailing" id="qde-fv-kgr"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="VrW-38-GPr"/>
+                                        </mask>
+                                    </variation>
+                                </stackView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Oq-zn-kef" userLabel="Submit Another Claim Button" customClass="GSButton">
+                                    <rect key="frame" x="72" y="592" width="270" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="lnn-tG-1hg">
+                                            <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                        </constraint>
+                                        <constraint firstAttribute="width" constant="270" id="vpB-xP-OQp">
+                                            <variation key="heightClass=regular-widthClass=regular" constant="400"/>
+                                        </constraint>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstItem="URe-AT-TDb" firstAttribute="leading" secondItem="Xm6-h5-nj1" secondAttribute="leading" constant="20" id="00a-Ob-HG9"/>
+                                <constraint firstItem="1Oq-zn-kef" firstAttribute="top" secondItem="BlE-QD-v53" secondAttribute="bottom" constant="20" id="0CW-Rt-46W"/>
+                                <constraint firstItem="f56-KA-v3f" firstAttribute="top" secondItem="E26-eT-hGY" secondAttribute="bottom" constant="30" id="0ay-fo-avE"/>
+                                <constraint firstItem="1Oq-zn-kef" firstAttribute="centerX" secondItem="Xm6-h5-nj1" secondAttribute="centerX" id="2ib-DW-HbP"/>
+                                <constraint firstItem="kOK-NF-qZu" firstAttribute="leading" secondItem="Xm6-h5-nj1" secondAttribute="leading" constant="20" id="7m3-Hb-CFd"/>
+                                <constraint firstItem="vrg-xV-kQX" firstAttribute="top" secondItem="kOK-NF-qZu" secondAttribute="bottom" constant="30" id="9FN-uq-Tnf"/>
+                                <constraint firstAttribute="trailing" secondItem="f56-KA-v3f" secondAttribute="trailing" constant="20" id="9YH-f8-4IE"/>
+                                <constraint firstItem="CPg-MP-32t" firstAttribute="leading" secondItem="Xm6-h5-nj1" secondAttribute="leading" constant="20" id="A3X-GJ-vey"/>
+                                <constraint firstItem="kOK-NF-qZu" firstAttribute="top" secondItem="mdY-hv-ezo" secondAttribute="bottom" constant="12" id="C2e-Vq-mOi"/>
+                                <constraint firstItem="iLm-4W-Cj7" firstAttribute="leading" secondItem="Xm6-h5-nj1" secondAttribute="leading" constant="20" id="Ivj-tp-5Xh"/>
+                                <constraint firstItem="BlE-QD-v53" firstAttribute="top" secondItem="iLm-4W-Cj7" secondAttribute="bottom" constant="20" id="K1c-RN-ATd"/>
+                                <constraint firstAttribute="trailing" secondItem="CPg-MP-32t" secondAttribute="trailing" constant="20" id="RZg-ih-D74"/>
+                                <constraint firstItem="E26-eT-hGY" firstAttribute="centerX" secondItem="Xm6-h5-nj1" secondAttribute="centerX" id="SDK-7g-7tg"/>
+                                <constraint firstItem="JXI-HU-Z0D" firstAttribute="top" secondItem="f56-KA-v3f" secondAttribute="bottom" constant="10" id="UQe-Mu-Xvv"/>
+                                <constraint firstItem="mdY-hv-ezo" firstAttribute="leading" secondItem="Xm6-h5-nj1" secondAttribute="leading" constant="20" id="Uyd-cd-Yp1"/>
+                                <constraint firstItem="URe-AT-TDb" firstAttribute="top" secondItem="vrg-xV-kQX" secondAttribute="bottom" constant="12" id="VdU-K3-OOY"/>
+                                <constraint firstAttribute="trailing" secondItem="vrg-xV-kQX" secondAttribute="trailing" constant="20" id="YXm-dM-jbq"/>
+                                <constraint firstItem="CPg-MP-32t" firstAttribute="top" secondItem="URe-AT-TDb" secondAttribute="bottom" constant="30" id="aCQ-tA-byY"/>
+                                <constraint firstAttribute="trailing" secondItem="iLm-4W-Cj7" secondAttribute="trailing" constant="20" id="bTf-kJ-Rnb"/>
+                                <constraint firstItem="JXI-HU-Z0D" firstAttribute="leading" secondItem="Xm6-h5-nj1" secondAttribute="leading" constant="20" id="bzg-l0-run"/>
+                                <constraint firstItem="iLm-4W-Cj7" firstAttribute="top" secondItem="CPg-MP-32t" secondAttribute="bottom" constant="12" id="cKY-Sw-LZ3"/>
+                                <constraint firstAttribute="trailing" secondItem="mdY-hv-ezo" secondAttribute="trailing" constant="20" id="cWU-Ur-ZXL"/>
+                                <constraint firstItem="E26-eT-hGY" firstAttribute="leading" secondItem="Xm6-h5-nj1" secondAttribute="leading" constant="20" id="eu7-Qc-hLj"/>
+                                <constraint firstItem="BlE-QD-v53" firstAttribute="centerX" secondItem="Xm6-h5-nj1" secondAttribute="centerX" id="gpf-F9-UIW"/>
+                                <constraint firstItem="vrg-xV-kQX" firstAttribute="leading" secondItem="Xm6-h5-nj1" secondAttribute="leading" constant="20" id="iQj-v2-rj9"/>
+                                <constraint firstItem="f56-KA-v3f" firstAttribute="leading" secondItem="Xm6-h5-nj1" secondAttribute="leading" constant="20" id="jMf-UT-nGG"/>
+                                <constraint firstAttribute="trailing" secondItem="URe-AT-TDb" secondAttribute="trailing" constant="20" id="jx4-w0-Sh5"/>
+                                <constraint firstItem="mdY-hv-ezo" firstAttribute="top" secondItem="JXI-HU-Z0D" secondAttribute="bottom" constant="30" id="nBu-nx-LHn"/>
+                                <constraint firstItem="BlE-QD-v53" firstAttribute="leading" secondItem="Xm6-h5-nj1" secondAttribute="leading" constant="20" id="nXY-hy-2AR"/>
+                                <constraint firstAttribute="bottom" secondItem="1Oq-zn-kef" secondAttribute="bottom" constant="50" id="ohT-7a-ox8"/>
+                                <constraint firstItem="E26-eT-hGY" firstAttribute="top" secondItem="Xm6-h5-nj1" secondAttribute="top" constant="10" id="ohz-Cj-Vu0"/>
+                                <constraint firstAttribute="trailing" secondItem="kOK-NF-qZu" secondAttribute="trailing" constant="20" id="pfV-Ur-9GU"/>
+                                <constraint firstAttribute="trailing" secondItem="JXI-HU-Z0D" secondAttribute="trailing" constant="20" id="t4x-AV-jzl"/>
+                                <constraint firstAttribute="trailing" secondItem="E26-eT-hGY" secondAttribute="trailing" constant="20" id="xOZ-aV-yhu"/>
+                                <constraint firstAttribute="trailing" secondItem="BlE-QD-v53" secondAttribute="trailing" constant="20" id="xkp-An-vyN"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Xm6-h5-nj1" firstAttribute="top" secondItem="um4-X7-Bw9" secondAttribute="top" id="0mE-7g-df6"/>
+                        <constraint firstItem="Xm6-h5-nj1" firstAttribute="leading" secondItem="um4-X7-Bw9" secondAttribute="leading" id="T8F-4y-YjX"/>
+                        <constraint firstAttribute="bottom" secondItem="Xm6-h5-nj1" secondAttribute="bottom" id="TAL-TD-ZXf"/>
+                        <constraint firstAttribute="trailing" secondItem="Xm6-h5-nj1" secondAttribute="trailing" id="d57-Js-qOi"/>
+                        <constraint firstItem="Xm6-h5-nj1" firstAttribute="width" secondItem="um4-X7-Bw9" secondAttribute="width" id="pDB-zl-sj9"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="um4-X7-Bw9" firstAttribute="bottom" secondItem="2" secondAttribute="bottom" id="0uR-yH-Iv5"/>
+                <constraint firstItem="8I0-XQ-g4H" firstAttribute="trailing" secondItem="um4-X7-Bw9" secondAttribute="trailing" id="1WK-Tl-IeV"/>
+                <constraint firstItem="Xm6-h5-nj1" firstAttribute="height" secondItem="2" secondAttribute="height" priority="250" id="Sm3-hd-Nnm"/>
+                <constraint firstItem="um4-X7-Bw9" firstAttribute="leading" secondItem="8I0-XQ-g4H" secondAttribute="leading" id="bAA-S9-MKO"/>
+                <constraint firstItem="um4-X7-Bw9" firstAttribute="top" secondItem="8I0-XQ-g4H" secondAttribute="top" id="wVy-Bx-IE2"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="8I0-XQ-g4H"/>
+            <point key="canvasLocation" x="33.333333333333336" y="53.571428571428569"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="cxk-wN-pdQ" customClass="MenuItemCellView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cxk-wN-pdQ" id="YTl-1W-gDM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.666666666666664"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="FindAPharmacyActive" translatesAutoresizingMaskIntoConstraints="NO" id="L23-Aa-WYO">
+                        <rect key="frame" x="16" y="16" width="28" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="28" id="1lD-fQ-MeF">
+                                <variation key="heightClass=regular-widthClass=regular" constant="42"/>
+                            </constraint>
+                            <constraint firstAttribute="height" constant="28" id="cKO-SZ-Jdj">
+                                <variation key="heightClass=regular-widthClass=regular" constant="42"/>
+                            </constraint>
+                        </constraints>
+                    </imageView>
+                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hIZ-eM-Xq8" userLabel="Seperator">
+                        <rect key="frame" x="60" y="0.0" width="2" height="59.666666666666664"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="2" id="p0f-wp-5jD"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" text="Label Label Label Label Label Label Label Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w1G-A4-loH">
+                        <rect key="frame" x="78" y="0.0" width="167" height="59.666666666666664"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cnx-ci-KJY">
+                        <rect key="frame" x="261" y="19" width="39" height="22"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="455" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ee-te-l6G">
+                                <rect key="frame" x="5" y="0.0" width="29" height="22"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.81176470590000005" green="0.19215686269999999" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" priority="750" constant="20" id="8RM-Mh-78o"/>
+                            <constraint firstAttribute="height" constant="22" id="Fz9-XT-3J7"/>
+                            <constraint firstAttribute="bottom" secondItem="2ee-te-l6G" secondAttribute="bottom" id="SUH-6t-YFu"/>
+                            <constraint firstItem="2ee-te-l6G" firstAttribute="top" secondItem="cnx-ci-KJY" secondAttribute="top" id="T8a-GY-ls8"/>
+                            <constraint firstItem="2ee-te-l6G" firstAttribute="leading" secondItem="cnx-ci-KJY" secondAttribute="leading" constant="5" id="WAZ-8K-kuZ"/>
+                            <constraint firstAttribute="trailing" secondItem="2ee-te-l6G" secondAttribute="trailing" constant="5" id="zA5-Qs-61p"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="L23-Aa-WYO" secondAttribute="bottom" constant="15.666666666666664" id="1nM-Cx-RsJ">
+                        <variation key="heightClass=regular-widthClass=regular" constant="24"/>
+                    </constraint>
+                    <constraint firstItem="hIZ-eM-Xq8" firstAttribute="leading" secondItem="L23-Aa-WYO" secondAttribute="trailing" constant="16" id="8uO-v9-00c">
+                        <variation key="heightClass=regular-widthClass=regular" constant="24"/>
+                    </constraint>
+                    <constraint firstItem="L23-Aa-WYO" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="16" id="97U-kc-sQt">
+                        <variation key="heightClass=regular-widthClass=regular" constant="24"/>
+                    </constraint>
+                    <constraint firstItem="w1G-A4-loH" firstAttribute="leading" secondItem="hIZ-eM-Xq8" secondAttribute="trailing" constant="16" id="BO4-eY-dgW">
+                        <variation key="heightClass=regular-widthClass=regular" constant="24"/>
+                    </constraint>
+                    <constraint firstAttribute="trailing" secondItem="w1G-A4-loH" secondAttribute="trailing" constant="16" id="I32-Mb-X9H">
+                        <variation key="heightClass=regular-widthClass=regular" constant="24"/>
+                    </constraint>
+                    <constraint firstItem="hIZ-eM-Xq8" firstAttribute="height" secondItem="YTl-1W-gDM" secondAttribute="height" id="IKI-vP-S6l"/>
+                    <constraint firstAttribute="trailing" secondItem="cnx-ci-KJY" secondAttribute="trailing" constant="20" id="JNH-p3-5FM"/>
+                    <constraint firstItem="cnx-ci-KJY" firstAttribute="leading" secondItem="w1G-A4-loH" secondAttribute="trailing" constant="16" id="PRo-lO-OfG">
+                        <variation key="heightClass=regular-widthClass=regular" constant="24"/>
+                    </constraint>
+                    <constraint firstAttribute="bottom" secondItem="w1G-A4-loH" secondAttribute="bottom" id="SpH-Ad-tx7"/>
+                    <constraint firstItem="w1G-A4-loH" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" id="goz-uP-TmD"/>
+                    <constraint firstItem="hIZ-eM-Xq8" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" id="k08-YP-dG3"/>
+                    <constraint firstItem="L23-Aa-WYO" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" constant="15.999999999999998" id="mDU-bk-cNR">
+                        <variation key="heightClass=regular-widthClass=regular" constant="24"/>
+                    </constraint>
+                    <constraint firstItem="cnx-ci-KJY" firstAttribute="centerY" secondItem="YTl-1W-gDM" secondAttribute="centerY" id="nMH-0G-Yp5"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="I32-Mb-X9H"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="CounterContainerView" destination="cnx-ci-KJY" id="3oQ-ws-dRA"/>
+                <outlet property="CounterLabel" destination="2ee-te-l6G" id="xbQ-OO-G8K"/>
+                <outlet property="MenuItemCellContainer" destination="YTl-1W-gDM" id="1cS-zS-Fsf"/>
+                <outlet property="MenuItemIconImageView" destination="L23-Aa-WYO" id="hf6-yN-05e"/>
+                <outlet property="MenuItemLabelView" destination="w1G-A4-loH" id="2Nx-XA-6D7"/>
+                <outlet property="MenuLabelTrailingConstraintWhenNoCounter" destination="I32-Mb-X9H" id="rX3-qy-71g"/>
+                <outlet property="MenuLabelTrailingConstraintWithCounter" destination="PRo-lO-OfG" id="CK3-x3-gFA"/>
+                <outlet property="SeperatorView" destination="hIZ-eM-Xq8" id="2uN-Sl-Ps2"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="153.2608695652174"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="FindAPharmacyActive" width="46" height="46"/>
+    </resources>
+</document>

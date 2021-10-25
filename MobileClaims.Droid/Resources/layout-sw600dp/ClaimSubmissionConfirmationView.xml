@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none"
+            android:isScrollContainer="true">
+            <gsc.HeaderTextView
+                android:id="@+id/locateProviderFindProviderText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/claimSubmissionConfirmLabel"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAllCaps="true" />
+            <gsc.TitleTextView
+                android:id="@+id/claimTermsTabletTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/claimSubmissionPlanInfoLabel"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textAllCaps="true" />
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <TableRow
+                    android:weightSum="1">
+                    <gsc.NunitoTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:layout_weight="0.6"
+                        android:id="@+id/claimSubmissionGSIDLabelPhone"
+                        android:gravity="left"
+                        android:layout_marginLeft="20dp"
+                        android:textAllCaps="true" />
+                    <gsc.NunitoTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_weight="0.4"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="20dp"
+                        local:MvxBind="Text Claim.Participant.PlanMemberID;" />
+                </TableRow>
+                <TableRow
+                    android:weightSum="1">
+                    <gsc.NunitoTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:textSize="13sp"
+                        android:text="@string/claimSubmissionParticipantLabelPhone"
+                        android:gravity="left"
+                        android:layout_marginLeft="20dp"
+                        android:textAllCaps="true" />
+                    <gsc.NunitoTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_weight="0.4"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="20dp"
+                        local:MvxBind="Text Claim.Participant.FullName;" />
+                </TableRow>
+                <TableRow
+                    android:weightSum="1">
+                    <gsc.NunitoTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="@string/claimServiceProviderTitle"
+                        android:gravity="left"
+                        android:textSize="13sp"
+                        android:layout_marginLeft="20dp"
+                        android:textAllCaps="true"
+						local:MvxBind="Visibility Visibility(Claim.IsHealthProviderVisible)" />
+                    <gsc.NunitoTextView
+                        android:id="@+id/claimProviderAddress"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_weight="0.4"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="20dp"
+						local:MvxBind="Visibility Visibility(Claim.IsHealthProviderVisible)" />
+                </TableRow>
+            </TableLayout>
+            <gsc.TitleTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/claimSubmissionClaimDetailsLabel"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textAllCaps="true" />
+        <!-- Question 1 -->
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TableRow
+                    android:layout_marginTop="0dp">
+                    <gsc.NunitoTextView
+                        android:text="@string/claimOtherBenefitsView_OtherBenefitPlan"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="0.9"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left" />
+                    <gsc.NunitoTextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_weight="0.1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_centerVertical="true"
+                        android:gravity="right"
+                        local:MvxBind="Text Claim.CoverageUnderAnotherBenefitsPlan, Converter=BooleanToText;" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                local:MvxBind="Visibility Visibility(Claim.CoverageUnderAnotherBenefitsPlan);">
+            <!-- Question 2 -->
+                <TableRow
+                    android:layout_marginTop="5dp">
+                    <gsc.NunitoTextView
+						android:id="@+id/claimOtherBenefitsView_CoverageWithGSCId"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="0.9"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left" />
+                    <gsc.NunitoTextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_weight="0.1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_centerVertical="true"
+                        android:gravity="right"
+                        local:MvxBind="Text Claim.IsOtherCoverageWithGSC, Converter=BooleanToText;" />
+                </TableRow>
+            <!-- Question 3 -->
+                <TableRow
+                    android:layout_marginTop="5dp">
+                    <gsc.NunitoTextView
+                        android:text="@string/claimOtherBenefitsView_SubmittedOtherBenefitPlan"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="0.9"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left" />
+                    <gsc.NunitoTextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_weight="0.1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_centerVertical="true"
+                        android:gravity="right"
+                        local:MvxBind="Text Claim.HasClaimBeenSubmittedToOtherBenefitPlan, Converter=BooleanToText;" />
+                </TableRow>
+            <!-- Question 4 -->
+                <TableRow
+                    android:layout_marginTop="5dp">
+                    <gsc.NunitoTextView
+                        android:id="@+id/claimOtherBenefitsView_UnpaidGSCPlanId"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="0.9"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left" />
+                    <gsc.NunitoTextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_weight="0.1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_centerVertical="true"
+                        android:gravity="right"
+                        local:MvxBind="Text Claim.PayAnyUnpaidBalanceThroughOtherGSCPlan, Converter=BooleanToText;" />
+                </TableRow>
+            <!-- Question 5 -->
+                <TableRow
+                    android:layout_marginTop="5dp">
+                    <gsc.NunitoTextView
+                        android:id="@+id/claimOtherBenefitsView_OtherGSCNumberId"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="0.9"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        local:MvxBind="Visibility Visibility(Claim.IsOtherGSCNumberVisible);" />
+                    <gsc.NunitoTextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_weight="0.1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_centerVertical="true"
+                        android:gravity="right"
+                        local:MvxBind="Text Claim.OtherGSCNumber+' ';Visibility Visibility(Claim.IsOtherGSCNumberVisible);" />
+                </TableRow>
+            </TableLayout>
+        <!-- Question 6 -->
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                local:MvxBind="Visibility Visibility(Claim.IsPayUnderHCSAVisible);">
+                <TableRow
+                    android:layout_marginTop="5dp">
+                    <gsc.NunitoTextView
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="0.9"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        local:MvxBind="Text HCSAQuestion"
+                        android:gravity="left" />
+                    <gsc.NunitoTextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_weight="0.1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_centerVertical="true"
+                        android:gravity="right"
+                        local:MvxBind="Text Claim.PayUnderHCSA, Converter=BooleanToText;" />
+                </TableRow>
+            </TableLayout>
+        <!-- Question 7 -->
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TableRow
+                    android:layout_marginTop="5dp">
+                    <gsc.NunitoTextView
+                        android:text="@string/claimMotorVehicleView_MotorVehicleAccident"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="0.9"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left" />
+                    <gsc.NunitoTextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_weight="0.1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_centerVertical="true"
+                        android:gravity="right"
+                        local:MvxBind="Text Claim.IsTreatmentDueToAMotorVehicleAccident, Converter=BooleanToText;" />
+                </TableRow>
+            </TableLayout>
+        <!-- Question 7: 8 -->
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                local:MvxBind="Visibility Visibility(Claim.IsTreatmentDueToAMotorVehicleAccident);">
+            <!-- Question 8 -->
+                <TableRow
+                    android:layout_marginTop="5dp">
+                    <gsc.NunitoTextView
+                        android:text="@string/claimMotorVehicleView_AccidentDate"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="0.9"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left" />
+                    <gsc.NunitoTextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_weight="0.1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_centerVertical="true"
+                        android:gravity="right"
+                        local:MvxBind="Text Format('{0:MMMM dd, yyy} ',Claim.DateOfMotorVehicleAccident);" />
+                </TableRow>
+            </TableLayout>
+        <!-- Question 9 -->
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TableRow
+                    android:layout_marginTop="5dp">
+                    <gsc.NunitoTextView
+                        android:text="@string/claimWorkInjuryView_WorkRelatedInjury"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="0.9"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left" />
+                    <gsc.NunitoTextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_weight="0.1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_centerVertical="true"
+                        android:gravity="right"
+                        local:MvxBind="Text Claim.IsTreatmentDueToAWorkRelatedInjury, Converter=BooleanToText;" />
+                </TableRow>
+            </TableLayout>
+        <!-- Question 9: 10 -->
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                local:MvxBind="Visibility Visibility(Claim.IsTreatmentDueToAWorkRelatedInjury);">
+            <!-- Question 10 -->
+                <TableRow
+                    android:layout_marginTop="5dp">
+                    <gsc.NunitoTextView
+                        android:text="@string/claimWorkInjuryView_AccidentDate"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="0.9"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left" />
+                    <gsc.NunitoTextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_weight="0.1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_centerVertical="true"
+                        android:gravity="right"
+                        local:MvxBind="Text Format('{0:MMMM dd, yyy} ',Claim.DateOfWorkRelatedInjury);" />
+                </TableRow>
+            </TableLayout>
+        <!-- Question 11 -->
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                local:MvxBind="Visibility Visibility(Claim.IsTreatmentDueToAWorkRelatedInjury);">
+                <TableRow
+                    android:layout_marginTop="5dp">
+                    <gsc.NunitoTextView
+                        android:text="@string/claimWorkInjuryView_CaseNumber"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="0.9"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left" />
+                    <gsc.NunitoTextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_weight="0.1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_centerVertical="true"
+                        android:gravity="right"
+                        local:MvxBind="Text Claim.WorkRelatedInjuryCaseNumber+' ';" />
+                </TableRow>
+            </TableLayout>
+        <!-- Question 12 -->
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                local:MvxBind="Visibility Visibility(Claim.IsIsMedicalItemForSportsOnlyVisible);">
+                <TableRow
+                    android:layout_marginTop="5dp">
+                    <gsc.NunitoTextView
+                        android:text="@string/claimMedicalItemView_SportsInjury"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="0.9"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left" />
+                    <gsc.NunitoTextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_weight="0.1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_centerVertical="true"
+                        android:gravity="right"
+                        local:MvxBind="Text Claim.IsMedicalItemForSportsOnly, Converter=BooleanToText" />
+                </TableRow>
+            </TableLayout>
+        <!-- Question 13 -->
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                local:MvxBind="Visibility Visibility(Claim.IsHasReferralBeenPreviouslySubmittedVisible);">
+                <TableRow
+                    android:layout_marginTop="5dp">
+                    <gsc.NunitoTextView
+                        android:text="@string/claimMedicalReferralView_MedicalReferralSubmitted"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="0.9"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left" />
+                    <gsc.NunitoTextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_weight="0.1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_centerVertical="true"
+                        android:gravity="right"
+                        local:MvxBind="Text Claim.HasReferralBeenPreviouslySubmitted, Converter=BooleanToText" />
+                </TableRow>
+            </TableLayout>
+        <!-- Question 13: 14,15 -->
+        <!-- Question 14 //ClaimMedicalItemViewModel.Questions14And15Enabled -->
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TableRow
+                    android:layout_marginTop="5dp"
+                    local:MvxBind="Visibility Visibility(Claim.IsDateOfReferralVisible);">
+                    <gsc.NunitoTextView
+                        android:text="@string/claimMedicalReferralView_ReferralDate"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="0.9"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left" />
+                    <gsc.NunitoTextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_weight="0.1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_centerVertical="true"
+                        android:gravity="right"
+                        local:MvxBind="Text Format('{0:MMMM dd, yyy} ',Claim.DateOfReferral);" />
+                </TableRow>
+            <!-- Question 15 -->
+                <TableRow
+                    android:layout_marginTop="5dp"
+                    local:MvxBind="Visibility Visibility(Claim.IsTypeOfMedicalProfessionalVisible);">
+                    <gsc.NunitoTextView
+                        android:text="@string/claimMedicalReferralView_MedicalProfessional"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="0.9"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left" />
+                    <gsc.NunitoTextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_weight="0.1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_centerVertical="true"
+                        android:gravity="right"
+                        local:MvxBind="Text Claim.TypeOfMedicalProfessional.Name+' ';" />
+                </TableRow>
+            <!-- Question 16 -->
+                <TableRow
+                    android:layout_marginTop="5dp"
+                    local:MvxBind="Visibility Visibility(Claim.IsIsGSTHSTIncludedVisible);">
+                    <gsc.NunitoTextView
+                        android:text="@string/claimTreatmentGSTLabel"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="0.9"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left" />
+                    <gsc.NunitoTextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_weight="0.1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_centerVertical="true"
+                        android:gravity="right"
+                        local:MvxBind="Text Claim.IsGSTHSTIncluded, Converter=BooleanToText" />
+                </TableRow>
+            </TableLayout>
+			<gsc.TitleTextView
+                android:id="@+id/documentsToUploadTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textAllCaps="true"
+				local:MvxBind="Text DocumentsToUpload; Visibility Visibility(Claim.IsAttachmentsVisible);" />
+			<android.support.v7.widget.RecyclerView
+				android:id="@+id/filesSubmitRecyclerView"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingLeft="20dp"
+				android:paddingRight="20dp"
+				android:layout_marginTop="10dp"
+				local:MvxBind="Visibility Visibility(Claim.IsAttachmentsVisible);" />
+			<gsc.TitleTextView
+                android:id="@+id/additionalInformationTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textAllCaps="true"
+				local:MvxBind="Text AdditionalInformation; Visibility Visibility(IsCommentVisible);" />
+			<gsc.NunitoTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                local:MvxBind="Text Comments; Visibility Visibility(IsCommentVisible);" />
+            <gsc.TitleTextView
+                android:id="@+id/claimTermsTabletTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/claimSubmissionTreatmentDetails"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textAllCaps="true"
+			    local:MvxBind="Visibility Visibility(Claim.IsTreatmentDetailsVisible);" />
+            <Mvx.MvxLinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:dividerHeight="10dp"
+                android:id="@+id/linearLayoutItemTreatment2"
+                local:MvxBind="ItemsSource Claim.TreatmentDetails;"
+                local:MvxItemTemplate="@layout/item_treatment_view" />
+        <!--<LinearLayout
+                android:id="@+id/OtherGSCEntry"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp"
+                android:weightSum="1"
+                local:MvxBind="Visibility Visibility(IsParticipantsListVisible);">
+                <gsc.NunitoTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/claimOtherBenefitsView_OtherGSCNumber"
+                    android:textColor="@color/red"
+                    android:layout_weight="0.5"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_weight="0.1"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp">
+                    <ImageButton
+                        android:id="@+id/errorButtonOtherGsc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:src="@drawable/claims_error_icon"
+                        android:scaleType="centerInside"
+                        android:onClick="errorClickHandler"
+                        android:tag="@string/claimOtherGscPlanParticipantListError" />
+                </LinearLayout>
+                <gsc.SmallEditText
+                    android:id="@+id/treatmentTotal"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="0.4"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/dark_grey"
+                    android:singleLine="true"
+                    android:background="@drawable/RoundEditTextNone"
+                    local:MvxBind="Text Claim.OtherGSCNumber;"
+                    android:layout_alignParentLeft="true"
+                    android:numeric="integer|decimal"
+                    android:imeOptions="actionDone" /> 
+            </LinearLayout>-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="25dp"
+                android:weightSum="1"
+                local:MvxBind="Visibility Visibility(IsParticipantsListVisible);">
+                <gsc.NunitoTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/claimOtherGscPlanParticipantListLabel"
+                    android:textColor="@color/red"
+                    android:textSize="18sp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_weight="0.1"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp">
+                    <ImageButton
+                        android:id="@+id/errorButtonParticipantList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:src="@drawable/claims_error_icon"
+                        android:scaleType="centerInside"
+                        android:onClick="errorClickHandler"
+                        android:tag="@string/claimOtherGscPlanParticipantListError" />
+                </LinearLayout>
+                <Mvx.MvxSpinner
+                    android:id="@+id/planParticipant"
+                    android:layout_width="0dp"
+                    android:textSize="18sp"
+                    android:layout_weight="0.4"
+                    android:prompt="@string/claimOtherGscPlanParticipantListLabel"
+                    android:layout_height="wrap_content"
+                    local:MvxBind="ItemsSource Participants; SelectedItem SelectedParticipant;"
+                    local:MvxItemTemplate="@layout/item_othergsc_participants_spinner"
+                    local:MvxDropDownItemTemplate="@layout/item_othergsc_participants_spinner_dropdown"
+                    android:gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:spinnerMode="dialog" />
+            </LinearLayout>
+            <gsc.NunitoTextView
+                android:id="@+id/claim_term_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:textSize="13sp"
+                android:textAllCaps="false"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+            <gsc.GSCButton
+                android:background="@drawable/ButtonBackground"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_centerHorizontal="true"
+                local:MvxBind="Text SubmitButtonText; Click SubmitClaimCommand;"
+                android:layout_gravity="center"
+                android:textColor="@drawable/ButtonTextColor"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textColorHighlight="@color/list_text_color"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

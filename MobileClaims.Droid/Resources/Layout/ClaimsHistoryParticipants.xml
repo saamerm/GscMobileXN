@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+	android:background="@color/white">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none"
+            android:isScrollContainer="true">
+            <gsc.HeaderTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp"
+                android:gravity="center"
+                local:MvxBind="Text ParticipantLabel"
+                android:layout_gravity="center_horizontal"
+                android:textAllCaps="true" />
+            <gsc.LeagueTextView
+                local:MvxBind="Text SelectThePlanParticipantLabel"
+                android:textColor="@color/claim_text"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp" />
+            <mvvmcross.platforms.android.binding.views.MvxListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/claim_participant"
+                android:scrollbarStyle="outsideOverlay"
+                android:choiceMode="singleChoice"
+                android:background="@android:color/transparent"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="10dp"
+                android:listSelector="@android:color/transparent"
+                local:MvxBind="ItemsSource Participants; ItemClick ParticipantSelectedCommand;"
+                local:MvxItemTemplate="@layout/item_participant_name"
+                android:paddingTop="20dp" />
+            <gsc.GSCButton
+                android:text="@string/claimResultSubmitAnotherClaim"
+                android:background="@drawable/ButtonBackground"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:textAllCaps="true"
+                local:MvxBind="Click DoneCommand;Text DoneLabel"
+                android:layout_gravity="center"
+                android:textColor="@drawable/ButtonTextColor"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

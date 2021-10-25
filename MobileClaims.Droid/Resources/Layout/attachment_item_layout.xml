@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+    android:layout_height="51dp">
+	<LinearLayout 
+	android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+	android:weightSum="1.0">
+	<ImageView
+		android:id="@+id/fileTypeImageView"
+		android:layout_width="0dp"
+		android:layout_weight="0.15"
+		android:layout_height="match_parent"
+		android:padding="10dp"/>
+	<TextView
+		android:id="@+id/fileNameTextView"
+		android:layout_width="0dp"
+		android:layout_weight="0.7"
+		android:layout_height="match_parent" 
+		android:gravity="center_vertical" />
+	<ImageView
+		android:id="@+id/removeIconImageView"
+		android:layout_width="0dp"
+		android:layout_weight="0.15"
+		android:layout_height="match_parent"
+		android:src="@drawable/delete_icon"
+		android:padding="12dp" />
+	</LinearLayout>
+	<View
+		    android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="#7F7F7F" />
+</LinearLayout>

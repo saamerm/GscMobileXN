@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView  
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	android:background="@color/white">
+	<LinearLayout  
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="5dp"
+		android:layout_marginTop="5dp">
+		<gsc.HeaderTextView
+			android:id="@+id/uploadDocumentsLabelActiveClaimTextView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="10dp"	
+			android:textSize="24sp"
+			android:textColor="@color/highlight_color"
+			android:layout_gravity="center"
+			local:MvxBind="Text Title"/>
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="@color/grey_background_hcsa"/>
+		<gsc.LeagueTextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textStyle="bold"
+			android:textSize="20sp"
+			android:layout_marginLeft="10dp"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="10dp"
+			local:MvxBind="Text UserName"/>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="5dp"
+			android:layout_marginLeft="10dp"
+			android:padding="10dp"
+			android:background="@drawable/border">
+
+			<gsc.LeagueTextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textStyle="bold"
+				android:textSize="18sp"
+				android:layout_marginTop="10dp"
+				android:layout_marginBottom="10dp"
+				android:text="PLAN INFORMATION"
+				local:MvxBind="Text AuditClaimSummaryHeader.PlanInformationLabel"/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:weightSum="1.0"
+				android:layout_marginTop="5dp"
+				android:layout_marginBottom="10dp">
+				<gsc.NunitoTextView
+					android:layout_width="0dp"
+					android:layout_weight="0.5"
+					android:layout_height="wrap_content"
+					android:textSize="13sp"
+					android:textColor="@color/claim_text"
+					android:text="Green Shield Number"
+					local:MvxBind="Text AuditClaimSummaryHeader.GscNumberLabel"/>
+				<gsc.NunitoTextViewBold
+					android:layout_width="0dp"
+					android:layout_weight="0.5"
+					android:layout_height="wrap_content"
+					android:textColor="@color/claim_text_grey"
+					android:textSize="12sp"
+					local:MvxBind="Text AuditClaimSummaryHeader.GscNumber"/>
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:weightSum="1.0"
+				android:layout_marginTop="5dp"
+				android:layout_marginBottom="10dp">
+				<gsc.NunitoTextView
+					android:layout_width="0dp"
+					android:layout_weight="0.5"
+					android:layout_height="wrap_content"
+					android:textSize="13sp"
+					android:textColor="@color/claim_text"
+					android:text="Claim Form Number"
+					local:MvxBind="Text AuditClaimSummaryHeader.ClaimFormNumberLabel"/>
+				<gsc.NunitoTextViewBold
+					android:layout_width="0dp"
+					android:layout_weight="0.5"
+					android:layout_height="wrap_content"
+					android:textColor="@color/claim_text_grey"
+					android:textSize="12sp"
+					local:MvxBind="Text AuditClaimSummaryHeader.ClaimFormNumber"/>
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:weightSum="1.0"
+				android:layout_marginTop="5dp"
+				android:layout_marginBottom="15dp">
+				<gsc.NunitoTextView
+					android:layout_width="0dp"
+					android:layout_weight="0.5"
+					android:layout_height="wrap_content"
+					android:textSize="13sp"
+					android:textColor="@color/claim_text"
+					android:text="Submission Date"
+					local:MvxBind="Text AuditClaimSummaryHeader.SubmissionDateLabel"/>
+				<gsc.NunitoTextViewBold
+					android:layout_width="0dp"
+					android:layout_weight="0.5"
+					android:layout_height="wrap_content"
+					android:textColor="@color/claim_text_grey"
+					android:textSize="12sp"
+					local:MvxBind="Text AuditClaimSummaryHeader.SubmissionDate"/>
+			</LinearLayout>
+
+			<gsc.LeagueTextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textStyle="bold"
+				android:textSize="18sp"
+				android:layout_marginTop="10dp"
+				android:layout_marginBottom="10dp"
+				android:text="CLAIM DETAILS"
+				local:MvxBind="Text ClaimDetailsSectionTitle"/>
+
+			<android.support.v7.widget.RecyclerView
+				android:id="@+id/auditClaimsSummaryRecyclerView"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:nestedScrollingEnabled="false" 
+				android:paddingTop="10dp"
+				android:overScrollMode="never"/>
+
+			<gsc.LeagueTextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textStyle="bold"
+				android:textSize="18sp"
+				android:layout_marginTop="5dp"
+				android:layout_marginBottom="10dp"
+				android:text="AUDIT DETAILS"
+				local:MvxBind="Text AuditClaimSummaryFooter.AuditDetailsLabel"/>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:weightSum="1.0"
+				android:layout_marginTop="5dp"
+				android:layout_marginBottom="10dp">
+				<gsc.NunitoTextView
+					android:layout_width="0dp"
+					android:layout_weight="0.5"
+					android:layout_height="wrap_content"
+					android:textSize="13sp"
+					android:textColor="@color/claim_text"
+					android:text="Audit Due Date"
+					local:MvxBind="Text AuditClaimSummaryFooter.ClaimStatusLabel"/>
+				<gsc.NunitoTextViewBold
+					android:layout_width="0dp"
+					android:layout_weight="0.5"
+					android:layout_height="wrap_content"
+					android:textColor="@color/dark_red"
+					android:textSize="12sp"
+					local:MvxBind="Text AuditClaimSummaryFooter.ClaimStatusValue"/>
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:weightSum="1.0"
+				android:layout_marginTop="5dp"
+				android:layout_marginBottom="10dp">
+				<gsc.NunitoTextView
+					android:layout_width="0dp"
+					android:layout_weight="0.5"
+					android:layout_height="wrap_content"
+					android:textSize="13sp"
+					android:textColor="@color/claim_text"
+					android:text="Audit Due Date"
+					local:MvxBind="Text AuditClaimSummaryFooter.AuditDueDateLabel"/>
+				<gsc.NunitoTextViewBold
+					android:layout_width="0dp"
+					android:layout_weight="0.5"
+					android:layout_height="wrap_content"
+					android:textColor="@color/dark_red"
+					android:textSize="12sp"
+					local:MvxBind="Text AuditClaimSummaryFooter.AuditDueDate"/>
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:layout_marginTop="5dp"
+				android:weightSum="1.0">
+				<gsc.NunitoTextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:textSize="13sp"
+					android:layout_marginBottom="10dp"
+					android:textColor="@color/claim_text"
+					android:text="Audit Information"
+					local:MvxBind="Text AuditClaimSummaryFooter.AuditInformationLabel"/>
+				<gsc.NunitoTextViewBold
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:textStyle="bold"
+					android:textSize="12sp"
+					android:textColor="@color/claim_text_grey"
+					local:MvxBind="Text AuditClaimSummaryFooter.AuditInformation"/>
+			</LinearLayout>
+	
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				local:MvxBind="Visibility Visibility(IsUploadSectionVisible)">
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="20dp"
+					android:textColor="@color/dark_red"
+					android:textSize="14sp"
+					android:gravity="center"
+					local:MvxBind="Text SubmitAdditionalInformationLabel"/>
+		
+				<gsc.GSCButton
+					android:background="@drawable/ButtonBackground"
+					android:layout_width="match_parent"
+					android:layout_height="60dp"
+					android:layout_centerHorizontal="true"
+					android:layout_gravity="center"
+					android:textColor="@drawable/ButtonTextColor"
+					android:gravity="center"
+					android:textAllCaps="true"
+					android:layout_marginBottom="10dp"
+					android:layout_marginTop="10dp"
+					android:layout_marginLeft="40dp"
+					android:layout_marginRight="40dp" 
+					local:MvxBind="Text UploadButtonText;Click OpenUploadDocumentsCommand"/>
+
+				<include layout="@layout/combined_size_of_files_text_layout"/>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</android.support.v4.widget.NestedScrollView>

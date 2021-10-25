@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color">
+    <gsc.HeaderTextView
+        android:id="@+id/locateProviderFindProviderText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/locateProviders"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textAllCaps="true" />
+    <gsc.TitleTextView
+        android:id="@+id/searchProviderSearchedLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/searchProviderSearchedLabel"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:textAllCaps="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="20dp" />
+    <gsc.SubtitleTextView
+        android:id="@+id/searchProviderSearchedFirstLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="20dp"
+        android:textAllCaps="true" />
+    <gsc.SubtitleTextView
+        android:id="@+id/searchProviderSearchedSecondLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="20dp"
+        android:textAllCaps="true" />
+    <gsc.SubtitleTextView
+        android:id="@+id/searchProviderSearchedThirdLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="20dp"
+        android:textAllCaps="true" />
+    <gsc.SubtitleTextView
+        android:id="@+id/searchProviderSearchedFourthLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="20dp"
+        android:textAllCaps="true" />
+    <gsc.SingleSelectMvxListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:drawSelectorOnTop="false"
+        android:id="@+id/serviceProviderLocatedListView"
+        android:scrollbarStyle="outsideOverlay"
+        android:choiceMode="singleChoice"
+        android:cacheColorHint="@android:color/transparent"
+        android:background="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:listSelector="@android:color/transparent"
+        local:MvxBind="ItemsSource ServiceProviders; ItemClick SelectWithoutNavigationCommand;SelectedItem SelectedProvider;"
+        local:MvxItemTemplate="@layout/item_service_provider_results"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp" />
+</LinearLayout>

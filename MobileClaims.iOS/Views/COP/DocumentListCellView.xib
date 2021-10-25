@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DocumentListCellView" rowHeight="50" id="cxk-wN-pdQ" customClass="DocumentListCellView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cxk-wN-pdQ" id="YTl-1W-gDM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.666666666666664"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="9Xp-un-liN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50.333333333333336"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ImageThumbnail" translatesAutoresizingMaskIntoConstraints="NO" id="rC8-qo-DFB">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50.333333333333336"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="6uZ-Dw-bsW"/>
+                                    <constraint firstAttribute="height" constant="50" id="Q0K-1i-dVq"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="odC-of-5CH">
+                                <rect key="frame" x="55" y="15.666666666666668" width="265" height="19.000000000000004"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FileName.Docx" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ImF-nu-ifn">
+                                        <rect key="frame" x="0.0" y="0.0" width="241" height="19"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>                                         <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NunitoSans-SemiBold"/>                                     </userDefinedRuntimeAttributes> 
+                                    </label>
+                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bG2-RC-ZOK">
+                                        <rect key="frame" x="246" y="0.0" width="19" height="19"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="19" id="6qe-8O-QPQ"/>
+                                            <constraint firstAttribute="width" constant="19" id="PNc-g9-oTn"/>
+                                        </constraints>
+                                        <state key="normal" image="Delete"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="rC8-qo-DFB" firstAttribute="top" secondItem="9Xp-un-liN" secondAttribute="top" id="c8q-zx-awf"/>
+                            <constraint firstItem="rC8-qo-DFB" firstAttribute="leading" secondItem="9Xp-un-liN" secondAttribute="leading" id="fze-Tp-vAm"/>
+                            <constraint firstAttribute="bottom" secondItem="rC8-qo-DFB" secondAttribute="bottom" id="m5j-Cm-lMp"/>
+                            <constraint firstItem="odC-of-5CH" firstAttribute="leading" secondItem="rC8-qo-DFB" secondAttribute="trailing" constant="5" id="rgn-BX-0VJ"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9Xp-un-liN" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" id="Yls-sc-0JK"/>
+                    <constraint firstAttribute="trailing" secondItem="9Xp-un-liN" secondAttribute="trailing" id="fxY-AM-9UK"/>
+                    <constraint firstItem="9Xp-un-liN" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" id="h99-2T-GCq"/>
+                    <constraint firstAttribute="bottom" secondItem="9Xp-un-liN" secondAttribute="bottom" id="x5t-Bj-q7N"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="FileNameLabel" destination="ImF-nu-ifn" id="name-outlet-ImF-nu-ifn"/>
+                <outlet property="RemoveDocumentButton" destination="bG2-RC-ZOK" id="name-outlet-bG2-RC-ZOK"/>
+                <outlet property="ThumbnailImageView" destination="rC8-qo-DFB" id="name-outlet-rC8-qo-DFB"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Delete" width="21" height="21"/>
+        <image name="ImageThumbnail" width="21" height="22"/>
+    </resources>
+</document>

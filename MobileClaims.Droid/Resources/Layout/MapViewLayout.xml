@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:focusableInTouchMode="true">
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusable="true" />
+    <ProgressBar
+        android:id="@+id/progress_horizontal"
+        android:indeterminateOnly="true"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-4dp"
+        local:MvxBind="Visibility Visibility(ProgressIndicatorVisible);"
+        android:indeterminateTint="@color/highlight_color"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/showDetailsListButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/icon_list"
+        local:MvxBind="Click ShowDetailsListCommand; Enabled IsShowDetailsListButtonEnabled" />
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        local:MvxBind="Visibility Visibility(ShowProvidersNotFoundPopUp);">
+        <TextView
+            android:id="@+id/popupTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:padding="4dp"
+            android:background="@color/light_grey_popup_background"
+            local:MvxBind="Text ProvidersNotFoundWithCurrentCriteriaText" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/showLearnMoreButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/learn_more_info"
+        local:MvxBind="Click GoShowHideLearnMoreCommand" />
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_alignRight="@id/showLearnMoreButton"
+        android:layout_alignBottom="@id/showLearnMoreButton"
+        android:layout_marginLeft="10dp"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        local:MvxBind="Visibility Visibility(LearnMoreDialogVisible)">
+        <TextView
+            android:textColor="@color/highlight_color"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            local:MvxBind="Text LearnMoreText"
+            android:text="LEARN MORE..." />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha="0.2"
+            android:background="@color/black" />
+        <LinearLayout
+            android:paddingLeft="10dp"
+            android:orientation="horizontal"
+            local:MvxBind="Click GoUsingTheSearchProviderCommand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:scaleType="fitCenter"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/learn_more_provider_search" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="14sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    local:MvxBind="Text UsingTheHealthProviderText"
+                    android:text="Using the health provider search tool" />
+                <TextView
+                    android:textSize="12sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    local:MvxBind="Text ClickHereForDetailsText"
+                    android:text="Click here for details on how to use our health provider search tool." />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:paddingLeft="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            local:MvxBind="Click GoUnderstandingPharmacyCommand; Visibility Visibility(ShowPharmacyUnderstanding)"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:scaleType="fitCenter"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/learn_more_understanding_ratings" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="14sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    local:MvxBind="Text UnderstandingPharmacyText"
+                    android:text="Understanding pharmacy quality ratings" />
+                <TextView
+                    android:textSize="12sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    local:MvxBind="Text EverythingYouNeedToKnowText"
+                    android:text="Everything you need to know about how GSC evaluates the quality of care provided by pharmacies." />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha="0.2"
+            android:background="@color/black" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:text="Close"
+                android:layout_alignParentRight="true"
+				android:textColor="@color/button_font_color"
+                local:MvxBind="Click GoShowHideLearnMoreCommand; Text CloseText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

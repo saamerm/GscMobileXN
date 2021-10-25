@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	android:background="@color/white">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        android:layout_height="fill_parent">
+        <gsc.HeaderTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/claim_marg_top"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            local:MvxBind="Text Claims"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:textAllCaps="true" />		        
+        <gsc.SingleSelectMvxListView
+            android:id="@+id/result_list_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:choiceMode="singleChoice"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10dp"
+            local:MvxBind="ItemsSource SearchResults;ItemClick SelectSearchResultCommand; "
+            local:MvxItemTemplate="@layout/item_search_result" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:paddingBottom="12dp"
+            android:background="@drawable/HCSABorderTextViewNormal">
+            <gsc.LeagueTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="10dp"
+                local:MvxBind="Text TotalsLabel"
+                android:textColor="@color/claim_text" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content">
+                <gsc.NunitoTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    local:MvxBind="Text ClaimedAmountLabel"
+                    android:textSize="13sp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/claim_text"
+                    android:layout_gravity="left" />
+                <gsc.NunitoTextViewHeavy
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    local:MvxBind="Text Format(' ${0}' ,TotalClaimedAmount)"
+                    android:textSize="13sp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/claim_text_grey"
+                    android:layout_gravity="right" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content">
+                <gsc.NunitoTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    local:MvxBind="Text OtherPaidAmountLabel"
+                    android:textSize="13sp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/claim_text"
+                    android:layout_gravity="left" />
+                <gsc.NunitoTextViewHeavy
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    local:MvxBind="Text Format(' ${0}' ,TotalOtherPaidAmount)"
+                    android:textSize="13sp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/claim_text_grey"
+                    android:layout_gravity="right" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content">
+                <gsc.NunitoTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    local:MvxBind="Text PaidAmountLabel"
+                    android:textSize="13sp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/claim_text"
+                    android:layout_gravity="left" />
+                <gsc.NunitoTextViewHeavy
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    local:MvxBind="Text Format(' ${0}' ,TotalPaidAmount)"
+                    android:textSize="13sp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/claim_text_grey"
+                    android:layout_gravity="right" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content">
+                <gsc.NunitoTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    local:MvxBind="Text CopayDeductibleLabel"
+                    android:textSize="13sp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/claim_text"
+                    android:layout_gravity="left" />
+                <gsc.NunitoTextViewHeavy
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    local:MvxBind="Text Format(' ${0}' , TotalCopay)"
+                    android:textSize="13sp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/claim_text_grey"
+                    android:layout_gravity="right" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

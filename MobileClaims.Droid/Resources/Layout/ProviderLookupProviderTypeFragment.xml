@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+<!--<TextView
+        android:text="@string/locateProviders"
+        android:textSize="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/locateProviderFindProviderText"
+        android:textColor="@color/highlight_color"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:text="@string/locateProvidersSearchByDrugLabel"
+        android:textSize="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/locateProviderMakeSelectionText"
+        android:textColor="@color/dark_grey"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="35dp"
+        android:gravity="bottom"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="5dp" />
+    <TextView
+        android:text="@string/locateProvidersMakeSelectionLabel"
+        android:textSize="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/locateProviderMakeSelectionText"
+        android:textColor="@color/dark_grey"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="35dp"
+        android:gravity="bottom"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="0dp" /> -->
+    <gsc.HeaderTextView
+        android:id="@+id/locateProviderFindProviderText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/locateProviders"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textAllCaps="true" />
+<!--   <gsc.TitleTextView
+        android:id="@+id/locateProviderMakeSelectionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/locateProvidersSearchByDrugLabel"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:layout_marginLeft="40dp"
+        android:textAllCaps="true" /> -->
+    <gsc.SubtitleTextView
+        android:id="@+id/locateProviderMakeSelectionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/locateProvidersMakeSelectionLabel"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="20dp"
+        android:textAllCaps="true" />
+    <gsc.SingleSelectMvxListView
+        android:layout_below="@+id/locateProviderMakeSelectionText"
+        android:drawSelectorOnTop="false"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:choiceMode="singleChoice"
+        android:scrollbarStyle="outsideOverlay"
+        android:cacheColorHint="@android:color/transparent"
+        android:background="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:listSelector="@android:color/transparent"
+        android:layout_gravity="center"
+        local:MvxBind="ItemsSource ServiceProviderTypes; ItemClick NextStepCommand"
+        local:MvxItemTemplate="@layout/item_service_provider_type"
+        android:paddingTop="20dp" />
+</LinearLayout>

@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>2.0</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="BrandAcronym" xml:space="preserve">
+    <value>ARTA</value>
+    </data>
+    <data name="BrandShortDisplayName" xml:space="preserve">
+    <value>ARTA</value>
+    </data>
+  <data name="BrandFullDisplayName" xml:space="preserve">
+    <value>Prestations ARTA</value>
+  </data>
+    <data name="Username" xml:space="preserve">
+        <value>NOM D'UTILISATEUR</value>
+    </data>
+	  <data name="Password" xml:space="preserve">
+    <value>MOT DE PASSE</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>OUVERTURE DE SESSION</value>
+  </data>
+    <data name="RememberMe" xml:space="preserve">
+        <value>MÉMORISER MON NOM D’UTILISATEUR SUR CET APPAREIL</value>        
+    </data>
+    <data name="WebInstructions" xml:space="preserve">
+        <value>VOUS AVEZ OUBLIÉ VOTRE NOM D’UTILISATEUR OU VOTRE MOT DE PASSE? VOUS DEVEZ VOUS INSCRIRE?</value>        
+    </data>
+    <data name="WebInstructionsLink" xml:space="preserve">
+        <value>https://Myarta.net</value>        
+    </data>
+	 <data name="General" xml:space="preserve">
+    <value>GÉNÉRAL</value>
+  </data>
+  <data name="Privacy" xml:space="preserve">
+    <value>CONFIDENTIALITÉ</value>
+  </data>
+  <data name="Security" xml:space="preserve">
+    <value>SÉCURITÉ</value>
+  </data>
+  <data name="Legal" xml:space="preserve">
+    <value>INFO JURIDIQUE</value>
+  </data>
+  <data name="IAgreeToTC" xml:space="preserve">
+    <value>J’ACCEPTE LES MODALITÉS</value>
+  </data>
+  <data name="TermsAndConditionsGeneral1" xml:space="preserve">
+    <value>Si votre régime de garanties comprend la soumission de demande de prestations en ligne, cette appli offrira une fonction permettant de soumettre des demandes de prestations. Si vous soumettez des demandes au moyen de la fonction de soumission de demande de prestations en ligne de l’appli mobile de l’ARTA, vous acceptez les conditions suivantes : &lt;br/&gt; &lt;br/&gt; « Je suis d’accord que toutes les informations fournies en utilisant la soumission de demande de prestations en ligne seront complètes et exactes. Dans le cas où les informations que j’ai fournies sont incomplètes ou inexactes, je comprends que l’ARTA se réserve le droit de supprimer mes privilèges de demande de prestations en ligne. Je comprends que les informations que je fournis à l’ARTA à mon sujet et au sujet de mes personnes à charge serviront à l’ARTA pour le règlement des demandes et à tout autre service nécessaire à l’administration de mes prestations, y compris l’échange d’information avec des tierces parties afin de traiter la présente demande de prestations ».</value>
+  </data>
+  <data name="TermsAndConditionsGeneral2" xml:space="preserve">
+    <value>« Je suis autorisé(e) par mon (ma) conjoint(e) et/ou mes personnes à charge, à divulguer et à recevoir des informations les concernant utilisées à ces fins. Mon (Ma) conjoint(e) et/ou mes personnes à charge comprennent que ces informations peuvent être vues par moi, le (la) détenteur(trice) de la carte, et qu’elles seront utilisées par l’ARTA et les autres parties indiquées dans la présente entente aux fins qui y sont énoncées ».</value>
+  </data>
+  <data name="TermsAndConditionsGeneral3" xml:space="preserve">
+    <value>« Je comprends et j'accepte qu'il m'incombe de conserver le(s) reçu(s) original(aux) pendant 13 mois suivant la date de présentation de la (des) demande(s) de prestations faite en mon nom. Lors de la soumission des demandes en ligne, l'ARTA peut sélectionner ma demande pour vérification. Si ma demande est sélectionnée, je suis responsable de produire le(s) reçu(s) original(aux) dans les 30 jours ».</value>
+  </data>
+  <data name="TermsAndConditionsGeneral4" xml:space="preserve">
+    <value>« Si j’omets de remettre le(s) reçu(s) à l’ARTA ou si je fournis des informations fausses, incomplètes ou trompeuses, l’ARTA se réserve le droit de classifier ma demande de prestations comme versement excédentaire et déduira de telles sommes de mes prochaines demandes de prestations. D’autre part, les privilèges de soumission en ligne et de l’application mobile peuvent être révoqués pour moi, mon (ma) conjoint(e) et mes personnes à charge et/ou ma couverture peut être refusée ou résiliée ».</value>
+  </data>
+  <data name="TermsAndConditionsGeneral5" xml:space="preserve">
+    <value>« Si je suis sélectionné(e) pour une vérification, j'autorise l'échange d'information entre l'ARTA et d'autres parties, y compris, mais sans s'y limiter, les praticiens de la santé, les fournisseurs d'appareils médicaux et les assureurs, selon les besoins, et uniquement lorsque les informations sont nécessaires pour gérer les demandes de prestations et/ou confirmer l'exactitude des informations soumises en mon nom, celui de mon conjoint et/ou de mes personnes à charge ». &lt;br/&gt; &lt;br/&gt;  « En cas de présumé acte ou d'omission frauduleux ayant trait à des demandes de prestations soumises en mon nom ou au nom de mon (ma) conjoint(e) et/ou de mes personnes à charge concernant les Services en ligne pour les membres du régime pour les retraités ou la soumission d'une demande de prestations sur l'application mobile en mon nom, je reconnais et accepte la divulgation de ces informations aux parties concernées telles que déterminées par l'ARTA ou les autres parties mentionnées ci-dessus, y compris, mais sans s'y limiter, le promoteur du régime, les organismes de réglementation ou d'application de la loi ».</value>
+  </data>
+  <data name="TermsAndConditionsGeneral6" xml:space="preserve">
+    <value>« L’équipe d’adjudicateurs de l’ARTA, HBM+, maintient une base de données nationale de fournisseurs ainsi que leur association avec tout organisme de réglementation, association professionnelle ou programme éducatif. HBM+ examine chaque fournisseur afin de déterminer quels avantages/services sont admissibles pour le remboursement de pair avec le régime de garanties de soins de santé du membre. Lors de la soumission d’une demande de prestations en ligne, avec un fournisseur qui n’est pas enregistré avec HBM+, les titres de compétence de ce fournisseur seront vérifiés et ma demande de prestations sera traitée en conséquence ».</value>
+  </data>
+  <data name="TermsAndConditionsGeneral7" xml:space="preserve">
+    <value>« L’acceptation des modalités et conditions de l’entente de soumission de demande de prestations en ligne s’applique à toutes les demandes de prestations soumises au cours d’une session en ligne. Si je soumets plusieurs demandes de prestations (pour mon (ma) conjoint(e) ou une différente personne à charge et/ou fournisseur) au cours d’une session en ligne, mon acceptation des modalités et conditions de l’entente de soumission de demande de prestations en ligne s’applique à toutes les demandes de prestations soumises ».</value>
+  </data>
+  <data name="TermsAndConditionsGeneral8" xml:space="preserve">
+    <value>1-855-212-2400</value>
+  </data>
+    <data name="GeneralContent6" xml:space="preserve">
+        <value>https://Myarta.net</value>        
+    </data>
+    <data name="GeneralContent8" xml:space="preserve">
+        <value>cliquez ici</value>        
+    </data>
+	<data name="MyIdCardText" xml:space="preserve">
+    <value>MA CARTE D'IDENTIFICATION</value>
+  </data>
+  <data name="claimConfirm_description" xml:space="preserve">
+    <value>Les renseignements ci-dessus seront soumis à ARTA. SVP vérifier leur exactitude avant de continuer. S\'il vous faut modifier les renseignements, SVP cliquer sur le bouton «Retour» pour retourner au formulaire de soumission de demande de règlement. Sinon, cliquer sur le bouton «Soumettre» pour soumettre la demande de règlement à ARTA.</value>
+  </data>
+  <data name="claimConfirm_id_number" xml:space="preserve">
+    <value>Numéro de membre ARTA :</value>
+  </data>
+  <data name="DisclaimerFirstParagraph" xml:space="preserve">
+    <value>J’accepte et déclare que toutes les informations fournies en utilisant les Services en ligne des membres du régime pour les retraités de l’ARTA seront complètes et exactes. Dans le cas où les informations que j’ai fournies sont incomplètes ou inexactes, je comprends que l’Alberta Retired Teachers’ Association (ARTA) se réserve le droit de supprimer mes privilèges de demande de prestations en ligne. Je comprends que les informations que j’ai fournies, incluant les informations personnelles, à l’ARTA à mon sujet et au sujet de mes personnes à charge seront utilisées par l’ARTA et HBM+ pour le traitement des demandes de prestations et tout autre service nécessaire pour l'administration de mes garanties qui pourraient inclure l'échange d'information avec d'autres parties pour administrer cette demande de prestations.</value>
+  </data>
+  <data name="DisclaimerSecondParagraph" xml:space="preserve">
+    <value>Je suis autorisé(e) par mon (ma) conjoint(e) et/ou mes personnes à charge de divulguer et recevoir des informations les concernant qui seront utilisées à ces fins. Mon (Ma) conjoint(e) et/ou mes personnes à charge comprennent que ces informations peuvent être vues par moi, le (la) détenteur(trice) de la carte, et utilisées par l’ARTA et les autres parties mentionnées dans cette présente entente aux fins énoncées dans cette présente entente.</value>
+  </data>
+  <data name="AuditDisclaimerFirstParagraph" xml:space="preserve">
+    <value>À titre de membre du régime, je suis autorisé(e) par mon (ma) conjoint(e) et/ou mes personnes à charge à divulguer et à recevoir des informations les concernant qui sont utilisées aux fins énoncées ci-dessous. Ils (Elles) comprennent que ces informations pourraient être vues par moi.</value>
+  </data>
+  <data name="AuditDisclaimerSecondParagraph" xml:space="preserve">
+    <value>En soumettant les reçus originaux, j’atteste et déclare que les informations fournies sont complètes et exactes. Je comprends que les informations que je fournis à « l’Alberta Retired Teachers’ Association (ARTA) » à mon sujet et au sujet de mes personnes à charge seront utilisées par ARTA pour le règlement des demandes de prestations et tout autre service nécessaire dans l’administration de nos prestations, qui pourraient, si nécessaire, comprendre l’échange d’information avec d’autres parties dans le but d’administrer la présente demande de prestations.</value>
+  </data>
+  <data name="AuditDisclaimerThirdParagraph" xml:space="preserve">
+    <value>De plus, j’autorise ARTA à obtenir et échanger des informations auprès d’autres parties, tel que es professionnels de la santé et les assureurs, afin de confirmer l’exactitude de(s) demande(s) de prestations soumises. Advenant le cas d’un présumé acte frauduleux ou d’une omission relativement aux demandes de prestations soumises en mon nom ou au nom de mes personnes à charge, je comprends, reconnais et accepte la divulgation de ces informations aux parties prenantes tel que déterminé par ARTA ou ces autres parties, comme le promoteur de régime, les organismes de réglementation ou les organismes d’application de la loi.</value>
+  </data>
+  <data name="EverythingYouNeedToKnow" xml:space="preserve">
+    <value>Voici tout ce que vous devez savoir sur la façon dont nous évaluons la qualité des soins fournis par les pharmacies.</value>
+  </data>
+  <data name="GreenShieldIDNumber" xml:space="preserve">
+    <value>Numéro de membre ARTA :</value>
+  </data>
+  <data name="GreenShieldIDNumberNoColon" xml:space="preserve">
+    <value>Numéro de membre ARTA</value>
+  </data>
+  <data name="submittedToGSC" xml:space="preserve">
+    <value>Les renseignements ci-dessus seront soumis à ARTA. SVP vérifier leur exactitude avant de continuer. S’il vous faut modifier les renseignements, SVP cliquer sur le bouton «Retour» pour retourner au formulaire de soumission de demande de règlement. Sinon, cliquer sur le bouton «Soumettre» pour soumettre la demande de règlement à ARTA.</value>
+  </data>
+  <data name="Find_a_health_provider_faq_url" xml:space="preserve">
+    <value>https://artaclaims.net/arta_miscdocs/find_a_health_provider_faq_fr.pdf</value>
+  </data>
+  <data name="Understanding_pharmacy_quality_ratings_url" xml:space="preserve">
+    <value>https://onlineservices.greenshield.ca/miscdocs/understanding_pharmacy_quality_ratings_fr.pdf</value>
+  </data>
+  <data name="cardDescription" xml:space="preserve">
+    <value>Carte Prestations ARTA</value>
+  </data>
+  <data name="NoActiveClaimsLabel" xml:space="preserve">
+    <value>Bonne nouvelle! Des renseignements supplémentaires ne sont pas requis pour aucune de vos demandes de règlement.</value>
+  </data>  
+  <data name="VisionEnhancementsMessage" xml:space="preserve">
+    <value>Le programme Mieux voir pour réussir offre un remboursement de 250 $ par 24 mois à la suite de l’achat de lunettes ou de verr​es de contact (lentilles), prescrits par un professionnel, visant à corriger la vision de tout enfant de moins de 18 ans. Seuls les achats effectués depuis le 1er septembre 2019, chez un opticien ou un optométriste au Québec, sont admissibles. Vous devez soumettre votre réclamation même si le montant offert par le gouvernement couvre le montant total de l’achat.</value>
+  </data>
+   <data name="VisionEnhancementsProgramName" xml:space="preserve">
+    <value>Mieux voir pour réussir</value>
+  </data>
+  <data name="VisionEnhancementsProgramAdditionalInfo" xml:space="preserve">
+    <value>Vous devez soumettre votre réclamation même si le montant offert par le gouvernement couvre le montant total de l’achat.</value>
+  </data>
+  <data name="ClaimDetailsOtherBenefitsTitle" xml:space="preserve">
+    <value>Avez-vous des garanties au titre d’un autre régime?</value>
+  </data>
+  <data name="DirectDepositOptInMessage" xml:space="preserve">
+    <value>J’autorise GSC à déposer les fonds directement dans le compte bancaire indiqué ci-dessous. Je comprends que je ne recevrai plus les relevés de prestations de GSC par la poste. Mes relevés ne seront accessibles qu’en ligne.</value>
+  </data>
+  <data name="DDConfirmAuthoriseDepositFundLabel" xml:space="preserve">
+    <value>Je reconnais qu’il est de ma responsabilité de veiller à l’exactitude de mes renseignements bancaires et que GSC décline toute responsabilité et ne peut être tenue responsable si les renseignements fournis sont erronés, incomplets ou inexacts.</value>
+  </data> 
+    <data name="DDResultDisclaimer3" xml:space="preserve">
+    <value>En outre, je reconnais que GSC n’est pas responsable de tout dommage, réclamation ou cause d’action, de quelque nature que ce soit, qui pourrait résulter d’un dépôt direct fait au moyen de ces renseignements bancaires ou qui pourrait survenir en raison de renseignements bancaires erronés, incomplets ou inexacts. Par conséquent, je dégage l’assureur de toute responsabilité à cet égard.</value>
+  </data>
+</root>

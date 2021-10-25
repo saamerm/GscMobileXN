@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="133" id="cxk-wN-pdQ" customClass="Step1TableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="133"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cxk-wN-pdQ" id="YTl-1W-gDM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="133"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pnh-cA-97y">
+                        <rect key="frame" x="20" y="0.0" width="335" height="133"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ivj-vz-V6M">
+                                <rect key="frame" x="0.0" y="0.0" width="335" height="133"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LargeRoundCheckboxUnselected" highlightedImage="LargeRoundCheckboxSelected" translatesAutoresizingMaskIntoConstraints="NO" id="xfI-WX-wgx">
+                                <rect key="frame" x="20" y="50.5" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="3cK-aT-vEE"/>
+                                    <constraint firstAttribute="height" constant="32" id="pB4-Jv-1bV"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7c-rX-3sT">
+                                <rect key="frame" x="72" y="9" width="249" height="115"/>
+                                <string key="text">I authorize GSC to deposit funds directly into the bank account noted below. I understand that I will no longer receive statements from GSC in the mail, as my statements will only be available online</string>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>                                         <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NunitoSans-SemiBold"/>                                     </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Ivj-vz-V6M" firstAttribute="leading" secondItem="Pnh-cA-97y" secondAttribute="leading" id="4zE-Xi-ewg"/>
+                            <constraint firstItem="xfI-WX-wgx" firstAttribute="leading" secondItem="Pnh-cA-97y" secondAttribute="leading" constant="20" id="8dl-0G-PgN"/>
+                            <constraint firstAttribute="bottom" secondItem="Ivj-vz-V6M" secondAttribute="bottom" id="A0q-8b-n6m"/>
+                            <constraint firstAttribute="bottom" secondItem="Y7c-rX-3sT" secondAttribute="bottom" constant="9" id="Aho-Wf-W9G"/>
+                            <constraint firstItem="Y7c-rX-3sT" firstAttribute="top" secondItem="Pnh-cA-97y" secondAttribute="top" constant="9" id="Epi-Rg-nht"/>
+                            <constraint firstItem="Ivj-vz-V6M" firstAttribute="top" secondItem="Pnh-cA-97y" secondAttribute="top" id="G2f-6g-my7"/>
+                            <constraint firstItem="xfI-WX-wgx" firstAttribute="centerY" secondItem="Pnh-cA-97y" secondAttribute="centerY" id="KZ1-6c-xN8"/>
+                            <constraint firstAttribute="trailing" secondItem="Ivj-vz-V6M" secondAttribute="trailing" id="PPd-mO-av5"/>
+                            <constraint firstItem="Y7c-rX-3sT" firstAttribute="leading" secondItem="xfI-WX-wgx" secondAttribute="trailing" constant="20" id="Ygr-gU-bJJ"/>
+                            <constraint firstAttribute="trailing" secondItem="Y7c-rX-3sT" secondAttribute="trailing" constant="14" id="b75-he-e8T"/>
+                            <constraint firstItem="Y7c-rX-3sT" firstAttribute="centerY" secondItem="Pnh-cA-97y" secondAttribute="centerY" id="wdw-8e-iHu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Pnh-cA-97y" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="20" id="6Qy-se-3tE"/>
+                    <constraint firstAttribute="bottom" secondItem="Pnh-cA-97y" secondAttribute="bottom" id="7P2-ch-T3j"/>
+                    <constraint firstItem="Pnh-cA-97y" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" id="BPc-IS-qEo"/>
+                    <constraint firstAttribute="trailing" secondItem="Pnh-cA-97y" secondAttribute="trailing" constant="20" id="P5p-yb-jE5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="AuthorizeDirectDepositLabel" destination="Y7c-rX-3sT" id="Jtr-AJ-H9z"/>
+                <outlet property="ContainerView" destination="Pnh-cA-97y" id="g1L-cs-rTn"/>
+                <outlet property="RoundImageView" destination="xfI-WX-wgx" id="0o0-Yz-rmz"/>
+                <outlet property="SelectAuthorizeDirectDepositButton" destination="Ivj-vz-V6M" id="n00-tz-8PD"/>
+            </connections>
+            <point key="canvasLocation" x="41.304347826086961" y="51.897321428571423"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="LargeRoundCheckboxSelected" width="32" height="32"/>
+        <image name="LargeRoundCheckboxUnselected" width="32" height="32"/>
+    </resources>
+</document>

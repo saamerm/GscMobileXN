@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="colon">: </string>
+    <string name="locale">fr</string>    
+    <string name="Hello">Bonjour</string>
+    <string name="login">OUVERTURE DE SESSION</string>
+    <string name="loginInstructions">S\'il vous plaît vous connecter avec votre ID utilisateur et mot de passe pour greenshield.ca compléter cette demande</string>
+    <string name="password">MOT DE PASSE</string>
+    
+    <string name="loginError">Vous avez entré un nom d\'utilisateur ou un mot de passe inexact, ou votre compte n\'est plus actif. Veuillez noter que vous n\'avez droit qu\'à 5 tentatives d\'ouverture de session infructueuses avant que votre compte ne soit verrouillé.</string>
+    <string name="loginErrorTitle">Login error</string>
+    <string name="loginErrorNetworkProblem">Nous vous prions de nous excuser pour vos difficultés de connexion. Veuillez réessayer plus tard.</string>
+    <string name="loginUsingTouch">Connectez-vous à l\'aide de la fonction empreintes digitales</string>
+    <string name="fingerprintLoginInstruction">Connectez-vous avec vos empreintes digitales</string>
+    <string name="fingerprintLoginConfirm">Utilisez vos empreintes digitales pour les prochaines connexions</string>
+    <string name="error">Erreur</string>
+    <string name="claimCountOf">RÉCLAMATION {0} DE {1}</string>
+  <string name="refineYourSearch">CHERCHER</string>
+  <string name="location">ADRESSE</string>
+  <string name="currentLocation">Adresse actuelle</string>
+  <string name="providerType">TYPE</string>
+  <string name="filter">FILTRER</string>
+  <string name="qualityRating">ÉVALUATION</string>
+  <string name="directBill">FACTURATION DIRECTE</string>
+  <string name="recentlyVisited">RÉCEMMENT VISITÉ</string>
+  <string name="sort">TRIER</string>
+  <string name="distance">Distance</string>
+  <string name="nameRefine">Nom</string>
+  <string name="ratingAndDistance">Évaluation et distance</string>
+  <string name="ratingAndName">Évaluation et nom</string>
+  <string name="refineDone">OK</string>
+  <string name="notAvailable">NON DISPONIBLE</string>
+
+  <string name="favourites">Favoris</string>
+  <string name="addToContacts">Ajouter aux Contacts</string>
+  <string name="directions">Directions</string>
+  
+  <string name="contactAlreadyExists">existe déjà dans vos contacts</string>
+  <string name="fileNotFound">File Not Found - FR</string>
+  <string name="actionRequired">Intervention requise</string>
+
+  <!-- AUDIT -->
+  <string name="activeAudit">Vérification active</string>
+
+  <!-- COP -->
+  <string name="serviceDate">Date du service</string>
+  <string name="claimFormNumber">Numéro de formulaire</string>
+  <string name="serviceDescription">Description du service</string>
+  <string name="claimedAmount">Montant demandé ($ CA)</string>
+  <string name="disclaimer"><u>l’avis.</u></string>
+  <string name="pleaseUploadDocuments">Please upload documents for this claim.-FR</string>
+  <string name="fileTypeNotSupported">Format de fichier non pris en charge.</string>
+  <string name="phone"> Téléphone: </string>
+  <string name="yes">Oui</string>
+  <string name="no">Non</string>
+
+  <!-- TERMS AND CONDITIONS -->
+    <string name="privacyContent">Privacy ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum velit lectus, congue et justo lobortis, auctor rhoncus risus. Maecenas quis diam enim. Phasellus ultrices dictum sapien, non molestie ligula molestie at. Phasellus quis nunc nec arcu vulputate laoreet. Pellentesque sit amet elit elit. \n \n Aenean sit amet purus id risus feugiat elementum. Phasellus lacus nisl, posuere sit amet dolor eu, elementum adipiscing sapien. Vivamus ac vulputate orci. Integer eget lectus porta, bibendum mi nec, viverra ligula.</string>
+    <string name="legalContent">"Legal ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum velit lectus, congue et justo lobortis, auctor rhoncus risus. Maecenas quis diam enim. Phasellus ultrices dictum sapien, non molestie ligula molestie at. Phasellus quis nunc nec arcu vulputate laoreet. Pellentesque sit amet elit elit. Proin placerat turpis quis mi rutrum, nec iaculis dolor molestie. Nulla facilisi. Mauris placerat congue dolor, in porttitor ipsum iaculis quis. Proin sodales risus risus. Donec venenatis sapien sed mi hendrerit, sit amet consectetur nisl congue. Donec et mauris mauris. Aenean sit amet purus id risus feugiat elementum. Phasellus lacus nisl, posuere sit amet dolor eu, elementum adipiscing sapien. Vivamus ac vulputate orci. Integer eget lectus porta, bibendum mi nec, viverra ligula.</string>
+    <string name="securityContent">Security Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec blandit, mi interdum lobortis lobortis, tortor libero mattis orci, a ullamcorper turpis nunc vitae purus. Mauris elementum mauris quam, eu venenatis tellus vehicula sed. Suspendisse convallis interdum lectus. Maecenas quis diam enim. Phasellus ultrices dictum sapien, non molestie ligula molestie at. Phasellus quis nunc nec arcu vulputate laoreet. Pellentesque sit amet elit elit. \n \n Aenean sit amet purus id risus feugiat elementum. Phasellus lacus nisl, posuere sit amet dolor eu, elementum adipiscing sapien. Vivamus ac vulputate orci. Integer eget lectus porta, bibendum mi nec, viverra ligula. \n \n Proin placerat turpis quis mi rutrum, nec iaculis dolor molestie. Nulla facilisi. Mauris placerat congue dolor, in porttitor ipsum iaculis quis. Proin sodales risus risus. Donec venenatis sapien sed mi hendrerit, sit amet consectetur nisl congue. Donec et mauris mauris.Proin placerat turpis quis mi rutrum, nec iaculis dolor molestie. Nulla facilisi. Mauris placerat congue dolor, in porttitor ipsum iaculis quis. Proin sodales risus risus. Donec venenatis sapien sed mi hendrerit, sit amet consectetur nisl congue. Donec et mauris mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum velit lectus, congue et justo lobortis, auctor rhoncus risus. Maecenas quis diam enim. Phasellus ultrices dictum sapien, non molestie ligula molestie at. Phasellus quis nunc nec arcu vulputate laoreet. Pellentesque sit amet elit elit. Aliquam tortor quam, eleifend vel eros vitae, rhoncus ultrices turpis. Aliquam ut nulla erat. Etiam purus risus, mattis at velit non, egestas dictum ante. Nunc vulputate nec metus id gravida. Vivamus quis elit vitae lacus pretium dignissim interdum bibendum nulla. Fusce imperdiet vel nisl eget ultricies. Nam pharetra in tortor vel consequat. Nam lacus quam, sollicitudin placerat massa sit amet, malesuada posuere dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse placerat, felis vitae adipiscing varius, turpis justo luctus mi, sodales placerat odio dolor eget justo. Quisque posuere mauris ut nisl iaculis, a vestibulum nibh pellentesque. \n \n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum velit lectus, congue et justo lobortis, auctor rhoncus risus. Maecenas quis diam enim. Phasellus ultrices dictum sapien, non molestie ligula molestie at. Phasellus quis nunc nec arcu vulputate laoreet. Pellentesque sit amet elit elit. Aliquam tortor quam, eleifend vel eros vitae, rhoncus ultrices turpis. Aliquam ut nulla erat. Etiam purus risus, mattis at velit non, egestas dictum ante. Nunc vulputate nec metus id gravida. Vivamus quis elit vitae lacus pretium dignissim interdum bibendum nulla. Fusce imperdiet vel nisl eget ultricies. Nam pharetra in tortor vel consequat. Nam lacus quam, sollicitudin placerat massa sit amet, malesuada posuere dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse placerat, felis vitae adipiscing varius, turpis justo luctus mi, sodales placerat odio dolor eget justo. Quisque posuere mauris ut nisl iaculis, a vestibulum nibh pellentesque. \n \n Aenean sit amet purus id risus feugiat elementum. Phasellus lacus nisl, posuere sit amet dolor eu, elementum adipiscing sapien. Vivamus ac vulputate orci. Integer eget lectus porta, bibendum mi nec, viverra ligula. Curabitur ac augue id turpis fringilla eleifend. Duis quis urna in massa tempor faucibus a nec erat. Donec condimentum elit ut lectus mattis fermentum. Maecenas non turpis purus. Cras fermentum mauris mi, placerat ullamcorper felis vehicula in. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec blandit, mi interdum lobortis lobortis, tortor libero mattis orci, a ullamcorper turpis nunc vitae purus. Mauris elementum mauris quam, eu venenatis tellus vehicula sed. Suspendisse convallis interdum lectus. Aenean sit amet purus id risus feugiat elementum. Phasellus lacus nisl, posuere sit amet dolor eu, elementum adipiscing sapien. Vivamus ac vulputate orci. Integer eget lectus porta, bibendum mi nec, viverra ligula. Curabitur ac augue id turpis fringilla eleifend. Duis quis urna in massa tempor faucibus a nec erat. Donec condimentum elit ut lectus mattis fermentum. Maecenas non turpis purus. Cras fermentum mauris mi, placerat ullamcorper felis vehicula in. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec blandit, mi interdum lobortis lobortis, tortor libero mattis orci, a ullamcorper turpis nunc vitae purus. Mauris elementum mauris quam, eu venenatis tellus vehicula sed. Suspendisse convallis interdum lectus.</string>
+    <!-- DRUG LOOKUP -->
+    <string name="benefits">PRESTATIONS</string>
+    <string name="drugNameTitle">NOM DU MÉDICAMENT</string>
+    <string name="drugNameHint">Nom du médicament</string>
+    <string name="DINTitle">D\'IDENTIFICATION DU MÉDICAMENT (DIN)</string>
+    <string name="byName">Par nom du médicament</string>
+    <string name="byDIN">Par numéro d\'identification du médicament (DIN)</string>
+    <string name="drugLookupModelSelectionLabel">Rechercher ma protection-médicaments</string>
+    <string name="chooseDrug">SEARCH MY DRUG COVERAGE</string>
+    <string name="chooseDrugSubHeading">Choisir l\'un des suivants</string>
+    <string name="drugNameFieldText">Entrer le nom du médicament</string>
+    <string name="drugNamePlaceholder">nom du médicament</string>
+    <string name="confirm">CONFIRMER</string>
+    <string name="drugDINFieldText"> Entrer le DIN</string>
+    <string name="drugDINLabel">DIN</string>
+    <string name="drugDINPlaceholder">DIN</string>
+    <string name="confirmDrug">CONFIRMER VOTRE MÉDICAMENT</string>
+    <string name="search">RECHERCHE</string>
+    <string name="searchTitle">RECHERCHER</string>
+    <string name="drugInformation">INFO-MÉDICAMENT</string>
+    <string name="myDrugResults">RÉSULTATS DE MA RECHERCHE DE MÉDICAMENT</string>
+    <string name="notes">NOTES</string>
+    <string name="planParticipant">MEMBRE DU RÉGIME</string>
+    <string name="choosePlanParticipant">CHOISIR LE MEMBRE DU RÉGIME</string>
+    <string name="drugNameAndStrength">NOM ET CONCENTRATION DU MÉDICAMENT</string>
+    <string name="drugCovered">CE MÉDICAMENT EST-IL COUVERT À TITRE DE VOTRE RÉGIME DE PRESTATIONS DE {0}?</string>
+    <string name="reimbursement">REMBOURSEMENT</string>
+    <string name="specialAuthRequired">UNE AUTORISATION SPÉCIALE EST-ELLE REQUISE?</string>
+    <string name="specialMessages">MESSAGES SPÉCIAUX</string>  
+    <string name="downloadAndView">TÉLÉCHARGER ET VISUALISER</string>
+    <string name="sendByEmail">ENVOYER PAR COURRIEL</string>
+    <string name="noresults">Aucun résultat trouvé</string>
+    <string name="noresultsdetails">Aucun médicament n\'a été trouvé qui correspond au nom ou au DIN fourni.</string>
+    <string name="cancel">Annuler</string>
+    <string name="send">Envoyer</string>
+    <string name="sendAuthForm">Envoyer le formulaire d\'autorisation spéciale à (entrer l\'adresse de courriel) :</string>
+    <string name="enterName">ENTRER LE NOM DU MÉDICAMENT</string>
+    <string name="enterDIN">ENTRER LE DIN</string>
+    <string name="nameError">Médicament : Veuillez entrer le nom d\'un médicament.</string>
+    <string name="dinError">DIN : Veuillez entrer un DIN.</string>
+    <string name="dinFormatError">Le DIN n\'est pas dans le bon format. Un DIN comprend toujours huit chiffres. Il figure sur le reçu de la pharmacie ou sur le flacon ou l\'emballage du médicament. Veuillez réessayer.</string>
+    <string name="nameLengthError">Le nom du médicament est trop court. Entrer au moins trois caractères du nom du médicament.</string>
+    <string name="planMemberSelectedError">NOTES</string>
+    <string name="newSearch">Le DIN n\'est pas dans le bon format. Un DIN comprend toujours huit chiffres. Il figure sur le reçu de la pharmacie ou sur le flacon ou l\'emballage du médicament. Veuillez réessayer</string>
+    <string name="download1">Oui. Veuillez télécharger le formulaire d\'autorisation spéciale ou vous l\'envoyer par courriel ou directement à votre médecin.</string>
+    <string name="download2">Ce médicament n\'est pas approuvé par votre régime. Veuillez télécharger le formulaire d\'autorisation spéciale ou vous l\'envoyer par courriel ou directement à votre médecin.</string>
+    
+    <string name="reimbursementMessage">Votre régime rembourse les médicaments en fonction de leur moindre coût dans leur catégorie thérapeutique; il s\'agit d\'habitude du médicament équivalent générique. Le nom du médicament et le DIN affichés correspondent au médicament le moins cher pour votre recherche.</string>
+    <string name="DrugsNotesDescButton1"><font size="20">&#8226;</font> Recherche valide à la date de recherche indiquée ci-dessus.</string>
+    <string name="DrugsNotesDescButton2"><font size="20">&#8226;</font> Si ce médicament est couvert par votre régime d\'assurance-médicaments provincial, il pourrait ne pas être admissible en vertu de votre régime de prestations de {0}.</string>
+    <string name="DrugsNotesDescButton3"><font size="20">&#8226;</font> Même si cette recherche de médicament pourrait indiquer que le médicament est couvert (c.-à-d. admissible à un remboursement), il n\'est pas garanti que le médicament sera remboursé. Le remboursement est sous réserve des clauses de votre régime de prestations. 
+    Par exemple, si votre régime a un maximum annuel (ou plafond) pour les médicaments, un médicament admissible ne sera pas remboursé si vous avez déjà atteint le maximum du régime. Ou si le médicament admissible nécessite un formulaire d\'autorisation, 
+    il pourrait être remboursé seulement si vous répondez à des critères médicaux précis.</string>
+    <string name="DrugsNotesDescButton4"><font size="20">&#8226;</font> Tout a été mis en oeuvre pour assurer l\'exactitude des résultats de recherché. Toutefois, s\'il y a divergence entre ces résultats et une demande de prestations, le résultat de la demande de prestations soumise sera considéré comme valide.\n</string>
+    <string name="detailsProviderEmailCompleteTitle">Email de confirmation</string>
+    <string name="detailsProviderEmailCompleteDesc">Votre courriel a bien été envoyé.</string>
+    <string name="detailsProviderEmailErrorDesc">Votre courriel n\'a malheureusement pas été envoyé. Veuillez réessayer plus tard ou télécharger le formulaire sur votre appareil.</string>
+
+    <string name="drugsDownloadError">Votre téléchargement a malheureusement échoué. Veuillez réessayer ou envoyer par courriel le formulaire.</string>
+
+    <!-- SPENDING ACCOUNTS -->
+    <string name="balances">MES SOLDES</string>
+    <string name="selectAccount">Sélectionnez le compte</string>
+    <string name="accountTitle">COMPTE</string>
+    <string name="accountDetails">DÉTAILS DU COMPTE</string>
+    <string name="totalRemaining">TOTAL DISPONIBLE :</string> 
+    <string name="deposited">MONTANT ALLOUÉ :</string>
+   <string name="deposited_tab">MONTANT ALLOUÉ</string>
+    <string name="usedToDate">UTILISÉ À CE JOUR :</string>
+   <string name="usedToDate_tab">UTILISÉ À CE JOUR</string>
+    <string name="remaining">MONTANT DISPONIBLE :</string>
+  <string name="remaining_tab">MONTANT DISPONIBLE</string>
+    <string name="forfeited">LE MONTANT DISPONIBLE NE POURRA PAS être utilisé après le</string>
+    <string name="forfeited_lower">Le montant disponible ne pourra pas être utilisé après le:</string>
+    <string name="contributionYear">ANNÉE DES COTISATIONS :</string>
+    <string name="to"> AU </string>
+    <string name="noAccounts">Vous n\'avez malheureusement pas de compte de frais.</string>
+    <string name="noClaimSubmission">Malheureusement, vous n\'avez pas accès à la soumission en ligne des demandes de règlement.</string>
+    <string name="noMatchingProviders">Aucun fournisseur de soins de santé correspondant n\'a été trouvé</string>
+  <string name="no_contributions_found">Aucun renseignement obtenu sur les cotisations.</string>
+
+    <!--- CARD VIEW -->
+    <string name="cardTravelNumber">Group # </string>
+     <!--- LOCATE PROVIDERS -->
+
+    <string name="locateProviders">Trouver un fournisseur de soins de santé</string>
+    <string name="serviceProviderTypeLabel">Type de fournisseur de services</string>
+    <string name="locateProvidersDone">Terminé</string> <!---needs translation-->
+    <string name="service">Service</string>
+
+
+
+
+    <string name="detailsProviderRadiusInfoLabelLocation">" km de mon emplacement actuel </string>
+    <string name="detailsProviderRadiusInfoLabelAddress">" km de l\'adresse </string>
+    <string name="detailsProviderRadiusInfoLabelPostalCode">" km du code postal </string>
+
+    <string name="lspProviderRadiusInfoLabelMylocation">Trouver un fournisseur de soins de santé dans un rayon de {0} km de mon emplacement actuel</string>
+    <string name="lspProviderRadiusInfoLabelAddress">Trouver un fournisseur de soins de santé dans un rayon de {0} km de l\'adresse</string>
+    <string name="lspProviderRadiusInfoLabelPostalcode">Trouver un fournisseur de soins de santé dans un rayon de {0} km du code postal</string>
+
+
+    <string name="locateProvidersSearchByDrugLabel">Vérifier l\'admissibilité pour l\'une des garanties suivantes :</string>
+    <string name="locateProvidersMakeSelectionLabel">Effectuer votre sélection </string>
+
+
+    <!--- needs translations -->
+    <string name="locateProviderMakeSelection">Effectuer votre sélection:</string>
+    <string name="locateProviderNarrowSearchText">Concentrer votre recherche :</string>
+    <string name="locateProviderSearchByText">Rechercher par :</string>
+    <string name="locateProviderOptionalText">Facultatif:</string>
+
+    <string name="locateProviderSearchTypeLabel">TYPE DE RECHERCHE</string>
+    <string name="locateProviderSearchTitleLabel">TROUVER DES SERVICES DE CONSULTATION</string>
+    <string name="locateProviderLocationTitle">RECHERCHE D\'EMPLACEMENT</string>
+    <string name="locateProviderFindTitle">TROUVER</string>
+    <string name="locateProviderAddressLabel">ADRESSE</string>
+    <string name="locateProviderPostalCodeLabel">CODE POSTAL</string>
+    <string name="locateProviderMyCurrentLocationLabel">MON EMPLACEMENT ACTUEL</string>
+    <string name="locateProviderAllProvidersLabel">TOUS LES FOURNISSEURS</string>
+    <string name="locateProviderPhoneNumberLabel">Numéro de téléphone</string>
+    <string name="locateProviderPhoneNumber">Numéro de téléphone</string>
+    <string name="locateProviderLastNameLabel">NOM DE FAMILLE</string>
+    <string name="locateProviderBusinessNameLabel">NOM COMMERCIAL</string>
+    <string name="locateProviderRangeLabel">Dans un rayon de</string>
+    <string name="locateProviderCityLabel">VILLE</string>
+    <string name="locateProviderNameLabel">NOM</string>
+    <string name="locateProviderNoFilter">Aucun filtre</string>
+
+    <string name="detailsProviderSearchLabelCity">Afficher le fournisseur de soins de santé dans la ville suivante</string>
+    <string name="detailsProviderSearchLabelPhoneNumber">Afficher le fournisseur de soins de santé au numéro de téléphone suivant</string>
+    <string name="detailsProviderSearchLabelLastName">Afficher le fournisseur de soins de santé au nom de famille suivant</string>
+    <string name="detailsProviderSearchLabelBusinessName">Afficher le fournisseur de soins de santé au nom commercial suivant</string>
+     
+    <string name="detailsProviderTitle">RECHERCHER</string>
+    <string name="detailsProviderRadiusInfoLabel">"Trouver "</string>
+    <string name="detailsProviderRadiusInfoLabel1">un</string>
+    <string name="detailsProviderRadiusInfoLabelMiddle">" fournisseur de soins de santé dans un rayon de "</string>
+    <string name="detailsProviderRadiusInfoLabelEnd"> de </string>
+    <string name="myLocation">MON EMPLACEMENT ACTUEL :</string>
+    <string name="detailsProviderSearchLabel">Afficher le fournisseur au </string>
+    <string name="detailsProviderSearchLabelEnd"> SUIVANT</string>
+    <string name="detailsProviderInfoLabel">50 fournisseurs de soins de santé seront affichés au maximum.</string>
+    <string name="detailsProviderExampleAddressLabel">Exemple : 123, rue Principale, VILLE (PROV.)</string>
+    <string name="detailsProviderExamplePostalCodeLabel">Exemple : A1A 1A1</string>
+    <string name="detailsProviderErrorTitle">Aucun fournisseur de soins de santé trouvé</string>
+    <string name="detailsProviderErrorDesc">Il n\'y a aucun fournisseur de soins de santé correspondant. Essayer d\'élargir votre critère de recherche.</string>
+    <string name="detailsProviderErrorFieldTitle">Missing fields</string> <!--- needs translation -->
+    <string name="detailsProviderErrorFieldDesc">Please fill in the required fields.</string> <!---needs translation -->
+
+    <string name="searchProviderServiceType">Service Type: </string>
+    <string name="searchProviderTitle">Fournisseurs</string>
+    <string name="searchProviderSearchedLabel">Vous avez recherché :</string>
+    <string name="searchProviderServiceTypeValue">Type de fournisseur de soins de santé: </string>
+
+    <string name="mapProviderTitle">Emplacements</string>
+    <string name="mapGetDirectionLink">Itinéraire</string>
+
+    <string name="mapProviderDetailsTitle">Fournisseur</string>
+    <string name="mapProviderDetailsSubmit">Le fournisseur de soins de santé soumet les demandes de règlement directement en ligne</string>
+
+    <string name="mapProviderDetailsNotSubmit">Needs translation    //must be translated</string>
+    <string name="mapProviderDetailsAccept">Le fournisseur de soins de santé accepte le paiement direct</string>
+    <string name="mapProviderDetailsNotAccept">Needs translation    //must be translated</string>
+
+    <string name="selectServiceProvider">Sélectionner le type de fournisseur de services que vous recherchez.</string>
+
+    <!---CLAIM SUBMISSION -->
+    <string name="claimTitle">Soumission de demande de règlement</string>
+    <string name="treatmentTypeTitle">Sélectionner le type de demande de règlement ou de service :</string>
+    <string name="claimTermsandConditionsTitle">Terms and Conditions</string>
+    <string name="benefitsDisclaimer"><p style="color:#CF314C;"><b>La liste ci-après pourrait comprendre des prestations qui ne sont pas couvertes par votre régime. </b></p>Cela vous permet de soumettre votre demande de prestations et obtenir un relevé aux fins de coordination avec un autre assureur, ou aux fins de l\'impôt sur le revenu.</string>
+    <string name="claimAgreeAndContinueTitle">D\'accord et continuer</string>
+    <string name="claimServiceProvidersTitle">Fournisseurs de soins de santé</string>
+    <string name="claimServiceProviderSelectTitle">Sélectionner un fournisseur de soins de santé dans la liste ou rechercher votre fournisseur de soins de santé par son nom ou son numéro de téléphone.</string>
+    <string name="lookupProviderByNameLabel">Rechercher un fournisseur de soins de santé par son nom</string>
+    <string name="lookupProviderByPhoneLabel">Rechercher un fournisseur de soins de santé par son numéro de téléphone</string>
+    <string name="searchByPhoneLabel">Rechercher par le numéro de téléphone</string>
+    <string name="searchByNameLabel">Rechercher par le nom</string>
+    <string name="lookupProviderByInitialLabel">Initiale</string>
+    <string name="lookupProviderByLastNameLabel">Nom de famille</string>
+    <string name="phoneNumberLabel">Numéro de téléphone</string>
+    <string name="searchResultLabel">Résultats de la recherche</string>
+    <string name="selectProviderFromListLabel">Sélectionner un fournisseur de soins de santé dans la liste.</string>
+    <string name="stillCantFindProviderLabel">Vous ne trouvez toujours pas votre fournisseur de soins de santé?</string>
+    <string name="stillCantFindProviderDescLabel">Vous ne pouvez trouver votre fournisseur de soins de santé, car il se peut qu\'il ne soit pas inscrit auprès de {0}. SVP entrer ci-après les renseignements et cliquer sur «Utiliser ce fournisseur de soins de santé». Le traitement de votre demande de règlement sera retardé jusqu\'à notre confirmation des coordonnées de votre fournisseur de soins de santé.\r\n\r\nNote : Dans le cas de services professionnels et de traitement par un professionnel de soins de la santé, SVP entrer les renseignements du professionnel de soins de la santé et non de la clinique où il exerce.</string>
+    <string name="myServiceProviderLabel">Fournir des renseignements sur mon fournisseur de soins de santé</string>
+    <string name="notEligibleVisionClaimsMessage">Malheureusement, cette demande de règlement ne peut être traitée par l\'appli mobile. Veuillez la soumettre aux Services en ligne des membres du régime.</string>
+
+    <string name="claimServiceProviderTitle">Fournisseurs de soins de santé :</string>
+    <string name="claimServiceProviderEntryRegistrationLabel">Numéro d\'enregistrement</string>
+    <string name="claimServiceProviderEntryUsetThisLabel">Utiliser ce fournisseur de soins de santé</string>
+
+    <string name="claimPlanParticipantLabel">Membre du régime</string>
+    <string name="claimPlanParticipantTitle">SVP sélectionner le membre du régime pour lequel vous soumettez la demande de règlement de {0}.</string>
+    <string name="claimPlanParticipantChangedTitle">Modification du membre du régime</string>
+    <string name="claimPlanParticipantChangedContent">Vous avez modifié le membre du régime pour la demande de règlement. SVP vérifier que tous les renseignements de cette demande de règlement concernent {0}.\n\nSi vous effectuez des demandes de règlement de traitements pour plusieurs membres du régime, vous devez soumettre des demandes de règlement distinctes pour chaque membre du régime.</string>
+    <string name="benefitPlanParticipantChangedContent">Toute l\'information de cette vérification d\'admissibilité sera maintenant associée avec le nouveau membre. Voulez-vous continuer?</string>
+
+    <string name="claimServiceProviderErrorMsgTitle">Erreur</string>
+    <string name="claimMandatoryErrorMsg">SVP entrer toute l\'information obligatoire.</string>
+    <string name="claimInvalidPostalCodeErrorMsg">Vous devez préciser un code postal valide.</string>
+    <string name="claimInvalidPhoneErrorMsg">Vous devez préciser un numéro de téléphone valide.</string>
+
+    <string name="claimDetailsLabel">Détails de la demande de règlement</string>
+    <string name="claimDetailsTitle">SVP fournir les détails de la demande de règlement pour {0}.</string>
+    <string name="claimDetailsWithoutParticipantTitle">S\'il vous plaît sélectionner un participant au régime alors fournir les détails de réclamation pour le participant au régime</string>
+    <string name="claimDetailsServiceProvider">Fournisseur de soins de santé – {0}</string>
+
+
+    <string name="claimOtherBenefitsView_OtherBenefitPlan">Avez-vous des garanties au titre d\'un autre régime?</string>
+    <string name="claimOtherBenefitsView_CoverageWithGSC">La couverture est-elle auprès de {0}?</string>
+    <string name="claimOtherBenefitsView_SubmittedOtherBenefitPlan">Cette demande de règlement a-t-elle été soumise à l\'autre régime de garanties?</string>
+    <string name="claimOtherBenefitsView_UnpaidGSCPlan">Régler tout solde impayé de mon autre régime {0}?</string>
+    <string name="claimOtherBenefitsView_OtherGSCNumber">Entrer l\'autre numéro {0}</string>
+
+    <string name="claimOtherBenefitsView_OtherGSCNumber_confirmation">Autre numéro {0}</string>
+
+    <string name="claimOtherBenefitsView_UnpaidHCSA">Voulez-vous régler tout montant impayé de vos frais admissibles au titre de votre CFSS?</string>
+
+    <string name="claimMotorVehicleView_MotorVehicleAccident">Le traitement est-il requis à la suite d\'un accident automobile?</string>
+    <string name="claimMotorVehicleView_AccidentDate">SVP fournir la date de l\'accident</string>
+
+    <string name="claimWorkInjuryView_WorkRelatedInjury">Le traitement est-il requis à cause d\'une blessure reliée au travail?</string>
+    <string name="claimWorkInjuryView_AccidentDate">SVP fournir la date de la blessure</string>
+    <string name="claimWorkInjuryView_CaseNumber">SVP fournir le numéro de cas</string>
+
+    <string name="claimMedicalItemView_SportsInjury">L\'article médical est-il nécessaire uniquement à des fins sportives?</string>
+
+    <string name="claimMedicalReferralView_MedicalReferralSubmitted">Avez-vous une ordonnance médicale à soumettre avec cette demande de prestations?</string>
+    <string name="claimMedicalReferralView_ReferralDate">SVP fournir la date de la recommandation</string>
+    <string name="claimMedicalReferralView_MedicalProfessional">Indiquer le type de professionnel de soins de la santé qui a recommandé le service</string>
+    <string name="claimMedicalProfessionalLabel">Professionnel de soins de la santé</string>
+    <string name="claimTreatmentDetailsLabel">Détails de la demande de règlement pour {0}</string>
+    <string name="claimTreatmentDetailsWithoutParticipantLabel">Détails de la demande de règlement</string>
+    <string name="claimSubmitClaimContinueLabel">Continuer</string>
+
+    <string name="claimSpecifyGSCNumberError">Vous devez préciser l\'autre numéro {0}.</string>
+    <string name="claimSpecifyAccidentDateEnteredError">La date de l\'accident doit être saisie.</string>
+    <string name="claimSpecifyAccidentDateNoFutureError">La date de l\'accident ne peut être une date ultérieure.</string>
+    <string name="claimSpecifyInjuryEnteredError">La date de la blessure doit être entrée.</string>
+    <string name="claimSpecifyInjuryNoFutureError">La date de l\'accident ne peut être une date ultérieure</string>
+    <string name="claimSpecifyCaseNumError">Le numéro de cas doit être entré.</string>
+    <string name="claimSpecifyPrescriptionNoFutureError">La date d\'ordonnance ne peut pas être une date ultérieure</string>
+    <string name="claimSpecifyMedicalProfessionalTypeError">Le type de professionnel de la santé doit être sélectionné.</string>
+    <string name="claimSpecifyPrescriptionTooOldError">La date d\'ordonnance doit se situer au cours des 12 derniers mois</string>
+
+
+    <string name="claimTreatmentDetails">Détails de la demande de règlement</string>
+    <string name="claimTreatmentDetailsTitle">Demande(s) de règlement pour {0}</string>
+    <string name="claimTreatmentAddLabel">Ajouter</string>
+    <string name="claimTreatmentSaveLabel">Enregistrer</string>
+    <string name="claimTreatmentCancelLabel">Annuler</string>
+    <string name="claimTreatmentLabel">Traitement</string>
+    <string name="claimTreatmentTypeLabel">Type de traitement</string>
+    <string name="claimTreatmentTypeLabelPhone">Type de traitement:</string>
+    <string name="claimTreatmentLengthLabel">Durée du traitement</string>
+    <string name="claimTreatmentDateLabel">Date du traitement</string>
+    <string name="claimTreatmentDateLabelPhone">Date du traitement:</string>
+    <string name="claimTreatmentTotalLabel">Montant total de la visite</string>
+    <string name="claimTreatmentTotalLabelPhone">Montant total de la visite:</string>
+    <string name="claimTreatmentAlternateCarrierLabel">Montant payé par l\'autre assureur</string>
+    <string name="claimTreatmentAlternateCarrierLabelPhone">Montant payé par l\'autre assureur:</string>
+    <string name="claimTreatmentDeleteLabel">Supprimer l\'entrée</string>
+    <string name="claimDeleteTreatmentLabel">Supprimer </string>
+
+  <string name="TreatmentDetailsProcedureCode">Code de procédure</string>
+  <string name="TreatmentDetailsToothCode">Code des dents</string>
+  <string name="TreatmentDetailsToothSurface">Surface des dents</string>
+  <string name="TreatmentDetailsDentistFee">Honoraires du dentiste</string>
+  <string name="TreatmentDetailsLabCharge">Frais de laboratoire</string>
+  <string name="TreatmentDetailsTotalAmountCharged">Montant total facturé</string>
+  <string name="TreatmentDetailsAmountPaidAlt">Montant payé par l\'autre assureur</string>
+   <string name="TreatmentDetailsAmountPaidGP">Montant payé par un régime public ou programme gouvernemental</string>
+  <string name="claimTreatmentItemDescLabel">Description de l\'article</string>
+    <string name="claimTreatmentItemDescLabelPhone">Description de l\'article:</string>
+    <string name="claimTreatmentPickupDateLabel">Date de prise de possession</string>
+    <string name="claimTreatmentPickupDateLabelPhone">Date de prise de possession:</string>
+    <string name="claimTreatmentQtyLabel">Quantité</string>
+    <string name="claimTreatmentQtyLabelPhone">Quantité:</string>
+    <string name="claimTreatmentTotalChargedLabel">Montant total facturé</string>
+    <string name="claimTreatmentTotalChargedMILabel">Montant total chargé pour les articles médicaux</string>
+    <string name="claimTreatmentTotalChargedMILabelPhone">Montant total chargé pour les articles médicaux:</string>
+    <string name="claimTreatmentTotalChargedLabelPhone">Montant total facturé:</string>
+    <string name="claimTreatmentGSTLabel">TPS/TVH incluse dans le total</string>
+    <string name="claimTreatmentGSTLabelPhone">TPS/TVH incluse dans le total:</string>
+    <string name="claimTreatmentPSTLabel">TVP incluse dans le total</string>
+    <string name="claimTreatmentPSTLabelPhone">TVP incluse dans le total:</string>
+    <string name="claimTreatmentReferralLabel">Info-recommandation</string>
+    <string name="claimTreatmentMonthlyDateLabel">Date du paiement mensuel</string>
+    <string name="claimTreatmentMonthlyDateLabelPhone">Date du paiement mensuel:</string>
+    <string name="claimTreatmentOrthodonticFeeLabel">Frais mensuels soins d\'orthodontie</string>
+    <string name="claimTreatmentOrthodonticFeeLabelPhone">Frais mensuels soins d\'orthodontie:</string>
+
+    <string name="claimSubmitTOSTitleLabel">Termes et accord</string>
+    <string name="claimSubmitTOS">Je confirme que toute l\'information fournie à l\'aide de cette soumission de demande de règlement en ligne de {0} est complète et exacte. Je comprends que toute l\'information, y compris celle à caractère personnel, que j\'ai fournie à {1} à mon sujet et à celui de mes personnes à charge, sera utilisée par {2} l\'évaluation des demandes de règlement et tous autres services nécessaires pour l\'administration de nos garanties qui pourraient inclure l\'échange d\'information avec d\'autres intervenants dans le but d\'administrer cette demande de règlement.\n\nJe suis autorisé(e) par mon(ma) conjoint(e) et(ou) mes personnes à charge à divulguer et recevoir de l\'information à leur sujet qui sera utilisée à ces fins. Mon(ma) conjoint(e) et(ou) mes personnes à charge comprennent que cette information pourrait être vue par moi, le(la) détenteur(trice) de la carte.</string>
+    <string name="claimSubmitAgreeLabel">Termes et accord</string>
+
+    <string name="claimSubmissionConfirmLabel">Confirmer votre demande de règlement</string>
+    <string name="claimSubmissionPlanInfoLabel">Info-régime</string>
+    <string name="claimSubmissionGSIDLabelPhone">Numéro {0}:</string>
+    <string name="benefitSubmissionGSIDLabel">Numéro d\'identification {0} :</string>
+    <string name="benefitSubmissionGSIDNocolonLabel">Numéro d\'identification {0}</string>
+    <string name="claimSubmissionParticipantLabel">Nom du membre</string>
+    <string name="claimSubmissionParticipantLabelPhone">Nom du membre :</string>
+
+    <string name="claimSubmissionMissingTreatmentMsg">Aucun renseignement sur la demande de règlement n\'a été entré.</string>
+
+    <string name="claimSubmissionClaimDetailsLabel">Détails de la demande de règlement</string>
+    <string name="claimSubmissionTreatmentDetails">Détails du traitement</string>
+    <string name="claimSubmissionTOS">Les renseignements ci-dessus seront soumis à {0}. SVP vérifier leur exactitude avant de continuer. S\'il vous faut modifier les renseignements, SVP cliquer sur le bouton « Retour » pour retourner au formulaire de soumission de demande de règlement. Sinon, cliquer sur le bouton « Soumettre » pour soumettre la demande de règlement à {1}.</string>
+
+    <string name="claimResultTitleLabel">RÉSULTANT DE SOUMISSION DE DEMANDE DE RÉGLEMENT</string>
+    <string name="claimResultSpouseTitleLabel">Résultats de soumission de demande de règlement – Compte de votre conjoint(e)</string>
+    <string name="claimResultSubmissionDateLabel">Date de soumission</string>
+    <string name="claimResultSubmissionDateLabelPhone">Date de soumission:</string>
+    <string name="claimResultTotalsLabel">Totaux</string>
+    <string name="claimResultClaimedAmountLabel">Montant demandé ($ CA) </string>
+    <string name="claimResultClaimedAmountLabelPhone">Montant demandé ($ CA) : </string>
+    <string name="claimResultOtherAmountLabel">Autre montant payé ($ CA) </string>
+    <string name="claimResultOtherAmountLabelPhone">Autre montant payé ($ CA) : </string>
+    <string name="claimResultDeductibleLabel">Franchise </string>
+    <string name="claimResultDeductibleLabelPhone">Franchise : </string>
+    <string name="claimResultCopayLabel">Quote-part </string>
+    <string name="claimResultCopayLabelPhone">Quote-part : </string>
+    <string name="claimResultPaidAmountLabel">Montant payé ($ CA) </string>
+    <string name="claimResultPaidAmountLabelPhone">Montant payé ($ CA) : </string>
+    <string name="claimResultClaimDetailsLabel">Détails de la demande de règlement</string>
+    <string name="claimResultFormNumberLabel">Numéro de formulaire</string>
+    <string name="claimResultFormNumberLabelPhone">Numéro de formulaire:</string>
+    <string name="claimResultServiceDateLabel">Date du service</string>
+    <string name="claimResultServiceDateLabelPhone">Date de la demande:</string>
+    <string name="claimResultExpenseDateLabelPhone">Date de la dépense:</string>
+    <string name="claimResultServiceDescriptionLabel">Description du service</string>
+    <string name="claimResultServiceDescriptionLabelPhone">Code de Procedure:</string>
+    <string name="claimResultTypeOfExpenseLabelPhone">Type de dépense:</string>
+    <string name="claimResultClaimStatusLabel">Statut de la demande de règlement</string>
+    <string name="claimResultClaimStatusLabelPhone">Statut de la demande de règlement:</string>
+    <string name="claimResultNotification">*Les paiements pour les demandes de règlement au statut «Attente de paiement» seront traités le jour ouvrable suivant.</string>
+    <string name="claimResultHCSANotification">*Le paiement des demandes de règlement au statut de «En attente de paiement» sera traité le jour ouvrable suivant, selon votre solde de {0}.</string>
+    <string name="claimResultPlanLimitLabel">Limites du régime</string>
+    <string name="claimResultParticpantLabel">Membre / Famille </string>
+    <string name="claimResultStartDateLabel">Date de début</string>
+    <string name="claimResultAmountUsedLabel">Montant utilisé à ce jour</string>
+    <string name="claimResultUnittoDateLabel">Situations ou unités à ce jour</string>
+    <string name="claimResultAuditNotificationLabel">Avis de vérification</string>
+    <string name="claimResultAuditNotificationMsgHeader">Numéro de référence de formulaire : {0}</string>
+    <string name="claimResultAuditNotificationMsg">Votre demande de règlement a été sélectionnée pour un examen de vérification. SVP noter qu\'une intervention immédiate est requise de votre part. SVP ouvrir une session aux Services en ligne des membres du régime pour répondre à la demande de vérification.</string>
+    <string name="claimResultAuditNotificationInstructionLabel">Instructions pour avis de vérification</string>
+    <string name="claimResultAuditNotificationAlertMsg">
+      Votre demande de règlement a été sélectionnée au hasard pour un examen de vérification. Une intervention immédiate de votre part est requise. Vous devez répondre à %1$s dans les 30 prochains jours. SVP suivre les étapes ci-après :\n\n
+      •   Ouvrir une session aux Services en ligne des membres du régime de %2$s à greenshield.ca;\n
+      •   Une fois la session ouverte, un message d\'avis de rappel de vérification sera immédiatement affiché;\n
+      •   Cliquer sur «Visualiser la liste de vérifications» pour voir votre (vos) vérification(s) de demande de règlement en instance;\n
+      •   Cliquer sur le numéro du formulaire en question pour voir les détails de la vérification;\n
+      •   Télécharger de façon pratique en ligne votre facture et toute autre documentation justificative (comme une ordonnance, le cas échéant).\n
+      •   Ou, vous pouvez imprimer le formulaire d\'avis de vérification et l\'envoyer par la poste, accompagné de la documentation requise, à l\'adresse indiquée au bas de la page d\'avis.\n
+    </string>
+
+    <string name="claimResultSubmitAnotherClaim">Soumettre une autre demande de règlement</string>
+
+    <string name="claimTreatmentDateMonthlyTreatmentLabel">Date du traitement mensuel</string>
+    <string name="claimTreatmentDateOfPurchaseLabel">Date de l\'achat/service</string>
+    <string name="claimTreatmentDateOfPurchaseLabelPhone">Date de l\'achat/service:</string>
+    <string name="claimTreatmentTypeEyewearLabel">Sélectionner le type d\'article de lunetterie</string>
+    <string name="claimTreatmentTypeEyewearLabelPhone">Sélectionner le type d\'article de lunetterie:</string>
+    <string name="claimTreatmentLenstypeLabel">Sélectionner le type de lentille</string>
+    <string name="claimTreatmentFrameAmountLabel">Montant de monture</string>
+    <string name="claimTreatmentFrameAmountLabelPhone">Montant de monture:</string>
+    <string name="claimTreatmentEyeglassAmountLabel">Montant pour lentilles de lunettes</string>
+    <string name="claimTreatmentEyeglassAmountLabelPhone">Montant pour lentilles de lunettes:</string>
+    <string name="claimTreatmentFeeAmountLabel">Montant des honoraires</string>
+    <string name="claimTreatmentFeeAmountLabelPhone">Montant des honoraires:</string>
+    <string name="claimTreatmentAckLabel">Je reconnais que l\'article de lunetterie est aux fins de correction de la vue</string>
+    <string name="claimTreatmentAckLabelPhone">Je reconnais que l\'article de lunetterie est aux fins de correction de la vue:</string>
+    <string name="claimTreatmentTotalAmountChargedLabel">Montant total facturé</string>
+    <string name="claimTreatmentDateOfExaminationLabel">Date de l\'examen</string>
+    <string name="claimTreatmentDateOfExaminationLabelPhone">Date de l\'examen:</string>
+    <string name="claimTreatmentTotalAmountExaminationLabel">Total de l\'examen</string>
+    <string name="claimTreatmentTotalAmountExaminationLabelPhone">Total de l\'examen:</string>
+
+    <string name="claimTreatmentMaxEntryError">Cinq demandes de règlement peuvent être ajoutées au maximum</string>
+
+    <string name="claimTOSTitle">Select the type of treatment or service that you are claiming</string>
+    <string name="claimNoProviderErrorTitle">Aucun fournisseur de soins de santé trouvé</string>
+    <string name="claimNoProviderErrorDesc">Aucun fournisseur de soins de santé correspondant n\'a été trouvé</string>
+
+    <string name="claimNoMatchedDependent">L\'autre numéro {0} ne correspond pas à une personne à charge.</string>
+    <string name="claimMultipleMatch">Malheureusement, cette demande de règlement ne peut être traitée par l\'appli mobile. Veuillez la soumettre aux Services en ligne des membres du régime.</string>
+    <string name="claimInvalidSecondaryPlanNumber">Le numéro de régime secondaire entré ne peut être utilisé pour traiter votre demande de règlement secondaire.</string>
+
+    <string name="claimInvalidOnlineClaim">Votre régime de garanties secondaire ne permet pas la soumission de demandes de règlement en ligne. Veuillez soumettre manuellement la demande de règlement pour la protection à titre de votre régime secondaire.</string>
+    <string name="claimInvalidGSCNumber">Autre numéro {0} invalide</string>
+    <string name="claimInvalidClaim"></string>
+
+    <string name="prescriptionDetailsLabel">Détails de l\'ordonnance</string>
+    <string name="prescriptionDetailsErrorLabel">Détails de l\'ordonnance incomplets</string>
+
+    <string name="leftSphereLabel">Sphère gauche</string>
+	<string name="rightSphereLabel">Sphère droite</string>
+
+	<string name="leftCylinderLabel">Cylindre gauche</string>
+	<string name="rightCylinderLabel">Cylindre droit</string>
+
+	<string name="leftAxisLabel">Axe gauche</string>
+	<string name="rightAxisLabel">Axe droit</string>
+
+	<string name="leftPrismLabel">Prisme gauche</string>
+	<string name="rightPrismLabel">Prisme droit</string>
+
+	<string name="leftBifocalLabel">Bifocal gauche</string>
+	<string name="rightBifocalLabel">Bifocal droit</string>
+
+
+    <!-- Button -->
+    <string name="OK">OK</string>
+    <string name="continueBtn">Continuer</string>
+    <string name="yesContinueBtn">Oui, continuer</string>
+  	<string name="noCancelBtn">Non, annuler</string>
+    <string name="newSearchBtnText">NOUVELLE RECHERCHE</string>
+    <!-- Claims Error Message-->
+    <string name="claimTreatmentTypeLabelerror">SVP entrer tous les détails du traitement.</string>
+    <string name="claimTreatmentTotalLabelInvalidTotal">Montant total de la visite invalide</string>
+    <string name="claimTreatmentTotalLabelMissingTotal">Vous devez préciser le montant total de la visite.</string>
+    <string name="claimTreatmentTotalLabelInvalidAC">Montant payé par l\'autre assureur invalide</string>
+    <string name="claimTreatmentDateLabelMissingDate">Vous devez préciser une date de traitement.</string>
+    <string name="claimTreatmentTotalLabelIMissingAC">Vous devez préciser le montant payé par l\'autre assureur.</string>
+    <string name="claimTreatmentMissingPickupDateLabel">Vous devez préciser la date de prise de possession.</string>
+    <string name="claimTreatmentInvalidQtyLabel">Quantité invalide</string>
+    <string name="claimTreatmentMissingQtyLabel">Vous devez préciser la quantité.</string> 
+    <string name="claimTreatmentTotalChargedLabelInvalid">Vous devez préciser le montant total facturé.</string>
+    <string name="claimTreatmentMonthlyDateLabelMissing">Vous devez préciser une date de paiement mensuel.</string>
+    <string name="claimTreatmentOrthodonticFeeLabelMissing">Vous devez préciser les frais mensuels d\'orthodontie.</string>
+    <string name="claimTreatmentDateOfPurchaseLabelMissing">You must specify the Date Of Purchase</string> <!-- French Transalation -->
+    <string name="claimTreatmentTypeEyewearLabelMissing">Vous devez préciser le type de lunetterie.</string>
+    <string name="claimTreatmentAckLabelText">Vous devez préciser si la lunetterie est aux fins de correction. Les demandes de règlement qui ne sont pas aux fins de correction ne sont pas admissibles.</string>
+    <string name="claimTreatmentLenstypeLabelMissing">Vous devez préciser un montant de verres.</string>
+    <string name="claimTreatmentFrameAmountLabelMissing">Vous devez préciser un montant de monture.</string>
+    <string name="claimTreatmentFrameAmountLabelInvalid">Montant de monture invalide</string>
+    <string name="claimTreatmentEyeglassAmountLabelInvalid">Montant de verres invalide</string>
+    <string name="claimTreatmentEyeglassAmountLabelMissing">Vous devez préciser un montant de verres.</string>
+    <string name="claimTreatmentDateOfExaminationLabelMissing">Vous devez indiquer la date de l\'examen de la vue</string>
+    <string name="claimTreatmentDateOfExaminationLabelInvalid">La date de l\'examen de la vue ne peut être postérieure.</string>
+    <string name="claimTreatmentTotalAmountExaminationLabelInvalid">Montant total de l\'examen de la vue invalide. Tentez d\'utiliser une virgule au lieu du point pour vos décimales</string>
+    <string name="claimTreatmentTotalAmountExaminationLabelMissing">Vous devez indiquer le montant total pour l\'examen de la vue</string>
+    <string name="claimSpecifyGSCNumberErrorInvalid">Autre numéro {0} invalide</string>
+
+    <!-- claim treatment add entry -->
+    <string name="claimTreatmentMissingTypeofTreatment">Vous devez préciser le type de traitement.</string>
+    <string name="claimTreatmentInvalidDateofTreatment">La date du traitement ne peut être une date ultérieure.</string>
+    <string name="claimTreatmentMissingTotalAmount">Vous devez préciser le montant total de la visite.</string>
+
+    <string name="claimTreatmentMissingItemDescription">Vous devez préciser le type d\'article médical.</string>
+    <string name="claimTreatmentMissingPickupDate">La date de la prise de possession ne peut être postdatée</string>
+    <string name="claimTreatmentInvalidPickupDate">La date de la prise de possession ne peut être postdatée</string>
+    <string name="claimTreatmentInvalidQuantity">Quantité invalide</string>
+    <string name="claimTreatmentMissingQuantity">Vous devez préciser la quantité.</string>
+    <string name="claimTreatmentInvalidTotalAmount">Montant total de la visite invalide.</string> 
+
+    <string name="claimTreatmentInvalidDateOfMonthlyTreatment">La date du paiement mensuel ne peut être une date future</string>
+    <string name="claimTreatmentMissingDateOfMonthlyTreatment">La date du paiement mensuel ne peut être une date future</string>
+    <string name="claimTreatmentInvalidOrthodonticMonthlyFee">Frais mensuels d\'orthodonties invalides. Tentez d\'utiliser une virgule au lieu du point pour vos décimales</string>
+    <string name="claimTreatmentMissingOrthodonticMonthlyFee">Vous devez préciser les frais mensuels d\'orthodontie.</string>
+
+    <string name="claimTreatmentInvalidDateOfExamination">La date de l\'examen de la vue ne peut être postérieure.</string>
+    <string name="claimTreatmentMissingDateOfExamination">La date de l\'examen de la vue ne peut être postérieure.</string>
+    <string name="claimTreatmentInvalidTotalAmountOfExamination">Montant total de l\'examen de la vue invalide. Tentez d\'utiliser une virgule au lieu du point pour vos décimales</string>
+    <string name="claimTreatmentMissingTotalAmountOfExamination">Vous devez indiquer le montant total pour l\'examen de la vue</string>
+
+    <string name="claimTreatmentInvalidDateOfPurchase">La date de réception de l\'article de lunetterie ne peut être une date ultérieure</string>
+    <string name="claimTreatmentMissingDateOfPurchase">La date de réception de l\'article de lunetterie ne peut être une date ultérieure</string>
+    <string name="claimTreatmentMissingTypeOfEyewear">Vous devez préciser le type de lunetterie.</string>
+    <string name="claimTreatmentAcknowledgedEyewareIsCorrective">Vous devez préciser si la lunetterie est aux fins de correction. Les demandes de règlement qui ne sont pas aux fins de correction ne sont pas admissibles.</string>
+    <string name="claimTreatmentInvalidTotalAmountCharged">Montant total facturé non valide. Tentez d\'utiliser une virgule au lieu du point pour vos décimales</string>
+    <string name="claimTreatmentMissingTotalAmountCharged">Vous devez préciser le montant total facturé.</string>
+
+    <string name="claimTreatmentInvalidFrameAmount">Montant de monture invalide</string>
+    <string name="claimTreatmentMissingFrameAmount">Vous devez préciser un montant de monture.</string>
+
+    <string name="claimTreatmentInvalidEyeglassLensesAmount">Montant de verres invalide</string>
+    <string name="claimTreatmentMissingEyeglassLensesAmount">Vous devez préciser un montant de verres.</string>
+
+    <string name="claimTreatmentDeleteTitle">Supprimer</string>
+    <string name="claimTreatmentDeleteMsg">Voulez-vous supprimer le détail de ce traitement?</string>
+
+
+    <string name="claimTreatmentInvalidTotalAC">Montant payé par l\'autre assureur invalide.</string>
+    <string name="missingAmountPaidByPpOrGpValidation">Si non applicable ou si la demande de prestations a été soumise à un régime public ou programme gouvernemental et que le remboursement a été 0,00$, entrez 0,00 dans ce champ.</string>
+    <string name="invalidAmountPaidByPpOrGpValidation">Montant total erroné facturé</string>
+    <string name="claimTreatmentMissingTotalAC">Vous devez préciser le montant payé par l\'autre assureur.</string>
+    <string name="claimTreatmentBadValueAC">Le montant total de la consultation doit être supérieur ou égal au montant payé par l\'autre assureur. Tentez d\'utiliser une virgule au lieu du point pour vos décimales.</string>
+
+    <string name="claimOtherGscPlanParticipantListLabel">Sélectionner le membre du régime</string>
+    <string name="claimOtherGscPlanParticipantListError">Plus d\'une personne à charge couverte par le régime secondaire de {0} a été trouvée. SVP sélectionner la personne qu\'il faut de la liste déroulante.</string>
+
+    <string name="claimUnsavedMsgTitle">Données non enregistrées</string>
+    <string name="claimUnsavedMsg">Vous avez entré des données d\'une demande de règlement qui n\'a pas été soumise. Si vous quittez cet écran, vos données seront perdues. Voulez-vous quitter l\'écran?</string>
+    <string name="leaveBtn">Quitter</string>
+
+    <string name="claimTreatmentDateTooOld">La date du traitement doit se situer au cours des 24 derniers mois.</string>
+    <string name="claimMonthlyPaymentDateTooOld">Date du paiement mensuel doit se situer au cours des 24 derniers mois.</string>
+    <string name="claimPickupDateTooOld">Date de prise de possession doit se situer au cours des 24 derniers mois.</string>
+    <string name="claimPurchaseDateTooOld">Date de l\'achat/service doit se situer au cours des 24 derniers mois.</string>
+    <string name="claimExaminationDateTooOld">Date de l\'examen doit se situer au cours des 24 derniers mois.</string>
+
+    <string name="claimEligibilityTreatmentDateTooOld">Date du service: ne peut être antérieur à 12 mois.</string>
+    <string name="claimEligibilityPurchaseDateTooOld">Date de l\'achat/service : ne peut être antérieur à 12 mois.</string>
+
+    <string name="claimEligibilityInvalidDateofTreatment">Date du service: ne peut être une date future</string>
+    <string name="claimEligibilityInvalidDateofPurchase">Date de l\'achat/service : est trop loin dans le temps. Veuillez soumettre une demande d\'admissibilité plus proche de la date de cueillette.</string>
+
+
+    <string name="claimTreatmentLongpressDelete">* Appuyer et maintenir appuyé pour supprimer des éléments de la liste de traitements</string>
+    <string name="claimMassageOntarioMessage">Pour les services fournis en Ontario, veuillez vous assurer que tous les reçus sont signés par le massothérapeute qui a effectué le traitement.</string>
+
+    <string name="claimSecondaryAccountNotRegisteredMsg">Votre conjoint(e) ne s\'est pas inscrit(e) aux Services en ligne des membres du régime et(ou) n\'a pas accepté l\'entente de soumission des demandes de règlement en ligne; nous ne pouvons ainsi traiter la seconde partie de cette demande de règlement en ligne. Pour coordonner vos demandes de règlement avec le régime de garanties {0} de votre conjoint(e) en ligne, demandez-lui (la) de s\'inscrire aux Services en ligne des membres du régime et d\'accepter l\'entente de soumission des demandes de règlement dès aujourd\'hui.</string>
+    <string name="claimSecondaryAccountHasntAcceptedAgreementMsg">Nous ne pouvons pas traiter la seconde partie de cette demande de règlement sous le compte de votre conjoint(e), car il (elle) n\'a pas accepté l\'entente de soumission des demandes de règlement en ligne. Cette entente est présentée lors de votre première soumission d\'une demande de règlement aux Services en ligne des membres du régime.</string>
+    <string name="claimSecondaryAccountDisabledMsg">Nous ne pouvons pas traiter la seconde partie de cette demande de règlement sous le compte de votre conjoint(e), car son compte des Services en ligne des membres du régime a été désactivé. Veuillez soumettre la demande de règlement sous le compte de votre conjoint(e) à {0} à l\'aide d\'un formulaire de demande de règlement sur papier.</string>
+
+    <!-- Benifit // temp fix by sethu -->
+    <string name="checkeligibilitySubtitle">Vérifier l\'admissibilité de {0} pour {1}</string>
+    <string name="checkeligibilitySubtitleSec">Vérifier l\'admissibilité de {0}</string>
+    <!-- end -->
+
+    <string name="MyEligibilityNoResult">Vous n\'avez malheureusement pas accès à l\'admissibilité des garanties.</string>
+
+    <string name="eligibilityCheckTypesSubtitle">Vérifier l\'admissibilité pour l\'une des garanties suivantes</string>
+    <string name="eligibilityPlanParticipantTitle">Membre du régime</string>
+    <string name="eligibilityPlanParticipantSubtitle">Sélectionner le membre du régime</string>
+    <string name="checkeligibilityTitle">Vérifier l\'admissibilité</string>
+    <string name="checkeligibilitySubtitlePart1">"Vérifier l\'admissibilité de "</string>
+    <string name="checkeligibilitySubtitlePart3">" pour "</string>
+    <string name="checkeligibilityTypeoftreatment">Type de traitement</string>
+    <string name="checkeligibilityDateoftreatment">Date du traitement</string>
+    <string name="checkeligibilityTotalamountofvisit">Montant total de la visite</string>
+    <string name="checkeligibilityProvince">Province où le service sera fourni</string>
+    <string name="checkeligibilityNotes1">L\'admissibilité est fondée sur l\'ensemble des demandes de règlement soumises et traitées à ce jour. Les demandes de règlement récentes, qui ont été reçues mais non traitées par {0}, pourraient ne pas être prises en compte dans les résultats. Le traitement doit être administré par un fournisseur de soins de santé agréé dans la province où vous recevez le traitement.\n\nJe conviens que l\'information fournie est complète et précise à ma connaissance.\n</string>
+    <string name="checkeligibilityNotes2">SVP prendre note que cette demande est seulement une vérification d\'admissibilité. Vous ne soumettez pas de véritable demande de règlement.</string>
+    <string name="checkeligibilityLengthoftreatment">Durée du traitement</string>
+    <string name="checkeligibilityLengthoftreatmentPhone">Durée du traitement:</string>
+    <string name="checkeligibilityDateofpurchaseservice">Date d\'achat / du service</string>
+    <string name="checkeligibilityTotalChargeLenses">Total pour les lentilles cornéennes reçues</string>
+    <string name="checkeligibilityTotalChargeGlasses">Total des frais pour lunettes</string>
+    <string name="checkeligibilityTotalChargeExamination">Total des honoraires de l\'examen</string>
+    <string name="checkeligibilityLenstype">Type de lentille</string>
+    <string name="dateofEligibilityMaxDollor">Date d\'admissibilité pour le montant maximum:</string>
+
+    <string name="eligibilitySubmitAnother">Soumettre une autre vérification d\'admissibilité</string>
+
+    <string name="claimseligibilitytitle">Claims Eligibility</string>
+    <string name="claimTreatmentDurationLabel">Duration of Treatment</string>
+
+    <!---Claim Rehydration Dialog -->
+    <string name="claimRehydrationMessage">Données non enregistrées : Vous avez précédemment entré des données pour une demande de réglement qui n\'a pas été soumise. Désirez-vous poursuivre où vous étiez? Cliquez sur non pour effectuer une nouvelle demande de réglement.</string>
+    <string name="claimRehydrationYes">Oui</string>
+    <string name="claimRehydrationNo">Non</string>
+
+    <string name="eligibilityInvalidDateofTreatment">Date of treatment cannot be future dated.</string>
+    <string name="eligibilityInvalidDollarAmount">Montant total de la visite : doit être un montant valide</string>
+    <string name="eligibilityEmptyDollarAmount">Montant total de la visite : doit être entré</string>
+
+    <string name="eligibilityResultsTitle">Résultats d\'admissibilité</string>
+    <string name="eligibilityResultsSubTitle">Date d\'admissibilité</string>
+    <string name="eligibilityResultsDependentParticipantLabel">Numéro de personne à charge : Membre</string>
+    <string name="eligibilityResultsRecallExamLabel">Examen de rappel</string>
+    <string name="eligibilityResultsScalingLabel">Détartrage</string>
+    <string name="eligibilityResultsPolishingLabel">Polissage</string>
+    <string name="eligibilityResultsOrthoticLabel">Date d\'admissibilité</string>
+    <string name="eligibilityInquiryDate">Date de demande de vérification :{0:MMMM dd, yyy HH:mm tt} {1}</string>
+    <string name="eligibilitySubmissionDate">{0:MMMM dd, yyy HH:mm tt} {1}</string>
+
+    <string name="eligibilityResultsOrthoticNotes">Note : La date d\'admissibilité représente la prochaine date admissible pour recevoir votre montant maximum pour des orthèses. Si {0} n\'est pas votre fournisseur principal, votre demande de règlement doit être soumise tout d\'abord à votre fournisseur principal. Cela pourrait altérer votre admissibilité aux garanties.</string>
+    <string name="eligibilityResultsDRENotes">Note : La date d\'admissibilité représente la prochaine date admissible aux garanties habituelles perçues lors de votre bilan de santé. Si {0} n\'est pas votre fournisseur principal, votre demande de règlement doit être soumise tout d\'abord à votre fournisseur principal. Cela pourrait altérer votre admissibilité aux garanties.\n\nNote : L\'admissibilité au détartrage, comme mentionné plus tôt, s\'applique uniquement à la seule unité de détartrage préventif incluse lors d\'un rappel.</string>
+    <string name="eligibilityResultsDateofInquiry">Date de demande de vérification :</string>
+    <string name="eligibilityResultsNotesFPPM">L\'information sur l\'admissibilité est présentée sous réserve du statut de votre couverture actuelle et peut ne refléter aucune demande de règlement récemment soumise (mais non traitée). Tout changement au niveau de la protection (incluant les changements rétroactifs) modifiera la responsabilité de {0}.\n\n
+  Veuillez communiquer avec le Centre de service à la clientèle au {1} pour plus de renseignements sur l\'admissibilité aux garanties.\n\n
+  SVP prendre note que cette demande est seulement une vérification d\'admissibilité. Vous ne soumettez pas de véritable demande de règlement.\n\n</string>
+    <string name="SendBenefitEligibilityInquiryLabel">Envoyer la demande de vérification d\'admissibilité aux garanties</string>
+    <string name="unablebenefitEligibilityLabelFPPM">Impossible de déterminer l\'admissibilité aux garanties.  Veuillez communiquer avec le Centre de service à la clientèle au {0}</string>
+    <string name="checkeligibilityResultNotes1FPPM">Note : L\'information sur l\'admissibilité est présentée sous réserve du statut de votre couverture actuelle et peut ne refléter aucune demande de règlement récemment soumise (mais non traitée). Tout changement au niveau de la protection (incluant les changements rétroactifs) modifiera la responsabilité de {0}.\n\nLe traitement doit être administré par un fournisseur de soins de santé agréé dans la province où vous recevez le traitement.\n\nLe praticien qui administre le service doit être agréé par l\'agence ou l\'association régulatrice de sa province, laquelle doit être reconnue par {1}.\n\nSi vous détenez une protection pour des garanties en vertu de ce régime ou tout autre régime, les garanties seront coordonnées en conformité avec les lignes directrices normales de l\'industrie, élaborées par l\'Association canadienne des compagnies d\'assurances de personnes. Si la protection de {2} est votre régime secondaire, les résultats de la soumission au régime principal modifieront la responsabilité de {3}.\n\nCertains régimes exigent une recommandation médicale pour ce type de service. Si votre régime exige une recommandation médicale et qu\'une recommandation médicale précédente valide n\'est pas au dossier de {4}, la recommandation doit être soumise avec cette demande de règlement.\n\nSi les services sont requis à la suite d\'un accident automobile ou d\'une blessure reliée au travail, vous pourriez ne pas être admissible à un remboursement par {5}.\n\nVous avez encore des questions concernant votre admissibilité? Communiquez avec notre Centre de service à la clientèle au {6}.\n\n</string>
+
+    <string name="eligibilityInquiryTitle">Demande de vérification de éligibilité</string>
+    <string name="eligibilityInquirySubTitle1">Des questions? SVP nous envoyer un courriel sécurisé. Il vous suffit d\'entrer les renseignements demandés ci dessous, d\'écrire votre question et de cliquer sur «Soumettre la demande de vérification», et nous vous répondrons en deux jours ouvrables.</string>
+    <string name="eligibilityInquirySubTitle2">* indique un champ obligatoire</string>
+    <string name="eligibilityInquiryToFieldLabel">Dest. : Représentant de Green Shield</string>
+    <string name="eligibilityInquiryFromFieldLabel">Exp. : </string>
+    <string name="eligibilityInquiryEmailFieldLabel">Votre adresse de courriel : </string>
+    <string name="eligibilityInquiryDisclaimerFieldLabel">Si votre adresse de courriel n\'est pas exacte, nous vous appellerons au(x) numéro(s) de téléphone que vous avez fourni(s). Pour mettre à jour votre adresse de courriel, cliquez sur Mon profil dans le menu de gauche et entrez votre nouvelle adresse.</string>
+    <string name="eligibilityInquiryDisclaimerField2Label">Les services doivent être fournis par un praticien de la santé reconnu légalement ou considéré comme reconnu par Green Shield Canada.</string>
+    <string name="eligibilityInquiryEnterInquiryLabel">Entrer votre demande de vérification ici (limite de 1000 caractères) *</string>
+    <string name="eligibilityInquiryDisclaimerField3Label">Vous pouvez prévoir recevoir une réponse à votre demande dans les 2 jours ouvrables suivants.
+  La technologie utilisée pour l\'envoi des messages de demande de vérification à Green Shield Canada à l\'aide de la fonction «Soumettre la demande de vérification» procure la sécurité et la confidentialité de la communication.</string>
+    <string name="eligibilityInquirySubmitInquiry">Soumettre la demande de vérification</string>
+    <string name="eligibilityInquiryCancelInquiry">Annuler</string>
+    <string name="eligibilityInquiryClearInquiry">Effacer</string>
+    <string name="eligibilityInquiryErrorMessage">Vous avez dépassé le nombre de caractères qui peuvent être entrés dans le champ de demande de vérification.</string>
+    <string name="claimEligibilitySubmissionTitile">Résultats d\'admissibilité</string>
+    <string name="claimEligibilitySubmissionTitileLabel">Résultats de soumission pour</string>
+    <string name="claimEligibilityDateOfTreatment">Date du traitement:</string>
+    <string name="claimEligibilityDateOfExamination">Date de l\'examen:</string>
+    <string name="claimEligibilityDateOfPurchase">Date d\'achat / du service:</string>
+
+    <string name="claimEligibilityServiceDescription">Description du service:</string>
+    <string name="claimEligibilityTotalAmountOfVisit">Montant total de la visite:</string>
+    <string name="claimEligibilityTotalChargeForExamination">Total des honoraires de l\'examen:</string>
+    <string name="claimEligibilityTotalChargeForGlasses">Total des frais pour les lunette:</string>
+    <string name="claimEligibilityTotalChargeForContacts">Montant total pour les lentilles cornéennes reçues:</string>
+    <string name="eligibilityEyeServiceDescription">Description du service</string>
+
+    <string name="claimEligibilityProvince">Province:</string>
+    <string name="claimEligibilityYourPlanWouldPay">Votre régime paierait:</string>
+    <string name="claimEligibilityReasons">Réductions possibles par votre régime:</string>
+    <string name="claimEligibilityDeductibleAmount">Montant de franchise:</string>
+    <string name="claimEligibilityCoPaymentAmount">Montant de quote-part:</string>
+    <string name="claimEligibilityOther">Autre:</string>
+
+    <string name="eligibilityPrescriptionNotChanged">Si votre ordonnance de lunettes n’a pas changé, votre régime rembourserait:</string>
+  	<string name="eligibilityPrescriptionChanged">ou Si votre ordonnance de lunettes a change, votre régime rembourserait :</string>
+
+
+  <string name="eligibilityProTherapists">Thérapeutes professionnels:</string>
+  <string name="eligibilityParticipant">Membre / famille:</string>
+  <string name="eligibilityStartDate">Date de début:</string>
+  <string name="eligibilityAmountUsed">Montant utilisé à ce jour:</string>
+  <string name="eligibilityParamedical">Services paramédicaux:</string>
+  <string name="eligibilityOccurrence">Fréquences ou unites à ce jour:</string>
+  <string name="eligibilityGlasses">Lunettes:</string>
+  <string name="eligibilityVision">Soins de la vue:</string>
+
+
+    <!-- NAV PAGE -->
+    <string name="claimsBtn">mes règlements</string>
+    <string name="myIDCardBtn">ma carte</string>
+    <string name="drugsOnTheGoBtn">médicaments</string>
+    <string name="menuBtn">menu</string>
+
+
+    <!-- LANDING PAGE -->
+    <string name="welcome">BIENVENUE</string>
+    <string name="myClaims">MES DEMANDES DE RÈGLEMENT</string>
+    <string name="myIDCard">MA CARTE D\'IDENTIFICATION</string>
+    <string name="drugsOnTheGo">MÉDICAMENTS À VOTRE PORTÉE</string>
+    <string name="findProvider">TROUVER UN FOURNISSEUR DE SOINS DE SANTÈ</string>
+    <string name="findPharmacy">TROUVER UNE PHARMACIE</string>
+    <string name="myAlerts">MES ALERTES</string>
+    <string name="myAlertsTitle">LISTE DE VÉRIFICATIONS</string>
+    <string name="audits">Vérifications</string>
+    <string name="myBalances">MES SOLDES</string>
+    <string name="termsAndConditions">MODALITÉS</string>
+    <string name="auditDone">Terminé</string>
+    <string name="changeforlife">CHANGERPOURLAVIE</string>
+    <string name="mysettings">MES PARAMÈTRES</string>
+
+          <!-- My Alerts PAGE -->
+    <string name="myAlertsText">Vous avez actuellement une demande ou plus de règlement vérifiée en instance (voir la liste ci après). Vous aurez 30 jours à partir de la date d\'avis de vérification pour fournir les documents de demande de règlement afin d\'appuyer votre soumission. Veuillez cliquer sur un numéro de formulaire ci après pour effectuer la procédure de vérification.\n\nUne fois les documents traités, l\'avis de vérification ne figurera plus dans la liste ci-après.\n\nNOTE IMPORTANTE – Si vous n\'envoyez pas la documentation demandée, l\'option pour vous de soumettre à l\'avenir des demandes de règlement par les Services en ligne des membres du régime sera désactivée.\n\nSi vous avez soumis récemment votre documentation par courrier ou électroniquement, veuillez ne pas tenir compte de ce message. Nous vous remercions d\'avoir répondu à la vérification.\n\nSi vous avez des questions, veuillez appeler notre Centre de service à la clientèle au {0}.</string>
+    <string name="myalertFormNumber">Numéro de formulaire</string>
+    <string name="myalertSubmittedDate">Date de soumission</string>
+    <string name="myalertDueDate">Date d\'échéance</string>
+    <string name="myAlertclaimResultTitleLabel">Avis de vérification</string>
+    <string name="myAlertclaimResultAuditNotificationMsg">Votre demande de règlement a été sélectionnée pour un examen de vérification. SVP noter qu\'une intervention immédiate est requise de votre part. SVP ouvrir une session aux Services en ligne des membres du régime pour répondre à la demande de vérification.</string>
+    <string name="loadingIndicator">Téléchargement....</string>
+    <string name="searchingIndicator">Recherche....</string>
+    <string name="noLocationFound">Impossible de déterminer le lieu actuel, SVP rechercher par adresse ou code postal</string>
+
+    <string name="switch_yes">Oui</string>
+	<string name="switch_no">Non</string>
+
+	<string name="auditServiceDateLabel">Date du service</string>
+	<string name="auditServiceDescLabel">Description du service</string>
+	<string name="auditClaimedAmountLabel">Montant demandé ($ CA)</string>
+	<string name="auditPlanInfoLabel">Info-régime</string>
+  <string name="auditListNotes"><b>Note importante: </b>Si vous ne respectez pas le délai indiqué pour la vérification, vous ne pourrez pas profiter de la soumission de demandes de règlement en ligne en temps réel. Toutes les demandes de règlement devront être téléchargées aux fins d\'examen.</string>
+
+  <!-- Change for Life -->
+   <string name="accept">Accepter</string>
+    <string name="reject">Annuler</string>
+  <!-- ClaimDetailsHCSA -->
+  <string name="claimDetailsNameTitle">Demande(s) de règlement pour {0}</string>
+  <string name="fingerprintSetting">Empreinte digitale</string>
+  <string name="fingerprintSettingPara1">Lorsque les empreintes digitales sont activées, vous pouvez vous connecter à l’aide des fonctions de sécurité par empreintes digitales de votre appareil, ou continuez d’utiliser votre mot de passe existant.</string>
+  <string name="fingerprintSettingPara2">Tout profil avec empreintes digitales inscrit sur cet appareil aura accès à cette application.</string>
+  <string name="fingerprintSettingPara3">Pour vous aider à protéger vos renseignements personnels, ne conservez pas de données d’empreintes digitales autres que les vôtres sur cet appareil.</string>
+  <string name="fingerprintSettingMessageContent">Si votre appareil prend en charge les empreintes digitales, veuillez établir un NIP, inscrire vos empreintes digitales et activer la fonction dans les paramètres de votre appareil Android. Vous devez aussi cocher la case « Mémoriser mon nom d’utilisateur sur cet appareil » à l’écran de connexion.</string>
+  <string name="walletButton">Ajouter au\nportefeuille\nAndroid</string>
+  <string name="cardDescription">Carte d\'identification du membre du régime</string>
+    <string name="biometricsNotAvailable">(French)Fingerprint is not available or not activated</string>
+
+  <!-- Web Claim Submission Text -->
+  <string name="webAgreementTitle">INSCRIPTION POUR DEMANDE DE PRESTATIONS EN LIGNE</string>
+  <string name="webContent1">Pour vous inscrire à la soumission électronique de demandes de prestations, veuillez lire l’accord suivant, puis sélectionner le bouton Accepter. Cela vous autorisera à soumettre des demandes de prestations électroniques à {0} par le biais de notre site Web et de notre appli mobile. Si vous ne désirez pas vous inscrire maintenant, sélectionnez le bouton Annuler pour revenir à la page d’accueil.</string>
+  <string name="webContentSubTitle1_WithDate">Nouvelles modalités à compter du 1er mai 2018.</string>
+  <string name="webContentSubTitle2">Services en ligne des membres du régime</string>
+  <string name="webContentSubTitle3">Entente de soumission de demande de prestations par le Web</string>
+  <string name="webContent2">Si vous acceptez et si vous êtes d’accord de respecter les conditions, veuillez cliquer sur le bouton « Accepter » pour continuer.</string>
+  <string name="webContentSubTitle4">Conditions</string>
+  <string name="webContent3">À titre de membre du régime, je suis d’accord que tous les renseignements fournis en utilisant la soumission de demandes de prestations des Services en ligne des membres du régime ou de l’appli mobile seront complets et exacts.</string>
+  <string name="webContent4">Dans le cas où les renseignements que j’ai fournis sont incomplets ou inexacts, je comprends que {0} se réserve le droit de supprimer mes privilèges de demandes de prestations en ligne. Je comprends que les renseignements que je fournis à {1} à mon sujet et au sujet des personnes à ma charge serviront à {2} pour le règlement des demandes et à tout autre service nécessaire à l’administration de mes prestations, y compris l’échange de renseignements avec des tierces parties afin d’administrer mon régime de prestations.</string>
+  <string name="webContent5">J’ai l’autorisation de mon (ma) conjoint(e), ou de mes personnes à charge, de divulguer et de recevoir des renseignements à leur sujet utilisés à ces fins. Mon (Ma) conjoint(e) et/ou les personnes à ma charge comprennent que ces renseignements seront vus par moi, le (la) détenteur(trice) de la carte et qu’ils seront utilisés par {0} et les autres parties indiquées par cette entente aux fins stipulées dans cette entente.</string>
+  <string name="webContent6">Je comprends et je suis d’accord que je suis responsable de conserver le ou les reçus originaux pendant 13 mois suivant la date de la ou des soumissions de demande de prestations. Lors de la soumission des demandes de règlement en ligne, {0} pourrait sélectionner ma demande aux fins de vérification. Dans ce cas, il m\'incombera de produire le ou les reçus originaux dans les 30 jours qui suivent.</string>
+  <string name="webContent7">Je comprends que si ma demande de prestations est sélectionnée aux fins de vérification, cela pourrait entraîner une vérification complète de certaines ou toutes demandes précédentes soumises en mon nom. Durant ma sélection aux fins d’une vérification complète, ma capacité de soumission de demandes de prestations aux Services en ligne des membres du régime et à l’appli sera temporairement désactivée.</string>
+  <string name="webContent8">Si je ne peux produire le ou les reçus à {0} ou fournis des renseignements faux, incomplets ou trompeurs, {1} se réserve le droit de classifier ma demande de prestations comme versement excédentaire et {2} aura le droit d’exiger le remboursement du paiement et/ou la déduction de telles sommes des prochaines demandes de prestations. D’autre part, l’accès à la soumission de demandes de prestations des Services en ligne des membres du régime et de l’appli mobile sera révoqué et ma couverture pourra être refusée et/ou résiliée.</string>
+  <string name="webContent9">En cas de sélection aux fins de vérification, j’autorise l’échange de renseignements, le cas échéant, entre {0} et d’autres parties, y compris mais sans s’y limiter les praticiens en soins de santé, les fournisseurs d’appareils médicaux et les assureurs, et seulement lorsque lesdits renseignements sont nécessaires aux fins d’administrer les demandes de prestations et/ou de confirmer l’exactitude des renseignements de la ou des demandes soumises en mon nom et/ou au nom de mon (ma) conjoint(e) et/ou des personnes à ma charge.</string>
+  <string name="webContent10">En cas d’activité frauduleuse soupçonnée relative à la soumission de demandes de prestations des Services en ligne des membres du régime ou de l’appli mobile en mon nom et/ou au nom de mon (ma) conjoint(e) et/ou des personnes à ma charge, je reconnais et je suis d’accord de divulguer lesdits renseignements aux parties pertinentes, y compris mais sans s’y limiter le promoteur de régime et les organismes de réglementation et d’application de la loi.</string>
+  <string name="webContent11">{0} maintient une base de données nationale de fournisseurs ainsi que leur association avec tout organisme de réglementation, association professionnelle ou programme éducatif. {1} examine chaque fournisseur afin de déterminer quels avantages/services sont admissibles pour le remboursement en conjonction avec le régime de prestations de soins de santé du membre. Lors de la soumission d’une demande de prestations en ligne, avec un fournisseur qui n’est pas enregistré avec {2}, les titres de compétence de ce fournisseur seront vérifiés et ma demande de prestations sera traitée en conséquence.</string>
+  <string name="webContent12">L’acceptation des conditions de l’entente de soumission de demande de prestations par le Web s’applique à toutes les demandes de prestations soumises au cours d’une session en ligne.</string>
+  <string name="webContent13">Si je soumets plusieurs demandes de prestations (pour une autre personne à charge et/ou fournisseur) au cours d’une session en ligne, mon acceptation des conditions de l’entente de soumission de demande de prestations par le Web s’applique à toutes les demandes de prestations soumises.</string>
+  <string name="webContent14">En cliquant sur le bouton « Accepter », cela constitue ma signature numérique (qui équivaut à une signature par écrit) et je reconnais être réputé(e) d’avoir lu, compris, accepté et être d’accord d’être lié(e) par ces conditions.</string>
+  <string name="webContent15">Pour obtenir de plus amples renseignements sur nos politiques et procédures en matière de confidentialité, veuillez consulter la page Modalités - Confidentialité.</string>  
+  <!-- end -->
+
+  <!-- Direct Deposit Text> -->
+  <string name="disclaimer3"><b>N’oubliez pas: </b>, à l’avenir, il vous incombera de mettre à jour tout renseignement modifié se rapportant à votre dépôt direct.</string>
+  <!-- end -->
+
+  <!-- ID Card Text> -->
+  <string name="thirdPartyAppMessage">You are moving out of app and opening a third party app(FR).</string>
+  <!-- end -->
+
+</resources>

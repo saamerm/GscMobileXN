@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:paddingBottom ="5dp"
+	android:background="@color/white">
+    <LinearLayout
+        android:duplicateParentState="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <gsc.HeaderTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            local:MvxBind="Text ClaimDetails"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="true" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp">
+            <gsc.LeagueTextView
+                local:MvxBind="Text SelectedParticipant.FullName"
+                android:textColor="@color/claim_text_grey"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_weight="1.0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left"
+                android:layout_marginTop="@dimen/claim_review_zero"
+                android:layout_gravity="left" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right">
+                <gsc.LeagueTextView
+                    android:id="@+id/currentPage"
+                    android:textColor="@color/claim_text_grey"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingRight="4dp"
+                    android:layout_marginTop="@dimen/claim_review_zero"
+                    android:layout_gravity="right"
+                    local:MvxBind="Text SearchResults.Count" />
+                <gsc.LeagueTextView
+                    local:MvxBind="Text Of"
+                    android:textColor="@color/claim_text"
+                    android:textSize="20sp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="20dp"
+                    android:paddingRight="4dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:fontFamily="LeagueGothic"
+                    android:layout_marginTop="@dimen/claim_review_zero"
+                    android:layout_gravity="right" />
+            <!--start-->
+                <gsc.LeagueTextView
+                    local:MvxBind="Text SearchResults.Count"
+                    android:textColor="@color/claim_text_grey"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_marginTop="@dimen/claim_review_zero"
+                    android:layout_gravity="right" />
+            <!-- android:text="1234567890" -->
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:gravity="top"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            
+            android:background="@drawable/HCSABorderTextViewNormal">
+            <BindableViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingBottom="10dp"
+                local:MvxItemTemplate="@layout/item_claimhistorydetailsviewpager_view"
+                local:MvxBind="ItemsSource SearchResults; ItemPageSelected ItemPageChangedCommand; PageSelected PageChangedCommand"
+                />              
+        </LinearLayout>
+        <dk.ostebaronen.droid.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/indicator"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"                    
+                android:layout_height="30dp"
+                android:background="@color/white"
+                android:layout_width="match_parent" />      
+    </LinearLayout>
+</ScrollView>

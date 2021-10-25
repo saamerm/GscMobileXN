@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/med_grey"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/idcardpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1"
+        android:background="@android:color/transparent">
+
+        <LinearLayout
+            android:id="@+id/cardContainer1"
+            android:layout_width="480dp"
+            android:layout_height="320dp"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <include layout="@layout/CardLayout" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardContainer2"
+            android:layout_width="480dp"
+            android:layout_height="320dp"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/cardBackContainer"
+                android:layout_width="480dp"
+                android:layout_height="320dp"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent">
+
+                <RelativeLayout
+                    android:id="@+id/cardBackWrapper"
+                    android:layout_width="480dp"
+                    android:layout_height="320dp"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/cardImageBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/GSC_back_travel" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.view.ViewPager>
+
+    <dk.ostebaronen.droid.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/med_grey"
+        android:padding="10dip" />
+</LinearLayout>

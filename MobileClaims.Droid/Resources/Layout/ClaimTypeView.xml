@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+	android:background="@color/white">
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/claim_margin"
+        android:paddingRight="@dimen/claim_margin"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <gsc.HeaderTextView
+            android:id="@+id/myClaimsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            local:MvxBind="Text TitleLabel"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="true" />
+        <gsc.NunitoTextViewBold
+            local:MvxBind="Text ChooseTypeOfClaimLabel "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="4dp"
+            android:textSize="13sp"
+            android:textAllCaps="true"
+            android:textColor="@color/claim_text" />
+        <Mvx.MvxSpinner
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/claimtype_spinner"
+            local:MvxBind="ItemsSource ClaimTypes; HandleItemSelected SelectClaimTypeWithoutNavigatingCommand;Prompt ChooseTypeOfClaimLabel"
+            local:MvxItemTemplate="@layout/item_medical_professional_spinner"
+            local:MvxDropDownItemTemplate="@layout/item_medical_professional_spinner_dropdown"
+            android:spinnerMode="dialog" />
+        <gsc.NunitoTextViewBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="13sp"
+            android:textColor="@color/claim_text"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:paddingLeft="4dp"
+            local:MvxBind="Text ChooseTypeOfExpenseLabel ;Visible IsExpenseTypeVisible;"
+            android:orientation="vertical" />
+        <Mvx.MvxSpinner
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            local:MvxBind="ItemsSource ClaimExpenseTypes; SelectedItem SelectedClaimExpenseType, Mode=TwoWay;Visible IsExpenseTypeVisible;HandleItemSelected SelectExpenseTypeWithoutNavigatingCommand;Prompt ChooseTypeOfExpenseLabel "
+            local:MvxItemTemplate="@layout/item_medical_professional_spinner"
+            local:MvxDropDownItemTemplate="@layout/item_medical_professional_spinner_dropdown"
+            android:spinnerMode="dialog" />
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/description_layout"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            local:MvxBind="Visible IsDescriptionVisible"
+            android:background="@drawable/HCSATextViewBorder">
+        <!--<gsc.NunitoTextView
+                android:id="@+id/gsc_title"
+            android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                android:clickable="true"
+                local:MvxBind="Visible IsExpenseTypeDescriptionVisible"
+                android:text="DESCRIPTION" />-->
+            <LinearLayout
+                android:id="@+id/title_label"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+                <gsc.NunitoTextView
+                    android:id="@+id/gsc_title"
+                    android:layout_width="0dp"
+                    android:duplicateParentState="true"
+                    android:layout_weight="0.9"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/claim_text_desc_marg"
+                    android:layout_marginLeft="@dimen/claim_text_desc_marg"
+                    android:layout_marginBottom="@dimen/claim_text_desc_marg"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/desc_text"
+                    android:clickable="false"
+                    local:MvxBind="Text DescriptionLabel" />
+                <ImageButton
+                    android:id="@+id/collapse_expand_button"
+                    android:layout_width="0dp"
+                    android:background="@null"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/Expand_down_arrow_icon"
+                    android:layout_weight="0.1"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="0.0dp"
+                    android:clickable="false"
+                    android:layout_marginTop="15dp" />
+            </LinearLayout>
+            <gsc.NunitoTextView
+                android:id="@+id/gsc_tog_text"
+                android:layout_marginRight="@dimen/claim_text_desc_marg"
+                android:layout_marginLeft="@dimen/claim_text_desc_marg"
+                android:textColor="@color/claim_text"
+                android:textSize="13sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:layout_marginTop="@dimen/claim_text_top_marg"
+                android:orientation="vertical"
+                local:MvxBind="Text Description" />
+        </RelativeLayout>
+        <gsc.NunitoTextViewBold
+            android:layout_width="match_parent"
+            android:textSize="15sp"
+            android:textColor="@color/claim_text"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/claim_margin"
+            android:layout_marginBottom="@dimen/claim_text_bottom_marg"
+            android:lineSpacingMultiplier="1.4"
+            local:MvxBind="Text ChooseMedicalProfessionalTypeLabel ; Visible IsReferralQuestionVisible;"
+            android:orientation="vertical" />
+        <Mvx.MvxSpinner
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/claimMedicalProfessionalLabel"
+            local:MvxBind="ItemsSource MedicalProfessionalTypes; SelectedItem SelectedMedicalProfessionalType, Mode=TwoWay;Visible IsReferralQuestionVisible;HandleItemSelected SelectMedicalProfessionalTypeCommand; "
+            local:MvxItemTemplate="@layout/item_hcsareferraltype_spinner"
+            local:MvxDropDownItemTemplate="@layout/item_hcsareferraltype_spinner_dropdown"
+            android:spinnerMode="dialog" />
+        <gsc.GSCButton
+            android:background="@drawable/ButtonBackground"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            local:MvxBind="Text ContinueLabel;Click ContinueCommand;Visible IsContinueButtonVisible;"
+            android:layout_gravity="center"
+            android:textColor="@drawable/ButtonTextColor"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
+</ScrollView>

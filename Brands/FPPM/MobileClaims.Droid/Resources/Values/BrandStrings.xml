@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>    
+  <string name="app_name">FPPM Assurances</string>
+  <string name="login_instruction">
+    <html>
+      <body style="font-family:AvenirLTStd-Book;">
+        FORGOT YOUR USER ID OR PASSWORD? NEED TO REGISTER? <a href="https://assurances.fppm.qc.ca/Account/Login?ReturnUrl=%2F">CLICK HERE.</a>
+      </body>
+    </html>
+  </string>
+  <string name="gsc">GSC</string>
+  <string name="greenShield">Green Shield</string>
+  <string name="greenshieldcanada">Green Shield Canada</string>
+  <string name="phonenumber">1-888-711-1119</string>
+  <string name="phonenumberFPPM">(514) 527-4161</string>
+
+  <string name="unablebenefitEligibilityLabel">Unable to determine benefit eligibility. Please contact the Customer Service Centre at {0}.</string>
+  <string name="checkeligibilityResultNotes1">Note: Eligibility information is subject to the status of your coverage today and may not reflect any recently submitted (but not processed) claims. Any change in coverage (including retroactive changes) will alter the liability of {0}.\n\nTreatment must be performed by a health provider who is licensed in the province in which you are receiving treatment.\n\nThe practitioner rendering the service must be licensed by their provincial regulatory agency or association, which must be recognized by {1}.\n\nIf you are covered for benefits under this plan as well as another plan, benefits will be coordinated following standard industry guidelines developed by the Canadian Life &amp; Health Insurance Association. If {2} coverage is your secondary plan, the outcome of the submission to the primary plan will alter the liability of {3}.\n\nSome plans require a medical referral for this type of service. If your plan requires a medical referral and a valid previous medical referral is not already on file with {4}, the referral must be submitted with this claim.\n\nIf the services are required due to a motor vehicle accident or a work related injury, you may not be eligible for reimbursement by {5}.\n\nStill have questions regarding your eligibility? Contact our Customer Service Centre at {6}.\n\n</string>
+  <string name="eligibilityResultsNotes">
+    Eligibility information is subject to the status of your coverage today and may not reflect any recently submitted (but not processed) claims. Any change in coverage (including retroactive changes) will alter the liability of {0}.\n\n
+    Please note: This is just an eligibility check. You are not actually submitting a claim.\n\n
+  </string>
+
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="vertical"
+    android:background="@color/background_color">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="50dp"
+            android:layout_centerInParent="true">
+            <Button
+                android:id="@+id/terms_Condition_button"
+                local:MvxBind="Text General"
+                android:background="@drawable/nav_button_background"
+                android:layout_weight="1.0"
+                android:layout_height="75dp"
+                android:layout_width="match_parent"
+                android:textColor="@drawable/nav_button_text_color"
+                android:textSize="28dp" />
+            <Button
+                android:id="@+id/terms_privacy_button"
+                local:MvxBind="Text Privacy"
+                android:background="@drawable/nav_button_background"
+                android:layout_weight="1.0"
+                android:layout_height="75dp"
+                android:layout_width="match_parent"
+                android:textColor="@drawable/nav_button_text_color"
+                android:textSize="28dp" />
+            <Button
+                android:id="@+id/terms_legal_button"
+                local:MvxBind="Text Legal"
+                android:background="@drawable/nav_button_background"
+                android:layout_weight="1.0"
+                android:layout_height="75dp"
+                android:layout_width="match_parent"
+                android:textColor="@drawable/nav_button_text_color"
+                android:textSize="28dp" />
+            <Button
+                android:id="@+id/terms_security_button"
+                local:MvxBind="Text Security"
+                android:background="@drawable/nav_button_background"
+                android:layout_weight="1.0"
+                android:layout_height="75dp"
+                android:layout_width="match_parent"
+                android:textColor="@drawable/nav_button_text_color"
+                android:textSize="28dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_weight="1.0"
+            android:layout_height="match_parent">
+            <WebView
+                android:id="@+id/terms_text_view"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:textSize="18.0dp"
+                android:textColor="@color/dark_grey"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical" />
+        </LinearLayout>
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+			    android:id="@+id/terms_chk_layout"
+		        android:background="@drawable/border_light_grey"
+		        android:gravity="center">
+        <CheckBox
+			    android:id="@+id/terms_chk"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                local:MvxBind="Text IAgreeTC; Checked AcceptedTC"
+                android:textColor="@color/dark_grey"
+                android:layout_marginBottom="10dp"
+                android:textSize="18.0dp"
+                android:drawablePadding="5dp"
+                android:paddingLeft="18dp"
+                android:button="@drawable/checkbox_background"/>
+		</LinearLayout>
+</LinearLayout>

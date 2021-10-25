@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConfirmationOfPaymentCompletedView">
+            <connections>
+                <outlet property="BackToClaimsButton" destination="1902" id="name-outlet-1902"/>
+                <outlet property="SuccessfulAdditionalMessageLabel" destination="0ot-Hs-u2K" id="dft-hV-Z3b"/>
+                <outlet property="SuccessfulLabel" destination="Zc7-Rz-gry" id="name-outlet-Zc7-Rz-gry"/>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QUG-bx-m1P">
+                    <rect key="frame" x="20" y="179" width="374" height="142.33333333333337"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="CVc-T9-Iah">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="73.333333333333329"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Successful message" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zc7-Rz-gry">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ot-Hs-u2K">
+                                    <rect key="frame" x="0.0" y="24.000000000000004" width="374" height="49.333333333333343"/>
+                                    <string key="text">We'll take it from here. The claim will still appear in your audit list, but please accept our email confirmation as verification that we received your documents.</string>
+                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>                                         <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NunitoSans-Regular"/>                                     </userDefinedRuntimeAttributes>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1902" customClass="GSButton">
+                            <rect key="frame" x="52" y="97.333333333333314" width="270" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="S4i-k4-yLa"/>
+                                <constraint firstAttribute="width" constant="270" id="vaU-HH-tQq"/>
+                            </constraints>
+                            <state key="normal" title="RETOUR AU TABLEAU DE BORD"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="CVc-T9-Iah" secondAttribute="trailing" id="5kT-hX-p8E"/>
+                        <constraint firstItem="CVc-T9-Iah" firstAttribute="leading" secondItem="QUG-bx-m1P" secondAttribute="leading" id="ETK-m4-l8D"/>
+                        <constraint firstItem="1902" firstAttribute="top" secondItem="CVc-T9-Iah" secondAttribute="bottom" constant="23.999999999999986" id="QcS-Ph-UuF">
+                            <variation key="heightClass=regular-widthClass=regular" constant="24"/>
+                        </constraint>
+                        <constraint firstItem="CVc-T9-Iah" firstAttribute="top" secondItem="QUG-bx-m1P" secondAttribute="top" id="UWh-7z-00z"/>
+                        <constraint firstAttribute="bottom" secondItem="1902" secondAttribute="bottom" id="Vxg-CI-AMt"/>
+                        <constraint firstItem="1902" firstAttribute="centerX" secondItem="QUG-bx-m1P" secondAttribute="centerX" id="so9-qe-gry"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="QUG-bx-m1P" firstAttribute="top" secondItem="tSN-Bm-zOz" secondAttribute="top" constant="159" id="FuH-bl-GcL"/>
+                <constraint firstItem="QUG-bx-m1P" firstAttribute="leading" secondItem="tSN-Bm-zOz" secondAttribute="leading" constant="20" id="hsx-Jp-xfo"/>
+                <constraint firstItem="tSN-Bm-zOz" firstAttribute="trailing" secondItem="QUG-bx-m1P" secondAttribute="trailing" constant="20" id="iTi-SZ-27f"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="tSN-Bm-zOz"/>
+            <point key="canvasLocation" x="137.68115942028987" y="153.2608695652174"/>
+        </view>
+    </objects>
+</document>

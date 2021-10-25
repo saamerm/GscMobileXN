@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+    <LinearLayout
+        android:background="#efefef"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="left"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/contributionYear"
+            android:textSize="@dimen/spa_cntrbution_txt"
+            android:id="@+id/contribution1"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_height="wrap_content"
+            android:textColor="@color/spa_cont_txt" />
+        <TextView
+            android:textSize="@dimen/spa_cntrbution_txt"
+            android:id="@+id/contribution2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/spa_cont_txt" />
+        <TextView
+            android:text="  "
+            android:textSize="@dimen/spa_cntrbution_txt"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/spa_cont_txt_lgt" />
+        <TextView
+            android:id="@+id/contribution4"
+            android:textSize="@dimen/spa_cntrbution_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="@color/spa_cont_txt_lgt" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_item_account_detail"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:gravity="right"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/spa_cont_txt_lgt"
+            android:padding="@dimen/separator_height">
+            <LinearLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/dsTxtTotalRemaining_txt"
+                    android:text="@string/totalRemaining"
+                    android:textColor="@color/spa_cont_txt"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/spa_cntrbution_sub_txt_header"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dip"
+                    android:layout_weight="1.0"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="left" />
+                <gsc.DollarSignTextView
+                    android:id="@+id/dsTxtTotalRemaining"
+                    android:textColor="@color/highlight_color"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/spa_cntrbution_sub_txt_header"
+                    android:padding="5dip"
+                    android:layout_weight="1.5"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    local:MvxBind="DollarString TotalRemaining" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

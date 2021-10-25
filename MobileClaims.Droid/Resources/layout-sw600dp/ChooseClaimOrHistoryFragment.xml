@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:paddingStart="16dp"
+		android:paddingEnd="16dp"
+		android:background="@color/dark_red"
+		android:gravity="center"
+		android:visibility="gone">
+		<!-- local:MvxBind="Visibility Visibility(ShouldRibbonBeDisplayed); Click OpenAuditCommand" -->
+		<gsc.NunitoTextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:drawableEnd="@drawable/arrow"
+			android:drawablePadding="6dp"
+			android:textSize="18sp"
+			android:textColor="@color/white"
+			local:MvxBind="Text ActionRequiredLabel"/>
+	</LinearLayout>
+
+    <gsc.HeaderTextView
+        android:id="@+id/myClaimsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/myClaims"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textAllCaps="true" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:background="@color/background_color"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center">
+            <gsc.GSCButton
+                android:background="@drawable/ButtonBackground"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:paddingLeft="60dp"
+                android:paddingRight="60dp"
+                android:minWidth="300dp"
+                local:MvxBind="Text ClaimsCommandLabel;Click ClaimCommand"
+                android:textColor="@drawable/ButtonTextColor"
+                android:gravity="center"
+                android:textAllCaps="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center">
+            <gsc.GSCButton
+                android:background="@drawable/ButtonBackground"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:paddingLeft="60dp"
+                android:paddingRight="60dp"
+                android:minWidth="300dp"
+                local:MvxBind="Text ClaimsHistoryLabel;Click ClaimsHistoryCommand;"
+                android:textColor="@drawable/ButtonTextColor"
+                android:gravity="center"
+                android:textAllCaps="true" />
+        </LinearLayout>
+    </LinearLayout>
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textColor="@color/highlight_color"
+		android:textStyle="bold"
+		android:layout_marginLeft="20dp"	
+		android:layout_marginTop="20dp"	
+		local:MvxBind="Text ActiveClaims"/>
+
+	<android.support.v7.widget.RecyclerView
+		android:id="@+id/activeClaimsRecyclerView"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:paddingLeft="20dp"
+		android:paddingRight="20dp"
+		android:layout_marginTop="10dp"/>
+
+		<gsc.NunitoTextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingLeft="20dp"
+		android:paddingRight="20dp"
+		android:layout_marginTop="10dp"
+		android:textColor="@color/black"
+		android:gravity="center_horizontal"
+		android:layout_marginRight="20dp"	
+		android:layout_marginLeft="20dp"
+		local:MvxBind="Text NoActiveClaims; Visibility InvertedVisibility(AreAnyActiveClaims)"/>
+	
+</LinearLayout>

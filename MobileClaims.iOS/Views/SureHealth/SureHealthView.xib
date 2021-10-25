@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SureHealthView">
+            <connections>
+                <outlet property="BackButton" destination="7IX-eT-i4N" id="w0h-1a-7me"/>
+                <outlet property="BusyIndicator" destination="gY0-d8-GVD" id="GKG-nA-Tov"/>
+                <outlet property="ForwardButton" destination="WAI-oS-hLI" id="ZyC-Xg-rA7"/>
+                <outlet property="NavigationContainerView" destination="OjC-ji-LpJ" id="r5k-Ig-3GC"/>
+                <outlet property="NavigationContainerViewTopConstraint" destination="frW-mt-d8t" id="h1R-AX-N1s"/>
+                <outlet property="SureHealthWebView" destination="FmE-gR-Gfu" id="HDF-CQ-icD"/>
+                <outlet property="SureHealthWebViewBottomConstraint" destination="mjP-1m-by4" id="gde-5I-jBu"/>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OjC-ji-LpJ">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7IX-eT-i4N">
+                            <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="0mI-hf-GlP"/>
+                                <constraint firstAttribute="height" constant="44" id="xYc-8v-waI"/>
+                            </constraints>
+                            <state key="normal" image="ArrowBackGray"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAI-oS-hLI">
+                            <rect key="frame" x="88" y="0.0" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="bbQ-hn-hET"/>
+                                <constraint firstAttribute="width" constant="44" id="lpO-d8-cHl"/>
+                            </constraints>
+                            <state key="normal" image="ArrowForwardGray"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="5DA-Sd-vG3"/>
+                        <constraint firstAttribute="bottom" secondItem="WAI-oS-hLI" secondAttribute="bottom" id="E77-g2-HAH"/>
+                        <constraint firstAttribute="bottom" secondItem="7IX-eT-i4N" secondAttribute="bottom" id="TEg-vJ-C0n"/>
+                        <constraint firstItem="7IX-eT-i4N" firstAttribute="top" secondItem="OjC-ji-LpJ" secondAttribute="top" id="Th1-JI-v37"/>
+                        <constraint firstItem="7IX-eT-i4N" firstAttribute="leading" secondItem="OjC-ji-LpJ" secondAttribute="leading" id="UKw-ur-DGW"/>
+                        <constraint firstItem="WAI-oS-hLI" firstAttribute="leading" secondItem="7IX-eT-i4N" secondAttribute="trailing" constant="44" id="VLH-z4-8v5"/>
+                        <constraint firstItem="WAI-oS-hLI" firstAttribute="top" secondItem="OjC-ji-LpJ" secondAttribute="top" id="aqf-SB-LlH"/>
+                    </constraints>
+                </view>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="gY0-d8-GVD">
+                    <rect key="frame" x="197" y="482" width="20" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </activityIndicatorView>
+                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FmE-gR-Gfu">
+                    <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <wkWebViewConfiguration key="configuration">
+                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                        <wkPreferences key="preferences"/>
+                    </wkWebViewConfiguration>
+                </wkWebView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="o66-yE-IYQ"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="FmE-gR-Gfu" firstAttribute="leading" secondItem="o66-yE-IYQ" secondAttribute="leading" id="ANh-3v-Aoa"/>
+                <constraint firstItem="FmE-gR-Gfu" firstAttribute="trailing" secondItem="o66-yE-IYQ" secondAttribute="trailing" id="IAe-H9-qKM"/>
+                <constraint firstItem="OjC-ji-LpJ" firstAttribute="leading" secondItem="o66-yE-IYQ" secondAttribute="leading" id="OqD-kN-UCS"/>
+                <constraint firstItem="FmE-gR-Gfu" firstAttribute="top" secondItem="OjC-ji-LpJ" secondAttribute="bottom" id="Rhe-pN-bxF"/>
+                <constraint firstItem="o66-yE-IYQ" firstAttribute="trailing" secondItem="OjC-ji-LpJ" secondAttribute="trailing" id="YDa-KR-CL3"/>
+                <constraint firstItem="OjC-ji-LpJ" firstAttribute="top" secondItem="o66-yE-IYQ" secondAttribute="top" id="frW-mt-d8t"/>
+                <constraint firstAttribute="bottom" secondItem="FmE-gR-Gfu" secondAttribute="bottom" id="mjP-1m-by4"/>
+            </constraints>
+            <point key="canvasLocation" x="95.652173913043484" y="89.732142857142847"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ArrowBackGray" width="13" height="23"/>
+        <image name="ArrowForwardGray" width="13" height="23"/>
+    </resources>
+</document>

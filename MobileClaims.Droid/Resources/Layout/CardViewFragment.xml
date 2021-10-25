@@ -1,0 +1,263 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:id="@+id/idCardContainer">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/idcardpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_weight="1">
+    <!--        <LinearLayout
+            android:id="@+id/cardContainer1Handle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:background="@android:color/transparent">-->
+        <LinearLayout
+            android:id="@+id/cardContainer1Handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:background="@android:color/transparent">
+            <LinearLayout
+                android:id="@+id/cardContainer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:rotation="90"
+                android:background="@android:color/transparent">
+                <RelativeLayout
+                    android:id="@+id/cardFrontWrapper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <ffimageloading.cross.MvxCachedImageView
+                        android:id="@+id/cardImageFront"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:scaleType="fitCenter"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:visibility="visible"
+                        local:MvxBind="ImagePath Card.FrontImageFilePath;" />
+                    <TextView
+                        android:id="@+id/cardNameText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/cardImageFront"
+                        android:layout_alignTop="@id/cardImageFront"
+                        android:layout_marginTop="100dp"
+                        android:layout_marginLeft="40dp"
+                        android:textStyle="bold"
+                        android:gravity="left"
+                        android:text="Name Test"
+                        local:MvxBind="Text Card.PlanMemberFullName"
+                        android:textColor="#000000"
+                        android:textSize="10sp"
+                        android:layout_alignBaseline="@id/cardImageFront" />
+                    <TextView
+                        android:id="@+id/cardMemberText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/cardImageFront"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="40dp"
+                        android:textStyle="bold"
+                        android:gravity="left"
+                        android:text="0000000"
+                        local:MvxBind="Text Card.PlanMemberID"
+                        android:textColor="#000000"
+                        android:layout_below="@id/cardNameText"
+                        android:textSize="10sp" />
+                    <TextView
+                        android:id="@+id/cardEmployerText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/cardImageFront"
+                        android:layout_below="@id/cardMemberText"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="0dp"
+                        android:gravity="left"
+                        android:text="Employer"
+                        local:MvxBind="Text Card.ClientBusinessName"
+                        android:textColor="#000000"
+                        android:textSize="10sp" />
+                    <TextView
+                        android:id="@+id/cardCommentText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/cardImageFront"
+                        android:layout_below="@id/cardEmployerText"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="0dp"
+                        android:gravity="left"
+                        android:text="Comment"
+                        local:MvxBind="Text Card.Comment"
+                        android:textColor="#000000"
+                        android:textSize="8sp" />
+                    <LinearLayout
+                        android:layout_below="@id/cardCommentText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="20dp"
+                        android:weightSum="3">
+                        <ffimageloading.cross.MvxCachedImageView
+                            android:id="@+id/leftlogo"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:scaleType="fitXY"
+                            android:gravity="left"
+                            android:layout_gravity="left"
+                            android:layout_alignParentLeft="true"
+                            android:adjustViewBounds="true"
+                            android:visibility="visible"
+                            local:MvxBind="ImagePath Card.FrontLeftLogoFilePath;"
+                            android:layout_alignParentTop="true" />
+                        <ffimageloading.cross.MvxCachedImageView
+                            android:id="@+id/midlogo"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="10dp"
+                            android:scaleType="fitXY"
+                            android:gravity="left"
+                            android:layout_gravity="left"
+                            android:layout_alignParentLeft="true"
+                            android:adjustViewBounds="true"
+                            android:visibility="visible"
+                            android:layout_alignParentTop="true" />
+                        <ffimageloading.cross.MvxCachedImageView
+                            android:id="@+id/rightlogo"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="10dp"
+                            android:scaleType="fitXY"
+                            android:gravity="right"
+                            android:layout_gravity="right"
+                            android:layout_alignParentRight="true"
+                            android:adjustViewBounds="true"
+                            android:visibility="visible"
+                            local:MvxBind="ImagePath Card.FrontRightLogoFilePath;"
+                            android:layout_alignParentTop="true" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    <!--        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/cardContainer2Handle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:background="@android:color/transparent">-->
+        <LinearLayout
+            android:id="@+id/cardContainer2Handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:rotation="90"
+            android:background="@android:color/transparent">
+            <LinearLayout
+                android:id="@+id/cardContainer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent">
+                <RelativeLayout
+                    android:id="@+id/cardBackWrapper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                  <ffimageloading.cross.MvxCachedImageView
+                      android:id="@+id/cardImageBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:scaleType="fitCenter"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        local:MvxBind="ImagePath Card.BackImageFilePath;" />
+                <!--                    android:src="@drawable/GSC_back_travel"-->
+                    <TextView
+                        android:id="@+id/cardTravelText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@id/cardImageBack"
+                        android:layout_alignTop="@id/cardImageBack"
+                        android:layout_marginTop="42dp"
+                        android:layout_marginRight="15dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:gravity="left"
+                        android:textSize="14sp"
+                        android:text="Travel Test"
+                        local:MvxBind="Text Card.TravelGroupPolicyNumber, Converter=IdCardPolicyNumber;"
+                        android:textColor="#000000" />
+                    <Mvx.MvxListView
+                        android:id="@+id/listView"
+                        android:layout_width="match_parent"
+                        android:layout_height="72dp"
+                        local:MvxBind="ItemsSource Card.Participants"
+                        local:MvxItemTemplate="@layout/item_dependents_row"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:scrollbars="vertical"
+                        android:textSize="14sp"
+                        android:layout_marginTop="100dp"
+                        android:layout_alignLeft="@id/cardImageBack"
+                        android:layout_alignTop="@id/cardImageBack"
+                        android:layout_below="@id/cardTravelText"
+                        android:layout_alignRight="@id/cardImageBack"
+                        android:divider="@android:color/transparent" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    <!--        </LinearLayout>-->
+    </android.support.v4.view.ViewPager>
+    <dk.ostebaronen.droid.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/indicator"
+        android:padding="10dip"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_width="match_parent" />
+    <LinearLayout
+        android:id="@+id/androidButtonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/transparent"
+        android:layout_below="@id/indicator">
+        <Button
+            android:id="@+id/androidButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/walletButton" />
+    </LinearLayout>
+</LinearLayout>

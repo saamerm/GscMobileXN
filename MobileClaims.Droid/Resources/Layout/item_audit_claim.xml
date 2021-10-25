@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+	android:background="@drawable/border_red"
+	android:padding="@dimen/auditclaim_item_padding"
+	android:layout_margin="@dimen/auditclaim_item_margin">
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/dark_red"
+			android:text="@string/actionRequired"
+			android:textSize="12sp"
+			android:layout_gravity="center_vertical"/>
+		<TextView
+			android:id="@+id/auditclaim_claimformid"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="343131890"
+			android:textColor="@color/claim_text"
+			android:textSize="14sp"
+			android:gravity="end"/>
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="5dp">
+		<TextView
+			android:id="@+id/auditclaim_submissiondatelabel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="14sp"
+			android:text="Submission date"
+			android:textColor="@color/claim_text_grey"	/>
+		<TextView
+			android:id="@+id/auditclaim_submissiondate"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="14sp"
+			android:textColor="@color/claim_text"
+			android:text="2019-10-05"	
+			android:gravity="end"/>
+	</LinearLayout>
+		<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<TextView
+			android:id="@+id/auditclaim_duedatelabel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="14sp"
+			android:text="Due date"
+			android:textColor="@color/claim_text_grey"	/>
+		<TextView
+			android:id="@+id/auditclaim_duedate"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="14sp"
+			android:textColor="@color/claim_text"
+			android:text="2019-10-03"
+			android:ellipsize="end"
+			android:gravity="end"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginTop="2dp">
+		<TextView
+			android:id="@+id/auditclaim_description"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textStyle="bold"
+			android:textSize="16sp"
+			android:text="Acupuncture"
+			android:lines="2"
+			android:ellipsize="end"
+			android:gravity="bottom"/>
+    </LinearLayout>
+</LinearLayout>

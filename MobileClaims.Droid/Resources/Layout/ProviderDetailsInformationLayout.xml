@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:gravity="center"
+        local:MvxBind="Click HideProviderDetailsInformationCommand">
+        <Button
+            android:id="@+id/hideDetailsButton"
+            android:layout_width="20dp"
+            android:layout_height="18dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/icon_arrowdown"
+            local:MvxBind="Click HideProviderDetailsInformationCommand" />
+    </LinearLayout>
+    <com.google.android.gms.maps.StreetViewPanoramaView
+        android:id="@+id/googleStreetViewPanoramaView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:weightSum="1.0">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    local:MvxBind="Visibility Visibility(ViewModelParameter.IsDirectBill)">
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/direct_billing" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.58"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/categoryDetailsTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CATEGORY"
+                        android:textSize="10sp"
+                        android:textColor="@color/branded_text_color"
+                        local:MvxBind="Text ViewModelParameter.ProviderType" />
+                    <TextView
+                        android:id="@+id/providerNameDetailsTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="McGaffey Medical Pharmacy"
+                        android:textSize="18sp"
+                        local:MvxBind="Text ViewModelParameter.Model.ProviderTradingName" />
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.42"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="4dp"
+                    android:paddingTop="10dp">
+                    <RatingBar
+                        android:id="@+id/starDetailsRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:numStars="5"
+                        android:stepSize="0.5"
+                        local:MvxBind="Visibility Visibility(ViewModelParameter.DisplayRating); Rating ViewModelParameter.ScoreString"
+                        android:layout_alignParentRight="true"
+                        android:isIndicator="true"
+                        android:progressDrawable="@drawable/ratingbar_custom" />
+                    <TextView
+                        android:id="@+id/qualityRatingDetailsTextView"
+                        android:layout_below="@id/starDetailsRatingBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/notAvailable"
+                        local:MvxBind="Visibility Visibility(ViewModelParameter.DisplayRatingAndRatingNotAvailable)"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/branded_text_color"
+                        android:textSize="14sp"
+                        android:gravity="right" />
+                    <TextView
+                        android:id="@+id/starDetailsRatingLabel"
+                        android:layout_below="@id/starDetailsRatingBar"
+                        android:text="5.0"
+                        android:layout_width="34dp"
+                        android:layout_height="26dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:paddingLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:paddingRight="5dp"
+                        android:background="@drawable/rounded_corner"
+                        local:MvxBind="Visibility Visibility(ViewModelParameter.DisplayRatingAndRatingAvailable); Text ViewModelParameter.ScoreString"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BBBBBB" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:weightSum="1.0">
+                <LinearLayout
+                    android:id="@+id/clickableFavouritesLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    local:MvxBind="Click ToggleFavouriteProviderCommand">
+                    <ImageView
+                        android:id="@+id/favouritesDetailsImageView"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/heart_off"
+                        local:MvxBind="Visibility InvertedVisibility(ViewModelParameter.IsFavourite)" />
+                    <ImageView
+                        android:id="@+id/favouritesDetailsImageView"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/heart_on"
+                        local:MvxBind="Visibility Visibility(ViewModelParameter.IsFavourite)" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textSize="10sp"
+                        android:textAllCaps="true"
+                        android:text="@string/favourites"
+                        local:MvxBind="Text AddToFavouritiesText" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.34"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    local:MvxBind="Click AddToContactsCommand">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/phone" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textSize="10sp"
+                        android:textAllCaps="true"
+                        android:text="@string/addToContacts"
+                        local:MvxBind="Text AddToContactsText" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    local:MvxBind="Click ShowDirectionsCommand">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/directions" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textSize="10sp"
+                        android:textAllCaps="true"
+                        android:text="@string/directions"
+                        local:MvxBind="Text ShowDirectionsText" />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BBBBBB" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:background="#EFEFEF">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/details_address"
+                        android:layout_gravity="center" />
+                    <TextView
+                        android:id="@+id/address1DetailsTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        local:MvxBind="Text ViewModelParameter.FullAddress" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/link"
+                        android:layout_gravity="center" />
+                    <TextView
+                        android:id="@+id/linkDetailTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="@color/highlight_color"
+                        android:layout_marginLeft="10dp"
+                        local:MvxBind="Text ViewModelParameter.Hyperlink" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/call"
+                        android:layout_gravity="center" />
+                    <TextView
+                        android:id="@+id/phoneNumberDetailsTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        local:MvxBind="Text ViewModelParameter.PhoneFormatted" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/time"
+                        android:layout_gravity="center" />
+                    <TextView
+                        android:id="@+id/openingHoursDetailsTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        local:MvxBind="Text ViewModelParameter.OpeningHoursText" />
+                    <LinearLayout
+                        android:layout_width="30dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        local:MvxBind="Click ToggleOpeningHoursCommand; Visibility ViewModelParameter.OpeningHoursText, Converter=StringToVisibility">
+                        <Button
+                            android:layout_width="20dp"
+                            android:layout_height="14dp"
+                            android:layout_gravity="center"
+                            local:MvxBind="Click ToggleOpeningHoursCommand; Background IsOpeningHoursExpanded, Converter=IsOpeningHoursExpandedToArrowDrawableImage" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    local:MvxBind="Visibility Visibility(IsOpeningHoursExpanded)">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        local:MvxBind="Text ViewModelParameter.WeekdayText" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

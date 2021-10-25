@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/claim_text_desc_marg"
+    android:layout_weight="3">
+    <Button
+        local:MvxBind="Text ClaimHistoryTypes[0].Name"
+        android:textSize="@dimen/spa_cntrbution_sub_date"
+        android:background="@color/claim_background_fill"
+        android:textColor="@color/claim_text_grey"
+        android:layout_width="@dimen/claim_review_zero"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/list_item_height_drugConfirm"
+        android:layout_weight="1"
+        android:layout_marginRight="@dimen/claim_confirm_marg_bot"
+        android:layout_marginLeft="@dimen/claim_text_desc_marg"
+        android:layout_gravity="fill_vertical" />
+    <Button
+        local:MvxBind="Text ClaimHistoryTypes[1].Name"
+        android:textSize="@dimen/spa_cntrbution_sub_date"
+        android:background="@color/claim_background_fill"
+        android:textColor="@color/claim_text_grey"
+        android:layout_width="@dimen/claim_review_zero"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/list_item_height_drugConfirm"
+        android:layout_weight="1"
+        android:layout_gravity="fill_vertical" />
+    <Button
+        local:MvxBind="Text ClaimHistoryTypes[2].Name"
+        android:textSize="@dimen/spa_cntrbution_sub_date"
+        android:background="@color/claim_background_fill"
+        android:textColor="@color/claim_text_grey"
+        android:layout_width="@dimen/claim_review_zero"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/list_item_height_drugConfirm"
+        android:layout_weight="1"
+        android:layout_marginRight="@dimen/claim_text_desc_marg"
+        android:layout_marginLeft="@dimen/claim_confirm_marg_bot"
+        android:layout_gravity="fill_vertical" />
+</LinearLayout>

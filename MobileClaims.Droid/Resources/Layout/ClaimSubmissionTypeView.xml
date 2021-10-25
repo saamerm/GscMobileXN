@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color">
+    <gsc.HeaderTextView
+        android:id="@+id/claim_type_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/claimTitle"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textAllCaps="true" />
+    <TextView
+		android:id="@+id/benefits_disclaimer_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:textSize="@dimen/claim_submission_benefit_text_size"
+        android:includeFontPadding="false"
+        android:paddingRight="10dp"
+        android:paddingLeft="20dp"
+        local:MvxBind="Visibility InvertedVisibility(NoAccessToOnlineClaimSubmission);" />
+    <gsc.TitleTextView
+        android:id="@+id/treatment_type_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/treatmentTypeTitle"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="20dp"
+        android:textAllCaps="true"
+        local:MvxBind="Visibility InvertedVisibility(NoAccessToOnlineClaimSubmission);" />
+    <gsc.NunitoTextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:text="@string/noClaimSubmission"
+        android:padding="20dp"
+        local:MvxBind="Visibility Visibility(NoAccessToOnlineClaimSubmission);" />
+    <mvvmcross.platforms.android.binding.views.MvxListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/claim_type_list"
+        android:scrollbarStyle="outsideOverlay"
+        android:choiceMode="singleChoice"
+        android:background="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:divider="@android:color/transparent"
+        local:MvxBind="ItemsSource ClaimSubmissionTypes; SelectedItem SelectedClaimSubmissionType; ItemClick ClaimSubmissionTypeSelectedCommand;Visibility InvertedVisibility(NoAccessToOnlineClaimSubmission);"
+        local:MvxItemTemplate="@layout/item_claim_type"
+        android:paddingTop="20dp" />
+</LinearLayout>

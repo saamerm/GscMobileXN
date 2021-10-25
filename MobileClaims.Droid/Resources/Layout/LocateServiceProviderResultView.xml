@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_color">
+        <gsc.GSCSmallButton
+            android:text="@string/newSearchBtnText"
+            android:background="@drawable/ButtonBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/claimSaveClaimBtn"
+            android:layout_gravity="right"
+            android:textColor="@drawable/ButtonTextColor"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:textColorHighlight="@color/list_text_color"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_alignParentRight="true"
+            local:MvxBind="Click NewSearchCommand;" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_gravity="center" />
+</LinearLayout>

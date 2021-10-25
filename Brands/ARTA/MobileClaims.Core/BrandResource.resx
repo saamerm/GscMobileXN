@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>2.0</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="BrandAcronym" xml:space="preserve">
+    <value>ARTA</value>
+  </data>
+  <data name="BrandShortDisplayName" xml:space="preserve">
+    <value>ARTA</value>
+  </data>
+  <data name="BrandFullDisplayName" xml:space="preserve">
+    <value>ARTA Benefits</value>
+  </data>
+    <data name="Username" xml:space="preserve">
+        <value>USER ID</value>        
+    </data>
+	<data name="Password" xml:space="preserve">
+		<value>PASSWORD</value>
+	</data>
+	<data name="Login" xml:space="preserve">
+		<value>LOG IN</value>
+	</data>
+    <data name="RememberMe" xml:space="preserve">
+        <value>REMEMBER MY USER ID ON THIS DEVICE</value>        
+    </data>
+    <data name="WebInstructions" xml:space="preserve">
+        <value>FORGOT YOUR USER ID OR PASSWORD? NEED TO REGISTER?</value>        
+    </data>
+    <data name="WebInstructionsLink" xml:space="preserve">
+        <value>https://Myarta.net</value>        
+    </data>
+    <data name="GeneralContent6" xml:space="preserve">
+        <value>https://Myarta.net</value>        
+    </data>
+	  <data name="TermsAndConditionsGeneral1" xml:space="preserve">
+    <value>If your benefit plan includes Online Claims Submission, this App will provide a feature for submitting claims. When you submit claims using the ARTA Mobile App Online Claim Submission feature, you agree to the following: &lt;br/&gt; &lt;br/&gt; “I agree that all information provided using Online claim submission will be complete and accurate. In the event that my information is found to be incomplete or inaccurate, I understand that ARTA reserves the right to remove my online claiming privileges. I understand that the information, including the personal information, that I provide to ARTA about myself, my spouse and my or our dependents, will be used by ARTA for claims adjudication and any other services necessary in the administration of my benefits which may include the exchange of information with other parties as necessary to administer this benefit plan”.</value>
+  </data>
+  <data name="TermsAndConditionsGeneral2" xml:space="preserve">
+    <value>“I am authorized by my spouse and/or dependents to disclose and receive information about them that is used for these purposes. My spouse and/or dependents understand that this information may be seen by me, the cardholder and used by ARTA and the other parties referenced in this agreement for the purposes set out in this agreement”.</value>
+  </data>
+  <data name="TermsAndConditionsGeneral3" xml:space="preserve">
+    <value>“I understand and agree that I am responsible for retaining original receipt(s) for 13 months following the date of a ‎claim submission(s) made by me. When submitting claims online, ARTA may select my claim for audit. If so requested, I am responsible for producing the original receipt(s) within 30 days”.</value>
+  </data>
+  <data name="TermsAndConditionsGeneral4" xml:space="preserve">
+    <value>“If I fail to provide the receipt(s) to ARTA, or provide false, incomplete, inaccurate or misleading information, ARTA will be entitled to demand remittance from me of the overpayment and/or the deduction of such overpayment from ‎any future claim payments. Furthermore, access to Plan Member Online Services and mobile app claims submission will ‎be revoked and coverage to benefits for me, my spouse and my or our dependents may be suspended and/or ‎terminated”.</value>
+  </data>
+  <data name="TermsAndConditionsGeneral5" xml:space="preserve">
+    <value>”If selected for audit, I authorize the exchange of information between ARTA and other parties, including but not limited ‎to health practitioners, medical device providers and insurers, as required, and only when the information is needed to ‎administer benefit claims and/or confirm the accuracy of the claim(s) information submitted on behalf of myself, my ‎spouse and/or my or our dependents”. &lt;br/&gt; &lt;br/&gt; “In the event of suspected fraudulent act or omission that relates to claims submitted by me or on behalf of my spouse ‎and or dependents relating to a Retiree Benefits Plan Member Online Services or mobile app web ‎claim submission by me, I acknowledge and agree to the ‎disclosure of this information to relevant parties as determined by ARTA or other parties referred to above, including ‎but not limited to the Plan Sponsor, regulatory or law enforcement agencies”.‎</value>
+  </data>
+  <data name="TermsAndConditionsGeneral6" xml:space="preserve">
+    <value>“ARTA’s claims adjudicator, HBM+, maintains a national database of providers and their association with any regulatory agency, professional association or educational program. HBM+ reviews each provider to determine which benefits/services are eligible for reimbursement in conjunction with the plan member’s health benefits plan. When submitting a claim online, with a provider that has not registered with HBM+, the provider’s credentials will be verified and my claim will be processed accordingly”.</value>
+  </data>
+  <data name="TermsAndConditionsGeneral7" xml:space="preserve">
+    <value>“Acceptance of the Online Claim Submission Agreement Terms and Conditions applies to all claims submitted within an online session. If I submit multiple claims (for my spouse or a different dependent and/or provider) within the online session, my acceptance of the Online Claim Submission Agreement Terms and Conditions applies to all those claims submitted”.</value>
+  </data>
+  <data name="TermsAndConditionsGeneral8" xml:space="preserve">
+    <value>1-855-212-2400</value>
+  </data>
+    <data name="GeneralContent8" xml:space="preserve">
+        <value>click here</value>        
+    </data>
+	<data name="General" xml:space="preserve">
+		<value>GENERAL</value>
+	</data>
+	<data name="Privacy" xml:space="preserve">
+		<value>PRIVACY</value>
+	</data>
+	<data name="Security" xml:space="preserve">
+		<value>SECURITY</value>
+	</data>
+	<data name="Legal" xml:space="preserve">
+		<value>LEGAL</value>
+	</data>
+	<data name="IAgreeToTC" xml:space="preserve">
+		<value>I AGREE TO THE TERMS AND CONDITIONS</value>
+	</data>
+	<data name="MyIdCardText" xml:space="preserve">
+    <value>MY ID CARD</value>
+  </data>
+  <data name="claimConfirm_description" xml:space="preserve">
+    <value>The above information will be submitted to ARTA. Please ensure the information is correct before proceeding. If you need to change the information, please click the back button to return to the claim submission form. Otherwise click the Submit button to submit the claim to ARTA.</value>
+  </data>
+  <data name="claimConfirm_id_number" xml:space="preserve">
+    <value>ARTA Member Number</value>
+  </data>
+  <data name="DisclaimerFirstParagraph" xml:space="preserve">
+    <value>I agree and represent that all information provided by me by using the ARTA Retiree Benefits Plan online claim submission will be, and is, complete and accurate. In the event that my information is found to be incomplete or inaccurate, I understand that Alberta Retired Teachers’ Association (ARTA) reserves the right to remove my online claiming privileges. I understand that the information, including my personal information that I provided to ARTA about myself, my spouse and my or our dependents will be used by ARTA and HBM+ for claims adjudication and any other services necessary in the administration of my benefits which may include the exchange of information with other parties to administer this benefit plan.</value>
+  </data>
+  <data name="DisclaimerSecondParagraph" xml:space="preserve">
+    <value>I am authorized by my spouse and/or dependents to disclose and receive information about them that is used for these purposes. My spouse and/or dependents understand that this information may be seen by me, the cardholder, and used by ARTA and the other parties referenced in this agreement for the purposes set out in this agreement.</value>
+  </data>
+  <data name="AuditDisclaimerFirstParagraph" xml:space="preserve">
+    <value>As the plan member, I am authorized by my spouse and/or my or our dependents to disclose and receive information about them that is used for the purposes which are set out below. They understand that this information may be seen by me.</value>
+  </data>
+  <data name="AuditDisclaimerSecondParagraph" xml:space="preserve">
+    <value>By submitting actual receipts, I agree and represent that the information provided is complete and accurate. I understand that the information I provide to the Alberta Retired Teachers’ Association (ARTA) about myself and my spouse and dependents will be used by ARTA for claims adjudication and any other services necessary in the administration of our benefits, which may include the exchange of information with other parties as necessary to administer this benefit claim.</value>
+  </data>
+  <data name="AuditDisclaimerThirdParagraph" xml:space="preserve">
+    <value>I further authorize ARTA to obtain and exchange information with other parties, such as health practitioners or insurers, to confirm the accuracy of the submitted claims(s) information. In the event of a suspected fraudulent act or omission that relates to claims submitted by me or on behalf of my spouse  and/or dependents, I understand, acknowledge and agree to the disclosure of this information to relevant parties as determined by ARTA or those other parties, such as a plan sponsor, regulatory or law enforcement agencies.</value>
+  </data>
+  <data name="EverythingYouNeedToKnow" xml:space="preserve">
+    <value>Everything you need to know about how ARTA evaluates the quality of care provided by pharmacies.</value>
+  </data>
+  <data name="GreenShieldIDNumber" xml:space="preserve">
+    <value>ARTA Member Number:</value>
+  </data>
+  <data name="GreenShieldIDNumberNoColon" xml:space="preserve">
+    <value>ARTA Member Number</value>
+  </data>
+  <data name="submittedToGSC" xml:space="preserve">
+    <value>The above information will be submitted to ARTA. Please ensure the information is correct before proceeding. If you need to change the information, please click the back button to return to the claim submission form. Otherwise click the Submit button to submit the claim to ARTA.</value>
+  </data>
+  <data name="Find_a_health_provider_faq_url" xml:space="preserve">
+    <value>https://artaclaims.net/arta_miscdocs/find_a_health_provider_faq_en.pdf</value>
+  </data>
+  <data name="Understanding_pharmacy_quality_ratings_url" xml:space="preserve">
+    <value>https://onlineservices.greenshield.ca/miscdocs/understanding_pharmacy_quality_ratings_en.pdf</value>
+  </data>
+  <data name="cardDescription" xml:space="preserve">
+    <value>ARTA Benefits Card</value>
+  </data>
+  <data name="NoActiveClaimsLabel" xml:space="preserve">
+    <value>Good news. You have no claims requiring additional information.</value>
+  </data>
+  <data name="VisionEnhancementsMessage" xml:space="preserve">
+    <value>The See better to succeed program offers a $250 reimbursement per 24-month period for purchases of glasses or contact lenses prescribed by a professional to correct the vision of any child under 18 years of age. Only purchases made after September 1, 2019 from an optician or optometrist in Québec are eligible. You must submit your claim even if the amount offered by the government covers the total purchase amount.</value>
+  </data>
+   <data name="VisionEnhancementsProgramName" xml:space="preserve">
+    <value>See better to succeed</value>
+  </data>
+  <data name="VisionEnhancementsProgramAdditionalInfo" xml:space="preserve">
+    <value>You must submit your claim even if the amount offered by the government covers the total purchase amount.</value>
+  </data>
+  <data name="SupportCenterLink" xml:space="preserve">
+    <value>https://www.artaclaimssupport.net/SupportCentre/Home</value>
+  </data>    
+  <data name="ClaimDetailsOtherBenefitsTitle" xml:space="preserve">
+    <value>Do you have coverage under another benefits plan?</value>
+  </data>
+  <data name="DirectDepositOptInMessage" xml:space="preserve">
+    <value>I authorize GSC to deposit funds directly into the bank account noted below. I understand that I will no longer receive statements from GSC in the mail as my statements will only be available online.</value>
+  </data>
+  <data name="DDConfirmAuthoriseDepositFundLabel" xml:space="preserve">
+    <value>I acknowledge that it is my responsibility to ensure the accuracy of my banking details and that GSC accepts no responsibility and cannot be held liable if any information provided is incorrect, incomplete, or inaccurate.</value>
+  </data> 
+    <data name="DDResultDisclaimer3" xml:space="preserve">
+    <value>In addition, I acknowledge that GSC is not responsible for any damage, claim, or cause of action, of any nature whatsoever, that may result from any direct deposit made using this bank account information or that may arise from the provision of incorrect, incomplete, or inaccurate bank account information. Therefore, I hold the insurer and the carrier harmless of any responsibility in this regard.</value>
+  </data>
+</root>

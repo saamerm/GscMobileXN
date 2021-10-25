@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BrandAcronym" xml:space="preserve">
+    <value>MÉDIC</value>
+  </data>
+  <data name="BrandShortDisplayName" xml:space="preserve">
+    <value>MÉDIC Construction</value>
+  </data>
+  <data name="BrandFullDisplayName" xml:space="preserve">
+    <value>MÉDIC Construction</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>CCQ USERNAME</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>PASSWORD</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>LOG IN</value>
+  </data>
+  <data name="RememberMe" xml:space="preserve">
+    <value>SAVE YOUR CCQ USERNAME ON THIS DEVICE</value>
+  </data>
+  <data name="WebInstructions" xml:space="preserve">
+    <value>HAVE YOU FORGOTTEN YOUR USERNAME OR PASSWORD? DO YOU WANT TO REGISTER FOR THE CCQ'S ONLINE SERVICES?</value>
+  </data>
+  <data name="WebInstructionsLink" xml:space="preserve">
+    <value>https://sel.ccq.org</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>GENERAL</value>
+  </data>
+  <data name="Privacy" xml:space="preserve">
+    <value>PRIVACY</value>
+  </data>
+  <data name="Security" xml:space="preserve">
+    <value>SECURITY</value>
+  </data>
+  <data name="Legal" xml:space="preserve">
+    <value>LEGAL</value>
+  </data>
+  <data name="IAgreeToTC" xml:space="preserve">
+    <value>I AGREE TO THE TERMS AND CONDITIONS</value>
+  </data>
+  <data name="TermsAndConditionsGeneral1" xml:space="preserve">
+    <value>If your benefit plan includes Online Claims Submission, this App will provide a feature for submitting claims. When you submit claims using the MÉDIC Mobile App Online Claim Submission feature, you agree to the following: "I agree that all information provided using Online claim submission will be complete and accurate. In the event that my information is found to be incomplete or inaccurate, I understand that MÉDIC reserves the right to remove my online claiming privileges. I understand that the information, including the personal information, that I provide to MÉDIC Construction about myself and my dependents, will be used by MÉDIC for claims adjudication and any other services necessary in the administration of my benefits which may include the exchange of information with other parties to administer this benefit plan.</value>
+  </data>
+  <data name="TermsAndConditionsGeneral2" xml:space="preserve">
+    <value>I am authorized by my spouse and/or dependents to disclose and receive information about them that is used for these purposes. My spouse and/or dependents understand that this information may be seen by me, the cardholder and used by MÉDIC and the other parties referenced in this agreement for the purposes set out in this agreement.</value>
+  </data>
+  <data name="TermsAndConditionsGeneral3" xml:space="preserve">
+    <value>When submitting claims online, MÉDIC may select my claim for audit. If so requested, I am responsible for producing the original receipt(s) within 30 days.</value>
+  </data>
+  <data name="TermsAndConditionsGeneral4" xml:space="preserve">
+    <value>If I fail to provide the receipt(s) to MÉDIC, or provide false, incomplete, or misleading information, MÉDIC reserves the right to classify my claim as an overpayment and will deduct such monies from any future claim payments. Furthermore, my coverage may be denied or terminated and/or online submission may be revoked.</value>
+  </data>
+  <data name="TermsAndConditionsGeneral5" xml:space="preserve">
+    <value>I understand and agree that I am responsible for retaining original receipt(s) for 13 months following the date of my claim submission(s).</value>
+  </data>
+  <data name="TermsAndConditionsGeneral6" xml:space="preserve">
+    <value>MÉDIC maintains a national database of providers and their association with any regulatory agency, professional association or educational program. MÉDIC reviews each provider to determine which benefits/services are eligible for reimbursement in conjunction with the plan member’s health benefits plan. When submitting a claim online, with a provider that has not registered with MÉDIC, the provider’s credentials will be verified and my claim will be processed accordingly.</value>
+  </data>
+  <data name="TermsAndConditionsGeneral7" xml:space="preserve">
+    <value>Acceptance of the Online Claim Submission Agreement Terms and Conditions applies to all claims submitted within an online session. If I submit multiple claims (for a different dependent and/or provider) within the online session, my acceptance of the Online Claim Submission Agreement Terms and Conditions applies to all those claims submitted."</value>
+  </data>
+  <data name="TermsAndConditionsGeneral8" xml:space="preserve">
+    <value>1-888-842-8282</value>
+  </data>
+  <data name="GeneralContent6" xml:space="preserve">
+    <value>https://sel.ccq.org/</value>
+  </data>
+  <data name="GeneralContent8" xml:space="preserve">
+    <value>click here</value>
+  </data>
+  <data name="MyIdCardText" xml:space="preserve">
+    <value>MY MÉDIC
+CONSTRUCTION CARD</value>
+  </data>
+  <data name="claimConfirm_description" xml:space="preserve">
+    <value>The above information will be submitted to MÉDIC Construction. Please ensure the information is correct before proceeding. If you need to change the information, please click the back button to return to the claim submission form. Otherwise click the Submit button to submit the claim to MÉDIC Construction.</value>
+  </data>
+  <data name="claimConfirm_id_number" xml:space="preserve">
+    <value>MÉDIC Construction ID Number</value>
+  </data>
+  <data name="DisclaimerFirstParagraph" xml:space="preserve">    
+    <value>I declare that all of the information provided in the present claim is complete and accurate.
+
+I understand that the CCQ may reject a claim related to a dependent following a false declaration or an omission to update the information concerning that dependent (e.g., cessation of cohabitation with my spouse following failure of the marital relationship, dropping out of school, end of full-time studies or change to matrimonial status of my adult dependent child). I also understand that the CCQ may, if applicable, claim directly from me any money that it has paid in relation to such a claim or consider that it is an excess payment that can be deducted from my future claims for benefits.
+
+For the purposes of administration and of evaluation of claims and for fraud prevention, I authorize Médic Construction to obtain personal, medical, and psychosocial information and disclose it to the plan administrators and to regulatory and law enforcement agencies. I understand that the information will be used and preserved by Médic Construction for administration of benefits.</value>
+  </data>
+  <data name="DisclaimerSecondParagraph" xml:space="preserve">
+    <value>I am authorized by my dependents to disclose and receive information about them concerning their claims for benefits. My dependents understand that this information will be seen by me and used by the CCQ for the purposes of management and administration of my plan.</value>
+  </data>
+  <data name="AuditDisclaimerFirstParagraph" xml:space="preserve">
+    <value>I declare that all of the information provided in the present claim is complete and accurate.
+
+I understand that the CCQ may reject a claim related to a dependent following a false declaration or an omission to update the information concerning that dependent (e.g., cessation of cohabitation with my spouse following failure of the marital relationship, dropping out of school, end of full-time studies or change to matrimonial status of my adult dependent child). I also understand that the CCQ may, if applicable, claim directly from me any money that it has paid in relation to such a claim or consider that it is an excess payment that can be deducted from my future claims for benefits.
+
+For the purposes of administration and of evaluation of claims and for fraud prevention, I authorize Médic Construction to obtain personal, medical, and psychosocial information and disclose it to the plan administrators and to regulatory and law enforcement agencies. I understand that the information will be used and preserved by Médic Construction for administration of benefits.</value>
+  </data>
+  <data name="AuditDisclaimerSecondParagraph" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="AuditDisclaimerThirdParagraph" xml:space="preserve">
+    <value>I am authorized by my dependents to disclose and receive information about them concerning their claims for benefits. My dependents understand that this information will be seen by me and used by the CCQ for the purposes of management and administration of my plan.</value>
+  </data>
+  <data name="EverythingYouNeedToKnow" xml:space="preserve">
+    <value>Everything you need to know about how MÉDIC evaluates the quality of care provided by pharmacies.</value>
+  </data>
+  <data name="GreenShieldIDNumber" xml:space="preserve">
+    <value>MÉDIC Construction ID Number:</value>
+  </data>
+  <data name="GreenShieldIDNumberNoColon" xml:space="preserve">
+    <value>MÉDIC Construction ID Number</value>
+  </data>
+  <data name="submittedToGSC" xml:space="preserve">
+    <value>The above information will be submitted to MÉDIC Construction. Please ensure the information is correct before proceeding. If you need to change the information, please click the back button to return to the claim submission form. Otherwise click the Submit button to submit the claim to MÉDIC Construction.</value>
+  </data>
+  <data name="Find_a_health_provider_faq_url" xml:space="preserve">
+    <value>https://medic.ccq.org/ccq_miscdocs/find_a_health_provider_faq_en.pdf</value>
+  </data>
+  <data name="Understanding_pharmacy_quality_ratings_url" xml:space="preserve">
+    <value>https://onlineservices.greenshield.ca/miscdocs/understanding_pharmacy_quality_ratings_en.pdf</value>
+  </data>
+  <data name="cardDescription" xml:space="preserve">
+    <value>MÉDIC Construction Card</value>
+  </data>
+  <data name="NoActiveClaimsLabel" xml:space="preserve">
+    <value>We have everything we need! Your requests for settlement do not require any further information. Please keep your documentation for 12 months.</value>
+  </data>
+  <data name="VisionEnhancementsMessage" xml:space="preserve">
+    <value>The See better to succeed program offers a $250 reimbursement per 24-month period for purchases of glasses or contact lenses prescribed by a professional to correct the vision of any child under 18 years of age. Only purchases made after September 1, 2019 from an optician or optometrist in Québec are eligible. You must submit your claim even if the amount offered by the government covers the total purchase amount.</value>
+  </data>
+   <data name="VisionEnhancementsProgramName" xml:space="preserve">
+    <value>See better to succeed</value>
+  </data>
+  <data name="VisionEnhancementsProgramAdditionalInfo" xml:space="preserve">
+    <value>You must submit your claim even if the amount offered by the government covers the total purchase amount.</value>
+  </data>
+  <data name="ClaimDetailsOtherBenefitsTitle" xml:space="preserve">
+    <value>Do you have coverage under another benefits plan (other than a provincial plan)?</value>
+  </data>
+  <data name="DirectDepositOptInMessage" xml:space="preserve">
+    <value>I authorize GSC to deposit funds directly into the bank account noted below. I understand that I will no longer receive statements from GSC in the mail as my statements will only be available online.</value>
+  </data>
+  <data name="DDConfirmAuthoriseDepositFundLabel" xml:space="preserve">
+    <value>I acknowledge that it is my responsibility to ensure the accuracy of my banking details and that GSC accepts no responsibility and cannot be held liable if any information provided is incorrect, incomplete, or inaccurate.</value>
+  </data> 
+    <data name="DDResultDisclaimer3" xml:space="preserve">
+    <value>In addition, I acknowledge that GSC is not responsible for any damage, claim, or cause of action, of any nature whatsoever, that may result from any direct deposit made using this bank account information or that may arise from the provision of incorrect, incomplete, or inaccurate bank account information. Therefore, I hold the insurer and the carrier harmless of any responsibility in this regard.</value>
+  </data>
+</root>

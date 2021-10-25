@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:duplicateParentState="true"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:gravity="center_vertical">
+    <View
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/plus_select_item_background"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="2dp" />
+    <gsc.NunitoTextView
+        android:id="@+id/text1"
+        android:textColor="@drawable/plus_gsc_list_text_color"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:lines="1"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="8sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColorHighlight="@color/white"
+        local:MvxBind="Text FullName"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:textAllCaps="true" />
+</LinearLayout>

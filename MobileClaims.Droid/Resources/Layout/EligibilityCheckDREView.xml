@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none"
+            android:isScrollContainer="true">
+            <gsc.HeaderTextView
+                android:id="@+id/claimResultTitleLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/eligibilityResultsTitle"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal" />
+            <gsc.TitleTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/eligibilityResultsSubTitle"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textAllCaps="true" />
+            <Mvx.MvxLinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                local:MvxBind="ItemsSource EligibilityCheckResults.Result.ParticipantEligibilityResults;"
+                local:MvxItemTemplate="@layout/item_eligibility_participant_selector_dre"
+                android:paddingTop="20dp" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp">
+                <gsc.NunitoTextView
+                    android:id="@+id/unablebenefitEligibilityLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unablebenefitEligibilityLabel"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    local:MvxBind="Text ChangeFPPMNumberBenefitLabel; Visibility Visibility(IsContactCustomerServiceVisible);" />
+                <gsc.NunitoTextView
+                    android:id="@+id/eligibilityResultsOrthoticNotes"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp" />
+                <gsc.NunitoTextView
+                    android:id="@+id/eligibilityResultsDRENotes"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp" />
+                <gsc.NunitoTextView
+                    android:id="@+id/inquiryDate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:gravity="right"
+                    local:MvxBind="Text Format('{0:MMMM dd, yyy HH:mm tt}',EligibilityCheckResults.Result.SubmissionDate);" />
+                <gsc.NunitoTextView
+                    android:id="@+id/notes_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    local:MvxBind="Text ChangeFPPMNumberResults" />
+            </LinearLayout>
+            <gsc.GSCButton
+                android:text="@string/eligibilitySubmitAnother"
+                android:background="@drawable/ButtonBackground"
+                android:layout_width="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                local:MvxBind="Click SubmitAnotherEligibilityCheckCommand;"
+                android:layout_gravity="center"
+                android:textColor="@drawable/ButtonTextColor"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColorHighlight="@color/list_text_color"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

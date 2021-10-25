@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="@color/white">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/claim_text_desc_marg"
+        android:layout_marginRight="@dimen/claim_text_desc_marg">
+        <gsc.HeaderTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/claim_marg_top"
+            android:layout_marginBottom="@dimen/claim_marg_top"
+            android:gravity="center"
+            local:MvxBind="Text SearchCriteria"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="true" />
+        <gsc.NunitoTextViewBold
+            android:textColor="@color/claim_text"
+            android:textSize="@dimen/spa_cntrbution_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginTop="@dimen/claim_review_zero"
+            local:MvxBind="Text ClaimType"
+            android:textAllCaps="true"
+            android:layout_gravity="left" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/claim_text_desc_marg"
+            android:layout_weight="3">
+            <Button
+                android:id="@+id/ClaimHistoryTypesButton1"
+                local:MvxBind="Text ClaimHistoryTypes[0].Name; tag ClaimHistoryTypes[0].ID;"
+                android:textSize="@dimen/spa_cntrbution_sub_date"
+                android:background="@drawable/ListItemBackground"
+                android:textColor="@drawable/gsc_list_text_color"
+                android:layout_width="@dimen/claim_review_zero"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/list_item_height_drugConfirm"
+                android:layout_marginRight="@dimen/claim_confirm_marg_bot"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:layout_gravity="fill_vertical" />
+            <Button
+                android:id="@+id/ClaimHistoryTypesButton2"
+                local:MvxBind="Text ClaimHistoryTypes[1].Name; tag ClaimHistoryTypes[1].ID;"
+                android:textSize="@dimen/spa_cntrbution_sub_date"
+                android:background="@drawable/ListItemBackground"
+                android:textColor="@drawable/gsc_list_text_color"
+                android:layout_width="@dimen/claim_review_zero"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/list_item_height_drugConfirm"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:layout_gravity="fill_vertical" />
+            <Button
+                android:id="@+id/ClaimHistoryTypesButton3"
+                local:MvxBind="Text ClaimHistoryTypes[2].Name; tag ClaimHistoryTypes[2].ID;"
+                android:textSize="@dimen/spa_cntrbution_sub_date"
+                android:background="@drawable/ListItemBackground"
+                android:textColor="@drawable/gsc_list_text_color"
+                android:layout_width="@dimen/claim_review_zero"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/list_item_height_drugConfirm"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:layout_marginLeft="@dimen/claim_confirm_marg_bot"
+                android:layout_gravity="fill_vertical" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/claim_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <gsc.NunitoTextViewBold
+                android:textColor="@color/claim_text"
+                android:textSize="@dimen/claim_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                local:MvxBind="Text ClaimsPaidTo"
+                android:textAllCaps="true"
+                android:layout_gravity="left" />
+            <ImageButton
+                android:id="@+id/errorButtonClick2"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:background="@null"
+                local:MvxBind=" Visibility Visibility(NoPayeeSelected);"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:src="@drawable/claims_error_icon"
+                android:scaleType="centerInside"
+                android:onClick="errorClickHandler" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/claim_text_desc_marg">
+            <gsc.NunitoTextViewBold
+                android:textColor="@color/claim_text_grey"
+                android:textSize="@dimen/claim_search"
+                android:layout_weight="1.5"
+                android:layout_width="@dimen/claim_review_zero"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left"
+                local:MvxBind="Text ClaimHistoryPayees[0].Name"
+                android:layout_marginTop="@dimen/claim_review_zero" />
+            <gsc.GSCCheckBox
+                android:layout_weight="0.5"
+                android:layout_width="@dimen/claim_review_zero"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                local:MvxBind="Checked ClaimHistoryPayees[0].IsSelected , Mode=TwoWay;"
+                android:paddingRight="@dimen/claim_text_desc_marg" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/claim_marg_top">
+            <gsc.NunitoTextViewBold
+                android:textColor="@color/claim_text_grey"
+                android:textSize="@dimen/claim_search"
+                android:layout_weight="1.5"
+                android:layout_width="@dimen/claim_review_zero"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:layout_marginTop="@dimen/claim_review_zero"
+                local:MvxBind="Text ClaimHistoryPayees[1].Name" />
+            <gsc.GSCCheckBox
+                android:layout_weight="0.5"
+                android:layout_width="@dimen/claim_review_zero"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                local:MvxBind="Checked ClaimHistoryPayees[1].IsSelected , Mode=TwoWay;"
+                android:paddingRight="@dimen/claim_text_desc_marg" />
+        </LinearLayout>
+        <gsc.NunitoTextViewBold
+            android:textColor="@color/claim_text"
+            android:textSize="@dimen/claim_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginTop="@dimen/claim_text_desc_marg"
+            android:textAllCaps="true"
+            local:MvxBind="Text PlanMember"
+            android:layout_gravity="left" />
+        <LinearLayout
+            android:background="@color/button_history"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_item_height_drugConfirm"
+            android:gravity="center"
+            android:clickable="true"
+            local:MvxBind="Click SelectParticipantCommand"
+            android:layout_marginBottom="@dimen/claim_marg_top">
+            <gsc.LeagueTextView
+                android:textAllCaps="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/spa_cntrbution_sub_txt_header"
+                android:textColor="@color/claim_text"
+                local:MvxBind="Text SelectedParticipant.FullName;" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <gsc.NunitoTextViewBold
+                android:textColor="@color/claim_text"
+                android:textSize="@dimen/claim_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textAllCaps="true"
+                android:layout_marginTop="@dimen/claim_review_zero"
+                local:MvxBind="Text Benefit"
+                android:layout_gravity="left" />
+            <ImageButton
+                android:id="@+id/errorButtonClick1"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:background="@null"
+                local:MvxBind=" Visibility Visibility(NoBenefitSelected);"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:src="@drawable/claims_error_icon"
+                android:scaleType="centerInside"
+                android:onClick="errorClickHandler" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/claim_confirm">
+            <gsc.NunitoTextViewBold
+                android:textColor="@drawable/claimshistory_benifit_list_textcolor"
+                android:textSize="@dimen/claim_search"
+                android:layout_weight="1.5"
+                android:layout_width="@dimen/claim_review_zero"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left"
+                local:MvxBind="Text AllClaimHistoryBenefit.Name ;  Enabled IsClaimHistoryBenefitEnabled; " />
+            <gsc.GSCCheckBox
+                android:layout_weight="0.5"
+                android:layout_width="@dimen/claim_review_zero"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                local:MvxBind="Checked AllClaimHistoryBenefitIsSelected, Mode= TwoWay;Enabled IsClaimHistoryBenefitEnabled;"
+                android:paddingRight="@dimen/claim_text_desc_marg" />
+        </LinearLayout>
+        <Mvx.MvxListView
+            android:id="@+id/benefit_list"
+            local:MvxBind="ItemsSource ClaimHistoryBenefitsWithoutAll; Visible IsFullBenefitsListVisible;Enabled IsClaimHistoryBenefitEnabled; "
+            local:MvxItemTemplate="@layout/item_benefit"
+            android:background="@drawable/transparent_list_background"
+            android:cacheColorHint="@android:color/transparent"
+            android:listSelector="@android:color/transparent"
+            android:divider="@null"
+            android:textColor="@color/claim_text_grey"
+            android:textSize="12sp"
+            android:dividerHeight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1.0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left" />
+        <gsc.NunitoTextViewBold
+            android:textColor="@color/claim_text"
+            android:textSize="@dimen/claim_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/claim_margin"
+            android:gravity="left"
+            android:textAllCaps="true"
+            android:lineSpacingMultiplier="1.4"
+            local:MvxBind="Text DisplayByLabel"
+            android:layout_gravity="left" />
+        <LinearLayout
+            android:background="@color/button_history"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_item_height_drugConfirm"
+            android:gravity="center"
+            android:clickable="true"
+            local:MvxBind="Click SelectDisplayByCommand"
+            android:layout_marginBottom="@dimen/claim_marg_top">
+            <gsc.LeagueTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAllCaps="true"
+                local:MvxBind="Text SelectedDisplayBy.Value"
+                android:textSize="@dimen/spa_cntrbution_sub_txt_header"
+                android:textColor="@color/claim_text" />
+        </LinearLayout>
+        <gsc.GSCButton
+            android:textColor="@color/white"
+            android:background="@drawable/ButtonBackground"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/claim_button"
+            android:layout_marginBottom="@dimen/claim_margin"
+            android:textAllCaps="true"
+            local:MvxBind="Click SearchClaimsHistoryCommand;Text Update" />
+    </LinearLayout>
+</ScrollView>

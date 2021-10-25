@@ -1,0 +1,95 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileClaims.iOS", "MobileClaims.iOS.csproj", "{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+		Debug|Any CPU = Debug|Any CPU
+		ENCONNow|iPhoneSimulator = ENCONNow|iPhoneSimulator
+		ENCONNow|iPhone = ENCONNow|iPhone
+		ENCONNow|Any CPU = ENCONNow|Any CPU
+		test|iPhoneSimulator = test|iPhoneSimulator
+		test|iPhone = test|iPhone
+		test|Any CPU = test|Any CPU
+		ConfigNewTest|iPhoneSimulator = ConfigNewTest|iPhoneSimulator
+		ConfigNewTest|iPhone = ConfigNewTest|iPhone
+		ConfigNewTest|Any CPU = ConfigNewTest|Any CPU
+		iOS-TestCloud-Debug|iPhoneSimulator = iOS-TestCloud-Debug|iPhoneSimulator
+		iOS-TestCloud-Debug|iPhone = iOS-TestCloud-Debug|iPhone
+		iOS-TestCloud-Debug|Any CPU = iOS-TestCloud-Debug|Any CPU
+		iOS-TestCloud-Release|iPhoneSimulator = iOS-TestCloud-Release|iPhoneSimulator
+		iOS-TestCloud-Release|iPhone = iOS-TestCloud-Release|iPhone
+		iOS-TestCloud-Release|Any CPU = iOS-TestCloud-Release|Any CPU
+		Android-TestCloud-Debug|iPhoneSimulator = Android-TestCloud-Debug|iPhoneSimulator
+		Android-TestCloud-Debug|iPhone = Android-TestCloud-Debug|iPhone
+		Android-TestCloud-Debug|Any CPU = Android-TestCloud-Debug|Any CPU
+		Android-TestCloud-Release|iPhoneSimulator = Android-TestCloud-Release|iPhoneSimulator
+		Android-TestCloud-Release|iPhone = Android-TestCloud-Release|iPhone
+		Android-TestCloud-Release|Any CPU = Android-TestCloud-Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.Android-TestCloud-Debug|Any CPU.ActiveCfg = Android-TestCloud-Debug|Any CPU
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.Android-TestCloud-Debug|Any CPU.Build.0 = Android-TestCloud-Debug|Any CPU
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.Android-TestCloud-Debug|iPhone.ActiveCfg = Android-TestCloud-Debug|iPhone
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.Android-TestCloud-Debug|iPhone.Build.0 = Android-TestCloud-Debug|iPhone
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.Android-TestCloud-Debug|iPhoneSimulator.ActiveCfg = Android-TestCloud-Debug|iPhoneSimulator
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.Android-TestCloud-Debug|iPhoneSimulator.Build.0 = Android-TestCloud-Debug|iPhoneSimulator
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.Android-TestCloud-Release|Any CPU.ActiveCfg = Android-TestCloud-Release|Any CPU
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.Android-TestCloud-Release|Any CPU.Build.0 = Android-TestCloud-Release|Any CPU
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.Android-TestCloud-Release|iPhone.ActiveCfg = Android-TestCloud-Release|iPhone
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.Android-TestCloud-Release|iPhone.Build.0 = Android-TestCloud-Release|iPhone
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.Android-TestCloud-Release|iPhoneSimulator.ActiveCfg = Android-TestCloud-Release|iPhoneSimulator
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.Android-TestCloud-Release|iPhoneSimulator.Build.0 = Android-TestCloud-Release|iPhoneSimulator
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.ConfigNewTest|Any CPU.ActiveCfg = ConfigNewTest|Any CPU
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.ConfigNewTest|Any CPU.Build.0 = ConfigNewTest|Any CPU
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.ConfigNewTest|iPhone.ActiveCfg = ConfigNewTest|iPhone
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.ConfigNewTest|iPhone.Build.0 = ConfigNewTest|iPhone
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.ConfigNewTest|iPhoneSimulator.ActiveCfg = ConfigNewTest|iPhoneSimulator
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.ConfigNewTest|iPhoneSimulator.Build.0 = ConfigNewTest|iPhoneSimulator
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.Debug|iPhone.Build.0 = Debug|iPhone
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.ENCONNow|Any CPU.ActiveCfg = ENCONNow|Any CPU
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.ENCONNow|Any CPU.Build.0 = ENCONNow|Any CPU
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.ENCONNow|iPhone.ActiveCfg = ENCONNow|iPhone
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.ENCONNow|iPhone.Build.0 = ENCONNow|iPhone
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.ENCONNow|iPhoneSimulator.ActiveCfg = ENCONNow|iPhoneSimulator
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.ENCONNow|iPhoneSimulator.Build.0 = ENCONNow|iPhoneSimulator
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.iOS-TestCloud-Debug|Any CPU.ActiveCfg = iOS-TestCloud-Debug|Any CPU
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.iOS-TestCloud-Debug|Any CPU.Build.0 = iOS-TestCloud-Debug|Any CPU
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.iOS-TestCloud-Debug|iPhone.ActiveCfg = iOS-TestCloud-Debug|iPhone
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.iOS-TestCloud-Debug|iPhone.Build.0 = iOS-TestCloud-Debug|iPhone
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.iOS-TestCloud-Debug|iPhoneSimulator.ActiveCfg = iOS-TestCloud-Debug|iPhoneSimulator
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.iOS-TestCloud-Debug|iPhoneSimulator.Build.0 = iOS-TestCloud-Debug|iPhoneSimulator
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.iOS-TestCloud-Release|Any CPU.ActiveCfg = iOS-TestCloud-Release|Any CPU
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.iOS-TestCloud-Release|Any CPU.Build.0 = iOS-TestCloud-Release|Any CPU
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.iOS-TestCloud-Release|iPhone.ActiveCfg = iOS-TestCloud-Release|iPhone
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.iOS-TestCloud-Release|iPhone.Build.0 = iOS-TestCloud-Release|iPhone
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.iOS-TestCloud-Release|iPhoneSimulator.ActiveCfg = iOS-TestCloud-Release|iPhoneSimulator
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.iOS-TestCloud-Release|iPhoneSimulator.Build.0 = iOS-TestCloud-Release|iPhoneSimulator
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.Release|iPhone.ActiveCfg = Release|iPhone
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.Release|iPhone.Build.0 = Release|iPhone
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.test|Any CPU.ActiveCfg = test|Any CPU
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.test|Any CPU.Build.0 = test|Any CPU
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.test|iPhone.ActiveCfg = test|iPhone
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.test|iPhone.Build.0 = test|iPhone
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.test|iPhoneSimulator.ActiveCfg = test|iPhoneSimulator
+		{0B7F3D86-B6AE-4D1A-A905-F2E1DC69566C}.test|iPhoneSimulator.Build.0 = test|iPhoneSimulator
+	EndGlobalSection
+EndGlobal

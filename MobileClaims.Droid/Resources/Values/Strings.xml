@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+  <!-- Configuration strings-->
+  <string name="googleMapsApiKeyRelease">AIzaSyD_aRbKRZhb56DPuis1S-NTOQ2hvJP2lSs</string>
+  <string name="googleMapsApiKeyDebug">AIzaSyAF73Q7vSWC9K9pZMDnviXPKtkmYW-fO7Y</string>
+
+  <string name="ipStackApiKeyRelease">0e95eae6857f234e5ebfe9f2658cea6b</string>
+  <string name="ipStackApiKeyDebug">c46b98f4b7da01c13724ed6624c29d2a</string>
+
+  <string name="colon">:</string>
+  <string name="locale">en</string>
+  <string name="Hello">Hello</string>
+  <string name="loginUsingTouch">LOG IN USING TOUCH</string>
+  <string name="loginInstructions">Please login with your greenshield.ca user id and password.</string>
+
+  <string name="loginError">You have entered an incorrect User Name or Password or your account is no longer active. Please note that you are allowed only 5 unsuccessful login attempts before your account becomes locked.</string>
+  <string name="loginErrorTitle">Login error</string>
+  <string name="loginErrorNetworkProblem">Oops, we\'re sorry. It\'s our fault that you\'re having trouble connecting. Please try again later.</string>
+  <string name="fingerprintLoginInstruction">Log in using your fingerprint</string>
+  <string name="fingerprintLoginConfirm">Use your fingerprint for future logins</string>
+
+  <string name="error">Error</string>
+  <string name="refineYourSearch">REFINE YOUR SEARCH</string>
+  <string name="location">LOCATION</string>
+  <string name="currentLocation">Current location</string>
+  <string name="providerType">PROVIDER TYPE</string>
+  <string name="filter">FILTER</string>
+  <string name="qualityRating">QUALITY RATING</string>
+  <string name="directBill">DIRECT BILL</string>
+  <string name="recentlyVisited">RECENTLY VISITED</string>
+  <string name="sort">SORT</string>
+  <string name="distance">Distance</string>
+  <string name="nameRefine">Name</string>
+  <string name="ratingAndDistance">Rating &amp; Distance</string>
+  <string name="ratingAndName">Rating &amp; Name</string>
+  <string name="refineDone">Done</string>
+  <string name="notAvailable">NOT AVAILABLE</string>
+  <string name="favourites">Favourites</string>
+
+  <string name="contactAlreadyExists">already exists in your contacts</string>
+  <string name="addToContacts">Add to Contacts</string>
+  <string name="directions">Directions</string>
+  <string name="fileNotFound">File not found</string>
+  <string name="actionRequired">Action required</string>
+
+  <!-- AUDIT -->
+  <string name="activeAudit">Active audit</string>
+
+  <!-- COP -->
+  <string name="serviceDate">Service Date</string>
+  <string name="claimFormNumber">Claim Form Number</string>
+  <string name="serviceDescription">Service Description</string>
+  <string name="claimedAmount">Claimed Amount ($Cdn)</string>
+  <string name="disclaimer">
+    <u>Disclaimer.</u>
+  </string>
+  <string name="pleaseUploadDocuments">Please upload documents for this claim.</string>
+  <string name="fileTypeNotSupported">File format not supported</string>
+  <string name="phone"> Phone: </string>
+  <string name="yes">Yes</string>
+  <string name="no">No</string>
+
+  <!-- TERMS AND CONDITIONS -->
+  <string name="privacyContent">Privacy ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum velit lectus, congue et justo lobortis, auctor rhoncus risus. Maecenas quis diam enim. Phasellus ultrices dictum sapien, non molestie ligula molestie at. Phasellus quis nunc nec arcu vulputate laoreet. Pellentesque sit amet elit elit. \n \n Aenean sit amet purus id risus feugiat elementum. Phasellus lacus nisl, posuere sit amet dolor eu, elementum adipiscing sapien. Vivamus ac vulputate orci. Integer eget lectus porta, bibendum mi nec, viverra ligula.</string>
+  <string name="legalContent">Legal ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum velit lectus, congue et justo lobortis, auctor rhoncus risus. Maecenas quis diam enim. Phasellus ultrices dictum sapien, non molestie ligula molestie at. Phasellus quis nunc nec arcu vulputate laoreet. Pellentesque sit amet elit elit. Proin placerat turpis quis mi rutrum, nec iaculis dolor molestie. Nulla facilisi. Mauris placerat congue dolor, in porttitor ipsum iaculis quis. Proin sodales risus risus. Donec venenatis sapien sed mi hendrerit, sit amet consectetur nisl congue. Donec et mauris mauris. Aenean sit amet purus id risus feugiat elementum. Phasellus lacus nisl, posuere sit amet dolor eu, elementum adipiscing sapien. Vivamus ac vulputate orci. Integer eget lectus porta, bibendum mi nec, viverra ligula.</string>
+  <string name="securityContent">Security Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec blandit, mi interdum lobortis lobortis, tortor libero mattis orci, a ullamcorper turpis nunc vitae purus. Mauris elementum mauris quam, eu venenatis tellus vehicula sed. Suspendisse convallis interdum lectus. Maecenas quis diam enim. Phasellus ultrices dictum sapien, non molestie ligula molestie at. Phasellus quis nunc nec arcu vulputate laoreet. Pellentesque sit amet elit elit. \n \n Aenean sit amet purus id risus feugiat elementum. Phasellus lacus nisl, posuere sit amet dolor eu, elementum adipiscing sapien. Vivamus ac vulputate orci. Integer eget lectus porta, bibendum mi nec, viverra ligula. \n \n Proin placerat turpis quis mi rutrum, nec iaculis dolor molestie. Nulla facilisi. Mauris placerat congue dolor, in porttitor ipsum iaculis quis. Proin sodales risus risus. Donec venenatis sapien sed mi hendrerit, sit amet consectetur nisl congue. Donec et mauris mauris.Proin placerat turpis quis mi rutrum, nec iaculis dolor molestie. Nulla facilisi. Mauris placerat congue dolor, in porttitor ipsum iaculis quis. Proin sodales risus risus. Donec venenatis sapien sed mi hendrerit, sit amet consectetur nisl congue. Donec et mauris mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum velit lectus, congue et justo lobortis, auctor rhoncus risus. Maecenas quis diam enim. Phasellus ultrices dictum sapien, non molestie ligula molestie at. Phasellus quis nunc nec arcu vulputate laoreet. Pellentesque sit amet elit elit. Aliquam tortor quam, eleifend vel eros vitae, rhoncus ultrices turpis. Aliquam ut nulla erat. Etiam purus risus, mattis at velit non, egestas dictum ante. Nunc vulputate nec metus id gravida. Vivamus quis elit vitae lacus pretium dignissim interdum bibendum nulla. Fusce imperdiet vel nisl eget ultricies. Nam pharetra in tortor vel consequat. Nam lacus quam, sollicitudin placerat massa sit amet, malesuada posuere dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse placerat, felis vitae adipiscing varius, turpis justo luctus mi, sodales placerat odio dolor eget justo. Quisque posuere mauris ut nisl iaculis, a vestibulum nibh pellentesque. \n \n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum velit lectus, congue et justo lobortis, auctor rhoncus risus. Maecenas quis diam enim. Phasellus ultrices dictum sapien, non molestie ligula molestie at. Phasellus quis nunc nec arcu vulputate laoreet. Pellentesque sit amet elit elit. Aliquam tortor quam, eleifend vel eros vitae, rhoncus ultrices turpis. Aliquam ut nulla erat. Etiam purus risus, mattis at velit non, egestas dictum ante. Nunc vulputate nec metus id gravida. Vivamus quis elit vitae lacus pretium dignissim interdum bibendum nulla. Fusce imperdiet vel nisl eget ultricies. Nam pharetra in tortor vel consequat. Nam lacus quam, sollicitudin placerat massa sit amet, malesuada posuere dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse placerat, felis vitae adipiscing varius, turpis justo luctus mi, sodales placerat odio dolor eget justo. Quisque posuere mauris ut nisl iaculis, a vestibulum nibh pellentesque. \n \n Aenean sit amet purus id risus feugiat elementum. Phasellus lacus nisl, posuere sit amet dolor eu, elementum adipiscing sapien. Vivamus ac vulputate orci. Integer eget lectus porta, bibendum mi nec, viverra ligula. Curabitur ac augue id turpis fringilla eleifend. Duis quis urna in massa tempor faucibus a nec erat. Donec condimentum elit ut lectus mattis fermentum. Maecenas non turpis purus. Cras fermentum mauris mi, placerat ullamcorper felis vehicula in. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec blandit, mi interdum lobortis lobortis, tortor libero mattis orci, a ullamcorper turpis nunc vitae purus. Mauris elementum mauris quam, eu venenatis tellus vehicula sed. Suspendisse convallis interdum lectus. Aenean sit amet purus id risus feugiat elementum. Phasellus lacus nisl, posuere sit amet dolor eu, elementum adipiscing sapien. Vivamus ac vulputate orci. Integer eget lectus porta, bibendum mi nec, viverra ligula. Curabitur ac augue id turpis fringilla eleifend. Duis quis urna in massa tempor faucibus a nec erat. Donec condimentum elit ut lectus mattis fermentum. Maecenas non turpis purus. Cras fermentum mauris mi, placerat ullamcorper felis vehicula in. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec blandit, mi interdum lobortis lobortis, tortor libero mattis orci, a ullamcorper turpis nunc vitae purus. Mauris elementum mauris quam, eu venenatis tellus vehicula sed. Suspendisse convallis interdum lectus.</string>
+  <!-- DRUG LOOKUP -->
+  <string name="benefits">BENEFITS</string>
+  <string name="drugNameTitle">DRUG NAME</string>
+  <string name="drugNameHint">Drug Name</string>
+  <string name="DINTitle">DRUG IDENTIFICATION NUMBER (DIN)</string>
+  <string name="byName">BY DRUG NAME</string>
+  <string name="byDIN">BY DRUG IDENTIFICATION NUMBER (DIN)</string>
+  <string name="drugLookupModelSelectionLabel">SEARCH MY DRUG COVERAGE</string>
+  <string name="chooseDrug">SEARCH MY DRUG COVERAGE</string>
+  <string name="chooseDrugSubHeading">CHOOSE ONE OF THE FOLLOWING</string>
+  <string name="drugNameFieldText">Enter DRUG NAME</string>
+  <string name="drugNamePlaceholder">name</string>
+  <string name="confirm">CONFIRM</string>
+  <string name="drugDINFieldText">Enter DIN</string>
+  <string name="drugDINLabel">DIN</string>
+  <string name="drugDINPlaceholder">din</string>
+  <string name="confirmDrug">CONFIRM YOUR DRUG</string>
+  <string name="search">SEARCH</string>
+  <string name="searchTitle">SEARCH</string>
+  <string name="drugInformation">DRUG INFORMATION</string>
+  <string name="myDrugResults">MY DRUG SEARCH RESULTS</string>
+  <string name="notes">NOTES</string>
+  <string name="planParticipant">PLAN PARTICIPANT</string>
+  <string name="choosePlanParticipant">CHOOSE THE PLAN PARTICIPANT</string>
+  <string name="drugNameAndStrength">DRUG NAME AND STRENGTH</string>
+  <string name="drugCovered">IS THIS DRUG COVERED UNDER YOUR {0} BENEFITS PLAN?</string>
+  <string name="reimbursement">REIMBURSEMENT</string>
+  <string name="specialAuthRequired">SPECIAL AUTHORIZATION REQUIRED?</string>
+  <string name="downloadAndView">DOWNLOAD AND VIEW</string>
+  <string name="sendByEmail">SEND BY EMAIL</string>
+  <string name="noresults">No Results Found</string>
+  <string name="noresultsdetails">No drugs were found that match the name or DIN provided</string>
+  <string name="cancel">Cancel</string>
+  <string name="send">Send</string>
+  <string name="sendAuthForm">Send Special Authorization Form to (enter email address):</string>
+  <string name="enterName">ENTER DRUG NAME</string>
+  <string name="enterDIN">ENTER DIN</string>
+  <string name="nameError">Drug: Please enter a drug name</string>
+  <string name="dinError">DIN: Please enter a DIN.</string>
+  <string name="dinFormatError">DIN is not in the correct format. A DIN always consists of eight numbers. It can be found on your pharmacy receipt or the drug\'s container/packaging. Please try again.</string>
+  <string name="nameLengthError">Drug name is too short. Enter at least three characters of the drug name.</string>
+  <string name="planMemberSelectedError">A plan member was not selected. Select the applicable plan member from the list.</string>
+  <string name="newSearch">NEW SEARCH</string>
+  <string name="download1">Yes. Please download the Special Authorization Form or send it by email to yourself or directly to your physician.</string>
+  <string name="download2">This drug is a non-approved drug on your plan. Please download the Special Authorization Form or send it by email to yourself or directly to your physician.</string>
+  <string name="specialMessages">SPECIAL MESSAGES</string>
+  <string name="reimbursementMessage">Your plan reimburses drugs based on the lowest- cost drug in its therapeutic category; usually this is the generic equivalent drug. The drug name and DIN shown is the lowest-cost alternative for your search.</string>
+  <string name="DrugsNotesDescButton1">
+    <font size="20">&#8226;</font>  This search is valid as of the search date shown above.
+  </string>
+  <string name="DrugsNotesDescButton2">
+    <font size="20">&#8226;</font>  If this drug is covered by your provincial drug plan, it may not be eligible under your {0} benefits plan.
+  </string>
+  <string name="DrugsNotesDescButton3">
+    <font size="20">&#8226;</font>  While this drug search may indicate that the drug is covered (e.g., eligible for reimbursement), it does not guarantee that the drug will be reimbursed. Reimbursement is subject to the provisions of your benefits plan. For example, if your plan has an annual drug maximum (or cap), an eligible drug will not be reimbursed if you have already reached the plan maximum. Or, if the eligible drug requires an authorization form, it may only be reimbursed if you meet specific medical criteria.\n
+  </string>
+  <string name="DrugsNotesDescButton4">
+    <font size="20">&#8226;</font>  Every attempt has been made to ensure the accuracy of this search; however, if there is a discrepancy between the search results and a claim submission, the claim submission will be considered valid.\n
+  </string>
+  <string name="detailsProviderEmailCompleteTitle">Email confirmation</string>
+  <string name="detailsProviderEmailCompleteDesc">Your email was sent successfully</string>
+  <string name="detailsProviderEmailErrorDesc">Sorry, your email was not sent. Please try again later or download the form to your device.</string>
+
+  <string name="drugsDownloadError">Sorry, your download was unsuccessful. Please try again or email the form.</string>
+
+  <!-- SPENDING ACCOUNTS -->
+  <string name="balances">MY BALANCES</string>
+  <string name="accountTitle">ACCOUNT</string>
+  <string name="selectAccount">SELECT ACCOUNT</string>
+  <string name="accountDetails">ACCOUNT DETAILS</string>
+  <string name="totalRemaining">TOTAL REMAINING:</string>
+  <string name="deposited">DEPOSITED:</string>
+  <string name="deposited_tab">DEPOSITED</string>
+  <string name="usedToDate">USED TO DATE:</string>
+  <string name="usedToDate_tab">USED TO DATE</string>
+  <string name="remaining">REMAINING:</string>
+  <string name="remaining_tab">REMAINING</string>
+  <string name="forfeited">AMOUNT REMAINING FORFEITED IF NOT USED BY</string>
+  <string name="forfeited_lower">Amount Remaining forfeited if not used by:</string>
+  <string name="contributionYear">CONTRIBUTION YEAR :</string>
+  <string name="to"> TO </string>
+  <string name="noAccounts">Oops. We\'re sorry, you don\'t have a spending account.</string>
+  <string name="noClaimSubmission">Oops. We\'re sorry, you don\'t have access to online claim submission.</string>
+  <string name="noMatchingProviders">No matching health providers were found</string>
+  <string name="no_contributions_found">No contribution information found.</string>
+
+  <!--- CARD VIEW -->
+  <string name="cardTravelNumber">Group #</string>
+
+  <!---LOCATE PROVIDERS -->
+  <string name="locateProviders">Find a Health Provider</string>
+  <string name="serviceProviderTypeLabel">Type of Service Provider</string>
+  <string name="locateProvidersDone">Done</string>
+  <string name="service">Service</string>
+
+  <string name="locateProvidersSearchByDrugLabel">Check eligibility for one of the following benefits</string>
+  <string name="locateProvidersMakeSelectionLabel">Make your selection</string>
+
+  <string name="locateProviderMakeSelection">MAKE YOUR SELECTION:</string>
+  <string name="locateProviderNarrowSearchText">NARROW YOUR SEARCH:</string>
+  <string name="locateProviderSearchByText">SEARCH BY:</string>
+  <string name="locateProviderOptionalText">OPTIONAL:</string>
+
+  <string name="locateProviderSearchTypeLabel">Type of Search</string>
+  <string name="locateProviderSearchTitleLabel">Find Counselling Services</string>
+  <string name="locateProviderLocationTitle">Location to Search</string>
+  <string name="locateProviderFindTitle">Find</string>
+  <string name="locateProviderAddressLabel">Address</string>
+  <string name="locateProviderPostalCodeLabel">Postal Code</string>
+  <string name="locateProviderMyCurrentLocationLabel">My Current Location</string>
+  <string name="locateProviderAllProvidersLabel">All Providers</string>
+  <string name="locateProviderPhoneNumberLabel">Phone Number</string>
+  <string name="locateProviderPhoneNumber">Phone Number:</string>
+  <string name="locateProviderLastNameLabel">Last Name</string>
+  <string name="locateProviderBusinessNameLabel">Business Name</string>
+  <string name="locateProviderRangeLabel">Within a distance of</string>
+  <string name="locateProviderCityLabel">City</string>
+  <string name="locateProviderNameLabel">Name</string>
+  <string name="locateProviderNoFilter">No filter</string>
+
+  <string name="detailsProviderSearchLabelCity">SHOW A HEALTH PROVIDER WITH THE FOLLOWING CITY</string>
+  <string name="detailsProviderSearchLabelPhoneNumber">SHOW A HEALTH PROVIDER WITH THE FOLLOWING PHONE NUMBER</string>
+  <string name="detailsProviderSearchLabelLastName">SHOW A HEALTH PROVIDER WITH THE FOLLOWING LAST NAME</string>
+  <string name="detailsProviderSearchLabelBusinessName">SHOW A HEALTH PROVIDER WITH THE FOLLOWING BUSINESS NAME</string>
+
+  <string name="detailsProviderTitle">SEARCH</string>
+  <string name="detailsProviderRadiusInfoLabel">"FIND "</string>
+  <string name="detailsProviderRadiusInfoLabel1">A</string>
+  <string name="detailsProviderRadiusInfoLabelMiddle">" HEALTH PROVIDER WITHIN "</string>
+  <string name="detailsProviderRadiusInfoLabelLocation">" KM OF MY CURRENT LOCATION</string>
+  <string name="detailsProviderRadiusInfoLabelAddress">" KM OF THE ADDRESS</string>
+  <string name="detailsProviderRadiusInfoLabelPostalCode">" KM OF THE POSTAL CODE</string>
+
+  <string name="lspProviderRadiusInfoLabelMylocation">Find a health provider within {0}km of my current location</string>
+  <string name="lspProviderRadiusInfoLabelAddress">Find a health provider within {0}km of the address</string>
+  <string name="lspProviderRadiusInfoLabelPostalcode">Find a health provider within {0}km of the postal code</string>
+
+  <string name="detailsProviderRadiusInfoLabelEnd">" OF "</string>
+  <string name="myLocation">MY LOCATION:</string>
+  <string name="detailsProviderSearchLabel">SHOW PROVIDER WITH THE FOLLOWING </string>
+  <string name="detailsProviderSearchLabelEnd"></string>
+  <string name="detailsProviderInfoLabel">UP TO 50 HEALTH PROVIDERS WILL BE SHOWN</string>
+  <string name="detailsProviderExampleAddressLabel">Example: 123 Main St., CITY, PROV</string>
+  <string name="detailsProviderExamplePostalCodeLabel">Example A1A 1A1</string>
+  <string name="detailsProviderErrorTitle">No health providers found</string>
+  <string name="detailsProviderErrorDesc">There are no matching health providers. Try to expand your search criteria.</string>
+  <string name="detailsProviderErrorFieldTitle">Missing fields</string>
+  <string name="detailsProviderErrorFieldDesc">Please fill in the required fields.</string>
+  <string name="desearchsearchtailsProviderErrorFieldDesc">Please fill in the required fields.</string>
+  
+  <string name="searchProviderServiceType">Service Type: </string>
+  <string name="searchProviderTitle">Providers</string>
+  <string name="searchProviderSearchedLabel">You Searched:</string>
+  <string name="searchProviderServiceTypeValue">Health Provider Type: </string>
+
+  <string name="mapProviderTitle">Locations</string>
+  <string name="mapGetDirectionLink">Get Directions</string>
+
+  <string name="mapProviderDetailsTitle">Provider</string>
+  <string name="mapProviderDetailsSubmit">Health provider submits claims directly online</string>
+  <string name="mapProviderDetailsNotSubmit">Health provider does not submit claims directly online</string>
+  <string name="mapProviderDetailsAccept">Health provider accepts payment directly</string>
+  <string name="mapProviderDetailsNotAccept">Health provider does not accept payments directly</string>
+
+  <string name="selectServiceProvider">Select the type of service provider you are looking for.</string>
+
+  <!---CLAIM SUBMISSION -->
+  <string name="claimsHeadertitle">My Claims</string>
+  <string name="claimTitle">Claim Submission</string>
+  <string name="hcsaclaimsHeadertitle">HCSA</string>
+  <string name="benefitsDisclaimer">
+    <p style="color:#CF314C;">
+      <b>The listing below may include benefits not covered by your plan.</b>
+    </p>
+    This allows you to submit your claim and receive a statement for coordination with another carrier, or for income tax purposes.
+  </string>
+  <string name="treatmentTypeTitle">Select claim/service type:</string>
+  <string name="claimTermsandConditionsTitle">Terms and Conditions</string>
+  <string name="claimAgreeAndContinueTitle">Agree and Continue</string>
+  <string name="claimServiceProvidersTitle">Health Providers</string>
+  <string name="claimServiceProviderSelectTitle">Select a health provider from the list, or look up your health provider by name or phone number.</string>
+  <string name="lookupProviderByNameLabel">Look up a health provider by name</string>
+  <string name="lookupProviderByPhoneLabel">Look up a health provider by phone number</string>
+  <string name="searchByPhoneLabel">Search By Phone Number</string>
+  <string name="searchByNameLabel">Search By Name</string>
+  <string name="lookupProviderByInitialLabel">Initial</string>
+  <string name="lookupProviderByLastNameLabel">Last Name</string>
+  <string name="phoneNumberLabel">Phone Number</string>
+  <string name="searchResultLabel">Search Results</string>
+  <string name="selectProviderFromListLabel">Select a health provider from the list</string>
+  <string name="stillCantFindProviderLabel">Still can\'t find your health provider?</string>
+  <string name="stillCantFindProviderDescLabel">If you cannot find your health provider, they may not have registered with {0}. Please complete the information below and click \"Use this health provider\". Processing of your claim will be delayed while we confirm the health provider\'s credentials. Once verified, your claim will be processed accordingly.\n\nPlease note: For professional services, where you have received treatment from a medical professional, please enter the information for the medical professional and not for the clinic where he or she practices.</string>
+  <string name="myServiceProviderLabel">Provide information about my health provider</string>
+  <string name="notEligibleVisionClaimsMessage">We\'re sorry. This claim cannot be processed through the mobile app. Please submit it through Plan Member Online Services.</string>
+
+  <string name="claimServiceProviderTitle">Health Provider:</string>
+  <string name="claimServiceProviderEntryRegistrationLabel">Registration No.</string>
+  <string name="claimServiceProviderEntryUsetThisLabel">Use this health provider</string>
+
+  <string name="claimPlanParticipantLabel">Plan Participant</string>
+  <string name="claimPlanParticipantTitle">Please select the plan participant for whom you are submitting the {0} claim</string>
+  <string name="claimPlanParticipantChangedTitle">Plan participant changed</string>
+  <string name="claimPlanParticipantChangedContent">
+    You have changed the Plan Participant for this
+    claim. Please ensure that all the information in this
+    claim pertains to {0}.\n\n
+    If you are claiming treatments for multiple Plan
+    Participants, you must submit separate claims for
+    each Plan Participant.
+  </string>
+
+  <string name="benefitPlanParticipantChangedContent">All information on this eligibility check will now be associated with the new participant. Do you wish to continue?</string>
+
+  <string name="claimServiceProviderErrorMsgTitle">Error</string>
+  <string name="claimMandatoryErrorMsg">Please enter all mandatory information.</string>
+  <string name="claimInvalidPostalCodeErrorMsg">You must specify a valid Postal Code</string>
+  <string name="claimInvalidPhoneErrorMsg">You must specify a valid Phone Number</string>
+
+  <string name="claimDetailsLabel">Claim Details</string>
+  <string name="claimDetailsTitle">Please provide the claim details for {0}</string>
+  <string name="claimDetailsWithoutParticipantTitle">Please select a plan Participant then provide  the claim details for that Plan Participant</string>
+  <string name="claimDetailsServiceProvider">Health provider - {0}</string>
+
+  <string name="claimOtherBenefitsView_OtherBenefitPlan">Do you have coverage under another benefits plan?</string>
+  <string name="claimOtherBenefitsView_CoverageWithGSC">Is the coverage with {0}?</string>
+  <string name="claimOtherBenefitsView_SubmittedOtherBenefitPlan">Has this claim been submitted to the other benefit plan?</string>
+  <string name="claimOtherBenefitsView_UnpaidGSCPlan">Pay any unpaid balance through my other {0} plan</string>
+  <string name="claimOtherBenefitsView_OtherGSCNumber">Enter the other {0} number</string>
+
+  <string name="claimOtherBenefitsView_OtherGSCNumber_confirmation">Enter the other {0} number</string>
+  <string name="claimOtherBenefitsView_UnpaidHCSA">Would you like any unpaid amount of your eligible expenses to be paid under your HCSA?</string>
+  <string name="claimMotorVehicleView_MotorVehicleAccident">Is treatment required due to a motor vehicle accident?</string>
+  <string name="claimMotorVehicleView_AccidentDate">Please provide the date of accident</string>
+
+  <string name="claimWorkInjuryView_WorkRelatedInjury">Is the treatment required due to a work related injury?</string>
+  <string name="claimWorkInjuryView_AccidentDate">Please provide the date of injury</string>
+  <string name="claimWorkInjuryView_CaseNumber">Please provide the case number</string>
+
+  <string name="claimMedicalItemView_SportsInjury">Is the medical item required for sport purposes only?</string>
+
+  <string name="claimMedicalReferralView_MedicalReferralSubmitted">Do you have a medical prescription to submit with this claim?</string>
+  <string name="claimMedicalReferralView_ReferralDate">Please provide the date of the referral</string>
+  <string name="claimMedicalReferralView_MedicalProfessional">Indicate which type of medical professional referred the service</string>
+  <string name="claimMedicalProfessionalLabel">Medical Professional</string>
+  <string name="claimTreatmentDetailsLabel">Claim details for {0}</string>
+  <string name="claimTreatmentDetailsWithoutParticipantLabel">Claim details</string>
+
+  <string name="claimSubmitClaimContinueLabel">Continue</string>
+
+  <string name="claimSpecifyGSCNumberError">You must specify the other {0} number.</string>
+  <string name="claimSpecifyAccidentDateEnteredError">The date of accident must be entered.</string>
+  <string name="claimSpecifyAccidentDateNoFutureError">Date of accident cannot be future dated.</string>
+  <string name="claimSpecifyInjuryEnteredError">The date of injury must be entered.</string>
+  <string name="claimSpecifyInjuryNoFutureError">Date of injury cannot be future dated.</string>
+  <string name="claimSpecifyCaseNumError">Case # must be entered.</string>
+  <string name="claimSpecifyPrescriptionNoFutureError">Date of Prescription cannot be future dated</string>
+  <string name="claimSpecifyMedicalProfessionalTypeError">Medical Professional Type must be selected.</string>
+  <string name="claimSpecifyPrescriptionTooOldError">Date of the prescription must be within the last 12 months.</string>
+
+
+  <string name="claimTreatmentDetails">Claim Details</string>
+  <string name="claimTreatmentDetailsTitle">Claim(s) for {0}</string>
+  <string name="claimTreatmentAddLabel">Add Claim</string>
+  <string name="claimTreatmentSaveLabel">Save</string>
+  <string name="claimTreatmentCancelLabel">Cancel</string>
+  <string name="claimTreatmentLabel">Treatment</string>
+  <string name="claimTreatmentTypeLabel">Type of Treatment</string>
+  <string name="claimTreatmentTypeLabelPhone">Type of Treatment:</string>
+  <string name="claimTreatmentLengthLabel">Length of treatment</string>
+  <string name="claimTreatmentDateLabel">Date of treatment</string>
+  <string name="claimTreatmentDateLabelPhone">Date of treatment:</string>
+  <string name="claimTreatmentTotalLabel">Total amount of visit</string>
+  <string name="claimTreatmentTotalLabelPhone">Total amount of visit:</string>
+  <string name="claimTreatmentAlternateCarrierLabel">Amount paid by alternate carrier</string>
+  <string name="claimTreatmentAlternateCarrierLabelPhone">Amount paid by alternate carrier:</string>
+  <string name="claimTreatmentDeleteLabel">Delete entry</string>
+  <string name="claimDeleteTreatmentLabel">Delete </string>
+  <string name="claimCountOf">Claim {0} of {1}</string>
+  <string name="TreatmentDetailsProcedureCode">Procedure Code</string>
+  <string name="TreatmentDetailsToothCode">Tooth Code</string>
+  <string name="TreatmentDetailsToothSurface">Tooth Surface</string>
+  <string name="TreatmentDetailsDentistFee">Dentist\'s Fee</string>
+  <string name="TreatmentDetailsLabCharge">Laboratory Charge</string>
+  <string name="TreatmentDetailsTotalAmountCharged">Delete </string>
+  <string name="TreatmentDetailsAmountPaidAlt">Amount paid by alternate carrier</string>
+  <string name="TreatmentDetailsAmountPaidGP">Amount paid by a provincial plan or government program</string>
+  <string name="claimTreatmentItemDescLabel">Item Description</string>
+  <string name="claimTreatmentItemDescLabelPhone">Item Description:</string>
+  <string name="claimTreatmentPickupDateLabel">Pick up Date</string>
+  <string name="claimTreatmentPickupDateLabelPhone">Pick up Date:</string>
+  <string name="claimTreatmentQtyLabel">Quantity</string>
+  <string name="claimTreatmentQtyLabelPhone">Quantity:</string>
+  <string name="claimTreatmentTotalChargedLabel">Total Amount Charged</string>
+  <string name="claimTreatmentTotalChargedMILabel">Total Amount Charged for Medical Items</string>
+  <string name="claimTreatmentTotalChargedLabelPhone">Total Amount Charged:</string>
+  <string name="claimTreatmentTotalChargedMILabelPhone">Total Amount Charged for Medical Items:</string>
+  <string name="claimTreatmentGSTLabel">GST/HST Included in Total</string>
+  <string name="claimTreatmentGSTLabelPhone">GST/HST Included in Total:</string>
+  <string name="claimTreatmentPSTLabel">PST Included in Total</string>
+  <string name="claimTreatmentPSTLabelPhone">PST Included in Total:</string>
+  <string name="claimTreatmentReferralLabel">Referral Information</string>
+  <string name="claimTreatmentMonthlyDateLabel">Date of Monthly Payment</string>
+  <string name="claimTreatmentMonthlyDateLabelPhone">Date of Monthly Payment:</string>
+  <string name="claimTreatmentOrthodonticFeeLabel">Orthodontic Monthly Fee</string>
+  <string name="claimTreatmentOrthodonticFeeLabelPhone">Orthodontic Monthly Fee:</string>
+
+  <string name="claimSubmitTOSTitleLabel">Terms and Agreement</string>
+  <string name="claimSubmitTOS">I agree that all information provided using this {0} online claim submission application will be complete and accurate.    I understand that the information, including my personal information that I provided to {1} about myself and my dependents will be used by {2} for claims adjudication and any other services necessary in the administration of my benefits. This may include the exchange of information with other parties to administer this benefit plan.\n\nI am authorized by my spouse and/or dependents to disclose and receive information about them that is used for these purposes.  My spouse and/or dependents understand that this information may be seen by me, the cardholder.</string>
+  <string name="claimSubmitAgreeLabel">Terms and Agreement</string>
+
+  <string name="claimSubmissionConfirmLabel">Confirm your claim</string>
+  <string name="claimSubmissionPlanInfoLabel">Plan information</string>
+  <string name="claimSubmissionGSIDLabelPhone">{0} ID Number:</string>
+  <string name="benefitSubmissionGSIDLabel">{0} ID Number:</string>
+  <string name="benefitSubmissionGSIDNocolonLabel">{0} ID Number</string>
+  <string name="claimSubmissionParticipantLabel">Participant Name</string>
+  <string name="claimSubmissionParticipantLabelPhone">Participant Name:</string>
+
+  <string name="claimSubmissionMissingTreatmentMsg">No claim detail information entered</string>
+
+  <string name="claimSubmissionClaimDetailsLabel">Claim details</string>
+  <string name="claimSubmissionTreatmentDetails">TREATMENT DETAILS</string>
+  <string name="claimSubmissionTOS">The above information will be submitted to {0}. Please ensure the information is correct before proceeding. If you need to change the information, please click the back button to return to the claim submission form. Otherwise click the Submit button to submit the claim to {1}.</string>
+
+  <string name="claimResultTitleLabel">Claim Submission Result</string>
+  <string name="claimResultSpouseTitleLabel">Claim Submission Result – Your spouse\'s account</string>
+  <string name="claimResultSubmissionDateLabel">Submission Date</string>
+  <string name="claimResultSubmissionDateLabelPhone">Submission Date:</string>
+  <string name="claimResultTotalsLabel">TOTALS</string>
+  <string name="claimResultClaimedAmountLabel">Claimed amount ($Cdn)</string>
+  <string name="claimResultClaimedAmountLabelPhone">Claimed amount ($Cdn):</string>
+  <string name="claimResultOtherAmountLabel">Other paid amount ($Cdn)</string>
+  <string name="claimResultOtherAmountLabelPhone">Other paid amount ($Cdn):</string>
+  <string name="claimResultDeductibleLabel">Deductible</string>
+  <string name="claimResultDeductibleLabelPhone">Deductible:</string>
+  <string name="claimResultCopayLabel">Copay</string>
+  <string name="claimResultCopayLabelPhone">Copay:</string>
+  <string name="claimResultPaidAmountLabel">Paid amount ($Cdn)</string>
+  <string name="claimResultPaidAmountLabelPhone">Paid amount ($Cdn):</string>
+  <string name="claimResultClaimDetailsLabel">CLAIM DETAILS</string>
+  <string name="claimResultFormNumberLabel">Form Number</string>
+  <string name="claimResultFormNumberLabelPhone">Form Number:</string>
+  <string name="claimResultServiceDateLabel">Service Date</string>
+  <string name="claimResultExpenseDateLabel">Date of Expense</string>
+  <string name="claimResultServiceDateLabelPhone">Service Date:</string>
+  <string name="claimResultExpenseDateLabelPhone">Date of Expense:</string>
+  <string name="claimResultServiceDescriptionLabel">Service Description</string>
+  <string name="claimResultTypeOfExpenseLabel">Type of Expense</string>
+  <string name="claimResultServiceDescriptionLabelPhone">Procedure Code:</string>
+  <string name="claimResultTypeOfExpenseLabelPhone">Type of Expense:</string>
+  <string name="claimResultClaimStatusLabel">Claim Status</string>
+  <string name="claimResultClaimStatusLabelPhone">Claim Status:</string>
+  <string name="claimResultNotification">*Payments for claims with a status of \"Awaiting Payment\" will be processed on the next business day.</string>
+  <string name="claimResultHCSANotification">*Payments for claims with a status of \"Awaiting Payment\" will be processed on the next business day, based on your {0} balance.</string>
+  <string name="claimResultPlanLimitLabel">Plan Limitations</string>
+  <string name="claimResultParticpantLabel">Participant / Family</string>
+  <string name="claimResultStartDateLabel">Start Date</string>
+  <string name="claimResultAmountUsedLabel">Amount Used to Date</string>
+  <string name="claimResultUnittoDateLabel">Occurrences/Units to Date</string>
+  <string name="claimResultAuditNotificationLabel">Audit Notification</string>
+  <string name="claimResultAuditNotificationMsgHeader">Form Reference Number: {0}</string>
+  <string name="claimResultAuditNotificationMsg">Your claim has been selected for audit review. Please note that your immediate action is required. Please logon to Plan Member Online Services to respond to the audit request.</string>
+  <string name="claimResultAuditNotificationInstructionLabel">Audit notification instructions</string>
+  <string name="claimResultAuditNotificationAlertMsg">
+    Your claim has been randomly selected for audit review. Immediate action is required. You must respond to %1$s in the next 30 days. Please follow these steps:\n\n
+    • Login to %2$s\'s Plan Member Online Services via greenshield.ca.\n
+    • Once you have logged in, you will immediately see an Audit Reminder Notification message.\n
+    • Click on \'View Audit List\' to see your outstanding claims audit(s).\n
+    • Click on the applicable \'Form Number\' to view specific audit details.\n
+    • Conveniently upload your invoice and other supporting documentation (such as a prescription if required) online.\n
+    • Or, you can print the Audit Notification Form and mail it along with the requested documentation to the address noted on the bottom of the notification page."
+  </string>
+  <string name="claimResultSubmitAnotherClaim">Submit another claim</string>
+
+  <string name="claimTreatmentDateMonthlyTreatmentLabel">Date of Monthly Treatment</string>
+  <string name="claimTreatmentDateOfPurchaseLabel">Date of purchase / service</string>
+  <string name="claimTreatmentDateOfPurchaseLabelPhone">Date of purchase / service:</string>
+  <string name="claimTreatmentTypeEyewearLabel">Select the type of eyewear</string>
+  <string name="claimTreatmentTypeEyewearLabelPhone">Select the type of eyewear:</string>
+  <string name="claimTreatmentLenstypeLabel">Select the lens type</string>
+  <string name="claimTreatmentFrameAmountLabel">Frame Amount</string>
+  <string name="claimTreatmentFrameAmountLabelPhone">Frame Amount:</string>
+  <string name="claimTreatmentEyeglassAmountLabel">Eyeglass lenses Amount</string>
+  <string name="claimTreatmentEyeglassAmountLabelPhone">Eyeglass lenses Amount:</string>
+  <string name="claimTreatmentFeeAmountLabel">Fee amount</string>
+  <string name="claimTreatmentFeeAmountLabelPhone">Fee amount:</string>
+  <string name="claimTreatmentAckLabel">I acknowledge that the eyewear is for corrective purposes</string>
+  <string name="claimTreatmentAckLabelPhone">I acknowledge that the eyewear is for corrective purposes:</string>
+
+  <string name="claimTreatmentTotalAmountChargedLabel">Total Amount Charged:</string>
+  <string name="claimTreatmentDateOfExaminationLabel">Date of Examination</string>
+  <string name="claimTreatmentDateOfExaminationLabelPhone">Date of Examination:</string>
+  <string name="claimTreatmentTotalAmountExaminationLabel">Total amount of Examination</string>
+  <string name="claimTreatmentTotalAmountExaminationLabelPhone">Total amount of Examination:</string>
+
+  <string name="claimTreatmentMaxEntryError">A maximum of five claims can be added</string>
+
+  <!-- // -->
+  <string name="claimTOSTitle">Select the type of treatment or service that you are claiming</string>
+  <string name="claimNoProviderErrorTitle">No health providers found</string>
+  <string name="claimNoProviderErrorDesc">No matching health providers were found.</string>
+
+
+  <string name="claimNoMatchedDependent">The other {0} number does not have a matched dependent</string>
+  <string name="claimMultipleMatch">We\'re sorry. This claim cannot be processed through the mobile app. Please submit it through Plan Member Online Services.</string>
+  <string name="claimInvalidSecondaryPlanNumber">The secondary plan number entered cannot be used for processing your secondary claim</string>
+
+  <string name="claimInvalidOnlineClaim">Your secondary coverage plan does not allow for online claim submission. For coverage under your secondary plan, please submit the claim manually.</string>
+  <string name="claimInvalidGSCNumber">Your other {0} number is invalid</string>
+  <string name="claimInvalidClaim"></string>
+
+  <string name="prescriptionDetailsLabel">Prescription Details</string>
+  <string name="prescriptionDetailsErrorLabel">Prescription details are incomplete</string>
+
+  <string name="leftSphereLabel">Left Sphere</string>
+  <string name="rightSphereLabel">Right Sphere</string>
+
+  <string name="leftCylinderLabel">Left Cylinder</string>
+  <string name="rightCylinderLabel">Right Cylinder</string>
+
+  <string name="leftAxisLabel">Left Axis</string>
+  <string name="rightAxisLabel">Right Axis</string>
+
+  <string name="leftPrismLabel">Left Prism</string>
+  <string name="rightPrismLabel">Right Prism</string>
+
+  <string name="leftBifocalLabel">Left Bifocal</string>
+  <string name="rightBifocalLabel">Right Bifocal</string>
+
+
+  <!-- Button -->
+  <string name="OK">OK</string>
+  <string name="yesContinueBtn">Yes, continue</string>
+  <string name="noCancelBtn">No, cancel</string>
+  <string name="continueBtn">Continue</string>
+  <string name="newSearchBtnText">NEW SEARCH</string>
+  <!-- Claims Error Message-->
+  <string name="claimTreatmentTypeLabelerror">Please enter in all of the treatment details</string>
+  <string name="claimTreatmentTotalLabelInvalidTotal">Invalid Total Amount of Visit</string>
+  <string name="claimTreatmentTotalLabelInvalidAC">Invalid Amount Paid by Alternate Carrier</string>
+  <string name="claimTreatmentDateLabelMissingDate">You must specify a Date of Treatment.</string>
+  <string name="claimTreatmentTotalLabelMissingTotal">You must specify the Total Amount of Visit.</string>
+  <string name="claimTreatmentTotalLabelIMissingAC">You must specify the Amount Paid by the Alternate Carrier.</string>
+  <string name="claimTreatmentMissingPickupDateLabel">You must specify the Date Of Pickup.</string>
+  <string name="claimTreatmentInvalidQtyLabel">Invalid Quantity</string>
+  <string name="claimTreatmentMissingQtyLabel">You must specify a Quantity.</string>
+  <string name="claimTreatmentTotalChargedLabelInvalid">Invalid total amount charged</string>
+  <string name="claimTreatmentTotalChargedLabelMissing">You must specify the Total Amount Charged</string>
+  <string name="claimTreatmentMonthlyDateLabelMissing">You must specify a Date of Monthly Payment</string>
+  <string name="claimTreatmentOrthodonticFeeLabelMissing">You must specify the Orthodontic Monthly Fee.</string>
+  <string name="claimTreatmentDateOfPurchaseLabelMissing">You must specify the Date Of Purchase</string>
+  <string name="claimTreatmentTypeEyewearLabelMissing">You must specify the type of eyewear.</string>
+  <string name="claimTreatmentAckLabelText">You must specify if the eyewear is for corrective purposes. Claims for non corrective purposes are not eligible.</string>
+  <string name="claimTreatmentLenstypeLabelMissing">You must specify an eyeglass lens amount.</string>
+  <string name="claimTreatmentFrameAmountLabelMissing">You must specify a Frame amount.</string>
+  <string name="claimTreatmentFrameAmountLabelInvalid">Invalid frame amount</string>
+  <string name="claimTreatmentEyeglassAmountLabelInvalid">Invalid eyeglass lens amount</string>
+  <string name="claimTreatmentEyeglassAmountLabelMissing">You must specify an eyeglass lens amount.</string>
+  <string name="claimTreatmentDateOfExaminationLabelMissing">You must specify the Date of Eye Examination</string>
+  <string name="claimTreatmentDateOfExaminationLabelInvalid">Date of Eye Examination cannot be future dated</string>
+  <string name="claimTreatmentTotalAmountExaminationLabelInvalid">Invalid Total Amount of Eye Examination</string>
+  <string name="claimTreatmentTotalAmountExaminationLabelMissing">You must specify Total Amount of Eye Examination</string>
+  <string name="claimSpecifyGSCNumberErrorInvalid">Your other {0} number is invalid</string>
+
+  <!-- claim treatment add entry -->
+  <string name="claimTreatmentMissingTypeofTreatment">You must specify Type of Treatment.</string>
+  <string name="claimTreatmentInvalidDateofTreatment">Date of treatment cannot be future dated.</string>
+
+  <string name="claimTreatmentMissingItemDescription">You must specify the Type of Medical Item.</string>
+  <string name="claimTreatmentMissingPickupDate">Pick Up Date cannot be future dated</string>
+  <string name="claimTreatmentInvalidPickupDate">Pick Up Date cannot be future dated</string>
+  <string name="claimTreatmentInvalidQuantity">Invalid Quantity</string>
+  <string name="claimTreatmentMissingQuantity">You must specify a Quantity.</string>
+  <string name="claimTreatmentInvalidTotalAmount">Invalid Total Amount of Visit.</string>
+  <string name="claimTreatmentMissingTotalAmount">You must specify the Total Amount of Visit.</string>
+
+
+  <string name="claimTreatmentInvalidDateOfMonthlyTreatment">Date of monthly payment cannot be future dated</string>
+  <string name="claimTreatmentMissingDateOfMonthlyTreatment">Date of monthly payment cannot be future dated</string>
+  <string name="claimTreatmentInvalidOrthodonticMonthlyFee">Invalid Orthodontic Monthly Fee</string>
+  <string name="claimTreatmentMissingOrthodonticMonthlyFee">You must specify the Orthodontic Monthly Fee.</string>
+
+  <string name="claimTreatmentInvalidDateOfExamination">Date of eye examination cannot be future dated</string>
+  <string name="claimTreatmentMissingDateOfExamination">Date of eye examination cannot be future dated</string>
+  <string name="claimTreatmentInvalidTotalAmountOfExamination">Invalid Total Amount of Eye Examination</string>
+  <string name="claimTreatmentMissingTotalAmountOfExamination">You must specify Total Amount of Eye Examination</string>
+
+  <string name="claimTreatmentInvalidDateOfPurchase">The date the eyewear was received cannot be future dated</string>
+  <string name="claimTreatmentMissingDateOfPurchase">The date the eyewear was received cannot be future dated</string>
+  <string name="claimTreatmentMissingTypeOfEyewear">You must specify the type of eyewear.</string>
+  <string name="claimTreatmentAcknowledgedEyewareIsCorrective">You must specify if the eyewear is for corrective purposes. Claims for non corrective purposes are not eligible.</string>
+  <string name="claimTreatmentInvalidTotalAmountCharged">Invalid total amount charged</string>
+  <string name="claimTreatmentMissingTotalAmountCharged">You must specify the Total Amount Charged.</string>
+
+  <string name="claimTreatmentInvalidFrameAmount">Invalid frame amount</string>
+  <string name="claimTreatmentMissingFrameAmount">You must specify a Frame amount.</string>
+
+  <string name="claimTreatmentInvalidEyeglassLensesAmount">Invalid eyeglass lens amount</string>
+  <string name="claimTreatmentMissingEyeglassLensesAmount">You must specify an eyeglass lens amount.</string>
+
+  <string name="claimTreatmentDeleteTitle">Delete</string>
+  <string name="claimTreatmentDeleteMsg">Do you want to delete this treatment detail?</string>
+
+  <string name="claimUnsavedMsgTitle">Unsaved Data</string>
+  <string name="claimUnsavedMsg">You have entered data in a claim that has not been submitted. If you leave this screen your data will be lost. Do you want to leave the screen?</string>
+  <string name="leaveBtn">Leave</string>
+
+  <string name="claimTreatmentDateTooOld">Date of Treatment must be within the last 24 months.</string>
+  <string name="claimMonthlyPaymentDateTooOld">Date of Monthly Payment must be within the last 24 months.</string>
+  <string name="claimPickupDateTooOld">Pick up Date must be within the last 24 months.</string>
+  <string name="claimPurchaseDateTooOld">Date of purchase / service must be within the last 24 months.</string>
+  <string name="claimExaminationDateTooOld">Date of Examination must be within the last 24 months.</string>
+
+  <string name="claimEligibilityTreatmentDateTooOld">Date Of Treatment: must not be more than 12 months ago.</string>
+  <string name="claimEligibilityPurchaseDateTooOld">Date of purchase/service: must not be more than 12 months ago.</string>
+
+  <string name="claimEligibilityInvalidDateofTreatment">Date Of Treatment: can not be future dated.</string>
+  <string name="claimEligibilityInvalidDateofPurchase">Date of purchase/service: is too far in advance. Please submit eligibility inquiries closer to the date of pick-up.</string>
+
+  <string name="claimTreatmentLongpressDelete">* Press and hold to delete items in the treatment list</string>
+  <string name="claimMassageOntarioMessage">For services rendered in Ontario, please ensure all receipts are signed by the Registered Massage Therapist who rendered the treatment.</string>
+  <!-- // -->
+
+  <string name="claimSecondaryAccountNotRegisteredMsg">Your spouse has not registered for Plan Member Online Services and/or has not accepted the online Claim Submission Agreement, so we cannot process the second portion of this claim online.  To coordinate your claims with your spouse\'s {0} benefits plan online, have them register for Plan Member Online Services and accept the Claim Submission Agreement today.</string>
+  <string name="claimSecondaryAccountHasntAcceptedAgreementMsg">We are unable to process the second part of this claim under your spouse\'s account as they have not accepted the online Claim Submission Agreement. This Agreement is presented when you first submit a claim in Plan Member Online Services.</string>
+  <string name="claimSecondaryAccountDisabledMsg">We are unable to process the second part of this claim under your spouse\'s account as their Plan Member Online Services account is disabled.  Please submit the claim under your spouse\'s account to {0} using a paper claim form.</string>
+
+  <string name="claimTreatmentInvalidTotalAC">Invalid Amount Paid by Alternate Carrier.</string>
+  <string name="missingAmountPaidByPpOrGpValidation">If not applicable or if the claim was submitted to a provincial plan or government program and the claim paid $0.00, enter 0.00 in this field.</string>
+  <string name="invalidAmountPaidByPpOrGpValidation">Invalid total amount charged.</string>
+  <string name="claimTreatmentMissingTotalAC">You must specify the Amount Paid by the Alternate Carrier.</string>
+  <string name="claimTreatmentBadValueAC">Total Amount of Visit must be greater or equal to the amount paid by the alternate carrier.</string>
+
+  <string name="claimOtherGscPlanParticipantListLabel">Select the plan participant</string>
+  <string name="claimOtherGscPlanParticipantListError">More than one dependent covered by the secondary {0} plan was found. Please select the correct one from the drop down list.</string>
+
+  <!-- Benifit // temp fix by sethu -->
+  <string name="checkeligibilitySubtitle">Check eligibility for {0} for {1}</string>
+  <string name="checkeligibilitySubtitleSec">Check eligibility for {0}</string>
+  <!-- end -->
+
+  <string name="MyEligibilityNoResult">Oops. We\'re sorry, but you don\'t have access to Benefit Eligibility</string>
+
+  <string name="eligibilityCheckTypesSubtitle">Check eligibility for one of the following benefits</string>
+  <string name="eligibilityPlanParticipantTitle">Plan Participant</string>
+  <string name="eligibilityPlanParticipantSubtitle">Select the plan participant</string>
+  <string name="checkeligibilityTitle">Check Eligibility</string>
+  <string name="checkeligibilitySubtitlePart1">"Check eligibility for "</string>
+  <string name="checkeligibilitySubtitlePart3">" for "</string>
+  <string name="checkeligibilityTypeoftreatment">Type of treatment</string>
+  <string name="checkeligibilityDateoftreatment">Date of treatment</string>
+  <string name="checkeligibilityTotalamountofvisit">Total amount of visit</string>
+  <string name="checkeligibilityProvince">In what province will the service be provided</string>
+  <string name="checkeligibilityNotes1">
+    Eligibility is based on all claims submitted and processed as of today\'s date. Recent claims that have been received by {0} may not be reflected in the results. Treatment must be performed by a health provider who is licensed in the province in which you are receiving treatment.\n\nI agree that the information provided is complete and accurate to the best of my knowledge.\n
+  </string>
+  <string name="checkeligibilityNotes2">Please note: This is just an eligibility check. You are not actually submitting a claim.</string>
+  <string name="checkeligibilityLengthoftreatment">Length of Treatment</string>
+  <string name="checkeligibilityLengthoftreatmentPhone">Length of Treatment:</string>
+  <string name="checkeligibilityDateofpurchaseservice">Date of purchase / service</string>
+  <string name="checkeligibilityTotalChargeLenses">Total For All Contact Lenses Dispensed</string>
+  <string name="checkeligibilityTotalChargeGlasses">Total Charge for Glasses</string>
+  <string name="checkeligibilityTotalChargeExamination">Total Charge for Examination</string>
+  <string name="checkeligibilityLenstype">Lens type</string>
+  <string name="dateofEligibilityMaxDollor">Date of Eligibility for Maximum Dollar Amount:</string>
+
+
+  <string name="eligibilitySubmitAnother">Submit another Eligibility Check</string>
+
+  <!---Claim Rehydration Dialog -->
+  <string name="claimRehydrationMessage">Unsaved Data: You have previously entered data in a claim that has not been submitted. Would you like to start where you left off? Click no to start a new claim.</string>
+  <string name="claimRehydrationYes">Yes</string>
+  <string name="claimRehydrationNo">No</string>
+
+  <string name="claimseligibilitytitle">Claims Eligibility</string>
+  <string name="claimTreatmentDurationLabel">Duration of Treatment</string>
+  <string name="eligibilityInvalidDateofTreatment">Date of treatment cannot be future dated.</string>
+  <string name="eligibilityInvalidDollarAmount">Total Amount of Visit: must be a valid dollar amount</string>
+  <string name="eligibilityEmptyDollarAmount">Total Amount of Visit: must be entered</string>
+
+  <string name="eligibilityResultsTitle">Eligibility results</string>
+  <string name="eligibilityResultsSubTitle">Date of eligibility</string>
+  <string name="eligibilityResultsDependentParticipantLabel">Dependent number: Participant</string>
+  <string name="eligibilityResultsRecallExamLabel">Recall Exam</string>
+  <string name="eligibilityResultsScalingLabel">Scaling</string>
+  <string name="eligibilityResultsPolishingLabel">Polishing</string>
+  <string name="eligibilityResultsOrthoticLabel">Date of eligibility</string>
+  <string name="eligibilityInquiryDate">Date of Inquiry {0:MMMM dd, yyy HH:mm tt} {1}</string>
+  <string name="eligibilitySubmissionDate">{0:MMMM dd, yyy HH:mm tt} {1}</string>
+
+  <string name="eligibilityResultsOrthoticNotes">Note: The Date of Eligibility represents the next eligible date to receive your maximum dollar amount for orthotics. If {0} is not your primary carrier, your claim must be submitted to your primary carrier first. This may affect your benefit eligibility.</string>
+  <string name="eligibilityResultsDRENotes">Note: The Date of Eligibility represents the next eligible date for typical benefits incurred at your check up. If {0} is not your primary carrier, your claim must be submitted to your primary carrier first. This may affect your benefit eligibility.\n\nNote: Eligibility for scaling, as noted above, applies only to the one unit of preventive scaling included with a recall.</string>
+  <string name="eligibilityResultsDateofInquiry">Date of Inquiry</string>
+  <string name="eligibilityResultsNotesFPPM">
+    Eligibility information is subject to the status of your coverage today and may not reflect any recently submitted (but not processed) claims. Any change in coverage (including retroactive changes) will alter the liability of {0}.\n\n
+    Please contact the Customer Service Centre at {1} for more detailed benefit eligibility information.\n\n
+    Please note: This is just an eligibility check. You are not actually submitting a claim.\n\n
+  </string>
+  <string name="unablebenefitEligibilityLabelFPPM">Unable to determine benefit eligibility. Please contact the Customer Service Centre at {0}.</string>
+  <string name="checkeligibilityResultNotes1FPPM">Note: Eligibility information is subject to the status of your coverage today and may not reflect any recently submitted (but not processed) claims. Any change in coverage (including retroactive changes) will alter the liability of {0}.\n\nTreatment must be performed by a health provider who is licensed in the province in which you are receiving treatment.\n\nThe practitioner rendering the service must be licensed by their provincial regulatory agency or association, which must be recognized by {1}.\n\nIf you are covered for benefits under this plan as well as another plan, benefits will be coordinated following standard industry guidelines developed by the Canadian Life &amp; Health Insurance Association. If {2} coverage is your secondary plan, the outcome of the submission to the primary plan will alter the liability of {3}.\n\nSome plans require a medical referral for this type of service. If your plan requires a medical referral and a valid previous medical referral is not already on file with {4}, the referral must be submitted with this claim.\n\nIf the services are required due to a motor vehicle accident or a work related injury, you may not be eligible for reimbursement by {5}.\n\nStill have questions regarding your eligibility? Contact our Customer Service Centre at {6}.\n\n</string>
+
+  <string name="SendBenefitEligibilityInquiryLabel">Send Benefit Eligibility Inquiry</string>
+
+  <string name="eligibilityInquiryTitle">Eligibility Inquiry</string>
+  <string name="eligibilityInquirySubTitle1">Questions? Send us a secure email. Simply fill in all information below, type your question and click Submit Inquiry and we\'ll respond to you within two business days.</string>
+  <string name="eligibilityInquirySubTitle2">* indicates a mandatory field</string>
+  <string name="eligibilityInquiryToFieldLabel">To:  Green Shield Representative</string>
+  <string name="eligibilityInquiryFromFieldLabel">From: </string>
+  <string name="eligibilityInquiryEmailFieldLabel">Your Email Address: </string>
+  <string name="eligibilityInquiryDisclaimerFieldLabel">If we don\'t receive your email correctly, we will call you at the phone number(s) you have provided. To update your current email address, click My Profile in the left menu, and enter your new email address.</string>
+  <string name="eligibilityInquiryDisclaimerField2Label">Services must be provided by a Health Practitioner legally qualified or deemed to be qualified by Green Shield Canada</string>
+  <string name="eligibilityInquiryEnterInquiryLabel">Enter Your Inquiry Here (limit 1000 characters) *</string>
+  <string name="eligibilityInquiryDisclaimerField3Label">
+    You can expect a response to your inquiry within 2 business days. \n\n
+    Inquiry messages sent to Green Shield Canada through this "Submit Inquiry" capability uses technology which provides a secure and confidential communication.
+  </string>
+  <string name="eligibilityInquirySubmitInquiry">Submit Inquiry</string>
+  <string name="eligibilityInquiryCancelInquiry">Cancel</string>
+  <string name="eligibilityInquiryClearInquiry">Clear</string>
+  <string name="eligibilityInquiryErrorMessage">You have exceeded the number of characters that can be entered in the inquiry field.</string>
+  <string name="claimEligibilitySubmissionTitile">Eligibility Results</string>
+  <string name="claimEligibilitySubmissionTitileLabel">Submission Results For</string>
+  <string name="claimEligibilityDateOfTreatment">Date of Treatment:</string>
+  <string name="claimEligibilityDateOfExamination">Date of Examination:</string>
+  <string name="claimEligibilityDateOfPurchase">Date of purchase / service:</string>
+
+  <string name="claimEligibilityServiceDescription">Service Description:</string>
+  <string name="claimEligibilityTotalAmountOfVisit">Total Amount of Visit:</string>
+  <string name="claimEligibilityTotalChargeForExamination">Total Charge for Examination:</string>
+  <string name="claimEligibilityTotalChargeForGlasses">Total charge for glasses:</string>
+  <string name="claimEligibilityTotalChargeForContacts">Total Charge for Contacts:</string>
+  <string name="eligibilityEyeServiceDescription">Service Description</string>
+
+  <string name="claimEligibilityProvince">Province:</string>
+  <string name="claimEligibilityYourPlanWouldPay">Your plan would pay:</string>
+  <string name="claimEligibilityReasons">Reasons your plan may have reduced the paid amount:</string>
+  <string name="claimEligibilityDeductibleAmount">Deductible Amount:</string>
+  <string name="claimEligibilityCoPaymentAmount">Co-payment Amount:</string>
+  <string name="claimEligibilityOther">Other:</string>
+
+  <string name="eligibilityPrescriptionNotChanged">If your glasses prescription has not changed, your plan would pay:</string>
+  <string name="eligibilityPrescriptionChanged">Or If your glasses prescription has changed, your plan would pay:</string>
+
+
+  <string name="eligibilityProTherapists">Professional Therapists:</string>
+  <string name="eligibilityParticipant">Participant / family:</string>
+  <string name="eligibilityStartDate">Start date:</string>
+  <string name="eligibilityAmountUsed">Amount used to date:</string>
+  <string name="eligibilityParamedical">Paramedical Services:</string>
+  <string name="eligibilityOccurrence">Occurrences/Units to Date:</string>
+  <string name="eligibilityGlasses">Glasses:</string>
+  <string name="eligibilityVision">Vision:</string>
+
+
+  <!-- NAV PAGE -->
+  <string name="claimsBtn">MY CLAIMS</string>
+  <string name="myIDCardBtn">MY ID CARD</string>
+  <string name="drugsOnTheGoBtn">DRUGS ON THE GO</string>
+  <string name="menuBtn">MENU</string>
+
+
+  <!-- LANDING PAGE -->
+  <string name="welcome">WELCOME</string>
+  <string name="myClaims">MY CLAIMS</string>
+  <string name="myIDCard">MY ID CARD</string>
+  <string name="drugsOnTheGo">DRUGS ON THE GO</string>
+  <string name="findProvider">FIND A HEALTH PROVIDER </string>
+  <string name="findPharmacy">FIND A PHARMACY </string>
+  <string name="myAlerts">MY ALERTS</string>
+  <string name="audits">Audits</string>
+  <string name="myAlertsTitle">AUDIT LIST</string>
+  <string name="myBalances">MY BALANCES</string>
+  <string name="termsAndConditions">TERMS AND CONDITIONS</string>
+  <string name="auditDone">Done</string>
+  <string name="changeforlife">CHANGE4LIFE</string>
+  <string name="mysettings">MY SETTINGS</string>
+
+  <!-- My Alerts PAGE -->
+  <string name="myAlertsText">You currently have one or more outstanding audited claims (please see list below). You will have 30 days from the audit notification date to provide the claim documents to support your submission. Please click a form number below to complete the audit process.\n\nWhen the documents are processed, the audit notification will no longer appear in the list below.\n\nIMPORTANT NOTE – If you do not send the requested documentation, your future ability to submit claims through Plan Member Online Services will be disabled.\n\nIf you have recently submitted your documentation by mail or electronically, please disregard this message. We thank you for responding to the audit.\n\nShould you have any questions, please call our Customer Service Centre at {0}.\n\n</string>
+  <string name="myalertFormNumber">Form Number</string>
+  <string name="myalertSubmittedDate">Submitted Date</string>
+  <string name="myalertDueDate">Due Date</string>
+  <string name="myAlertclaimResultTitleLabel">Audit Notification</string>
+  <string name="myAlertclaimResultAuditNotificationMsg">Your claim has been selected for audit review. Please note that your immediate action is required. Please logon to Plan Member Online Services to respond to the audit request.</string>
+  <string name="loadingIndicator">Loading....</string>
+  <string name="searchingIndicator">Searching....</string>
+  <string name="noLocationFound">Unable to determine current location, please search by address or postal code</string>
+
+  <string name="switch_yes">Yes</string>
+  <string name="switch_no">No</string>
+
+  <string name="auditServiceDateLabel">Service Date</string>
+  <string name="auditServiceDescLabel">Service Description</string>
+  <string name="auditClaimedAmountLabel">Claimed amount ($CDN)</string>
+  <string name="auditPlanInfoLabel">Plan information</string>
+  <string name="auditListNotes"><b>Important notes: </b>If an audit isn’t satisfied in time, you will not be able to take advantage of our online real time claim submission. All claims will need to be uploaded for review.</string>
+
+  <!-- Change for Life -->
+  <string name="accept">Accept</string>
+  <string name="reject">Cancel</string>
+
+  <!-- ClaimDetailsHCSA -->
+  <string name="claimDetailsHCSALabel">Claim Details</string>
+  <string name="claimDetailsHCSATitle">Enter Claim Details:</string>
+  <string name="dateOfExpense">Date of Expense</string>
+  <string name="totalOriginalAmount">Total Original Amount of Invoice</string>
+  <string name="totalAmountPaid">Total Amount(s) Already paid By Insurer/Government Plan(s)</string>
+  <string name="claimDetailsNameTitle">Claim(s) for {0}</string>
+  <string name="originalamount">Original Amount</string>
+  <string name="paidbyinsurer">Paid By Insurer/Government Plan(s)</string>
+  <string name="error_message">{0}</string>
+
+  <string name="fingerprintSetting">Fingerprint</string>
+  <string name="fingerprintSettingPara1">When fingerprint is turned on, you can sign on using your device\'s fingerprint security feature, or continue to use your existing password.</string>
+  <string name="fingerprintSettingPara2">Any fingerprint profiles enrolled on this device will have access to this application.</string>
+  <string name="fingerprintSettingPara3">To help protect your personal information, do not store fingerprint data other than your own on this device.</string>
+  <string name="fingerprintSettingMessageContent">If your device supports fingerprint, please setup a PIN, register your fingerprint, and enable the feature in your Android device settings. You must also select the \"Remember my User ID on this device\" checkbox on the login screen.</string>
+  <string name="walletButton">Add to Android \n wallet</string>
+  <string name="cardDescription">Plan Member ID Card</string>
+  <string name="biometricsNotAvailable">Fingerprint is not available or not activated</string>
+
+  <!-- Web Claim Submission Text -->
+  <string name="webAgreementTitle">REGISTRATION FOR WEB CLAIM SUBMISSION</string>
+  <string name="webContent1">To register for electronic claim submission, please read the following agreement, and then select the Accept button. This will authorize you to submit electronic claims to {0} through our website and mobile app. If you do not wish to register at this time, select the Cancel button to return to the home page.</string>
+  <string name="webContentSubTitle1_WithDate">New Terms and Conditions as of May 1, 2018.</string>
+  <string name="webContentSubTitle2">Plan Member Online Services</string>
+  <string name="webContentSubTitle3">Web Claim Submission Agreement</string>
+  <string name="webContent2">If you accept and agree to the following Terms and Conditions, then click the \"Accept\" button to continue.</string>
+  <string name="webContentSubTitle4">Terms and Conditions</string>
+  <string name="webContent3">As the plan member, I agree that all information provided using the Plan Member Online Services or mobile app web claim submission will be complete and accurate.</string>
+  <string name="webContent4">In the event that my information is found to be incomplete or inaccurate, I understand that {0} reserves the right to remove my online claiming privileges. I understand that the information, including the personal information, that I provide to {1} about myself and my dependents, will be used by {2} for claims adjudication and any other services necessary in the administration of my benefits which may include the exchange of information with other parties to administer my benefit plan.</string>
+  <string name="webContent5">I am authorized by my spouse and/or dependents to disclose and receive information about them that is used for these purposes. My spouse and/or dependents understand that this information may be seen by me, the cardholder and used by {0} and the other parties referenced in this agreement for the purposes set out in this agreement.</string>
+  <string name="webContent6">I understand and agree that I am responsible for retaining original receipt(s) for 13 months following the date of my claim submission(s). When submitting claims online, {0} may select my claim for audit. If so requested, I am responsible for producing the original receipt(s) within 30 days.</string>
+  <string name="webContent7">I understand that when my claim is selected for an audit, this may result in some or all previous claims submitted on my behalf being selected for a full audit review. When selected for a full audit review, my ability to submit claims through Plan Member Online Services and the app will be temporarily disabled.</string>
+  <string name="webContent8">If I fail to provide the receipt(s) to {0}, or provide false, incomplete, or misleading information, {1} reserves the right to classify any payment made by {2} related to my claim as an overpayment and {3} will be entitled to demand remittance of payment and/or the deduction of such overpayment from any future claim payments. Furthermore, access to Plan Member Online Services and mobile app claims submission will be revoked and coverage to benefits may be suspended and/or terminated.</string>
+  <string name="webContent9">If selected for audit, I authorize the exchange of information between {0} and other parties, including but not limited to health practitioners, medical device providers and insurers, as required, and only when the information is needed to administer benefit claims and/or confirm the accuracy of the claim(s) information submitted on behalf of myself, my spouse and/or my dependents.</string>
+  <string name="webContent10">In the event of suspected fraudulent activity pertaining to a Plan Member Online Services or mobile app web claim submission on behalf of myself, my spouse, and/or my dependents, I acknowledge and agree to the disclosure of this information to relevant parties, including but not limited to the Plan Sponsor, and regulatory and law enforcement agencies.</string>
+  <string name="webContent11">{0} maintains a national database of providers and their association with any regulatory agency, professional association or educational program. {1} reviews each provider to determine which benefits/services are eligible for reimbursement in conjunction with the plan member\'s health benefits plan. When submitting a claim online with a provider that has not registered with {2}, the provider\'s credentials will be verified and my claim will be processed accordingly.</string>
+  <string name="webContent12">Acceptance of the Web Claim Submission Agreement Terms and Conditions applies to all claims submitted within an online session.</string>
+  <string name="webContent13">If I submit multiple claims (for a different dependent and/or provider) within the online session, my acceptance of the Web Claim Submission Agreement Terms and Conditions applies to all those claims submitted.</string>
+  <string name="webContent14">By clicking the "Accept" button, this constitutes my digital signature (which is equivalent to a written signature) and I acknowledge that I am deemed to have read, understood, accepted and agreed to be bound by these Terms and Conditions.</string>
+  <string name="webContent15">For further information on our privacy policies and procedures, please visit our Terms and Conditions - Privacy page.</string>
+  <!-- end -->
+
+  <!-- Direct Deposit Text> -->
+  <string name="disclaimer3"><b>Don\'t forget: </b> – you are responsible for updating your direct deposit information if it changes in the future.</string>
+  <!-- end -->
+
+  <!-- ID Card Text> -->
+  <string name="thirdPartyAppMessage">You are moving out of app and opening a third party app.</string>
+  <!-- end -->
+
+</resources>

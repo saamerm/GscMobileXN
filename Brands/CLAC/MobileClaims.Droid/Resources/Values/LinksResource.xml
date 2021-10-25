@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <string name="webInstructionsLink">https://clac.ca/GSC4myCLAC</string>
+  <string name="username">EMAIL ADDRESS</string>
+  <string name="webInstructions">FORGOT YOUR PASSWORD? NEED TO REGISTER?</string>
+</resources>

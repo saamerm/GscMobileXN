@@ -1,0 +1,269 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DefineConstants>TRACE;DEBUG;NETSTANDARD;NETSTANDARD2_1</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType></DebugType>
+    <Optimize>true</Optimize>
+    <DefineConstants>TRACE;RELEASE;NETSTANDARD;NETSTANDARD2_1</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="ViewModels\HCSA\ClaimParticipantViewModel.cs" />
+    <Compile Remove="ViewModels\LocateServiceProviderChooseSearchTypeViewModel.cs" />
+    <Compile Remove="ViewModels\LocateServiceProviderLocatedProvidersViewModel.cs" />
+    <Compile Remove="ViewModels\LocateServiceProviderResultViewModel.cs" />
+    <Compile Remove="ViewModels\LocateServiceProviderViewModel.cs" />
+    <Compile Remove="ViewModels\ProviderLookupProviderTypeViewModel.cs" />
+    <Compile Remove="ViewModelParameters\CardViewModelNavObject.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Libs\Acr.MvvmCross.Plugins.UserDialogs.dll" />
+    <None Remove="Libs\Acr.MvvmCross.Plugins.UserDialogs.pdb" />
+    <None Remove="Libs\RestSharp.dll" />
+    <None Remove="Libs\System.Linq.Expressions.dll" />
+    <None Remove="Mocks\MockDrugSearch.csv" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Libs\Acr.MvvmCross.Plugins.UserDialogs.dll" />
+    <Content Include="Libs\Acr.MvvmCross.Plugins.UserDialogs.pdb" />
+    <Content Include="Libs\RestSharp.dll" />
+    <Content Include="Libs\System.Linq.Expressions.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Mocks\MockDrugSearch.csv" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Acr.UserDialogs" Version="7.0.35" />
+    <PackageReference Include="FluentValidation" Version="8.6.1" />
+    <PackageReference Include="libphonenumber-csharp" Version="8.11.1" />
+    <PackageReference Include="Microsoft.AppCenter.Analytics" Version="2.6.4" />
+    <PackageReference Include="Microsoft.AppCenter.Crashes" Version="2.6.4" />
+    <PackageReference Include="modernhttpclient-updated" Version="3.4.3" />
+    <PackageReference Include="MvvmCross" Version="6.4.2" />
+    <PackageReference Include="MvvmCross.Plugin.File" Version="6.4.2" />
+    <PackageReference Include="MvvmCross.Plugin.Location" Version="6.4.2" />
+    <PackageReference Include="MvvmCross.Plugin.Messenger" Version="6.4.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Portable.BouncyCastle" Version="1.8.5.2" />
+    <PackageReference Include="System.Threading.Tasks.Dataflow" Version="4.11.0" />
+    <PackageReference Include="Xam.Plugin.Connectivity" Version="3.2.0" />
+    <PackageReference Include="Xam.Plugin.Geolocator" Version="4.5.0.6" />
+    <PackageReference Include="Xam.Plugin.Media" Version="4.0.1.5" />
+    <PackageReference Include="Plugin.Fingerprint" Version="1.4.9" />
+    <PackageReference Include="Plugin.StoreReview" Version="3.1.0" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="BrandResource.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>BrandResource.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Helpers\GSCHelper.brand.cs">
+      <DependentUpon>GSCHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Resource.Designer.cs">
+      <DependentUpon>Resource.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="ViewModels\AuditInformationViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\AuditListViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\CardViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\ChooseSpendingAccountTypeViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\ClaimDetailsViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\ClaimMedicalItemViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\ClaimMotorVehicleViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\ClaimOtherBenefitsViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\ClaimParticipantsViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\ClaimServiceProviderEntryViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\ClaimServiceProviderProvideInformationViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\ClaimServiceProviderSearchResultsViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\ClaimServiceProvidersViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\ClaimSubmissionConfirmationViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\ClaimSubmissionResultViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\ClaimSubmissionTypeViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\ClaimSubmitTermsAndConditionsViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\ClaimTermsAndConditionsViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\ClaimTreatmentDetailsEntry1ViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\ClaimTreatmentDetailsEntry2ViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\ClaimTreatmentDetailsEntryMIViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\ClaimTreatmentDetailsEntryOMFViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\ClaimTreatmentDetailsEntryPCViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\ClaimTreatmentDetailsEntryPGViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\ClaimTreatmentDetailsEntryREEViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\ClaimTreatmentDetailsListViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\ClaimWorkInjuryViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\DrugLookupByDINViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\DrugLookupByNameSearchResultsViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\DrugLookupByNameViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\DrugLookupModelSelectionViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\DrugLookupResultsViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\DrugLookupSelectParticipantViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\DrugLookupSplitViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\EligibilityBenefitInquiryViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\EligibilityCheckCFOViewModel.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>EligibilityParticipantsViewModel.cs</DependentUpon>
+    </Compile>
+    <Compile Update="ViewModels\EligibilityCheckCPViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\EligibilityCheckDREViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\EligibilityCheckEyeViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\EligibilityCheckMassageViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\EligibilityCheckTypesViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\EligibilityParticipantsViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\EligibilityResultsViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\FindHealthProviderViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\FirstViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\Interfaces\IRemove.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\LandingPageViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\LoginViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\MainNavigationViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\ParticipantsViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\SpendingAccountDetailViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\TermsAndConditionsViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\ViewModelBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="BrandResource.fr.resx">
+      <LastGenOutput>BrandResource.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="BrandResource.resx">
+      <SubType>Designer</SubType>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>BrandResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resource.fr-CA.resx">
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resource.fr-CA.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resource.fr.resx">
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resource.resx">
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ViewModels\DirectDeposit\" />
+    <Folder Include="Models\DirectDeposit\" />
+    <Folder Include="Services\Interfaces\" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <gsc.TitleTextView
+            android:id="@+id/claim_select_provider_list_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textAllCaps="true" />
+        <gsc.NunitoTextView
+            android:textAppearance="?android:textAppearanceMedium"
+            android:id="@+id/still_cant_find_provider_label"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:textAllCaps="false" />
+        <gsc.NunitoTextView
+            android:id="@+id/still_cant_find_provider_desclabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textAllCaps="false" />
+        <gsc.GSCButton
+            android:text="@string/myServiceProviderLabel"
+            android:background="@drawable/ButtonBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            local:MvxBind="Click EnterServiceProviderCommand;"
+            android:id="@+id/myServiceProvider"
+            android:layout_gravity="center"
+            android:textColor="@drawable/ButtonTextColor"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textColorHighlight="@color/list_text_color"
+            android:textAllCaps="true" />
+    </LinearLayout>
+</LinearLayout>

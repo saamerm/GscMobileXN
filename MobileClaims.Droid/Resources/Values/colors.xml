@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+	<color name="background_color">#ffffff</color>
+	<color name="light_blue">#0088F8</color>
+	<color name="white">#ffffff</color>
+	<color name="off_white">#f3f3f3</color>
+	<color name="black">#FF000000</color>
+	<color name="light_grey">#E7E8E9</color>
+	<color name="list_background_color">#E7E8E9</color>
+	<color name="med_grey">#9FA1A4</color>
+	<color name="dark_grey">#5F5E5F</color>
+	<color name="list_text_color">#000000</color>
+	<color name="gsc_transparent">#00000000</color>
+	<color name="bg_grey_color">#f2f3f4</color>
+	<color name="text_hint_color">#A7A9AC</color>
+	<color name="red">#ff0000</color>
+	<color name="light_grey_bg">#f7f8f8</color>
+	<color name="spa_cont_txt">#525252</color>
+	<color name="spa_cont_txt_lgt">#808080</color>
+	<color name="spa_cont_div">#a8a8a8</color>
+	<color name="grey_background_hcsa">#F2F3F4</color>
+	<color name="grey_text_hcsa">#898A8C</color>
+	<color name="claim_text">#FF808284</color>
+	<color name="desc_text">#848484</color>
+	<color name="claim_border_color">#979797</color>
+	<color name="claim_background_fill">#F2F3F4</color>
+	<color name="claim_text_grey">#FF4A4A4A</color>
+	<color name="list_item_disabled_bg">#FBFBFB</color>
+	<color name="text_disabled_list">#D2D2D2</color>
+	<color name="button_history">#FFF1F1F1</color>
+	<color name="branded_grey">#808285</color>
+	<color name="branded_text_color">#8C8C8C</color>
+	<color name="light_grey_popup_background">#58595b</color>
+	<color name="dark_red">#cf324c</color>
+	<color name="error_color">#ef182c</color>
+	<color name="direct_deposit_step2_transit_color">#00AEF1</color>
+	<color name="direct_deposit_step2_bank_color">#662C93</color>
+</resources>

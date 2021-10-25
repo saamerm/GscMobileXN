@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none"
+            android:isScrollContainer="true">
+            <gsc.HeaderTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/checkeligibilityTitle"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal" />
+            <gsc.TitleTextView
+                android:id="@+id/checkeligibilitySubtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/checkeligibilitySubtitle"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp"
+                android:textAllCaps="true" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp"
+                android:weightSum="1">
+                <gsc.NunitoTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/eligibilityEyeServiceDescription"
+                    android:textColor="@color/black"
+                    android:layout_weight="0.5"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_gravity="center"
+                    android:layout_centerVertical="true" />
+                <gsc.NunitoTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_centerHorizontal="true"
+                    local:MvxBind="Text EligibilityCheckType.Name"
+                    android:textColor="@color/black"
+                    android:background="@android:color/transparent"
+                    android:gravity="left"
+                    android:layout_gravity="center"
+                    android:paddingTop="15dp"
+                    android:textSize="18sp"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp"
+                android:weightSum="1"
+                local:MvxBind="Visibility Visibility(IsLensTypeVisible);">
+                <gsc.NunitoTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/checkeligibilityLenstype"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_gravity="center"
+                    android:layout_centerVertical="true" />
+                <Mvx.MvxSpinner
+                    android:id="@+id/lensType"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textSize="18sp"
+                    local:MvxBind="ItemsSource LensTypes; SelectedItem LensType;"
+                    local:MvxItemTemplate="@layout/item_eligibility_serviceprovince_spinner"
+                    local:MvxDropDownItemTemplate="@layout/item_eligibility_serviceprovince_spinner_dropdown"
+                    android:gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_alignParentLeft="true" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp"
+                android:weightSum="1">
+                <gsc.NunitoTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/checkeligibilityDateofpurchaseservice"
+                    android:textColor="@color/black"
+                    android:layout_weight="0.4"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_gravity="center"
+                    android:layout_centerVertical="true"
+                    local:MvxBind="TextColor Or(FutureDateOfPurchaseOrService,InvalidDateOfPurchaseOrService), Converter=TextColorError;" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="0.1"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp">
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:background="@null"
+                        local:MvxBind="Visibility Visibility(InvalidDateOfPurchaseOrService);"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:src="@drawable/claims_error_icon"
+                        android:scaleType="centerInside"
+                        android:tag="@string/claimEligibilityPurchaseDateTooOld"
+                        android:onClick="errorClickHandler" />
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:background="@null"
+                        local:MvxBind="Visibility Visibility(FutureDateOfPurchaseOrService);"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:src="@drawable/claims_error_icon"
+                        android:scaleType="centerInside"
+                        android:tag="@string/claimEligibilityInvalidDateofPurchase"
+                        android:onClick="errorClickHandler" />
+                </LinearLayout>
+                <gsc.NunitoTextView
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="0.5"
+                    android:layout_centerHorizontal="true"
+                    local:MvxBind="Text Format('{0:MMMM dd, yyy}',DateOfPurchaseOrService);"
+                    android:id="@+id/DateOfPurchaseOrService"
+                    android:textColor="@color/black"
+                    android:background="@android:color/transparent"
+                    android:gravity="right"
+                    android:paddingTop="15dp"
+                    android:textSize="18sp"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp"
+                android:weightSum="1">
+                <gsc.NunitoTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:id="@+id/checkeligibilityTotalChargeLenses"
+                    android:text="@string/checkeligibilityTotalChargeLenses"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    local:MvxBind="TextColor Or(InvalidTotalAmount,MissingTotalAmount), Converter=TextColorError" />
+                <gsc.NunitoTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:id="@+id/checkeligibilityTotalChargeGlasses"
+                    android:text="@string/checkeligibilityTotalChargeGlasses"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    local:MvxBind="TextColor Or(InvalidTotalAmount,MissingTotalAmount), Converter=TextColorError" />
+                <gsc.NunitoTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:id="@+id/checkeligibilityTotalChargeExamination"
+                    android:text="@string/checkeligibilityTotalChargeExamination"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    local:MvxBind="TextColor Or(InvalidTotalAmount,MissingTotalAmount), Converter=TextColorError" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="0.1"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp">
+                    <ImageButton
+                        android:id="@+id/errorButtonClick4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:background="@null"
+                        local:MvxBind="Visibility Visibility(InvalidTotalAmount);"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:src="@drawable/claims_error_icon"
+                        android:scaleType="centerInside"
+                        android:tag="@string/eligibilityInvalidDollarAmount"
+                        android:onClick="errorClickHandler" />
+                    <ImageButton
+                        android:id="@+id/errorButtonClick5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:background="@null"
+                        local:MvxBind="Visibility Visibility(MissingTotalAmount);"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:src="@drawable/claims_error_icon"
+                        android:scaleType="centerInside"
+                        android:tag="@string/eligibilityEmptyDollarAmount"
+                        android:onClick="errorClickHandler" />
+                </LinearLayout>
+                <gsc.SmallEditText
+                    android:id="@+id/treatmentTotal"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="0.5"
+                    android:textSize="18dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/dark_grey"
+                    android:singleLine="true"
+                    android:background="@drawable/RoundEditTextNone"
+                    local:MvxBind="Text TotalCharge;"
+                    android:layout_alignParentLeft="true"
+                    android:padding="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp"
+                android:weightSum="1">
+                <gsc.NunitoTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/checkeligibilityProvince"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_gravity="center"
+                    android:layout_centerVertical="true" />
+                <Mvx.MvxSpinner
+                    android:id="@+id/treatementType"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textSize="18sp"
+                    local:MvxBind="ItemsSource ServiceProvinces; SelectedItem ProvinceOfService;"
+                    local:MvxItemTemplate="@layout/item_eligibility_serviceprovince_spinner"
+                    local:MvxDropDownItemTemplate="@layout/item_eligibility_serviceprovince_spinner_dropdown"
+                    android:gravity="right"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp">
+                <gsc.NunitoTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkeligibilityNotes1"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp" />
+                <gsc.NunitoTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/checkeligibilityNotes2"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
+            <gsc.GSCButton
+                android:text="@string/checkeligibilityTitle"
+                android:background="@drawable/ButtonBackground"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                local:MvxBind="Click SubmitEligibilityCheckCommand;"
+                android:id="@+id/claimSaveClaimBtn"
+                android:layout_gravity="center"
+                android:textColor="@drawable/ButtonTextColor"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColorHighlight="@color/list_text_color"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

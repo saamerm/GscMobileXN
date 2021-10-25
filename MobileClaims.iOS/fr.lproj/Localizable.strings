@@ -1,0 +1,656 @@
+﻿"locale"="fr";
+"colon"=" :";
+"ok"="OK";
+"contextColon"=" :";
+
+"webInstructions2"="(AIDE : IL S'AGIT DES MÊMES NOM D'UTILISATEUR ET MOT DE PASSE QUE VOUS UTILISEZ POUR LES SERVICES EN LIGNE DES MEMBRES DU RÉGIME.)";
+"connectionError"="Nous vous prions de nous excuser pour vos difficultés de connexion. Veuillez réessayer plus tard.";
+
+//TERMS AND CONDITIONS
+"privacy"="CONFIDENTIALITÉ";
+"legal"="INFO JURIDIQUE";
+"security"="SÉCURITÉ";
+"general"="GÉNÉRAL";
+"agreeToTerms"="JE SUIS D'ACCORD POUR RESPECTER LES MODALITÉ";
+"privacyContent1"="Le respect de votre vie privée et la protection de la confidentialité de vos renseignements ont toujours été au cœur de la conduite de nos affaires et, aux yeux de chaque employé de {0}, il s’agit d’une responsabilité. À titre de grand spécialiste en garanties individuelles et collectives au Canada, nous nous efforçons de vous offrir le meilleur service à la clientèle qui soit. La gamme des produits et services offerts aux participants, dans le cadre de nos régimes collectifs et individuels de prestations, ne cesse de s’accroître et la technologie utilisée pour ce faire change constamment. Toutefois, peu importe les changements apportés à nos activités commerciales, nous maintenons notre engagement à protéger et à respecter votre droit à la vie privée et la confidentialité de vos renseignements.<h3>NOTRE ENGAGEMENT EN MATIÈRE DE CONFIDENTIALITÉ</h3>{0} a souscrit un engagement à l’endroit de la protection de tout renseignement personnel qu’elle a recueilli ou qu’elle détient, y compris de tout renseignement confié à une tierce partie dans le but de satisfaire aux exigences aux fins desquelles il a été recueilli. Par renseignement personnel, on entend tout renseignement, consigné ou non, au sujet d’une personne identifiable. Parmi des renseignements personnels considérés comme identifiables, on retrouve le nom, l’âge, le sexe, le numéro d’assurance sociale, l’état de santé, l’historique de l’état de santé, les renseignements de nature financière, les données relatives aux demandes de règlement, etc. Ils englobent également des renseignements qui, une fois comparés à d’autres, permettent d’établir l’identité d’un individu.";
+"privacyContent2"="<h3>LE CODE DE {0} EN MATIÈRE DE CONFIDENTIALITÉ</h3>Notre code en matière de confidentialité vous informe de la teneur de nos politiques et procédures relatives à la confidentialité et ils vous éclairent sur les mesures que nous avons prises, afin de nous assurer de la protection de votre vie privée et du respect de la confidentialité de vos renseignements personnels. Le code se fonde sur les exigences propres au Code modèle sur la protection des renseignements personnels, une norme reconnue à l’échelle nationale et élaborée par l’Association canadienne de normalisation (ACNOR). En adoptant ce code, nous envoyons un message percutant au public, à l’effet que nous avons mis en place des politiques et procédures susceptibles de contrôler la cueillette, l’utilisation et la divulgation de renseignements personnels; d’autre part, cela vient renforcer notre engagement actuel sur le plan du service à la clientèle.<br/><br/><br/>Notre code en matière de confidentialité instaure un équilibre entre les droits à la protection des renseignements personnels des participant(e)s, dans le cadre de nos régimes collectifs et individuels de prestations, et la possibilité pour nos employé(e)s de disposer des renseignements dont ils/elles ont légitimement besoin pour offrir le service à la clientèle et respecter nos exigences en matière de ressources humaines. Il s’articule en fonction des principes-clés qui suivent.<br/><br/>";
+"privacyContent3"="<b>Nous sollicitons vos renseignements personnels aux fins suivantes :</b><ul><li>Nous assurer de votre identité;</li><li>Pour vous fournir, à vous et/ou à vos personnes à charge, la protection à laquelle vous avez droit;</li><li>Pour vous protéger et nous protéger contre les erreurs et la fraude;</li><li>Pour vous offrir un accès sur une base continue aux autres services de {0}.</li></ul><br/<br/><b>Consentement</b><br/><br/>Dès le moment où vous devenez un(e) participant(e), dans le cadre d’un régime collectif et individuel de prestations de {0}, vos renseignements personnels ne sont obtenus et utilisés qu’avec votre consentement. Nous voyons à obtenir votre consentement avant de/d’ :<br/>";
+"privacyContent4"="<ul><li>Vous offrir une protection;</li><li>Vous offrir d’autres services de {0};</li><li>Obtenir, d’utiliser ou de divulguer à d’autres personnes des renseignements à votre sujet, à moins que la loi ne nous force à le faire ou qu’il en aille de la protection de vos intérêts;</li><li>Utiliser vos renseignements personnels selon des modalités quelconques qui ne vous auraient pas été préalablement explicitées.</li></ul><br/>Votre consentement peut nous être accordé soit de façon explicite ou tacite. Votre consentement explicite peut être accordé par écrit ou verbalement. Par exemple, lorsque vous signez une fiche d’adhésion, vous nous accordez un consentement écrit d’utiliser vos renseignements personnels aux fins de fournir, à vous et/ou à vos personnes à charge, des prestations; lorsque vous nous soumettez une demande de règlement, vous nous accordez un consentement écrit d’utiliser vos renseignements personnels dans le but de vous rembourser les frais que vous avez engagés à l’égard de prestations reçues.<br/><br/>Votre consentement peut s’avérer tacite ou découler de certains gestes que vous posez. Par exemple, si vous présentez votre carte d’identification de prestataire à un(e) pharmacien(ne)/dentiste au lieu de payer pour un médicament d’ordonnance/acte de pratique dentaire, cela peut être considéré comme un consentement tacite à l’endroit du/de la pharmacien(ne)/dentiste de fournir vos renseignements personnels à {0} pour obtenir paiement du service rendu et à l’endroit de {0} de procéder au traitement de la demande de règlement qui en découle en vue du paiement et de fournir d’autres services.<br/><br/>En ce qui concerne les participant(e)s, dans le cadre de nos régimes collectifs et individuels de prestations, nous continuerons d’utiliser et de divulguer les renseignements personnels que vous nous avez préalablement confiés conformément à notre code en matière de confidentialité actuellement en vigueur, à moins d’avis contraire de votre part. Nous supposerons que votre consentement a été obtenu en ce qui a trait à l’utilisation continue ou à la divulgation de vos renseignements personnels, en poursuivant le traitement de toute demande de règlement en cours ou future que vous pourriez nous soumettre à des fins de remboursement ou en accédant à d’autres services.<br/><br/>";
+"privacyContent5"="<b>Retrait d’un consentement.</b><br/><br/>En tout temps, après nous l’avoir octroyé, vous pouvez nous retirer votre consentement, sous réserve de toute disposition légale ou réglementaire à l’effet contraire.<br/><br/>Si vous ne consentez pas à certaines formes d’utilisation de vos renseignements personnels, ou si vous nous retirez votre consentement, nous ne serons pas en mesure d’administrer votre protection. Si c’est le cas, nous vous expliquerons la situation, afin de vous aider à prendre une décision éclairée.<br/><br/><b>Exceptions en matière de consentement.</b><br/><br/>Nous pouvons recueillir, utiliser ou divulguer des renseignements personnels sans votre consentement uniquement lorsque :<br/>Dans une situation d’urgence, votre vie, votre santé ou votre sécurité sont mises en péril; le cas échéant, vous seriez subséquemment informé(e) de cette divulgation; Si nous sommes forcés de divulguer des renseignements personnels pour des motifs juridiques; il se peut que nous soyons tenus de communiquer ces renseignements par un tribunal ou autre instance juridique ou réglementaire; si c’est le cas, notre politique consiste à ne divulguer que les renseignements exigés; Dans une situation où la cueillette des renseignements s’impose dans le but d’enquêter sur des activités inappropriées, telle que la soumission de renseignements frauduleux, et où le consentement de l’individu et la connaissance qu’il/elle aurait pu compromettre la disponibilité ou la justesse des renseignements recueillis.<br/><br/><b>Nous protégeons vos renseignements personnels contre les erreurs, la perte et l’accès non autorisé.</b><br/><br/>Nos employé(e)s qui ont accès à vos renseignements personnels sont sensibilisé(e)s aux façons d’en sauvegarder la confidentialité. Dans le cadre des conditions qui prévalent à son emploi chez {0}, chaque employé(e) est tenu(e) de signer une entente en vertu de laquelle il/elle se doit de considérer comme confidentiels tous les renseignements auxquels il/elle a accès. En outre, il/elle doit participer à des programmes annuels de formation, afin de le(a) sensibiliser davantage face au respect de la vie privée et à la sécurité des renseignements personnels. Dans le but de protéger nos systèmes et vos renseignements personnels contre tout accès et utilisation non autorisés, nous disposons de normes de sécurité. Ainsi, en tout temps, vos renseignements personnels se trouvent protégés lorsqu’ils sont classés dans nos fichiers de données ou manipulés par nos employé(e)s.<br/><br/>";
+"privacyContent6"="<b>Vos renseignements personnels sont détruits lorsqu’ils ne sont plus nécessaires.</b><br/><br/>Nous ne conservons vos renseignements personnels qu’aussi longtemps que nous en avons besoin pour vous fournir les produits et services auxquels vous faites appel, pour vous offrir des produits et services à titre de participant(e), dans le cadre de nos régimes collectifs et individuels de garanties, et pour une période de temps subséquente raisonnable, ou pour satisfaire à toute exigence de nature juridique, réglementaire ou fiscale. Nous disposons de normes de conservation aptes à répondre à ces exigences. Lorsqu’ils ne sont plus nécessaires, nous détruisons vos renseignements personnels ou nous retirons votre nom des renseignements comme tels.<br/><br/><b>Vous pouvez obtenir et vérifier la justesse de vos renseignements personnels.</b><br/><br/>Vous pouvez vérifier vos renseignements personnels, afin de vous assurer de leur exactitude. Pour les mettre à jour ou les corriger, et pour permettre le retrait de tout renseignement inexact, vous devez demander au promoteur de votre régime de nous aviser de ces changements. Pour obtenir les renseignements personnels que nous détenons à votre sujet, vous pouvez en faire la demande à nos représentant(e)s du Service à la clientèle en composant le ";
+"privacyContent6Cont"=" ou vous pouvez le faire en personne en vous rendant à notre siège social à Windsor en Ontario.<br/>La vérification ou la correction de vos renseignements personnels ne s’accompagne d’aucuns frais. Selon les circonstances, il se peut que des frais minimums soient exigés pour les renseignements personnels que vous demandez. Si des frais s’appliquent, nous vous en informerons.<br/><br/>Veuillez prendre note qu’il se peut que nous ne soyons pas en mesure de vous fournir des renseignements vous concernant et tirés de nos dossiers s’ils contiennent des allusions à d’autres personnes, s’ils sont assujettis à des privilèges juridiques, s’ils contiennent des renseignements appartenant en exclusivité à {0}, s’ils s’avèrent trop coûteux à extraire ou qu’il ne soit pas possible de les divulguer pour d’autres considérations d’ordre juridique. Si nous avons obtenu d’autres personnes des renseignements à votre sujet, sur demande de votre part, nous vous informerons de l’identité de la personne ou de l’organisme qui nous les aura confiés.<br/><br/><b>Nous corrigeons vos renseignements personnels.</b><br/><br/>Chaque fois que cela est possible, nous corrigerons tout renseignement personnel qui pourrait avoir été confié à un organisme extérieur. Si un tiers, telle qu’une tierce partie agissant à titre d’administrateur de régime de garanties, nous a confié des renseignements personnels à votre sujet dont vous nous affirmez qu’ils sont faux, nous vous procurerons le nom (ou la raison sociale) et l’adresse de cette partie pour que vous puissiez faire corriger les renseignements.<br/><br/><b>Vous pouvez obtenir l’identité d’une entité à laquelle nous aurions confié des renseignements à votre sujet.</b><br/><br/>Si vous nous en faites la demande, nous vous informerons de l’identité des entreprises ou organismes extérieurs auxquels nous aurons fourni des renseignements personnels ou nous vous mettrons en communication avec la personne appropriée, à qui vous pourrez poser des questions au sujet de ces renseignements.<br/><br/>";
+"privacyContent7"="<b>Nous faisons promptement écho à vos demandes.</b><br/><br/>Nous donnerons rapidement suite à votre demande de consultation de vos renseignements personnels et y ferons toujours promptement écho.<br/><br/><b>Lorsque nous mettons à votre disposition des renseignements personnels, nous protégeons la vie privée des autres personnes.</b><br/><br/>Il arrive parfois que des fichiers qui contiennent des renseignements à votre sujet en comportent aussi sur d’autres participant(e)s, dans le cadre de nos régimes de prestations, ou qu’ils englobent de l’information de nature confidentielle à {0} ou qui lui appartiennent en propre. Étant donné que nous devons protéger la confidentialité des renseignements personnels de chacun, de même que leurs droits reconnus par la loi, nous ne pouvons mettre ces fichiers à la disposition de personnes œuvrant à l’extérieur de {0}. Cependant, nous mettrons à votre disposition tout renseignement précis vous concernant contenu dans ces fichiers.<br/><br/><b>Nous vérifions notre conformité avec le code de {0} en matière de confidentialité et souscrivons un engagement à le respecter à la lettre.</b><br/><br/>Nous avons mis en place des politiques et des procédures, afin d’aider nos employé(e)s à s’en tenir au code de {0} en matière de confidentialité. Notre service interne de vérification surveille de façon régulière le respect du code, et ses constatations sont présentées à un comité du Conseil d’administration de {0}.<br/><br/>Si vous avez des questions ou des plaintes quelconques à formuler au sujet de notre code en matière de confidentialité, ou sur la façon dont nous nous comportons à son endroit, laissez-le-nous savoir immédiatement.<br/><br/><b>Il nous importe d’apaiser vos inquiétudes.</b><br/><br/>{0} a souscrit l’engagement de vous traiter avec le plus grand respect et la plus totale des considérations et de vous fournir le meilleur niveau de service qui soit. Si vous avez des préoccupations ou des questions quelconques au sujet du respect de la vie privée et de la protection des renseignements personnels, ou toute autre inquiétude concernant la façon dont nous avons composé avec une demande de renseignements personnels, vous pouvez poser l’un des gestes qui suivent.<br/><br/>Communiquez avec le Responsable de la confidentialité de {0}.<br/><br/>Téléphonez au bureau du Responsable de la confidentialité de {0} en composant le 519 739-1113 ou sans frais au 1 800 265-5615 ou écrivez-lui à :<br/><br/>Responsable de la confidentialité<br/>{0}<br/>C.P. 1606<br/>Windsor (Ontario)<br/>N9A 6W1<br/><br/>";
+"privacyContent8"="Envoyez une TÉLÉCOPIE au bureau du Responsable de la confidentialité de {0} au 519 739-2253.<br/><br/>Le bureau du Responsable de la confidentialité de {0} accusera réception de votre plainte. Dans les deux semaines de la réception de votre demande, le Chef de l’exploitation de la confidentialité de {0} vous écrira ou vous téléphonera pour vous laisser savoir que le problème a été résolu ou, s’il s’agit d’une situation plus complexe, pour vous informer de la nature des mesures supplémentaires en cours d’implantation et pour vous donner une idée approximative du moment où une solution complète pourrait être envisagée.<br/><br/><b>Si vos préoccupations demeurent non résolues.</b><br/><br/>Veuillez communiquer avec :<br/><br/>Le Bureau du Commissaire à la protection de la vie privée du Canada<br/>30, rue Victoria<br/>Gatineau (Quebec)<br/>K1A 1H3<br/><br/>Téléphone: 1 819 994-5444<br/>Sans frais: 1 800 282-1376<br/>Télécopieur: 1 819 994-6591<br/>SITE WEB : <a href=\"http://www.priv.gc.ca/fr\">www.priv.gc.ca/fr/</a>";
+"legalContent1"="<h2>AVIS JURIDIQUES ET DE NON-RESPONSABILITÉ</h2><h3>Propriété et droits d’auteur</h3>Ce site Web (« site Web ») et cette application mobile (« appli mobile ») sont exploités par ou pour le compte de {0}. Tous les renseignements que ce site Web ou cette appli mobile contiennent constituent des produits protégés par le droit d’auteur de {0} et/ou des divers tiers agissant à titre de fournisseurs et distributeurs.<br/><br/>Sauf dans la mesure de la permission qui vous aurait été expressément accordée auparavant par {0}, aucune portion des données ou du contenu trouvé sur le site Web ou l’appli mobile ne pourra être reproduite, publiée de nouveau, distribuée, vendue, transférée, modifiée, affichée, transmise ni distribuée. Vous pourrez télécharger, afficher et imprimer les documents présentés sur le site Web ou l’appli mobile pour votre usage personnel. <h3>Marques de commerce</h3> Certains noms, mots, titres, phrases, logos, icônes ou éléments graphiques apparaissant sur les pages du site Web ou de l’appli mobile peuvent constituer des dénominations commerciales, des marques de commerce déposées ou non déposées ou des marques de service (« marques ») de {0} et utilisées sous licence par {0}. Cependant, l’apparition de marques sur les pages du site Web ou de l’appli mobile ne signifie nullement qu’une licence quelconque a été accordée à toute tierce partie. <br/><br/>Tout téléchargement, retransmission ou autre forme non autorisé de copie ou de modification des marques ou d’autres aspects du contenu du site Web ou de l’appli mobile pourrait constituer une infraction aux droits consentis par des dispositions législatives ou par la common law pouvant soumettre le contrevenant à des poursuites.<h3>Utilisation du site Web ou de l’appli mobile</h3>Vous faites valoir, garantissez et vous engagez à ce que votre utilisation du site Web ou de l’appli mobile ne/n’:<br/><ol><li>Enfreigne aucun règlement, règle, ordonnance, statut ou loi applicable à l’échelle locale, provinciale, d’État, nationale ou internationale;</li><li>Porte pas atteinte ni ne perturbe aucunement le fonctionnement des réseaux informatiques rattachés au site Web ou à l’appli mobile;</li><li>Usurpe nullement l’identité de toute autre personne ou entité ni ne formule une fausse affirmation quelconque en ce qui a trait à votre lien d’emploi pour le compte de toute autre personne ou entité ou affiliation avec elle;</li><li>Permette la falsification d’en-têtes ni, de quelque façon que ce soit, la manipulation d’identificateurs de façon à dissimuler l’origine de tout renseignement relatif à un utilisateur;</li><li>Permette le téléchargement, l’affichage, la transmission, la publication ni la distribution de tout renseignement ou document à l’égard duquel vous ne possédez pas tous les droits et licences nécessaires;</li><li>Permette le téléchargement, l’affichage, la transmission, la publication ni la distribution de tout document qui porte atteinte, contrevient, viole ou autrement transgresse les droits de tout tiers, y compris tout droit d’auteur, marque de commerce, brevet, droit à la vie privée, droit de publicité ou tout autre droit propriétal;</li><li>Porte pas atteinte ni ne trouble pas l’utilisation du site Web ou de l’appli mobile par tout autre utilisateur ni ne fasse en sorte qu’un autre utilisateur ne soit « traqué », menacé ou, de toute autre façon, harcelé;</li><li>Permette le téléchargement, l’affichage, la transmission, la publication ni la distribution de tout renseignement ou document comportant un virus informatique ou un autre code, fichier ou programme ayant pour but de quelque façon que ce soit de troubler ou de porter atteinte au fonctionnement du site Web, de l’appli mobile ou à celui d’autres systèmes informatiques;</li><li>Permette une pénétration ou un accès non autorisé aux systèmes informatiques d’autrui;</li><li>Permette le téléchargement, l’affichage, la transmission, la publication ni la distribution de tout renseignement ou document constituant une forme d’encouragement ou d’incitation à adopter une conduite qui pourrait s’apparenter à une infraction criminelle, engendrer une autre forme de responsabilité ou autrement enfreindre une loi applicable;</li><li>Permette le téléchargement, l’affichage, la transmission, la publication ni la distribution de tout renseignement ou document qui soit illégal ou qui puisse éventuellement être perçu comme étant dommageable, menaçant, méprisant, malveillant, diffamatoire, vulgaire, obscène ou inadmissible sur le plan racial, ethnique ou autre;</li><li>Permette la reproduction, la copie, la modification, la vente, l’entreposage, la distribution ni aucune autre forme d’exploitation du site Web ou de l’appli mobile, ou de toute composante de ceux-là, à toute fin commerciale (y compris, mais sans s’y limiter, tout document ou renseignement auquel il est possible d’avoir accès par l’entremise du site Web ou de l’appli mobile);</li><li>Permette d’utiliser tout dispositif, logiciel ou routine dans le but de porter atteinte ou de tenter de porter atteinte au fonctionnement normal du site Web ou de l’appli mobile ou</li><li>De poser tout geste susceptible de taxer de façon déraisonnable ou de façon importante et disproportionnée l’infrastructure du site Web ou de l’appli mobile.</li></ol>";
+"legalContent2"="<h3>Zones sécurisées</h3>Pour qu’un utilisateur puisse accéder au site Web ou à l’appli mobile et en utiliser les fonctionnalités, certaines zones de ces derniers (« zones sécurisées ») nécessitent des mots de passe ou d’autres formes de contrôle d’accès. Si vous avez reçu la permission d’accéder et d’utiliser l’une des zones sécurisées du site Web ou de l’appli mobile, il est de votre responsabilité de ne pas divulguer votre mot de passe ni aucun autre mode de contrôle d’accès de façon à ce qu’ils ne puissent pas être utilisés par d’autres personnes. {0} n’assumera aucune responsabilité à l’égard de tous dommages, pertes ou dépenses que vous ou tout tiers auriez encourus, à la suite de tout accès à l’une quelconque des zones sécurisées par une personne non autorisée grâce à l’utilisation de votre mot de passe ou d’un autre mode d’accès, et vous consentez à protéger {0} contre tous dommages, pertes ou dépenses qu’elle pourrait encourir, y compris toute action en réclamation déposée contre elle par des tierces parties, par suite dudit accès ou utilisation par une personne non autorisée.<h3>Limitation de responsabilité</h3>En aucune circonstance, {0} ne pourra être tenue responsable de tous dommages y compris, mais sans s’y limiter, des dommages directs ou indirects, particuliers, accessoires, consécutifs ni des dommages-intérêts punitifs, des pertes ni des dépenses, que {0} ou ses représentants aient été ou non informés de la possibilité que surviennent de tels dommages, pertes ou dépenses dans le cadre de :<br/><ol><li>Votre utilisation ou votre incapacité à utiliser ce site Web ou cette appli mobile;</li><li>L’utilisation de ce site Web ou de cette appli mobile par tout tiers ou de son incapacité à les utiliser;</li><li>Toute inexécution, erreur, omission, interruption, défaut, délai d’opération ou de transmission, virus informatique ou défaillance de la ligne ou du système, perte de données ou autre;</li><li>Votre communication de tout renseignement confidentiel ou de nature délicate ou de notre communication vers vous via l’Internet de tels renseignements.</li></ol><h3>Renseignements et disponibilité</h3>Les renseignements apparaissant dans les zones publiques de ce site Web et de cette appli mobile y sont uniquement à des fins informatives, et ils n’ont nullement pour but de constituer des conseils d’ordre financier, juridique, comptable ou fiscal ni ne devraient nullement être invoqués à cet effet.<br/><br/>Nous supposons que les renseignements fournis par {0} sur son site Web et son appli mobile sont exacts et fiables, mais nous ne sommes pas en mesure d’en garantir en tout temps l’exactitude et l’exhaustivité. Bien que nous nous efforcions de tenir ces renseignements à jour, lesdits renseignements sont sous réserve de modification en tout temps et sans préavis.<br/><br/>{1} consacre des efforts jugés raisonnables pour garantir l'accessibilité du site Web et de l’appli mobile. Cependant, elle n’assume aucune responsabilité à l’égard de toute interruption de service. {0} n’assumera aucune responsabilité pour toute perte découlant de toute circonstance à l’égard de laquelle elle ne dispose pas d’un contrôle direct, y compris, mais sans s’y limiter, une défectuosité du matériel électronique ou mécanique, ou des lignes de communication, une panne téléphonique ou un autre problème d’interconnexion, un virus informatique, un accès non autorisé, un vol, une erreur de téléphoniste, un phénomène météorologique violent, un tremblement de terre ou une catastrophe naturelle, une grève ou un autre problème ouvrier, une guerre ou une contrainte d’ordre gouvernemental.";
+"legalContent3"="<h3>Liens vers d’autres sites Web</h3>{0} ne formule aucune représentation quelle qu’elle soit au sujet de tout autre site Web auquel vous accéderiez par l’entremise de ce site Web ou de cette appli mobile. Lorsque vous accédez à un site Web autre que celui de {0} ou que l’appli mobile, il est tout à fait indépendant de celui de {0} et de l’appli mobile, et {0} ne possède absolument aucun contrôle sur le contenu de ce site Web. De plus, l’existence d’un lien vers un site Web autre que le site Web de {0} ou l’appli mobile ne signifie nullement que {0} endosse ou accepte quelque responsabilité que ce soit vis-à-vis du contenu ou de l’utilisation qui est faite dudit site Web. Il est de votre responsabilité de prendre des précautions, afin de vous assurer que, peu importe la nature des renseignements que vous décidez d’utiliser, ceux-ci soient libres de tout élément tel qu’un virus, un ver, un cheval de Troie ou une autre forme d’élément de nature destructive.<br/><br/>Les liens en provenance de ou menant vers des sites Web, autres que ce site Web ou cette appli mobile, ne sont fournis qu’à des fins de commodité seulement. {0} n’examine ni n’endosse ni n’approuve ni ne contrôle le contenu de ces sites Web, le nom ou la raison sociale des tierces parties qui y sont mentionnées ou leurs produits et services, et elle n’assume aucune responsabilité à l’égard de tout site Web possédant des liens menant vers ou provenant de ce site. Une personne qui se mettrait en liaison avec tout autre site Web le ferait à ses propres risques, et {0} n’assumera aucune responsabilité ni ne sera redevable pour tous dommages associés à toute telle mise en liaison. Les liens vers les sites Web offrant la possibilité de télécharger des logiciels apparaissent uniquement à des fins de commodité et {0} n’endosse nullement tout tel logiciel ni n’assume aucune responsabilité ni n’est redevable de toute difficulté ou conséquence associée au téléchargement du logiciel. L’utilisation de tout tel logiciel téléchargé est régie par les modalités de l’accord de licence, s’il y a lieu, qui accompagne ou qui est fourni avec ledit logiciel.<h3>Compétence applicable</h3>Ce site Web et cette appli mobile et l’utilisation que vous en faites seront régis conformément aux lois de la province de l’Ontario et aux lois fédérales du Canada applicables aux présentes, et interprétées en vertu de celles-ci, abstraction faite des principes inhérents aux conflits de lois.";
+"securityContent1"="L’expansion rapide des communications électroniques a engendré une révolution au niveau de notre façon de travailler et de vous fournir des services. Chez {0}, la sécurité de l’information se situe au cœur de la conduite de nos affaires, et il s’agit d’une responsabilité assumée par chaque employé. Il en est question dans notre entente relative à l’embauche et, régulièrement, des rappels écrits en confirment la validité.<br/><br/>Peu importe que vous accédiez à nos services en ligne, par téléphone, par notre application (appli) mobile ou en personne, nous souscrivons à des procédures de sécurité rigoureuses et faisons appel à des technologies de pointe pour protéger vos renseignements personnels et vos transactions contre tout accès, divulgation, modification et mauvais usage non autorisés.<br/><br/>Chez {0}, la sécurité de l’information vise à protéger les renseignements, les systèmes d’information et les modes de communication, utilisés pour la communication des renseignements, contre tout danger découlant d’un bris de confidentialité, d’intégrité et de disponibilité. Voici les principes-clés pris en considération au niveau de nos procédures de sécurité :<br/><ol><li>Imputabilité : Chaque personne qui utilise les systèmes d’information de {0} assume la responsabilité de les protéger et elle sera imputable de l’utilisation qui sera faite de ces systèmes;</li><li>Sensibilisation : Chaque personne qui utilise les systèmes d’information de {0} doit être sensibilisée aux initiatives pouvant être prises pour contrer les dangers et raffermir la sécurité;</li><li>Aspect multidisciplinaire : Il faut s’attaquer à la sécurité en prenant en considération à la fois les enjeux technologiques et non technologiques;</li><li>Intégration : La sécurité doit être coordonnée et intégrée;</li><li>Réévaluation : La sécurité doit être régulièrement réévaluée;</li><li>Rapidité d’exécution : Les procédures de sécurité doivent permettre la surveillance et une réaction rapide;</li><li>Facteurs sociétaux : Il faut promouvoir des fondements moraux en respectant les droits et les intérêts des autres.</li></ol><br/><br/>Bien que nous fassions tout notre possible pour garantir la sécurité et la confidentialité, vous pouvez, de votre côté, prendre des mesures pour accroître votre niveau de sécurité lorsque vous utilisez l’Internet et que vous transigez en ligne.";
+"securityContent2"="<h2>SÉCURITÉ DANS LE RÉSEAU DE {0}</h2><h3>Cryptage</h3>Grâce au cryptage, de nombreux sites Internet se trouvent sécurisés. Le cryptage ou chiffrement permet d’encoder les renseignements qui circulent entre votre ordinateur ou votre téléphone mobile et notre système informatique, les protégeant ainsi contre toute interception, visualisation et altération non autorisées. Vous savez que vous naviguez sur un site Web sécurisé, en utilisant Internet Explorer, lorsque vous apercevez une image de cadenas au bas de l’écran de la page consultée par l’entremise de votre fureteur.<br/><br/>La transmission de vos renseignements personnels aux pages Web et à l’appli mobile de {0} est sécurisée au moyen d’un encryptage des données. De plus, les renseignements personnels, qui nous ont été envoyés par ces pages Web et par l’appli mobile, sont également sécurisés.<h3>Identificateurs de connexion et mots de passe</h3>Les identificateurs de connexion et les mots de passe sont utilisés par les systèmes informatiques et les sites Web pour s’assurer de votre identité. Grâce à un identificateur de connexion et à un mot de passe, vous pouvez accéder à des services et à des renseignements précis pour votre utilisation personnelle. Quiconque possède votre identificateur de connexion et votre mot de passe peut aussi accéder à vos renseignements.<br/><br/>Votre mot de passe ne sera pas sauvegardé et vous devez l’entrer de nouveau chaque fois que vous vous connectez à une page de service en ligne sécurisée ou à l’appli mobile.<h3>Conseils utiles pour la création de mots de passe uniques</h3><ol><li>Ne partagez jamais vos mots de passe avec qui que ce soit, y compris des membres de votre famille.</li><li>Utilisez des mots de passe qui ne faciliteront pas les choses aux autres. Par exemple, dans des mots de passe, évitez d’utiliser votre nom, celui de membres de votre famille, votre adresse ou tout autre renseignement pouvant facilement être trouvé dans votre sac à main ou votre portefeuille advenant qu’il soit perdu ou volé.</li><li>Évitez le recours à des mots de passe courts car, aux yeux des autres, ils seront plus faciles à deviner. Plus le mot de passe sera long, plus vous rendrez la tâche difficile aux autres. Nombreux sont les fournisseurs de services offerts sur l’Internet qui instaurent des normes ayant pour but de définir et de forcer l’utilisation de mots de passe comportant une longueur minimale. {0} possède des normes régissant la longueur minimale des mots de passe. Nos normes relatives aux identificateurs d’utilisateur et aux mots de passe peuvent être consultées en ligne sur notre site Web par l’entremise de la fonction d’aide.</li><li>Lorsque cela est possible, évitez d’utiliser le même mot de passe pour plusieurs applications ou services sur Internet. Cette règle est particulièrement importante pour toute application sur Internet dans le cadre de laquelle s’effectue un accès à vos renseignements personnels ou financiers.</li><li>Changez souvent de mot de passe.</li></ol>";
+"securityContent3"="<h3>Témoins (ou « cookies »)</h3>Les témoins (ou « cookies ») sont utilisés par {0} pour le maintien de la sécurité au cours d’une session sur notre site Web, car ils en assurent l’unicité et autorisent son déroulement entre votre ordinateur et les systèmes sur Internet de {0}.<br/><br/>{0} NE se sert PAS des témoins aux fins suivantes :<br/><br/><ol><li>Les témoins ne sont pas utilisés pour « espionner » la navigation sur Internet des visiteurs, une fois que ceux-ci ont quitté les sites Web de {0}; en plus, les renseignements de contrôle qui pourraient être recueillis au cours d’une visite sur un site Web de {0} ne seront pas utilisés à des fins promotionnelles;</li><li>Pour plus de sécurité, les témoins ne sont pas utilisés pour mémoriser des noms-utilisateurs et des mots de passe; chaque fois que vous demandez une connexion en line à une page de service sécurisée, vous devrez fournir ce renseignement;</li><li>{0} n’établit aucun rapport entre tout renseignement recueilli grâce aux témoins et des renseignements personnels ou financiers vous appartenant.</li></ol><h3>Commentaires, questions ou réponses formulés par courriel</h3>Lorsque vous nous envoyez un courriel ou nous demandez de vous répondre par courriel, nous obtenons votre adresse électronique exacte et tout renseignement joint au courrier électronique. Nous utilisons votre adresse électronique pour accuser réception de vos commentaires et/ou pour répondre à vos questions, et nous conserverons le contenu de votre communication et notre réponse aussi longtemps que l’exigent les lois et les règlements appropriés et les pratiques commerciales de {0}. Nous ne vous enverrons jamais un courriel vous demandant vos mots de passe ni ne révélerons votre adresse électronique à personne.<br/><br/>Certains courriels reçus ou envoyés sur Internet ne sont pas sûrs et nous vous recommandons de faire preuve de prudence au moment de nous faire parvenir des messages par courriel.<br/><br/>Si vous avez des questions quelconques concernant l’authenticité ou la sécurité d’un courriel que vous auriez reçu de {0}, veuillez ne pas hésiter à communiquer avec nous au 1 800 265-5615.";
+"submitClaimTC"="Je confirme que toute l'information fournie à l’aide de cette soumission de demande de règlement en ligne de {0} est complète et exacte. Je comprends que toute l'information, y compris celle à caractère personnel, que j'ai fournie à {0} à mon sujet et à celui de mes personnes à charge, sera utilisée par {0} pour l’évaluation des demandes de règlement et tous autres services nécessaires pour l'administration de nos garanties qui pourraient inclure l'échange d'information avec d'autres intervenants dans le but d’administrer cette demande de règlement. <br /> <br /> Je suis autorisé(e) par mon(ma) conjoint(e) et(ou) mes personnes à charge à divulguer et recevoir de l'information à leur sujet qui sera utilisée à ces fins. Mon(ma) conjoint(e) et(ou) mes personnes à charge comprennent que cette information pourrait être vue par moi, le(la) détenteur(trice) de la carte.";
+
+//DRUG LOOKUP
+"benefits"="PRESTATIONS";
+"byDrugName"="PAR NOM DU MÉDICAMENT";
+"byDIN"="PAR NUMÉRO D’IDENTIFICATION DU MÉDICAMENT (DIN)";
+"drugLookupModelSelectionLabel"="RECHERCHER MA PROTECTION-MÉDICAMENTS";
+"chooseDrug"="CHOISIR L’UN DES SUIVANTS:";
+"drugNameFieldText"="NOM DU MÉDICAMENT";
+"drugNamePlaceholder"="Nom du médicament";
+"drugDINFieldText"="DIN	";
+"drugDINPlaceholder"="DIN";
+"confirm"="CONFIRMER";
+"confirmDrug"="CONFIRMER VOTRE MÉDICAMENT";
+"myDrugSelection"="CONFIRMER VOTRE MÉDICAMENT";
+"search"="RECHERCHE";
+"drugInformation"="INFO-MÉDICAMENT";
+"myDrugResults"="RÉSULTATS DE MA RECHERCHE DE MÉDICAMENT";
+"notes"="NOTES";
+"planParticipant"="MEMBRE DU RÉGIME";
+"choosePlanParticipant"="CHOISIR LE MEMBRE DU RÉGIME";
+"choosePlanParticipantLower"="Choisir le membre du régime";
+"drugNameAndStrength"="NOM ET CONCENTRATION DU MÉDICAMENT";
+"drugCovered"="CE MÉDICAMENT EST-IL COUVERT À TITRE DE VOTRE RÉGIME DE PRESTATIONS DE {0}?";
+"reimbursement"="REMBOURSEMENT";
+"specialAuthRequired"="UNE AUTORISATION SPÉCIALE EST-ELLE REQUISE?";
+"downloadAndView"="TÉLÉCHARGER ET VISUALISER";
+"sendByEmail"="ENVOYER PAR COURRIEL";
+"noresults"="Aucun résultat trouvé";
+"noresultsdetails"="Aucun médicament n’a été trouvé qui correspond au nom ou au DIN fourni.";
+"cancel"="Annuler";
+"cancelCaps"="ANNULER";
+"send"="ENVOYER";
+"sendAuthForm"="Envoyer le formulaire d'autorisation spéciale à (entrer l'adresse de courriel) :";
+"travelNumber"="Groupe #";
+"enterName"="ENTRER LE NOM DU MÉDICAMENT";
+"enterDIN"="ENTRER LE DIN";
+"nameError"="Médicament : Veuillez entrer le nom d’un médicament.";
+"drugLengthError"="Le nom du médicament est trop court. Entrer au moins trois caractères du nom du médicament.";
+"dinError"="DIN : Veuillez entrer un DIN.";
+"dinFormatError"="Le DIN n’est pas dans le bon format. Un DIN comprend toujours huit chiffres. Il figure sur le reçu de la pharmacie ou sur le flacon ou l’emballage du médicament. Veuillez réessayer.";
+"nameLengthError"="Le nom du médicament est trop court. Entrer au moins trois caractères du nom du médicament.";
+"planMemberSelectedError"="Un membre du régime n’a pas été sélectionné. Sélectionner le membre du régime en question de la liste.";
+"newSearch"="NOUVELLE RECHERCHE";
+"download1"="OUI. VEUILLEZ TÉLÉCHARGER LE FORMULAIRE D’AUTORISATION SPÉCIALE OU VOUS L’ENVOYER PAR COURRIEL OU DIRECTEMENT À VOTRE MÉDECIN.";
+"download2"="CE MÉDICAMENT N’EST PAS APPROUVÉ PAR VOTRE RÉGIME. VEUILLEZ TÉLÉCHARGER LE FORMULAIRE D’AUTORISATION SPÉCIALE OU VOUS L’ENVOYER PAR COURRIEL OU DIRECTEMENT À VOTRE MÉDECIN.";
+"specialMessages"="MESSAGES SPÉCIAUX";
+"reimbursementMessage"="Votre régime rembourse les médicaments en fonction de leur moindre coût dans leur catégorie thérapeutique; il s’agit d’habitude du médicament équivalent générique. Le nom du médicament et le DIN affichés correspondent au médicament le moins cher pour votre recherche.";
+
+"downloadErrorMessage"="Votre téléchargement a malheureusement échoué. Veuillez réessayer ou envoyer par courriel le formulaire.";
+"emailSentMessage"="Votre courriel a bien été envoyé.";
+"emailFailMessage"="Votre courriel n'a malheureusement pas été envoyé. Veuillez réessayer plus tard ou télécharger le formulaire sur votre appareil.";
+
+"notesFieldText"="•Recherche valide à la date de recherche indiquée ci-dessus.\r\n\r\n•Si ce médicament est couvert par votre régime d’assurance-médicaments provincial, il pourrait ne pas être admissible en vertu de votre régime de prestations de {0}.\r\n\r\n•Même si cette recherche de médicament pourrait indiquer que le médicament est couvert (c.-à-d. admissible à un remboursement), il n’est pas garanti que le médicament sera remboursé. Le remboursement est sous réserve des clauses de votre régime de prestations. Par exemple, si votre régime a un maximum annuel (ou plafond) pour les médicaments, un médicament admissible ne sera pas remboursé si vous avez déjà atteint le maximum du régime. Ou si le médicament admissible nécessite un formulaire d’autorisation, il pourrait être remboursé seulement si vous répondez à des critères médicaux précis.\r\n\r\n•Tout a été mis en oeuvre pour assurer l'exactitude des résultats de recherché. Toutefois, s'il y a divergence entre ces résultats et une demande de prestations, le résultat de la demande de prestations soumise sera considéré comme valide.";
+
+//LOCATE PROVIDERS
+"locateProviders"="TROUVER UN FOURNISSEUR DE SOINS DE SANTÉ";
+"makeYourSelection"="EFFECTUER VOTRE SÉLECTION";
+"serviceProviderTypeLabel"="TYPE DE FOURNISSEUR DE SOINS DE SANTÉ";
+"locateProvidersDone"="Terminé";
+"service"="Service";
+"narrowYourSearch"="CONCENTRER VOTRE RECHERCHE";
+"searchBy"="RECHERCHER PAR";
+"optional"="FACULTATIF";
+"locateProviderSearchTypeLabel"="Type de recherche";
+"locateProviderSearchTitleLabel"="Trouver des services de consultation";
+"locateProviderLocationTitle"="Recherche d’emplacement";
+"locateProviderFindTitle"="Trouver";
+"locateProviderAddressLabel"="ADRESSE";
+"locateProviderAddressLabelLower"="Adresse";
+"locateProviderPostalCodeLabel"="CODE POSTAL";
+"locateProviderPostalCodeLabelLower"="Code postal";
+"locateProiverNoFilter"="AUCUN FILTRE";
+"locateProviderMyCurrentLocationLabel"="MON EMPLACEMENT ACTUEL";
+"locateProviderAllProvidersLabel"="Tous les fournisseurs";
+"locateProviderPhoneNumberLabel"="NUMÉRO DE TÉLÉPHONE";
+"locateProviderPhoneNumberLabelLower"="Numéro de téléphone";
+"locateProviderLastNameLabel"="NOM DE FAMILLE";
+"locateProviderLastNameLabelLower"="Nom de famille";
+"locateProviderBusinessNameLabel"="NOM COMMERCIAL";
+"locateProviderBusinessNameLabelLower"="Nom commercial";
+"locateProviderRangeLabel"="DANS UN RAYON DE ";
+"locateProviderCityLabel"="VILLE";
+"locateProviderCityLabelLower"="Ville";
+"locateProviderNameLabel"="Nom";
+
+"detailsProviderTitle"="RECHERCHER";
+"detailsProviderRadiusInfoLabel"="Trouver des services de ";
+"detailsProviderRadiusInfoLabelMiddle"=" dans un rayon de ";
+"distanceHealthProviderLabel"="TROUVER UN FOURNISSEUR DE SOINS DE SANTÉ DANS UN RAYON DE ";
+"detailsProviderRadiusInfoLabelEnd1"=" DE ";
+"detailsProviderRadiusInfoLabelEnd2"=" DE L'";
+"detailsProviderRadiusInfoLabelEnd3"=" DU ";
+"myLocation"="mon emplacement actuel :";
+"detailsProviderSearchLabel"="TROUVER UN FOURNISSEUR DANS UN RAYON DE ";
+"detailsShowProviderSearchLabelCity"="AFFICHER LE FOURNISSEUR DE SOINS DE SANTÉ DANS LA ";
+"detailsShowProviderSearchLabelName"="AFFICHER LE FOURNISSEUR DE SOINS DE SANTÉ AU ";
+"detailsProviderSearchLabelEnd"=" SUIVANT";
+"detailsProviderSearchLabelEnd2"=" SUIVANTE";
+"detailsProviderInfoLabel"="50 FOURNISSEURS DE SOINS DE SANTÉ SERONT AFFICHÉS AU MAXIMUM.";
+"detailsProviderExampleAddressLabel"="EXEMPLE : 123, RUE PRINCIPALE, VILLE (PROV.)";
+"detailsProviderExamplePostalCodeLabel"="Exemple : A1A 1A1";
+"detailsProviderErrorTitle"="Aucun fournisseur de soins de santé trouvé";
+"detailsProviderErrorDesc"="Il n'y a aucun fournisseur de soins de santé correspondant. Essayer d'élargir votre critère de recherche.";
+"detailsProviderErrorDesc2"="Nous ne pouvons malheureusement pas trouver l’adresse ou le code postal entré. SVP réessayer.";
+"detailsNoMatchingProviders"="";
+"detailsProviderErrorFieldTitle"="(FR)Missing fields";	//must be translated
+"detailsProviderErrorFieldDesc"="(FR)Please fill in the required fields.";	//must be translated
+"detailsProviderErrorAddress"="Adresse ou code postal. Vous devez entrer soit une adresse soit un code postal.";
+"detailsProviderErrorPostal"="Code postal invalide. Vous devez entrer un code postal valide.";
+"detailsProviderErrorPhone"="Numéro de téléphone invalide. Vous devez entrer un numéro de téléphone valide.";
+
+"searchProviderServiceType"="Service Type: ";
+"searchProviderTitle"="Fournisseurs";
+"searchProviderSearchedLabel"="VOUS AVEZ RECHERCHÉ :";
+
+"mapProviderTitle"="Emplacements";
+
+"mapProviderDetailsTitle"="Fournisseur";
+"mapProviderDetailsSubmit"="Le fournisseur de soins de santé soumet les demandes de règlement directement en ligne";
+"mapProviderDetailsNotSubmit"="Needs translation";	//must be translated
+"mapProviderDetailsAccept"="Le fournisseur de soins de santé accepte le paiement direct";
+"mapProviderDetailsNotAccept"="Needs translation";	//must be translated
+
+"selectServiceProvider"="Sélectionner le type de fournisseur de soins de santé que vous recherchez.";
+
+"getDirections"="ITINÉRAIRE";
+
+"ifCurrentLocationServicesNotWorking"="Si les services de localisation ne fonctionnent pas, SVP rechercher par adresse ou code postal.";
+
+//SPENDING ACCOUNTS
+"balances"="MES SOLDES";
+"accountDetails"="DÉTAILS DU COMPTE";
+"accountNoC"="COMPTE";
+"totalRemaining"="TOTAL DISPONIBLE :";
+"deposited"="MONTANT ALLOUÉ :";
+"depositedNoC"="MONTANT ALLOUÉ";
+"usedToDate"="UTILISÉ À CE JOUR :";
+"usedToDateNoC"="UTILISÉ À CE JOUR";
+"remaining"="MONTANT DISPONIBLE :";
+"remainingNoC"="MONTANT DISPONIBLE";
+"forfeited"="Le montant disponible ne pourra pas être utilisé après le:";
+"contributionYear"="ANNÉE DES COTISATIONS : ";
+"to"="TO"; 
+"noAccounts"="Vous n’avez malheureusement pas de compte de frais.";
+"noAccessSpendingAccounts"="Vous n’avez malheureusement pas de compte de frais.";
+"noDataForSpendingAccount"="Aucun renseignement obtenu sur les cotisations.";
+
+//LANDING PAGE
+"welcome"="BIENVENUE";
+"myclaims"="MES DEMANDES DE RÈGLEMENT";
+"myIDCard"="MA CARTE D’IDENTIFICATION";
+"drugsOnTheGo"="MÉDICAMENTS À VOTRE PORTÉE";
+"myBenefits"="MES PRESTATIONS";
+"findProvider"="TROUVER UN FOURNISSEUR DE SOINS DE SANTÉ";
+"findPharmacy"="TROUVER UNE PHARMACIE";
+"myAlerts"="MES ALERTES";
+"myBalances"="MES SOLDES";
+"termsAndConditions"="MODALITÉS";
+"home"="ACCUEIL";
+"mysettings"="MES PARAMÈTRES";
+
+"travelNumber"="Groupe #";
+
+"back"="Retour";
+
+//CLAIM SUBMISSION
+"close"="Sortie";
+"claimSubmission"="Soumission de demande de règlement";
+"typeOfTreatment"="(FR)TYPE OF TREATMENT/SERVICE";
+"selectTypeOfTreatmentMessageTitle"="SÉLECTIONNER LE TYPE DE DEMANDE DE RÈGLEMENT OU DE SERVICE :";
+"selectTypeOfTreamentBody"="En soumettant une demande de re`glement e´lectronique par votre compte des Services en ligne des membres du re´gime, vous e^tes d’accord pour respecter les modalite´s de l’entente de soumission de demande de re`glement par le Web. Tout es les demandes de re`glement doivent e^tre rec¸ues par {0} dans les 12 mois suivant la date a` laquelle les frais ont e´te´ engage´s, a` moins d'indication contraire dans votre livret de re´gime de garanties. Il est important de conserver vos rec¸us pendant 18 mois au cas ou` il nous faudrait ve´rifier certains renseignements ayant trait a` votre demande de re`glement.";
+"serviceProviders"="Fournisseurs de services";
+"healthProviders"="FOURNISSEURS DE SOINS DE SANTÉ";
+"healthProvider"="Fournisseur De Soins De Santé";
+"phone"="Téléphone";
+"phoneNumber"="Numéro de téléphone";
+"lookUpA"="Rechercher un ";
+"byName"=" par son nom";
+"byPhone"=" par son numéro de téléphone";
+"lastName"="Nom de famille";
+"initial"="Initiale";
+"selectYour"="Sélectionner votre ";
+"fromTheListOrLookUp"=" DANS LA LISTE OU RECHERCHER VOTRE FOURNISSEUR PAR SON NOM OU SON NUMÉRO DE TÉLÉPHONE.";
+"selectFromTheListOrLookup"="SÉLECTIONNER UN FOURNISSEUR DE SOINS DE SANTÉ DANS LA LISTE OU RECHERCHER VOTRE FOURNISSEUR DE SOINS DE SANTÉ PAR SON NOM OU SON NUMÉRO DE TÉLÉPHONE.";
+"searchByName"="RECHERCHER UN FOURNISSEUR DE SOINS DE SANTÉ PAR SON NOM";
+"searchByPhone"="RECHERCHER UN FOURNISSEUR DE SOINS DE SANTÉ PAR SON NUMÉRO DE TÉLÉPHONE";
+"searchByNameButton"="RECHERCHER PAR LE NOM";
+"searchByPhoneButton"="RECHERCHER PAR LE NUMÉRO DE TÉLÉPHONE";
+"searchResults"="Résultats de la recherche";
+"selectAProviderFromTheList"="SÉLECTIONNER UN FOURNISSEUR DE SOINS DE SANTÉ DANS LA LISTE.";
+"selectA"="SÉLECTIONNER UN ";
+"fromTheList"=" DANS LA LISTE";
+"stillCantFindYourProvider"="Vous ne trouvez toujours pas votre fournisseur de soins de santé?";
+"stillCantFindYour"="Vous ne trouvez toujours pas votre ";
+"ifYouCannotFindYourProvider"="Vous ne pouvez trouver votre fournisseur de soins de santé, car il se peut qu’il ne soit pas inscrit auprès de {0}. SVP entrer ci-après les renseignements et cliquer sur «Utiliser ce fournisseur de soins de santé». Le traitement de votre demande de règlement sera retardé jusqu’à notre confirmation des coordonnées de votre fournisseur de soins de santé.\r\n\r\nNote : Dans le cas de services professionnels et de traitement par un professionnel de soins de la santé, SVP entrer les renseignements du professionnel de soins de la santé et non de la clinique où il exerce.";
+"ifYouCannotFindYour"="Vous ne pouvez trouver votre ";
+"provideInformationAboutMyProvider"="FOURNIR DES RENSEIGNEMENTS SUR MON FOURNISSEUR DE SOINS DE SANTÉ";
+"providInformationAboutMy"="Fournir des renseignements sur mon ";
+"serviceProvider"="Fournisseur de services";
+"pleaseEnterDetails"="SVP ENTRER LES DÉTAILS SUR VOTRE FOURNISSEUR DE SOINS DE SANTÉ ";
+"indicatesAMantatoryField"="*indique un champ obligatoire";
+"province"="Province";
+"provinceColon"="Province :";
+"useThisProvider"="UTILISER CE FOURNISSEUR DE SOINS DE SANTÉ";
+"useThis"="Utiliser ce ";
+"youMustSpecifyAValidPostalCode"="Vous devez préciser un code postal valide.";
+"youMustSpecifyAValidPhoneNumber"="Vous devez préciser un numéro de téléphone valide.";
+"enterMandatoryData"="SVP entrer toute l’information obligatoire.";
+"pleaseSelectPlanParticipant"="SVP sélectionner le membre du régime pour lequel vous soumettez la demande de règlement de ";
+"pleaseSelectPlanParticipant2"=".";
+"continue"="Continuer";
+"noMatchingProviders"="Aucun fournisseur de soins de santé correspondant n'a été trouvé";
+"noClaimAccess"="Malheureusement, vous n'avez pas accès à la soumission en ligne des demandes de règlement. ";
+
+"claimParticipantTitle"="MEMBRE DU RÉGIME";
+"claimDetailsTitle"="DÉTAILS DE LA DEMANDE DE RÈGLEMENT";
+"planInformationTitle"="INFO-RÉGIME";
+"claimServiceProviderTitle"="FOURNISSEUR DE SOINS DE SANTÉ - ";
+
+"participantChangedTitle"="Modification du membre du régime";
+"participantChangedDetail"="Vous avez modifié le membre du régime pour la demande de règlement. SVP vérifier que tous les renseignements de cette demande de règlement concernent";
+"participantChangedDetail2"="Si vous effectuez des demandes de règlement de traitements pour plusieurs membres du régime, vous devez soumettre des demandes de règlement distinctes pour chaque membre du régime.";
+
+"claimDetailsForParticipant"="SVP FOURNIR LES DÉTAILS DE LA DEMANDE DE RÈGLEMENT POUR";
+
+"swipeNotification"="GLISSER VERS LA GAUCHE POUR SUPPRIMER DES TRAITEMENTS DANS LA LISTE";
+
+"otherBenefitsTitle"="Avez-vous des garanties au titre d’un autre régime?";
+"otherBenefitsWithGSC"="La couverture est-elle auprès de {0}?";
+"otherBenefitsSubmitted"="Cette demande de règlement a-t-elle été soumise à l’autre régime de garanties?";
+"otherBenefitsPayBalanceThroughOtherGSC"="Régler tout solde impayé de mon autre régime {0}?";
+"otherBenefitsEnterGSC"="Entrer l’autre numéro {0}";
+"otherBenefitsGSCNum"="L’autre numéro {0}";
+"otherBenefitsHSCA"="Souhaitez-vous que tout montant non payé relatif à vos dépenses admissibles vous soit payé à même votre compte de frais pour soins de santé (CFSS)?";
+"otherBenefitsGSCNumberError"="Vous devez préciser l’autre numéro {0}.";
+"invalidGSCNumber"="Autre numéro {0} invalide";
+"errorNoMatchedDependant"="L’autre numéro {0} ne correspond pas à une personne à charge.";
+"errorSecondaryClaim"="Le numéro de régime secondaire entré ne peut être utilisé pour traiter votre demande de règlement secondaire.";
+"errorMultipleMatch"="Malheureusement, cette demande de règlement ne peut être traitée par l'appli mobile. Veuillez la soumettre aux Services en ligne des membres du régime.";
+"errorMultipleMatchDropDown"="Plus d'une personne à charge couverte par le régime secondaire de {0} a été trouvée. SVP sélectionner la personne qu'il faut de la liste déroulante.";
+"errorOnlineSubmision"="Votre régime de garanties secondaire ne permet pas la soumission de demandes de règlement en ligne. Veuillez soumettre manuellement la demande de règlement pour la protection à titre de votre régime secondaire.";
+
+"motorVehicleTitle"="Le traitement est-il requis à la suite d’un accident automobile?";
+"motorVehicleDate"="SVP fournir la date de l’accident";
+
+"workInjuryTitle"="Le traitement est-il requis à cause d’une blessure reliée au travail?";
+"workInjuryDate"="SVP fournir la date de la blessure";
+"workInjuryCaseNumber"="SVP fournir le numéro de cas";
+"workInjuryCaseNumberError"="Le numéro de cas doit être entré.";
+
+"medicalItemTitle"="Avez-vous une ordonnance médicale à soumettre avec cette demande de prestations?";
+"medicalItemReferralDate"="SVP fournir la date de la recommandation";
+"referralDate"="Date de la recommandation";
+"medicalItemProfessional"="Indiquer le type de professionnel de soins de la santé qui a recommandé le service";
+"typeOfProfessional"="Type de professionnel de soins de la santé";
+"medicalItemSport"="L'article médical est-il nécessaire uniquement à des fins sportives?";
+
+"claimDetailsFor"="DÉTAILS DE LA DEMANDE DE RÈGLEMENT POUR  ";
+"submitClaim"="SOUMETTRE LA DEMANDE DE RÈGLEMENT";
+"continueButton"="CONTINUER";
+
+"noClaimInfoError"="Aucun renseignement sur la demande de règlement n’a été entré.";
+
+"treatmentDetailsTitle"="DÉTAILS DU TRAITEMENT";
+"addEntry"="AJOUTER";// DEMANDE
+"treatmentDetailsFor"="DÉTAILS DU TRAITEMENT POUR ";
+"claimsFor"="DEMANDE(S) DE RÈGLEMENT POUR";
+
+"treatmentTitle"="TRAITEMENT";
+"save"="ENREGISTRER";
+"typeOfTreatmentTitle"="Type de traitement";
+"lengthOfTreatmentTitle"="Durée du traitement";
+"dateOfTreatmentTitle"="Date du traitement";
+"dateOfTreatmentTitleColon"="Date du traitement :";
+"dateOfMonthlyTreatmentTitle"="Date du traitement mensuel";
+"dateOfMonthlyPaymentTitle"="Date de paiement mensuel";
+"totalAmountOfVisit"="Montant total de la visite";
+"totalAmountOfVisitColon"="Montant total de la visite :";
+"amountPaidAlt"="Montant payé par l’autre assureur";
+"deleteEntry"="Supprimer l’entrée";
+"enterAllTreatmentDetailsError"="SVP entrer tous les détails du traitement.";
+"invalidTotalAmountError"="Montant total de la visite invalide";
+"invalidAmountPaidError"="Montant payé par l’autre assureur invalide";
+"invalidQuantity"="Quantité invalide";
+"pickupDate"="Date de prise de possession";
+"dateOfPurchase"="Date d’achat";
+"dateOfPurchaseService"="Date de l’achat/service";
+"omf"="Frais mensuels de soins d'orthodontie";
+"medicalProfessionalError"="Le type de professionnel de la santé doit être sélectionné";
+
+"specifyDateOfTreatment"="Vous devez préciser une date de traitement.";
+"dateofTreatment24Months"="La date du traitement doit se situer au cours des 24 derniers mois";
+"dateofTreatment12Months"="Date du service: ne peut être antérieur à 12 mois";
+"dateofPayment24Months"="La date de paiement doit se situer au cours des 24 derniers mois";
+"dateofExamination24Months"="La date de l’examen doit se situer au cours des 24 derniers mois";
+"dateofPurchase24Months"="Date de l’achat/service doit se situer au cours des 24 derniers mois";
+"dateofPurchase12Months"="Date de l’achat/service : ne peut être antérieur à 12 mois";
+"dateofPrescription12Months"="La date d’ordonnance doit se situer au cours des 12 derniers mois";
+"specifyDateOfInjury"="La date de la blessure doit être entrée.";
+"specifyDateOfAccident"="(FR) String Not Provided ";
+"errorMessage"="error message en francais";
+
+"enterAllTreatmentDetails"="Please enter in all of the treatment details";
+
+"specifyTypeOfTreatment"="Vous devez préciser le type de traitement.";
+"invalidAlternateCarrier"="Montant payé par l’autre assureur invalide";
+"specifyAlternateCarrier"="Vous devez préciser le montant payé par l’autre assureur.";
+"altCarrierTooHigh"="Le montant total de la consultation doit être supérieur ou égal au montant payé par l’autre assureur. Tentez d’utiliser une virgule au lieu du point pour vos décimales.";
+"invalidTotalAmount"="Montant total de la visite invalide";
+"specifyTotalAmount"="Vous devez préciser le montant total de la visite.";
+"sepcifyTotalAmountCharged"="Vous devez préciser le montant total facturé.";
+"invalidTotalAmountCharged"="Montant total facturé non valide. Tentez d'utiliser une virgule au lieu du point pour vos décimales";
+"missingQuantity"="Vous devez préciser la quantité.";
+"specifyDateOfPickup"="Vous devez préciser la date de prise de possession.";
+"missingItemDescription"="Vous devez préciser le type d’article médical.";
+"invalidFrameAmount"="Montant de monture invalide";
+"invalidEyeglassLensAmount"="Montant de verres invalide";
+"specifyFrameAmount"="Montant de monture invalide";
+"specifyEyeglassLensAmount"="Vous devez préciser un montant de verres.";
+"invalidDateOfPurchase"="(FR)TEXT CONSTANT MISSING";
+"missingTypeOfEyewear"="Vous devez préciser le type de lunetterie.";
+"missingTypeOfLens"="(FR)TEXT CONSTANT MISSING";
+"invalidDateOfMonthlyTreatment"="(FR)TEXT CONSTANT MISSING";
+"invalidOrthodonticMonthlyFee"="Frais mensuels d'orthodonties invalides. Tentez d'utiliser une virgule au lieu du point pour vos décimales";
+"missingOrthodonticMonthlyFee"="Vous devez préciser les frais mensuels d’orthodontie.";
+"invalidDateOfExamination"="La date de l’examen de la vue ne peut être postérieure.";
+"invalidTotalAmountOfExamination"="Montant total de l’examen de la vue invalide. Tentez d'utiliser une virgule au lieu du point pour vos décimales";
+"missingTotalAmountOfExamination"="Vous devez indiquer le montant total pour l’examen de la vue";
+
+"itemDescription"="Description de l’article";
+"quantity"="Quantité";
+"totalAmountCharged"="Montant total facturé";
+"gstIncluded"="TPS/TVH incluse dans le total";
+"gstIncludedQ"="TPS/TVH incluse dans le total?";
+"pstIncluded"="TVP incluse dans le total";
+"typeOfEyewear"="Sélectionner le type d’article de lunetterie";
+"typeOfEyewearConf"="Type d’article de lunetterie";
+"typeOfLens"="Sélectionner le type de lentille";
+"typeOfLensConf"="Type de lentille";
+"totalForLenses"="Total pour les lentilles cornéennes reçues";
+"totalChargeForGlasses"="Total des frais pour lunettes";
+"eyewearCorrective"="Je reconnais que l’article de lunetterie est aux fins de correction de la vue";
+"mustSpecifyCorrective"="Vous devez préciser si la lunetterie est aux fins de correction. Les demandes de règlement qui ne sont pas aux fins de correction ne sont pas admissibles.";
+"frameAmount"="Montant de monture";
+"lensAmount"="Montant pour lentilles de lunettes";
+"feeAmount"="Montant des honoraires";
+"dateOfExamination"="Date de l’examen";
+"dateOfExaminationColon"="Date de l’examen :";
+"totalAmountOfExamination"="Total de l’examen";
+"totalChargeOfExamination"="Total des honoraires de l’examen";
+"totalChargeOfExaminationColon"="Total des honoraires de l’examen :";
+"totalAmountMedicalItems"="Montant total chargé pour les articles médicaux";
+"lensTypeResult"="Type de lentille";
+"totalChargeForContacts"="Montant total pour les lentilles cornéennes reçues";
+
+"massageNoticeText"="Pour les services fournis en Ontario, veuillez vous assurer que tous les reçus sont signés par le massothérapeute qui a effectué le traitement.";
+
+"noClaimDetailEntered"="Aucun renseignement sur la demande de règlement n’a été entré.";
+"maximumFiveClaims"="Cinq demandes de règlement peuvent être ajoutées au maximum.";
+
+"claimSubmissionConfirmation"="CONFIRMER VOTRE DEMANDE DE RÈGLEMENT";
+"planInformation"="INFO-RÉGIME";
+"greenShieldId"="Numéro d’identification {0} :";
+"participantName"="Nom du membre :";
+
+"claimSubmissionResult"="RÉSULTAT DE SOUMISSION DE DEMANDE DE RÈGLEMENT";
+"totals"="TOTAUX";
+"claimedAmount"="Montant demandé ($ CA) :";
+"otherPaidAmount"="Autre montant payé ($ CA) :";
+"deductible"="Franchise :";
+"copay"="Quote-part :";
+"deductibleAmount"="Montant de franchise :";
+"copayAmount"="Montant de quote-part :";
+"paidAmount"="Montant payé ($ CA) :";
+"formNumber"="Numéro de formulaire :";
+"formNumberNoColon"="Numéro de formulaire";
+"serviceDate"="Date du service :";
+"serviceDescription"="Description du service :";
+"claimStatus"="Statut de la demande de règlement :";
+"submissionDate"="Date de soumission :";
+"submittedDate"="Date de soumission";
+"dueDate"="Date d’échéance";
+
+"auditNotificationTitle"="AVIS DE VÉRIFICATION";
+"auditNotificationInstruction"="AVIS DE VÉRIFICATION";
+"auditNotificationFormReference"="NUMÉRO DE RÉFÉRENCE DE FORMULAIRE : ";
+"auditNotification"="VOTRE DEMANDE DE RÈGLEMENT A ÉTÉ SÉLECTIONNÉE POUR UN EXAMEN DE VÉRIFICATION. SVP NOTER QU’UNE INTERVENTION IMMÉDIATE EST REQUISE DE VOTRE PART. SVP OUVRIR UNE SESSION AUX SERVICES EN LIGNE DES MEMBRES DU RÉGIME POUR RÉPONDRE À LA DEMANDE DE VÉRIFICATION.";
+"auditNotificationMenu"="VOTRE DEMANDE DE RÈGLEMENT A ÉTÉ SÉLECTIONNÉE AU HASARD POUR UN EXAMEN DE VÉRIFICATION. UNE INTERVENTION IMMÉDIATE DE VOTRE PART EST REQUISE. CE RAPPORT SE TROUVE SOUS MES ALERTES À L’ONGLET ACCUEIL.";
+"auditInstructionsButton"="INSTRUCTIONS POUR AVIS DE VÉRIFICATION";
+"auditInstructions"="Votre demande de règlement a été sélectionnée au hasard pour un examen de vérification. Une intervention immédiate de votre part est requise. Vous devez répondre à {0} dans les 30 prochains jours. SVP suivre les étapes ci-après : \r\n\r\n• Ouvrir une session aux Services en ligne des membres du régime de {0} à greenshield.ca; \r\n\r\n• Une fois la session ouverte, un message d’avis de rappel de vérification sera immédiatement affiché; \r\n\r\n• Cliquer sur «Visualiser la liste de vérifications» pour voir votre(vos) vérification(s) de demande de règlement en instance; \r\n\r\n• Cliquer sur le numéro du formulaire en question pour voir les détails de la vérification; \r\n\r\n• Télécharger de façon pratique en ligne votre facture et toute autre documentation justificative (comme une ordonnance, le cas échéant). \r\n\r\nOu, vous pouvez imprimer le formulaire d’avis de vérification et l’envoyer par la poste, accompagné de la documentation requise, à l’adresse indiquée au bas de la page d’avis.";
+"submittedToGSC"="Les renseignements ci-dessus seront soumis à {0}. SVP vérifier leur exactitude avant de continuer. S’il vous faut modifier les renseignements, SVP cliquer sur le bouton « Retour » pour retourner au formulaire de soumission de demande de règlement. Sinon, cliquer sur le bouton « Soumettre » pour soumettre la demande de règlement à {0}.";
+"submitAnotherClaim"="SOUMETTRE UNE AUTRE DEMANDE DE RÈGLEMENT";
+"awaitingPaymentNote"="Les paiements pour les demandes de règlement au statut «Attente de paiement» seront traités le jour ouvrable suivant.";
+"awaitingPaymentNote2"="Le paiement des demandes de règlement au statut de «En attente de paiement» sera traité le jour ouvrable suivant, selon votre solde de ";
+"awaitingPaymentNote3"="";
+
+"planLimitations"="LIMITES DU RÉGIME";
+"planLimitation"="LIMITE DU RÉGIME";
+"particpantFamily"="Membre / Famille :";
+"startDate"="Date de début :";
+"amountToDate"="Montant utilisé à ce jour :";
+"occurencesToDate"="Situations ou unités à ce jour :"; 
+
+"auditListInstructions"="Vous avez actuellement une demande ou plus de règlement vérifiée en instance (voir la liste ci-après). Vous aurez 30 jours à partir de la date d'avis de vérification pour fournir les documents de demande de règlement afin d’appuyer votre soumission. Veuillez cliquer sur un numéro de formulaire ci-après pour effectuer la procédure de vérification. \r\n\r\nUne fois les documents traités, l'avis de vérification ne figurera plus dans la liste ci-après. \r\n\r\nNOTE IMPORTANTE – Si vous n'envoyez pas la documentation demandée, l'option pour vous de soumettre à l'avenir des demandes de règlement par les Services en ligne des membres du régime sera désactivée. \r\n\r\nSi vous avez soumis récemment votre documentation par courrier ou électroniquement, veuillez ne pas tenir compte de ce message. Nous vous remercions d’avoir répondu à la vérification. \r\n\r\nSi vous avez des questions, veuillez appeler notre Centre de service à la clientèle au ";
+"auditListPhone"="{0}.";
+
+"auditsTitle"="VÉRIFICATIONS";
+
+//ELIGIBILITY
+
+"checkEligibilityTypeMessage"="Vérifier l’admissibilité pour l’une des garanties suivantes :";
+"eligibilityPlanParticipantMessage"="SÉLECTIONNER LE MEMBRE DU RÉGIME";
+
+"eligibilityParticipantChanged"="Toute l’information de cette vérification d’admissibilité sera maintenant associée avec le nouveau membre. Voulez-vous continuer?";
+
+"checkEligibilityTitle"="VÉRIFIER L’ADMISSIBILITÉ";
+"dateOfEligiblity"="DATE D’ADMISSIBILITÉ";
+
+"checkEligibilityFor"="VÉRIFIER L’ADMISSIBILITÉ DE";
+"for"="POUR";
+
+"inWhatProvince"="Province où le service sera fourni";
+
+"eligibilityNote1"="L’admissibilité est fondée sur l’ensemble des demandes de règlement soumises et traitées à ce jour. Les demandes de règlement récentes, qui ont été reçues mais non traitées par {0}, pourraient ne pas être prises en compte dans les résultats. Le traitement doit être administré par un fournisseur de soins de santé agréé dans la province où vous recevez le traitement.\r\n\r\nJe conviens que l’information fournie est complète et précise à ma connaissance.";
+"eligibilityNote2"="SVP prendre note que cette demande est seulement une vérification d'admissibilité. Vous ne soumettez pas de véritable demande de règlement.";
+
+"dateOfInquiry"="Date de demande de vérification :";
+
+"eligibilityDRENote"="Note : La date d'admissibilité représente la prochaine date admissible aux garanties habituelles perçues lors de votre bilan de santé. Si {0} n'est pas votre fournisseur principal, votre demande de règlement doit être soumise tout d'abord à votre fournisseur principal. Cela pourrait altérer votre admissibilité aux garanties. \r\nNote : L’admissibilité au détartrage, comme mentionné plus tôt, s’applique uniquement à la seule unité de détartrage préventif incluse lors d’un rappel.";
+"eligibilityOMFNote"="Note : La date d'admissibilité représente la prochaine date admissible pour recevoir votre montant maximum pour des orthèses. Si {0} n'est pas votre fournisseur principal, votre demande de règlement doit être soumise tout d'abord à votre fournisseur principal. Cela pourrait altérer votre admissibilité aux garanties.";
+
+"eligibilityInquiryNote2"="SVP prendre note que cette demande est seulement une vérification d'admissibilité. Vous ne soumettez pas de véritable demande de règlement.";
+
+"eligibilityResults"="RÉSULTATS D’ADMISSIBILITÉ";
+"submissionResultsFor"="RÉSULTATS DE SOUMISSION POUR";
+"reasonsReduced"="RÉDUCTIONS POSSIBLES PAR VOTRE RÉGIME";
+
+"yourPlanWouldPay"="Votre régime paierait :";
+"other"="Autre :";
+"dateOfEligibilityMaximum"="Date d’admissibilité pour le montant maximum";
+"planWouldPayChanged1"="Si votre ordonnance de lunettes n’a pas changé, votre régime rembourserait : ";
+"or"="ou";
+"planWouldPayChanged2"="Si votre ordonnance de lunettes a change, votre régime rembourserait : ";
+
+"eligibilityTotalAmountError"="Montant total de la visite : doit être un montant valide";
+"eligibilityTotalAmountMissing"="Montant total de la visite : doit être entré";
+
+"depNumParticipant"="Numéro de personne à charge : Membre";
+"treatment1"="Examen de rappel";
+"treatment2"="Détartrage";
+"treatment3"="Polissage";
+
+"elegibilityInquiryTitle"="DEMANDE DE VÉRIFICATION DE ";
+"eligibilityInquiryInfo1"="Des questions? SVP nous envoyer un courriel sécurisé. Il vous suffit d'entrer les renseignements demandés ci dessous, d'écrire votre question et de cliquer sur «Soumettre la demande de vérification», et nous vous répondrons en deux jours ouvrables.";
+"toGSCRepresentative"="Dest. : Représentant de {0}";
+"from"="Exp. :";
+"yourEmailAddress"="Votre adresse de courriel :";
+"eligibilityInquiryInfo2"="Si votre adresse de courriel n'est pas exacte, nous vous appellerons au(x) numéro(s) de téléphone que vous avez fourni(s). Pour mettre à jour votre adresse de courriel, cliquez sur Mon profil dans le menu de gauche et entrez votre nouvelle adresse.";
+"legalPracticionerNote"="Les services doivent être fournis par un praticien de la santé reconnu légalement ou considéré comme reconnu par {0}.";
+"enterInquiry"="Entrer votre demande de vérification ici (limite de 1000 caractères) *";
+"counter"="Compteur :";
+"exceededCharactersError"="Vous avez dépassé le nombre de caractères qui peuvent être entrés dans le champ de demande de vérification.";
+"expectReplyNote"="Vous pouvez prévoir recevoir une réponse à votre demande dans les 2 jours ouvrables suivants.";
+"expectReplyNote2"="La technologie utilisée pour l’envoi des messages de demande de vérification à {0} à l’aide de la fonction «Soumettre la demande de vérification» procure la sécurité et la confidentialité de la communication.";
+"submitAnotherEligibilityCheck"="SOUMETTRE UNE AUTRE VÉRIFICATION D’ADMISSIBILITÉ";
+"submitInquiry"="SOUMETTRE LA DEMANDE DE VÉRIFICATION";
+"inquiryRecieved"="DEMANDE DE VÉRIFICATION REÇUE, MERCI. \r\n\r\n {0} a reçu votre message de demande de vérification. Vous pouvez vous attendre à recevoir une réponse à l'adresse de courriel indiquée en 2 jours ouvrables. ";
+
+"noEligibilityAccess"="Vous n'avez malheureusement pas accès à l'admissibilité des garanties.";
+
+"done"="TERMINÉ";
+
+"yes"="Oui";
+"no"="Non";
+"yesContinue"="Oui, Continuer";
+"noCancel"="Non, Annuler";
+
+"claimRehydrationMessage"="Données non enregistrées : Vous avez précédemment entré des données pour une demande de règlement qui n'a pas été soumise. Désirez-vous poursuivre où vous étiez? Cliquez sur non pour effectuer une nouvelle demande de règlement.";
+
+//VISION CHANGES
+"prescriptionDetails"="Détails de l'ordonnance";
+
+"rightSphere"="Sphère droite";
+"leftSphere"="Sphère gauche";
+"rightCylinder"="Cylindre droit";
+"leftCylinder"="Cylindre gauche";
+"rightAxis"="Axe droit";
+"leftAxis"="Axe gauche";
+"rightPrism"="Prisme droit";
+"leftPrism"="Prisme gauche";
+"rightBifocal"="Bifocal droit";
+"leftBifocal"="Bifocal gauche";
+
+"prescriptionDetailsIncomplete"="Détails de l'ordonnance incomplets";
+"missingRightSphere"="";
+"missingLeftSphere"="";
+"missingRightCylinder"="";
+"missingLeftCylinder"="";
+"missingRightAxis"="";
+"missingLeftAxis"="";
+"missingRightPrism"="";
+"missingLeftPrism"="";
+
+//SUBMISSION RESULT CHANGES
+"spouseResults"="RÉSULTATS DE SOUMISSION DE DEMANDE DE RÈGLEMENT – COMPTE DE VOTRE CONJOINT(E)";
+"spendingAccountResults"="RÉSULTATS DE SOUMISSION DE DEMANDE DE RÈGLEMENT – ";
+"secondaryAccountDisabled"="Nous ne pouvons pas traiter la seconde partie de cette demande de règlement sous le compte de votre conjoint(e), car son compte des Services en ligne des membres du régime a été désactivé. Veuillez soumettre la demande de règlement sous le compte de votre conjoint(e) à {0} à l’aide d’un formulaire de demande de règlement sur papier.";
+"secondaryAccountHasntAcceptedAgreement"="Nous ne pouvons pas traiter la seconde partie de cette demande de règlement sous le compte de votre conjoint(e), car il (elle) n’a pas accepté l’entente de soumission des demandes de règlement en ligne. Cette entente est présentée lors de votre première soumission d’une demande de règlement aux Services en ligne des membres du régime.";
+"secondaryAccountNotRegistered"="Votre conjoint(e) ne s’est pas inscrit(e) aux Services en ligne des membres du régime et(ou) n’a pas accepté l’entente de soumission des demandes de règlement en ligne; nous ne pouvons ainsi traiter la seconde partie de cette demande de règlement en ligne. Pour coordonner vos demandes de règlement avec le régime de garanties {0} de votre conjoint(e) en ligne, demandez-lui (la) de s’inscrire aux Services en ligne des membres du régime et d’accepter l’entente de soumission des demandes de règlement dès aujourd’hui.";
+
+"dateOfExpense"="Date de la dépense";
+"typeOfExpense"="Type de dépense";
+
+//Change For Life Term and Condition
+"acceptToTerms"="Accepter";
+"cancelToTerms"="Annuler";
+"C4LAgreement"="<h2>Entente Changerpourlavie<h2>";
+"C4LTCContent1"="<h3>Il nous faut votre consentement (lisez et cliquez sur « Accepter » ci-dessous)</h3> Afin de pouvoir assurer le bon fonctionnement du portail de récompenses santé changerpourlavie et de vous offrir la meilleure expérience possible, nous devrons transférer certains renseignements personnels de {0} au portail changerpourlavie (offert par {0} par l’intermédiaire de Cookson James Loyalty, Inc.). Il peut s'agir de données personnelles et confidentielles identifiables comme votre adresse électronique et votre date de naissance. <br/> <br/> Le portail Web changerpourlavie vous demandera aussi des renseignements – tout ou seulement ce que vous voudrez bien transmettre – et pourra les utiliser aux fins suivantes :<br/>";
+"C4L"="CHANGERPOURLAVIE";  
+"C4LTCContent2"="<ul><li>	vous proposer des renseignements précis, des outils et des communications concernant votre santé (seulement si vous acceptez) </li><li>	vous fournir un meilleur service clientèle (pour que vous n'ayez plus à toujours entrer les mêmes renseignements)</li><li>	effectuer des recherches et des analyses visant à accroître notre capacité à offrir à nos membres des produits et services de qualité supérieure et des technologies de pointe pour la gestion de la santé</li><li>	communiquer des données anonymes aux promoteurs de régime concernant l'état de santé global des membres de leurs régimes collectifs </li><li>	contribuer à des recherches cliniques, des études de marché, des projets éducatifs ou autres projets de recherche, dans le respect de la confidentialité </li><li>	livrer les récompenses santé changerpourlavie (les coordonnées d'expédition peuvent être transmises aux fournisseurs, au besoin).</li></ul><br/>";
+"C4LTCContent3"="Votre vie privée et vos renseignements personnels sont protégés. Vos renseignements personnels seront recueillis, utilisés et communiqués en conformité avec la législation fédérale et provinciale sur la protection de la vie privée, y compris notamment la Loi sur la protection des renseignements personnels et les documents électroniques (LPRPDE). Autrement dit, {0} limitera le transfert, la collecte et l'utilisation de renseignements personnels aux renseignements nécessaires pour fournir le service indiqué. S'il arrivait que votre régime ne soit plus administré par {0}, vos renseignements personnels deviendraient automatiquement anonymes. Consultez les renseignements sur la confidentialité, les avis juridiques et la sécurité de {0}. <br/> <br/>";
+//Warning : DO not change the privacy legal and  security urls above as the re-direction has been harcoded in the code.
+"C4LTCContent4"="<h3>Le retrait de votre consentement</h3>Vous pouvez retirer votre consentement à ces conditions en tout temps (mais vous n'aurez plus accès au portail changerpourlavie en vue d'accumuler des points pour avoir adopté de saines habitudes de vie et d'échanger ces points contre des récompenses super intéressantes). Si vous souhaitez ultérieurement retirer votre consentement (mais nous espérons que vous ne le ferez pas), il vous suffira de cliquer sur le lien « Contactez-nous » dans le menu des Services en ligne et de nous transmettre votre demande par courriel sur notre site sécurisé. Aucun autre renseignement ne sera recueilli et tous les renseignements à votre sujet sauvegardés dans le portail deviendront automatiquement anonymes. <br/><br/>La bonne nouvelle, c'est que vous pouvez avoir de nouveau accès au site n'importe quand par la suite. (Vous devrez seulement relire cette page et cliquer de nouveau sur « Accepter »!) De plus, même si vous retirez votre consentement à l'utilisation de vos renseignements personnels par le portail changerpourlavie, {0} continuera quand même à traiter vos demandes de règlement.<br/><br/>"; 
+"C4LTCContent5"="<h3>Déclaration et consentement du membre changerpourlavie (ça y est... c'est presque terminé)</h3>En cliquant sur le lien « Accepter » ci-dessous, je consens à la collecte, l’utilisation et la divulgation de mes renseignements personnels tel que décrits et en conformité avec la politique en matière de confidentialité de {0} (que j’ai eu l’occasion de passer en revue), et je reconnais et conviens être d’accord avec les renseignements ci-dessus. ";
+
+// Balance Check
+"BalanceCheckSelectAccount"="SÉLECTIONNEZ LE COMPTE";
+
+
+
+//HCSA
+"ClaimDetails"="Détails de la demande de règlement";
+"ClaimAmount"="Claim Amount";
+"GreenSheildIDNumber"="Green Sheild ID Number";
+"ProfessionalWhoReferred"="Professional who referred the item/service";
+"PaidByInsurerGovt"="Paid By Insurer/Government Plan(s)"; 
+"Delete" = "Supprimer";
+"TOTAL" = "TOTAL";
+
+"CLAIM_DETAILS" = "CLAIM DETAILS";
+"Confitm_Claim" = "CONFIRM YOUR CLAIM";
+"submit_Claim" = "CLAIM SUBMITTED";
+"HCSA" = "HCSA"; 
+"ClaimMedicalProfessionalLabel"="Professionnel de soins de la santé";
+
+"FingerprintLoginPrompt"="Connectez-vous à l'aide de la fonction Touch ID";
+"loginWithTouch"="Connectez-vous à l'aide de la fonction Touch ID";
+"loginWithFace"="Connectez-vous à l'aide de la fonction Face ID";
+
+"useTouchIdMessage"="Nous pouvons utiliser la fonction Touch ID pour maintenir en sécurité votre mot de passe aux fins de connexion à l'avenir. Aimeriez-vous utiliser cette fonction?";
+"useFaceIdMessage"="Nous pouvons utiliser la fonction Face ID pour maintenir en sécurité votre mot de passe aux fins de connexion à l'avenir. Aimeriez-vous utiliser cette fonction?";
+"loginInstruction"="se chargera la prochaine fois que vous utiliserez vos empreintes digitales. Numérisez vos empreintes digitales pour activer la fonction."; 
+
+//Settings view
+"dontAskTouch"="Touch ID/Face ID";
+"dontAskFace"="Face ID";
+"notEnabled"="Désactivé depuis que vous vous connectez en utilisant le";
+"biometricsPara1"="Lorsque Touch ID /Face ID est activé, vous pouvez vous connecter à l'aide des fonctions de sécurité biométrique de votre appareil, ou continuez d’utiliser votre mot de passe existant.";
+"biometricsPara2"="Tout profil avec Touch ID ou Face ID inscrit sur cet appareil aura accès à cette application.";
+"biometricsPara3"="Pour vous aider à protéger vos renseignements personnels, ne conservez pas de données Touch ID ou Face ID autres que les vôtres sur cet appareil.";
+"biometricsDialog"="Si votre appareil prend en charge Touch ID ou Face ID, veuillez établir un mot de passe, inscrire vos données biométriques et activer la fonction dans les paramètres de votre appareil iOS. Vous devez aussi cocher la case « Mémoriser mon nom d’utilisateur sur cet appareil » à l’écran de connexion.";
+
+
+
+//Apple Wallet Request Body
+"cardLogoText"="GSC à votre portee";
+"cardImage"="Card/applewallet_fr.png";
+
+//App Names
+"app_name"="GSC à votre portée";
+
+// Web Claim Agreement
+"webAgreementTitle"="<h2>INSCRIPTION POUR DEMANDE DE PRESTATIONS EN LIGNE</h2>";
+"webContent1"="Pour vous inscrire à la soumission électronique de demandes de prestations, veuillez lire l’accord suivant, puis sélectionner le bouton Accepter. Cela vous autorisera à soumettre des demandes de prestations électroniques à {0} par le biais de notre site Web et de notre appli mobile. Si vous ne désirez pas vous inscrire maintenant, sélectionnez le bouton Annuler pour revenir à la page d’accueil.<br/><br/>";
+"newTermsDate"="<b><center><font color=red>Nouvelles modalités à compter du 1er mai 2018.</font></center></b>";
+"newTermsDateDynamic"="<b><center><font color=red>{0}</font></center></b>";
+"pmosHeading"="<b><center><font color={HIGHLIGHT_COLOR_HEX}>{0}<br/>Services en ligne des membres du régime<br/>Entente de soumission de demande de prestations par le Web<br/><br/></font></center></b>";
+"webContent2"="<b>Conditions</b><br/>";
+"webContent3"="Si vous acceptez et si vous êtes d’accord de respecter les conditions, veuillez cliquer sur le bouton « Accepter » pour continuer.<br/><br/>";
+"webContent4"="À titre de membre du régime, je suis d’accord que tous les renseignements fournis en utilisant la soumission de demandes de prestations des Services en ligne des membres du régime ou de l’appli mobile seront complets et exacts.<br/><br/>";
+"webContent5"="Dans le cas où les renseignements que j’ai fournis sont incomplets ou inexacts, je comprends que {0} se réserve le droit de supprimer mes privilèges de demandes de prestations en ligne. Je comprends que les renseignements que je fournis à {0} à mon sujet et au sujet des personnes à ma charge serviront à {0} pour le règlement des demandes et à tout autre service nécessaire à l’administration de mes prestations, y compris l’échange de renseignements avec des tierces parties afin d’administrer mon régime de prestations.<br/><br/>";
+"webContent6"="J’ai l’autorisation de mon (ma) conjoint(e), ou de mes personnes à charge, de divulguer et de recevoir des renseignements à leur sujet utilisés à ces fins. Mon (Ma) conjoint(e) et/ou les personnes à ma charge comprennent que ces renseignements seront vus par moi, le (la) détenteur(trice) de la carte et qu’ils seront utilisés par {0} et les autres parties indiquées par cette entente aux fins stipulées dans cette entente.<br/><br/>";
+"webContent7"="Je comprends et je suis d’accord que je suis responsable de conserver le ou les reçus originaux pendant 13 mois suivant la date de la ou des soumissions de demande de prestations. Lors de la soumission des demandes de règlement en ligne, {0} pourrait sélectionner ma demande aux fins de vérification. Dans ce cas, il m'incombera de produire le ou les reçus originaux dans les 30 jours qui suivent.<br/><br/>";
+"webContent8"="Je comprends que si ma demande de prestations est sélectionnée aux fins de vérification, cela pourrait entraîner une vérification complète de certaines ou toutes demandes précédentes soumises en mon nom. Durant ma sélection aux fins d’une vérification complète, ma capacité de soumission de demandes de prestations aux Services en ligne des membres du régime et à l’appli sera temporairement désactivée.<br/><br/>";
+"webContent9"="Si je ne peux produire le ou les reçus à {0} ou fournis des renseignements faux, incomplets ou trompeurs, {0} se réserve le droit de classifier ma demande de prestations comme versement excédentaire et {0} aura le droit d’exiger le remboursement du paiement et/ou la déduction de telles sommes des prochaines demandes de prestations. D’autre part, l’accès à la soumission de demandes de prestations des Services en ligne des membres du régime et de l’appli mobile sera révoqué et ma couverture pourra être refusée et/ou résiliée.<br/><br/>";
+"webContent10"="Si je ne peux produire le ou les reçus à {0} ou fournis des renseignements faux, incomplets ou trompeurs, {0} se réserve le droit de classifier ma demande de prestations comme versement excédentaire et {0} aura le droit d’exiger le remboursement du paiement et/ou la déduction de telles sommes des prochaines demandes de prestations. D’autre part, l’accès à la soumission de demandes de prestations des Services en ligne des membres du régime et de l’appli mobile sera révoqué et ma couverture pourra être refusée et/ou résiliée.<br/><br/>";
+"webContent11"="En cas d’activité frauduleuse soupçonnée relative à la soumission de demandes de prestations des Services en ligne des membres du régime ou de l’appli mobile en mon nom et/ou au nom de mon (ma) conjoint(e) et/ou des personnes à ma charge, je reconnais et je suis d’accord de divulguer lesdits renseignements aux parties pertinentes, y compris mais sans s’y limiter le promoteur de régime et les organismes de réglementation et d’application de la loi.<br/><br/>";
+"webContent12"="{0} maintient une base de données nationale de fournisseurs ainsi que leur association avec tout organisme de réglementation, association professionnelle ou programme éducatif. {0} examine chaque fournisseur afin de déterminer quels avantages/services sont admissibles pour le remboursement en conjonction avec le régime de prestations de soins de santé du membre. Lors de la soumission d’une demande de prestations en ligne, avec un fournisseur qui n’est pas enregistré avec {0}, les titres de compétence de ce fournisseur seront vérifiés et ma demande de prestations sera traitée en conséquence.<br/><br/>";
+"webContent13"="L’acceptation des conditions de l’entente de soumission de demande de prestations par le Web s’applique à toutes les demandes de prestations soumises au cours d’une session en ligne.<br/><br/>";
+"webContent14"="Si je soumets plusieurs demandes de prestations (pour une autre personne à charge et/ou fournisseur) au cours d’une session en ligne, mon acceptation des conditions de l’entente de soumission de demande de prestations par le Web s’applique à toutes les demandes de prestations soumises.<br/><br/>";
+"webContent15"="En cliquant sur le bouton « Accepter », cela constitue ma signature numérique (qui équivaut à une signature par écrit) et je reconnais être réputé(e) d’avoir lu, compris, accepté et être d’accord d’être lié(e) par ces conditions.<br/><br/>";
+"webContentDynamic1"="{0}<br/><br/>";
+"webContent16"="Pour obtenir de plus amples renseignements sur nos politiques et procédures en matière de confidentialité, veuillez consulter la page Modalités - Confidentialité.<br/><br/>";
+
+"REFINE YOUR SEARCH"="CHERCHER";
+"LOCATION"="ADRESSE";
+"PROVIDER TYPE"="TYPE";
+"My Favourites"="Mes favoris";
+"Pharmacy"="Pharmacy";
+"FILTER"="FILTRER";
+"QUALITY RATING"="ÉVALUATION";
+"DIRECT BILL"="FACTURATION DIRECTE";
+"RECENTLY VISITED"="RÉCEMMENT VISITÉ";
+"SORT"="TRIER";
+"Distance"="Distance";
+"Name"="Nom";
+"Rating Distance"="Évaluation et distance";
+"Rating Name"="Évaluation et nom";
+"DONE"="OK";
+"NotAvailable"="NON DISPONIBLE";
+
+"cop"="COP-FR";
+"COP_UploadDocuments"="Upload Documents-FR";
+"COP_ServiceDate"="Date du service";
+"COP_ClaimFormNumber"="Numéro de formulaire";
+"COP_ServiceDescription"="Description du service";
+"COP_ClaimedAmount"="Montant demandé ($ CA)";
+"COP_DocumentsToUpload"="DOCUMENTS À TÉLÉCHARGER";
+"COP_Disclaimer"="l’avis.";
+"COP_UploadSuccessfulMessage"="You have successfully uploaded your documents.-FR";
+"COP_BackToMyClaims"="Back to my claims-FR";
+"ActiveClaim_ActionRequired"="Intervention requise";
+"COP_UploadDocumentMessageLabel"="Please upload documents for this claim.-fr";
+
+//DirectDeposit
+"directDeposit"="fr-Direct Deposit";

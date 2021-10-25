@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>    
+  <string name="app_name">GSC à votre portée</string>
+  <string name="login_instruction">
+    <html>
+      <body style="font-family:AvenirLTStd-Book;">
+        VOUS AVEZ OUBLIÉ VOTRE NOM D\'UTILISATEUR OU VOTRE MOT DE PASSE? VOUS DEVEZ VOUS INSCRIRE? <a href="https://onlineservices.greenshield.ca/PlanMember/AccessMgmt/Public/SignOn.aspx?lang=fr-CA">CLIQUEZ ICI.</a>
+      </body>
+    </html>
+  </string>
+  <string name="gsc">GSC</string>
+  <string name="greenShield">Green Shield</string>
+  <string name="greenshieldcanada">Green Shield Canada</string>
+  <string name="phonenumber">1 888 711-1119</string>
+  <string name="phonenumberFPPM">(514) 527-4161</string>
+  <string name="unablebenefitEligibilityLabel">Impossible de déterminer l\'admissibilité aux garanties.  Veuillez communiquer avec le Centre de service à la clientèle au {0}</string>
+  <string name="checkeligibilityResultNotes1">Note : L\'information sur l\'admissibilité est présentée sous réserve du statut de votre couverture actuelle et peut ne refléter aucune demande de règlement récemment soumise (mais non traitée). Tout changement au niveau de la protection (incluant les changements rétroactifs) modifiera la responsabilité de {0}.\n\nLe traitement doit être administré par un fournisseur de soins de santé agréé dans la province où vous recevez le traitement.\n\nLe praticien qui administre le service doit être agréé par l\'agence ou l\'association régulatrice de sa province, laquelle doit être reconnue par {1}.\n\nSi vous détenez une protection pour des garanties en vertu de ce régime ou tout autre régime, les garanties seront coordonnées en conformité avec les lignes directrices normales de l\'industrie, élaborées par l\'Association canadienne des compagnies d\'assurances de personnes. Si la protection de {2} est votre régime secondaire, les résultats de la soumission au régime principal modifieront la responsabilité de {3}.\n\nCertains régimes exigent une recommandation médicale pour ce type de service. Si votre régime exige une recommandation médicale et qu\'une recommandation médicale précédente valide n\'est pas au dossier de {4}, la recommandation doit être soumise avec cette demande de règlement.\n\nSi les services sont requis à la suite d\'un accident automobile ou d\'une blessure reliée au travail, vous pourriez ne pas être admissible à un remboursement par {5}.\n\nVous avez encore des questions concernant votre admissibilité? Communiquez avec notre Centre de service à la clientèle au {6}.\n\n</string>
+  <string name="eligibilityResultsNotes">
+    L\'information sur l\'admissibilité est présentée sous réserve du statut de votre couverture actuelle et peut ne refléter aucune demande de règlement récemment soumise (mais non traitée). Tout changement au niveau de la protection (incluant les changements rétroactifs) modifiera la responsabilité de {0}.\n\n
+    Veuillez communiquer avec le Centre de service à la clientèle au {1} pour plus de renseignements sur l\'admissibilité aux garanties.\n\n
+    SVP prendre note que cette demande est seulement une vérification d\'admissibilité. Vous ne soumettez pas de véritable demande de règlement.\n\n
+  </string>
+  </resources>

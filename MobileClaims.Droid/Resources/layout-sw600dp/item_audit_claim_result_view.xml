@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp">
+    <TableRow
+        android:layout_marginBottom="5dp">
+        <gsc.NunitoTextView
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="10dp"
+            android:gravity="left"
+            local:MvxBind="Text Format('{0:MMMM dd, yyy}',ServiceDate);" />
+        <gsc.NunitoTextView
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="10dp"
+            android:gravity="left"
+            local:MvxBind="Text ServiceDescription;"
+            android:ellipsize="none"
+            android:scrollHorizontally="false" />
+        <gsc.NunitoTextView
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="10dp"
+            android:gravity="left"
+            local:MvxBind="Text Format('${0}',ClaimedAmount);" />
+    </TableRow>
+</TableLayout>

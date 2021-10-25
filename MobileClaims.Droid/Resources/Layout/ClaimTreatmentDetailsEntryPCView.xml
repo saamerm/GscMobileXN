@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none"
+            android:isScrollContainer="true">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_color">
+                <gsc.HeaderTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/claimTreatmentLabel"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:weightSum="1">
+                <gsc.NunitoTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/claimTreatmentDateOfPurchaseLabel"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    local:MvxBind="TextColor Or(InvalidDateOfPurchase,MissingDateOfPurchase,DateTooOld), Converter=TextColorError;" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="0.1"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp">
+                    <ImageButton
+                        android:id="@+id/errorButtonClick1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:background="@null"
+                        local:MvxBind="Visibility Visibility(InvalidDateOfPurchase);"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:src="@drawable/claims_error_icon"
+                        android:scaleType="centerInside"
+                        android:tag="@string/claimTreatmentInvalidDateOfPurchase"
+                        android:onClick="errorClickHandler" />
+                    <ImageButton
+                        android:id="@+id/errorButtonClick2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:background="@null"
+                        local:MvxBind="Visibility Visibility(MissingDateOfPurchase);"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:src="@drawable/claims_error_icon"
+                        android:scaleType="centerInside"
+                        android:tag="@string/claimTreatmentMissingDateOfPurchase"
+                        android:onClick="errorClickHandler" />
+                    <ImageButton
+                        android:id="@+id/errorButtonClick10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:background="@null"
+                        local:MvxBind="Visibility Visibility(DateTooOld);"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:src="@drawable/claims_error_icon"
+                        android:scaleType="centerInside"
+                        android:onClick="errorClickHandler"
+                        android:tag="@string/claimPurchaseDateTooOld" />
+                </LinearLayout>
+                <gsc.NunitoTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:layout_centerHorizontal="true"
+                    local:MvxBind="Text Format('{0:MMMM dd, yyy}',DateOfPurchase);"
+                    android:id="@+id/DateOfPurchase"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:background="@android:color/transparent"
+                    android:gravity="right"
+                    android:paddingTop="15dp"
+                    android:textSize="18sp"
+                    android:layout_marginRight="20dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp"
+                android:weightSum="1">
+                <gsc.NunitoTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/claimTreatmentTypeEyewearLabel"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    local:MvxBind="TextColor MissingTypeOfEyewear, Converter=TextColorError;" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_weight="0.1"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp">
+                    <ImageButton
+                        android:id="@+id/errorButtonClick3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:background="@null"
+                        local:MvxBind="Visibility Visibility(MissingTypeOfEyewear);"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:src="@drawable/claims_error_icon"
+                        android:scaleType="centerInside"
+                        android:tag="@string/claimTreatmentMissingTypeOfEyewear"
+                        android:onClick="errorClickHandler" />
+                </LinearLayout>
+                <Mvx.MvxSpinner
+                    android:id="@+id/typeofeyewear"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="wrap_content"
+                    android:prompt="@string/claimTreatmentTypeEyewearLabel"
+                    android:spinnerMode="dialog"
+                    local:MvxBind="ItemsSource TypesOfEyewear;"
+                    local:MvxItemTemplate="@layout/item_medical_professional_spinner"
+                    local:MvxDropDownItemTemplate="@layout/item_medical_professional_spinner_dropdown"
+                    android:gravity="right"
+                    android:textSize="18sp"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:weightSum="1"
+                local:MvxBind="Visibility Visibility(IsAcknowledgeEyewearIsCorrectiveVisible);">
+                <gsc.NunitoTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/claimTreatmentAckLabel"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_weight="0.6"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="0.0dp"
+                    local:MvxBind="TextColor AcknowledgedEyewareIsCorrective, Converter=TextColorError;" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.1"
+                    android:layout_marginRight="5dp">
+                    <ImageButton
+                        android:id="@+id/errorButtonClick4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:background="@null"
+                        local:MvxBind="Visibility Visibility(AcknowledgedEyewareIsCorrective);"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:src="@drawable/claims_error_icon"
+                        android:scaleType="centerInside"
+                        android:tag="@string/claimTreatmentAcknowledgedEyewareIsCorrective"
+                        android:onClick="errorClickHandler" />
+                </LinearLayout>
+                <Switch
+                    android:id="@+id/gstValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_weight="0.3"
+                    android:textOn="@string/switch_yes"
+                    android:textOff="@string/switch_no"
+                    android:thumbTextPadding="10dp"
+                    android:switchMinWidth="50dp"
+                    local:MvxBind="Checked AcknowledgeEyewareIsCorrective;"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    style="@style/SwitchAppTheme" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp"
+                android:weightSum="1">
+                <gsc.NunitoTextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="@string/claimTreatmentTotalChargedLabel"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    local:MvxBind="TextColor Or(InvalidTotalAmountCharged,MissingTotalAmountCharged), Converter=TextColorError;" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="0.1"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp">
+                    <ImageButton
+                        android:id="@+id/errorButtonClick7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:background="@null"
+                        local:MvxBind="Visibility Visibility(InvalidTotalAmountCharged);"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:src="@drawable/claims_error_icon"
+                        android:scaleType="centerInside"
+                        android:tag="@string/claimTreatmentInvalidTotalAmountCharged"
+                        android:onClick="errorClickHandler" />
+                    <ImageButton
+                        android:id="@+id/errorButtonClick8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:background="@null"
+                        local:MvxBind="Visibility Visibility(MissingTotalAmountCharged);"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:src="@drawable/claims_error_icon"
+                        android:scaleType="centerInside"
+                        android:tag="@string/claimTreatmentMissingTotalAmountCharged"
+                        android:onClick="errorClickHandler" />
+                </LinearLayout>
+                <gsc.SmallEditText
+                    android:id="@+id/totalCharged"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="0.4"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/dark_grey"
+                    android:singleLine="true"
+                    android:background="@drawable/RoundEditTextNone"
+                    local:MvxBind="Text TotalAmountCharged;"
+                    android:layout_alignParentLeft="true"
+                    android:numeric="integer|decimal"
+                    android:imeOptions="actionDone" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp"
+                android:weightSum="1"
+                local:MvxBind="Visibility Visibility(AmountPaidByAlternateCarrierVisible);">
+                <gsc.NunitoTextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="@string/claimTreatmentAlternateCarrierLabel"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    local:MvxBind="TextColor TextColorError(Or(InvalidAC,MissingAC,BadValueAC))" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_weight="0.1"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp">
+                    <ImageButton
+                        android:id="@+id/errorButtonClick9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:background="@null"
+                        local:MvxBind="Visibility Visibility(InvalidAC);"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:src="@drawable/claims_error_icon"
+                        android:scaleType="centerInside"
+                        android:tag="@string/claimTreatmentInvalidTotalAC"
+                        android:onClick="errorClickHandler" />
+                    <ImageButton
+                        android:id="@+id/errorButtonClick5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:background="@null"
+                        local:MvxBind="Visibility Visibility(MissingAC);"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:src="@drawable/claims_error_icon"
+                        android:scaleType="centerInside"
+                        android:tag="@string/claimTreatmentMissingTotalAC"
+                        android:onClick="errorClickHandler" />
+                    <ImageButton
+                        android:id="@+id/errorButtonClick6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:background="@null"
+                        local:MvxBind="Visibility Visibility(BadValueAC);"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:src="@drawable/claims_error_icon"
+                        android:scaleType="centerInside"
+                        android:tag="@string/claimTreatmentBadValueAC"
+                        android:onClick="errorClickHandler" />
+                </LinearLayout>
+                <gsc.SmallEditText
+                    android:id="@+id/alternateCarrier"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="0.4"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/dark_grey"
+                    android:singleLine="true"
+                    android:background="@drawable/RoundEditTextNone"
+                    local:MvxBind="Text AmountPaidByAlternateCarrier;Enabled AmountPaidByAlternateCarrierVisible"
+                    android:layout_alignParentLeft="true"
+                    android:numeric="integer|decimal"
+                    android:imeOptions="actionDone" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp"
+                android:weightSum="1"
+                local:MvxBind="Visibility Visibility(IsAmountPaidByPPorGPVisible);">
+                <gsc.NunitoTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    local:MvxBind="Text AmountPaidByPPorGPText; TextColor TextColorError(Or(InvalidAmountPaidByPPorGP,MissingAmountPaidByPPorGP,BadAmountPaidByPPorGP))" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_weight="0.1"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp">
+                    <ImageButton
+                        android:id="@+id/errorButtonClick13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:background="@null"
+                        local:MvxBind="Visibility Visibility(InvalidAmountPaidByPPorGP);"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:src="@drawable/claims_error_icon"
+                        android:scaleType="centerInside"
+                        android:tag="@string/invalidAmountPaidByPpOrGpValidation"
+                        android:onClick="errorClickHandler" />
+                    <ImageButton
+                        android:id="@+id/errorButtonClick14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:background="@null"
+                        local:MvxBind="Visibility Visibility(MissingAmountPaidByPPorGP);"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:src="@drawable/claims_error_icon"
+                        android:scaleType="centerInside"
+                        android:tag="@string/missingAmountPaidByPpOrGpValidation"
+                        android:onClick="errorClickHandler" />
+                    <ImageButton
+                        android:id="@+id/errorButtonClick15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:background="@null"
+                        local:MvxBind="Visibility Visibility(BadAmountPaidByPPorGP);"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:src="@drawable/claims_error_icon"
+                        android:scaleType="centerInside"
+                        android:tag="@string/invalidAmountPaidByPpOrGpValidation"
+                        android:onClick="errorClickHandler" />
+                </LinearLayout>
+                <gsc.SmallEditText
+                    android:id="@+id/GovermetAndProvince"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="0.4"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/dark_grey"
+                    android:singleLine="true"
+                    android:background="@drawable/RoundEditTextNone"
+                    local:MvxBind="Text AmountPaidByPPorGP;Enabled IsAmountPaidByPPorGPVisible"
+                    android:layout_alignParentLeft="true"
+                    android:numeric="integer|decimal"
+                    android:imeOptions="actionDone" />
+            </LinearLayout>
+
+
+
+
+
+        <!-- warranty-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="15dp"
+                local:MvxBind="Visibility Visibility(IsPrescriptionDetailsVisible);">
+                <gsc.SubtitleTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/prescriptionDetailsLabel"
+                    android:textColor="@color/black"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textStyle="bold"
+                    android:textAllCaps="true" />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:background="@null"
+                    local:MvxBind="Visibility Visibility(PrescriptionDetailsError);"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:src="@drawable/claims_error_icon"
+                    android:scaleType="centerInside"
+                    android:tag="@string/prescriptionDetailsErrorLabel"
+                    android:onClick="errorClickHandler" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp"
+                android:weightSum="1"
+                local:MvxBind="Visibility Visibility(IsPrescriptionDetailsVisible);">
+                <gsc.NunitoTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/leftSphereLabel"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_weight="0.6"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    local:MvxBind="TextColor TextColorEnableDisable(IsLeftSphereEnabled);" />
+                <Mvx.MvxSpinner
+                    android:id="@+id/LeftSphere"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="wrap_content"
+                    android:prompt="@string/leftSphereLabel"
+                    android:spinnerMode="dialog"
+                    local:MvxBind="ItemsSource VisionSpheres; SelectedItem LeftSphere;Enabled IsLeftSphereEnabled;"
+                    local:MvxItemTemplate="@layout/item_prescription_spinner"
+                    local:MvxDropDownItemTemplate="@layout/item_prescription_spinner_dropdown"
+                    android:gravity="right"
+                    android:textSize="18sp"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:choiceMode="singleChoice" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp"
+                android:weightSum="1"
+                local:MvxBind="Visibility Visibility(IsPrescriptionDetailsVisible);">
+                <gsc.NunitoTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rightSphereLabel"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_weight="0.6"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    local:MvxBind="TextColor TextColorEnableDisable(IsRightSphereEnabled);" />
+                <Mvx.MvxSpinner
+                    android:id="@+id/RightSphere"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="wrap_content"
+                    android:prompt="@string/rightSphereLabel"
+                    android:spinnerMode="dialog"
+                    local:MvxBind="ItemsSource VisionSpheres;SelectedItem RightSphere;Enabled IsRightSphereEnabled;"
+                    local:MvxItemTemplate="@layout/item_prescription_spinner"
+                    local:MvxDropDownItemTemplate="@layout/item_prescription_spinner_dropdown"
+                    android:gravity="right"
+                    android:textSize="18sp"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp"
+                android:weightSum="1"
+                local:MvxBind="Visibility Visibility(IsPrescriptionDetailsVisible);">
+                <gsc.NunitoTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/leftCylinderLabel"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_weight="0.6"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    local:MvxBind="TextColor TextColorEnableDisable(IsLeftCylinderEnabled);" />
+                <Mvx.MvxSpinner
+                    android:id="@+id/LeftCylinder"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="wrap_content"
+                    android:prompt="@string/leftCylinderLabel"
+                    android:spinnerMode="dialog"
+                    local:MvxBind="ItemsSource VisionCylinders;SelectedItem LeftCylinder;Enabled IsLeftCylinderEnabled;"
+                    local:MvxItemTemplate="@layout/item_prescription_spinner"
+                    local:MvxDropDownItemTemplate="@layout/item_prescription_spinner_dropdown"
+                    android:gravity="right"
+                    android:textSize="18sp"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp"
+                android:weightSum="1"
+                local:MvxBind="Visibility Visibility(IsPrescriptionDetailsVisible);">
+                <gsc.NunitoTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rightCylinderLabel"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_weight="0.6"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    local:MvxBind="TextColor TextColorEnableDisable(IsRightCylinderEnabled);" />
+                <Mvx.MvxSpinner
+                    android:id="@+id/RightCylinder"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="wrap_content"
+                    android:prompt="@string/leftCylinderLabel"
+                    android:spinnerMode="dialog"
+                    local:MvxBind="ItemsSource VisionCylinders;SelectedItem RightCylinder;Enabled IsRightCylinderEnabled;"
+                    local:MvxItemTemplate="@layout/item_prescription_spinner"
+                    local:MvxDropDownItemTemplate="@layout/item_prescription_spinner_dropdown"
+                    android:gravity="right"
+                    android:textSize="18sp"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp"
+                android:weightSum="1"
+                local:MvxBind="Visibility Visibility(IsPrescriptionDetailsVisible);">
+                <gsc.NunitoTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/leftAxisLabel"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_weight="0.6"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    local:MvxBind="TextColor TextColorEnableDisable(IsLeftAxisEnabled);" />
+                <Mvx.MvxSpinner
+                    android:id="@+id/LeftAxis"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="wrap_content"
+                    android:prompt="@string/leftAxisLabel"
+                    android:spinnerMode="dialog"
+                    local:MvxBind="ItemsSource VisionAxes;SelectedItem LeftAxis;Enabled IsLeftAxisEnabled;"
+                    local:MvxItemTemplate="@layout/item_prescription_spinner"
+                    local:MvxDropDownItemTemplate="@layout/item_prescription_spinner_dropdown"
+                    android:gravity="right"
+                    android:textSize="18sp"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp"
+                android:weightSum="1"
+                local:MvxBind="Visibility Visibility(IsPrescriptionDetailsVisible);">
+                <gsc.NunitoTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rightAxisLabel"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_weight="0.6"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    local:MvxBind="TextColor TextColorEnableDisable(IsRightAxisEnabled);" />
+                <Mvx.MvxSpinner
+                    android:id="@+id/RightAxis"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="wrap_content"
+                    android:prompt="@string/rightAxisLabel"
+                    android:spinnerMode="dialog"
+                    local:MvxBind="ItemsSource VisionAxes;SelectedItem RightAxis;Enabled IsRightAxisEnabled;"
+                    local:MvxItemTemplate="@layout/item_prescription_spinner"
+                    local:MvxDropDownItemTemplate="@layout/item_prescription_spinner_dropdown"
+                    android:gravity="right"
+                    android:textSize="18sp"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp"
+                android:weightSum="1"
+                local:MvxBind="Visibility Visibility(IsPrescriptionDetailsVisible);">
+                <gsc.NunitoTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/leftPrismLabel"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_weight="0.6"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    local:MvxBind="TextColor TextColorEnableDisable(IsLeftPrismEnabled);" />
+                <Mvx.MvxSpinner
+                    android:id="@+id/LeftPrism"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="wrap_content"
+                    android:prompt="@string/leftPrismLabel"
+                    android:spinnerMode="dialog"
+                    local:MvxBind="ItemsSource VisionPrisms;SelectedItem LeftPrism;Enabled IsLeftPrismEnabled;"
+                    local:MvxItemTemplate="@layout/item_prescription_spinner"
+                    local:MvxDropDownItemTemplate="@layout/item_prescription_spinner_dropdown"
+                    android:gravity="right"
+                    android:textSize="18sp"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp"
+                android:weightSum="1"
+                local:MvxBind="Visibility Visibility(IsPrescriptionDetailsVisible);">
+                <gsc.NunitoTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rightPrismLabel"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_weight="0.6"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    local:MvxBind="TextColor TextColorEnableDisable(IsRightPrismEnabled);" />
+                <Mvx.MvxSpinner
+                    android:id="@+id/RightPrism"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="wrap_content"
+                    android:prompt="@string/rightPrismLabel"
+                    android:spinnerMode="dialog"
+                    local:MvxBind="ItemsSource VisionPrisms;SelectedItem RightPrism;Enabled IsRightPrismEnabled;"
+                    local:MvxItemTemplate="@layout/item_prescription_spinner"
+                    local:MvxDropDownItemTemplate="@layout/item_prescription_spinner_dropdown"
+                    android:gravity="right"
+                    android:textSize="18sp"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp"
+                android:weightSum="1"
+                local:MvxBind="Visibility Visibility(IsPrescriptionDetailsVisible);">
+                <gsc.NunitoTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/leftBifocalLabel"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_weight="0.6"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center" />
+                <Mvx.MvxSpinner
+                    android:id="@+id/LeftBifocal"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="wrap_content"
+                    android:prompt="@string/leftBifocalLabel"
+                    android:spinnerMode="dialog"
+                    local:MvxBind="ItemsSource VisionBifocals;SelectedItem LeftBifocal;"
+                    local:MvxItemTemplate="@layout/item_prescription_spinner"
+                    local:MvxDropDownItemTemplate="@layout/item_prescription_spinner_dropdown"
+                    android:gravity="right"
+                    android:textSize="18sp"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp"
+                android:weightSum="1"
+                local:MvxBind="Visibility Visibility(IsPrescriptionDetailsVisible);">
+                <gsc.NunitoTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rightBifocalLabel"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_weight="0.6"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center" />
+                <Mvx.MvxSpinner
+                    android:id="@+id/LeftBifocal"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="wrap_content"
+                    android:prompt="@string/rightBifocalLabel"
+                    android:spinnerMode="dialog"
+                    local:MvxBind="ItemsSource VisionBifocals;SelectedItem RightBifocal;"
+                    local:MvxItemTemplate="@layout/item_prescription_spinner"
+                    local:MvxDropDownItemTemplate="@layout/item_prescription_spinner_dropdown"
+                    android:gravity="right"
+                    android:textSize="18sp"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true" />
+            </LinearLayout>
+        <!--// warranty -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp">
+                <gsc.GSCButton
+                    android:text="@string/claimTreatmentDeleteLabel"
+                    android:background="@drawable/ButtonBackground"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    local:MvxBind="Click DeleteEntryCommand;Visibility Visibility(EditMode);"
+                    android:id="@+id/claimDeleteTreatment"
+                    android:layout_gravity="center"
+                    android:textColor="@drawable/ButtonTextColor"
+                    android:gravity="center"
+                    android:textSize="24sp"
+                    android:textColorHighlight="@color/list_text_color"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp" />
+                <gsc.GSCButton
+                    android:text="@string/claimTreatmentSaveLabel"
+                    android:background="@drawable/ButtonBackground"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    local:MvxBind="Visibility Visibility(EditMode);"
+                    android:id="@+id/claimSaveClaimBtn"
+                    android:layout_gravity="center"
+                    android:textColor="@drawable/ButtonTextColor"
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:textColorHighlight="@color/list_text_color"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_alignParentRight="true" />
+                <gsc.GSCButton
+                    android:text="@string/claimTreatmentSaveLabel"
+                    android:background="@drawable/ButtonBackground"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    local:MvxBind="Visibility InvertedVisibility(EditMode);"
+                    android:id="@+id/claimSubmitClaimBtn"
+                    android:layout_gravity="center"
+                    android:textColor="@drawable/ButtonTextColor"
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:textColorHighlight="@color/list_text_color"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_alignParentRight="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

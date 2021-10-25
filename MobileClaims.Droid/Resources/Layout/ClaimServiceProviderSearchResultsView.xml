@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    android:id="@+id/scrollViewId"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:background="@color/background_color">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <gsc.HeaderTextView
+            android:id="@+id/claim_search_result_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/searchResultLabel"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAllCaps="true" />
+        <gsc.SubTitleTextView
+            android:id="@+id/claim_select_provider_list_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            android:textAllCaps="true" />
+        <gsc.NunitoTextView
+            android:id="@+id/no_result_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:text="@string/noMatchingProviders"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textAllCaps="false"
+            local:MvxBind="Visible ServiceProviderSearchResults,Converter=ObjectCountToVisible;" />
+        <gsc.SingleSelectMvxListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_provider_list"
+            android:scrollbarStyle="insideOverlay"
+            android:choiceMode="singleChoice"
+            android:cacheColorHint="@android:color/transparent"
+            android:background="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="15dp"
+            android:fadeScrollbars="false"
+            android:listSelector="@android:color/transparent"
+            local:MvxBind="ItemsSource ServiceProviderSearchResults; ItemClick ServiceProviderSelectedCommand;"
+            local:MvxItemTemplate="@layout/item_claim_provider_type"
+            android:transcriptMode="alwaysScroll"
+            android:padding="20dp" />
+        <gsc.NunitoTextView
+            android:textAppearance="?android:textAppearanceMedium"
+            android:id="@+id/still_cant_find_provider_label"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:textAllCaps="false" />
+        <gsc.NunitoTextView
+            android:id="@+id/still_cant_find_provider_desclabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="@string/locateProvidersMakeSelectionLabel"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textAllCaps="false" />
+        <gsc.GSCButton
+            android:text="@string/myServiceProviderLabel"
+            android:background="@drawable/ButtonBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="20dp"
+            android:layout_centerHorizontal="true"
+            local:MvxBind="Click EnterServiceProviderCommand;"
+            android:id="@+id/myServiceProvider"
+            android:layout_gravity="center"
+            android:textColor="@drawable/ButtonTextColor"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textColorHighlight="@color/list_text_color" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

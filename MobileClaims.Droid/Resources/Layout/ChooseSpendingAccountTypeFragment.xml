@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color">
+    <gsc.HeaderTextView
+        android:id="@+id/myBalancestitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/myBalances"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textAllCaps="true" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:orientation="vertical"
+        android:id="@+id/frameLayout1">
+        <gsc.AccountListInvisibleLayout
+            local:MvxBind="accounts AccountTypes;"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <gsc.NunitoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_centerInParent="true"
+                android:text="@string/noAccounts"
+                android:layout_gravity="center"
+                android:gravity="center" />
+        </gsc.AccountListInvisibleLayout>
+        <gsc.AccountListVisibleLayout
+            local:MvxBind="accounts AccountTypes;"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <gsc.TitleTextView
+                android:id="@+id/balances_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/selectAccount"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp"
+                android:textAllCaps="true" />
+            <gsc.SingleSelectMvxListView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/account_list"
+                android:scrollbarStyle="outsideOverlay"
+                android:choiceMode="singleChoice"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="15dp"
+                local:MvxBind="ItemsSource AccountTypes; ItemClick FillAccountDetailAndNavigateCommand"
+                local:MvxItemTemplate="@layout/item_account_type"
+                android:paddingTop="20dp" />
+        </gsc.AccountListVisibleLayout>
+    </FrameLayout>
+</LinearLayout>

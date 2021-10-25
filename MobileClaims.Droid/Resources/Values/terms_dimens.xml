@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <string name="terms_font_size">12px</string>
+  <string name="terms_padding">10px</string>
+  <string name="c4l_terms_padding">22px</string>
+</resources>

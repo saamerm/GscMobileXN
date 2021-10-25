@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <gsc.HeaderTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/claimDetailsHCSALabel"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAllCaps="true" />
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <gsc.SubtitleTextView
+                android:padding="15dp"
+                android:id="@+id/claim_details_hcsa_title"
+                android:layout_width="match_parent"
+                android:textSize="24sp"
+                android:layout_height="wrap_content"
+                android:text="@string/claimDetailsHCSATitle"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:textAllCaps="true" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <gsc.NunitoTextView
+                    android:id="@+id/qn1"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:padding="10dip"
+                    android:layout_weight="1.0"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_marginTop="0dp"
+                    android:text="@string/dateOfExpense"
+                    android:layout_gravity="left" />
+            <!--                         <gsc.NunitoTextView
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="0.35"
+                        android:layout_centerHorizontal="true"
+                        local:MvxBind="Text Format('{0:MMMM dd, yyy}',ClaimMotorVehicleViewModel.DateOfMotorVehicleAccident);"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        android:background="@android:color/transparent"
+                        android:gravity="right"
+                        android:paddingTop="15dp"
+                        android:textSize="14dp" />-->
+                <gsc.SmallEditText
+                    android:id="@+id/txtDateOfExpense"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="50dp"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/dark_grey"
+                    android:singleLine="true"
+                    android:background="@drawable/RoundEditTextNone"
+                    local:MvxBind="Text Format('{0:MMMM dd, yyy}',ClaimDetails.ExpenseDate);"
+                    android:imeOptions="actionDone" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <gsc.NunitoTextView
+                    android:id="@+id/qn1"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:padding="10dip"
+                    android:layout_weight="1.0"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_marginTop="0dp"
+                    android:text="@string/totalOriginalAmount"
+                    android:layout_gravity="left" />
+                <gsc.SmallEditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="50dp"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/dark_grey"
+                    android:singleLine="true"
+                    android:background="@drawable/RoundEditTextNone"
+                    local:MvxBind="Text ClaimDetails.ClaimAmount"
+                    android:imeOptions="actionDone" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <gsc.NunitoTextView
+                    android:id="@+id/qn1"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:padding="10dip"
+                    android:layout_weight="1.0"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_marginTop="0dp"
+                    android:text="@string/totalAmountPaid"
+                    android:layout_gravity="left" />
+                <gsc.SmallEditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="50dp"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/dark_grey"
+                    android:singleLine="true"
+                    android:background="@drawable/RoundEditTextNone"
+                    local:MvxBind="Text ClaimDetails.OtherPaidAmount"
+                    android:imeOptions="actionDone" />
+            </LinearLayout>
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <gsc.GSCButton
+                    android:background="@drawable/ButtonBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    local:MvxBind="Text SaveLabel;Click SaveClaimDetailsCommand;"
+                    android:layout_gravity="center"
+                    android:textColor="@drawable/ButtonTextColor"
+                    android:gravity="center"
+                    android:textAllCaps="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

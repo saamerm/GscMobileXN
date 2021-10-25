@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gsc.CheckableLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:duplicateParentState="true"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@drawable/participant_item_background"
+    android:gravity="center_vertical">
+    <gsc.NunitoTextView
+        android:id="@android:id/text1"
+        local:MvxBind="Text FullName"
+        android:textColor="@drawable/participant_item_text_color"
+        android:duplicateParentState="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textAppearance="?android:textAppearanceMedium" />
+</gsc.CheckableLinearLayout>

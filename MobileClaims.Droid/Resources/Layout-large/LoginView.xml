@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:background="#ffffff"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_weight="10.0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <LinearLayout
+                    android:id="@+id/login_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:background="@color/background_color">
+                    <ScrollView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:fillViewport="true">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:isScrollContainer="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="1">
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.9">
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_gravity="center_horizontal"
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/logo_image"
+                                    android:layout_marginTop="50dp"
+                                    android:src="@drawable/color_logo"
+                                    android:scaleType="fitCenter" />
+                                <gsc.CustomEditText
+                                    android:layout_width="400dp"
+                                    android:layout_height="60dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:textColor="@color/black"
+                                    local:MvxBind="Text UserName; Visibility Visibility(ShowLoginFields);"
+                                    android:id="@+id/user_name_edit_text"
+                                    android:textColorHint="@color/text_hint_color"
+                                    android:inputType="textVisiblePassword"
+                                    android:singleLine="true"
+                                    android:layout_gravity="center_horizontal"
+                                    android:gravity="center"
+                                    android:background="@drawable/RoundEditTextNone"
+                                    android:layout_marginTop="40dp"
+                                    android:paddingLeft="10dp"
+                                    android:textCursorDrawable="@null"
+                                    android:includeFontPadding="true"
+                                    android:textSize="34dp">
+                                    <requestFocus />
+                                </gsc.CustomEditText>
+                                <gsc.CustomEditText
+                                    android:layout_width="400dp"
+                                    android:layout_height="60dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:textColor="@color/black"
+                                    local:MvxBind="Text Password; Visibility Visibility(ShowLoginFields);"
+                                    android:singleLine="true"
+                                    android:id="@+id/editText2"
+                                    android:textColorHint="@color/text_hint_color"
+                                    android:password="true"
+                                    android:layout_gravity="center_horizontal"
+                                    android:gravity="center"
+                                    android:background="@drawable/RoundEditTextNone"
+                                    android:paddingLeft="10dp"
+                                    android:layout_marginTop="20dp"
+                                    android:textCursorDrawable="@null"
+                                    android:includeFontPadding="true"
+                                    android:imeOptions="actionDone" />
+                                <gsc.GSCButton
+                                    android:background="@drawable/ButtonBackground"
+                                    android:layout_width="400dp"
+                                    android:layout_height="60dp"
+                                    android:layout_centerHorizontal="true"
+                                    local:MvxBind="Text LoginText; Click LoginForDroidCommand; Visibility Visibility(ShowLoginFields);"
+                                    android:id="@+id/login_button"
+                                    android:layout_gravity="center"
+                                    android:textColor="@drawable/ButtonTextColor"
+                                    android:gravity="center"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginTop="20dp" />
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="400dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="30dp"
+                                    android:weightSum="1"
+                                    android:layout_gravity="center"
+                                    local:MvxBind="Visibility Visibility(ShowLoginFields);">
+                                    <CheckBox
+                                        android:id="@+id/remember_chk"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="0.01"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_gravity="center_horizontal"
+                                        local:MvxBind="Checked RememberMe, Mode=TwoWay"
+                                        android:textColor="@color/dark_grey"
+                                        android:drawablePadding="5dp"
+                                        android:paddingLeft="18dp"
+                                        android:button="@drawable/checkbox_background" />
+                                    <gsc.NunitoTextView
+                                        android:id="@+id/txtRemeberme"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/dark_grey"
+                                        android:textSize="18sp"
+                                        android:layout_weight="0.99"
+                                        android:layout_marginLeft="0dp"
+                                        android:layout_centerVertical="true"
+                                        android:layout_gravity="center_vertical"
+                                        android:textAllCaps="true"
+									    local:MvxBind="Text RememberMeText" />
+                                </LinearLayout>
+                                <gsc.NunitoTextView
+                                    android:text="@string/loginUsingTouch"
+                                    android:background="@android:color/transparent"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_centerHorizontal="true"
+                                    local:MvxBind="Click BiometricLoginCommand; Visibility Visibility(ShowTouchLogin);"
+                                    android:id="@+id/biometric_login_button"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/apptheme_color"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginRight="30dp"
+                                    android:gravity="center_horizontal" />
+								<TextView
+									android:id="@+id/web_instructions_textview"
+									android:textSize="20dp"
+                                    android:layout_width="400dp"
+                                    android:layout_height="wrap_content"
+									android:gravity="center_horizontal"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_centerHorizontal="true"
+                                    android:textColor="@color/dark_grey"
+								    android:layout_marginBottom="20dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginLeft="5dp"
+									android:linksClickable="true"
+									android:textColorLink="@color/highlight_color"
+								    local:MvxBind="Visibility Visibility(ShowLoginFields);"/>
+                                <gsc.NunitoTextView
+									android:id="@+id/force_Update_Login_Message"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:textColor="@color/dark_grey"
+                                    android:textSize="12sp"
+                                    android:layout_weight="0.99"
+                                    android:layout_centerInParent="true"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center"
+                                    local:MvxBind="Text UpdateAvailableMessage2; Visibility Visibility(ShowForceUpgradeDialog);" />
+                                <gsc.NunitoTextView
+                                    android:id="@+id/force_Update_Network_Error_Message"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:textColor="@color/dark_grey"
+                                    android:textSize="12sp"
+                                    android:layout_weight="0.99"
+                                    android:layout_centerInParent="true"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center"
+                                    local:MvxBind="Text ConnectionError; Visibility Visibility(ShowGenericErrorMessage);" />
+                            </LinearLayout>
+                           <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="20dp"
+                                android:layout_weight="0.1"
+                                android:gravity="bottom|end"
+								android:paddingRight="30dp"
+								android:layout_marginTop="30dp">
+                                <RelativeLayout
+									android:layout_width="wrap_content"
+									android:layout_height="80dp"
+									local:MvxBind="Click ShowIDCard; Visibility Visibility(LoggedInBefore);">
+									<ImageView
+										android:id="@+id/login_id_card"
+										android:layout_width="80dp"
+										android:layout_height="match_parent"
+										android:layout_gravity="center"
+										android:src="@drawable/menu_active_idcard"/>
+									<gsc.LeagueTextView
+										android:layout_toRightOf="@id/login_id_card" 
+										android:layout_width="wrap_content"
+										android:layout_height="match_parent"
+										android:textSize="26sp"
+										android:gravity="center"
+										android:textColor="@color/highlight_color"
+									    local:MvxBind="Text MyIdCardText" />
+								</RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/nav_region"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@drawable/greenDiagonal" />
+    </LinearLayout>
+<!-- Widget Inserted Conflict | id:, not-exact-match | @+id/biometric_login_button -->
+<!-- Widget Removed Conflict | id:, not-exact-match -->
+<!-- Property Change Conflict | id:@+id/biometric_login_button -->
+<!-- Property Change Conflict | id:@+id/biometric_login_button | textColor=@color/apptheme_color -->
+</FrameLayout>

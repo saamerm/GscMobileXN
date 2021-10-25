@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:local="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:paddingStart="20dp"
+	android:paddingBottom="20dp"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<RelativeLayout
+		android:id="@+id/step2ParentRelativeLayout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="13.5dp">
+
+		<ImageView
+			android:id="@+id/stepTwoIcon"
+			android:layout_width="20dp"
+			android:layout_height="20dp"
+			android:layout_alignParentLeft="true"
+			android:layout_gravity="center_vertical"
+			android:layout_marginLeft="16.5dp"
+			android:layout_marginRight="11.5dp"
+			android:src="@drawable/round_checkbox_unselected" />
+
+		<gsc.NunitoTextViewHeavy
+			android:id="@+id/stepTwoNumber"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginTop="@dimen/claim_review_zero"
+			android:layout_toRightOf="@id/stepTwoIcon"
+			android:gravity="center_vertical"
+			android:paddingRight="4dp"
+			android:textColor="@color/black"
+			android:textSize="14sp"
+			local:MvxBind="Text Step2" />
+
+		<gsc.NunitoTextViewHeavy
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_marginTop="@dimen/claim_review_zero"
+			android:layout_toRightOf="@id/stepTwoNumber"
+			android:layout_toLeftOf="@id/step2ImageView"
+			android:gravity="left"
+			android:paddingRight="4dp"
+			android:textColor="@color/brand_color"
+			android:textSize="14sp"
+			local:MvxBind="Text Step2Title" />
+
+		<ImageView
+			android:id="@+id/step2ImageView"
+			android:layout_width="20dp"
+			android:layout_height="20dp"
+			android:layout_alignParentRight="true"
+			android:layout_gravity="center_vertical"
+			android:layout_marginRight="24dp"
+			android:src="@drawable/arrow_down_gray"/>
+
+	</RelativeLayout>
+
+	<LinearLayout
+		android:id="@+id/StepTwoLinearLayout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingStart="20dp"
+		android:paddingBottom="20dp"
+		android:layout_marginTop="10dp"
+		android:visibility="gone"
+		android:orientation="vertical">
+
+		<ImageView
+			android:id="@+id/sampleCheck"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_marginRight="20dp"
+			android:scaleType="centerCrop"
+			android:adjustViewBounds="true"
+			android:src="@drawable/sample_cheque" />
+
+		<gsc.NunitoTextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginTop="22dp"
+			android:gravity="left"
+			android:textColor="@color/black"
+			android:textSize="14sp"
+			local:MvxBind="Text EnterBankingInfoMessage" />
+
+		<gsc.NunitoTextViewHeavy
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="start"
+			android:layout_marginTop="16dp"
+			android:gravity="center_vertical"
+			android:textColor="@color/direct_deposit_step2_transit_color"
+			android:text="Sup"
+			android:textSize="14sp"
+			local:MvxBind="Text TransitNumberTitle" />
+		<gsc.SmallEditText
+			android:layout_width="110dp"
+			android:layout_height="40dp"
+			android:gravity="center_horizontal | center_vertical"
+			android:inputType="number"
+			android:maxLength="5"
+			android:layout_marginTop="5dp"
+			android:singleLine="true"
+			android:textColor="@color/black"
+			android:background="@drawable/border"
+			local:MvxBind="Text TransitNumber"
+			android:textSize="14sp" />
+		<gsc.NunitoTextView
+			android:id="@+id/transit_number_error"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="THIS IS AN ERROR"
+			android:textColor="@color/error_color"
+			local:MvxBind="Text TransitNumberErrorText; Visibility InvertedVisibility(IsTransitNumberValid)" />
+
+		<gsc.NunitoTextViewHeavy
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:layout_gravity="start"
+			android:gravity="center_vertical"
+			android:textColor="@color/direct_deposit_step2_bank_color"
+			android:textSize="14sp"
+			local:MvxBind="Text BankNumberTitle" />
+		<gsc.SmallEditText
+			android:layout_width="110dp"
+			android:layout_height="40dp"
+			android:gravity="center_horizontal | center_vertical"
+			android:inputType="number"
+			android:maxLength="5"
+			android:layout_marginTop="5dp"
+			android:singleLine="true"
+			android:textColor="@color/black"
+			android:background="@drawable/border"
+			android:textSize="14sp"
+			local:MvxBind ="Text BankNumber"/>
+		<gsc.NunitoTextView
+			android:id="@+id/bank_number_error"			
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="THIS IS AN ERROR"
+			android:textColor="@color/error_color"
+			local:MvxBind="Text BankNumberErrorText; Visibility InvertedVisibility(IsBankNumberValid)" />
+
+		<gsc.NunitoTextViewHeavy
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="start"
+			android:gravity="center_vertical"
+			android:layout_marginTop="5dp"
+			android:textColor="@color/brand_color"
+			android:textSize="14sp"
+			local:MvxBind="Text AccountNumberTitle" />
+		<gsc.SmallEditText
+			android:layout_width="110dp"
+			android:layout_height="40dp"
+			android:gravity="center_horizontal | center_vertical"
+			android:inputType="number"
+			android:maxLength="18"
+			android:layout_marginTop="5dp"
+			android:singleLine="true"
+			android:background="@drawable/border"
+			android:textColor="@color/black"
+			android:textSize="14sp"
+			local:MvxBind="Text AccountNumber"/>
+		<gsc.NunitoTextView
+			android:id="@+id/account_number_error"			
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="THIS IS AN ERROR"
+			android:textColor="@color/error_color"
+			local:MvxBind="Text AccountNumberErrorText; Visibility InvertedVisibility(IsAccountNumberValid)" />
+		<Button
+			android:id="@+id/stepTwoContinueButton"
+			android:layout_width="234dp"
+			android:layout_height="44dp"
+			android:layout_gravity="center"
+			android:layout_margin="10dp"
+			android:background="@drawable/ButtonBackground"
+			android:gravity="center"
+			android:padding="10dp"
+			android:fontFamily="@font/leaguegothic"
+			android:text="CONTINUE"
+			android:textAllCaps="true"
+			android:textColor="@drawable/ButtonTextColor"
+			android:textColorHighlight="@color/list_text_color"
+			android:textSize="22sp"
+			local:MvxBind="Text SaveAndContinueTitle" />
+	</LinearLayout>
+</LinearLayout>

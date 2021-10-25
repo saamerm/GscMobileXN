@@ -1,0 +1,1732 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ChangeForLife_MessageDialogButtonClose" xml:space="preserve">
+    <value>Fermer</value>
+  </data>
+  <data name="ChangeForLife_MessageDialogTitle" xml:space="preserve">
+    <value>Oups</value>
+  </data>
+  <data name="ChangeForLife_MessageNoAccess" xml:space="preserve">
+    <value>Vous n'avez malheureusement pas accès à Changerpourlavie.</value>
+  </data>
+  <data name="HCSAPlanParticipantChangedMessage" xml:space="preserve">
+    <value>Vous avez modifié le membre du régime pour la demande de règlement. SVP vérifier que tous les renseignements de cette demande de règlement concernent</value>
+  </data>
+  <data name="HCSAPlanParticipantChangedMessage2" xml:space="preserve">
+    <value>Si vous effectuez des demandes de règlement de traitements pour plusieurs membres du régime, vous devez soumettre des demandes de règlement distinctes pour chaque membre du régime.</value>
+  </data>
+  <data name="HCSAPlanParticipantChangedTitle" xml:space="preserve">
+    <value>Modification du membre du régime</value>
+  </data>
+  <data name="ok" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ClaimsHistory" xml:space="preserve">
+    <value>HISTORIQUE DES DEMANDES DE RÈGLEMENT</value>
+  </data>
+  <data name="ClaimsHistoryCaps" xml:space="preserve">
+    <value>HISTORIQUE</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Non</value>
+  </data>
+  <data name="noCaps" xml:space="preserve">
+    <value>NON</value>
+  </data>
+  <data name="RehydrationMessage" xml:space="preserve">
+    <value>Données non enregistrées : Vous avez précédemment entré des données pour une demande de règlement qui n'a pas été soumise. Désirez-vous poursuivre où vous étiez? Cliquez sur non pour effectuer une nouvelle demande de règlement.</value>
+  </data>
+  <data name="NewClaim" xml:space="preserve">
+    <value>NOUVELLE DEMANDE</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Oui</value>
+  </data>
+  <data name="yesCaps" xml:space="preserve">
+    <value>OUI</value>
+  </data>
+  <data name="AmountPreviouslyPaid" xml:space="preserve">
+    <value>Total (Totaux) déjà payé(s) par le(s) régime(s) de l’assureur ou gouvernementaux (le cas échéant)</value>
+  </data>
+  <data name="ChooseTypeOfClaim" xml:space="preserve">
+    <value>Choisir le type de demande de règlement :</value>
+  </data>
+  <data name="ChooseTypeOfExpense" xml:space="preserve">
+    <value>Choisir le type de dépense :</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Continuer</value>
+  </data>
+  <data name="DateOfExpense" xml:space="preserve">
+    <value>Date de la dépense :</value>
+  </data>
+  <data name="EmptyExpenseAmount" xml:space="preserve">
+    <value>Vous devez préciser le montant total demandé.</value>
+  </data>
+  <data name="EmptyExpenseDate" xml:space="preserve">
+    <value>Vous devez préciser une date de dépense.</value>
+  </data>
+  <data name="ExpenseAmountIsInvalid" xml:space="preserve">
+    <value>Montant total demandé invalide</value>
+  </data>
+  <data name="ExpenseIsFutureDated" xml:space="preserve">
+    <value>La date de la dépense ne peut être une date postérieure.</value>
+  </data>
+  <data name="OtherAmountIsInvalid" xml:space="preserve">
+    <value>Montant précédemment payé invalide</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>ENREGISTRER</value>
+  </data>
+  <data name="SelectThePlanParticipant" xml:space="preserve">
+    <value>SÉLECTIONNER LE MEMBRE DU RÉGIME</value>
+  </data>
+  <data name="TotalAmountClaimed" xml:space="preserve">
+    <value>Total original de la facture</value>
+  </data>
+  <data name="ExpenseTypesWithReferralRequired" xml:space="preserve">
+    <value>[
+  {
+    "WHP_PROC_ID":1002,
+    "Description":"Dépenses de soins auxiliaires"
+  },
+  {
+    "WHP_PROC_ID":1002,
+    "Description":"Soins aux enfants"
+  },
+  {
+    "WHP_PROC_ID":1003,
+    "Description":"Articles d'assistance dans la salle de bain"
+  },
+  {
+    "WHP_PROC_ID":1003,
+    "Description":"Traitements par bain de massage"
+  },
+  {
+    "WHP_PROC_ID":1005,
+    "Description":"Périphériques d'ordinateur"
+  },
+  {
+    "WHP_PROC_ID":1005,
+    "Description":"Services d'intervention pour une personne sourde et aveugle"
+  },
+  {
+    "WHP_PROC_ID":1005,
+    "Description":"Appareils ou logiciels"
+  },
+  {
+    "WHP_PROC_ID":1005,
+    "Description":"Dispositifs d'affichage de gros caractères à l'écran"
+  },
+  {
+    "WHP_PROC_ID":1005,
+    "Description":"Balayeurs optiques ou appareils semblables"
+  },
+  {
+    "WHP_PROC_ID":1005,
+    "Description":"Tourne-pages"
+  },
+  {
+    "WHP_PROC_ID":1005,
+    "Description":"Livres audio"
+  },
+  {
+    "WHP_PROC_ID":1005,
+    "Description":"Téléimprimeurs ou appareils semblables"
+  },
+  {
+    "WHP_PROC_ID":1005,
+    "Description":"Décodeurs de sous-titrages pour la télévision"
+  },
+  {
+    "WHP_PROC_ID":1005,
+    "Description":"Appareil de signalisation visuelle ou vibratoire"
+  },
+  {
+    "WHP_PROC_ID":1005,
+    "Description":"Logiciel de reconnaissance vocale"
+  },
+  {
+    "WHP_PROC_ID":1005,
+    "Description":"Dispositif de réglage de volume"
+  },
+  {
+    "WHP_PROC_ID":1005,
+    "Description":"Bloc-notes en braille"
+  },
+  {
+    "WHP_PROC_ID":1005,
+    "Description":"Imprimantes en braille "
+  },
+  {
+    "WHP_PROC_ID":1010,
+    "Description":"Médicaments"
+  },
+  {
+    "WHP_PROC_ID":1010,
+    "Description":"Médicaments administrés dans le cabinet d'un médecin"
+  },
+  {
+    "WHP_PROC_ID":1010,
+    "Description":"Marihuana médicale"
+  },
+  {
+    "WHP_PROC_ID":1010,
+    "Description":"Vaccins"
+  },
+  {
+    "WHP_PROC_ID":1011,
+    "Description":"École pour personnes présentant une déficience physique ou mentale"
+  },
+  {
+    "WHP_PROC_ID":1015,
+    "Description":"Dépenses de rénovation ou de construction"
+  },
+  {
+    "WHP_PROC_ID":1015,
+    "Description":"Modification de l'entrée"
+  },
+  {
+    "WHP_PROC_ID":1017,
+    "Description":"Fournitures de cathéter"
+  },
+  {
+    "WHP_PROC_ID":1017,
+    "Description":"Couches ou culottes jetables"
+  },
+  {
+    "WHP_PROC_ID":1020,
+    "Description":"Coupleur acoustique"
+  },
+  {
+    "WHP_PROC_ID":1020,
+    "Description":"Conditionneur d'air"
+  },
+  {
+    "WHP_PROC_ID":1020,
+    "Description":"Filtre à air, épurateur d'air ou purificateur d'air"
+  },
+  {
+    "WHP_PROC_ID":1020,
+    "Description":"Avertisseurs sonores"
+  },
+  {
+    "WHP_PROC_ID":1020,
+    "Description":"Appareil de surveillance de la respiration d'un bébé"
+  },
+  {
+    "WHP_PROC_ID":1020,
+    "Description":"Stimulateur de croissance osseuse ou de l'ostéogenèse"
+  },
+  {
+    "WHP_PROC_ID":1020,
+    "Description":"Attelles pour un membre"
+  },
+  {
+    "WHP_PROC_ID":1020,
+    "Description":"Prothèses mammaires "
+  },
+  {
+    "WHP_PROC_ID":1020,
+    "Description":"Fournitures pour personne diabétique"
+  },
+  {
+    "WHP_PROC_ID":1020,
+    "Description":"Bas de contention élastique"
+  },
+  {
+    "WHP_PROC_ID":1020,
+    "Description":"Dispositif électronique de guérison osseuse"
+  },
+  {
+    "WHP_PROC_ID":1020,
+    "Description":"Appareils d'électrothérapie"
+  },
+  {
+    "WHP_PROC_ID":1020,
+    "Description":"Traitement endoveineux au laser"
+  },
+  {
+    "WHP_PROC_ID":1020,
+    "Description":"Système de régulation du milieu ambiant (par ordinateur ou électronique)"
+  },
+  {
+    "WHP_PROC_ID":1020,
+    "Description":"Pompe à compression séquentielle"
+  },
+  {
+    "WHP_PROC_ID":1020,
+    "Description":"Pansement oculaire"
+  },
+  {
+    "WHP_PROC_ID":1020,
+    "Description":"Fournaise"
+  },
+  {
+    "WHP_PROC_ID":1020,
+    "Description":"Produits sans gluten"
+  },
+  {
+    "WHP_PROC_ID":1020,
+    "Description":"Moniteurs cardiaques"
+  },
+  {
+    "WHP_PROC_ID":1020,
+    "Description":"Lit d'hôpital"
+  },
+  {
+    "WHP_PROC_ID":1020,
+    "Description":"Pompe à perfusion"
+  },
+  {
+    "WHP_PROC_ID":1020,
+    "Description":"Frais d'installation"
+  },
+  {
+    "WHP_PROC_ID":1020,
+    "Description":"Poumon d'acier"
+  },
+  {
+    "WHP_PROC_ID":1020,
+    "Description":"Souliers et bottes orthopédiques"
+  },
+  {
+    "WHP_PROC_ID":1020,
+    "Description":"Bijoux MedicAlert"
+  },
+  {
+    "WHP_PROC_ID":1020,
+    "Description":"Articles médicaux non énumérés"
+  },
+  {
+    "WHP_PROC_ID":1020,
+    "Description":"Frais de déménagement"
+  },
+  {
+    "WHP_PROC_ID":1020,
+    "Description":"Stimulateur de l'ostéogenèse"
+  },
+  {
+    "WHP_PROC_ID":1020,
+    "Description":"Stimulateur cardiaque"
+  },
+  {
+    "WHP_PROC_ID":1020,
+    "Description":"Équipement de photothérapie"
+  },
+  {
+    "WHP_PROC_ID":1020,
+    "Description":"Dispositifs thérapeutiques d'impulsions de pression"
+  },
+  {
+    "WHP_PROC_ID":1020,
+    "Description":"Corset dorsal"
+  },
+  {
+    "WHP_PROC_ID":1020,
+    "Description":"Bandage herniaire"
+  },
+  {
+    "WHP_PROC_ID":1020,
+    "Description":"Filtre à eau, épurateur d'eau ou purificateur d'eau"
+  },
+  {
+    "WHP_PROC_ID":1020,
+    "Description":"Perruques"
+  },
+  {
+    "WHP_PROC_ID":1021,
+    "Description":"Béquilles"
+  },
+  {
+    "WHP_PROC_ID":1021,
+    "Description":"Appareils de verticalisation"
+  },
+  {
+    "WHP_PROC_ID":1021,
+    "Description":"Appareils élévateurs ou équipement de transport"
+  },
+  {
+    "WHP_PROC_ID":1021,
+    "Description":"Scooter"
+  },
+  {
+    "WHP_PROC_ID":1021,
+    "Description":"Monte-escalier"
+  },
+  {
+    "WHP_PROC_ID":1021,
+    "Description":"Appareils de marche"
+  },
+  {
+    "WHP_PROC_ID":1021,
+    "Description":"Fauteuils roulants et porte-fauteuils roulants"
+  },
+  {
+    "WHP_PROC_ID":1026,
+    "Description":"Réparations pour des articles admissibles au titre du CFSS"
+  },
+  {
+    "WHP_PROC_ID":1027,
+    "Description":"Appareils de retour auditif modifié"
+  },
+  {
+    "WHP_PROC_ID":1027,
+    "Description":"Tableaux de symboles Bliss ou dispositifs semblables"
+  },
+  {
+    "WHP_PROC_ID":1027,
+    "Description":"Synthétiseurs de parole électroniques"
+  },
+  {
+    "WHP_PROC_ID":1027,
+    "Description":"Prothèses vocales"
+  },
+  {
+    "WHP_PROC_ID":1030,
+    "Description":"Modifications de véhicule"
+  },
+  {
+    "WHP_PROC_ID":1030,
+    "Description":"Achat d'un véhicule"
+  }
+]</value>
+  </data>
+  <data name="MoreThanFiveClaims" xml:space="preserve">
+    <value>Cinq demandes de règlement peuvent être ajoutées au maximum.</value>
+  </data>
+  <data name="MoreThanTenClaims" xml:space="preserve">
+    <value>Dix demandes de règlement peuvent être ajoutées au maximum.</value>
+  </data>
+  <data name="ReferralRequired" xml:space="preserve">
+    <value>Une recommandation est requise pour ce type de dépense. Sélectionner le professionnel de la santé qui a recommandé l’article/le service dans la liste.</value>
+  </data>
+  <data name="HCSAReferralTypes" xml:space="preserve">
+    <value>[
+  {
+    "Code":5001,
+    "Text":"Podiatre"
+  },
+  {
+    "Code":5002,
+    "Text":"Podologue"
+  },
+  {
+    "Code":5003,
+    "Text":"Chiropraticien"
+  },
+  {
+    "Code":5004,
+    "Text":"Physiothérapeute"
+  },
+  {
+    "Code":5011,
+    "Text":"Diététiste"
+  },
+  {
+    "Code":5022,
+    "Text":"Médecin"
+  },
+  {
+    "Code":5057,
+    "Text":"Podo-orthésiste"
+  },
+  {
+    "Code":5058,
+    "Text":"Infirmière autorisée"
+  },
+  {
+    "Code":5059,
+    "Text":"Infirmière praticienne"
+  },
+  {
+    "Code":5063,
+    "Text":"Chirurgien orthopédiste"
+  },
+  {
+    "Code":5065,
+    "Text":"Orthésiste"
+  },
+  {
+    "Code":5075,
+    "Text":"Endocrinologue"
+  },
+  {
+    "Code":5078,
+    "Text":"Rhumatologue"
+  },
+  {
+    "Code":5101,
+    "Text":"Santé - Autre professionnel"
+  },
+  {
+    "Code":8000,
+    "Text":"Dentiste"
+  }
+]</value>
+  </data>
+  <data name="NoClaimDetailsEntered" xml:space="preserve">
+    <value>Aucun renseignement détaillé sur la demande de règlement n’a été entré.</value>
+  </data>
+  <data name="ClaimsHistorySearchViewModel_DisplayByDateRange" xml:space="preserve">
+    <value>Période</value>
+  </data>
+  <data name="ClaimsHistorySearchViewModel_DisplayByYear" xml:space="preserve">
+    <value>Année</value>
+  </data>
+  <data name="ClaimsHistorySearchViewModel_DisplayByYearToDate" xml:space="preserve">
+    <value>Cumul annuel à ce jour (année en cours)</value>
+  </data>
+  <data name="BasedOnServiceDateOfClaim" xml:space="preserve">
+    <value>(Selon la date de service de la demande de règlement)</value>
+  </data>
+  <data name="Benefit" xml:space="preserve">
+    <value>Garantie :</value>
+  </data>
+  <data name="ClaimDetails" xml:space="preserve">
+    <value>Détails de la demande de règlement</value>
+  </data>
+  <data name="ClaimedAmount" xml:space="preserve">
+    <value>Montant demandé ($ CA)</value>
+  </data>
+  <data name="ClaimFormNumber" xml:space="preserve">
+    <value>Numéro de formulaire demande de règlement</value>
+  </data>
+  <data name="Claims" xml:space="preserve">
+    <value>Demandes de règlement</value>
+  </data>
+  <data name="ClaimsFor" xml:space="preserve">
+    <value>Recherche de :</value>
+  </data>
+  <data name="ClaimsPaidTo" xml:space="preserve">
+    <value>Demandes réglées à :</value>
+  </data>
+  <data name="ClaimType" xml:space="preserve">
+    <value>Type de demande de règlement :</value>
+  </data>
+  <data name="CopayDeductible" xml:space="preserve">
+    <value>Quote-part/franchise</value>
+  </data>
+  <data name="DateOfInquiry" xml:space="preserve">
+    <value>Date du service de renseignements:</value>
+  </data>
+  <data name="DepositDate" xml:space="preserve">
+    <value>Date du dépôt :</value>
+  </data>
+  <data name="DirectDepositNumber" xml:space="preserve">
+    <value>Numéro du dépôt direct :</value>
+  </data>
+  <data name="DisplayBy" xml:space="preserve">
+    <value>Afficher par :</value>
+  </data>
+  <data name="Of" xml:space="preserve">
+    <value>de</value>
+  </data>
+  <data name="OtherPaidAmount" xml:space="preserve">
+    <value>Autre montant payé ($ CA)</value>
+  </data>
+  <data name="PaidAmount" xml:space="preserve">
+    <value>Montant payé ($ CA)</value>
+  </data>
+  <data name="PaidTo" xml:space="preserve">
+    <value>Payé au</value>
+  </data>
+  <data name="PaymentAmount" xml:space="preserve">
+    <value>Montant du paiement :</value>
+  </data>
+  <data name="PaymentCurrency" xml:space="preserve">
+    <value>Devise du paiement :</value>
+  </data>
+  <data name="PaymentDate" xml:space="preserve">
+    <value>Date du paiement :</value>
+  </data>
+  <data name="PaymentInformation" xml:space="preserve">
+    <value>RENSEIGNEMENTS SUR LE REMBOURSEMENT</value>
+  </data>
+  <data name="PaymentMethod" xml:space="preserve">
+    <value>Mode de paiement :</value>
+  </data>
+  <data name="PlanMember" xml:space="preserve">
+    <value>Membre du régime</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>Quantité</value>
+  </data>
+  <data name="SearchCriteria" xml:space="preserve">
+    <value>CRITÈRES DE RECHERCHE</value>
+  </data>
+  <data name="ServiceDate" xml:space="preserve">
+    <value>Date du service</value>
+  </data>
+  <data name="DentalServiceDate" xml:space="preserve">
+    <value>Date de la demande</value>
+  </data>
+  <data name="ServiceDescription" xml:space="preserve">
+    <value>Description du service</value>
+  </data>
+  <data name="StatementDate" xml:space="preserve">
+    <value>Date du relevé :</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Afficher les renseignements sur les demandes de règlement</value>
+  </data>
+  <data name="DateNotWithinLast12Months" xml:space="preserve">
+    <value>SVP sélectionner une période au cours des 12 derniers mois.</value>
+  </data>
+  <data name="EndDateIsNotAValidDate" xml:space="preserve">
+    <value>Date de fin: date non valide</value>
+  </data>
+  <data name="PleaseEnsureStartDatePreceedsEndDate" xml:space="preserve">
+    <value>SVP veiller à ce que la date de début précède la date de fin.</value>
+  </data>
+  <data name="PleaseSelectAYear" xml:space="preserve">
+    <value>SVP sélectionner une année</value>
+  </data>
+  <data name="StartDateIsNotAValidDate" xml:space="preserve">
+    <value>Date de début: date non valide</value>
+  </data>
+  <data name="Done" xml:space="preserve">
+    <value>Terminé</value>
+  </data>
+  <data name="Participant" xml:space="preserve">
+    <value>Membre</value>
+  </data>
+  <data name="End" xml:space="preserve">
+    <value>Date de fin</value>
+  </data>
+  <data name="Start" xml:space="preserve">
+    <value>Date de début</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>TOTAUX</value>
+  </data>
+  <data name="CashedDate" xml:space="preserve">
+    <value>Date encaissé :</value>
+  </data>
+  <data name="ChequeNumber" xml:space="preserve">
+    <value>Numéro de chèque :</value>
+  </data>
+  <data name="ChequeStatus" xml:space="preserve">
+    <value>État du chèque :</value>
+  </data>
+  <data name="EOB" xml:space="preserve">
+    <value>EDP (Explication des prestations)</value>
+  </data>
+  <data name="PleaseSelectBenefit" xml:space="preserve">
+    <value>SVP faire au moins 1 choix de garantie pour votre recherche</value>
+  </data>
+  <data name="PleaseSelectPayee" xml:space="preserve">
+    <value>SVP faire au moins 1 choix à « Demandes réglées à » pour votre recherche</value>
+  </data>
+  <data name="CannotBeSubmittedOnlineMessage" xml:space="preserve">
+    <value>Cette demande de règlement ne peut être soumise en ligne. SVP nous soumettre un formulaire de demande de règlement sur papier par la poste aux fins de traitement. Pour télécharger et imprimer votre formulaire personnalisé du compte de frais pour soins de santé, se connecter aux Services en ligne des membres du régime, aller à Mes demandes de prestations  &gt; Formulaires de demandes de prestations et sélectionner Formulaire de compte de frais pour soins de santé de la liste déroulante.</value>
+  </data>
+  <data name="DescriptionLabel" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="HCSAChooseClaimTypeScreenTitle" xml:space="preserve">
+    <value>CFSS</value>
+  </data>
+  <data name="HCSAClaimDetailsTitle" xml:space="preserve">
+    <value>Détails de la demande de règlement</value>
+  </data>
+  <data name="HCSASubmitClaimTitle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HCSATypeOfClaimTitle" xml:space="preserve">
+    <value>Type de demande de règlement :</value>
+  </data>
+  <data name="HCSATypeOfExpenseTitle" xml:space="preserve">
+    <value>Type de dépense</value>
+  </data>
+  <data name="claimConfirm_amount" xml:space="preserve">
+    <value>FR-Claim Amount</value>
+  </data>
+  <data name="SubmitClaim" xml:space="preserve">
+    <value>Soumettre la demande de règlement</value>
+  </data>
+  <data name="claimConfirm_detais" xml:space="preserve">
+    <value>Détails de la demande de règlement</value>
+  </data>
+  <data name="claimConfirm_government" xml:space="preserve">
+    <value>Total (Totaux) déjà payé(s) par le(s) régime(s) de l’assureur ou gouvernementaux (le cas échéant)</value>
+  </data>
+  <data name="claimConfirm_participant" xml:space="preserve">
+    <value>Nom du membre :</value>
+  </data>
+  <data name="claimConfirm_plan_info" xml:space="preserve">
+    <value>Info-régime</value>
+  </data>
+  <data name="claimConfirm_reffered" xml:space="preserve">
+    <value>Professionnel de la santé qui a recommandé l’article ou le service</value>
+  </data>
+  <data name="claimConfirm_title" xml:space="preserve">
+    <value>Confirmation de soumission de demande de règlement</value>
+  </data>
+  <data name="ClaimSubmissionConfirmationTitle" xml:space="preserve">
+    <value>CONFIRMER VOTRE DEMANDE DE RÈGLEMENT</value>
+  </data>
+  <data name="claimConfirm_total" xml:space="preserve">
+    <value>TOTAL</value>
+  </data>
+  <data name="claimConfirm_type_expense" xml:space="preserve">
+    <value>Type de dépense :</value>
+  </data>
+  <data name="claimResult_button" xml:space="preserve">
+    <value>Soumettre une autre demande de règlement</value>
+  </data>
+  <data name="claimResult_description" xml:space="preserve">
+    <value>Note : Les paiements des demandes de prestations au statut « En attente de paiement » seront traités le jour ouvrable suivant, selon votre solde de comptes de frais.</value>
+  </data>
+  <data name="claimResult_submission" xml:space="preserve">
+    <value>Date de soumission</value>
+  </data>
+  <data name="claimResult_title" xml:space="preserve">
+    <value>Résultat de soumission de demande de règlement</value>
+  </data>
+  <data name="error_message" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="ClaimStatus" xml:space="preserve">
+    <value>Statut de la demande de règlement</value>
+  </data>
+  <data name="ClaimDetailsHCSALabel" xml:space="preserve">
+    <value>Entrer les détails de la demande de règlement :</value>
+  </data>
+  <data name="TermsAndConditionsTitle" xml:space="preserve">
+    <value>MODALITÉS</value>
+  </data>
+  <data name="ExistingHCSAClaimDetailsMessage" xml:space="preserve">
+    <value>La modification des données à cet écran entraînera la suppression des détails précédemment entrés de votre demande de règlement. Sélectionnez « OK » pour continuer avec les modifications ou « Annuler » pour retourner aux détails de la demande de règlement.</value>
+  </data>
+  <data name="AwaitingPayment" xml:space="preserve">
+    <value>Attente de paiement</value>
+  </data>
+  <data name="SearchedFor" xml:space="preserve">
+    <value>Recherche de :</value>
+  </data>
+  <data name="TotalsCaps" xml:space="preserve">
+    <value>TOTAL</value>
+  </data>
+  <data name="HCSAQuestion" xml:space="preserve">
+    <value>Souhaitez-vous que tout montant non payé relatif à vos dépenses admissibles vous soit payé à même votre compte de frais pour soins de santé (CFSS)?</value>
+  </data>
+  <data name="HCSASubtitle" xml:space="preserve">
+    <value>HCSA Subtitle</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="DisplayByBasedOnServiceDateOfClaim" xml:space="preserve">
+    <value>Afficher par :
+(Selon la date de service de la demande de règlement)</value>
+  </data>
+  <data name="ExplanationOfBenefits" xml:space="preserve">
+    <value>Explication des prestations</value>
+  </data>
+  <data name="InProcess" xml:space="preserve">
+    <value>En cours de traitement</value>
+  </data>
+  <data name="ClaimHistorySearch_AllBenefits" xml:space="preserve">
+    <value>Toutes les garanties</value>
+  </data>
+  <data name="ClaimHistorySearch_MessageNotFound" xml:space="preserve">
+    <value>Aucune demande de règlement trouvée pour les critères sélectionnés </value>
+  </data>
+  <data name="ClaimSubmissionResult_HCSATitle" xml:space="preserve">
+    <value>Résultat de soumission de demande de règlement</value>
+  </data>
+  <data name="Claim" xml:space="preserve">
+    <value>Demande de règlement</value>
+  </data>
+  <data name="PlanMemberNoColon" xml:space="preserve">
+    <value>Membre du régime</value>
+  </data>
+  <data name="HealthCareSpendingAccount" xml:space="preserve">
+    <value>Compte De Fraise Pour Soins De Santé</value>
+  </data>
+  <data name="ProcessedDate" xml:space="preserve">
+    <value>Date de traitement</value>
+  </data>
+  <data name="PaymentDateNoColon" xml:space="preserve">
+    <value>Date du paiement</value>
+  </data>
+  <data name="AwaitingPaymentNote" xml:space="preserve">
+    <value>Note : Les paiements des demandes de prestations au statut « En attente de paiement » seront traités le jour ouvrable suivant, selon votre solde de comptes de frais.</value>
+  </data>
+  <data name="TotalAmountMustBeGreaterErrorMessage" xml:space="preserve">
+    <value>Le montant total original de la facture doit être supérieur ou égal au(x) montant(s) total (totaux) déjà versé(s) au titre des régimes d'un assureur et gouvernementaux. Tentez d’utiliser une virgule au lieu du point pour vos décimales.</value>
+  </data>
+  <data name="DateOfExpenseTooOld" xml:space="preserve">
+    <value>La date des frais doit être dans les 48 derniers mois.</value>
+  </data>
+  <data name="LineOfBusiness" xml:space="preserve">
+    <value>Type de produit ou service :</value>
+  </data>
+  <data name="ParticipantWithColon" xml:space="preserve">
+    <value>Participant :</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>Période :</value>
+  </data>
+  <data name="DateOfExpenseNoColon" xml:space="preserve">
+    <value>Date de la dépense</value>
+  </data>
+  <data name="TypeOfExpenseNoColon" xml:space="preserve">
+    <value>Type de dépense</value>
+  </data>
+  <data name="FormNumber" xml:space="preserve">
+    <value>Numéro de formulaire</value>
+  </data>
+  <data name="CAN" xml:space="preserve">
+    <value>Canadien</value>
+  </data>
+  <data name="CH" xml:space="preserve">
+    <value>Chèque</value>
+  </data>
+  <data name="EF" xml:space="preserve">
+    <value>Dépôt direct</value>
+  </data>
+  <data name="IncludesTheTotalOfAllClaims" xml:space="preserve">
+    <value>(Inclut le total de toutes les demandes de règlement remboursées sur le relevé)</value>
+  </data>
+  <data name="US" xml:space="preserve">
+    <value>États-Unis</value>
+  </data>
+  <data name="CashedDateNoColon" xml:space="preserve">
+    <value>Date encaissé</value>
+  </data>
+  <data name="ChequeNumberNoColon" xml:space="preserve">
+    <value>Numéro de chèque</value>
+  </data>
+  <data name="ChequeStatusNoColon" xml:space="preserve">
+    <value>État du chèque</value>
+  </data>
+  <data name="DateOfInquiryNoColon" xml:space="preserve">
+    <value>Date du service de renseignements</value>
+  </data>
+  <data name="DepositDateNoColon" xml:space="preserve">
+    <value>Date du dépôt</value>
+  </data>
+  <data name="DirectDepositNumberNoColon" xml:space="preserve">
+    <value>Numéro du dépôt direct</value>
+  </data>
+  <data name="PaymentAmountNoColon" xml:space="preserve">
+    <value>Montant du paiement</value>
+  </data>
+  <data name="PaymentCurrencyNoColon" xml:space="preserve">
+    <value>Devise du paiement</value>
+  </data>
+  <data name="PaymentMethodNoColon" xml:space="preserve">
+    <value>Mode de paiement</value>
+  </data>
+  <data name="StatementDateNoColon" xml:space="preserve">
+    <value>Date du relevé</value>
+  </data>
+  <data name="nameError" xml:space="preserve">
+    <value>Médicament : Veuillez entrer le nom d’un médicament.</value>
+  </data>
+  <data name="nameLengthError" xml:space="preserve">
+    <value>Le nom du médicament est trop court. Entrer au moins trois caractères du nom du médicament.</value>
+  </data>
+  <data name="Use" xml:space="preserve">
+    <value>Utiliser</value>
+  </data>
+  <data name="DontUse" xml:space="preserve">
+    <value>Ne pas utiliser</value>
+  </data>
+  <data name="ServerError_Description" xml:space="preserve">
+    <value>Malheureusement un problème est survenu. Veuillez réessayer.</value>
+  </data>
+  <data name="ServerError_Title" xml:space="preserve">
+    <value>Erreur</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>OUVERT: </value>
+  </data>
+  <data name="SearchHint" xml:space="preserve">
+    <value>Nom ou n° de tél.</value>
+  </data>
+  <data name="LearnMore" xml:space="preserve">
+    <value>POUR EN SAVOIR PLUS...</value>
+  </data>
+  <data name="UsingTheHealthProvider" xml:space="preserve">
+    <value>Trouver un professionnel de la santé</value>
+  </data>
+  <data name="ClickHereForDetails" xml:space="preserve">
+    <value>Cliquez ici pour savoir comment utiliser l’outil de recherche de professionnels de la santé.</value>
+  </data>
+  <data name="UnderstandingPharmacy" xml:space="preserve">
+    <value>Comprendre la cote de qualité des pharmacies</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Fermer</value>
+  </data>
+  <data name="CurrentLocation" xml:space="preserve">
+    <value>Localisation actuelle</value>
+  </data>
+  <data name="Favourites" xml:space="preserve">
+    <value>Favoris</value>
+  </data>
+  <data name="ADDFAVOURITIES" xml:space="preserve">
+    <value>FAVORIS</value>
+  </data>
+  <data name="ADDCONTACT" xml:space="preserve">
+    <value>AJOUTER AUX CONTACTS</value>
+  </data>
+  <data name="DIRECTIONS" xml:space="preserve">
+    <value>DIRECTIONS</value>
+  </data>
+  <data name="GrantPermissionToContacts" xml:space="preserve">
+    <value>L'Application a besoin d'une autorisation pour enregistrer les données dans les Contacts</value>
+  </data>
+  <data name="ProvidersNotFoundWithCurrentCriteria" xml:space="preserve">
+    <value>Veuillez commencer votre recherche en sélectionnant un type de fournisseur ou des critères différents de recherche. Aucun fournisseur n'a été trouvé selon le secteur de recherche défini.</value>
+  </data>
+  <data name="LocationAutocompleteHint" xml:space="preserve">
+    <value>Adresse, ville ou code postal</value>
+  </data>
+  <data name="AttachmentsExceedsMbLimit" xml:space="preserve">
+    <value>Les documents téléchargés dépassent la limite de 24 Mo. Veuillez réessayer avec des fichiers/photos de moindre format.</value>
+  </data>
+  <data name="ErrorUploadingFile" xml:space="preserve">
+    <value>Erreur de téléchargement de document(s)</value>
+  </data>
+  <data name="NeedStoragePermission" xml:space="preserve">
+    <value>Cette application n'a pas accès à votre stockage. Veuillez activer l'accès et réessayer.</value>
+  </data>
+  <data name="NeedPhotoLibraryPermission" xml:space="preserve">
+    <value>Cette application n'a pas accès à vos photos. Veuillez activer l'accès et réessayer.</value>
+  </data>
+  <data name="CameraError" xml:space="preserve">
+    <value>Erreur d'appareil-photo</value>
+  </data>
+  <data name="CameraNotAvailable" xml:space="preserve">
+    <value>L'accès à votre appareil-photo et à vos photos n'a pas été accordé pour cette application. Veuillez autoriser l'accès par les réglages de votre appareil.</value>
+  </data>
+  <data name="UploadDocuments" xml:space="preserve">
+    <value>TÉLÉCHARGER LA CONFIRMATION DE PAIEMENT</value>
+  </data>
+  <data name="SelectFiles" xml:space="preserve">
+    <value>Sélectionner les fichiers</value>
+  </data>
+  <data name="SelectPhotos" xml:space="preserve">
+    <value>Sélectionner les photos dans la bibliothèque</value>
+  </data>
+  <data name="TakePhoto" xml:space="preserve">
+    <value>Prendre une photo</value>
+  </data>
+  <data name="AddAnotherDocument" xml:space="preserve">
+    <value>Ajouter un fichier/une photo</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>SUIVANT</value>
+  </data>
+  <data name="Disclaimer" xml:space="preserve">
+    <value>Avis</value>
+  </data>
+  <data name="BackToMyClaims" xml:space="preserve">
+    <value>RETOUR À MES DEMANDES</value>
+  </data>
+  <data name="BackToDashboard" xml:space="preserve">
+    <value>RETOUR AU TABLEAU DE BORD</value>
+  </data>
+  <data name="UploadSuccessful" xml:space="preserve">
+    <value>VOUS AVEZ RÉUSSI À TÉLÉCHARGER VOTRE (VOS) DOCUMENT(S).</value>
+  </data>
+  <data name="UploadSuccessfulAdditionalMessage" xml:space="preserve">
+    <value>Nous nous chargerons du reste. La demande s'affichera encore dans la liste de vos vérifications, mais veuillez accepter notre courriel de confirmation à titre de vérification que nous avons reçu vos documents.</value>
+  </data>
+  <data name="AcceptDisclaimerFirst" xml:space="preserve">
+    <value>Vous devez accepter l’avis avant la soumission.</value>
+  </data>
+  <data name="ActiveClaimsListLabel" xml:space="preserve">
+    <value>DEMANDES NÉCESSITANT DES RENSEIGNEMENTS SUPPLÉMENTAIRES</value>
+  </data>
+  <data name="NeedCameraPermission" xml:space="preserve">
+    <value>L'accès à votre appareil-photo et à vos photos n'a pas été accordé pour cette application. Veuillez autoriser l'accès par les réglages de votre appareil.</value>
+  </data>
+  <data name="AddAtLeastOneFile" xml:space="preserve">
+    <value>Choisir au moins une fichier/un photo, puis cliquer sur SUIVANT</value>
+  </data>
+  <data name="AdditionalInformation" xml:space="preserve">
+    <value>Renseignements supplémentaires :</value>
+  </data>
+  <data name="GenericErrorDialogMessage" xml:space="preserve">
+    <value>Un problème est survenu. Veuillez réessayer plus tard.</value>
+  </data>
+  <data name="GenericErrorDialogTitle" xml:space="preserve">
+    <value>Ooops!</value>
+  </data>
+  <data name="HaveReadAndAcceptThe" xml:space="preserve">
+    <value>J'ai lu et j'accepte</value>
+  </data>
+  <data name="ClaimHistoryDetailRequriesCopFalse" xml:space="preserve">
+    <value>Soumettez des renseignements supplémentaires pour cette demande de règlement seulement si demandé</value>
+  </data>
+  <data name="ClaimHistoryDetailRequriesCopTrue" xml:space="preserve">
+    <value>Soumettez des renseignements supplémentaires pour cette demande de règlement</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>Soumettre</value>
+  </data>
+  <data name="SubmissionConfirmation" xml:space="preserve">
+    <value>CONFIRMATION DE SOUMISSION</value>
+  </data>
+  <data name="CombinedSizeOfFilesMustBe" xml:space="preserve">
+    <value>*La taille combinée des fichiers/photos doit être inférieure à</value>
+  </data>
+  <data name="DocumentsToUpload" xml:space="preserve">
+    <value>DOCUMENTS À TÉLÉCHARGER</value>
+  </data>
+  <data name="TwentyFourMb" xml:space="preserve">
+    <value>24 Mo</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>BIENVENUE</value>
+  </data>
+  <data name="BottomNavBarClaimsLabel" xml:space="preserve">
+    <value>DEMANDES DE RÈGLEMENT</value>
+  </data>
+  <data name="BottomNavBarDashboardLabel" xml:space="preserve">
+    <value>TABLEAU DE BORD</value>
+  </data>
+  <data name="BottomNavBarHealthProviderLabel" xml:space="preserve">
+    <value>PROFESSIONNEL DE LA SANTÉ</value>
+  </data>
+  <data name="BottomNavBarMenuLabel" xml:space="preserve">
+    <value>MENU</value>
+  </data>
+  <data name="DentalRecallExam" xml:space="preserve">
+    <value>EXAMEN DE RAPPEL DENTAIRE</value>
+  </data>
+  <data name="ChiropracticTreatment" xml:space="preserve">
+    <value>TRAITEMENT CHIROPRATIQUE</value>
+  </data>
+  <data name="MassasgeTherapy" xml:space="preserve">
+    <value>MASSOTHÉRAPIE</value>
+  </data>
+  <data name="DrugsOnTheGo" xml:space="preserve">
+    <value>MÉDICAMENTS À VOTRE PORTÉE</value>
+  </data>
+  <data name="RecentClaims" xml:space="preserve">
+    <value>DEMANDES DE RÈGLEMENT RÉCENTE</value>
+  </data>
+  <data name="NoRecentClaims" xml:space="preserve">
+    <value>Aucune demande de règlement récente</value>
+  </data>
+  <data name="CheckCoverage" xml:space="preserve">
+    <value>VÉRIFIER LA COUVERTURE</value>
+  </data>
+  <data name="ViewAll" xml:space="preserve">
+    <value>VOIR TOUT</value>
+  </data>
+  <data name="ClaimSummaryTitle" xml:space="preserve">
+    <value>Sommaire des règlements</value>
+  </data>
+  <data name="Loading" xml:space="preserve">
+    <value>Téléchargement...</value>
+  </data>
+  <data name="ForceUpdateTitle" xml:space="preserve">
+    <value>Mettre à jour</value>
+  </data>
+  <data name="UpdateAvailableMessage" xml:space="preserve">
+    <value>Bonne nouvelle! Une nouvelle version de l'appli est accessible. Appuyez sur OK pour aller à la boutique App Store et la mettre à jour maintenant ou Annuler pour mettre à jour plus tard.</value>
+  </data>
+  <data name="UpdateAvailableMessage2" xml:space="preserve">
+    <value>Bonne nouvelle! Une nouvelle version de l'appli est accessible. Afin de continuer à l’utiliser, allez à la boutique App Store pour la mettre à jour dès maintenant.</value>
+  </data>
+  <data name="ConnectionError" xml:space="preserve">
+    <value>Nous vous prions de nous excuser pour vos difficultés de connexion. Veuillez réessayer plus tard.</value>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>Vous avez entré un nom d’utilisateur ou un mot de passe inexact, ou votre compte n’est plus actif. Veuillez noter que vous n’avez droit qu’à 5 tentatives d’ouverture de session infructueuses avant que votre compte ne soit verrouillé.</value>
+  </data>
+  <data name="PasswordChangedErrorTouchId" xml:space="preserve">
+    <value>Votre mot de passe semble malheureusement avoir été modifié. Vous devez vous connecter avec votre nouveau mot de passe avant d'utiliser la fonction Touch ID.</value>
+  </data>
+  <data name="PasswordChangedErrorFaceId" xml:space="preserve">
+    <value>Votre mot de passe semble malheureusement avoir été modifié. Vous devez vous connecter avec votre nouveau mot de passe avant d'utiliser la fonction Face ID.</value>
+  </data>
+  <data name="PasswordChangedErrorFingerprint" xml:space="preserve">
+    <value>Votre mot de passe semble malheureusement avoir été modifié. Vous devez vous connecter avec votre nouveau mot de passe avant d'utiliser vos empreintes digitales.</value>
+  </data>
+  <data name="GenericUploadDocuments" xml:space="preserve">
+    <value>TÉLÉCHARGER DES DOCUMENTS</value>
+  </data>
+  <data name="ActionRequiredLabel" xml:space="preserve">
+    <value>ACTION REQUISE pour les demandes faisant l'objet de vérifications</value>
+  </data>
+  <data name="PlanInformation" xml:space="preserve">
+    <value>INFO-RÉGIME</value>
+  </data>
+  <data name="ClaimCountOutOf" xml:space="preserve">
+    <value>RÉCLAMATION {0} DE {1}</value>
+  </data>
+  <data name="AuditDetails" xml:space="preserve">
+    <value>DÉTAILS DE LA VÉRIFICATION</value>
+  </data>
+  <data name="AuditInformation" xml:space="preserve">
+    <value>Détails de la vérification</value>
+  </data>
+  <data name="AuditClaimStatus" xml:space="preserve">
+    <value>Vérification active</value>
+  </data>
+  <data name="AuditSummaryPageTitle" xml:space="preserve">
+    <value>SOMMAIRE DE LA VÉRIFICATION</value>
+  </data>
+  <data name="AuditListPageTitle" xml:space="preserve">
+    <value>LISTE DE VÉRIFICATIONS</value>
+  </data>
+  <data name="AuditListInstrunction" xml:space="preserve">
+    <value>La liste ci-dessous affiche toutes les demandes de règlement faisant l'objet de vérifications. Vous avez 30 jours à partir de la date de l'avis de vérification pour fournir tous les documents requis aux fins de la vérification - il suffit de cliquer sur la demande ci-dessous pour télécharger les documents pour toutes les demandes de règlement. Une fois les renseignements supplémentaires téléchargés, nous nous chargerons du reste. La demande s'affichera encore dans la liste de vos vérifications, mais veuillez accepter notre courriel de confirmation à titre de vérification que nous avons reçu vos document.</value>
+  </data>
+  <data name="AuditListImportantNotesLabel" xml:space="preserve">
+    <value>Note importante:</value>
+  </data>
+  <data name="AuditListNotes" xml:space="preserve">
+    <value>Si vous ne respectez pas le délai indiqué pour la vérification, vous ne pourrez pas profiter de la soumission de demandes de règlement en ligne en temps réel. Toutes les demandes de règlement devront être téléchargées aux fins d'examen.</value>
+  </data>
+  <data name="SubmissionDateLabel" xml:space="preserve">
+    <value>Date de soumission</value>
+  </data>
+  <data name="AuditDueDateLabel" xml:space="preserve">
+    <value>Date d'échéancee</value>
+  </data>
+  <data name="NoAuditMessage" xml:space="preserve">
+    <value>Vous n’avez heureusement aucune vérification en attente.</value>
+  </data>
+  <data name="MyBenefits" xml:space="preserve">
+    <value>VÉRIFIER MA COUVERTURE</value>
+  </data>
+  <data name="AgreeAndContinue" xml:space="preserve">
+    <value>D’ACCORD ET CONTINUER</value>
+  </data>
+  <data name="SureHealthLink" xml:space="preserve">
+    <value>https://www.santeassuree.ca</value>
+  </data>
+  <data name="ClaimDetailsFor" xml:space="preserve">
+    <value>DÉTAILS DE LA DEMANDE DE RÈGLEMENT POUR</value>
+  </data>
+  <data name="SupportCenterLink" xml:space="preserve">
+    <value>https://support.greenshield.ca/SupportCentre?culture=fr-CA</value>
+  </data>
+  <data name="PleaseSubmitDocuments" xml:space="preserve">
+    <value>VEUILLEZ SOUMETTRE LES DOCUMENTS POUR CETTE DEMANDE DE RÈGLEMENT</value>
+  </data>
+  <data name="PolicyNo" xml:space="preserve">
+    <value>Nº DE POLICE:</value>
+  </data>
+  <data name="CertificateNo" xml:space="preserve">
+    <value>Nº DE CERTIFICAT:</value>
+  </data>
+  <data name="SelectParticipantForTreatment" xml:space="preserve">
+    <value>SVP SÉLECTIONNER LE MEMBRE DU RÉGIME POUR LEQUEL VOUS SOUMETTEZ LA DEMANDE DE RÈGLEMENT POUR {0}.</value>
+  </data>
+  <data name="GscIdNumber" xml:space="preserve">
+    <value>Numéro {0}</value>
+  </data>
+  <data name="ClaimDetailsOtherBenefitsTitle" xml:space="preserve">asdas
+    <value>Avez-vous une protection en vertu d'un autre régime de garanties?</value>
+  </data>
+  <data name="ClaimDetailsOtherBenefitsWithGsc" xml:space="preserve">
+    <value>La couverture est-elle auprès de {0}?</value>
+  </data>
+  <data name="ClaimDetailsOtherBenefitsSubmitted" xml:space="preserve">
+    <value>Cette demande de règlement a-t-elle été soumise à l’autre régime de garanties?</value>
+  </data>
+  <data name="ClaimDetailsOtherBenefitsPayBalanceThroughOtherGSC" xml:space="preserve">
+    <value>Régler tout solde impayé de mon autre régime {0}?</value>
+  </data>
+  <data name="ClaimDetailsOtherBenefitsEnterGSC" xml:space="preserve">
+    <value>Entrer l’autre numéro {0}</value>
+  </data>
+  <data name="ClaimDetailsOtherBenefitsGscNumber" xml:space="preserve">
+    <value>Autre numéro {0}</value>
+  </data>
+  <data name="ClaimDetailsOtherBenefitsHSCA" xml:space="preserve">
+    <value>Souhaitez-vous que tout montant non payé relatif à vos dépenses admissibles vous soit payé à même votre compte de frais pour soins de santé (CFSS)?</value>
+  </data>
+  <data name="ClaimDetailsReasonOfAccident" xml:space="preserve">
+    <value>Cette demande de règlement était-elle encourue à la suite d'un accident?</value>
+  </data>  
+  <data name="ClaimDetailsMotorVehicleTitle" xml:space="preserve">
+    <value>Le traitement est-il requis à la suite d’un accident automobile?</value>
+  </data>
+  <data name="ClaimDetailsMotorVehicleDate" xml:space="preserve">
+    <value>SVP fournir la date de l’accident</value>
+  </data>
+  <data name="ClaimDetailsWorkInjuryTitle" xml:space="preserve">
+    <value>Le traitement est-il requis à cause d’une blessure reliée au travail?</value>
+  </data>
+  <data name="ClaimDetailsWorkInjuryDate" xml:space="preserve">
+    <value>SVP fournir la date de la blessure</value>
+  </data>
+  <data name="ClaimDetailsWorkInjuryCaseNumber" xml:space="preserve">
+    <value>SVP fournir le numéro de cas</value>
+  </data>
+  <data name="ClaimDetailsOtherTypeOfAccident" xml:space="preserve">
+    <value>Le traitement est-il requis en raison d'un autre type d'accident?</value>
+  </data>
+  <data name="ClaimDetailsMedicalItemTitle" xml:space="preserve">
+    <value>Avez-vous une ordonnance médicale à soumettre avec cette demande de prestations?</value>
+  </data>
+  <data name="ClaimDetailsMedicalItemReferralDate" xml:space="preserve">
+    <value>SVP fournir la date de la recommandation</value>
+  </data>
+  <data name="ClaimDetailsMedicalItemProfessional" xml:space="preserve">
+    <value>Indiquer le type de professionnel de soins de la santé qui a recommandé le servicevalue</value>
+  </data>
+  <data name="ClaimDetailsTypeOfProfessional" xml:space="preserve">
+    <value>Type de professionnel de soins de la santé</value>
+  </data>
+  <data name="ClaimDetailsMedicalItemSport" xml:space="preserve">
+    <value>Is the medical item required for sport purposes only?</value>
+  </data>
+  <data name="ClaimDetailsGstIncludedQ" xml:space="preserve">
+    <value>TPS/TVH incluse dans le total?</value>
+  </data>
+  <data name="ClaimDetailsMassageNoticeText" xml:space="preserve">
+    <value>Pour les services fournis en Ontario, veuillez vous assurer que tous les reçus sont signés par le massothérapeute qui a effectué le traitement.</value>
+  </data>
+  <data name="InvalidGscNumber" xml:space="preserve">
+    <value>Veuillez préciser un autre numéro {0} valide.</value>
+  </data>
+  <data name="OtherBenefitsGSCNumberError" xml:space="preserve">
+    <value>Vouz devez préciser l'autre numéro {0}.</value>
+  </data>
+  <data name="ClaimDetailsMissingAccidentType" xml:space="preserve">
+    <value>SVP indiquez le type d'accident.</value>
+  </data>
+  <data name="TreatmentTitle" xml:space="preserve">
+    <value>TRAITEMENT</value>
+  </data>
+  <data name="TreatmentDetails" xml:space="preserve">
+    <value>DÉTAILS DU TRAITEMENT</value>
+  </data>
+  <data name="TreatmentDetailsTreatmentTitle" xml:space="preserve">
+    <value>Type de traitement</value>
+  </data>
+  <data name="TreatmentDetailsItemDescription" xml:space="preserve">
+    <value>Description de l’article</value>
+  </data>
+  <data name="TreatmentDetailsLengthOfTreatment" xml:space="preserve">
+    <value>Durée du traitement</value>
+  </data>
+  <data name="TreatmentDetailsDateOfTreatment" xml:space="preserve">
+    <value>Date de la traitement</value>
+  </data>
+  <data name="TreatmentDetailsDateOfMonthlyTreatment" xml:space="preserve">
+    <value>Date du traitement mensuel</value>
+  </data>
+  <data name="TreatmentDetailsDateOfPurchaseService" xml:space="preserve">
+    <value>Date de l’achat/service</value>
+  </data>
+  <data name="TreatmentDetailsPickUpDate" xml:space="preserve">
+    <value>Date de prise de possession</value>
+  </data>
+  <data name="TreatmentDetailsQuantity" xml:space="preserve">
+    <value>Quantité</value>
+  </data>
+  <data name="TreatmentDetailsTotalAmountMedicalItems" xml:space="preserve">
+    <value>Montant total chargé pour les articles médicaux</value>
+  </data>
+  <data name="TreatmentDetailsTotalAmountOfVisit" xml:space="preserve">
+    <value>Montant total de la visite</value>
+  </data>
+  <data name="TreatmentDetailsOrthoMonthlyFee" xml:space="preserve">
+    <value>Frais mensuels soins d'orthodontie</value>
+  </data> 
+  <data name="TreatmentDetailsAmountPaidAlt" xml:space="preserve">
+    <value>Montant payé par un autre assureur $</value>
+  </data>
+  <data name="TreatmentDetailsAmountPaidByPpOrGpIfApplicable" xml:space="preserve">
+    <value>Montant payé par un régime public ou programme gouvernemental (si applicable)</value>
+  </data>
+  <data name="TreatmentDetailsAmountPaidByPpOrGp" xml:space="preserve">
+    <value>Montant payé par un régime public ou programme gouvernemental</value>
+  </data>
+  <data name="TreatmentDetailsGstIncluded" xml:space="preserve">
+    <value>TPS/TVH incluse dans le total</value>
+  </data>
+  <data name="TreatmentDetailsPstIncluded" xml:space="preserve">
+    <value>TVP incluse dans le total</value>
+  </data>
+  <data name="TreatmentDetailsMedicalItem" xml:space="preserve">
+    <value>Avez-vous une ordonnance médicale à soumettre avec cette demande de prestations?</value>
+  </data>
+  <data name="TreatmentDetailsDateOfReferral" xml:space="preserve">
+    <value>Date de la recommandation</value>
+  </data>  
+  <data name="TreatmentDetailsTypeOfEyewear" xml:space="preserve">
+    <value>Type d’article de lunetterie</value>
+  </data>
+  <data name="TreatmentDetailsTypeOfLens" xml:space="preserve">
+    <value>Type de lentille</value>
+  </data>
+  <data name="TreatmentDetailsFrameAmount" xml:space="preserve">
+    <value>Montant de monture</value>
+  </data>
+  <data name="TreatmentDetailsFeeAmount" xml:space="preserve">
+    <value>Montant des honoraires</value>
+  </data>  
+  <data name="TreatmentDetailsLensAmount" xml:space="preserve">
+    <value>Montant pour lentilles de lunettes</value>
+  </data> 
+  <data name="TreatmentDetailsTotalAmountCharged" xml:space="preserve">
+    <value>Montant total facturé</value>
+  </data>
+  <data name="TreatmentDetailsRightSphere" xml:space="preserve">
+    <value>Sphère droite</value>
+  </data>
+  <data name="TreatmentDetailsLeftSphere" xml:space="preserve">
+    <value>Sphère gauche</value>
+  </data>
+  <data name="TreatmentDetailsRightCylinder" xml:space="preserve">
+    <value>Cylindre droit</value>
+  </data>
+  <data name="TreatmentDetailsLeftCylinder" xml:space="preserve">
+    <value>Cylindre gauche</value>
+  </data>
+  <data name="TreatmentDetailsRightAxis" xml:space="preserve">
+    <value>Axe droit</value>
+  </data>
+  <data name="TreatmentDetailsLeftAxis" xml:space="preserve">
+    <value>Axe gauche</value>
+  </data>
+  <data name="TreatmentDetailsRightPrism" xml:space="preserve">
+    <value>Prisme droit</value>
+  </data>
+  <data name="TreatmentDetailsLeftPrism" xml:space="preserve">
+    <value>Prisme gauche</value>
+  </data>
+  <data name="TreatmentDetailsRightBifocal" xml:space="preserve">
+    <value>Bifocal droit</value>
+  </data>
+  <data name="TreatmentDetailsLeftBifocal" xml:space="preserve">
+    <value>Bifocal gauche</value>
+  </data>
+  <data name="TreatmentDetailsProcedureCode" xml:space="preserve">
+    <value>Code de procédure</value>
+  </data>
+  <data name="TreatmentDetailsToothCode" xml:space="preserve">
+    <value>Code des dents</value>
+  </data>
+  <data name="TreatmentDetailsToothSurface" xml:space="preserve">
+    <value>Surface des dents</value>
+  </data>
+  <data name="TreatmentDetailsDentistFee" xml:space="preserve">
+    <value>Honoraires du dentiste $</value>
+  </data>
+  <data name="TreatmentDetailsLabCharge" xml:space="preserve">
+    <value>Frais de laboratoire $</value>
+  </data>
+  <data name="DeleteTreatmentDetail" xml:space="preserve">
+    <value>Supprimer l’entrée</value>
+  </data>  
+  <data name="InvalidTreatmentDate24MonthValidation" xml:space="preserve">
+    <value>La date du traitement doit se situer au cours des 24 derniers mois</value>
+  </data> 
+  <data name="MissingProcedureCodeValidation" xml:space="preserve">
+    <value>Veuillez entrer un code de procédure</value>
+  </data>
+  <data name="InvalidProcedureCodeValidation" xml:space="preserve">
+    <value>Veuillez entrer un code de procédure valide</value>
+  </data>
+  <data name="MissingToothCodeValidation" xml:space="preserve">
+    <value>Veuillez entrer un code de dent</value>
+  </data>
+  <data name="InvalidToothCodeValidation" xml:space="preserve">
+    <value>Veuillez entrer un code de dent valide</value>
+  </data>
+  <data name="MissingToothSurfaceValidation" xml:space="preserve">
+    <value>Veuillez entrer les surfaces de dents</value>
+  </data>
+  <data name="InvalidToothSurfaceValidation" xml:space="preserve">
+    <value>Veuillez entrer des surfaces de dents valides</value>
+  </data>
+  <data name="MissingDentistFeeValidation" xml:space="preserve">
+    <value>Veuillez entrer des honoraires de dentiste valides</value>
+  </data>
+  <data name="InvalidDentistFeeValidation" xml:space="preserve">
+    <value>Veuillez entrer des honoraires de dentiste valides</value>
+  </data>
+  <data name="MissingLaboratoryChargeValidation" xml:space="preserve">
+    <value>Veuillez entrer des frais de laboratoire</value>
+  </data>
+  <data name="InvalidLaboratoryChargeValidation" xml:space="preserve">
+    <value>Veuillez entrer des frais de laboratoire valides</value>
+  </data>
+  <data name="MissingDentistFeeOrLaboratoryChargeValidation" xml:space="preserve">
+    <value>Veuillez entrer les honoraires du dentiste ou les frais de laboratoire</value>
+  </data>
+  <data name="MissingAmountPaidValidation" xml:space="preserve">
+    <value>Please enter a Amount Paid by Alternate Carrier</value>
+  </data>
+  <data name="InvalidAmountPaidValidation" xml:space="preserve">
+    <value>Veuillez entrer un montant valide de paiement par l'autre assureur</value>
+  </data>
+  <data name="MissingAmountPaidByPpOrGpValidation" xml:space="preserve">
+    <value>Si non applicable ou si la demande de prestations a été soumise à un régime public ou programme gouvernemental et que le remboursement a été 0,00$, entrez 0,00 dans ce champ.</value>
+  </data>
+  <data name="InvalidAmountPaidByPpOrGpValidation" xml:space="preserve">
+    <value>Montant total erroné facturé</value>
+  </data>
+  <data name="ClaimSubmissionFootNotes" xml:space="preserve">
+    <value>Les renseignements ci-dessus seront soumis à {0}. SVP vérifier leur exactitude avant de continuer. S’il vous faut modifier les renseignements, SVP cliquer sur le bouton « Retour » pour retourner au formulaire de soumission de demande de règlement. Sinon, cliquer sur le bouton « Soumettre » pour soumettre la demande de règlement à {0}.</value>
+  </data>
+  <data name="UploadedClaim" xml:space="preserve">
+    <value>DEMANDE DE RÈGLEMENT TÉLÉCHARGÉE</value>
+  </data>
+  <data name="ProviderEntryAllMissing" xml:space="preserve">
+    <value>SVP entrer toute l'information obligatoire.</value>
+  </data>
+  <data name="ProviderEntryNameInvalid" xml:space="preserve">
+    <value>SVP entrer un nom valide de fournisseur.</value>
+  </data>
+  <data name="ProviderEntryAddressInvalid" xml:space="preserve">
+    <value>SVP entrer une adresse valide de fournisseur.</value>
+  </data>
+  <data name="ProviderEntryCityInvalid" xml:space="preserve">
+    <value>SVP entrer une ville valide.</value>
+  </data>
+  <data name="ProviderEntryPostalCodeInvalid" xml:space="preserve">
+    <value>SVP entrer un code postal valide.</value>
+  </data>
+  <data name="ProviderEntryPhoneInvalid" xml:space="preserve">
+    <value>SVP entrer un numéro de téléphone valide.</value>
+  </data>
+  <data name="ProviderEntryRegistrationNumberInvalid" xml:space="preserve">
+    <value>SVP entrer un numéro d'enregistrement valide.</value>
+  </data>
+  <data name="ProviderEntryTitle" xml:space="preserve">
+    <value>RENSEIGNEMENTS SUR LE FOURNISSEUR</value>
+  </data>
+  <data name="ProviderEntryEnterDetails" xml:space="preserve">
+    <value>SVP ENTRER LES DÉTAILS SUR VOTRE FOURNISSEUR DE SOINS DE SANTÉ</value>
+  </data>
+  <data name="ProviderEntryMandatoryFields" xml:space="preserve">
+    <value>*INDIQUE UN CHAMP OBLIGATOIRE</value>
+  </data>
+  <data name="ProviderEntryName" xml:space="preserve">
+    <value>Nom du fournisseur*</value>
+  </data>
+  <data name="ProviderEntryAddress1" xml:space="preserve">
+    <value>Ligne d'adresse 1*</value>
+  </data>
+  <data name="ProviderEntryAddress2" xml:space="preserve">
+    <value>Ligne d'adresse 2</value>
+  </data>
+  <data name="ProviderEntryCity" xml:space="preserve">
+    <value>Ville*</value>
+  </data>
+  <data name="ProviderEntryProvince" xml:space="preserve">
+    <value>Province*</value>
+  </data>
+  <data name="ProviderEntryPostalCode" xml:space="preserve">
+    <value>Code postal* (e.g. A1A 1A1)</value>
+  </data>
+  <data name="ProviderEntryPostalCodeAndroid" xml:space="preserve">
+    <value>Code postal* (e.g. A1A 1A1)</value>
+  </data>
+  <data name="ProviderEntryPhone" xml:space="preserve">
+    <value>Numéro de téléphone*</value>
+  </data>
+  <data name="ProviderEntryRegistration" xml:space="preserve">
+    <value>Numéro d'enregistrement</value>
+  </data>
+  <data name="ProviderEntryButtonText" xml:space="preserve">
+    <value>Utiliser ce fournisseur de soins de santé</value>
+  </data>
+   <data name="DeductibleAmount" xml:space="preserve">
+    <value>Franchise</value>
+  </data>
+  <data name="CopayAmount" xml:space="preserve">
+    <value>Quote-part</value>
+  </data>
+  <data name="PlanLimitationParticipantType" xml:space="preserve">
+    <value>Membre / Famille</value>
+  </data>
+  <data name="PlanLimitationAmountUsedToDate" xml:space="preserve">
+    <value>Montant utilisé à ce jour</value>
+  </data>
+  <data name="PlanLimitationOccurrencesToDate" xml:space="preserve">
+    <value>Situations ou unités à ce jour</value>
+  </data>
+  <data name="PlanLimitations" xml:space="preserve">
+    <value>LIMITES DU RÉGIME</value>
+  </data>
+  <data name="GenericAwaitingPaymentNote" xml:space="preserve">
+    <value>Les paiements pour les demandes de règlement au statut «Attente de paiement» seront traités le jour ouvrable suivant.</value>
+  </data>
+  <data name="Important" xml:space="preserve">
+    <value>Important</value>
+  </data>
+  <data name="ClaimPlanParticipants" xml:space="preserve">
+    <value>MEMBRE DU RÉGIME</value>
+  </data>
+  <data name="SessionTimedOutMessage" xml:space="preserve">
+    <value>Votre session a expiré. Veuillez vous reconnecter.</value>
+  </data>
+  <data name="DirectDeposit" xml:space="preserve">
+    <value>DÉPÔT DIRECT</value>
+  </data>
+  <data name="DirectDepositNavbarSubtitle1" xml:space="preserve">
+    <value>Obtenez votre remboursement plus rapidement…</value>
+  </data>
+  <data name="DirectDepositNavbarSubtitle2" xml:space="preserve">
+    <value>Inscrivez-vous au dépôt direct et confirmez vos préférences d’avis.</value>
+  </data>
+  <data name="Step" xml:space="preserve">
+    <value>ÉTAPE</value>
+  </data>
+  <data name="Authorization" xml:space="preserve">
+    <value>AUTORISATION</value>
+  </data>
+  <data name="DirectDepositOptOutMessage" xml:space="preserve">
+  <value>Je ne souhaite pas que les fonds soient déposés directement dans mon compte.</value>
+  </data>
+  <data name="DirectDepositBankingInfoTitle" xml:space="preserve">
+    <value>ENTREZ VOS RENSEIGNEMENTS BANCAIRES</value>
+  </data>
+  <data name="DirectDepositBankingInfoMessage" xml:space="preserve">
+    <value>Entrez ci-dessous le numéro de succursale, le numéro de la banque et le numéro de compte. Votre institution financière peut vous fournir ces renseignements si vous n’avez pas de chèque. Ces renseignements doivent correspondre à une institution au Canada.</value>
+  </data>
+  <data name="DirectDepositTransitNumber" xml:space="preserve">
+    <value>Numéro de succursale</value>
+  </data>
+  <data name="DirectDepositBankNumber" xml:space="preserve">
+    <value>Numéro de la banque</value>
+  </data>
+  <data name="DirectDepositAccountNumber" xml:space="preserve">
+    <value>Numéro de compte</value>
+  </data>
+  <data name="SaveAndContinue" xml:space="preserve">
+    <value>SAUVEGARDER ET CONTINUER</value>
+  </data>
+  <data name="DirectDepositEmailPreferencesTitle" xml:space="preserve">
+    <value>CONFIRMEZ VOS PRÉFÉRENCES D’AVIS</value>
+  </data>
+  <data name="DirectDepositReceiveEmailNotification" xml:space="preserve">
+    <value>Je souhaite recevoir un avis par courriel en cas de remboursement ou de disponibilité des relevés.</value>
+  </data>
+  <data name="DirectDepositDoNotReceiveEmailNotification" xml:space="preserve">
+    <value>Je ne souhaite pas recevoir d’avis par courriel en cas de remboursement ou de disponibilité des relevés.</value>
+  </data>
+  <data name="DirectDepositFinePrints" xml:space="preserve">
+    <value>LES PETITS DÉTAILS</value>
+  </data>
+  <data name="DirectDepositDisclaimer1" xml:space="preserve">
+    <value>Le remboursement des demandes de règlement admissibles sera déposé dans votre compte une fois les demandes traitées.</value>
+  </data>
+  <data name="DirectDepositDisclaimer2" xml:space="preserve">
+    <value>Les remboursements par dépôt direct sont émis en dollars canadiens. Tout remboursement en dollars US sera émis par chèque.</value>
+  </data>
+  <data name="DirectDepositDisclaimer3" xml:space="preserve">
+    <value>à l’avenir, il vous incombera de mettre à jour tout renseignement modifié se rapportant à votre dépôt direct.</value>
+  </data>
+    <data name="DirectDepositDisclaimer3B" xml:space="preserve">
+    <value>N’oubliez pas, </value>
+  </data>
+  <data name="InvalidBankNumberValidation" xml:space="preserve">
+    <value>Veuillez entrer un numéro de banque valide</value>
+  </data>
+  <data name="InvalidAccountNumberValidation" xml:space="preserve">
+    <value>Veuillez entrer un numéro de compte valide</value>
+  </data>
+  <data name="InvalidTransitNumberValidation" xml:space="preserve">
+    <value>Veuillez entrer un numéro de succursale valide</value>
+  </data> 
+  <data name="DDValidationErrWarning" xml:space="preserve">
+    <value>Nous ne pouvons pas valider vos renseignements bancaires.</value>
+  </data>
+  <data name="DDValidationError" xml:space="preserve">
+    <value>Nos dossiers indiquent qu'il se peut que le numéro de succursale ou numéro de la banque ne soit pas valide.</value>
+  </data>
+   <data name="DDValidationErrorPart1" xml:space="preserve">
+    <value>Nos dossiers indiquent qu'il se peut que le</value>
+  </data>
+  <data name="DDValidationErrorPart2" xml:space="preserve">
+    <value>numéro de succursale</value>
+  </data>
+  <data name="DDValidationErrorPart3" xml:space="preserve">
+    <value>ou</value>
+  </data>
+  <data name="DDValidationErrorPart4" xml:space="preserve">
+    <value>numéro de la banque</value>
+  </data>
+  <data name="DDValidationErrorPart5" xml:space="preserve">
+    <value>ne soit pas valide.</value>
+  </data>
+  <data name="DDValidationErrNote" xml:space="preserve">
+    <value>Veuillez vous assurer de l’exactitude de vos renseignements bancaires.</value>
+  </data>
+  <data name="DDValidationErrNoteContact" xml:space="preserve">
+    <value>Si vous avez des doutes, nous vous conseillons de communiquer avec votre institution financière pour obtenir une confirmation avant de poursuivre.</value>
+  </data>
+  <data name="DDValidationErrNoteContinue" xml:space="preserve">
+    <value>Cliquez sur SOUMETTRE si les renseignements entrés sont exacts. Pour faire des modifications, cliquez sur CHANGER LES RENSEIGNEMENTS.</value>
+  </data>  
+  <data name="DDValidationErrExplaination" xml:space="preserve">
+    <value>Si vous décidez de sauvegarder les renseignements bancaires que vous avez entrés, votre institution financière pourrait refuser le remboursement par dépôt direct. Dans ce cas, nous émettrons un chèque.</value>
+  </data> 
+  <data name="DDValidationErrBankInfo" xml:space="preserve">
+    <value>Renseignements bancaires</value>
+  </data>
+  <data name="ChangeInformationTitle" xml:space="preserve">
+    <value>CHANGER LES RENSEIGNEMENTS</value>
+  </data>  
+   <data name="DDConfirmUpdateLabel" xml:space="preserve">
+    <value>Confirmez la mise à jour de votre dépôt direct... c'est presque fini</value>
+  </data> 
+  <data name="DDConfirmNoteConfirmationLabel" xml:space="preserve">
+    <value>Cliquez sur SOUMETTRE si les renseignements entrés sont exacts. Pour faire des modifications, cliquez sur CHANGER LES RENSEIGNEMENTS.</value>
+  </data>
+  <data name="DDClickLabel" xml:space="preserve">
+    <value>Cliquez sur</value>
+  </data>
+    <data name="DDNoteConfirmation" xml:space="preserve">
+    <value>si les renseignements entrés sont exacts. Pour faire des modifications, cliquez sur</value>
+  </data>
+    <data name="DDChangeInformationLabel" xml:space="preserve">
+    <value>CHANGER LES RENSEIGNEMENTS.</value>
+  </data>
+    <data name="DDResultSuccessSubTitle" xml:space="preserve">
+    <value>Vous avez configuré correctement les paiements par dépôt direct!</value>
+  </data>
+    <data name="DDResultDisclaimer1" xml:space="preserve">
+    <value>Je reconnais avoir vérifié les renseignements bancaires fournis pour le dépôt direct et je confirme par la présente leur exactitude.</value>
+  </data>
+  <data name="DDResultDisclaimer2" xml:space="preserve">
+    <value>Je reconnais que tout paiement fait par dépôt direct en utilisant ces renseignements bancaires sera valide et déchargera l’assureur de toute responsabilité.</value>
+  </data>
+  <data name="DirectDepositSuccess" xml:space="preserve">
+    <value>MISE À JOUR RÉUSSIE POUR LE DÉPÔT DIRECT</value>
+  </data>
+  <data name="AppReviewBody" xml:space="preserve">
+    <value>Cette appli vous plaît-elle?</value>
+  </data>
+  <data name="BenefitsDisclaimer1" xml:space="preserve">
+    <value>La liste ci-après pourrait comprendre des prestations qui ne sont pas couvertes par votre régime.</value>
+  </data>
+  <data name="BenefitsDisclaimer2" xml:space="preserve">
+    <value>Cela vous permet de soumettre votre demande de prestations et obtenir un relevé aux fins de coordination avec un autre assureur, ou aux fins de l'impôt sur le revenu.</value>
+  </data>
+</root>

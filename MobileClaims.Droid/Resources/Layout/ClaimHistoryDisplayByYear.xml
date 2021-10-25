@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:duplicateParentState="true"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	android:background="@color/white">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <gsc.HeaderTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/claim_marg_top"
+            android:layout_marginBottom="@dimen/claim_minheight"
+            android:gravity="center"
+            local:MvxBind="Text DisplayByLabel"
+            android:layout_gravity="center"
+            android:textAllCaps="true" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/claim_margin"
+            android:layout_marginLeft="@dimen/claim_margin"
+            android:layout_marginBottom="36dp">
+            <Button
+                android:padding="2dp"
+                android:id="@+id/bn1_year_to_date"
+                android:background="@color/button_history"
+                android:textColor="@color/claim_text"
+                android:layout_width="@dimen/claim_review_zero"
+                android:layout_weight="1.0"
+                android:fontFamily="LeagueGothic"
+                android:layout_height="@dimen/claim_button"
+                android:layout_gravity="center"
+                local:MvxBind="Text DisplayBy[0].Value"
+                android:gravity="center"
+                android:textSize="@dimen/display_by_button"
+                android:layout_marginRight="@dimen/claim_confirm_marg_bot"
+                android:textAllCaps="true" />
+            <Button
+                android:padding="2dp"
+                android:id="@+id/bn2_range"
+                android:fontFamily="LeagueGothic"
+                android:background="@color/button_history"
+                android:textColor="@color/claim_text"
+                android:layout_width="@dimen/claim_review_zero"
+                android:layout_weight="1.0"
+                android:layout_height="@dimen/claim_button"
+                android:textSize="@dimen/display_by_button"
+                android:layout_gravity="center"
+                local:MvxBind="Text DisplayBy[1].Value"
+                android:gravity="center"
+                android:textAllCaps="true" />
+            <Button
+                android:padding="2dp"
+                android:id="@+id/bn3_year"
+                android:fontFamily="LeagueGothic"
+                android:background="@color/button_history"
+                android:textColor="@color/claim_text"
+                android:layout_width="@dimen/claim_review_zero"
+                android:layout_weight="1.0"
+                android:layout_height="@dimen/claim_button"
+                android:textSize="@dimen/display_by_button"
+                android:layout_gravity="center"
+                local:MvxBind="Text DisplayBy[2].Value"
+                android:layout_marginLeft="@dimen/claim_confirm_marg_bot"
+                android:gravity="center"
+                android:textAllCaps="true" />
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+                <LinearLayout
+                    android:id="@+id/frag_spinner"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/claim_margin"
+                    android:layout_marginRight="@dimen/claim_margin">
+                    <gsc.NunitoTextView
+                        local:MvxBind="Text YearLabel"
+                        android:textColor="@color/claim_text"
+                        android:textSize="@dimen/display_by_sp"
+                        android:layout_weight="1.0"
+                        android:layout_width="@dimen/claim_review_zero"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:layout_gravity="center" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_height="20dp">
+                        <ImageButton
+                            android:id="@+id/errorButtonClick4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:background="@null"
+                            local:MvxBind=" Visibility Visibility(EmptyYear);"
+                            android:gravity="center"
+                            android:textSize="18sp"
+                            android:src="@drawable/claims_error_icon"
+                            android:scaleType="centerInside"
+                            android:onClick="errorClickHandler" />
+                    </LinearLayout>
+                    <Mvx.MvxSpinner
+                        android:layout_weight="1.5"
+                        android:layout_width="@dimen/claim_review_zero"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        local:MvxItemTemplate="@layout/item_displayby_year_spinner"
+                        local:MvxBind="ItemsSource Years; HandleItemSelected YearSelectedCommand;SelectedItem SelectedYear;"
+                        local:MvxDropDownItemTemplate="@layout/item_displayby_year_dropdown"
+                        android:spinnerMode="dialog" />
+                </LinearLayout>
+            </FrameLayout>
+            <LinearLayout
+                android:id="@+id/frag_date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+                <LinearLayout
+                    android:id="@+id/start_date_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/claim_margin"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/list_item_height_drugConfirm"
+                    android:layout_marginRight="@dimen/claim_margin"
+                    android:layout_marginLeft="@dimen/claim_margin">
+                <!--make the orientation vertical -->
+                    <LinearLayout
+                        android:id="@+id/start_text_parent"
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_weight="1.0">
+                    <!--add marigin bottom 5dp-->
+                        <gsc.NunitoTextView
+                            android:id="@+id/nunito_start_text"
+                            android:textColor="@color/claim_text"
+                            android:textSize="@dimen/display_by_sp"
+                            local:MvxBind="Text StartLabel"
+                            android:layout_weight="1.0"
+                            android:layout_width="@dimen/claim_review_zero"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:layout_marginTop="@dimen/claim_review_zero"
+                            android:layout_gravity="center" />
+                    <!--remove the weight add the width as wrap content-->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.1"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_height="20dp">
+                            <ImageButton
+                                android:id="@+id/errorButtonClick2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:background="@null"
+                                local:MvxBind=" Visibility Visibility(StartDateTooOld || EmptyStartDate || StartDateAfterEndDate || FutureStartDate);"
+                                android:gravity="center"
+                                android:textSize="18sp"
+                                android:src="@drawable/claims_error_icon"
+                                android:scaleType="centerInside"
+                                android:onClick="errorClickHandler" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <FrameLayout
+                        android:id="@+id/start_frame_layout"
+                        android:layout_width="@dimen/claim_review_zero"
+                        android:layout_weight="1.0"
+                        android:layout_marginLeft="@dimen/claim_text_desc_marg"
+                        android:layout_height="@dimen/list_item_height_drugConfirm">
+                    <!--frame layout remove the weight and margin left add width as wrap content-->
+                        <gsc.SmallEditText
+                            android:id="@+id/txtDate_stat"
+                            local:MvxBind="Text Format('{0:MMM dd, yyy}',SelectedStartDate), Mode=TwoWay;"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/list_item_height_drugConfirm"
+                            android:textSize="@dimen/spa_cntrbution_sub_txt"
+                            android:focusable="false"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/black"
+                            android:singleLine="true"
+                            android:paddingTop="@dimen/claim_marg_top"
+                            android:paddingLeft="@dimen/claim_confirm_marg_bot"
+                            android:gravity="left"
+                            android:layout_gravity="center"
+                            android:background="@drawable/RoundEditTextNone"
+                            android:imeOptions="actionDone" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxHeight="@dimen/list_item_height_drugConfirm"
+                            android:src="@drawable/Calendar_icon"
+                            android:paddingRight="@dimen/claim_text_desc_marg"
+                            android:layout_gravity="right|center" />
+                    </FrameLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/end_date_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/claim_margin"
+                    android:layout_width="fill_parent"
+                    android:layout_marginRight="@dimen/claim_margin"
+                    android:layout_marginLeft="@dimen/claim_margin"
+                    android:gravity="center"
+                    android:layout_height="@dimen/list_item_height_drugConfirm"
+                    android:background="@color/white">
+                <!--make the orientation vertical -->
+                    <LinearLayout
+                        android:id="@+id/end_text_parent"
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0">
+                    <!--add marigin bottom 5dp-->
+                        <gsc.NunitoTextView
+                            android:id="@+id/nunito_end_text"
+                            android:textColor="@color/claim_text"
+                            android:textSize="@dimen/display_by_sp"
+                            local:MvxBind="Text EndLabel"
+                            android:layout_weight="1.0"
+                            android:layout_width="@dimen/claim_review_zero"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:layout_marginTop="@dimen/claim_review_zero"
+                            android:layout_gravity="center" />
+                    <!--remove the weight add the width as wrap content-->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.1"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_height="20dp">
+                            <ImageButton
+                                android:id="@+id/errorButtonClick1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:background="@null"
+                                local:MvxBind=" Visibility Visibility(EndDateTooOld || EmptyEndDate ||EndDateBeforeStartDate || FutureEndDate);"
+                                android:gravity="center"
+                                android:textSize="18sp"
+                                android:src="@drawable/claims_error_icon"
+                                android:scaleType="centerInside"
+                                android:onClick="errorClickHandler" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <FrameLayout
+                        android:id="@+id/end_frame_layout"
+                        android:layout_width="@dimen/claim_review_zero"
+                        android:layout_weight="1.0"
+                        android:layout_marginLeft="@dimen/claim_text_desc_marg"
+                        android:layout_height="@dimen/list_item_height_drugConfirm">
+                    <!--frame layout remove the weight and margin left add width as wrap content-->
+                        <gsc.SmallEditText
+                            android:id="@+id/txtDate_end"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/list_item_height_drugConfirm"
+                            android:textSize="@dimen/spa_cntrbution_sub_txt"
+                            android:focusable="false"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/black"
+                            android:singleLine="true"
+                            android:paddingTop="@dimen/claim_marg_top"
+                            android:paddingLeft="@dimen/claim_confirm_marg_bot"
+                            android:gravity="left"
+                            android:layout_gravity="center"
+                            android:background="@drawable/RoundEditTextNone"
+                            local:MvxBind="Text Format('{0:MMM dd, yyy}',SelectedEndDate), Mode=TwoWay;"
+                            android:imeOptions="actionDone" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxHeight="@dimen/list_item_height_drugConfirm"
+                            android:src="@drawable/Calendar_icon"
+                            android:paddingRight="@dimen/claim_text_desc_marg"
+                            android:layout_gravity="right|center" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+                <LinearLayout
+                    android:id="@+id/frag_text"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/claim_confirm">
+                    <gsc.NunitoTextView
+                        android:textColor="@color/claim_text"
+                        android:textSize="@dimen/claim_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/claim_minheight"
+                        android:layout_marginTop="@dimen/claim_review_zero"
+                        local:MvxBind="Text YearToDateLabel"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+            </FrameLayout>
+        </FrameLayout>
+    <!-- local:MvxBind=""-->
+        <gsc.GSCButton
+            android:background="@drawable/ButtonBackground"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_item_height_drugConfirm"
+            android:layout_gravity="center"
+            android:textColor="@drawable/ButtonTextColor"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/list_item_height_drugConfirm"
+            android:layout_marginRight="@dimen/claim_margin"
+            android:layout_marginLeft="@dimen/claim_margin"
+            android:textAllCaps="true"
+            local:MvxBind="Click DoneCommand;Text DoneLabel" />
+    </LinearLayout>
+</ScrollView>

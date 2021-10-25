@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="160" id="cxk-wN-pdQ" customClass="Step3TableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cxk-wN-pdQ" id="YTl-1W-gDM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="81B-L8-X1E">
+                        <rect key="frame" x="20" y="0.0" width="335" height="160"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aPD-zM-sOA">
+                                <rect key="frame" x="0.0" y="0.0" width="335" height="74.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gm4-Zv-e9y">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="74.5"/>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LargeRoundCheckboxUnselected" highlightedImage="LargeRoundCheckboxSelected" translatesAutoresizingMaskIntoConstraints="NO" id="CnW-90-EYW">
+                                        <rect key="frame" x="20" y="21.5" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="DTb-PK-wdg"/>
+                                            <constraint firstAttribute="height" constant="32" id="fPO-9b-Scl"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5L-0g-sEY">
+                                        <rect key="frame" x="72" y="10" width="249" height="54.5"/>
+                                        <string key="text">Yes	I want to receive notification via email when I get paid or when a statement is available.</string>
+                                        <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>                                             <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NunitoSans-SemiBold"/>                                         </userDefinedRuntimeAttributes> 
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="Gm4-Zv-e9y" firstAttribute="top" secondItem="aPD-zM-sOA" secondAttribute="top" id="1e7-go-988"/>
+                                    <constraint firstItem="Gm4-Zv-e9y" firstAttribute="leading" secondItem="aPD-zM-sOA" secondAttribute="leading" id="BSC-U2-p5y"/>
+                                    <constraint firstItem="f5L-0g-sEY" firstAttribute="top" secondItem="aPD-zM-sOA" secondAttribute="top" constant="10" id="GMK-Yj-JkC"/>
+                                    <constraint firstAttribute="bottom" secondItem="Gm4-Zv-e9y" secondAttribute="bottom" id="Kj5-eh-52G"/>
+                                    <constraint firstAttribute="bottom" secondItem="f5L-0g-sEY" secondAttribute="bottom" constant="10" id="MGI-wf-Uoo"/>
+                                    <constraint firstItem="CnW-90-EYW" firstAttribute="centerY" secondItem="aPD-zM-sOA" secondAttribute="centerY" id="YVI-NE-Evx"/>
+                                    <constraint firstItem="CnW-90-EYW" firstAttribute="leading" secondItem="aPD-zM-sOA" secondAttribute="leading" constant="20" id="dwU-PN-Mx8"/>
+                                    <constraint firstItem="f5L-0g-sEY" firstAttribute="leading" secondItem="CnW-90-EYW" secondAttribute="trailing" constant="20" id="jCY-AJ-erC"/>
+                                    <constraint firstAttribute="trailing" secondItem="f5L-0g-sEY" secondAttribute="trailing" constant="14" id="mW3-cy-XcG"/>
+                                    <constraint firstAttribute="trailing" secondItem="Gm4-Zv-e9y" secondAttribute="trailing" id="qtp-6d-r7L"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8V3-2N-7c1">
+                                <rect key="frame" x="0.0" y="85.5" width="335" height="74.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eaT-zt-8HV">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="74.5"/>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LargeRoundCheckboxUnselected" highlightedImage="LargeRoundCheckboxSelected" translatesAutoresizingMaskIntoConstraints="NO" id="9kY-hD-sGK">
+                                        <rect key="frame" x="20" y="21.5" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="SAu-W2-Kmc"/>
+                                            <constraint firstAttribute="height" constant="32" id="a0U-8J-SNd"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYb-KN-uxI">
+                                        <rect key="frame" x="72" y="10" width="249" height="54.5"/>
+                                        <string key="text">No	I don't want to receive notifications via email.</string>
+                                        <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>                                             <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NunitoSans-SemiBold"/>                                         </userDefinedRuntimeAttributes> 
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="ZYb-KN-uxI" firstAttribute="top" secondItem="8V3-2N-7c1" secondAttribute="top" constant="10" id="ESZ-uK-Rfy"/>
+                                    <constraint firstItem="eaT-zt-8HV" firstAttribute="top" secondItem="8V3-2N-7c1" secondAttribute="top" id="GyS-98-UUc"/>
+                                    <constraint firstAttribute="bottom" secondItem="eaT-zt-8HV" secondAttribute="bottom" id="HUX-2T-twG"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZYb-KN-uxI" secondAttribute="bottom" constant="10" id="IOh-Pc-LfG"/>
+                                    <constraint firstItem="ZYb-KN-uxI" firstAttribute="leading" secondItem="9kY-hD-sGK" secondAttribute="trailing" constant="20" id="Wew-Ex-Swm"/>
+                                    <constraint firstItem="9kY-hD-sGK" firstAttribute="leading" secondItem="8V3-2N-7c1" secondAttribute="leading" constant="20" id="efb-2q-6fZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZYb-KN-uxI" secondAttribute="trailing" constant="14" id="iwc-fi-WdA"/>
+                                    <constraint firstItem="ZYb-KN-uxI" firstAttribute="centerY" secondItem="8V3-2N-7c1" secondAttribute="centerY" id="ltA-yo-eDZ"/>
+                                    <constraint firstItem="eaT-zt-8HV" firstAttribute="leading" secondItem="8V3-2N-7c1" secondAttribute="leading" id="mEK-ab-aTN"/>
+                                    <constraint firstAttribute="trailing" secondItem="eaT-zt-8HV" secondAttribute="trailing" id="vMJ-MA-fZX"/>
+                                    <constraint firstItem="9kY-hD-sGK" firstAttribute="centerY" secondItem="8V3-2N-7c1" secondAttribute="centerY" id="yFi-1q-KtE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="81B-L8-X1E" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" id="SZS-Mt-jkY"/>
+                    <constraint firstAttribute="bottom" secondItem="81B-L8-X1E" secondAttribute="bottom" id="cyq-Ns-lut"/>
+                    <constraint firstAttribute="trailing" secondItem="81B-L8-X1E" secondAttribute="trailing" constant="20" id="ip6-Mu-OLS"/>
+                    <constraint firstItem="81B-L8-X1E" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="20" id="mfu-qy-HoW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="DoNotReceiveNotificationContainerView" destination="8V3-2N-7c1" id="Rx5-ex-2GW"/>
+                <outlet property="DoNotReceiveNotificationLabel" destination="ZYb-KN-uxI" id="JLm-SH-6vB"/>
+                <outlet property="DoNotReceiveNotificationRoundImageView" destination="9kY-hD-sGK" id="SxB-cG-Px5"/>
+                <outlet property="ReceiveNotificationContainerView" destination="aPD-zM-sOA" id="oDT-UJ-jdR"/>
+                <outlet property="ReceiveNotificationLabel" destination="f5L-0g-sEY" id="YG0-Ct-bpn"/>
+                <outlet property="ReceiveNotificationRoundImageView" destination="CnW-90-EYW" id="RUU-eG-2ou"/>
+                <outlet property="SelectDoNotReceiveNotification" destination="eaT-zt-8HV" id="S28-E5-nG0"/>
+                <outlet property="SelectReceiveNotificationButton" destination="Gm4-Zv-e9y" id="KZe-NI-Uos"/>
+            </connections>
+            <point key="canvasLocation" x="19.565217391304348" y="51.5625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="LargeRoundCheckboxSelected" width="32" height="32"/>
+        <image name="LargeRoundCheckboxUnselected" width="32" height="32"/>
+    </resources>
+</document>

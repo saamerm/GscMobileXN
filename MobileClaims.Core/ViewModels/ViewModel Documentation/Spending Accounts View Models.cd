@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MobileClaims.Core.ViewModels.ChooseSpendingAccountTypeViewModel">
+    <Position X="0.5" Y="0.5" Width="3.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAgIAAAAAAAQAAAAAAgAAAAAAAAAAIAAQAAAAAAAA=</HashCode>
+      <FileName>ViewModels\ChooseSpendingAccountTypeViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MobileClaims.Core.ViewModels.SpendingAccountDetailViewModel">
+    <Position X="4.25" Y="0.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAgQAAAAAAAgAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>ViewModels\SpendingAccountDetailViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MobileClaims.Core.Entities.SpendingAccountType">
+    <Position X="0.5" Y="2.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAgAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\SpendingAccountType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MobileClaims.Core.Entities.SpendingAccountDetail">
+    <Position X="4.25" Y="3.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAACAACAQAAAiAAAAIAAAAAAAQAAAAAAABAEA=</HashCode>
+      <FileName>Entities\SpendingAccountDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MobileClaims.Core.Entities.SpendingAccountPeriodRollup">
+    <Position X="8.5" Y="3.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAABA=</HashCode>
+      <FileName>Entities\SpendingAccountPeriodRollup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

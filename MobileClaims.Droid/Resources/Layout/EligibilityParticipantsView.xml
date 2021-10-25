@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color">
+    <gsc.HeaderTextView
+        android:id="@+id/eligibilityPlanParticipantTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/eligibilityPlanParticipantTitle"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textAllCaps="true" />
+    <gsc.TitleTextView
+        android:id="@+id/eligibilityPlanParticipantSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/eligibilityPlanParticipantSubtitle"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="20dp"
+        android:textAllCaps="true" />
+    <gsc.SingleSelectMvxListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/claim_participant"
+        android:scrollbarStyle="outsideOverlay"
+        android:choiceMode="singleChoice"
+        android:cacheColorHint="@android:color/transparent"
+        android:background="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:listSelector="@android:color/transparent"
+        local:MvxBind="ItemsSource ParticipantsViewModel.ParticipantsActive; SelectedItem SelectedParticipant; ItemClick NavigateToClaimDetailsDroidCommand;"
+        local:MvxItemTemplate="@layout/item_participant_name"
+        android:paddingTop="20dp" />
+</LinearLayout>

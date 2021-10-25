@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="cZE-iV-UFb" customClass="ClaimParticipantsCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="377" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="377" height="55"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Doe" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUT-xP-1OU">
+                        <rect key="frame" x="0.0" y="0.0" width="377" height="55"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="LUT-xP-1OU" secondAttribute="trailing" id="KIb-10-9nB"/>
+                <constraint firstItem="LUT-xP-1OU" firstAttribute="leading" secondItem="cZE-iV-UFb" secondAttribute="leading" id="UCA-kf-jsa"/>
+                <constraint firstItem="LUT-xP-1OU" firstAttribute="top" secondItem="cZE-iV-UFb" secondAttribute="top" id="UPP-BB-5uo"/>
+                <constraint firstAttribute="bottom" secondItem="LUT-xP-1OU" secondAttribute="bottom" id="XLB-je-1SA"/>
+            </constraints>
+            <size key="customSize" width="309" height="44"/>
+            <connections>
+                <outlet property="NameLabel" destination="LUT-xP-1OU" id="3xU-gZ-7dc"/>
+            </connections>
+            <point key="canvasLocation" x="221.01449275362322" y="51.5625"/>
+        </collectionViewCell>
+    </objects>
+</document>

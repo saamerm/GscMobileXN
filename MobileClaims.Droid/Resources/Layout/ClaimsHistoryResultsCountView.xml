@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        android:layout_height="fill_parent">
+        <gsc.HeaderTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            local:MvxBind="Text ClaimsHistory"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:textAllCaps="true" />
+    <!--  search criteria-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/HCSATextViewBorder"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            local:MvxBind="Click SearchCriteriaCommand">
+            <gsc.LeagueTextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:textSize="22sp"
+                android:textColor="@color/claim_text_grey"
+                local:MvxBind="Text SearchCriteria"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:paddingLeft="10dp"
+                android:textAllCaps="true" />
+            <FrameLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.5">
+                <ImageView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/search_criteria_icon" />
+            </FrameLayout>
+        </LinearLayout>
+    <!--  Claim For area-->
+        <gsc.NunitoTextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/claim_text"
+            android:textSize="13sp"
+            local:MvxBind="Text ClaimsFor;"
+            android:textAllCaps="true"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="5dp" />
+    <!--claim type-->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="4dp"
+            android:orientation="horizontal"
+            android:paddingTop="7dp">
+            <gsc.NunitoTextView
+                android:layout_weight="4.0"
+                android:layout_height="wrap_content"
+                android:layout_width="@dimen/claim_review_zero"
+                android:textColor="@color/claim_text"
+                android:textSize="13sp"
+                local:MvxBind="Text ClaimTypeLabel, Converter=NonBreakingSpace;" />
+            <gsc.NunitoTextViewBold
+                android:layout_weight="6.0"
+                android:layout_height="wrap_content"
+                android:layout_width="@dimen/claim_review_zero"
+                android:textColor="@color/claim_text_grey"
+                android:textSize="12sp"
+                local:MvxBind="Text ClaimType"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+    <!--participant-->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="4dp"
+            android:orientation="horizontal"
+            android:paddingTop="7dp">
+            <gsc.NunitoTextView
+                android:layout_weight="4.0"
+                android:layout_height="wrap_content"
+                android:layout_width="@dimen/claim_review_zero"
+                android:textColor="@color/claim_text"
+                android:textSize="13sp"
+                local:MvxBind="Text ParticipantLabel, Converter=NonBreakingSpace;" />
+            <gsc.NunitoTextViewBold
+                android:layout_weight="6.0"
+                android:layout_height="wrap_content"
+                android:layout_width="@dimen/claim_review_zero"
+                android:textColor="@color/claim_text_grey"
+                android:textSize="12sp"
+                android:layout_marginTop="2dp"
+                local:MvxBind="Text SelectedParticipant.FullName,Converter=FullNameToCaptialize;"
+                android:minHeight="0dp"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+    <!--line of business-->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="4dp"
+            android:orientation="horizontal"
+            android:paddingTop="7dp">
+            <gsc.NunitoTextView
+                android:layout_weight="4.0"
+                android:layout_height="wrap_content"
+                android:layout_width="@dimen/claim_review_zero"
+                android:textColor="@color/claim_text"
+                android:textSize="13sp"
+                local:MvxBind="Text LineOfBusinessLabel, Converter=NonBreakingSpace;" />
+            <gsc.NunitoTextViewBold
+                android:layout_weight="6.0"
+                android:layout_height="wrap_content"
+                android:layout_width="@dimen/claim_review_zero"
+                android:textColor="@color/claim_text_grey"
+                android:textSize="12sp"
+                android:layout_marginTop="2dp"
+                local:MvxBind="Text LinesOfBusiness"
+                android:minHeight="0dp"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+    <!--period-->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="4dp"
+            android:orientation="horizontal"
+            android:paddingTop="7dp">
+            <gsc.NunitoTextView
+                android:layout_weight="4.0"
+                android:layout_height="wrap_content"
+                android:layout_width="@dimen/claim_review_zero"
+                android:textColor="@color/claim_text"
+                android:textSize="13sp"
+                local:MvxBind="Text PeriodLabel, Converter=NonBreakingSpace;" />
+            <gsc.NunitoTextViewBold
+                android:layout_weight="6.0"
+                android:layout_height="wrap_content"
+                android:layout_width="@dimen/claim_review_zero"
+                android:textColor="@color/claim_text_grey"
+                android:textSize="12sp"
+                android:layout_marginTop="2dp"
+                local:MvxBind="Text Period"
+                android:minHeight="0dp"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+        <Mvx.MvxListView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/summary_claims_history"
+            android:scrollbarStyle="outsideOverlay"
+            android:choiceMode="singleChoice"
+            android:layout_marginTop="0dp"
+            local:MvxBind="ItemsSource SearchResultsSummary; ItemClick SelectSearchResultTypeCommand;"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="@dimen/claim_text_desc_marg"
+            android:paddingTop="@dimen/claim_text_desc_marg" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <gsc.NunitoTextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="@color/claim_text"
+                android:textSize="11sp"
+                android:layout_marginTop="13dp"
+                local:MvxBind="Text DateOfInquiryLabel, Converter=NonBreakingSpace; " />
+            <gsc.NunitoTextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="@color/claim_text"
+                android:textSize="11sp"
+                android:layout_marginTop="13dp"
+                local:MvxBind="Text DateOfInquiry" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

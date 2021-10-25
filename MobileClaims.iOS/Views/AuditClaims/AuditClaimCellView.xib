@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="cZE-iV-UFb" customClass="AuditClaimCellView">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="125"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="125"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="751" text="Action Required" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9S-vm-4WF">
+                        <rect key="frame" x="14" y="10" width="234" height="17"/>
+                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="12"/>
+                        <userDefinedRuntimeAttributes>                             <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NunitoSans-Bold"/>                         </userDefinedRuntimeAttributes>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234567890" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfm-AB-zJx">
+                        <rect key="frame" x="262" y="10" width="67" height="17"/>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NunitoSans-Regular"/>                         </userDefinedRuntimeAttributes>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Submission Date" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vq0-nv-B83">
+                        <rect key="frame" x="14" y="30" width="239.5" height="16.5"/>
+                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="12"/>
+                        <userDefinedRuntimeAttributes>                             <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NunitoSans-Bold"/>                         </userDefinedRuntimeAttributes>
+                        
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="15-07-2019" textAlignment="right" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgP-ut-RxF">
+                        <rect key="frame" x="267.5" y="30" width="61.5" height="16.5"/>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                        <userDefinedRuntimeAttributes>                             <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NunitoSans-Regular"/>                         </userDefinedRuntimeAttributes>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Due Date Due Date Due Date" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WyL-nC-aFh">
+                        <rect key="frame" x="14" y="49.5" width="238.5" height="16.5"/>
+                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="12"/>
+                        <userDefinedRuntimeAttributes>                             <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NunitoSans-Bold"/>                         </userDefinedRuntimeAttributes>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="31/07/2019" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i8B-bh-PAp">
+                        <rect key="frame" x="266.5" y="49.5" width="62.5" height="16.5"/>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                        <userDefinedRuntimeAttributes>                             <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NunitoSans-Regular"/>                         </userDefinedRuntimeAttributes>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" text="Professional Medical Services" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfH-Ln-qfQ">
+                        <rect key="frame" x="14" y="93" width="315" height="22"/>
+                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="16"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NunitoSans-Bold"/>
+                        </userDefinedRuntimeAttributes>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="pgP-ut-RxF" secondAttribute="trailing" constant="14" id="0Oc-7Q-b9m"/>
+                <constraint firstItem="i8B-bh-PAp" firstAttribute="top" secondItem="WyL-nC-aFh" secondAttribute="top" id="23D-qk-AHa"/>
+                <constraint firstItem="mfm-AB-zJx" firstAttribute="leading" secondItem="F9S-vm-4WF" secondAttribute="trailing" constant="14" id="2Va-Pn-DP3"/>
+                <constraint firstItem="pgP-ut-RxF" firstAttribute="top" secondItem="vq0-nv-B83" secondAttribute="top" id="3v9-zT-pmr"/>
+                <constraint firstItem="pgP-ut-RxF" firstAttribute="height" secondItem="vq0-nv-B83" secondAttribute="height" id="C3z-bp-8p4"/>
+                <constraint firstAttribute="trailing" secondItem="i8B-bh-PAp" secondAttribute="trailing" constant="14" id="EHd-4G-7mX"/>
+                <constraint firstItem="vq0-nv-B83" firstAttribute="leading" secondItem="cZE-iV-UFb" secondAttribute="leading" constant="14" id="JKY-GK-jcc"/>
+                <constraint firstItem="pgP-ut-RxF" firstAttribute="leading" secondItem="vq0-nv-B83" secondAttribute="trailing" constant="14" id="STD-Nc-pbx"/>
+                <constraint firstItem="F9S-vm-4WF" firstAttribute="leading" secondItem="cZE-iV-UFb" secondAttribute="leading" constant="14" id="TFd-Jw-tW9"/>
+                <constraint firstItem="WyL-nC-aFh" firstAttribute="top" secondItem="vq0-nv-B83" secondAttribute="bottom" constant="3" id="VD4-kr-436"/>
+                <constraint firstItem="mfm-AB-zJx" firstAttribute="top" secondItem="cZE-iV-UFb" secondAttribute="top" constant="10" id="WEn-qm-h1h"/>
+                <constraint firstItem="i8B-bh-PAp" firstAttribute="leading" secondItem="WyL-nC-aFh" secondAttribute="trailing" constant="14" id="X0S-2h-wqz"/>
+                <constraint firstAttribute="trailing" secondItem="lfH-Ln-qfQ" secondAttribute="trailing" constant="14" id="YvM-JD-eFz"/>
+                <constraint firstItem="WyL-nC-aFh" firstAttribute="leading" secondItem="cZE-iV-UFb" secondAttribute="leading" constant="14" id="byw-Mb-vsy"/>
+                <constraint firstItem="i8B-bh-PAp" firstAttribute="height" secondItem="WyL-nC-aFh" secondAttribute="height" id="hkA-YT-7ac"/>
+                <constraint firstAttribute="trailing" secondItem="mfm-AB-zJx" secondAttribute="trailing" constant="14" id="iel-v0-VjC"/>
+                <constraint firstItem="lfH-Ln-qfQ" firstAttribute="leading" secondItem="cZE-iV-UFb" secondAttribute="leading" constant="14" id="n6W-Vc-1jH"/>
+                <constraint firstItem="F9S-vm-4WF" firstAttribute="top" secondItem="cZE-iV-UFb" secondAttribute="top" constant="10" id="zLf-kl-yi8"/>
+                <constraint firstItem="mfm-AB-zJx" firstAttribute="centerY" secondItem="F9S-vm-4WF" secondAttribute="centerY" id="zc5-Eo-eHd"/>
+                <constraint firstItem="vq0-nv-B83" firstAttribute="top" secondItem="F9S-vm-4WF" secondAttribute="bottom" constant="3" id="zp4-n9-LwW"/>
+                <constraint firstAttribute="bottom" secondItem="lfH-Ln-qfQ" secondAttribute="bottom" constant="10" id="zvV-UU-pXW"/>
+            </constraints>
+            <size key="customSize" width="402" height="157"/>
+            <connections>
+                <outlet property="ActionRequiredLabel" destination="F9S-vm-4WF" id="fcE-V5-kdg"/>
+                <outlet property="ClaimFormNumberLabel" destination="mfm-AB-zJx" id="yB2-Vz-kSt"/>
+                <outlet property="ClaimTypeLabel" destination="lfH-Ln-qfQ" id="loJ-pP-ebM"/>
+                <outlet property="DueDateLabel" destination="WyL-nC-aFh" id="alU-zo-QDb"/>
+                <outlet property="DueDateValueLabel" destination="i8B-bh-PAp" id="6d5-du-fyJ"/>
+                <outlet property="SubmissionDateLabel" destination="vq0-nv-B83" id="mYp-eJ-owl"/>
+                <outlet property="SubmissionDateValueLabel" destination="pgP-ut-RxF" id="25B-Bc-nUV"/>
+            </connections>
+            <point key="canvasLocation" x="233.33333333333334" y="86.049107142857139"/>
+        </collectionViewCell>
+    </objects>
+</document>

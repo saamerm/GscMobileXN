@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/claim_confirm">
+        <gsc.NunitoTextView
+            android:id="@+id/qn1"
+            android:textColor="@color/claim_text"
+            android:textSize="13sp"
+            android:layout_weight="1.0"
+            android:layout_width="@dimen/claim_review_zero"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginTop="@dimen/claim_review_zero"
+            local:MvxBind="Text IDNumberLabel"
+            android:layout_gravity="left" />
+        <gsc.NunitoTextViewBold
+            android:id="@+id/qn1"
+            android:textColor="@color/claim_text_grey"
+            android:textSize="13sp"
+            android:layout_weight="1.0"
+            android:layout_width="@dimen/claim_review_zero"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/claim_margin"
+            android:gravity="left"
+            android:layout_marginTop="@dimen/claim_review_zero"
+            local:MvxBind="Text PlanMemberDisplayID"
+            android:layout_gravity="left" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/claim_confirm">
+        <gsc.NunitoTextView
+            android:id="@+id/qn1"
+            android:textColor="@color/claim_text"
+            android:textSize="13sp"
+            android:layout_weight="1.0"
+            android:layout_width="@dimen/claim_review_zero"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginTop="@dimen/claim_review_zero"
+            local:MvxBind="Text ParticipantLabel"
+            android:layout_gravity="left" />
+        <gsc.NunitoTextViewBold
+            android:id="@+id/qn1"
+            android:textColor="@color/claim_text_grey"
+            android:textSize="13sp"
+            android:layout_weight="1.0"
+            android:layout_width="@dimen/claim_review_zero"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginLeft="@dimen/claim_margin"
+            android:layout_marginTop="@dimen/claim_review_zero"
+            local:MvxBind="Text ParticipantFullName"
+            android:layout_gravity="left" />
+    </LinearLayout>
+<!-- <LinearLayout
+       android:orientation="horizontal"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="@dimen/claim_marg_top">
+  <gsc.NunitoTextView
+        android:id="@+id/qn1"
+        android:textColor="@color/claim_text"
+        android:textSize="13sp"
+        android:layout_weight="1.0"
+        android:layout_width="@dimen/claim_review_zero"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginTop="@dimen/claim_review_zero"
+        android:layout_gravity="left"
+        local:MvxBind="Text FormNumberLabel" />
+    <gsc.NunitoTextViewBold
+        android:id="@+id/qn1"
+        android:textColor="@color/claim_text_grey"
+        android:textSize="13sp"
+        android:layout_weight="1.0"
+        android:layout_width="@dimen/claim_review_zero"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginTop="@dimen/claim_review_zero"
+        local:MvxBind="Text ClaimFormID"
+        android:layout_marginLeft="@dimen/claim_margin"
+        android:layout_gravity="left" />
+  </LinearLayout>-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/claim_confirm">
+        <gsc.NunitoTextView
+            android:id="@+id/qn1"
+            android:textColor="@color/claim_text"
+            android:textSize="13sp"
+            android:layout_weight="1.0"
+            android:layout_width="@dimen/claim_review_zero"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginTop="@dimen/claim_review_zero"
+            local:MvxBind="Text SubmissionDateLabel"
+            android:layout_gravity="left" />
+        <gsc.NunitoTextViewBold
+            android:id="@+id/qn1"
+            android:textColor="@color/claim_text_grey"
+            android:textSize="13sp"
+            android:layout_weight="1.0"
+            android:layout_width="@dimen/claim_review_zero"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginLeft="@dimen/claim_margin"
+            android:layout_marginTop="@dimen/claim_review_zero"
+            local:MvxBind="Text Format('{0:MMM dd, yyy}',SubmissionDate)"
+            android:layout_gravity="left" />
+    </LinearLayout>
+<!--<LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/claim_marg_top">
+        <gsc.NunitoTextView
+            android:id="@+id/qn1"
+            android:textColor="@color/claim_text"
+            android:textSize="13sp"
+            android:layout_weight="1.0"
+            android:layout_width="@dimen/claim_review_zero"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginTop="@dimen/claim_review_zero"
+            android:layout_gravity="left"
+            local:MvxBind="Visible IsReferrerVisible;Text RefferedLabel" />
+        <gsc.NunitoTextViewBold
+            android:id="@+id/qn1"
+            android:textColor="@color/claim_text_grey"
+            android:textSize="13sp"
+            android:layout_weight="1.0"
+            android:layout_width="@dimen/claim_review_zero"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginTop="@dimen/claim_review_zero"
+            local:MvxBind="Text ReferralType.Text; Visible IsReferrerVisible"
+            android:layout_marginLeft="@dimen/claim_margin"
+            android:layout_gravity="left" />
+    </LinearLayout>-->
+</LinearLayout>

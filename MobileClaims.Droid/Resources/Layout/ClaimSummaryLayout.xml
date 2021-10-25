@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	android:background="@color/white">
+	<LinearLayout  
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="5dp"
+		android:layout_marginTop="5dp">
+		<gsc.HeaderTextView
+			android:id="@+id/uploadDocumentsLabelActiveClaimTextView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="10dp"	
+			android:textSize="24sp"
+			android:textColor="@color/highlight_color"
+			android:layout_gravity="center"
+			local:MvxBind="Text Title"/>
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="@color/grey_background_hcsa"/>
+
+		<gsc.LeagueTextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textStyle="bold"
+			android:textSize="20sp"
+			android:layout_marginLeft="10dp"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="10dp"
+			local:MvxBind="Text ClaimSummary.UserName"/>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="5dp"
+			android:padding="10dp"
+			android:background="@drawable/border">
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:weightSum="1.0"
+				android:layout_marginTop="5dp"
+				android:layout_marginBottom="15dp">
+				<gsc.NunitoTextView
+					android:layout_width="0dp"
+					android:layout_weight="0.5"
+					android:layout_height="wrap_content"
+					android:textSize="13sp"
+					android:textColor="@color/claim_text"
+					local:MvxBind="Text ServiceDate"/>
+				<gsc.NunitoTextViewBold
+					android:layout_width="0dp"
+					android:layout_weight="0.5"
+					android:layout_height="wrap_content"
+					android:textColor="@color/claim_text_grey"
+					android:textSize="12sp"
+					local:MvxBind="Text ClaimSummary.ServiceDate"/>
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:weightSum="1.0"
+				android:layout_marginBottom="15dp">
+				<gsc.NunitoTextView
+					android:layout_width="0dp"
+					android:layout_weight="0.5"
+					android:layout_height="wrap_content"
+					android:textSize="13sp"
+					android:textColor="@color/claim_text"
+					local:MvxBind="Text ClaimForm"/>
+				<gsc.NunitoTextViewBold
+					android:layout_width="0dp"
+					android:layout_weight="0.5"
+					android:layout_height="wrap_content"
+					android:textColor="@color/claim_text_grey"
+					android:textStyle="bold"
+					android:textSize="12sp"
+					local:MvxBind="Text ClaimSummary.ClaimForm"/>
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:weightSum="1.0"
+				android:layout_marginBottom="15dp">
+				<gsc.NunitoTextView
+					android:layout_width="0dp"
+					android:layout_weight="0.5"
+					android:layout_height="wrap_content"
+					android:textSize="13sp"
+					android:textColor="@color/claim_text"
+					local:MvxBind="Text ServiceDescription"/>
+				<gsc.NunitoTextViewBold
+					android:layout_width="0dp"
+					android:layout_weight="0.5"
+					android:layout_height="wrap_content"
+					android:textColor="@color/claim_text_grey"
+					android:textStyle="bold"
+					android:textSize="12sp"
+					local:MvxBind="Text ClaimSummary.ServiceDescription"/>
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginBottom="15dp"
+				android:weightSum="1.0">
+				<gsc.NunitoTextView
+					android:layout_width="0dp"
+					android:layout_weight="0.5"
+					android:layout_height="wrap_content"
+					android:textSize="13sp"
+					android:textColor="@color/claim_text"
+					local:MvxBind="Text ClaimedAmount"/>
+				<gsc.NunitoTextViewBold
+					android:layout_width="0dp"
+					android:layout_weight="0.5"
+					android:layout_height="wrap_content"
+					android:textColor="@color/claim_text_grey"
+					android:textStyle="bold"
+					android:textSize="12sp"
+					local:MvxBind="Text ClaimSummary.ClaimedAmount"/>
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginBottom="15dp"
+				android:weightSum="1.0">
+				<gsc.NunitoTextView
+					android:layout_width="0dp"
+					android:layout_weight="0.5"
+					android:layout_height="wrap_content"
+					android:textSize="13sp"
+					android:textColor="@color/claim_text"
+					local:MvxBind="Text OtherPaidAmount"/>
+				<gsc.NunitoTextViewBold
+					android:layout_width="0dp"
+					android:layout_weight="0.5"
+					android:layout_height="wrap_content"
+					android:textColor="@color/claim_text_grey"
+					android:textStyle="bold"
+					android:textSize="12sp"
+					local:MvxBind="Text ClaimSummary.OtherPaidAmount"/>
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginBottom="15dp"
+				android:weightSum="1.0">
+				<gsc.NunitoTextView
+					android:layout_width="0dp"
+					android:layout_weight="0.5"
+					android:layout_height="wrap_content"
+					android:textSize="13sp"
+					android:textColor="@color/claim_text"
+					local:MvxBind="Text PaidAmount"/>
+				<gsc.NunitoTextViewBold
+					android:layout_width="0dp"
+					android:layout_weight="0.5"
+					android:layout_height="wrap_content"
+					android:textColor="@color/claim_text_grey"
+					android:textStyle="bold"
+					android:textSize="12sp"
+					local:MvxBind="Text ClaimSummary.PaidAmount"/>
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginBottom="15dp"
+				android:weightSum="1.0">
+				<gsc.NunitoTextView
+					android:layout_width="0dp"
+					android:layout_weight="0.5"
+					android:layout_height="wrap_content"
+					android:textSize="13sp"
+					android:textColor="@color/claim_text"
+					local:MvxBind="Text CoPay"/>
+				<gsc.NunitoTextViewBold
+					android:layout_width="0dp"
+					android:layout_weight="0.5"
+					android:layout_height="wrap_content"
+					android:textColor="@color/claim_text_grey"
+					android:textStyle="bold"
+					android:textSize="12sp"
+					local:MvxBind="Text ClaimSummary.Copay"/>
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginBottom="15dp"
+				android:weightSum="1.0">
+				<gsc.NunitoTextView
+					android:layout_width="0dp"
+					android:layout_weight="0.5"
+					android:layout_height="wrap_content"
+					android:textSize="13sp"
+					android:textColor="@color/claim_text"
+					local:MvxBind="Text PaymentDate"/>
+				<gsc.NunitoTextViewBold
+					android:layout_width="0dp"
+					android:layout_weight="0.5"
+					android:layout_height="wrap_content"
+					android:textColor="@color/claim_text_grey"
+					android:textStyle="bold"
+					android:textSize="12sp"
+					local:MvxBind="Text ClaimSummary.PaymentDate"/>
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginBottom="15dp"
+				android:weightSum="1.0">
+				<gsc.NunitoTextView
+					android:layout_width="0dp"
+					android:layout_weight="0.5"
+					android:layout_height="wrap_content"
+					android:textSize="13sp"
+					android:textColor="@color/claim_text"
+					local:MvxBind="Text PaidTo"/>
+				<gsc.NunitoTextViewBold
+					android:layout_width="0dp"
+					android:layout_weight="0.5"
+					android:layout_height="wrap_content"
+					android:textColor="@color/claim_text_grey"
+					android:textStyle="bold"
+					android:textSize="12sp"
+					local:MvxBind="Text ClaimSummary.PayTo"/>
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:weightSum="1.0">
+				<gsc.NunitoTextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:textSize="13sp"
+					android:layout_marginBottom="10dp"
+					android:textColor="@color/claim_text"
+					local:MvxBind="Text ExplanationOfBenefitsLabel"/>
+				<gsc.NunitoTextViewBold
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:textStyle="bold"
+					android:textSize="12sp"
+					android:textColor="@color/claim_text_grey"
+					local:MvxBind="Text ClaimSummary.EobMessages"/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				local:MvxBind="Visibility Visibility(IsUploadSectionVisible)">
+				<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="20dp"
+				android:textColor="@color/dark_red"
+				android:textSize="14sp"
+				android:gravity="center"
+				local:MvxBind="Text SubmitAdditionalInformationLabel"/>
+		
+				<gsc.GSCButton
+				android:background="@drawable/ButtonBackground"
+				android:layout_width="match_parent"
+				android:layout_height="60dp"
+				android:layout_centerHorizontal="true"
+				android:layout_gravity="center"
+				android:textColor="@drawable/ButtonTextColor"
+				android:gravity="center"
+				android:textAllCaps="true"
+				android:layout_marginBottom="10dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginLeft="40dp"
+				android:layout_marginRight="40dp" 
+				local:MvxBind="Text UploadButtonText;Click OpenUploadDocumentsCommand"/>
+
+			<include layout="@layout/combined_size_of_files_text_layout"/>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>

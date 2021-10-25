@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:duplicateParentState="true"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/claim_confirm">
+    <gsc.NunitoTextViewBold
+        android:id="@+id/text_box_ch_benefititem"
+        android:textColor="@drawable/claimshistory_benifit_list_textcolor"
+        android:textSize="@dimen/claim_search"
+        android:layout_weight="1.5"
+        android:layout_width="@dimen/claim_review_zero"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="left"
+        local:MvxBind="Text Name;" />
+    <gsc.GSCCheckBox
+        android:id="@+id/check_box_ch"
+        android:layout_weight="0.5"
+        android:layout_width="@dimen/claim_review_zero"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        local:MvxBind="Checked IsSelected, Mode= TwoWay;"
+        android:paddingRight="@dimen/claim_text_desc_marg" />
+</LinearLayout>

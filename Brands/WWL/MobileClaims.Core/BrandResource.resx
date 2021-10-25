@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BrandAcronym" xml:space="preserve">
+    <value>Wawanesa</value>
+  </data>
+  <data name="BrandShortDisplayName" xml:space="preserve">
+    <value>Wawanesa Life</value>
+  </data>
+  <data name="BrandFullDisplayName" xml:space="preserve">
+    <value>Wawanesa Life</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>WAWANESA USERNAME</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>PASSWORD</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>LOG IN</value>
+  </data>
+  <data name="RememberMe" xml:space="preserve">
+    <value>SAVE YOUR WAWANESA USERNAME ON THIS DEVICE</value>
+  </data>
+  <data name="WebInstructions" xml:space="preserve">
+    <value>FORGOT YOUR USER ID OR PASSWORD? NEED TO REGISTER?</value>
+  </data>
+  <data name="WebInstructionsLink" xml:space="preserve">
+    <value>https://groupservices.wawanesa.com/PlanMember/AccessMgmt/Public/SignOn.aspx?lang=en-CA</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>GENERAL</value>
+  </data>
+  <data name="Privacy" xml:space="preserve">
+    <value>PRIVACY</value>
+  </data>
+  <data name="Security" xml:space="preserve">
+    <value>SECURITY</value>
+  </data>
+  <data name="Legal" xml:space="preserve">
+    <value>LEGAL</value>
+  </data>
+  <data name="IAgreeToTC" xml:space="preserve">
+    <value>I AGREE TO THE TERMS AND CONDITIONS</value>
+  </data>
+  <data name="TermsAndConditionsGeneral1" xml:space="preserve">
+    <value>If your benefit plan includes Online Claims Submission, this App will provide a feature for submitting claims. When you submit claims using the Wawanesa Life Mobile App Online Claim Submission feature, you agree to the following: "I agree that all information provided using Online claim submission will be complete and accurate. In the event that my information is found to be incomplete or inaccurate, I understand that Wawanesa Life reserves the right to remove my online claiming privileges. I understand that the information, including the personal information, that I provide to Wawanesa Life about myself and my dependents, will be used by Wawanesa for claims adjudication and any other services necessary in the administration of my benefits which may include the exchange of information with other parties to administer this benefit plan.</value>
+  </data>
+  <data name="TermsAndConditionsGeneral2" xml:space="preserve">
+    <value>I am authorized by my spouse and/or dependents to disclose and receive information about them that is used for these purposes. My spouse and/or dependents understand that this information may be seen by me, the cardholder and used by Wawanesa Life and the other parties referenced in this agreement for the purposes set out in this agreement.</value>
+  </data>
+  <data name="TermsAndConditionsGeneral3" xml:space="preserve">
+    <value>When submitting claims online, Wawanesa Life may select my claim for audit. If so requested, I am responsible for producing the original receipt(s) within 30 days.</value>
+  </data>
+  <data name="TermsAndConditionsGeneral4" xml:space="preserve">
+    <value>If I fail to provide the receipt(s) to Wawanesa Life, or provide false, incomplete, or misleading information, Wawanesa Life reserves the right to classify my claim as an overpayment and will deduct such monies from any future claim payments. Furthermore, my coverage may be denied or terminated and/or online submission may be revoked.</value>
+  </data>
+  <data name="TermsAndConditionsGeneral5" xml:space="preserve">
+    <value>I understand and agree that I am responsible for retaining original receipt(s) for 13 months following the date of my claim submission(s).</value>
+  </data>
+  <data name="TermsAndConditionsGeneral6" xml:space="preserve">
+    <value>Wawanesa Life maintains a national database of providers and their association with any regulatory agency, professional association or educational program. Wawanesa Life reviews each provider to determine which benefits/services are eligible for reimbursement in conjunction with the plan member’s health benefits plan. When submitting a claim online, with a provider that has not registered with Wawanesa Life, the provider’s credentials will be verified and my claim will be processed accordingly.</value>
+  </data>
+  <data name="TermsAndConditionsGeneral7" xml:space="preserve">
+    <value>Acceptance of the Online Claim Submission Agreement Terms and Conditions applies to all claims submitted within an online session. If I submit multiple claims (for a different dependent and/or provider) within the online session, my acceptance of the Online Claim Submission Agreement Terms and Conditions applies to all those claims submitted."</value>
+  </data>
+  <data name="TermsAndConditionsGeneral8" xml:space="preserve">
+    <value>1-800-665-7076</value>
+  </data>
+  <data name="GeneralContent6" xml:space="preserve">
+    <value>https://sel.ccq.org/</value>
+  </data>
+  <data name="GeneralContent8" xml:space="preserve">
+    <value>click here</value>
+  </data>
+  <data name="MyIdCardText" xml:space="preserve">
+    <value>MY ID CARD</value>
+  </data>
+  <data name="claimConfirm_description" xml:space="preserve">
+    <value>The above information will be submitted to Wawanesa Life. Please ensure the information is correct before proceeding. If you need to change the information, please click the back button to return to the claim submission form. Otherwise click the Submit button to submit the claim to Wawanesa Life.</value>
+  </data>
+  <data name="claimConfirm_id_number" xml:space="preserve">
+    <value>Wawanesa Life ID Number</value>
+  </data>
+  <data name="DisclaimerFirstParagraph" xml:space="preserve">    
+    <value>I agree that all information provided using this online claim submission application is complete and accurate. In the event that my information is found to be incomplete or inaccurate, I understand that Wawanesa Life reserves the right to remove my online claiming privileges. I understand that the information, including the personal information, that I provide to Wawanesa Life about myself and my dependents, will be used by Wawanesa Life for claims adjudication and any other services necessary in the administration of my benefits which may include the exchange of information with other parties to administer my benefit plan.</value>
+  </data>
+  <data name="DisclaimerSecondParagraph" xml:space="preserve">
+    <value>I am authorized by my spouse and/or dependents to disclose and receive information about them that is used for these purposes. My spouse and/or dependents understand that this information may be seen by me, the cardholder and used by Wawanesa Life and the other parties referenced in this agreement for the purposes set out in this agreement.</value>
+  </data>
+  <data name="AuditDisclaimerFirstParagraph" xml:space="preserve">
+    <value>As the plan member, I am authorized by my spouse and/or dependents to disclose and receive information about them that is used for these purposes. They understand that this information may be seen by me.</value>
+  </data>
+  <data name="AuditDisclaimerSecondParagraph" xml:space="preserve">
+    <value>By submitting actual receipts, I agree that the information provided is complete and accurate. I understand that the information I provide to Wawanesa Life about myself and my dependents will be used by Wawanesa Life for claims adjudication and any other services necessary in the administration of our benefits which may include the exchange of information with other parties to administer this benefit claim.</value>
+  </data>
+  <data name="AuditDisclaimerThirdParagraph" xml:space="preserve">
+    <value>I further authorize Wawanesa Life to obtain and exchange information with other parties, such as health practitioners or insurers, to confirm the accuracy of the submitted claims(s) information. In the event of suspected fraudulent activity pertaining to claims submitted on behalf of myself and/or my dependents, I acknowledge and agree to the disclosure of this information to relevant parties, such as a plan sponsor and regulatory and law enforcement agencies.</value>
+  </data>
+  <data name="EverythingYouNeedToKnow" xml:space="preserve">
+    <value>Everything you need to know about how Wawanesa evaluates the quality of care provided by pharmacies.</value>
+  </data>
+  <data name="GreenShieldIDNumber" xml:space="preserve">
+    <value>Wawanesa Life ID Number:</value>
+  </data>
+  <data name="GreenShieldIDNumberNoColon" xml:space="preserve">
+    <value>Wawanesa Life ID Number</value>
+  </data>
+  <data name="submittedToGSC" xml:space="preserve">
+    <value>The above information will be submitted to Wawanesa Life. Please ensure the information is correct before proceeding. If you need to change the information, please click the back button to return to the claim submission form. Otherwise click the Submit button to submit the claim to Wawanesa Life.</value>
+  </data>
+  <data name="Find_a_health_provider_faq_url" xml:space="preserve">
+    <value>https://groupservices.wawanesa.com/wwl_miscdocs/find_a_health_provider_faq_en.pdf</value>
+  </data>
+  <data name="Understanding_pharmacy_quality_ratings_url" xml:space="preserve">
+    <value>https://groupservices.wawanesa.com/wwl_miscdocs/understanding_pharmacy_quality_ratings_en.pdf</value>
+  </data>
+  <data name="cardDescription" xml:space="preserve">
+    <value>Wawanesa Life Card</value>
+  </data>
+  <data name="NoActiveClaimsLabel" xml:space="preserve">
+    <value>We have everything we need! Your requests for settlement do not require any further information. Please keep your documentation for 12 months.</value>
+  </data>
+  <data name="VisionEnhancementsMessage" xml:space="preserve">
+    <value>The See better to succeed program offers a $250 reimbursement per 24-month period for purchases of glasses or contact lenses prescribed by a professional to correct the vision of any child under 18 years of age. Only purchases made after September 1, 2019 from an optician or optometrist in Québec are eligible. You must submit your claim even if the amount offered by the government covers the total purchase amount.</value>
+  </data>
+   <data name="VisionEnhancementsProgramName" xml:space="preserve">
+    <value>See better to succeed</value>
+  </data>
+  <data name="VisionEnhancementsProgramAdditionalInfo" xml:space="preserve">
+    <value>You must submit your claim even if the amount offered by the government covers the total purchase amount.</value>
+  </data>
+  <data name="ClaimDetailsOtherBenefitsTitle" xml:space="preserve">
+    <value>Do you have coverage under another benefits plan? Other than a Provincial plan.</value>
+  </data>
+  <data name="SupportCenterLink" xml:space="preserve">
+    <value>https://support.groupservices.wawanesa.com/</value>
+  </data>
+  <data name="DirectDepositOptInMessage" xml:space="preserve">
+    <value>I authorize Wawanesa Life to deposit funds directly into the bank account noted below. I understand that I will no longer receive statements from Wawanesa Life in the mail as my statements will only be available online.</value>
+  </data>
+  <data name="DDConfirmAuthoriseDepositFundLabel" xml:space="preserve">
+    <value>I acknowledge that it is my responsibility to ensure the accuracy of my banking details and that Wawanesa Life accepts no responsibility and cannot be held liable if any information provided is incorrect, incomplete, or inaccurate.</value>
+  </data> 
+    <data name="DDResultDisclaimer3" xml:space="preserve">
+    <value>In addition, I acknowledge that Wawanesa Life is not responsible for any damage, claim, or cause of action, of any nature whatsoever, that may result from any direct deposit made using this bank account information or that may arise from the provision of incorrect, incomplete, or inaccurate bank account information. Therefore, I hold the insurer and the carrier harmless of any responsibility in this regard.</value>
+  </data>
+</root>

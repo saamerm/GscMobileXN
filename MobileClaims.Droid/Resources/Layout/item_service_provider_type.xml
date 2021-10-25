@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gsc.CheckableLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:duplicateParentState="true"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ListItemBackground"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:gravity="center_vertical">
+    <gsc.LeagueTextView
+        android:id="@+id/text1"
+        android:background="@drawable/ListItemBackground"
+        android:textColor="@drawable/gsc_list_text_color"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:duplicateParentState="true"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:height="50dp"
+        android:textSize="24sp"
+        android:textColorHighlight="@color/white"
+        local:MvxBind="Text Type"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textAllCaps="true" />
+</gsc.CheckableLinearLayout>

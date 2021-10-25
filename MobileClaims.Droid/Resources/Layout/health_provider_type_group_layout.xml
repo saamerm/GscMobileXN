@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:paddingLeft="20dp"
+    android:paddingTop="10dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="10dp"
+    android:background="#FFFFFF">
+    <ffimageloading.cross.MvxCachedImageView
+        android:id="@+id/providerTypeImage"
+        android:focusable="false"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+    <TextView
+        android:id="@+id/groupNameTextView"
+        android:layout_toRightOf="@id/providerTypeImage"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_centerVertical="true" />
+    <ImageView
+        android:id="@+id/checkmarkImageView"
+        android:layout_toRightOf="@id/groupNameTextView"
+        android:layout_width="28dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:focusable="false"
+        android:layout_centerVertical="true" />
+    <ImageView
+        android:id="@+id/expandImageView"
+        android:focusable="false"
+        android:layout_width="52dp"
+        android:layout_height="34dp"
+		android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+
+
+</RelativeLayout>

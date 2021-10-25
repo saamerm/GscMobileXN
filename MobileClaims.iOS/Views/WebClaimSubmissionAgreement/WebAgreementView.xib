@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WebAgreementView">
+            <connections>
+                <outlet property="AcceptButton" destination="3154" id="0PE-ys-rYO"/>
+                <outlet property="ButtonBottomConstraint" destination="7wW-9n-O8d" id="TsB-64-q9e"/>
+                <outlet property="ButtonContainer" destination="jRC-4D-Nvg" id="K04-TR-k1O"/>
+                <outlet property="CancelButton" destination="a0G-gd-SnP" id="Peg-vZ-QXh"/>
+                <outlet property="WCSAWebView" destination="TXS-xZ-k8o" id="uLw-RK-0OU"/>
+                <outlet property="WebViewBottomConstraint" destination="tml-mZ-gCu" id="log-rZ-xIn"/>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jRC-4D-Nvg">
+                    <rect key="frame" x="0.0" y="812" width="414" height="84"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3154" customClass="GSButton">
+                            <rect key="frame" x="62" y="10" width="120" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="120" id="Y6f-tj-ja9">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="250"/>
+                                </constraint>
+                                <constraint firstAttribute="height" constant="40" id="y3J-Ww-u3d">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                </constraint>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0G-gd-SnP" customClass="GSButton">
+                            <rect key="frame" x="232" y="10" width="120" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="5rF-eq-0uQ">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                </constraint>
+                                <constraint firstAttribute="width" constant="120" id="UK8-aH-Dkl">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="250"/>
+                                </constraint>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="3154" firstAttribute="trailing" secondItem="jRC-4D-Nvg" secondAttribute="centerX" constant="-25" id="2o1-Lx-mp2"/>
+                        <constraint firstItem="a0G-gd-SnP" firstAttribute="top" secondItem="3154" secondAttribute="top" id="787-Hh-MCu"/>
+                        <constraint firstAttribute="bottom" secondItem="a0G-gd-SnP" secondAttribute="bottom" constant="34" id="7wW-9n-O8d"/>
+                        <constraint firstItem="a0G-gd-SnP" firstAttribute="top" secondItem="jRC-4D-Nvg" secondAttribute="top" constant="10" id="GTY-l4-9BA"/>
+                        <constraint firstItem="a0G-gd-SnP" firstAttribute="leading" secondItem="jRC-4D-Nvg" secondAttribute="centerX" constant="25" id="H1P-Xl-XUt"/>
+                        <constraint firstItem="a0G-gd-SnP" firstAttribute="bottom" secondItem="3154" secondAttribute="bottom" id="dr1-Td-AYx"/>
+                    </constraints>
+                </view>
+                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TXS-xZ-k8o">
+                    <rect key="frame" x="0.0" y="59" width="414" height="753"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <wkWebViewConfiguration key="configuration">
+                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                        <wkPreferences key="preferences"/>
+                    </wkWebViewConfiguration>
+                </wkWebView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Whz-wn-0nx"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="TXS-xZ-k8o" firstAttribute="trailing" secondItem="Whz-wn-0nx" secondAttribute="trailing" id="7Wp-bH-Ama"/>
+                <constraint firstItem="TXS-xZ-k8o" firstAttribute="leading" secondItem="Whz-wn-0nx" secondAttribute="leading" id="BIx-iK-KAB"/>
+                <constraint firstItem="jRC-4D-Nvg" firstAttribute="trailing" secondItem="Whz-wn-0nx" secondAttribute="trailing" id="HUK-Ky-xgQ"/>
+                <constraint firstItem="jRC-4D-Nvg" firstAttribute="centerX" secondItem="Whz-wn-0nx" secondAttribute="centerX" id="W5G-jj-T0J"/>
+                <constraint firstItem="jRC-4D-Nvg" firstAttribute="leading" secondItem="Whz-wn-0nx" secondAttribute="leading" id="Zq5-c2-1Im"/>
+                <constraint firstItem="TXS-xZ-k8o" firstAttribute="top" secondItem="Whz-wn-0nx" secondAttribute="top" constant="15" id="pXB-Mh-915"/>
+                <constraint firstItem="jRC-4D-Nvg" firstAttribute="top" secondItem="TXS-xZ-k8o" secondAttribute="bottom" id="tml-mZ-gCu"/>
+                <constraint firstAttribute="bottom" secondItem="jRC-4D-Nvg" secondAttribute="bottom" id="vg2-Z7-lJM"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="153.34821428571428"/>
+        </view>
+    </objects>
+</document>

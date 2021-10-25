@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LocateServiceProviderChooseSearchTypeView">
+            <connections>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+                <outlet property="scrollContainer" destination="345" id="name-outlet-345"/>
+                <outlet property="locationScrollLabel" destination="357" id="name-outlet-357"/>
+                <outlet property="makeSelectionLabel" destination="358" id="name-outlet-358"/>
+                <outlet property="locationTypeTableView" destination="1476" id="name-outlet-1476"/>
+                <outlet property="searchScrollLabel" destination="4528" id="name-outlet-4528"/>
+                <outlet property="narrowLabel" destination="4533" id="name-outlet-4533"/>
+                <outlet property="tableView" destination="5530" id="name-outlet-5530"/>
+                <outlet property="continueButton" destination="5539" id="name-outlet-5539"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="345" translatesAutoresizingMaskIntoConstraints="NO">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" id="350" translatesAutoresizingMaskIntoConstraints="NO">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="357" translatesAutoresizingMaskIntoConstraints="NO">
+                                    <rect key="frame" x="33" y="30" width="325" height="25"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <constraints>
+                                        <constraint id="362" firstItem="357" firstAttribute="height" constant="25"/>
+                                    </constraints>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="358" translatesAutoresizingMaskIntoConstraints="NO">
+                                    <rect key="frame" x="33" y="63" width="325" height="25"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <constraints>
+                                        <constraint id="366" firstItem="358" firstAttribute="height" constant="25"/>
+                                    </constraints>
+                                </label>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1476" customClass="GSCTableView" translatesAutoresizingMaskIntoConstraints="NO">
+                                    <rect key="frame" x="8" y="96" width="359" height="160"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint id="3411" firstItem="1476" firstAttribute="height" constant="160"/>
+                                    </constraints>
+                                </tableView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4528" translatesAutoresizingMaskIntoConstraints="NO">
+                                    <rect key="frame" x="33" y="292" width="325" height="25"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <constraints>
+                                        <constraint id="4532" firstItem="4528" firstAttribute="height" constant="25"/>
+                                    </constraints>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4533" translatesAutoresizingMaskIntoConstraints="NO">
+                                    <rect key="frame" x="33" y="325" width="325" height="25"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <constraints>
+                                        <constraint id="4537" firstItem="4533" firstAttribute="height" constant="25"/>
+                                    </constraints>
+                                </label>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="5530" customClass="GSCTableView" translatesAutoresizingMaskIntoConstraints="NO">
+                                    <rect key="frame" x="8" y="356" width="359" height="292"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint id="6778" firstItem="5530" firstAttribute="height" constant="292"/>
+                                    </constraints>
+                                </tableView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5539" customClass="GSButton" translatesAutoresizingMaskIntoConstraints="NO">
+                                    <rect key="frame" x="94" y="656" width="186" height="35"/>
+                                    <state key="normal" title="Button"/>
+                                    <constraints>
+                                        <constraint id="5838" firstItem="5539" firstAttribute="height" constant="35"/>
+                                    </constraints>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint id="363" firstItem="358" firstAttribute="top" secondItem="357" secondAttribute="bottom" constant="8"/>
+                                <constraint id="2644" firstItem="357" firstAttribute="top" secondItem="350" secondAttribute="top" constant="30"/>
+                                <constraint id="2838" firstItem="357" firstAttribute="leading" secondItem="350" secondAttribute="leadingMargin" constant="25"/>
+                                <constraint id="2839" firstItem="350" firstAttribute="trailing" secondItem="357" secondAttribute="trailingMargin" constant="25"/>
+                                <constraint id="2840" firstItem="358" firstAttribute="leading" secondItem="350" secondAttribute="leadingMargin" constant="25"/>
+                                <constraint id="2841" firstItem="350" firstAttribute="trailing" secondItem="358" secondAttribute="trailingMargin" constant="25"/>
+                                <constraint id="5234" firstItem="1476" firstAttribute="leading" secondItem="350" secondAttribute="leadingMargin"/>
+                                <constraint id="5235" firstItem="1476" firstAttribute="trailing" secondItem="350" secondAttribute="trailingMargin"/>
+                                <constraint id="5236" firstItem="1476" firstAttribute="top" secondItem="358" secondAttribute="bottom" constant="8"/>
+                                <constraint id="5237" firstItem="4528" firstAttribute="leading" secondItem="350" secondAttribute="leadingMargin" constant="25"/>
+                                <constraint id="5238" firstItem="350" firstAttribute="trailing" secondItem="4528" secondAttribute="trailingMargin" constant="25"/>
+                                <constraint id="5239" firstItem="4528" firstAttribute="top" secondItem="1476" secondAttribute="bottom" constant="36"/>
+                                <constraint id="5240" firstItem="4533" firstAttribute="leading" secondItem="350" secondAttribute="leadingMargin" constant="25"/>
+                                <constraint id="5241" firstItem="350" firstAttribute="trailing" secondItem="4533" secondAttribute="trailingMargin" constant="25"/>
+                                <constraint id="5242" firstItem="4533" firstAttribute="top" secondItem="4528" secondAttribute="bottom" constant="8"/>
+                                <constraint id="5533" firstItem="5530" firstAttribute="top" secondItem="4533" secondAttribute="bottom" constant="6"/>
+                                <constraint id="5537" firstItem="5530" firstAttribute="leading" secondItem="350" secondAttribute="leadingMargin"/>
+                                <constraint id="5538" firstItem="5530" firstAttribute="trailing" secondItem="350" secondAttribute="trailingMargin"/>
+                                <constraint id="6779" firstItem="5539" firstAttribute="top" secondItem="5530" secondAttribute="bottom" constant="8"/>
+                                <constraint id="6780" firstItem="5539" firstAttribute="leading" secondItem="350" secondAttribute="leading" constant="94"/>
+                                <constraint id="6781" firstItem="350" firstAttribute="trailing" secondItem="5539" secondAttribute="trailing" constant="95"/>
+                                <constraint id="6782" firstItem="350" firstAttribute="bottom" secondItem="5539" secondAttribute="bottom" constant="121"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint id="351" firstItem="350" firstAttribute="top" secondItem="345" secondAttribute="top"/>
+                        <constraint id="352" firstItem="350" firstAttribute="leading" secondItem="345" secondAttribute="leading"/>
+                        <constraint id="353" firstItem="350" firstAttribute="bottom" secondItem="345" secondAttribute="bottom"/>
+                        <constraint id="354" firstItem="350" firstAttribute="trailing" secondItem="345" secondAttribute="trailing"/>
+                        <constraint id="355" firstItem="350" firstAttribute="height" secondItem="345" secondAttribute="height" priority="999"/>
+                        <constraint id="356" firstItem="350" firstAttribute="width" secondItem="345" secondAttribute="width"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <constraints>
+                <constraint id="346" firstItem="345" firstAttribute="top" secondItem="2" secondAttribute="top"/>
+                <constraint id="347" firstItem="345" firstAttribute="leading" secondItem="2" secondAttribute="leading"/>
+                <constraint id="348" firstItem="345" firstAttribute="bottom" secondItem="2" secondAttribute="bottom"/>
+                <constraint id="349" firstItem="345" firstAttribute="trailing" secondItem="2" secondAttribute="trailing"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

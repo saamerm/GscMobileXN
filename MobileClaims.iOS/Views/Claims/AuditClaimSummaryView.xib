@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AuditClaimSummaryView">
+            <connections>
+                <outlet property="AuditDueDateLabel" destination="47A-0b-Gjb" id="JnT-O9-vbv"/>
+                <outlet property="AuditDueDateValueLabel" destination="Orz-X0-Opb" id="sfq-sT-tWF"/>
+                <outlet property="AuditInformationLabel" destination="0lY-UW-Ud5" id="UIa-eD-tYM"/>
+                <outlet property="AuditInformationValueLabel" destination="4yJ-k3-gR5" id="ZHd-6p-fZM"/>
+                <outlet property="AuditStatusLabel" destination="PMm-0e-yJc" id="xDd-RO-uBP"/>
+                <outlet property="AuditValueLabel" destination="pmO-E6-X3x" id="qGh-55-tut"/>
+                <outlet property="ClaimDetailsTitleLabel" destination="GM0-5p-bNJ" id="Q3g-hE-8aG"/>
+                <outlet property="ClaimFormNumberLabel" destination="cdW-PP-knq" id="3Dy-sQ-Ecd"/>
+                <outlet property="ClaimFormNumberValueLabel" destination="gYE-v1-UYC" id="Xiz-GE-iST"/>
+                <outlet property="ClaimSummaryDetailView" destination="FUY-Lv-wkY" id="w64-7H-Ofa"/>
+                <outlet property="ClaimsCollectionView" destination="nLO-TG-1dI" id="em9-5p-Q0T"/>
+                <outlet property="ClaimsCollectionViewHeightConstraint" destination="eVS-uL-gov" id="nR4-Hd-xwu"/>
+                <outlet property="ContentViewHeightConstraint" destination="pjp-Gg-dsE" id="N07-pk-jUL"/>
+                <outlet property="CopContainer" destination="ovf-U9-OeD" id="Wdb-PS-hvh"/>
+                <outlet property="CopContainerHeightConstraint" destination="5xd-rU-PNh" id="8mK-rQ-4ET"/>
+                <outlet property="FooterNoteLabel" destination="xRG-d3-cdo" id="pxE-si-dSf"/>
+                <outlet property="FooterTitleLabel" destination="2nO-Sc-DTG" id="MJt-Zq-gEk"/>
+                <outlet property="GSCNumberLabel" destination="6201" id="hhl-I8-5pI"/>
+                <outlet property="GSCNumberValueLabel" destination="kSh-am-qJ1" id="jgo-mN-ptA"/>
+                <outlet property="ParticipantLabel" destination="H6j-Ur-R63" id="ZYq-sL-pc5"/>
+                <outlet property="PlanInformationTitleLabel" destination="9TO-b4-lwb" id="pcV-hW-2qK"/>
+                <outlet property="ScrollViewBottomConstraint" destination="mGi-0W-668" id="yFP-IJ-yNx"/>
+                <outlet property="SubmissionDateLabel" destination="xw3-XZ-GM4" id="YVM-yP-u7G"/>
+                <outlet property="SubmissionDateValueLabel" destination="9dp-ay-NuM" id="hhJ-o6-pJN"/>
+                <outlet property="UploadDocMessageLabel" destination="U8j-d0-IRc" id="YpX-GN-9Xq"/>
+                <outlet property="UploadDocumentsButton" destination="2419" id="7a8-2y-Zzx"/>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2" userLabel="ClaimFormDetailView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NZC-wa-Igi">
+                    <rect key="frame" x="0.0" y="44" width="414" height="775"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dbu-Tk-I2G" userLabel="ContentView">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="532.66666666666663"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JACK SOARES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6j-Ur-R63">
+                                    <rect key="frame" x="14" y="9.9999999999999982" width="386" height="23.333333333333329"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                    <userDefinedRuntimeAttributes>                                         <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NunitoSans-Regular"/>                                     </userDefinedRuntimeAttributes>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FUY-Lv-wkY" userLabel="ClaimSummaryDetailView">
+                                    <rect key="frame" x="10" y="45.333333333333343" width="394" height="467.33333333333326"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLAN INFORMATION" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9TO-b4-lwb">
+                                            <rect key="frame" x="20" y="25" width="354" height="20.333333333333329"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xcp-Hq-Qlm" userLabel="ClaimSummaryHeader">
+                                            <rect key="frame" x="0.0" y="60.333333333333329" width="394" height="67.999999999999986"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8rV-Cu-geq" userLabel="GSCNumberLabelView">
+                                                    <rect key="frame" x="0.0" y="0.0" width="216.66666666666666" height="16.666666666666668"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Green Shield Number" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6201" customClass="AlignableLabel">
+                                                            <rect key="frame" x="20" y="0.0" width="176.66666666666666" height="16.666666666666668"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                                            <userDefinedRuntimeAttributes>                                                             <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NunitoSans-Regular"/>                                                             </userDefinedRuntimeAttributes>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="6201" secondAttribute="trailing" constant="20" id="4Y7-9w-msW"/>
+                                                        <constraint firstItem="6201" firstAttribute="top" secondItem="8rV-Cu-geq" secondAttribute="top" id="Sta-2q-ati"/>
+                                                        <constraint firstAttribute="bottom" secondItem="6201" secondAttribute="bottom" id="hCf-s9-y0O"/>
+                                                        <constraint firstItem="6201" firstAttribute="leading" secondItem="8rV-Cu-geq" secondAttribute="leading" constant="20" id="iDI-IB-Efp"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lyM-Ji-zbG" userLabel="GSCNumberValueView">
+                                                    <rect key="frame" x="216.66666666666663" y="0.0" width="177.33333333333337" height="16.666666666666668"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Green Shield Number" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSh-am-qJ1" customClass="AlignableLabel">
+                                                            <rect key="frame" x="0.0" y="0.0" width="157.33333333333334" height="16.666666666666668"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                                            <userDefinedRuntimeAttributes>                                                             <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NunitoSans-Regular"/>                                                             </userDefinedRuntimeAttributes>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="kSh-am-qJ1" secondAttribute="bottom" id="33I-SQ-CQZ"/>
+                                                        <constraint firstItem="kSh-am-qJ1" firstAttribute="leading" secondItem="lyM-Ji-zbG" secondAttribute="leading" id="BOM-d5-JfV"/>
+                                                        <constraint firstItem="kSh-am-qJ1" firstAttribute="top" secondItem="lyM-Ji-zbG" secondAttribute="top" id="gpf-fa-ftg"/>
+                                                        <constraint firstAttribute="trailing" secondItem="kSh-am-qJ1" secondAttribute="trailing" constant="20" id="zol-7G-aj2"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jfB-zS-fNI" userLabel="ClaimFormNumberLabelView">
+                                                    <rect key="frame" x="0.0" y="25.666666666666686" width="216.66666666666666" height="16.666666666666671"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Claim Form Number" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdW-PP-knq" customClass="AlignableLabel">
+                                                            <rect key="frame" x="20" y="0.0" width="176.66666666666666" height="16.666666666666668"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                                            <userDefinedRuntimeAttributes>                                                             <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NunitoSans-Regular"/>                                                             </userDefinedRuntimeAttributes>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="cdW-PP-knq" secondAttribute="bottom" id="4zt-VH-beW"/>
+                                                        <constraint firstItem="cdW-PP-knq" firstAttribute="leading" secondItem="jfB-zS-fNI" secondAttribute="leading" constant="20" id="DeJ-ke-ZMk"/>
+                                                        <constraint firstAttribute="trailing" secondItem="cdW-PP-knq" secondAttribute="trailing" constant="20" id="Spj-Fc-q4c"/>
+                                                        <constraint firstItem="cdW-PP-knq" firstAttribute="top" secondItem="jfB-zS-fNI" secondAttribute="top" id="U0I-64-29o"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lPi-D5-a6h" userLabel="ClaimFormNumberValueView">
+                                                    <rect key="frame" x="216.66666666666663" y="25.666666666666686" width="177.33333333333337" height="16.666666666666671"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123-456-789" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYE-v1-UYC" customClass="AlignableLabel">
+                                                            <rect key="frame" x="0.0" y="0.0" width="157.33333333333334" height="16.666666666666668"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                                            <userDefinedRuntimeAttributes>                                                                 <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NunitoSans-Regular"/>                                                             </userDefinedRuntimeAttributes>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="gYE-v1-UYC" secondAttribute="bottom" id="93y-Bs-4JC"/>
+                                                        <constraint firstItem="gYE-v1-UYC" firstAttribute="top" secondItem="lPi-D5-a6h" secondAttribute="top" id="AMx-eB-PR1"/>
+                                                        <constraint firstItem="gYE-v1-UYC" firstAttribute="leading" secondItem="lPi-D5-a6h" secondAttribute="leading" id="Ofm-C9-rE5"/>
+                                                        <constraint firstAttribute="trailing" secondItem="gYE-v1-UYC" secondAttribute="trailing" constant="20" id="Yil-wq-gGn"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2yV-ZT-LYS" userLabel="SubmissionDateLabelView">
+                                                    <rect key="frame" x="0.0" y="51.333333333333343" width="216.66666666666666" height="16.666666666666671"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Submission Date" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xw3-XZ-GM4" customClass="AlignableLabel">
+                                                            <rect key="frame" x="20" y="0.0" width="176.66666666666666" height="16.666666666666668"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                                            <userDefinedRuntimeAttributes>                                                                 <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NunitoSans-Regular"/>                                                             </userDefinedRuntimeAttributes>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="xw3-XZ-GM4" firstAttribute="leading" secondItem="2yV-ZT-LYS" secondAttribute="leading" constant="20" id="0u5-xE-82k"/>
+                                                        <constraint firstAttribute="trailing" secondItem="xw3-XZ-GM4" secondAttribute="trailing" constant="20" id="3To-JM-q2c"/>
+                                                        <constraint firstItem="xw3-XZ-GM4" firstAttribute="top" secondItem="2yV-ZT-LYS" secondAttribute="top" id="GHV-bN-6k6"/>
+                                                        <constraint firstAttribute="bottom" secondItem="xw3-XZ-GM4" secondAttribute="bottom" id="hDA-0d-fxc"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aPu-x5-YDn" userLabel="SubmissionDateValueView">
+                                                    <rect key="frame" x="216.66666666666663" y="51.333333333333343" width="177.33333333333337" height="16.666666666666671"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="31/05/2019" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dp-ay-NuM" customClass="AlignableLabel">
+                                                            <rect key="frame" x="0.0" y="0.0" width="157.33333333333334" height="16.666666666666668"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                                            <userDefinedRuntimeAttributes>                                                                 <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NunitoSans-Regular"/>                                                             </userDefinedRuntimeAttributes>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="9dp-ay-NuM" secondAttribute="bottom" id="9Pg-gH-eJC"/>
+                                                        <constraint firstAttribute="trailing" secondItem="9dp-ay-NuM" secondAttribute="trailing" constant="20" id="ekK-0p-Ash"/>
+                                                        <constraint firstItem="9dp-ay-NuM" firstAttribute="top" secondItem="aPu-x5-YDn" secondAttribute="top" id="lva-Wz-5un"/>
+                                                        <constraint firstItem="9dp-ay-NuM" firstAttribute="leading" secondItem="aPu-x5-YDn" secondAttribute="leading" id="ywI-dk-kY2"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="2yV-ZT-LYS" firstAttribute="width" secondItem="xcp-Hq-Qlm" secondAttribute="width" multiplier="0.55" id="0aE-CZ-q0G"/>
+                                                <constraint firstItem="lyM-Ji-zbG" firstAttribute="width" secondItem="xcp-Hq-Qlm" secondAttribute="width" multiplier="0.55" id="3yL-sy-iB0"/>
+                                                <constraint firstItem="lyM-Ji-zbG" firstAttribute="leading" secondItem="8rV-Cu-geq" secondAttribute="trailing" id="9Si-8q-ZbR"/>
+                                                <constraint firstItem="lPi-D5-a6h" firstAttribute="leading" secondItem="jfB-zS-fNI" secondAttribute="trailing" id="GbH-SC-LRf"/>
+                                                <constraint firstItem="jfB-zS-fNI" firstAttribute="width" secondItem="xcp-Hq-Qlm" secondAttribute="width" multiplier="0.55" id="HER-EK-JPG"/>
+                                                <constraint firstAttribute="trailing" secondItem="lyM-Ji-zbG" secondAttribute="trailing" id="HYS-AZ-1Fw"/>
+                                                <constraint firstItem="jfB-zS-fNI" firstAttribute="leading" secondItem="xcp-Hq-Qlm" secondAttribute="leading" id="KA6-Xu-SoU"/>
+                                                <constraint firstItem="2yV-ZT-LYS" firstAttribute="top" secondItem="jfB-zS-fNI" secondAttribute="bottom" constant="9" id="MWO-xL-AJx">
+                                                    <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                                </constraint>
+                                                <constraint firstItem="lPi-D5-a6h" firstAttribute="width" secondItem="xcp-Hq-Qlm" secondAttribute="width" multiplier="0.45" id="NqO-4B-mVa"/>
+                                                <constraint firstItem="aPu-x5-YDn" firstAttribute="width" secondItem="xcp-Hq-Qlm" secondAttribute="width" multiplier="0.45" id="OpA-cP-Ppk"/>
+                                                <constraint firstItem="aPu-x5-YDn" firstAttribute="leading" secondItem="2yV-ZT-LYS" secondAttribute="trailing" id="P8C-Kk-JTS"/>
+                                                <constraint firstItem="aPu-x5-YDn" firstAttribute="height" secondItem="2yV-ZT-LYS" secondAttribute="height" id="P9T-51-JKY"/>
+                                                <constraint firstItem="aPu-x5-YDn" firstAttribute="top" secondItem="2yV-ZT-LYS" secondAttribute="top" id="PMw-vb-MJw"/>
+                                                <constraint firstItem="2yV-ZT-LYS" firstAttribute="width" secondItem="xcp-Hq-Qlm" secondAttribute="width" multiplier="0.45" id="QH0-6B-SLv"/>
+                                                <constraint firstItem="jfB-zS-fNI" firstAttribute="width" secondItem="xcp-Hq-Qlm" secondAttribute="width" multiplier="0.45" id="Rkd-j9-IH2"/>
+                                                <constraint firstItem="8rV-Cu-geq" firstAttribute="top" secondItem="xcp-Hq-Qlm" secondAttribute="top" id="W6n-IQ-4LT"/>
+                                                <constraint firstItem="8rV-Cu-geq" firstAttribute="width" secondItem="xcp-Hq-Qlm" secondAttribute="width" multiplier="0.55" id="Wwl-Zt-aZX"/>
+                                                <constraint firstAttribute="bottom" secondItem="2yV-ZT-LYS" secondAttribute="bottom" id="Yi6-Q0-OZ9"/>
+                                                <constraint firstItem="8rV-Cu-geq" firstAttribute="leading" secondItem="xcp-Hq-Qlm" secondAttribute="leading" id="bnT-uy-oyq"/>
+                                                <constraint firstItem="8rV-Cu-geq" firstAttribute="width" secondItem="xcp-Hq-Qlm" secondAttribute="width" multiplier="0.45" id="dWA-Gv-VBG"/>
+                                                <constraint firstItem="lPi-D5-a6h" firstAttribute="height" secondItem="jfB-zS-fNI" secondAttribute="height" id="gq6-tl-cpF"/>
+                                                <constraint firstItem="lPi-D5-a6h" firstAttribute="top" secondItem="jfB-zS-fNI" secondAttribute="top" id="iDe-w7-huf"/>
+                                                <constraint firstItem="lyM-Ji-zbG" firstAttribute="top" secondItem="8rV-Cu-geq" secondAttribute="top" id="oyT-DR-YLP"/>
+                                                <constraint firstItem="lyM-Ji-zbG" firstAttribute="height" secondItem="8rV-Cu-geq" secondAttribute="height" id="q2l-Xe-81T"/>
+                                                <constraint firstItem="lyM-Ji-zbG" firstAttribute="width" secondItem="xcp-Hq-Qlm" secondAttribute="width" multiplier="0.45" id="rgv-Tz-heQ"/>
+                                                <constraint firstItem="2yV-ZT-LYS" firstAttribute="leading" secondItem="xcp-Hq-Qlm" secondAttribute="leading" id="rmS-W5-7XS"/>
+                                                <constraint firstItem="lPi-D5-a6h" firstAttribute="width" secondItem="xcp-Hq-Qlm" secondAttribute="width" multiplier="0.55" id="u7H-xP-8Zp"/>
+                                                <constraint firstItem="aPu-x5-YDn" firstAttribute="width" secondItem="xcp-Hq-Qlm" secondAttribute="width" multiplier="0.55" id="w81-yy-2ln"/>
+                                                <constraint firstItem="jfB-zS-fNI" firstAttribute="top" secondItem="8rV-Cu-geq" secondAttribute="bottom" constant="9" id="y4d-HI-fD9">
+                                                    <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                                </constraint>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="dWA-Gv-VBG"/>
+                                                    <exclude reference="Rkd-j9-IH2"/>
+                                                    <exclude reference="QH0-6B-SLv"/>
+                                                    <exclude reference="3yL-sy-iB0"/>
+                                                    <exclude reference="u7H-xP-8Zp"/>
+                                                    <exclude reference="w81-yy-2ln"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular-widthClass=regular">
+                                                <mask key="constraints">
+                                                    <exclude reference="Wwl-Zt-aZX"/>
+                                                    <include reference="dWA-Gv-VBG"/>
+                                                    <exclude reference="HER-EK-JPG"/>
+                                                    <include reference="Rkd-j9-IH2"/>
+                                                    <exclude reference="0aE-CZ-q0G"/>
+                                                    <include reference="QH0-6B-SLv"/>
+                                                    <include reference="3yL-sy-iB0"/>
+                                                    <exclude reference="rgv-Tz-heQ"/>
+                                                    <exclude reference="NqO-4B-mVa"/>
+                                                    <include reference="u7H-xP-8Zp"/>
+                                                    <exclude reference="OpA-cP-Ppk"/>
+                                                    <include reference="w81-yy-2ln"/>
+                                                </mask>
+                                            </variation>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CLAIM DETAILS" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GM0-5p-bNJ">
+                                            <rect key="frame" x="20" y="151.33333333333331" width="354" height="20.333333333333343"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="nLO-TG-1dI">
+                                            <rect key="frame" x="0.0" y="185.66666666666669" width="394" height="0.0"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" id="eVS-uL-gov"/>
+                                            </constraints>
+                                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="20O-Cy-Zoh">
+                                                <size key="itemSize" width="50" height="50"/>
+                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            </collectionViewFlowLayout>
+                                        </collectionView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lCv-MR-gEX" userLabel="ClaimSummaryFooter">
+                                            <rect key="frame" x="0.0" y="180.66666666666669" width="394" height="112.66666666666669"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AUDIT DETAILS" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2nO-Sc-DTG">
+                                                    <rect key="frame" x="20" y="0.0" width="354" height="24.666666666666668"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="18"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NunitoSans-Regular"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jbg-Yb-5T6" userLabel="AuditStatusLabelView">
+                                                    <rect key="frame" x="0.0" y="39.666666666666686" width="216.66666666666666" height="16.666666666666671"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Audit Status" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMm-0e-yJc" customClass="AlignableLabel">
+                                                            <rect key="frame" x="20" y="0.0" width="176.66666666666666" height="16.666666666666668"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                                            <userDefinedRuntimeAttributes>                                                                 <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NunitoSans-Regular"/>                                                             </userDefinedRuntimeAttributes>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="PMm-0e-yJc" secondAttribute="bottom" id="Mkr-qY-OaG"/>
+                                                        <constraint firstItem="PMm-0e-yJc" firstAttribute="leading" secondItem="Jbg-Yb-5T6" secondAttribute="leading" constant="20" id="P8b-Rd-qiF"/>
+                                                        <constraint firstItem="PMm-0e-yJc" firstAttribute="top" secondItem="Jbg-Yb-5T6" secondAttribute="top" id="VcZ-hd-aIP"/>
+                                                        <constraint firstAttribute="trailing" secondItem="PMm-0e-yJc" secondAttribute="trailing" constant="20" id="jTf-R1-8qu"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UdT-NA-tsx" userLabel="AuditStatusValueView">
+                                                    <rect key="frame" x="216.66666666666663" y="39.666666666666686" width="177.33333333333337" height="16.666666666666671"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Audit" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pmO-E6-X3x" customClass="AlignableLabel">
+                                                            <rect key="frame" x="0.0" y="0.0" width="157.33333333333334" height="16.666666666666668"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                                            <userDefinedRuntimeAttributes>                                                                 <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NunitoSans-Regular"/>                                                             </userDefinedRuntimeAttributes>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="pmO-E6-X3x" firstAttribute="top" secondItem="UdT-NA-tsx" secondAttribute="top" id="7pa-Dr-Q3O"/>
+                                                        <constraint firstItem="pmO-E6-X3x" firstAttribute="leading" secondItem="UdT-NA-tsx" secondAttribute="leading" id="G4g-QE-dxw"/>
+                                                        <constraint firstAttribute="trailing" secondItem="pmO-E6-X3x" secondAttribute="trailing" constant="20" id="L4o-cH-7IT"/>
+                                                        <constraint firstAttribute="bottom" secondItem="pmO-E6-X3x" secondAttribute="bottom" id="LYN-Op-ICK"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qb9-dT-N4f" userLabel="AuditDueDateLabelView">
+                                                    <rect key="frame" x="0.0" y="65.333333333333314" width="216.66666666666666" height="16.666666666666671"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Audit Due Date" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47A-0b-Gjb" customClass="AlignableLabel">
+                                                            <rect key="frame" x="20" y="0.0" width="176.66666666666666" height="16.666666666666668"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                                            <userDefinedRuntimeAttributes>                                                                 <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NunitoSans-Regular"/>                                                             </userDefinedRuntimeAttributes>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="47A-0b-Gjb" secondAttribute="trailing" constant="20" id="KDq-oi-njg"/>
+                                                        <constraint firstItem="47A-0b-Gjb" firstAttribute="top" secondItem="qb9-dT-N4f" secondAttribute="top" id="aZa-5a-ya0"/>
+                                                        <constraint firstAttribute="bottom" secondItem="47A-0b-Gjb" secondAttribute="bottom" id="pbA-SE-6Kr"/>
+                                                        <constraint firstItem="47A-0b-Gjb" firstAttribute="leading" secondItem="qb9-dT-N4f" secondAttribute="leading" constant="20" id="xOm-gc-Lkl"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nFP-mJ-GHl" userLabel="AuditDueDateValueView">
+                                                    <rect key="frame" x="216.66666666666663" y="65.333333333333314" width="177.33333333333337" height="16.666666666666671"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="05/31/2019" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Orz-X0-Opb" customClass="AlignableLabel">
+                                                            <rect key="frame" x="0.0" y="0.0" width="157.33333333333334" height="16.666666666666668"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                                            <userDefinedRuntimeAttributes>                                                                 <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NunitoSans-Regular"/>                                                             </userDefinedRuntimeAttributes>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="Orz-X0-Opb" secondAttribute="bottom" id="3JI-ip-Boe"/>
+                                                        <constraint firstItem="Orz-X0-Opb" firstAttribute="top" secondItem="nFP-mJ-GHl" secondAttribute="top" id="J3c-pP-dZC"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Orz-X0-Opb" secondAttribute="trailing" constant="20" id="Nvd-gy-xFH"/>
+                                                        <constraint firstItem="Orz-X0-Opb" firstAttribute="leading" secondItem="nFP-mJ-GHl" secondAttribute="leading" id="UhR-iY-mXY"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rpM-OQ-uyb" userLabel="AuditInformationLabelView">
+                                                    <rect key="frame" x="0.0" y="91" width="394" height="16.666666666666671"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Audit Information" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0lY-UW-Ud5">
+                                                            <rect key="frame" x="20" y="0.0" width="354" height="16.666666666666668"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="12"/>
+                                                            <userDefinedRuntimeAttributes>                                                                 <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NunitoSans-SemiBold"/>                                                             </userDefinedRuntimeAttributes>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="0lY-UW-Ud5" secondAttribute="trailing" constant="20" id="51y-Kk-5qg"/>
+                                                        <constraint firstAttribute="bottom" secondItem="0lY-UW-Ud5" secondAttribute="bottom" id="Wr6-CB-HiD"/>
+                                                        <constraint firstItem="0lY-UW-Ud5" firstAttribute="top" secondItem="rpM-OQ-uyb" secondAttribute="top" id="Yey-7N-5yS"/>
+                                                        <constraint firstItem="0lY-UW-Ud5" firstAttribute="leading" secondItem="rpM-OQ-uyb" secondAttribute="leading" constant="20" id="gTf-CX-hmN"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ryj-kD-Onm" userLabel="AuditInformationValueView">
+                                                    <rect key="frame" x="0.0" y="112.66666666666669" width="394" height="0.0"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yJ-k3-gR5">
+                                                            <rect key="frame" x="20" y="0.0" width="354" height="0.0"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="4yJ-k3-gR5" secondAttribute="bottom" id="0Hu-uQ-RXa"/>
+                                                        <constraint firstAttribute="trailing" secondItem="4yJ-k3-gR5" secondAttribute="trailing" constant="20" id="SHM-Y0-yaE"/>
+                                                        <constraint firstItem="4yJ-k3-gR5" firstAttribute="leading" secondItem="Ryj-kD-Onm" secondAttribute="leading" constant="20" id="bd9-QK-dZ2"/>
+                                                        <constraint firstItem="4yJ-k3-gR5" firstAttribute="top" secondItem="Ryj-kD-Onm" secondAttribute="top" id="xex-en-9z9"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="Ryj-kD-Onm" firstAttribute="leading" secondItem="lCv-MR-gEX" secondAttribute="leading" id="0bz-Pd-v08"/>
+                                                <constraint firstAttribute="trailing" secondItem="rpM-OQ-uyb" secondAttribute="trailing" id="1h7-2x-sQV"/>
+                                                <constraint firstItem="rpM-OQ-uyb" firstAttribute="leading" secondItem="lCv-MR-gEX" secondAttribute="leading" id="1nN-a7-KLt"/>
+                                                <constraint firstItem="2nO-Sc-DTG" firstAttribute="top" secondItem="lCv-MR-gEX" secondAttribute="top" id="34I-Xd-aFS"/>
+                                                <constraint firstItem="UdT-NA-tsx" firstAttribute="top" secondItem="Jbg-Yb-5T6" secondAttribute="top" id="3KU-dl-9P0"/>
+                                                <constraint firstItem="UdT-NA-tsx" firstAttribute="width" secondItem="lCv-MR-gEX" secondAttribute="width" multiplier="0.45" id="4Ej-Ki-YeS"/>
+                                                <constraint firstAttribute="bottom" secondItem="Ryj-kD-Onm" secondAttribute="bottom" id="6XW-qm-5tQ"/>
+                                                <constraint firstItem="nFP-mJ-GHl" firstAttribute="height" secondItem="qb9-dT-N4f" secondAttribute="height" id="9FQ-Qg-371"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ryj-kD-Onm" secondAttribute="trailing" id="Eiz-Lp-5DT"/>
+                                                <constraint firstItem="UdT-NA-tsx" firstAttribute="height" secondItem="Jbg-Yb-5T6" secondAttribute="height" id="FXS-zT-5uw"/>
+                                                <constraint firstItem="UdT-NA-tsx" firstAttribute="leading" secondItem="Jbg-Yb-5T6" secondAttribute="trailing" id="Fgl-F8-pmg"/>
+                                                <constraint firstItem="2nO-Sc-DTG" firstAttribute="leading" secondItem="lCv-MR-gEX" secondAttribute="leading" constant="20" id="G1N-bl-AR8"/>
+                                                <constraint firstItem="qb9-dT-N4f" firstAttribute="width" secondItem="lCv-MR-gEX" secondAttribute="width" multiplier="0.55" id="GYN-ND-8NY"/>
+                                                <constraint firstItem="Jbg-Yb-5T6" firstAttribute="leading" secondItem="lCv-MR-gEX" secondAttribute="leading" id="KWK-Lw-OlM"/>
+                                                <constraint firstItem="qb9-dT-N4f" firstAttribute="top" secondItem="Jbg-Yb-5T6" secondAttribute="bottom" constant="9" id="OSS-Tp-xKo">
+                                                    <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                                </constraint>
+                                                <constraint firstItem="nFP-mJ-GHl" firstAttribute="leading" secondItem="qb9-dT-N4f" secondAttribute="trailing" id="QcS-Ub-gNK"/>
+                                                <constraint firstAttribute="trailing" secondItem="UdT-NA-tsx" secondAttribute="trailing" id="SuV-iE-eKF"/>
+                                                <constraint firstItem="qb9-dT-N4f" firstAttribute="leading" secondItem="lCv-MR-gEX" secondAttribute="leading" id="V9E-k9-Ou3"/>
+                                                <constraint firstItem="nFP-mJ-GHl" firstAttribute="width" secondItem="lCv-MR-gEX" secondAttribute="width" multiplier="0.45" id="aub-Ik-WPS"/>
+                                                <constraint firstItem="rpM-OQ-uyb" firstAttribute="top" secondItem="qb9-dT-N4f" secondAttribute="bottom" constant="9" id="cAW-m9-A0U">
+                                                    <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                                </constraint>
+                                                <constraint firstItem="nFP-mJ-GHl" firstAttribute="width" secondItem="lCv-MR-gEX" secondAttribute="width" multiplier="0.55" id="fEn-QQ-4fU"/>
+                                                <constraint firstItem="nFP-mJ-GHl" firstAttribute="top" secondItem="qb9-dT-N4f" secondAttribute="top" id="fNb-Xo-OIk"/>
+                                                <constraint firstItem="Ryj-kD-Onm" firstAttribute="top" secondItem="rpM-OQ-uyb" secondAttribute="bottom" constant="5" id="g4j-Sm-Ygi">
+                                                    <variation key="heightClass=regular-widthClass=regular" constant="12"/>
+                                                </constraint>
+                                                <constraint firstAttribute="trailing" secondItem="2nO-Sc-DTG" secondAttribute="trailing" constant="20" id="hQR-r8-4xi"/>
+                                                <constraint firstItem="UdT-NA-tsx" firstAttribute="width" secondItem="lCv-MR-gEX" secondAttribute="width" multiplier="0.55" id="kHu-jd-7ux"/>
+                                                <constraint firstItem="qb9-dT-N4f" firstAttribute="width" secondItem="lCv-MR-gEX" secondAttribute="width" multiplier="0.45" id="mW0-97-RKH"/>
+                                                <constraint firstItem="Jbg-Yb-5T6" firstAttribute="top" secondItem="2nO-Sc-DTG" secondAttribute="bottom" constant="15" id="wHy-qo-rou">
+                                                    <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                                                </constraint>
+                                                <constraint firstItem="Jbg-Yb-5T6" firstAttribute="width" secondItem="lCv-MR-gEX" secondAttribute="width" multiplier="0.55" id="zMa-Ds-8KL"/>
+                                                <constraint firstItem="Jbg-Yb-5T6" firstAttribute="width" secondItem="lCv-MR-gEX" secondAttribute="width" multiplier="0.45" id="zN4-Oe-3PB"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="zN4-Oe-3PB"/>
+                                                    <exclude reference="mW0-97-RKH"/>
+                                                    <exclude reference="kHu-jd-7ux"/>
+                                                    <exclude reference="fEn-QQ-4fU"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular-widthClass=regular">
+                                                <mask key="constraints">
+                                                    <exclude reference="zMa-Ds-8KL"/>
+                                                    <include reference="zN4-Oe-3PB"/>
+                                                    <exclude reference="GYN-ND-8NY"/>
+                                                    <include reference="mW0-97-RKH"/>
+                                                    <exclude reference="4Ej-Ki-YeS"/>
+                                                    <include reference="kHu-jd-7ux"/>
+                                                    <exclude reference="aub-Ik-WPS"/>
+                                                    <include reference="fEn-QQ-4fU"/>
+                                                </mask>
+                                            </variation>
+                                        </view>
+                                        <view contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="ovf-U9-OeD">
+                                            <rect key="frame" x="0.0" y="330.33333333333337" width="394" height="100"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Please upload documents for this claim" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8j-d0-IRc">
+                                                    <rect key="frame" x="20" y="2" width="354" height="19.333333333333332"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2419" customClass="GSButton">
+                                                    <rect key="frame" x="62" y="30.333333333333314" width="270" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="270" id="FzS-Gh-sde">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="400"/>
+                                                        </constraint>
+                                                        <constraint firstAttribute="height" constant="44" id="VQS-5l-EXC">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                                                        </constraint>
+                                                    </constraints>
+                                                    <state key="normal" title="Button"/>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Photo/file size must be less than 24MB" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xRG-d3-cdo">
+                                                    <rect key="frame" x="20" y="83.333333333333314" width="354" height="16.666666666666671"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="12"/>
+                                                    <userDefinedRuntimeAttributes>                                                         <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NunitoSans-SemiBold"/>                                                     </userDefinedRuntimeAttributes>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="108" id="5xd-rU-PNh">
+                                                    <variation key="heightClass=regular-widthClass=regular" constant="158"/>
+                                                </constraint>
+                                                <constraint firstAttribute="bottom" secondItem="xRG-d3-cdo" secondAttribute="bottom" id="7LF-KV-Q9q"/>
+                                                <constraint firstItem="xRG-d3-cdo" firstAttribute="leading" secondItem="ovf-U9-OeD" secondAttribute="leading" constant="20" id="9Ce-ba-qVe"/>
+                                                <constraint firstItem="2419" firstAttribute="top" secondItem="U8j-d0-IRc" secondAttribute="bottom" constant="9" id="9ne-0R-WwG">
+                                                    <variation key="heightClass=regular-widthClass=regular" constant="16"/>
+                                                </constraint>
+                                                <constraint firstAttribute="trailing" secondItem="xRG-d3-cdo" secondAttribute="trailing" constant="20" id="KIz-cC-Y5m"/>
+                                                <constraint firstItem="2419" firstAttribute="centerX" secondItem="ovf-U9-OeD" secondAttribute="centerX" id="NSp-UR-TKU"/>
+                                                <constraint firstItem="U8j-d0-IRc" firstAttribute="top" secondItem="ovf-U9-OeD" secondAttribute="top" constant="2" id="QAZ-a7-ALv"/>
+                                                <constraint firstItem="xRG-d3-cdo" firstAttribute="centerX" secondItem="ovf-U9-OeD" secondAttribute="centerX" id="cqh-0P-sEY"/>
+                                                <constraint firstAttribute="trailing" secondItem="U8j-d0-IRc" secondAttribute="trailing" constant="20" id="gLt-8p-G0O"/>
+                                                <constraint firstItem="U8j-d0-IRc" firstAttribute="centerX" secondItem="ovf-U9-OeD" secondAttribute="centerX" id="iUh-PX-2vY"/>
+                                                <constraint firstItem="U8j-d0-IRc" firstAttribute="leading" secondItem="ovf-U9-OeD" secondAttribute="leading" constant="20" id="kVV-9O-hWG"/>
+                                                <constraint firstItem="xRG-d3-cdo" firstAttribute="top" secondItem="2419" secondAttribute="bottom" constant="9" id="mHT-OY-n0v">
+                                                    <variation key="heightClass=regular-widthClass=regular" constant="18"/>
+                                                </constraint>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="5xd-rU-PNh"/>
+                                                </mask>
+                                            </variation>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="lCv-MR-gEX" firstAttribute="top" secondItem="nLO-TG-1dI" secondAttribute="bottom" constant="-5" id="5wr-ep-8HT">
+                                            <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                                        </constraint>
+                                        <constraint firstItem="lCv-MR-gEX" firstAttribute="leading" secondItem="FUY-Lv-wkY" secondAttribute="leading" id="60B-Rb-I9K"/>
+                                        <constraint firstItem="nLO-TG-1dI" firstAttribute="leading" secondItem="FUY-Lv-wkY" secondAttribute="leading" id="96p-jK-gSI"/>
+                                        <constraint firstItem="ovf-U9-OeD" firstAttribute="top" secondItem="lCv-MR-gEX" secondAttribute="bottom" constant="37" id="A9v-yU-nhd"/>
+                                        <constraint firstAttribute="trailing" secondItem="lCv-MR-gEX" secondAttribute="trailing" id="CJ4-FC-J92"/>
+                                        <constraint firstItem="ovf-U9-OeD" firstAttribute="leading" secondItem="FUY-Lv-wkY" secondAttribute="leading" id="EWG-Nk-In9"/>
+                                        <constraint firstItem="9TO-b4-lwb" firstAttribute="top" secondItem="FUY-Lv-wkY" secondAttribute="top" constant="25" id="LnC-hW-Dt1">
+                                            <variation key="heightClass=regular-widthClass=regular" constant="33"/>
+                                        </constraint>
+                                        <constraint firstAttribute="trailing" secondItem="9TO-b4-lwb" secondAttribute="trailing" constant="20" id="MvM-q9-HAw"/>
+                                        <constraint firstAttribute="trailing" secondItem="ovf-U9-OeD" secondAttribute="trailing" id="Rlw-kc-4Yh"/>
+                                        <constraint firstAttribute="trailing" secondItem="xcp-Hq-Qlm" secondAttribute="trailing" id="SOg-Ok-9rt"/>
+                                        <constraint firstItem="nLO-TG-1dI" firstAttribute="top" secondItem="GM0-5p-bNJ" secondAttribute="bottom" constant="14" id="TRO-Cd-kD4">
+                                            <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                                        </constraint>
+                                        <constraint firstAttribute="trailing" secondItem="GM0-5p-bNJ" secondAttribute="trailing" constant="20" id="VL1-EL-U6K"/>
+                                        <constraint firstItem="GM0-5p-bNJ" firstAttribute="leading" secondItem="FUY-Lv-wkY" secondAttribute="leading" constant="20" id="XJN-FV-QH2"/>
+                                        <constraint firstItem="GM0-5p-bNJ" firstAttribute="top" secondItem="xcp-Hq-Qlm" secondAttribute="bottom" constant="23" id="cKp-4X-P6x">
+                                            <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                                        </constraint>
+                                        <constraint firstItem="xcp-Hq-Qlm" firstAttribute="top" secondItem="9TO-b4-lwb" secondAttribute="bottom" constant="15" id="ePM-Bj-MLX">
+                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                        </constraint>
+                                        <constraint firstAttribute="trailing" secondItem="nLO-TG-1dI" secondAttribute="trailing" id="fyE-iI-bRi"/>
+                                        <constraint firstItem="xcp-Hq-Qlm" firstAttribute="leading" secondItem="FUY-Lv-wkY" secondAttribute="leading" id="ied-pL-sNJ"/>
+                                        <constraint firstAttribute="bottom" secondItem="ovf-U9-OeD" secondAttribute="bottom" constant="37" id="oPt-Eg-gE0"/>
+                                        <constraint firstItem="9TO-b4-lwb" firstAttribute="leading" secondItem="FUY-Lv-wkY" secondAttribute="leading" constant="20" id="vdu-f2-c1s"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="FUY-Lv-wkY" secondAttribute="bottom" constant="20" id="34g-rO-1ip">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                                </constraint>
+                                <constraint firstItem="FUY-Lv-wkY" firstAttribute="top" secondItem="H6j-Ur-R63" secondAttribute="bottom" constant="12" id="Gmf-Da-l68">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="16"/>
+                                </constraint>
+                                <constraint firstAttribute="trailing" secondItem="FUY-Lv-wkY" secondAttribute="trailing" constant="10" id="X6S-V2-789">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="32"/>
+                                </constraint>
+                                <constraint firstItem="FUY-Lv-wkY" firstAttribute="leading" secondItem="dbu-Tk-I2G" secondAttribute="leading" constant="10" id="Zac-eQ-lZy">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="32"/>
+                                </constraint>
+                                <constraint firstItem="H6j-Ur-R63" firstAttribute="top" secondItem="dbu-Tk-I2G" secondAttribute="top" constant="10" id="gZ1-U1-IoA">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="32"/>
+                                </constraint>
+                                <constraint firstAttribute="bottom" secondItem="FUY-Lv-wkY" secondAttribute="bottom" id="jAK-KZ-Pdg"/>
+                                <constraint firstItem="H6j-Ur-R63" firstAttribute="leading" secondItem="dbu-Tk-I2G" secondAttribute="leading" constant="14" id="uB9-zr-tLV">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="32"/>
+                                </constraint>
+                                <constraint firstAttribute="trailing" secondItem="H6j-Ur-R63" secondAttribute="trailing" constant="14" id="uFr-qd-4V3">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="32"/>
+                                </constraint>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="jAK-KZ-Pdg"/>
+                                </mask>
+                            </variation>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="dbu-Tk-I2G" secondAttribute="trailing" id="1kr-Ql-7Pa"/>
+                        <constraint firstItem="dbu-Tk-I2G" firstAttribute="leading" secondItem="NZC-wa-Igi" secondAttribute="leading" id="4yY-Fs-kGr"/>
+                        <constraint firstAttribute="bottom" secondItem="dbu-Tk-I2G" secondAttribute="bottom" id="aCy-Mp-u3o"/>
+                        <constraint firstItem="dbu-Tk-I2G" firstAttribute="top" secondItem="NZC-wa-Igi" secondAttribute="top" id="zEX-ky-ovy"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="NZC-wa-Igi" firstAttribute="top" secondItem="RKA-fi-4cj" secondAttribute="top" id="3O4-ZT-mcE"/>
+                <constraint firstItem="NZC-wa-Igi" firstAttribute="leading" secondItem="RKA-fi-4cj" secondAttribute="leading" id="Vaw-Pr-4Hx"/>
+                <constraint firstItem="NZC-wa-Igi" firstAttribute="trailing" secondItem="RKA-fi-4cj" secondAttribute="trailing" id="lTk-4f-4M7"/>
+                <constraint firstItem="NZC-wa-Igi" firstAttribute="bottom" secondItem="2" secondAttribute="bottom" constant="-77" id="mGi-0W-668"/>
+                <constraint firstItem="dbu-Tk-I2G" firstAttribute="height" secondItem="2" secondAttribute="height" priority="250" id="pjp-Gg-dsE"/>
+                <constraint firstItem="dbu-Tk-I2G" firstAttribute="width" secondItem="RKA-fi-4cj" secondAttribute="width" id="uT5-Fw-yx9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="RKA-fi-4cj"/>
+            <point key="canvasLocation" x="24.637681159420293" y="51.5625"/>
+        </view>
+    </objects>
+</document>

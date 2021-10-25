@@ -1,0 +1,385 @@
+﻿<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <gsc.HeaderTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:textAllCaps="true"
+        android:textColor="@color/highlight_color"
+        android:textSize="24sp"
+        local:MvxBind="Text Title" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp">
+
+        <TableRow
+            android:layout_marginBottom="5dp"
+            android:weightSum="1">
+
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_weight="0.44"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:lines="1"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMaxTextSize="18sp"                                                                    
+                android:textSize="18sp"
+                local:MvxBind="Text DateOfTreatmentLabel" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.56">
+
+                <ImageButton
+                    android:id="@+id/DateError"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginStart="8dp"
+                    android:background="@null"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/claims_error_icon"
+                    android:textSize="18sp" />
+
+                <gsc.SmallEditText
+                    android:id="@+id/DateOfTreatment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center"
+                    android:includeFontPadding="true"
+                    android:maxLength="60"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="18sp"
+                    local:MvxBind="Text Format('{0:MMMM dd, yyy}',DateOfTreatment); Background DateValid, Converter=ValidationBooleanToBackground" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="5dp"
+            android:weightSum="1">
+
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_weight="0.44"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:lines="1"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMaxTextSize="18sp"                                                                    
+                android:textSize="18sp"
+                local:MvxBind="Text ProcedureCodeLabel" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.56">
+
+                <ImageButton
+                    android:id="@+id/ProcedureCodeError"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginStart="8dp"
+                    android:background="@null"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/claims_error_icon"
+                    android:textSize="18sp" />
+
+                <gsc.SmallEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center"
+                    android:includeFontPadding="true"
+                    android:maxLength="5"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="18sp"
+                    local:MvxBind="Text ProcedureCode; Background ProcedureCodeValid, Converter=ValidationBooleanToBackground" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="5dp"
+            android:weightSum="1">
+
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_weight="0.44"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:lines="1"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMaxTextSize="18sp"                                                                    
+                android:textSize="18sp"
+                local:MvxBind="Text ToothCodeLabel; TextColor (IsToothCodeRequired), Converter=TextColorEnableDisable" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.56">
+
+                <ImageButton
+                    android:id="@+id/ToothCodeError"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginStart="8dp"
+                    android:background="@null"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/claims_error_icon"
+                    android:textSize="18sp" />
+
+                <gsc.SmallEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center"
+                    android:includeFontPadding="true"
+                    android:maxLength="2"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="18sp"
+                    local:MvxBind="Text ToothCode; Background ToothCodeValid, Converter=ValidationBooleanToBackground; Enabled IsToothCodeRequired" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="5dp"
+            android:weightSum="1">
+
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_weight="0.44"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:lines="1"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMaxTextSize="18sp"                                                                    
+                android:textSize="18sp"
+                local:MvxBind="Text ToothSurfacesLabel; TextColor (IsToothSurfaceRequired), Converter=TextColorEnableDisable" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.56">
+
+                <ImageButton
+                    android:id="@+id/ToothSurfacesError"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginStart="8dp"
+                    android:background="@null"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/claims_error_icon"
+                    android:textSize="18sp" />
+
+                <gsc.SmallEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center"
+                    android:includeFontPadding="true"
+                    android:maxLength="5"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="18sp"
+                    local:MvxBind="Text ToothSurfaces; Background ToothSurfacesValid, Converter=ValidationBooleanToBackground; Enabled IsToothSurfaceRequired" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="5dp"
+            android:weightSum="1">
+
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_weight="0.44"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:lines="1"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMaxTextSize="18sp"                                                                    
+                android:textSize="18sp"
+                local:MvxBind="Text DentistsFeeLabel" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.56">
+
+                <ImageButton
+                    android:id="@+id/DentistsFeeError"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginStart="8dp"
+                    android:background="@null"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/claims_error_icon"
+                    android:textSize="18sp" />
+
+                <gsc.SmallEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center"
+                    android:includeFontPadding="true"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_grey"
+                    android:lines="1"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMaxTextSize="18sp"                                                                    
+                    android:textSize="18sp"
+                    local:MvxBind="Text DentistsFeeStr; Background DentistsFeeValid, Converter=ValidationBooleanToBackground, Mode=TwoWay" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="5dp"
+            android:weightSum="1">
+
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_weight="0.44"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:lines="1"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMaxTextSize="18sp"                                                    
+                local:MvxBind="Text LaboratoryChargeLabel; TextColor (IsLabChargeRequired), Converter=TextColorEnableDisable;" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.56">
+
+                <ImageButton
+                    android:id="@+id/LaboratoryChargeError"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginStart="8dp"
+                    android:background="@null"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/claims_error_icon"
+                    android:textSize="18sp" />
+
+                <gsc.SmallEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center"
+                    android:includeFontPadding="true"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="18sp"
+                    local:MvxBind="Text LaboratoryChargeStr; Background LaboratoryChargeValid, Converter=ValidationBooleanToBackground; Enabled IsLabChargeRequired;" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="5dp"
+            android:weightSum="1"
+            local:MvxBind=" Visibility Visibility(IsAlternateCarrierAmountVisible)">
+
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_weight="0.44"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:lines="1"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMaxTextSize="18sp"                                                                    
+                android:textSize="18sp"
+                local:MvxBind="Text AlternateCarrierAmountLabel" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.56">
+
+                <ImageButton
+                    android:id="@+id/AlternateCarrierAmountError"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginStart="8dp"
+                    android:background="@null"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/claims_error_icon"
+                    android:textSize="18sp" />
+
+                <gsc.SmallEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center"
+                    android:includeFontPadding="true"
+                    android:inputType="numberDecimal"
+                    android:maxLength="10"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="18sp"
+                    local:MvxBind="Text AlternateCarrierAmountStr; Background AlternateCarrierAmountValid, Converter=ValidationBooleanToBackground;" />
+            </LinearLayout>
+        </TableRow>
+        
+    </TableLayout>
+
+    <gsc.GSCButton
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/ButtonBackground"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textAllCaps="true"
+        android:textColor="@drawable/ButtonTextColor"
+        android:textColorHighlight="@color/list_text_color"
+        android:textSize="24sp"
+        local:MvxBind="Text SaveLabel; Click SaveTreatmentCommand;" />
+
+</LinearLayout>

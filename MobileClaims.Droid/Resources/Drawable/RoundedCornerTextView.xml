@@ -1,0 +1,7 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+  <item  android:drawable="@drawable/RoundedCornersBorderWhite" android:state_checked="true"  />
+  <item  android:drawable="@drawable/RoundedCornersBorderWhite" android:state_pressed="true" />
+  <item  android:drawable="@drawable/RoundedCornersBorderWhite" android:state_selected="true"/>
+  <item  android:drawable="@drawable/RoundedCornersBorderWhite" android:state_activated="true" />
+  <item  android:drawable="@drawable/RoundedCornersBorderGreen" />
+    </selector>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:layout_width="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/background_color">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="@dimen/claim_margin"
+            android:layout_marginLeft="@dimen/claim_margin">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_color">
+                <gsc.HeaderTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    local:MvxBind="Text ClaimDetailsTitle"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:orientation="horizontal"
+                    android:textAllCaps="true" />
+                <gsc.GSCSmallButton
+                    android:text="@string/claimDeleteTreatmentLabel"
+                    android:background="@drawable/ButtonBackground"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dp"
+                    android:layout_centerHorizontal="true"
+                    local:MvxBind="Click DeleteCommand;Visible IsEditing"
+                    android:layout_gravity="right"
+                    android:textColor="@drawable/ButtonTextColor"
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:padding="3dp"
+                    android:textColorHighlight="@color/list_text_color"
+                    android:layout_marginTop="15dp"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <gsc.LeagueTextView
+                    android:layout_marginTop="@dimen/claim_review_padding"
+                    android:id="@+id/claim_details_hcsa_title"
+                    android:layout_width="match_parent"
+                    android:textSize="24sp"
+                    android:textColor="@color/claim_text"
+                    android:layout_height="wrap_content"
+                    local:MvxBind="Text EnterDetailLabel"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:textAllCaps="true" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/claim_margin"
+                    android:layout_marginBottom="@dimen/claim_margin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+                    <gsc.NunitoTextView
+                        android:id="@+id/qn1"
+                        android:textColor="@color/claim_text"
+                        android:textSize="15sp"
+                        android:layout_weight="1.0"
+                        android:layout_width="@dimen/claim_review_zero"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:layout_marginTop="@dimen/claim_review_zero"
+                        local:MvxBind="Text DateOfExpenseLabel;TextColor IsInvalidExpenseDate , Converter=TextColorError;"
+                        android:layout_gravity="center" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.1"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_height="20dp">
+                        <ImageButton
+                            android:id="@+id/errorButtonClick1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:background="@null"
+                            local:MvxBind="Visibility Visibility(IsInvalidExpenseDate); tag ErrorMessageLabel"
+                            android:gravity="center"
+                            android:textSize="18sp"
+                            android:src="@drawable/claims_error_icon"
+                            android:scaleType="centerInside"
+                            android:onClick="errorClickHandler" />
+                    <!-- android:tag="@string/error_message"-->
+                    </LinearLayout>
+                    <FrameLayout
+                        android:layout_width="@dimen/claim_review_zero"
+                        android:layout_weight="1.0"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="@dimen/list_item_height_drugConfirm">
+                        <gsc.SmallEditText
+                            android:id="@+id/txtDateOfExpense"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/list_item_height_drugConfirm"
+                            android:textSize="18sp"
+                            android:focusable="false"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/black"
+                            android:singleLine="true"
+                            android:paddingTop="15dp"
+                            android:paddingLeft="5dp"
+                            android:gravity="left"
+                            android:layout_gravity="center"
+                            android:background="@drawable/RoundEditTextNone"
+                            local:MvxBind="Text Format('{0:MMM dd, yyy}',ClaimDetails.ExpenseDate), Mode=TwoWay;"
+                            android:imeOptions="actionDone" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxHeight="@dimen/list_item_height_drugConfirm"
+                            android:src="@drawable/Calendar_icon"
+                            android:paddingRight="10dp"
+                            android:layout_gravity="right|center" />
+                    </FrameLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/claim_margin"
+                    android:layout_marginBottom="@dimen/claim_margin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+                    <gsc.NunitoTextView
+                        android:id="@+id/qn1"
+                        local:MvxBind="Text TotalAmountClaimedLabel;TextColor IsInvalidClaimAmount , Converter=TextColorError;"
+                        android:textColor="@color/claim_text"
+                        android:textSize="15sp"
+                        android:layout_weight="1.0"
+                        android:layout_width="@dimen/claim_review_zero"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:layout_marginTop="@dimen/claim_review_zero"
+                        android:layout_gravity="center" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.1"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_height="20dp">
+                        <ImageButton
+                            android:id="@+id/errorButtonClick2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:background="@null"
+                            local:MvxBind="Visibility Visibility(IsInvalidClaimAmount);tag ErrorMessageLabel"
+                            android:gravity="center"
+                            android:textSize="18sp"
+                            android:src="@drawable/claims_error_icon"
+                            android:scaleType="centerInside"
+                            android:onClick="errorClickHandler" />
+                    </LinearLayout>
+                    <gsc.SmallEditText
+                        android:id="@+id/claim_amount"
+                        android:layout_width="@dimen/claim_review_zero"
+                        android:layout_weight="1.0"
+                        android:layout_height="@dimen/list_item_height_drugConfirm"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="10dp"
+                        android:padding="@dimen/claim_text_desc_marg"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/black"
+                        android:singleLine="true"
+                        android:gravity="left|center"
+                        android:inputType="numberDecimal"
+                        android:background="@drawable/RoundEditTextNone"
+                        local:MvxBind="Text ClaimDetails.ClaimAmountString;"
+                        android:imeOptions="actionDone" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/claim_margin"
+                    android:layout_marginBottom="@dimen/claim_margin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+                    <gsc.NunitoTextView
+                        android:id="@+id/qn1"
+                        local:MvxBind="Text AmountPreviouslyPaidLabel;TextColor IsInvalidOtherPaidAmount , Converter=TextColorError;"
+                        android:textColor="@color/claim_text"
+                        android:textSize="15sp"
+                        android:layout_weight="1.0"
+                        android:layout_width="@dimen/claim_review_zero"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:layout_marginTop="@dimen/claim_review_zero"
+                        android:layout_gravity="center" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.1"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_height="20dp">
+                        <ImageButton
+                            android:id="@+id/errorButtonClick3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:background="@null"
+                            local:MvxBind="Visibility Visibility(IsInvalidOtherPaidAmount);tag ErrorMessageLabel"
+                            android:gravity="center"
+                            android:textSize="18sp"
+                            android:src="@drawable/claims_error_icon"
+                            android:scaleType="centerInside"
+                            android:onClick="errorClickHandler" />
+                    </LinearLayout>
+                    <gsc.SmallEditText
+                        android:id="@+id/other_claim_amount"
+                        android:layout_width="@dimen/claim_review_zero"
+                        android:layout_weight="1.0"
+                        android:layout_height="@dimen/list_item_height_drugConfirm"
+                        android:padding="@dimen/claim_text_desc_marg"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/black"
+                        android:singleLine="true"
+                        android:gravity="left|center"
+                        android:inputType="numberDecimal"
+                        android:background="@drawable/RoundEditTextNone"
+                        local:MvxBind="Text ClaimDetails.OtherPaidAmountString;"
+                        android:imeOptions="actionDone" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="@dimen/claim_margin"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+                    <gsc.GSCButton
+                        android:background="@drawable/ButtonBackground"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="25dp"
+                        local:MvxBind="Text SaveLabel;Click SaveClaimDetailsCommand , Mode=TwoWay;"
+                        android:layout_gravity="center"
+                        android:textColor="@drawable/ButtonTextColor"
+                        android:gravity="center"
+                        android:textAllCaps="true" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

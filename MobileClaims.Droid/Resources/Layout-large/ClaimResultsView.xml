@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/background_color">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/claim_margin"
+            android:layout_marginRight="@dimen/claim_margin">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_color">
+                <gsc.HeaderTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/claim_marg_top"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    local:MvxBind="Text TitleLabel"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:textAllCaps="true" />
+            </RelativeLayout>
+					
+			<gsc.NunitoTextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="20dp"
+				android:textSize="14sp"
+				android:gravity="center"
+				android:textColor="@color/dark_red"
+				local:MvxBind="Text ShowUploadDocuments, Converter=RequiresCopToInfo; Visibility Visibility(ShowUploadDocuments)"/>
+
+			<gsc.GSCButton
+                android:background="@drawable/ButtonBackground"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_gravity="center"
+                android:textColor="@drawable/ButtonTextColor"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textColorHighlight="@color/list_text_color"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+			    local:MvxBind="Click OpenConfirmationOfPaymentCommand; Visibility Visibility(ShowUploadDocuments); Text UploadDocuments"/>
+
+            <gsc.TitleTextView
+                android:id="@+id/claim_details_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/claim_marg_review"
+                android:layout_marginBottom="@dimen/claim_marg_top"
+                local:MvxBind="Text PlanInfoLabel"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:textAllCaps="true" />
+            <Mvx.MvxLinearLayout
+                android:id="@+id/claimResultLists"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/claim_confirm"
+                local:MvxBind="ItemsSource Claim.Results;"
+                local:MvxItemTemplate="@layout/item_hcsaclaim_results_first" />
+            <gsc.TitleTextView
+                android:id="@+id/claim_details_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/claim_text_desc_marg"
+                android:layout_marginBottom="10dp"
+                local:MvxBind="Text DetailsLabel"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:textAllCaps="true" />
+            <gsc.NonSelectableList
+                android:id="@+id/claim_results_detailsLists"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scrollbarStyle="outsideOverlay"
+                android:choiceMode="singleChoice"
+                android:paddingLeft="@dimen/claim_confirm"
+                android:cacheColorHint="@android:color/transparent"
+                android:background="@android:color/transparent"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="@dimen/claim_text_desc_marg"
+                android:listSelector="@android:color/transparent"
+                local:MvxItemTemplate="@layout/item_claim_result"
+                local:MvxBind="ItemsSource Claim.Details;"
+                android:paddingTop="@dimen/claim_text_desc_marg" />
+            <gsc.TitleTextView
+                android:id="@+id/claim_details_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                local:MvxBind="Text TotalLabel"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:textAllCaps="true" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/claim_marg_top"
+                android:layout_marginBottom="@dimen/claim_marg_top"
+                android:background="@drawable/HCSABorderTextViewNormal">
+                <Mvx.MvxLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    local:MvxItemTemplate="@layout/item_results_list"
+                    local:MvxBind="ItemsSource Claim.Results;"
+                    android:paddingTop="@dimen/claim_text_desc_marg" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/claim_marg_top"
+                android:layout_marginTop="@dimen/claim_text_top_marg"
+                android:background="#FFF1F1F1">
+                <gsc.NunitoTextView
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/claim_confirm"
+                    android:layout_marginLeft="@dimen/claim_confirm"
+                    android:layout_marginRight="@dimen/claim_confirm"
+                    android:layout_marginBottom="@dimen/claim_confirm"
+                    android:lineSpacingExtra="6dp"
+                    local:MvxBind="Text DescriptionLabel" />
+            </LinearLayout>
+						
+			<gsc.NunitoTextView
+                android:gravity="center"
+                android:duplicateParentState="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_red"
+                android:textSize="13sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                local:MvxBind="Text RequiredAuditLabel; Visibility Visibility(IsSelectedForAudit);" />
+
+			<gsc.GSCButton
+                android:background="@drawable/ButtonBackground"
+                android:layout_width="300dp"
+                android:layout_height="@dimen/claim_button"
+                android:layout_gravity="center"
+                android:textColor="@drawable/ButtonTextColor"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+			    local:MvxBind="Click OpenConfirmationOfPaymentCommand; Text UploadDocuments; Visibility Visibility(IsSelectedForAudit);" />
+			
+            <gsc.GSCButton
+                android:background="@drawable/ButtonBackground"
+                android:layout_width="300dp"
+                android:layout_height="@dimen/claim_button"
+                android:layout_gravity="center"
+                android:textColor="@drawable/ButtonTextColor"
+                android:gravity="center"
+                android:textAllCaps="true"
+                local:MvxBind="Click SubmitAnotherClaimCommand; Text SubmitButtonLabel"
+                android:layout_marginBottom="@dimen/claim_margin" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

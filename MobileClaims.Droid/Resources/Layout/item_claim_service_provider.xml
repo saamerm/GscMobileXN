@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:duplicateParentState="true"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="125dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:background="@drawable/single_select_item_background"
+    android:gravity="center_vertical">
+    <TextView
+        android:text="test"
+        android:gravity="center"
+        android:duplicateParentState="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@drawable/list_button_text_color"
+        android:textSize="18dp" />
+    <TextView
+        local:MvxBind="Text ServiceProvider.DoctorName"
+        android:gravity="center"
+        android:duplicateParentState="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@drawable/list_button_text_color"
+        android:textSize="18dp" />
+    <TextView
+        local:MvxBind="Text ServiceProvider.Address"
+        android:gravity="center"
+        android:duplicateParentState="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@drawable/list_button_text_color"
+        android:textSize="18dp" />
+    <TextView
+        local:MvxBind="Text FormattedAddress"
+        android:gravity="center"
+        android:duplicateParentState="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@drawable/list_button_text_color"
+        android:textSize="18dp" />
+    <TextView
+        local:MvxBind="Text Phone"
+        android:gravity="center"
+        android:duplicateParentState="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@drawable/list_button_text_color"
+        android:textSize="18dp" />
+</LinearLayout>

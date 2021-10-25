@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:local="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	android:padding="20dp"
+	android:background="@color/white">
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<TextView
+			android:id="@+id/disclaimerLabel"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textStyle="bold"
+			android:textAllCaps="true"
+			android:textSize="16dp"
+			local:MvxBind="Text Disclaimer"/>
+		<TextView
+			android:id="@+id/disclaimerFirstParagraphLabel"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			local:MvxBind="Text FirstParagraph"/>
+		<TextView
+			android:id="@+id/disclaimerSecondParagraphLabel"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			local:MvxBind="Text SecondParagraph"/>
+		<TextView
+			android:id="@+id/disclaimerThirdParagraphLabel"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			local:MvxBind="Text ThirdParagraph"/>
+	</LinearLayout>
+</ScrollView>

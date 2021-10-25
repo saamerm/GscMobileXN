@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:paddingLeft="12dp"
+    android:paddingRight="8dp"
+    android:layout_height="wrap_content"
+    android:background="@color/claim_background_fill">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <gsc.NunitoTextView
+            android:textColor="@color/claim_text"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            local:MvxBind="Text Format('{0:yyyy-MM-dd}',ServiceDate);Striked IsStricken;"
+            android:gravity="left" />
+        <gsc.NunitoTextView
+            android:textColor="@color/claim_text"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            local:MvxBind="Text ClaimFormID;Striked IsStricken;"
+            android:gravity="right" />
+    </LinearLayout>
+    <gsc.NunitoTextViewBold
+        android:textColor="@color/claim_text_grey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"
+        local:MvxBind="Text ServiceDescription;Striked IsStricken;"
+        android:gravity="left" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="14dp"
+        android:layout_height="wrap_content">
+        <gsc.NunitoTextView
+            android:textColor="@color/claim_text"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            local:MvxBind="Text ClaimedAmountLabel;"
+            android:gravity="left" />
+        <gsc.NunitoTextViewBold
+            android:textColor="@color/claim_text_grey"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            local:MvxBind="Text Format('${0}',ClaimedAmount);Striked IsStricken;"
+            android:gravity="right" />
+    </LinearLayout>
+</LinearLayout>

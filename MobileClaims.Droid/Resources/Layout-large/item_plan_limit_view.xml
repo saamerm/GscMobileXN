@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/light_grey"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TableRow
+            android:weightSum="1"
+            android:layout_marginBottom="5dp">
+            <gsc.NunitoTextView
+                local:MvxBind="Text BenefitDescription;"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_weight="0.6"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="0dp"
+                android:layout_centerVertical="true" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                local:MvxBind="Text LimitationDescription;" />
+        </TableRow>
+        <TableRow
+            android:weightSum="1"
+            android:layout_marginBottom="5dp">
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/claimResultParticpantLabel"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_weight="0.6"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="0dp"
+                android:layout_centerVertical="true" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                local:MvxBind="Text AppliesTo;" />
+        </TableRow>
+        <TableRow
+            android:weightSum="1"
+            android:layout_marginBottom="5dp">
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/claimResultStartDateLabel"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_weight="0.6"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="0dp"
+                android:layout_centerVertical="true" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                local:MvxBind="Text Format('{0:MMMM dd, yyy}',AccumStartDate);" />
+        </TableRow>
+        <TableRow
+            android:weightSum="1"
+            android:layout_marginBottom="5dp"
+            local:MvxBind="Visibility Visibility(IsAccumAmountUsedVisible);">
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/claimResultAmountUsedLabel"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_weight="0.6"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="0dp"
+                android:layout_centerVertical="true" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                local:MvxBind="Text Format('${0}',AccumAmountUsed);" />
+        </TableRow>
+        <TableRow
+            android:weightSum="1"
+            android:layout_marginBottom="5dp"
+            local:MvxBind="Visibility Visibility(IsAccumUnitsUsedVisible);">
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/claimResultUnittoDateLabel"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_weight="0.6"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="0dp"
+                android:layout_centerVertical="true" />
+            <gsc.NunitoTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                local:MvxBind="Text AccumUnitsUsed;" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

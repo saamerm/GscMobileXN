@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gsc.CheckableLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:duplicateParentState="true"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:gravity="center_vertical">
+<!--<View
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:duplicateParentState="true"
+        android:background="@drawable/plus_select_item_background"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="2dp" />
+    <gsc.NunitoTextView
+        android:id="@+id/text1"
+        android:textColor="@drawable/plus_gsc_list_text_color"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:duplicateParentState="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColorHighlight="@color/white"
+        local:MvxBind="Text ParticipantFullName"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:textAllCaps="true" />-->
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/plus_select_item_background">
+        <TableRow
+            android:layout_marginTop="2dp">
+            <gsc.NunitoTextView
+                android:text="Dep. No: Participant"
+                android:textColor="@drawable/plus_gsc_list_text_color"
+                android:textColorHighlight="@color/white"
+                android:textSize="14dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.9"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+            <gsc.NunitoTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:textColor="@drawable/plus_gsc_list_text_color"
+                android:textColorHighlight="@color/white"
+                android:textSize="14sp"
+                android:layout_weight="0.1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                local:MvxBind="Text Format('{0}: {1}',ParticipantNumber, ParticipantFullName);" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="2dp">
+            <gsc.NunitoTextView
+                android:text="Orthotic"
+                android:textColor="@drawable/plus_gsc_list_text_color"
+                android:textColorHighlight="@color/white"
+                android:textSize="14dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.9"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+            <gsc.NunitoTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:textColor="@drawable/plus_gsc_list_text_color"
+                android:textColorHighlight="@color/white"
+                android:textSize="14sp"
+                android:layout_weight="0.1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                local:MvxBind="Text Format('{0}',OrthoticEligibilityDateFormatted);" />
+        </TableRow>
+    </TableLayout>
+</gsc.CheckableLinearLayout>

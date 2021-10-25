@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TermsAndConditionsView">
+            <connections>
+                <outlet property="CheckBoxButton" destination="9PY-kF-hai" id="4bg-Tn-z8Q"/>
+                <outlet property="CheckBoxButtonYCenterConstraint" destination="rIQ-w2-xkM" id="Uoa-dB-eDd"/>
+                <outlet property="CheckBoxContainer" destination="mYl-ja-uB2" id="GXe-EJ-m35"/>
+                <outlet property="CheckBoxContainerHeightConstraint" destination="9cB-0t-LDs" id="IhQ-Fa-cRA"/>
+                <outlet property="CheckBoxLabel" destination="Dc4-Zd-vJg" id="m80-Mu-AuT"/>
+                <outlet property="CheckBoxLabelYCenterConstraint" destination="jee-fQ-byJ" id="BDn-pW-SEC"/>
+                <outlet property="GeneralButton" destination="2817" id="TNV-8r-c3W"/>
+                <outlet property="LegalButton" destination="3TO-9H-00Z" id="c7z-ED-huv"/>
+                <outlet property="PrivacyButton" destination="bR8-mf-e8E" id="kfG-0g-vqJ"/>
+                <outlet property="SecurityButton" destination="95r-ND-cNn" id="TMh-TC-KP7"/>
+                <outlet property="TCButtonContainerTopConstraint" destination="WCe-od-H22" id="ZJT-S0-DdG"/>
+                <outlet property="TermsAndConditionsWebView" destination="g2H-UT-SG4" id="k0v-lD-F3x"/>
+                <outlet property="WebViewBottomConstraint" destination="w1p-qk-aOb" id="iYh-tH-www"/>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="CEj-Va-Pp2" userLabel="TCButtonContainer">
+                    <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2817" customClass="GreyNavButton">
+                            <rect key="frame" x="0.0" y="0.0" width="102" height="50"/>
+                            <state key="normal" title="GENERAL"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bR8-mf-e8E" customClass="GreyNavButton">
+                            <rect key="frame" x="104" y="0.0" width="102" height="50"/>
+                            <state key="normal" title="PRIVACY"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3TO-9H-00Z" customClass="GreyNavButton">
+                            <rect key="frame" x="208" y="0.0" width="102" height="50"/>
+                            <state key="normal" title="LEGAL"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95r-ND-cNn" customClass="GreyNavButton">
+                            <rect key="frame" x="312" y="0.0" width="102" height="50"/>
+                            <state key="normal" title="SECURITY"/>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="KkS-tf-5ZX">
+                            <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                        </constraint>
+                    </constraints>
+                </stackView>
+                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g2H-UT-SG4">
+                    <rect key="frame" x="0.0" y="94" width="414" height="744"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <wkWebViewConfiguration key="configuration">
+                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                        <wkPreferences key="preferences"/>
+                    </wkWebViewConfiguration>
+                </wkWebView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mYl-ja-uB2">
+                    <rect key="frame" x="0.0" y="846" width="414" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9PY-kF-hai">
+                            <rect key="frame" x="92" y="12.666666666666629" width="25" height="25"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="25" id="rQb-BO-PeD"/>
+                                <constraint firstAttribute="height" constant="25" id="yAQ-ZO-2ti"/>
+                            </constraints>
+                            <state key="normal" image="CheckboxNormal"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I AGREE TO THE TERMS AND CONDITIONS " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dc4-Zd-vJg">
+                            <rect key="frame" x="125" y="19.666666666666629" width="164" height="11"/>
+                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="8"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NunitoSans-Regular"/>
+                            </userDefinedRuntimeAttributes>
+                            <variation key="heightClass=regular-widthClass=regular">
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                            </variation>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Dc4-Zd-vJg" firstAttribute="centerY" secondItem="9PY-kF-hai" secondAttribute="centerY" id="0wm-Dc-7MT"/>
+                        <constraint firstAttribute="height" constant="50" id="9cB-0t-LDs"/>
+                        <constraint firstItem="Dc4-Zd-vJg" firstAttribute="centerX" secondItem="mYl-ja-uB2" secondAttribute="centerX" id="Dhk-CC-fcM"/>
+                        <constraint firstItem="Dc4-Zd-vJg" firstAttribute="leading" secondItem="9PY-kF-hai" secondAttribute="trailing" constant="8" id="InC-Od-iYp">
+                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                        </constraint>
+                        <constraint firstItem="Dc4-Zd-vJg" firstAttribute="centerY" secondItem="mYl-ja-uB2" secondAttribute="centerY" id="jee-fQ-byJ"/>
+                        <constraint firstItem="9PY-kF-hai" firstAttribute="centerY" secondItem="mYl-ja-uB2" secondAttribute="centerY" id="rIQ-w2-xkM"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="jee-fQ-byJ"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="B9E-Ls-y6l"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="B9E-Ls-y6l" firstAttribute="trailing" secondItem="CEj-Va-Pp2" secondAttribute="trailing" id="0F2-h8-0JK"/>
+                <constraint firstItem="mYl-ja-uB2" firstAttribute="trailing" secondItem="B9E-Ls-y6l" secondAttribute="trailing" id="4Bh-Vv-elZ"/>
+                <constraint firstAttribute="bottom" secondItem="mYl-ja-uB2" secondAttribute="bottom" id="8Ek-FX-rWN"/>
+                <constraint firstItem="mYl-ja-uB2" firstAttribute="bottom" secondItem="B9E-Ls-y6l" secondAttribute="bottom" id="BAi-Dn-sUd"/>
+                <constraint firstItem="g2H-UT-SG4" firstAttribute="trailing" secondItem="B9E-Ls-y6l" secondAttribute="trailing" id="RAi-WM-Mfm"/>
+                <constraint firstItem="g2H-UT-SG4" firstAttribute="leading" secondItem="B9E-Ls-y6l" secondAttribute="leading" id="SFc-TH-5bj"/>
+                <constraint firstItem="g2H-UT-SG4" firstAttribute="top" secondItem="CEj-Va-Pp2" secondAttribute="bottom" id="VSx-BL-6wH"/>
+                <constraint firstItem="CEj-Va-Pp2" firstAttribute="top" secondItem="B9E-Ls-y6l" secondAttribute="top" id="WCe-od-H22"/>
+                <constraint firstItem="mYl-ja-uB2" firstAttribute="leading" secondItem="B9E-Ls-y6l" secondAttribute="leading" id="aLZ-8q-fIL"/>
+                <constraint firstItem="CEj-Va-Pp2" firstAttribute="leading" secondItem="B9E-Ls-y6l" secondAttribute="leading" id="coo-d6-Ko5"/>
+                <constraint firstItem="mYl-ja-uB2" firstAttribute="top" secondItem="g2H-UT-SG4" secondAttribute="bottom" constant="8" symbolic="YES" id="w1p-qk-aOb"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="BAi-Dn-sUd"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="131.8840579710145" y="153.34821428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="CheckboxNormal" width="30" height="30"/>
+    </resources>
+</document>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:duplicateParentState="true"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+        <gsc.NunitoTextView
+            android:id="@+id/qn1"
+            android:textColor="@color/claim_text"
+            android:textSize="13sp"
+            android:layout_weight="1.0"
+            android:layout_width="@dimen/claim_review_zero"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginTop="@dimen/claim_review_zero"
+            local:MvxBind="Text FormNumberLabel"
+            android:layout_gravity="left" />
+        <gsc.NunitoTextView
+            android:id="@+id/qn1"
+            android:textColor="@color/claim_text_grey"
+            android:textSize="13sp"
+            android:layout_weight="1.0"
+            android:layout_width="@dimen/claim_review_zero"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="left"
+            android:layout_marginTop="@dimen/claim_review_zero"
+            local:MvxBind="Text ParentClaim.Results[0].ClaimFormID"
+            android:layout_gravity="left" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+        <gsc.NunitoTextView
+            android:id="@+id/qn1"
+            android:textColor="@color/claim_text"
+            android:textSize="13sp"
+            android:layout_weight="1.0"
+            android:layout_width="@dimen/claim_review_zero"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginTop="@dimen/claim_review_zero"
+            local:MvxBind="Text DateOfExpenseLabel"
+            android:layout_gravity="left" />
+        <gsc.NunitoTextViewBold
+            android:id="@+id/qn1"
+            android:textColor="@color/claim_text_grey"
+            android:textSize="13sp"
+            android:layout_weight="1.0"
+            android:layout_width="@dimen/claim_review_zero"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="left"
+            android:layout_marginTop="@dimen/claim_review_zero"
+            local:MvxBind="Text ExpenseDate"
+            android:layout_gravity="left" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        local:MvxBind="Visible ExpenseType, Converter=ObjectToHide, Mode=OneWay">
+        <gsc.NunitoTextView
+            android:id="@+id/qn1"
+            android:textColor="@color/claim_text"
+            android:textSize="13sp"
+            android:layout_weight="1.0"
+            android:layout_width="@dimen/claim_review_zero"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginTop="@dimen/claim_review_zero"
+            local:MvxBind="Text TypeExpenseLabel"
+            android:layout_gravity="left" />
+    <!--local:MvxBind="Text TypeExpenseLabel"-->
+        <gsc.NunitoTextViewBold
+            android:id="@+id/qn1"
+            android:textColor="@color/claim_text_grey"
+            android:textSize="13sp"
+            android:layout_weight="1.0"
+            android:layout_width="@dimen/claim_review_zero"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="left"
+            android:layout_marginTop="@dimen/claim_review_zero"
+            local:MvxBind="Text ClaimType.Name"
+            android:layout_gravity="left" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        local:MvxBind="Visible ExpenseType, Converter=ObjectNullToVisible, Mode=OneWay">
+        <gsc.NunitoTextView
+            android:id="@+id/qn1"
+            android:textColor="@color/claim_text"
+            android:textSize="13sp"
+            android:layout_weight="1.0"
+            android:layout_width="@dimen/claim_review_zero"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginTop="@dimen/claim_review_zero"
+            local:MvxBind="Text TypeExpenseLabel;"
+            android:layout_gravity="left" />
+        <gsc.NunitoTextViewBold
+            android:id="@+id/qn1"
+            android:textColor="@color/claim_text_grey"
+            android:textSize="13sp"
+            android:layout_weight="1.0"
+            android:layout_width="@dimen/claim_review_zero"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="left"
+            android:layout_marginTop="@dimen/claim_review_zero"
+            local:MvxBind="Text ExpenseTypeDescription"
+            android:layout_gravity="left" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+        <gsc.NunitoTextView
+            android:id="@+id/qn1"
+            android:textColor="@color/claim_text"
+            android:textSize="13sp"
+            android:layout_weight="1.0"
+            android:layout_width="@dimen/claim_review_zero"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginTop="@dimen/claim_review_zero"
+            local:MvxBind="Text ClaimedAmountLabel"
+            android:layout_gravity="left" />
+        <gsc.NunitoTextViewBold
+            android:id="@+id/qn1"
+            android:textColor="@color/claim_text_grey"
+            android:textSize="13sp"
+            android:layout_weight="1.0"
+            android:layout_width="@dimen/claim_review_zero"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="left"
+            android:layout_marginTop="@dimen/claim_review_zero"
+            local:MvxBind="Text DollarSignDoublePrefix(ClaimAmount)"
+            android:layout_gravity="left" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+        <gsc.NunitoTextView
+            android:id="@+id/qn1"
+            android:textColor="@color/claim_text"
+            android:textSize="13sp"
+            android:layout_weight="1.0"
+            android:layout_width="@dimen/claim_review_zero"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginTop="@dimen/claim_review_zero"
+            local:MvxBind="Text OtherPaidLabel"
+            android:layout_gravity="left" />
+        <gsc.NunitoTextViewBold
+            android:id="@+id/qn1"
+            android:textColor="@color/claim_text_grey"
+            android:textSize="13sp"
+            android:layout_weight="1.0"
+            android:layout_width="@dimen/claim_review_zero"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="left"
+            android:layout_marginTop="@dimen/claim_review_zero"
+            local:MvxBind="Text DollarSignDoublePrefix(OtherPaidAmount)"
+            android:layout_gravity="left" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+        <gsc.NunitoTextView
+            android:id="@+id/qn1"
+            android:textColor="@color/claim_text"
+            android:textSize="13sp"
+            android:layout_weight="1.0"
+            android:layout_width="@dimen/claim_review_zero"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginTop="@dimen/claim_review_zero"
+            local:MvxBind="Text PaidAmountLabel"
+            android:layout_gravity="left" />
+        <gsc.NunitoTextViewBold
+            android:id="@+id/qn1"
+            android:textColor="@color/claim_text_grey"
+            android:textSize="13sp"
+            android:layout_weight="1.0"
+            android:layout_width="@dimen/claim_review_zero"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="left"
+            android:layout_marginTop="@dimen/claim_review_zero"
+            local:MvxBind="Text PaidAmount"
+            android:layout_gravity="left" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+        <gsc.NunitoTextView
+            android:id="@+id/qn1"
+            android:textColor="@color/claim_text"
+            android:textSize="13sp"
+            android:layout_weight="1.0"
+            android:layout_width="@dimen/claim_review_zero"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginTop="@dimen/claim_review_zero"
+            local:MvxBind="Text ClaimStatusLabel"
+            android:layout_gravity="left" />
+        <gsc.NunitoTextViewBold
+            android:id="@+id/qn1"
+            android:textColor="@color/claim_text_grey"
+            android:textSize="13sp"
+            android:layout_weight="1.0"
+            android:layout_width="@dimen/claim_review_zero"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="left"
+            android:layout_marginTop="@dimen/claim_review_zero"
+            local:MvxBind="Text AwaitingPaymentLabel"
+            android:layout_gravity="left" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+        <gsc.NunitoTextView
+            android:id="@+id/qn1"
+            android:textColor="@color/claim_text"
+            android:textSize="13sp"
+            android:layout_weight="1.0"
+            android:layout_width="@dimen/claim_review_zero"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginTop="@dimen/claim_review_zero"
+            android:layout_gravity="left" />
+        <gsc.NonSelectableList
+            android:id="@+id/eob_messages"
+            local:MvxBind="ItemsSource EOBMessages"
+            local:MvxItemTemplate="@layout/eobmessages_claim"
+            android:textStyle="bold"
+            android:background="@drawable/transparent_list_background"
+            android:cacheColorHint="@android:color/transparent"
+            android:listSelector="@android:color/transparent"
+            android:divider="@null"
+            android:textColor="@color/claim_text_grey"
+            android:textSize="13sp"
+            android:layout_weight="1.0"
+            android:layout_width="@dimen/claim_review_zero"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="left" />
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/claim_confirm_line"
+        android:background="#FFD2D2D2"
+        android:layout_marginTop="@dimen/claim_marg_top" />
+</LinearLayout>

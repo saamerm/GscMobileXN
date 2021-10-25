@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+    <TextView
+        android:id="@+id/txtAccountName"
+        android:textColor="@color/spa_cont_txt"
+        android:textSize="@dimen/spa_cntrbution_sub_txt_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textAllCaps="true"
+        local:MvxBind="Text AccountName" />
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:stretchColumns="2">
+        <TableRow>
+            <TextView
+                android:id="@+id/txtDepositeAsStringtxt"
+               
+                android:textColor="@color/spa_cont_txt_lgt"
+                android:textSize="@dimen/spa_cntrbution_sub_txt"
+                android:padding="5dip"
+                android:layout_weight="1.0"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+            <mobileclaims.droid.DollarSignTextView
+                android:id="@+id/txtDepositeAsString"
+                android:textColor="@color/highlight_color"
+                android:textSize="@dimen/spa_cntrbution_txt"
+                android:padding="5dip"
+                android:layout_weight="1.0"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/txtUsedToAsStringtxt"
+                android:text="@string/usedToDate"
+                android:textColor="@color/spa_cont_txt_lgt"
+                android:textSize="@dimen/spa_cntrbution_sub_txt"
+                android:padding="5dip"
+                android:layout_weight="1.0"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+            <mobileclaims.droid.DollarSignTextView
+                android:id="@+id/txtUsedToAsString"
+                android:textColor="@color/spa_cont_txt"
+                android:textSize="@dimen/spa_cntrbution_txt"
+                android:padding="5dip"
+                android:layout_weight="1.0"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right" />
+        </TableRow>
+        <TableRow>
+            <View
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_weight="1.0"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/separator_height"
+                android:background="@color/spa_cont_div" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/txtRemainingAsStringtxt"
+                android:text="@string/remaining"
+                android:textColor="@color/spa_cont_txt"
+                android:textSize="@dimen/spa_cntrbution_sub_txt"
+                android:padding="5dip"
+                android:layout_weight="1.0"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+            <mobileclaims.droid.DollarSignTextView
+                android:id="@+id/txtRemainingAsString"
+                android:textColor="@color/highlight_color"
+                android:textSize="@dimen/spa_cntrbution_txt"
+                android:padding="5dip"
+                android:layout_weight="1.0"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right" />
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="left"
+        android:paddingLeft="5dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtForteited"
+            android:textColor="@color/spa_cont_txt_lgt"
+            android:textSize="@dimen/spa_cntrbution_sub_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left" />
+        <TextView
+            android:id="@+id/txtEndDateAsString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/spa_cntrbution_sub_date"
+            android:textColor="@color/spa_cont_txt"
+            android:gravity="left" />
+        <TextView
+            android:id="@+id/txtEndDateAsStringDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/spa_cntrbution_sub_date"
+            android:textColor="@color/spa_cont_txt"
+            android:gravity="left" />
+    </LinearLayout>
+<!--    <View
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/separator_height"
+        android:background="@color/spa_cont_txt_lgt" />-->
+</LinearLayout>

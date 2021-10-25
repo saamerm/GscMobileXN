@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:local="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	android:orientation="vertical">
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:paddingStart="16dp"
+		android:paddingEnd="16dp"
+		android:background="@color/dark_red"
+		android:gravity="center"
+		local:MvxBind="Visibility Visibility(ShouldRibbonBeDisplayed); Click OpenAuditCommand">
+		<gsc.NunitoTextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:drawableEnd="@drawable/arrow"
+			android:drawablePadding="4dp"
+			android:textSize="14sp"
+			android:textColor="@color/white"
+			local:MvxBind="Text ActionRequiredLabel"/>
+	</LinearLayout>
+	<android.support.v4.widget.NestedScrollView  
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+	android:paddingBottom="10dp">
+		<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/dashboard_main_margin"
+		android:orientation="vertical">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<gsc.LeagueTextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="@dimen/dashboard_welcome_label"
+				android:textColor="@color/highlight_color"
+				android:singleLine="true"
+				android:textAllCaps="true"
+				local:MvxBind="Text WelcomeTitle"/>
+			
+			<gsc.NunitoTextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="@dimen/dashboard_name_label"
+				android:layout_marginLeft="6dp"
+				local:MvxBind="Text UserName"/>
+		</LinearLayout>
+		<gsc.LeagueTextView
+			android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dashboard_section_title_font_size"
+            android:textColor="@color/highlight_color"
+            android:singleLine="true"
+            android:textAllCaps="true"
+			android:layout_marginTop="16dp"
+			local:MvxBind="Text RecentClaimsTitle"/>
+
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/dashboardRecentClaimsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+			android:nestedScrollingEnabled="false" 
+			android:paddingTop="10dp"
+			android:overScrollMode="never"
+			local:MvxBind="Visibility Visibility(HasAnyClaims)"/>
+
+		<gsc.NunitoTextView
+			android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+			android:gravity="center"
+			android:paddingTop="10dp"
+			android:textSize="18sp"
+			local:MvxBind="Text NoRecentClaimsLabel; Visibility InvertedVisibility(HasAnyClaims)"/>
+
+		<Button
+			android:id="@+id/dashboardViewAllButton"
+		    android:layout_width="140dp"
+            android:layout_height="35dp"
+			android:layout_marginTop="14dp"
+			android:textAlignment="center"
+			android:textAllCaps="true"
+			android:textStyle="bold"
+			android:textSize="18dp"
+			android:layout_gravity="center_horizontal"
+			android:background="@drawable/border_green"
+			android:textColor="@color/highlight_color"
+			local:MvxBind="Text ViewAll; Click ShowAllClaimsCommand"/>
+
+		<gsc.LeagueTextView
+			android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dashboard_section_title_font_size"
+            android:textColor="@color/highlight_color"
+            android:singleLine="true"
+            android:textAllCaps="true"
+			android:layout_marginTop="16dp"
+			local:MvxBind="Text MyBenefitsTitle"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+            android:layout_height="@dimen/dashboard_balanaces_item_height"
+			android:layout_marginTop="@dimen/dashboard_balanaces_item_margin"
+			android:weightSum="1.0">
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_weight="0.5"
+				android:layout_height="match_parent"
+				android:layout_marginRight="@dimen/dashboard_balanaces_item_margin"
+				android:background="@color/light_grey"
+				local:MvxBind="Click ShowEligibilityCheckCommand, CommandParameter=1">
+				<RelativeLayout
+					android:layout_width="60dp"
+					android:layout_height="match_parent">
+					<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerInParent="true"
+						android:padding="12dp"
+						android:src="@drawable/dashboard_dental"/>
+				</RelativeLayout>
+				<TextView
+					android:id="@+id/dashboard_dental_textview"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="@dimen/dashboard_balanaces_font_size"
+					android:gravity="center_vertical"
+					android:layout_gravity="center_vertical"
+					local:MvxBind="Text DentalRecallExam"/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_weight="0.5"
+				android:layout_height="match_parent"
+				android:background="@color/light_grey"
+				local:MvxBind="Click ShowEligibilityCheckCommand, CommandParameter=0">
+				<RelativeLayout
+					android:layout_width="60dp"
+					android:layout_height="match_parent">
+					<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerInParent="true"
+						android:padding="12dp"
+						android:src="@drawable/dashboard_chiropractor"/>
+				</RelativeLayout>
+				<TextView
+					android:id="@+id/dashboard_chiropractor_textview"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="@dimen/dashboard_balanaces_font_size"
+					android:gravity="center_vertical"
+					android:layout_gravity="center_vertical"
+					local:MvxBind="Text ChiropracticTreatment"/>
+			</LinearLayout>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+            android:layout_height="@dimen/dashboard_balanaces_item_height"
+			android:layout_marginTop="@dimen/dashboard_balanaces_item_margin"
+			android:weightSum="1.0">
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_weight="0.5"
+				android:layout_height="match_parent"
+				android:layout_marginRight="@dimen/dashboard_balanaces_item_margin"
+				android:background="@color/light_grey"
+				local:MvxBind="Click ShowEligibilityCheckCommand, CommandParameter=2">
+				<RelativeLayout
+					android:layout_width="60dp"
+					android:layout_height="match_parent">
+					<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerInParent="true"
+						android:padding="12dp"
+						android:src="@drawable/dashboard_massage"/>
+				</RelativeLayout>
+				<TextView
+					android:id="@+id/dashboard_massage_textview"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="@dimen/dashboard_balanaces_font_size"
+					android:gravity="center_vertical"
+					android:layout_gravity="center_vertical"
+					local:MvxBind="Text MassageTherapy"/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_weight="0.5"
+				android:layout_height="match_parent"
+				android:background="@color/light_grey"
+				local:MvxBind="Click ShowDrugsOnTheGoCommand">
+				<RelativeLayout
+					android:layout_width="60dp"
+					android:layout_height="match_parent">
+					<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerInParent="true"
+						android:padding="12dp"
+						android:src="@drawable/dashboard_drugs"/>
+				</RelativeLayout>
+			
+				<TextView
+					android:id="@+id/dashboard_drugs_textview"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="@dimen/dashboard_balanaces_font_size"
+					android:gravity="center_vertical"
+					android:layout_gravity="center_vertical"
+					local:MvxBind="Text DrugsOnTheGo"/>
+			</LinearLayout>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+            android:layout_height="@dimen/dashboard_balanaces_item_height"
+			android:layout_marginTop="@dimen/dashboard_balanaces_item_margin"
+			android:layout_marginBottom="10dp"
+			android:weightSum="1.0">		
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_weight="0.5"
+				android:layout_height="match_parent"
+				android:layout_marginRight="@dimen/dashboard_balanaces_item_margin"
+				android:background="@color/light_grey"
+				local:MvxBind="Visibility Visibility(IsHcsaVisible); Click ShowHcsaCommand">
+				<RelativeLayout
+					android:layout_width="60dp"
+					android:layout_height="match_parent">
+					<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerInParent="true"
+						android:padding="12dp"
+						android:src="@drawable/dashboard_hcsa"/>
+				</RelativeLayout>
+				<TextView
+					android:id="@+id/dashboard_hcsa_title_textview"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="@dimen/dashboard_balanaces_font_size"
+					android:gravity="center_vertical"
+					android:layout_gravity="center_vertical"
+					local:MvxBind="Text HcsaTitle"/>
+			</LinearLayout>
+			
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_weight="0.5"
+				android:layout_height="match_parent"
+				android:background="@color/light_grey"
+				local:MvxBind="Visibility Visibility(IsPsaVisible); Click ShowPsaCommand">
+				<RelativeLayout
+					android:layout_width="60dp"
+					android:layout_height="match_parent">
+					<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerInParent="true"
+						android:padding="12dp"
+						android:src="@drawable/dashboard_psa"/>
+				</RelativeLayout>
+				<TextView
+					android:id="@+id/dashboard_psa_title_textview"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="@dimen/dashboard_balanaces_font_size"
+					android:gravity="center_vertical"
+					android:layout_gravity="center_vertical"
+					local:MvxBind="Text PsaTitle"/>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+	</android.support.v4.widget.NestedScrollView>
+</LinearLayout>

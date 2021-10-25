@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+	<dimen name="list_item_height">75dp</dimen>
+  <dimen name=" list_item_height_ch">90dp</dimen>
+  <dimen name="provider_list_item_height">80dp</dimen>
+	<dimen name="list_item_height_drugConfirm">50dp</dimen>
+	<dimen name="spa_cntrbution_txt">18sp</dimen>
+	<dimen name="spa_cntrbution_sub_txt">14sp</dimen>
+	<dimen name="spa_cntrbution_sub_rem">9sp</dimen>
+	<dimen name="spa_cntrbution_sub_date">12sp</dimen>
+	<dimen name="spa_cntrbution_sub_txt_header">22sp</dimen>
+	<dimen name="claim_search">16sp</dimen>
+	<dimen name="separator_height">1dp</dimen>
+	<dimen name="claim_margin">20dp</dimen>
+	<dimen name="claim_marg_top">15dp</dimen>  
+	<dimen name="claim_text_bottom_marg">12dp</dimen>
+	<dimen name="claim_text_desc_marg">10dp</dimen>
+	<dimen name="clam_text_size">18sp</dimen>
+	<dimen name="claim_text_desc_size">13sp</dimen>
+	<dimen name="claim_button">60dp</dimen>
+	<dimen name="claim_text_top_marg">30dp</dimen>
+	<dimen name="claim_width">90dp</dimen>
+	<dimen name="claim_minheight">40dp</dimen>
+	<dimen name="claim_marg_review">27dp</dimen>
+	<dimen name="claim_width_review">300dp</dimen>
+	<dimen name="claim_review_padding">25dp</dimen>
+	<dimen name="claim_rev_h" >3dp</dimen>
+	<dimen name="claim_review_zero">0dp</dimen>
+	<dimen name="claim_confirm">8dp</dimen>
+	<dimen name="claim_confirm_marg_bot">5dp</dimen>
+	<dimen name="claim_confirm_line">2dp</dimen>
+	<dimen name="claim_confirm_button">300dp</dimen>
+  <dimen name="claim_submission_benefit_text_size">10sp</dimen>
+	<!--displayby-->
+	<dimen name="display_by_sp">13sp</dimen>
+	<dimen name="display_by_button">10sp</dimen>
+  <!-- layout consts-->
+  <dimen name="tabbar_height">60dp</dimen>
+  <dimen name="tabbar_tablet_height">75dp</dimen>
+  <!-- main menu -->
+  <dimen name="menu_item_text_size">28sp</dimen>
+  <dimen name="menu_item_count_text_size">20sp</dimen>
+  <dimen name="menu_item_height">60dp</dimen>
+  <dimen name="menu_item_width">60dp</dimen>
+  <dimen name="menu_item_icon_padding">5dp</dimen>
+  <!-- bottom nav bar -->
+  <dimen name="bnb_textsize">10sp</dimen>
+  <!-- dashboard -->
+  <dimen name="dashboard_main_margin">10dp</dimen>
+  <dimen name="dashboard_welcome_label">26dp</dimen>
+  <dimen name="dashboard_name_label">22dp</dimen>
+  <dimen name="dashboard_section_title_font_size">20dp</dimen>
+  <dimen name="dashboard_recent_claim_action_required_item_padding">10dp</dimen>
+  <dimen name="dashboard_recent_claim_action_required_item_margin">5dp</dimen>
+  <dimen name="dashboard_balanaces_item_height">60dp</dimen>
+  <dimen name="dashboard_balanaces_item_margin">6dp</dimen>
+  <dimen name="dashboard_balanaces_font_size">14sp</dimen>
+  <dimen name="dashboard_recent_claim_item_height">72dp</dimen>
+  <dimen name="dashboard_recent_claim_item_margin">5dp</dimen>
+  <dimen name="dashboard_recent_claim_item_padding">10dp</dimen>
+  <!-- audit -->
+  <dimen name="auditclaim_title_font_size">30sp</dimen>
+  <dimen name="auditclaim_font_size">14sp</dimen>
+  <dimen name="auditclaim_auditlist_section_font_size">20sp</dimen>
+  <dimen name="auditclaim_item_padding">10dp</dimen>
+  <dimen name="auditclaim_item_margin">5dp</dimen>
+  <!-- upload completed -->
+  <dimen name="uploadcompleted_font_size">14sp</dimen>
+  <dimen name="uploadcompleted_item_padding">10dp</dimen>
+  <dimen name="uploadcompleted_item_margin">5dp</dimen>
+	<!-- Direct Deposit -->
+  <dimen name="direct_deposit_margin">20dp</dimen>
+
+</resources>

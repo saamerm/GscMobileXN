@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="@drawable/single_select_item_background"
+    android:gravity="center_vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+        <gsc.NunitoTextView
+            android:id="@+id/claim_treatment_date"
+            local:MvxBind="Text TreatmentDateDuration(TreatmentDateListViewItem,TreatmentDurationListViewItem.Name);"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@drawable/list_button_text_color"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.8" />
+        <gsc.NunitoTextView
+            local:MvxBind="Text Format('${0}',TreatmentAmountListViewItem)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@drawable/list_button_text_color"
+            android:textSize="18sp"
+            android:gravity="right"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            android:text="$0.00"
+            android:layout_weight="0.2" />
+    </LinearLayout>
+    <gsc.NunitoTextView
+        local:MvxBind="Text TypeOfTreatmentListViewItem.Name"
+        android:gravity="left"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@drawable/list_button_text_color"
+        android:textSize="13sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        local:MvxBind="Visibility Visibility(IsAlternateCarrierPaymentVisible);">
+        <gsc.NunitoTextView
+            android:text="@string/claimTreatmentAlternateCarrierLabel"
+            android:id="@+id/claim_alternative_carrier"
+            android:maxLines="2"
+            android:gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@drawable/list_button_text_color"
+            android:textSize="13sp"
+            android:layout_marginLeft="10dp" />
+        <gsc.NunitoTextView
+            local:MvxBind="Text Format('${0}',AlternateCarrierPayment) "
+            android:layout_toRightOf="@id/claim_alternative_carrier"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@drawable/list_button_text_color"
+            android:textSize="13sp"
+            android:layout_marginLeft="5dp" />
+    </RelativeLayout>
+</LinearLayout>

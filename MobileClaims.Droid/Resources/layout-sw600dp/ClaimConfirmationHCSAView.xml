@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/claim_margin"
+            android:layout_marginRight="@dimen/claim_margin">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_color">
+                <gsc.HeaderTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/claim_marg_top"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    local:MvxBind="Text TitleLabel"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:textAllCaps="true" />
+            <!--android:text="@string/claimConfirm_title"-->
+            </RelativeLayout>
+            <gsc.TitleTextView
+                android:id="@+id/claim_details_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/claim_marg_review"
+                android:layout_marginBottom="@dimen/claim_marg_top"
+                local:MvxBind="Text PlanInfoLabel"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:textAllCaps="true" />
+        <!-- android:text="@string/claimConfirm_plan_info"-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/claim_confirm"
+                android:layout_marginLeft="@dimen/claim_margin">
+                <gsc.NunitoTextView
+                    android:id="@+id/qn1"
+                    android:textColor="@color/claim_text"
+                    android:textSize="@dimen/claim_text_desc_size"
+                    android:layout_weight="1.0"
+                    android:layout_width="@dimen/claim_review_zero"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_marginTop="@dimen/claim_review_zero"
+                    local:MvxBind="Text IDNumberLabel"
+                    android:layout_gravity="left" />
+            <!--android:text="@string/claimConfirm_id_number"-->
+                <gsc.NunitoTextViewBold
+                    android:id="@+id/qn1"
+                    android:textColor="@color/claim_text_grey"
+                    android:textSize="@dimen/claim_text_desc_size"
+                    android:layout_weight="1.0"
+                    android:layout_width="@dimen/claim_review_zero"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/claim_margin"
+                    android:gravity="left"
+                    android:layout_marginTop="@dimen/claim_review_zero"
+                    local:MvxBind="Text Participant.PlanMemberID"
+                    android:layout_gravity="left" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/claim_confirm"
+                android:layout_marginLeft="@dimen/claim_margin">
+                <gsc.NunitoTextView
+                    android:id="@+id/qn1"
+                    android:textColor="@color/claim_text"
+                    android:textSize="@dimen/claim_text_desc_size"
+                    android:layout_weight="1.0"
+                    android:layout_width="@dimen/claim_review_zero"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_marginTop="@dimen/claim_review_zero"
+                    local:MvxBind="Text ParticipantLabel"
+                    android:layout_gravity="left" />
+            <!-- android:text="@string/claimConfirm_participant"-->
+                <gsc.NunitoTextViewBold
+                    android:id="@+id/qn1"
+                    android:textColor="@color/claim_text_grey"
+                    android:textSize="@dimen/claim_text_desc_size"
+                    android:layout_weight="1.0"
+                    android:layout_width="@dimen/claim_review_zero"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_marginLeft="@dimen/claim_margin"
+                    android:layout_marginTop="@dimen/claim_review_zero"
+                    local:MvxBind="Text Participant.FullName"
+                    android:layout_gravity="left" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                local:MvxBind="Visible IsReferrerVisible"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/claim_marg_top"
+                android:layout_marginLeft="@dimen/claim_margin">
+                <gsc.NunitoTextView
+                    android:id="@+id/qn1"
+                    android:textColor="@color/claim_text"
+                    android:textSize="@dimen/claim_text_desc_size"
+                    android:layout_weight="1.0"
+                    android:layout_width="@dimen/claim_review_zero"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_marginTop="@dimen/claim_review_zero"
+                    local:MvxBind="Text RefferedLabel"
+                    android:layout_gravity="left" />
+            <!--android:text="@string/claimConfirm_reffered"-->
+                <gsc.NunitoTextViewBold
+                    android:id="@+id/qn1"
+                    android:textColor="@color/claim_text_grey"
+                    android:textSize="@dimen/claim_text_desc_size"
+                    android:layout_weight="1.0"
+                    android:layout_width="@dimen/claim_review_zero"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_marginTop="@dimen/claim_review_zero"
+                    local:MvxBind="Text ReferralType.Text; "
+                    android:layout_marginLeft="@dimen/claim_margin"
+                    android:layout_gravity="left" />
+            </LinearLayout>
+            <gsc.TitleTextView
+                android:id="@+id/claim_details_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/claim_marg_top"
+                android:layout_marginBottom="@dimen/claim_marg_top"
+                local:MvxBind="Text DetailsLabel"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:textAllCaps="true" />
+        <!-- android:text="@string/claimConfirm_detais"-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/claim_confirm_marg_bot"
+                android:layout_marginLeft="@dimen/claim_margin">
+                <gsc.NunitoTextView
+                    android:id="@+id/qn1"
+                    android:textColor="@color/claim_text"
+                    android:textSize="@dimen/claim_text_desc_size"
+                    android:layout_weight="1.0"
+                    android:layout_width="@dimen/claim_review_zero"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/claim_review_zero"
+                    local:MvxBind="Text DateOfExpenseLabel"
+                    android:layout_gravity="left" />
+            <!--android:text="@string/dateOfExpense"-->
+                <gsc.NunitoTextView
+                    android:id="@+id/qn1"
+                    android:textColor="@color/claim_text"
+                    android:textSize="@dimen/claim_text_desc_size"
+                    android:layout_weight="1.0"
+                    android:layout_width="@dimen/claim_review_zero"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/claim_review_zero"
+                    local:MvxBind="Text TypeExpenseLabel"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="left"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp" />
+            <!-- android:text="@string/claimConfirm_type_expense"-->
+                <gsc.NunitoTextView
+                    android:id="@+id/qn1"
+                    android:textColor="@color/claim_text"
+                    android:textSize="@dimen/claim_text_desc_size"
+                    android:layout_weight="0.8"
+                    android:layout_width="@dimen/claim_review_zero"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/claim_review_zero"
+                    local:MvxBind="Text ClaimedAmountLabel"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:layout_gravity="right" />
+            <!-- android:text="@string/claimConfirm_amount"-->
+                <gsc.NunitoTextView
+                    android:id="@+id/qn1"
+                    android:textColor="@color/claim_text"
+                    android:textSize="@dimen/claim_text_desc_size"
+                    android:layout_weight="1.2"
+                    android:layout_width="@dimen/claim_review_zero"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/claim_review_zero"
+                    local:MvxBind="Text GovernmentPlanLabel"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="right" />
+            <!--  android:text="@string/claimConfirm_government"-->
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/claim_confirm_line"
+                android:background="#FF84BF41" />
+            <gsc.NonSelectableList
+                android:id="@+id/claim_confirmation_detailsList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scrollbarStyle="outsideOverlay"
+                android:choiceMode="singleChoice"
+                android:layout_marginLeft="@dimen/claim_margin"
+                android:cacheColorHint="@android:color/transparent"
+                android:background="@android:color/transparent"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="@dimen/claim_text_desc_marg"
+                android:listSelector="@android:color/transparent"
+                local:MvxItemTemplate="@layout/item_claim_confirmation"
+                local:MvxBind="ItemsSource Claim.Details;"
+                android:paddingTop="@dimen/claim_text_desc_marg" />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/claim_confirm_line"
+                android:background="#c0c0c0"
+                android:layout_marginBottom="@dimen/claim_marg_top" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/claim_confirm_marg_bot">
+                <gsc.NunitoTextView
+                    android:id="@+id/qn1"
+                    android:textColor="@color/claim_text"
+                    android:textSize="@dimen/claim_text_desc_size"
+                    android:layout_weight="2.0"
+                    android:layout_marginLeft="@dimen/claim_margin"
+                    android:layout_width="@dimen/claim_review_zero"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/claim_review_zero"
+                    local:MvxBind="Text TotalLabel"
+                    android:layout_gravity="left" />
+            <!--android:text="@string/claimConfirm_total"-->
+                <gsc.NunitoTextViewBold
+                    android:id="@+id/qn1"
+                    android:textColor="@color/claim_text_grey"
+                    android:textSize="@dimen/claim_text_desc_size"
+                    android:layout_weight="0.8"
+                    android:layout_width="@dimen/claim_review_zero"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/claim_review_zero"
+                    local:MvxBind="Text DollarSignDoublePrefix(TotalClaimAmount)"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:layout_gravity="right" />
+                <gsc.NunitoTextViewBold
+                    android:id="@+id/qn1"
+                    android:textColor="@color/claim_text_grey"
+                    android:textSize="@dimen/claim_text_desc_size"
+                    android:layout_weight="1.2"
+                    android:layout_width="@dimen/claim_review_zero"
+                    android:layout_height="wrap_content"
+                    local:MvxBind="Text DollarSignDoublePrefix(OtherPaidTotalAmount)"
+                    android:layout_marginTop="@dimen/claim_review_zero"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:layout_gravity="right" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/claim_marg_top"
+                android:layout_marginTop="@dimen/claim_text_top_marg"
+                android:background="#FFF1F1F1">
+                <gsc.NunitoTextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/claim_marg_top"
+                    android:layout_width="fill_parent"
+                    android:lineSpacingMultiplier="1.4"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/claim_confirm"
+                    android:layout_marginLeft="@dimen/claim_confirm"
+                    android:layout_marginRight="@dimen/claim_confirm"
+                    android:layout_marginBottom="@dimen/claim_confirm"
+                    local:MvxBind="Text DescriptionLabel" />
+            <!-- android:text="@string/claimConfirm_description"-->
+            </LinearLayout>
+            <gsc.GSCButton
+                android:background="@drawable/ButtonBackground"
+                android:layout_width="@dimen/claim_confirm_button"
+                android:layout_height="@dimen/claim_button"
+                android:layout_gravity="center"
+                android:textColor="@drawable/ButtonTextColor"
+                android:gravity="center"
+                android:textAllCaps="true"
+                local:MvxBind="Click SubmitClaimCommand;Text SubmitButtonLabel"
+                android:layout_marginTop="@dimen/claim_minheight"
+                android:layout_marginBottom="@dimen/claim_margin" />
+        <!--android:text="@string/claimConfirm_button"-->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

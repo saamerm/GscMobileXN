@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <string name="webInstructionsLink">https://onlineservices.greenshield.ca/miscdocs/westjet_en.pdf</string>
+  <string name="username">USER ID</string>
+  <string name="webInstructions">FORGOT YOUR USER ID OR PASSWORD? NEED TO REGISTER?</string>
+</resources>
